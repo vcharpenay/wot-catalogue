@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <script src="js/lunr.js"></script>
+        <script src="js/urdf-browser.js"></script>
+
+        <style>
+            body {
+                margin: 0;
+            }
+
+            #search-bar {
+                padding: 10px;
+                border-bottom: 1px solid grey;
+            }
+
+            #search-results {
+                padding: 10px;
+            }
+
+            #search-results-count {
+                margin: 0;
+                margin-bottom: 10px;
+                font-style: italic;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="search-bar">
+            <input id="search-field" type="text" placeholder="Enter a concept name...">
+            <input id="search-button" type="button" value="Search">
+        </div>
+
+        <div id="search-results">
+            <p id="search-results-count">
+            </p>
+            <table>
+                <tbody id="search-results-list">
+
+                </tbody>                
+            </table>
+        </div>
+
+        <script id="catalogue-query" type="application/sparql-query">
+            prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            prefix skos: <http://www.w3.org/2004/02/skos/core#>
+            select ?concept ?label ?definition where {
+                graph ?g {
+                    ?concept a skos:Concept ;
+                             rdfs:label ?label ;
+                             skos:definition ?definition .
+                }
+            }
+        </script>
+        
+        <script>
+            const catalogue = document.getElementById('catalogue-query');
+            const btn = document.getElementById('search-button');
+            const field = document.getElementById('search-field');
+            const meta = document.getElementById('search-results-count');
+            const list = document.getElementById('search-results-list');
+
+            const base = 'https://raw.githubusercontent.com/vcharpenay/wot-catalogue/master';
+            const files = [
+                '/BACnet/bacnet.ttl',
+                '/LWM2M/ipso.ttl',
+                '/OCF/oneiota.ttl',
+                '/oneM2M/haim.ttl',
+                '/BACnet/bacnet.ttl',
+                '/Project Haystack/haystack.ttl'
+                // TODO BLE
+            ];
+
+            let race = files.map(f => urdf.loadFrom(base + f, { format: 'text/turtle' }));
+            Promise.all(race)
+            
+            .then(() => urdf.query(catalogue.textContent))
+
+            .then(res => {
+                let docs = res.map(b => {
+                    let doc = {};
+                    for (k in b) doc[k] = b[k].value;
+                    return doc;
+                });
+
+                const idx = lunr(function() {
+                    this.ref('concept');
+                    this.field('label');
+                    this.field('definition');
+
+                    docs.forEach(doc => this.add(doc), this);
+                });
+
+                console.log(idx);
+
+                btn.onclick = () => {
+                    let res = idx.search(field.value);
+                    console.log(res)
+
+                    meta.textContent = `${res.length} result(s) found.`;
+                    
+                    list.innerHTML = res.reduce((arr, m) => {
+                        console.log(m)
+                        let doc = docs.find(doc => doc.concept == m.ref);
+                        let row = `<tr><td>${doc.concept}</td><td>${doc.label}</td><td>${doc.definition}</td></tr>`;
+                        return arr + row;
+                    }, '');
+                };
+            })
+
+            .catch(e => {
+                // TODO
+                console.error(e);
+            });
+        </script>
+    </body>
+</html>
