@@ -1,0 +1,85 @@
+@prefix wsp: <http://example.org/namespace/ble-gatt/wsp#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+wsp:WeightScaleProfile a skos:Concept .
+wsp:WeightScaleService a skos:Concept .
+wsp:BodyCompositionService a skos:Concept .
+wsp:WeightScaleFeature a skos:Concept .
+wsp:WeightMeasurement a skos:Concept .
+wsp:BodyCompositionFeature a skos:Concept .
+wsp:BodyCompositionMeasurement a skos:Concept .
+
+wsp:WeightScaleProfile rdfs:label "Weight Scale Profile" .
+wsp:WeightScaleProfile rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=293525> .
+wsp:WeightScaleProfile skos:definition "Weight Scale Profile enables a Collector device to connect and interact with a Weight Scale intended for consumer healthcare and sports/fitness applications." .
+wsp:WeightScaleProfile owl:versionInfo "1.0" .
+
+ble:Profile skos:narrower wsp:WeightScaleProfile .
+
+wsp:WeightScaleProfile skos:related wsp:WeightScaleService .
+wsp:WeightScaleProfile skos:related ble:DeviceInformationService.
+wsp:WeightScaleProfile skos:related ble:UserDataService .
+wsp:WeightScaleProfile skos:related wsp:BodyCompositionService .
+wsp:WeightScaleProfile skos:related ble:BatteryService .
+wsp:WeightScaleProfile skos:related ble:CurrentTimeService .
+
+ble:Service skos:narrower wsp:WeightScaleService  .
+ble:Service skos:narrower wsp:BodyCompositionService .
+
+
+wsp:WeightScaleService rdfs:label "Weight Scale Service" .
+wsp:WeightScaleService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=293526> .
+wsp:WeightScaleService skos:definition "This service exposes weight and related data from a weight scale intended for consumer healthcare and sports/fitness applications." .
+wsp:WeightScaleService owl:versionInfo "1.0" .
+
+ble:Characteristic skos:narrower  wsp:WeightScaleFeature  .
+ble:Characteristic skos:narrower  wsp:WeightMeasurement .
+
+wsp:WeightScaleService skos:related wsp:WeightScaleFeature  .
+wsp:WeightScaleService skos:related wsp:WeightMeasurement .
+
+wsp:WeightScaleFeature rdfs:label "Weight Scale Feature" .
+wsp:WeightMeasurement rdfs:label "Weight Measurement" .
+wsp:WeightScaleFeature skos:definition "The Weight Scale Feature characteristic shall be used to describe the supported features of the Server." .
+wsp:WeightMeasurement skos:definition "The Weight Measurement characteristic is used to send weight-related data to the Client." .
+
+
+wsp:BodyCompositionService rdfs:label "Body Composition Service" .
+wsp:BodyCompositionService  rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=293523> .
+wsp:BodyCompositionService skos:definition "This service exposes data related to body composition from a body composition analyzer intended for consumer healthcare and sports/fitness applications." .
+wsp:BodyCompositionService  owl:versionInfo "1.0" .
+
+ble:Characteristic skos:narrower  wsp:BodyCompositionFeature  .
+ble:Characteristic skos:narrower  wsp:BodyCompositionMeasurement .
+
+wsp:BodyCompositionService skos:related wsp:BodyCompositionFeature  .
+wsp:BodyCompositionService skos:related wsp:BodyCompositionMeasurement .
+
+wsp:BodyCompositionFeature rdfs:label "Body Composition Feature" .
+wsp:BodyCompositionMeasurement rdfs:label "Body Composition Measurement" .
+
+wsp:BodyCompositionFeature skos:definition "The Body Composition Feature characteristic shall be used to describe the supported features of the Server." .
+wsp:BodyCompositionMeasurement skos:definition "The Body Composition Measurement characteristic is used to send body composition-related data to the Client." .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

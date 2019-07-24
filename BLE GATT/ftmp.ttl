@@ -1,0 +1,122 @@
+@prefix ftmp: <http://example.org/namespace/ble-gatt/ftmp#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ftmp:FitnessMachineProfile a skos:Concept .
+ftmp:FitnessMachineService a skos:Concept .
+ftmp:FitnessMachineFeature a skos:Concept .
+ftmp:TreadmillData a skos:Concept .
+ftmp:CrossTrainerData a skos:Concept .
+ftmp:StepClimberData a skos:Concept .
+ftmp:StairClimberData a skos:Concept .
+ftmp:RowerData a skos:Concept .
+ftmp:IndoorBikeData a skos:Concept .
+ftmp:TrainingStatus a skos:Concept .
+ftmp:SupportedSpeedRange a skos:Concept .
+ftmp:SupportedInclinationRange a skos:Concept .
+ftmp:SupportedResistanceLevelRange a skos:Concept .
+ftmp:SupportedPowerRange a skos:Concept .
+ftmp:SupportedHeartRateRange a skos:Concept .
+ftmp:FitnessMachineControlPoint a skos:Concept .
+ftmp:FitnessMachineStatus a skos:Concept .
+
+
+
+ftmp:FitnessMachineProfile rdfs:label "Fitness Machine Profile" .
+ftmp:FitnessMachineProfile rdfs:seeAlso <https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=423417> .
+ftmp:FitnessMachineProfile skos:definition "The Fitness Machine Profile is used to enable a data collection device to obtain data from a Fitness Machine that exposes the Fitness Machine Service." .
+ftmp:FitnessMachineProfile owl:versionInfo "1.0" .
+
+
+ble:Profile skos:narrower ftmp:FitnessMachineProfile .
+ble:Service skos:narrower ftmp:FitnessMachineService .
+
+
+ftmp:FitnessMachineProfile skos:related ftmp:FitnessMachineService .
+ftmp:FitnessMachineProfile skos:related ble:UserDataService .
+ftmp:FitnessMachineProfile skos:related ble:DeviceInformationService .
+
+ftmp:FitnessMachineService rdfs:label "Fitness Machine Service" .
+ftmp:FitnessMachineService  rdfs:seeAlso <https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=423422> .
+ftmp:FitnessMachineService skos:definition "The Fitness Machine Service (FTMS) exposes training-related data in the sports and fitness environment, which allows a Client to collect training data while a user is exercising with a fitness machine (Server)." .
+ftmp:FitnessMachineService owl:versionInfo "1.0" .
+
+ble:Characteristic skos:narrower ftmp:FitnessMachineFeature .
+ble:Characteristic skos:narrower ftmp:TreadmillData.
+ble:Characteristic skos:narrower ftmp:CrossTrainerData .
+ble:Characteristic skos:narrower ftmp:StepClimberData .
+ble:Characteristic skos:narrower ftmp:StairClimberData .
+ble:Characteristic skos:narrower ftmp:RowerData .
+ble:Characteristic skos:narrower ftmp:IndoorBikeData .
+ble:Characteristic skos:narrower ftmp:TrainingStatus .
+ble:Characteristic skos:narrower ftmp:SupportedSpeedRange .
+ble:Characteristic skos:narrower ftmp:SupportedInclinationRange.
+ble:Characteristic skos:narrower ftmp:SupportedResistanceLevelRange .
+ble:Characteristic skos:narrower ftmp:SupportedPowerRange .
+ble:Characteristic skos:narrower ftmp:SupportedHeartRateRange .
+ble:Characteristic skos:narrower ftmp:FitnessMachineControlPoint .
+ble:Characteristic skos:narrower ftmp:FitnessMachineStatus .
+
+ftmp:FitnessMachineService skos:related ftmp:FitnessMachineFeature .
+ftmp:FitnessMachineService skos:related ftmp:TreadmillData.
+ftmp:FitnessMachineService skos:related ftmp:CrossTrainerData .
+ftmp:FitnessMachineService skos:related ftmp:StepClimberData .
+ftmp:FitnessMachineService skos:related ftmp:StairClimberData .
+ftmp:FitnessMachineService skos:related ftmp:RowerData .
+ftmp:FitnessMachineService skos:related ftmp:IndoorBikeData .
+ftmp:FitnessMachineService skos:related ftmp:TrainingStatus .
+ftmp:FitnessMachineService skos:related ftmp:SupportedSpeedRange .
+ftmp:FitnessMachineService skos:related ftmp:SupportedInclinationRange.
+ftmp:FitnessMachineService skos:related ftmp:SupportedResistanceLevelRange .
+ftmp:FitnessMachineService skos:related ftmp:SupportedPowerRange .
+ftmp:FitnessMachineService skos:related ftmp:SupportedHeartRateRange .
+ftmp:FitnessMachineService skos:related ftmp:FitnessMachineControlPoint .
+ftmp:FitnessMachineService skos:related ftmp:FitnessMachineStatus .
+
+ftmp:FitnessMachineFeature rdfs:label "Fitness Machine Feature" .
+ftmp:TreadmillData rdfs:label "Treadmill Data" .
+ftmp:CrossTrainerData rdfs:label "Cross Trainer Data" .
+ftmp:StepClimberData rdfs:label "Step Climber Data" .
+ftmp:StairClimberData rdfs:label "Stair Climber Data" .
+ftmp:RowerData rdfs:label "Rower Data" .
+ftmp:IndoorBikeData rdfs:label "Indoor Bike Data" .
+ftmp:TrainingStatus rdfs:label "Training Status" .
+ftmp:SupportedSpeedRange rdfs:label "Supported Speed Range" .
+ftmp:SupportedInclinationRange rdfs:label "Supported Inclination Range" .
+ftmp:SupportedResistanceLevelRange rdfs:label "Supported Resistance Level Range" .
+ftmp:SupportedPowerRange rdfs:label "Supported Power Range" .
+ftmp:SupportedHeartRateRange rdfs:label "Supported Heart Rate Range".
+ftmp:FitnessMachineControlPoint rdfs:label "Fitness Machine Control Point" .
+ftmp:FitnessMachineStatus rdfs:label "Fitness Machine Status" .
+
+
+
+ftmp:FitnessMachineFeature skos:definition "The Fitness Machine Feature characteristic shall be used to describe the supported features of the Server." .
+ftmp:TreadmillData skos:definition "The Treadmill Data characteristic is used to send training-related data to the Client from a treadmill (Server)." .
+ftmp:CrossTrainerData skos:definition "The Cross Trainer Data characteristic is used to send training-related data to the Client from a cross trainer (Server)." .
+ftmp:StepClimberData skos:definition "The Step Climber Data characteristic is used to send training-related data to the Client from a step climber (Server)." .
+ftmp:StairClimberData skos:definition "The Stair Climber Data characteristic is used to send training-related data to the Client from a stair climber (Server)." .
+ftmp:RowerData skos:definition "The Rower Data characteristic is used to send training-related data to the Client from a rower (Server)." .
+ftmp:IndoorBikeData skos:definition "The Indoor Bike Data characteristic is used to send training-related data to the Client from an indoor bike (Server)." .
+ftmp:TrainingStatus skos:definition "The Training Status characteristic shall be used by the Server to send the training status information to the Client." .
+ftmp:SupportedSpeedRange skos:definition "The Supported Speed Range characteristic is used to send the supported speed range as well as the minimum speed increment supported by the Server." .
+ftmp:SupportedInclinationRange skos:definition "The Supported Inclination Range characteristic is used to send the supported inclination range as well as the minimum inclination increment supported by the Server." .
+ftmp:SupportedResistanceLevelRange skos:definition "The Supported Resistance Level Range characteristic is used to send the supported resistance level range as well as the minimum resistance increment supported by the Server." .
+ftmp:SupportedPowerRange skos:definition "The Supported Power Range characteristic is used to send the supported power range as well as the minimum power increment supported by the Server." .
+ftmp:SupportedHeartRateRange skos:definition "The Supported Heart Rate Range characteristic is used to send the supported Heart Rate range as well as the minimum Heart Rate increment supported by the Server." .
+ftmp:FitnessMachineControlPoint skos:definition "The Fitness Machine Control Point characteristic is used to request a specific function to be executed on the Server." .
+ftmp:FitnessMachineStatus skos:definition "The Fitness Machine Status characteristic is used to send the status of the Server." .
+
+
+
+
+
+
+
+
+
+
+

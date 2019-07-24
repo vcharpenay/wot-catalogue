@@ -1,0 +1,77 @@
+@prefix cgmp: <http://example.org/namespace/ble-gatt/cgmp#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+cgmp:ContinuousGlucoseMonitoringProfile a skos:Concept .
+cgmp:cgmpService a skos:Concept .
+cgmp:cgmpService a skos:Concept . 
+cgmp:cgmpMeasurement a skos:Concept .
+cgmp:cgmpFeature a skos:Concept .
+cgmp:cgmpStatus a skos:Concept .
+cgmp:cgmpSessionStartTime a skos:Concept .
+cgmp:cgmpSessionRunTime a skos:Concept .
+cgmp:cgmpSpecificOpsControlPoint a skos:Concept .
+
+
+cgmp:ContinuousGlucoseMonitoringProfile rdfs:label "Continuous Glucose Monitoring Profile" .
+cgmp:ContinuousGlucoseMonitoringProfile rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=310501> .
+cgmp:ContinuousGlucoseMonitoringProfile skos:definition "The cgmp Profile is used to enable a device to obtain glucose measurement and other data from a cgmp Sensor that exposes the cgmp Service." .
+cgmp:ContinuousGlucoseMonitoringProfile owl:versionInfo "1.0.1" .
+
+
+ble:Profile skos:narrower cgmp:ContinuousGlucoseMonitoringProfile .
+cgmp:ContinuousGlucoseMonitoringProfile  skos:related cgmp:cgmpService .
+cgmp:ContinuousGlucoseMonitoringProfile  skos:related ble:BondManagementService . 
+cgmp:ContinuousGlucoseMonitoringProfile  skos:related ble:DeviceInformationService .
+
+ble:Service skos:narrower cgmp:cgmpService .
+
+
+cgmp:cgmpService rdfs:label "Continuous Glucose Monitoring Service" .
+cgmp:cgmpService skos:definition "The Continuous Glucose Monitoring (cgmp) Service exposes glucose measurement and other data related to a personal cgmp sensor for healthcare applications." .
+cgmp:cgmpService owl:versionInfo "1.0".
+cgmp:cgmpService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=310502> .
+
+ble:Characteristic skos:narrower cgmp:cgmpMeasurement .
+ble:Characteristic skos:narrower cgmp:cgmpFeature . 
+ble:Characteristic skos:narrower cgmp:cgmpStatus . 
+ble:Characteristic skos:narrower cgmp:cgmpSessionStartTime . 
+ble:Characteristic skos:narrower cgmp:cgmpSessionRunTime .
+ble:Characteristic skos:narrower ble:RecordAccessControlPoint . 
+ble:Characteristic skos:narrower cgmp:cgmpSpecificOpsControlPoint .
+
+cgmp:cgmpService skos:related cgmp:cgmpMeasurement .
+cgmp:cgmpService skos:related cgmp:cgmpFeature . 
+cgmp:cgmpService skos:related cgmp:cgmpStatus . 
+cgmp:cgmpService skos:related cgmp:cgmpSessionStartTime . 
+cgmp:cgmpService skos:related cgmp:cgmpSessionRunTime  .
+cgmp:cgmpService skos:related ble:RecordAccessControlPoint . 
+cgmp:cgmpService skos:related cgmp:cgmpSpecificOpsControlPoint .
+
+
+
+cgmp:cgmpMeasurement rdfs:label "GCM Measurement".
+cgmp:cgmpFeature rdfs:label "cgmp Feature". 
+cgmp:cgmpStatus rdfs:label "cgmp Status cgmp Status" . 
+cgmp:cgmpSessionStartTime rdfs:label "cgmp Session Start Time". 
+cgmp:cgmpSessionRunTime rdfs:label "cgmp Session Run Time" .
+cgmp:cgmpSpecificOpsControlPoint rdfs:label "cgmp Specific Ops Control Point" .
+
+cgmp:cgmpMeasurement skos:definition "The cgmp Measurement characteristic is a variable length structure containing one or more cgmp Measurement records.".
+cgmp:cgmpFeature skos:definition "The cgmp Feature characteristic is used to describe the supported features of the Server.". 
+cgmp:cgmpStatus skos:definition "The cgmp Status allows the client to actively request the status from the cgmp Sensor, particularly when the cgmp measurement is not running and the status cannot be given in the measurement result in the Status Annunciation Field.". 
+cgmp:cgmpSessionStartTime skos:definition "The Session Start Time Field defines the time of the initial cgmp measurement." . 
+cgmp:cgmpSessionRunTime skos:definition "The cgmp Session Run Time shall define the expected run time of the cgmp session.".
+cgmp:cgmpSpecificOpsControlPoint skos:definition "The Client shall perform a write to the cgmp Specific Ops Control Point to request a desired cgmp specific procedure at the Server.".
+
+
+
+
+
+
+
+

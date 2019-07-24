@@ -1,0 +1,48 @@
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix bacnet: <http://bacowl.sourceforge.net/2012/bacnet#>
+
+# source: http://bacowl.sourceforge.net/
+
+construct {
+  ?obj a skos:Concept .
+  ?upperObj skos:narrower ?obj .
+  ?prop a skos:Concept .
+  ?upperProp skos:narrower ?prop .
+  ?obj skos:related ?prop .
+  ?prop skos:related ?dt .
+  
+  ?service a skos:Concept .
+  bacnet:ServicesSupported skos:narrower ?service .
+} where {
+  {
+    ?obj rdfs:subClassOf+ bacnet:Object ;
+         rdfs:subClassOf ?upperObj .
+    ?prop rdfs:subPropertyOf+ bacnet:Property ;
+          rdfs:subPropertyOf ?upperProp ;
+		  rdfs:domain ?obj ;
+          rdfs:range ?propType .
+    optional {
+      ?propType rdfs:subClassOf ?valRestriction .
+      ?valRestriction a owl:Restriction ;
+                      owl:onProperty rdf:value ;
+                      owl:someValuesFrom ?complexDt .
+      ?complexDt a rdfs:Datatype ;
+                 owl:onDatatype ?xsd .
+    }
+    bind (if(bound(?xsd), ?xsd, ?propType) as ?dt)
+  }
+  union
+  {
+    bacnet:ServicesSupported rdfs:subClassOf ?listRestriction .
+    ?listRestriction a owl:Restriction ;
+                     owl:onProperty skos:member ;
+                     owl:someValuesFrom ?oneOf .
+    ?oneOf a owl:Class ;
+           owl:oneOf ?list .
+    ?list rdf:rest*/rdf:first ?service .
+  }
+}

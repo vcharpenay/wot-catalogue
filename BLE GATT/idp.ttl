@@ -1,0 +1,86 @@
+@prefix idp: <http://example.org/namespace/ble-gatt/idp#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+idp:InsulinDeliveryProfile a skos:Concept .
+idp:InsulinDeliveryService a skos:Concept .
+idp:IDDStatusChanged a skos:Concept .
+idp:IDDStatus a skos:Concept .
+idp:IDDAnnunciationStatus a skos:Concept .
+idp:IDDFeatures a skos:Concept .
+idp:IDDStatusReaderControlPoint a skos:Concept .
+idp:IDDCommandData a skos:Concept .
+idp:IDDCommandControlPoint a skos:Concept .
+idp:IDDRecordAccessControlPoint a skos:Concept .
+idp:IDDHistoryData a skos:Concept .
+
+idp:InsulinDeliveryProfile  rdfs:label "Insulin Delivery Profile" .
+idp:InsulinDeliveryProfile skos:editorialNote "Not found yet, require membership ro get access." .
+idp:InsulinDeliveryProfile owl:versionInfo "1.0" .
+
+
+ble:Profile skos:narrower idp:InsulinDeliveryProfile .
+ble:Service skos:narrower idp:InsulinDeliveryService.
+
+idp:InsulinDeliveryProfile skos:related idp:InsulinDeliveryService .
+
+idp:InsulinDeliveryService  rdfs:label "Insulin Delivery Service" .
+idp:InsulinDeliveryService rdfs:seeAlso <https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=447826> .
+idp:InsulinDeliveryService skos:definition "The Insulin Delivery Service (IDS) exposes the control capability and the status of an Insulin Delivery Device running an insulin infusion therapy." .
+idp:InsulinDeliveryService  owl:versionInfo "1.0" .
+
+
+idp:InsulinDeliveryService skos:related idp:IDDStatusChanged .
+idp:InsulinDeliveryService skos:related idp:IDDStatus .
+idp:InsulinDeliveryService skos:related idp:IDDAnnunciationStatus .
+idp:InsulinDeliveryService skos:related idp:IDDFeatures .
+idp:InsulinDeliveryService skos:related idp:IDDStatusReaderControlPoint .
+idp:InsulinDeliveryService skos:related idp:IDDCommandControlPoint .
+idp:InsulinDeliveryService skos:related idp:IDDCommandData.
+idp:InsulinDeliveryService skos:related idp:IDDRecordAccessControlPoint .
+idp:InsulinDeliveryService skos:related idp:IDDHistoryData .
+
+ble:Characteristic skos:narrower  idp:IDDStatusChanged .
+ble:Characteristic skos:narrower  idp:IDDStatus .
+ble:Characteristic skos:narrower  idp:IDDAnnunciationStatus .
+ble:Characteristic skos:narrower  idp:IDDFeatures .
+ble:Characteristic skos:narrower  idp:IDDStatusReaderControlPoint .
+ble:Characteristic skos:narrower  idp:IDDCommandData .
+ble:Characteristic skos:narrower  idp:IDDCommandControlPoint .
+ble:Characteristic skos:narrower  idp:IDDRecordAccessControlPoint .
+ble:Characteristic skos:narrower  idp:IDDHistoryData .
+
+idp:IDDStatusChanged rdfs:label "Insulin Delivery Device Status Changed" .
+idp:IDDStatusChanged skos:definition "The IDD Status Changed characteristic is comprised of status changes of the insulin therapy and the Insulin Delivery Device." .
+
+idp:IDDStatus rdfs:label "Insulin Delivery Device Status" .
+idp:IDDStatus skos:definition "The IDD Status characteristic is comprised of status values of the Insulin Delivery Device and the insulin therapy." .
+
+idp:IDDAnnunciationStatus rdfs:label "Insulin Delivery Device Annunciation Status" .
+idp:IDDAnnunciationStatus skos:definition "The IDD Annunciation Status characteristic is a variable length structure comprising of messages that describe state changes of the Insulin Delivery Device and in the therapy relevant functions." .
+
+idp:IDDFeatures rdfs:label "Insulin Delivery Device Feature" .
+idp:IDDFeatures skos:definition "The IDD Features characteristic shall be used to describe the supported features of the Server." . 
+
+idp:IDDStatusReaderControlPoint rdfs:label "Insulin Delivery Device Status Reader Control Point" .
+idp:IDDStatusReaderControlPoint skos:definition "The IDD Status Reader Control Point provides insulin therapy relevant status information (e.g., currently running boluses or current basal rate)." .
+
+idp:IDDCommandControlPoint  rdfs:label "Insulin Delivery Device Command Control Point" . 
+idp:IDDCommandControlPoint  skos:definition "The IDD Command Control Point provides procedures to support the insulin therapy by adapting therapy parameters to operate the insulin therapy remotely and to perform a remote operation of the device maintenance." .
+
+idp:IDDCommandData  rdfs:label "Insulin Delivery Device Command Data" . 
+idp:IDDCommandData  skos:definition "The IDD Command Data characteristic is comprised of response records from executed procedures of the IDD Command Control Point." .
+
+idp:IDDRecordAccessControlPoint rdfs:label "Insulin Delivery Device Record Access Control Point" .
+idp:IDDRecordAccessControlPoint skos:definition "This control point is used by the Insulin Delivery Service to provide basic management functionality of the history database of the Insulin Delivery Device including historical data of the insulin therapy, device state changes, and annunciations." .
+
+idp:IDDHistoryData rdfs:label "Insulin Delivery Device History Data" .
+idp:IDDHistoryData skos:definition "The IDD History Data characteristic is comprised of response records from executed procedures of the IDD Record Access Control Point." .
+
+
+
+

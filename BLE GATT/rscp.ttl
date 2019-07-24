@@ -1,0 +1,43 @@
+@prefix rscp: <http://example.org/namespace/ble-gatt/rscp#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rscp:RunningSpeedandCadenceProfile a skos:Concept .
+rscp:RunningSpeedandCadenceService a skos:Concept .
+rscp:RSCMeasurement a skos:Concept .
+rscp:RSCFeature a skos:Concept .
+
+rscp:RunningSpeedandCadenceProfile rdfs:label "Running Speed and Cadence Profile" .
+rscp:RunningSpeedandCadenceProfile rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=261266> .
+rscp:RunningSpeedandCadenceProfile skos:definition "TThe Running Speed and Cadence Profile is used to enable a data collection device to obtain data from a Running Speed and Cadence Sensor (RSC Sensor) that exposes the Running Speed and Cadence Service." .
+rscp:RunningSpeedandCadenceProfile owl:versionInfo "1.0" .
+
+
+rscp:RunningSpeedandCadenceService rdfs:label "Running Speed and Cadence Service" .
+rscp:RunningSpeedandCadenceService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=261265> .
+rscp:RunningSpeedandCadenceService skos:definition "This service exposes speed, cadence and other data from a Running Speed and Cadence sensor intended for fitness applications." .
+rscp:RunningSpeedandCadenceService owl:versionInfo "1.0" .
+
+
+ble:Profile skos:narrower rscp:RunningSpeedandCadenceProfile .
+ble:Service skos:narrower rscp:RunningSpeedandCadenceService .
+
+rscp:RunningSpeedandCadenceProfile skos:related rscp:RunningSpeedandCadenceService .
+rscp:RunningSpeedandCadenceProfile skos:related ble:DeviceInformationService.
+
+ble:Characteristic skos:narrower rscp:RSCMeasurement .
+ble:Characteristic skos:narrower rscp:RSCFeature .
+
+rscp:RunningSpeedandCadenceService skos:related rscp:RSCMeasurement .
+rscp:RunningSpeedandCadenceService skos:related rscp:RSCFeature .
+rscp:RunningSpeedandCadenceService skos:related ble:SensorLocation .
+rscp:RunningSpeedandCadenceService skos:related ble:SCControlPoint .
+
+rscp:RSCMeasurement rdfs:label "Running Speed and Cadence Measurement" .
+rscp:RSCFeature rdfs:label "Running Speed and Cadence Feature" .
+
+rscp:RSCMeasurement skos:definition "The RSC Measurement characteristic is used to send speed and cadence measurements." .
+rscp:RSCFeature  skos:definition "The RSC Feature characteristic shall be used to describe the supported features of the Server." .

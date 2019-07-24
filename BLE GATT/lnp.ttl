@@ -1,0 +1,59 @@
+@prefix lnp: <http://example.org/namespace/ble-gatt/lnp#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+lnp:LocationandNavigationProfile a skos:Concept .
+lnp:LocationandNavigationService a skos:Concept .
+lnp:LNFeature a skos:Concept .
+lnp:LocationandSpeed a skos:Concept .
+lnp:PositionQuality a skos:Concept .
+lnp:LNControlPoint a skos:Concept .
+lnp:Navigation a skos:Concept .
+
+
+
+lnp:LocationandNavigationProfile rdfs:label "Location and Navigation Profile" .
+lnp:LocationandNavigationProfile rdfs:seeAlso <https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=271996> .
+lnp:LocationandNavigationProfile skos:definition "This profile enables a Collector device to connect and interact with a Location and Navigation Sensor for use in outdoor activity applications." .
+lnp:LocationandNavigationProfile  owl:versionInfo "1.0" .
+
+ble:Profile skos:narrower lnp:LocationandNavigationProfile .
+ble:Service skos:narrower lnp:LocationandNavigationService .
+
+lnp:LocationandNavigationProfile skos:related lnp:LocationandNavigationService .
+lnp:LocationandNavigationProfile skos:related ble:DeviceInformationService .
+lnp:LocationandNavigationProfile skos:related ble:BatteryService .
+
+lnp:LocationandNavigationService rdfs:label "Location and Navigation (LN) Service" .
+lnp:LocationandNavigationService rdfs:seeAlso <https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=271997> .
+lnp:LocationandNavigationService skos:definition "The Location and Navigation Service (LN Service) exposes location and navigation-related data from a Location and Navigation sensor (Server) intended for outdoor activity applications." .
+lnp:LocationandNavigationService  owl:versionInfo "1.0" .
+
+ble:Characteristic skos:narrower lnp:LNFeature .
+ble:Characteristic skos:narrower lnp:LocationandSpeed .
+ble:Characteristic skos:narrower lnp:PositionQuality .
+ble:Characteristic skos:narrower lnp:LNControlPoint .
+ble:Characteristic skos:narrower lnp:Navigation .
+
+lnp:LocationandNavigationService skos:related lnp:LNFeature .
+lnp:LocationandNavigationService skos:related lnp:LocationandSpeed .
+lnp:LocationandNavigationService skos:related lnp:PositionQuality .
+lnp:LocationandNavigationService skos:related lnp:LNControlPoint .
+lnp:LocationandNavigationService skos:related lnp:Navigation .
+
+lnp:LNFeature rdfs:label "Location and Navigation Feature" .
+lnp:LocationandSpeed rdfs:label "Location and Speed" .
+lnp:PositionQuality rdfs:label "Position Quality" .
+lnp:LNControlPoint rdfs:label "Location and Navigation Control Point".
+lnp:Navigation rdfs:label "Navigation" .
+
+
+lnp:LNFeature skos:definition "The LN Feature characteristic shall be used to describe the supported features of the Server." .
+lnp:LocationandSpeed skos:definition "The Location and Speed characteristic is used to send location and speed related data." .
+lnp:PositionQuality skos:definition "The Position Quality characteristic is used to send position quality-related data" .
+lnp:LNControlPoint skos:definition "The LN Control Point is used by a Client to control certain behaviors of the Server." .
+lnp:Navigation skos:definition "The Navigation characteristic is used to send navigation-related data." .

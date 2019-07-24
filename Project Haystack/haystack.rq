@@ -1,0 +1,31 @@
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix ph: <https://project-haystack.org/def/ph/3.9.5#> 
+prefix phIct: <https://project-haystack.org/def/phIct/3.9.5#> 
+prefix phScience: <https://project-haystack.org/def/phScience/3.9.5#> 
+prefix phIoT: <https://project-haystack.org/def/phIoT/3.9.5#> 
+
+# source: https://project-haystack.dev/ (see also .org)
+
+construct {
+  ?marker a skos:Concept ;
+          rdfs:label ?label ;
+          skos:definition ?def ;
+          rdfs:seeAlso ?source .
+  ?parent skos:narrower ?marker .
+} where {
+  ?marker rdfs:subClassOf+ ph:marker ;
+          rdfs:label ?label ;
+          rdfs:comment ?def .
+  optional {
+    ?marker rdfs:subClassOf ?parent .
+    filter (?parent != ph:marker)
+  }
+  optional {
+    ?marker ph:wikipedia ?url .
+    bind (iri(str(?url)) as ?source)
+  }
+}

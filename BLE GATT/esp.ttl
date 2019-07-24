@@ -1,0 +1,44 @@
+@prefix esp: <http://example.org/namespace/ble-gatt/esp#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+esp:EnvironmentalSensingProfile a skos:Concept .
+esp:EnvironmentalSensingService  a skos:Concept .
+esp:ESSCharacteristic a skos:Concept .
+esp:DescriptorValueChanged a skos:Concept .
+
+esp:EnvironmentalSensingProfile  rdfs:label "Environmental Sensing Profile" .
+esp:EnvironmentalSensingProfile rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=294796> .
+esp:EnvironmentalSensingProfile skos:definition "The Cycling Speed and Cadence Profile is used to enable a data collection device to obtain data from a Cycling Speed and Cadence Sensor (CSC Sensor) that exposes the Cycling Speed and Cadence Service." .
+esp:EnvironmentalSensingProfile owl:versionInfo "1.0.0" .
+
+
+ble:Profile skos:narrower esp:EnvironmentalSensingProfile .
+ble:Service skos:narrower esp:EnvironmentalSensingService .
+
+esp:EnvironmentalSensingProfile skos:related esp:EnvironmentalSensingService .
+esp:EnvironmentalSensingProfile skos:related ble:DeviceInformationService .
+esp:EnvironmentalSensingProfile skos:related ble:BatteryService.
+
+esp:EnvironmentalSensingService rdfs:label "Environmental Sensing Service" .
+esp:EnvironmentalSensingService owl:versionInfo "1.0.0" .
+esp:EnvironmentalSensingService skos:definition "The Environmental Sensing Service (ESS) exposes measurement data from an environmental sensor intended for sports and fitness applications." .
+esp:EnvironmentalSensingService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=294797> .
+
+
+ble:Characteristic skos:narrower esp:ESSCharacteristic.
+ble:Characteristic skos:narrower esp:DescriptorValueChanged .
+
+esp:EnvironmentalSensingService skos:related esp:ESSCharacteristic.
+esp:EnvironmentalSensingService skos:related esp:DescriptorValueChanged .
+
+
+esp:ESSCharacteristic rdfs:label "Environmental Sensing Service Characteristic" .
+esp:ESSCharacteristic skos:definition "ESS Characteristics have been identified as being time-sensitive characteristics." .
+
+esp:DescriptorValueChanged rdfs:label "Descriptor Value Changed" .
+esp:DescriptorValueChanged skos:definition "It enables a Server to alert bonded Clients that the value of one or more ESS-related descriptors for a given ESS Characteristic have changed and need to be re-read" .
+

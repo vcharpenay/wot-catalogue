@@ -1,0 +1,53 @@
+@prefix plxp: <http://example.org/namespace/ble-gatt/plxp#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+plxp:PulseOximeterProfile a skos:Concept .
+plxp:PulseOximeterService a skos:Concept .
+plxp:PLXSpotcheckMeasurement a skos:Concept .
+plxp:PLXContinuousMeasurement a skos:Concept .
+plxp:PLXFeatures a skos:Concept .
+
+plxp:PulseOximeterProfile rdfs:label "Pulse Oximeter Profile" .
+plxp:PulseOximeterProfile rdfs:seeAlso <https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=304923> .
+plxp:PulseOximeterProfile skos:definition "This Profile Specification defines a Pulse Oximeter (PLX) profile that enables a Collector device to connect and interact with a pulse oximeter intended for healthcare applications." .
+plxp:PulseOximeterProfile owl:versionInfo "1.0" .
+
+ble:Profile skos:narrower plxp:PulseOximeterProfile .
+plxp:PulseOximeterProfile skos:related plxp:PulseOximeterService .
+plxp:PulseOximeterProfile skos:related ble:DeviceInformationService .
+plxp:PulseOximeterProfile skos:related ble:BondManagementService .
+plxp:PulseOximeterProfile skos:related ble:CurrentTimeService .
+plxp:PulseOximeterProfile skos:related ble:BatteryService .
+
+
+ble:Service skos:narrower plxp:PulseOximeterService  .
+
+plxp:PulseOximeterService rdfs:label "Pulse Oximeter Service" .
+plxp:PulseOximeterService rdfs:seeAlso <https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=304965> .
+plxp:PulseOximeterService skos:definition "This Service specification defines a pulse oximetry sensor for use in consumer and professional healthcare applications." .
+plxp:PulseOximeterService owl:versionInfo "1.0" .
+
+ble:Characteristic skos:narrower  plxp:PLXSpotcheckMeasurement .
+ble:Characteristic skos:narrower  plxp:PLXContinuousMeasurement .
+ble:Characteristic skos:narrower  plxp:PLXFeatures .
+ble:Characteristic skos:narrower  ble:RecordAccessControlPoint .
+
+plxp:PulseOximeterService skos:related plxp:PLXSpotcheckMeasurement  .
+plxp:PulseOximeterService skos:related plxp:PLXContinuousMeasurement .
+plxp:PulseOximeterService skos:related plxp:PLXFeatures .
+plxp:PulseOximeterService skos:related ble:RecordAccessControlPoint .
+
+
+plxp:PLXSpotcheckMeasurement rdfs:label "Pulse Oximeter Spot-check Measurement" .
+plxp:PLXContinuousMeasurement rdfs:label "Pulse Oximeter Continuous Measurement".
+plxp:PLXFeatures rdfs:label "Pulse Oximeter Feature" .
+
+plxp:PLXSpotcheckMeasurement skos:definition "The PLX Spot-check Measurement characteristic, if supported, shall be used to send Spot-check measurements of SpO2 (Percent oxygen saturation of hemoglobin) and PR (pulse rate).".
+plxp:PLXContinuousMeasurement skos:definition "The PLX Continuous Measurement characteristic, if supported, shall be used to send periodic pulse oximetry measurements." .
+plxp:PLXFeatures skos:definition "The PLX Features characteristic shall be used to describe the supported features of the Server." .
+

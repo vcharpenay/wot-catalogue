@@ -1,0 +1,62 @@
+@prefix cpp: <http://example.org/namespace/ble-gatt/cpp#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+cpp:CyclingPowerProfile a skos:Concept .
+cpp:CyclingPowerService  a skos:Concept .
+cpp:CyclingPowerVector a skos:Concept .
+cpp:CyclingPowerControlPoint a skos:Concept .
+cpp:CyclingPowerMeasurement a skos:Concept .
+cpp:CyclingPowerFeature a skos:Concept .
+
+
+cpp:CyclingPowerProfile rdfs:label "Cycling Power Profile" .
+cpp:CyclingPowerProfile rdfs:seeAlso <https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=412769> .
+cpp:CyclingPowerProfile skos:definition "The Cycling Power Profile is used to enable a data collection device to obtain data from a Cycling Power Sensor (CP Sensor) that exposes the Cycling Power Service.".
+cpp:CyclingPowerProfile owl:version "1.1" .
+
+ble:Profile skos:narrower cpp:CyclingPowerProfile .
+ble:Service skos:narrower cpp:CyclingPowerService .
+
+
+cpp:CyclingPowerProfile skos:related cpp:CyclingPowerService .
+cpp:CyclingPowerProfile skos:related ble:DeviceInformationService .
+cpp:CyclingPowerProfile skos:related ble:BatteryService .
+
+cpp:CyclingPowerService rdfs:label "Cycling Power Service" .
+cpp:CyclingPowerService skos:definition "The Cycling Power (CP) Service exposes power- and force-related data and optionally speed- and cadence-related data from a Cycling Power sensor (Server) intended for sports and fitness applications." .
+cpp:CyclingPowerService rdfs:seeAlso <https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=412770> .
+cpp:CyclingPowerService owl:version "1.1" .
+
+cpp:CyclingPowerService skos:related cpp:CyclingPowerFeature .
+cpp:CyclingPowerService skos:related cpp:CyclingPowerMeasurement . 
+cpp:CyclingPowerService skos:related ble:SensorLocation .
+cpp:CyclingPowerService skos:related cpp:CyclingPowerControlPoint .
+cpp:CyclingPowerService skos:related cpp:CyclingPowerVector .
+
+
+ble:Characteristic skos:narrower cpp:CyclingPowerVector .
+ble:Characteristic skos:narrower cpp:CyclingPowerControlPoint .
+ble:Characteristic skos:narrower ble:SensorLocation .
+ble:Characteristic skos:narrower cpp:CyclingPowerMeasurement .
+ble:Characteristic skos:narrower cpp:CyclingPowerFeature .
+
+cpp:CyclingPowerVector rdfs:label "Cycling Power Vector" .
+cpp:CyclingPowerControlPoint rdfs:label "Cycling Power Control Point" .
+cpp:CyclingPowerMeasurement rdfs:label "Cycling Power Measurement" .
+cpp:CyclingPowerFeature rdfs:label "Cycling Power Feature" .
+
+
+cpp:CyclingPowerControlPoint skos:definition "The Cycling Power Control Point is used by a Client to control certain behaviors of the Server." .
+cpp:CyclingPowerMeasurement skos:definition "The Cycling Power Measurement characteristic is used to send power-related data, speedrelated data, and/or cadence-related data." .
+cpp:CyclingPowerFeature skos:definition "The Cycling Power Feature characteristic shall be used to describe the supported features of the Server." .
+cpp:CyclingPowerVector skos:definition "The Cycling Power Vector characteristic is used to send raw data (either force or torque)." .
+
+
+
+
+

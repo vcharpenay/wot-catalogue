@@ -1,0 +1,45 @@
+@prefix cscp: <http://example.org/namespace/ble-gatt/cscp#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cscp:CyclingSpeedandCadenceProfile a skos:Concept .
+cscp:CyclingSpeedandCadenceService a skos:Concept .
+cscp:CSCMeasurement a skos:Concept .
+cscp:CSCFeature a skos:Concept .
+
+cscp:CyclingSpeedandCadenceProfile  rdfs:label "Cycling Speed and Cadence Profile" .
+cscp:CyclingSpeedandCadenceProfile rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=261449> .
+cscp:CyclingSpeedandCadenceProfile skos:definition "The Cycling Speed and Cadence Profile is used to enable a data collection device to obtain data from a Cycling Speed and Cadence Sensor (CSC Sensor) that exposes the Cycling Speed and Cadence Service." .
+cscp:CyclingSpeedandCadenceProfile owl:versionInfo "1.0" .
+
+ble:Profile skos:narrower cscp:CyclingSpeedandCadenceProfile .
+ble:Service skos:narrower cscp:CyclingSpeedandCadenceService .
+
+cscp:CyclingSpeedandCadenceProfile skos:related cscp:CyclingSpeedandCadenceService .
+cscp:CyclingSpeedandCadenceProfile skos:related ble:DeviceInformationService .
+
+
+cscp:CyclingSpeedandCadenceService rdfs:label "Cycling Speed and Cadence Service" .
+cscp:CyclingSpeedandCadenceService skos:definition "The Cycling Speed and Cadence (CSC) Service exposes speed-related data and/or cadence-related data while using the Cycling Speed and Cadence sensor (Server)." .
+cscp:CyclingSpeedandCadenceService owl:versionInfo "1.0" .
+cscp:CyclingSpeedandCadenceService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=261450> .
+
+ble:Characteristic skos:narrower cscp:CSCMeasurement .
+ble:Characteristic skos:narrower cscp:CSCFeature .
+
+cscp:CyclingSpeedandCadenceService skos:related cscp:CSCMeasurement .
+cscp:CyclingSpeedandCadenceService skos:related cscp:CSCFeature .
+cscp:CyclingSpeedandCadenceService skos:related ble:SensorLocation .
+cscp:CyclingSpeedandCadenceService skos:related ble:SCControlPoint .
+
+
+cscp:CSCMeasurement rdfs:label "Cycling Speed and Cadence Measurement" .
+cscp:CSCMeasurement skos:definition "The CSC Measurement characteristic is used to send speed-related data and/or cadence-related data." .
+
+cscp:CSCFeature rdfs:label "Cycling Speed and Cadence Feature" .
+cscp:CSCFeature skos:definition "The CSC Feature characteristic shall be used to describe the supported features of the Server." .
+
+

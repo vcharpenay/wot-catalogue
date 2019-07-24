@@ -1,0 +1,44 @@
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix lwm2m: <http://openmobilealliance.org/tech/profiles/LWM2M#>
+
+# source: https://github.com/vcharpenay/wot-cloud/
+
+construct {
+  ?obj a skos:Concept ;
+       rdfs:label ?objLabel ;
+       skos:definition ?objDef .
+  lwm2m:IPSOObject skos:narrower ?obj .
+  ?res a skos:Concept ;
+       rdfs:label ?resLabel ;
+       skos:definition ?resDef .
+  lwm2m:IPSOResource skos:narrower ?res .
+  ?obj skos:related ?res .
+  ?res skos:related ?op, ?xsdDt .
+} where {
+  ?obj rdfs:subClassOf lwm2m:IPSOObject ;
+     lwm2m:name ?objLabel ;
+     lwm2m:description1 ?objDef ;
+     rdfs:subClassOf ?resRestriction .
+  ?resRestriction a owl:Restriction ;
+                  owl:onProperty lwm2m:e ;
+                  owl:allValuesFrom ?res .
+  ?res rdfs:subClassOf lwm2m:IPSOResource ;
+       lwm2m:name ?resLabel ;
+       lwm2m:description ?resDef ;
+       rdfs:subClassOf ?opRestriction, ?dtRestriction .
+  ?opRestriction a owl:Restriction ;
+                 owl:onProperty lwm2m:operation ;
+                 owl:hasValue ?op .
+  ?dtRestriction a owl:Restriction ;
+                   owl:onProperty lwm2m:resourceValue ;
+                   owl:allValuesFrom ?dt .
+  bind (if(?dt = lwm2m:Float, xsd:float,
+        if(?dt = lwm2m:Integer, xsd:integer,
+        if(?dt = lwm2m:String, xsd:string,
+        if(?dt = lwm2m:Boolean, xsd:boolean,
+        if(?dt = lwm2m:Opaque, xsd:hexBinary,
+        ?dt))))) as ?xsdDt)
+}

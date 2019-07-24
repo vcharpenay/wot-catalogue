@@ -1,0 +1,1243 @@
+@prefix td:    <http://www.w3.org/ns/td#> .
+@prefix :      <http://swagger.io/v2/schema.json#> .
+@prefix sd:    <http://www.w3.org/ns/sparql-service-description#> .
+@prefix sw:    <http://swagger.io/v2/schema.json#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix sch:   <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ColourTemperatureResURI.swagger.json#/paths//example/ColourTemperatureResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets current colour temperature value\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Ramp%20Time>
+        a             skos:Concept ;
+        rdfs:label    "Ramp Time" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/RampTimeResURI.swagger.json#/paths//RampTimeResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/GrinderResURI.swagger.json#/paths//GrinderResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the attributes associated with a grinder. The coarseness of the grounds is an integer. The higher the value, the less coarse. remaining is a percentage that represents the unground material left.\nRetrieves the state of a grinder.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/EnergyUsageResURI.swagger.json#/paths//EnergyUsageResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/BrewingResURI.swagger.json#/paths//BrewingResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the brewing values\n" .
+
+sw:PostOperation  skos:narrower  <http://openconnectivity.org/iotdatamodels/schemas/BrightnessResURI.swagger.json#/paths//BrightnessResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/RefrigerationResURI.swagger.json#/paths//RefrigerationResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/ColourSpaceCoordinatesResURI.swagger.json#/paths//example/ColourSpaceCoordinatesResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/TemperatureResURI.swagger.json#/paths//TemperatureResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/ValueConditionalResURI.swagger.json#/paths//ValueConditionalResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/LockCodeResURI.swagger.json#/paths//LockCodeResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/EnergyResURI.swagger.json#/paths//EnergyResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/ActivityCountResURI.swagger.json#/paths//ActivityCountResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/ClockResURI.swagger.json#/paths//ClockResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/AirFlowControlResURI.swagger.json#/paths//AirFlowControlResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/LiquidLevelResURI.swagger.json#/paths//LiquidLevelResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/ColourChromaResURI.swagger.json#/paths//example/ColourChromaResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/SpeechTTSResURI.swagger.json#/paths//SpeechTTSResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/AirFlowResURI.swagger.json#/paths//AirFlowResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/mediaSourceListResURI.swagger.json#/paths//mediaSourceListResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/mediaSourceResURI.swagger.json#/paths//mediaSourceResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/OperationalStateResURI.swagger.json#/paths//OperationalStateResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/LockStatusResURI.swagger.json#/paths//LockStatusResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/FoamingResURI.swagger.json#/paths//FoamingResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/ColourTemperatureResURI.swagger.json#/paths//example/ColourTemperatureResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/ModeResURI.swagger.json#/paths//ModeResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/ColourHueSaturationResURI.swagger.json#/paths//example/ColourHueSaturationResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/PanTiltZoomResURI.swagger.json#/paths//PanTiltZoomResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/BrewingResURI.swagger.json#/paths//BrewingResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/MovementResURI.swagger.json#/paths//MovementResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/HeightResURI.swagger.json#/paths//HeightResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/DelayDefrostResURI.swagger.json#/paths//DelayDefrostResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/HumidityResURI.swagger.json#/paths//HumidityResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/DimmingResURI.swagger.json#/paths//DimmingResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/TimePeriodResURI.swagger.json#/paths//TimePeriodResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/RampTimeResURI.swagger.json#/paths//RampTimeResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/IceMakerResURI.swagger.json#/paths//IceMakerResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/mediaSourceOutputResURI.swagger.json#/paths//mediaSourceOutputResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/SelectableLevelsResURI.swagger.json#/paths//SelectableLevelsResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/OpenLevelResURI.swagger.json#/paths//OpenLevelResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/GrinderResURI.swagger.json#/paths//GrinderResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/ColourRGBResURI.swagger.json#/paths//ColourRGBResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/DoorResURI.swagger.json#/paths//DoorResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/BatteryResURI.swagger.json#/paths//BatteryResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/BaseResourceSchemaResURI.swagger.json#/paths//BaseResourceSchemaResURI/post> , <http://openconnectivity.org/iotdatamodels/schemas/mediaSourceInputResURI.swagger.json#/paths//mediaSourceInputResURI/post> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Altimeter>
+        a             skos:Concept ;
+        rdfs:label    "Altimeter" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/AltimeterResURI.swagger.json#/paths//AltimeterResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/IceMakerResURI.swagger.json#/paths//IceMakerResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes an the operational state of an Ice Maker.\nThe status is a string containing a value from the set of possible ice maker statuses.\nThe possible statuses are defined by the enumeration [on, off, full]\nA status of 'on' means that the Ice Maker is operating.\nA status of 'off' means that the Ice Maker is not operating.\nA status of 'full' means that the ice collection bin is full (Ice Maker is operating).\nRetrieves the current Ice Maker status.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/mediaSourceResURI.swagger.json#/paths//mediaSourceResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource defines a media source that exists on a device.\nThe source can be an input source or output source, this resource is agnostic of that.\nThe sourceName specifies a pre-defined media input or output (e.g.\"HDMI\", \"DVI\")\nThe sourceNumber is a numeric identifier to specify the instance (e.g. \"PC\", 1)\nThe sourceType is an enumeration defining whether the source is audio, video or both.\nThe status is a boolean that determines if the specific source instance is selected or not.\n    A status of true means that the source instance is selected.\n    A status of false means that the source instance is not selected.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/TouchResURI.swagger.json#/paths//TouchResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/EcomodeResURI.swagger.json#/paths//EcomodeResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource specifies the supported and currently active Eco Mode of a Device\nThe Resource uses the existing schema for Mode (oic.r.mode) with a restriction that the population of supportedmodes and modes Properties is restricted to the set of values given below:\n\"disabled\",\"enabled\",\"notsupported\"\nThe adminforced Property indicates that the value has been set by another party (e.g. via some offboard Smart Energy interaction)\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/FoamingResURI.swagger.json#/paths//FoamingResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets foaming value\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/EnergyConsumptionResURI.swagger.json#/paths//EnergyConsumptionResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Grinder>
+        a             skos:Concept ;
+        rdfs:label    "Grinder" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/GrinderResURI.swagger.json#/paths//GrinderResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ModeResURI.swagger.json#/paths//ModeResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the modes of operation that a device can provide.\nThe mode can be read or set.\nThe supportedModes is an array of possible modes the device supports.\nThe modes are an array of the currently active mode(s).\nRetrieves the current mode.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Binary%20Switch>
+        a             skos:Concept ;
+        rdfs:label    "Binary Switch" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/BinarySwitchResURI.swagger.json#/paths//BinarySwitchResURI> .
+
+sw:PutOperation  skos:narrower  <http://openconnectivity.org/iotdatamodels/schemas/DRLCResURI.swagger.json#/paths//DRLCResURI/put> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/EnergyResURI.swagger.json#/paths//EnergyResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the desired energy values\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/BrightnessResURI.swagger.json#/paths//BrightnessResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/VehicleConnector>
+        a             skos:Concept ;
+        rdfs:label    "VehicleConnector" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/VehicleConnectorResURI.swagger.json#/paths//VehicleConnectorResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Energy%20Consumption>
+        a             skos:Concept ;
+        rdfs:label    "Energy Consumption" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/EnergyConsumptionResURI.swagger.json#/paths//EnergyConsumptionResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/LockStatusResURI.swagger.json#/paths//LockStatusResURI/get>
+        a                skos:Concept ;
+        skos:definition  "Resource describing a lock.\nFor the type of lockState, the value 'Locked' indicates that the door is Locked.\nThe value 'Unlocked' indicates that the door is Unlocked.\nRetrieves the state of the lock.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/EnergyGeneration>
+        a             skos:Concept ;
+        rdfs:label    "EnergyGeneration" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/EnergyGenerationResURI.swagger.json#/paths//EnergyGenerationResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ColourChromaResURI.swagger.json#/paths//example/ColourChromaResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets current colour chroma values\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/EnergyOverloadResURI.swagger.json#/paths//EnergyOverloadResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes whether an energy overload detector/circuit breaker\n  is currently tripped.\nThe value is a boolean.\nA value of 'true' means that energy overload has been tripped.\nA value of 'false' means that energy overload has not been tripped.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Atmospheric%20Pressure%20Sensor>
+        a             skos:Concept ;
+        rdfs:label    "Atmospheric Pressure Sensor" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/AtmosphericPressureResURI.swagger.json#/paths//AtmosphericPressureResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/GeolocationResURI.swagger.json#/paths//GeolocationResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the properties associated with the current geolocation coordinate.\nGeolocation is a geolocation coordinate data.\nLatitude is a device's current Latitude coordinate (degrees).\nLongitude is a device's current Longitude coordinate (degrees).\nAltitude is a device's current Altitude position (metres).\nAccuracy is the accuracy level of the latitude and longitude coordinates (metres).\naltitudeAccuracy is the accuracy level of the altitude coordinates (metres).\nheading is a direction of travel of device (degree).\nspeed is a device's current velocity (metres per second).\nRetrieves the current geolocation coordinates.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Battery>
+        a             skos:Concept ;
+        rdfs:label    "Battery" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/BatteryResURI.swagger.json#/paths//BatteryResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/VehicleConnectorResURI.swagger.json#/paths//VehicleConnectorResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the attributes associated with an electric vehicle charging connector. The connected state is a boolean indicating the status of the connector (False = disconnected, True = connected). The rated charging capacity and rated discharging capacity are in Amps (A).\nRetrieves the state of the vehicle connector.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/DimmingResURI.swagger.json#/paths//DimmingResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the desired dimming level.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/BinarySwitchResURI.swagger.json#/paths//BinarySwitchResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes a binary switch (on/off).\nThe value is a boolean.\nA value of 'true' means that the switch is on.\nA value of 'false' means that the switch is off.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/mediaSourceInputResURI.swagger.json#/paths//mediaSourceInputResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Changes the status of the source(s).\nAllows changes of the sourceName and the status.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Time%20Period>
+        a             skos:Concept ;
+        rdfs:label    "Time Period" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/TimePeriodResURI.swagger.json#/paths//TimePeriodResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/HumidityResURI.swagger.json#/paths//HumidityResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Colour%20Hue%20and%20Saturation>
+        a             skos:Concept ;
+        rdfs:label    "Colour Hue and Saturation" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/ColourHueSaturationResURI.swagger.json#/paths//example/ColourHueSaturationResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AutoWhiteBalanceResURI.swagger.json#/paths//AutoWhiteBalanceResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/SpeechTTSResURI.swagger.json#/paths//SpeechTTSResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ColourSaturationResURI.swagger.json#/paths//ColourSaturationResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes a Colour saturation value.\nThe value is an integer.\nA coloursaturation has a range of [0,100].\nA coloursaturation value of 0 means producing black and white images.\nA coloursaturation value of 50 means producing device specific normal colour images.\nA coloursaturation value of 100 means producing device very full colour images.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ColourRGBResURI.swagger.json#/paths//ColourRGBResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/HeatingZoneBaselineResURI.swagger.json#/paths//HeatingZoneLLResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This Resource provides information about the status of the heating zones of a Cook-Top.\nIt describes the case of a Cook-Top whose zones can be activated dynamically (i.e. the device implements pot recognition).\nThe resource is a collection of instances of oic.r.heatingzone detailing the individual cooktop zones\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ClockResURI.swagger.json#/paths//ClockResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AirFlowControlResURI.swagger.json#/paths//AirFlowControlResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the current air flow control values using the batch interface\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/IlluminanceSensorResURI.swagger.json#/paths//IlluminanceSensorResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes an illuminance sensor.\nIlluminance is a float and represents the sensed luminous flux per unit area in lux.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ColourHueSaturationResURI.swagger.json#/paths//example/ColourHueSaturationResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the colour using hue-saturation conventions.\nhue is the hue angle, it is a number value as defined by the CIECAM02 model definition (see reference [CIE CIE159:2004]).\n  A Device that does not support fractional hue angles can provide integer values.\n  If precision (from oic.r.baseresource) is provided it applies to the hue angle.\nsaturation is an integer value as defined by the CIECAM02 model definition (see reference [CIE CIE159:2004]).\n  saturation can be converted to a percentage by saturation/maximumsaturation X 100; where maximumsaturation is 32767 if the Property itself is not present.\nmaximumsaturation is the upper bound on the saturation supported by the Device.\n  If not present the maximum value for saturation is 32767.\nProvides the colour using hue and saturation conventions.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Temperature>
+        a             skos:Concept ;
+        rdfs:label    "Temperature" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/TemperatureResURI.swagger.json#/paths//TemperatureResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/WeightResURI.swagger.json#/paths//WeightResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the properties associated with weight of an object.\nWeight (weight) is weight of an object.\nRetrieves weight of an object.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Movement>
+        a             skos:Concept ;
+        rdfs:label    "Movement" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/MovementResURI.swagger.json#/paths//MovementResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/MovementResURI.swagger.json#/paths//MovementResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource specifies linear movement.\nThe movementSettings is an array of strings containing possible movement values (e.g. spin, stop, left, right).\nThe movement is the currently selected movement value.\nThe movementModifier is a modifier to the movement value (e.g. \"spin\", \"90\")\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/HeatingZoneBaselineResURI.swagger.json#/paths//HeatingZoneLLResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/LockStatusResURI.swagger.json#/paths//LockStatusResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the current lock state.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ValueConditionalResURI.swagger.json#/paths//ValueConditionalResURI/post>
+        a                skos:Concept ;
+        skos:definition  "body:\n application/json:\n   schema: valueconditional\n   example: |\n     {\n       \"threshold\":        2,\n       \"minnotifyperiod\":  1500\n     }\n" .
+
+sw:Path  skos:narrower  <http://openconnectivity.org/iotdatamodels/schemas/BrightnessResURI.swagger.json#/paths//BrightnessResURI> , <http://openconnectivity.org/iotdatamodels/schemas/SpeechTTSResURI.swagger.json#/paths//SpeechTTSResURI> , <http://openconnectivity.org/iotdatamodels/schemas/HeightResURI.swagger.json#/paths//HeightResURI> , <http://openconnectivity.org/iotdatamodels/schemas/IlluminanceSensorResURI.swagger.json#/paths//IlluminanceSensorResURI> , <http://openconnectivity.org/iotdatamodels/schemas/HumidityResURI.swagger.json#/paths//HumidityResURI> , <http://openconnectivity.org/iotdatamodels/schemas/ModeResURI.swagger.json#/paths//ModeResURI> , <http://openconnectivity.org/iotdatamodels/schemas/SmokeSensorResURI.swagger.json#/paths//SmokeSensorResURI> , <http://openconnectivity.org/iotdatamodels/schemas/LockStatusResURI.swagger.json#/paths//LockStatusResURI> , <http://openconnectivity.org/iotdatamodels/schemas/ClockResURI.swagger.json#/paths//ClockResURI> , <http://openconnectivity.org/iotdatamodels/schemas/GlassBreakResURI.swagger.json#/paths//GlassBreakResURI> , <http://openconnectivity.org/iotdatamodels/schemas/EnergyGenerationResURI.swagger.json#/paths//EnergyGenerationResURI> , <http://openconnectivity.org/iotdatamodels/schemas/PresenceResURI.swagger.json#/paths//PresenceResURI> , <http://openconnectivity.org/iotdatamodels/schemas/ColourSaturationResURI.swagger.json#/paths//ColourSaturationResURI> , <http://openconnectivity.org/iotdatamodels/schemas/GeolocationResURI.swagger.json#/paths//GeolocationResURI> , <http://openconnectivity.org/iotdatamodels/schemas/HeartRateZoneResURI.swagger.json#/paths//HeartRateZoneResURI> , <http://openconnectivity.org/iotdatamodels/schemas/WaterResURI.swagger.json#/paths//WaterResURI> , <http://openconnectivity.org/iotdatamodels/schemas/AccelerationResURI.swagger.json#/paths//AccelerationResURI> , <http://openconnectivity.org/iotdatamodels/schemas/DimmingResURI.swagger.json#/paths//DimmingResURI> , <http://openconnectivity.org/iotdatamodels/schemas/GrinderResURI.swagger.json#/paths//GrinderResURI> , <http://openconnectivity.org/iotdatamodels/schemas/DRLCResURI.swagger.json#/paths//DRLCResURI> , <http://openconnectivity.org/iotdatamodels/schemas/mediaSourceResURI.swagger.json#/paths//mediaSourceResURI> , <http://openconnectivity.org/iotdatamodels/schemas/DelayDefrostResURI.swagger.json#/paths//DelayDefrostResURI> , <http://openconnectivity.org/iotdatamodels/schemas/HeatingZoneResURI.swagger.json#/paths//HeatingZoneResURI> , <http://openconnectivity.org/iotdatamodels/schemas/TemperatureResURI.swagger.json#/paths//TemperatureResURI> , <http://openconnectivity.org/iotdatamodels/schemas/HeatingZoneBaselineResURI.swagger.json#/paths//HeatingZoneLLResURI> , <http://openconnectivity.org/iotdatamodels/schemas/MotionResURI.swagger.json#/paths//MotionResURI> , <http://openconnectivity.org/iotdatamodels/schemas/BatteryResURI.swagger.json#/paths//BatteryResURI> , <http://openconnectivity.org/iotdatamodels/schemas/AirFlowResURI.swagger.json#/paths//AirFlowResURI> , <http://openconnectivity.org/iotdatamodels/schemas/MovementResURI.swagger.json#/paths//MovementResURI> , <http://openconnectivity.org/iotdatamodels/schemas/HeatingZoneBaselineResURI.swagger.json#/paths//HeatingZoneBaselineResURI> , <http://openconnectivity.org/iotdatamodels/schemas/FoamingResURI.swagger.json#/paths//FoamingResURI> , <http://openconnectivity.org/iotdatamodels/schemas/BinarySwitchResURI.swagger.json#/paths//BinarySwitchResURI> , <http://openconnectivity.org/iotdatamodels/schemas/AirQualityBaselineResURI.swagger.json#/paths//AirQualityBaselineResURI> , <http://openconnectivity.org/iotdatamodels/schemas/mediaSourceListResURI.swagger.json#/paths//mediaSourceListResURI> , <http://openconnectivity.org/iotdatamodels/schemas/RefrigerationResURI.swagger.json#/paths//RefrigerationResURI> , <http://openconnectivity.org/iotdatamodels/schemas/AirQualityBaselineResURI.swagger.json#/paths//AirQualityLLResURI> , <http://openconnectivity.org/iotdatamodels/schemas/GenericSensorResURI.swagger.json#/paths//GenericSensorResURI> , <http://openconnectivity.org/iotdatamodels/schemas/mediaSourceInputResURI.swagger.json#/paths//mediaSourceInputResURI> , <http://openconnectivity.org/iotdatamodels/schemas/AirFlowControlResURI.swagger.json#/paths//AirFlowControlResURI> , <http://openconnectivity.org/iotdatamodels/schemas/ColourRGBResURI.swagger.json#/paths//ColourRGBResURI> , <http://openconnectivity.org/iotdatamodels/schemas/ConsumableResURI.swagger.json#/paths//ConsumableResURI> , <http://openconnectivity.org/iotdatamodels/schemas/LiquidLevelResURI.swagger.json#/paths//LiquidLevelResURI> , <http://openconnectivity.org/iotdatamodels/schemas/ColourTemperatureResURI.swagger.json#/paths//example/ColourTemperatureResURI> , <http://openconnectivity.org/iotdatamodels/schemas/BatteryMaterialResURI.swagger.json#/paths//BatteryMaterialResURI> , <http://openconnectivity.org/iotdatamodels/schemas/ColourChromaResURI.swagger.json#/paths//example/ColourChromaResURI> , <http://openconnectivity.org/iotdatamodels/schemas/RampTimeResURI.swagger.json#/paths//RampTimeResURI> , <http://openconnectivity.org/iotdatamodels/schemas/AirQualityResURI.swagger.json#/paths//AirQualityResURI> , <http://openconnectivity.org/iotdatamodels/schemas/AutoWhiteBalanceResURI.swagger.json#/paths//AutoWhiteBalanceResURI> , <http://openconnectivity.org/iotdatamodels/schemas/AudioResURI.swagger.json#/paths//AudioResURI> , <http://openconnectivity.org/iotdatamodels/schemas/EnergyConsumptionResURI.swagger.json#/paths//EnergyConsumptionResURI> , <http://openconnectivity.org/iotdatamodels/schemas/PanTiltZoomResURI.swagger.json#/paths//PanTiltZoomResURI> , <http://openconnectivity.org/iotdatamodels/schemas/WeightResURI.swagger.json#/paths//WeightResURI> , <http://openconnectivity.org/iotdatamodels/schemas/ColourSpaceCoordinatesResURI.swagger.json#/paths//example/ColourSpaceCoordinatesResURI> , <http://openconnectivity.org/iotdatamodels/schemas/CarbonMonoxideResURI.swagger.json#/paths//CarbonMonoxideResURI> , <http://openconnectivity.org/iotdatamodels/schemas/SelectableLevelsResURI.swagger.json#/paths//SelectableLevelsResURI> , <http://openconnectivity.org/iotdatamodels/schemas/SleepSensorResURI.swagger.json#/paths//SleepSensorResURI> , <http://openconnectivity.org/iotdatamodels/schemas/NightModeResURI.swagger.json#/paths//NightModeResURI> , <http://openconnectivity.org/iotdatamodels/schemas/UVRadiationResURI.swagger.json#/paths//UVRadiationResURI> , <http://openconnectivity.org/iotdatamodels/schemas/ColourHueSaturationResURI.swagger.json#/paths//example/ColourHueSaturationResURI> , <http://openconnectivity.org/iotdatamodels/schemas/LockCodeResURI.swagger.json#/paths//LockCodeResURI> , <http://openconnectivity.org/iotdatamodels/schemas/mediaSourceOutputResURI.swagger.json#/paths//mediaSourceOutputResURI> , <http://openconnectivity.org/iotdatamodels/schemas/AltimeterResURI.swagger.json#/paths//AltimeterResURI> , <http://openconnectivity.org/iotdatamodels/schemas/ContactResURI.swagger.json#/paths//ContactResURI> , <http://openconnectivity.org/iotdatamodels/schemas/MediaResURI.swagger.json#/paths//MediaResURI> , <http://openconnectivity.org/iotdatamodels/schemas/BaseResourceSchemaResURI.swagger.json#/paths//BaseResourceSchemaResURI> , <http://openconnectivity.org/iotdatamodels/schemas/ButtonResURI.swagger.json#/paths//ButtonResURI> , <http://openconnectivity.org/iotdatamodels/schemas/EnergyResURI.swagger.json#/paths//EnergyResURI> , <http://openconnectivity.org/iotdatamodels/schemas/ConsumablesBaselineResURI.swagger.json#/paths//ConsumablesBaselineResURI> , <http://openconnectivity.org/iotdatamodels/schemas/VehicleConnectorResURI.swagger.json#/paths//VehicleConnectorResURI> , <http://openconnectivity.org/iotdatamodels/schemas/TimePeriodResURI.swagger.json#/paths//TimePeriodResURI> , <http://openconnectivity.org/iotdatamodels/schemas/EnergyOverloadResURI.swagger.json#/paths//EnergyOverloadResURI> , <http://openconnectivity.org/iotdatamodels/schemas/ConsumablesBaselineResURI.swagger.json#/paths//ConsumablesLLResURI> , <http://openconnectivity.org/iotdatamodels/schemas/BrewingResURI.swagger.json#/paths//BrewingResURI> , <http://openconnectivity.org/iotdatamodels/schemas/ValueConditionalResURI.swagger.json#/paths//ValueConditionalResURI> , <http://openconnectivity.org/iotdatamodels/schemas/AutoFocusResURI.swagger.json#/paths//AutoFocusResURI> , <http://openconnectivity.org/iotdatamodels/schemas/OperationalStateResURI.swagger.json#/paths//OperationalStateResURI> , <http://openconnectivity.org/iotdatamodels/schemas/TouchResURI.swagger.json#/paths//TouchResURI> , <http://openconnectivity.org/iotdatamodels/schemas/ActivityCountResURI.swagger.json#/paths//ActivityCountResURI> , <http://openconnectivity.org/iotdatamodels/schemas/DoorResURI.swagger.json#/paths//DoorResURI> , <http://openconnectivity.org/iotdatamodels/schemas/MagneticFieldDirectionResURI.swagger.json#/paths//MagneticFieldDirectionResURI> , <http://openconnectivity.org/iotdatamodels/schemas/AutomaticDocumentFeederResURI.swagger.json#/paths//AutomaticDocumentFeederResURI> , <http://openconnectivity.org/iotdatamodels/schemas/OpenLevelResURI.swagger.json#/paths//OpenLevelResURI> , <http://openconnectivity.org/iotdatamodels/schemas/SignalStrengthResURI.swagger.json#/paths//SignalStrengthResURI> , <http://openconnectivity.org/iotdatamodels/schemas/EnergyUsageResURI.swagger.json#/paths//EnergyUsageResURI> , <http://openconnectivity.org/iotdatamodels/schemas/CarbonDioxideResURI.swagger.json#/paths//CarbonDioxideResURI> , <http://openconnectivity.org/iotdatamodels/schemas/ThreeAxisResURI.swagger.json#/paths//ThreeAxisResURI> , <http://openconnectivity.org/iotdatamodels/schemas/EcomodeResURI.swagger.json#/paths//EcomodeResURI> , <http://openconnectivity.org/iotdatamodels/schemas/IceMakerResURI.swagger.json#/paths//IceMakerResURI> , <http://openconnectivity.org/iotdatamodels/schemas/AtmosphericPressureResURI.swagger.json#/paths//AtmosphericPressureResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/LiquidLevelResURI.swagger.json#/paths//LiquidLevelResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets liquid level values\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ColourSpaceCoordinatesResURI.swagger.json#/paths//example/ColourSpaceCoordinatesResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/EnergyOverloadResURI.swagger.json#/paths//EnergyOverloadResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AutomaticDocumentFeederResURI.swagger.json#/paths//AutomaticDocumentFeederResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/DelayDefrostResURI.swagger.json#/paths//DelayDefrostResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Magnetic%20Field%20Direction%20Sensor>
+        a             skos:Concept ;
+        rdfs:label    "Magnetic Field Direction Sensor" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/MagneticFieldDirectionResURI.swagger.json#/paths//MagneticFieldDirectionResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AltimeterResURI.swagger.json#/paths//AltimeterResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the properties associated with altimeter.\nAltimeter is a height of the position (metres).\nRetrieves the current the height of the position (metres).\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Dimming>
+        a             skos:Concept ;
+        rdfs:label    "Dimming" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/DimmingResURI.swagger.json#/paths//DimmingResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/BrightnessResURI.swagger.json#/paths//BrightnessResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the desired brightness level.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Media%20Source%20Output>
+        a             skos:Concept ;
+        rdfs:label    "Media Source Output" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/mediaSourceOutputResURI.swagger.json#/paths//mediaSourceOutputResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/mediaSourceResURI.swagger.json#/paths//mediaSourceResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ActivityCountResURI.swagger.json#/paths//ActivityCountResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the count target\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/DimmingResURI.swagger.json#/paths//DimmingResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes a dimming function.\nThe value is an integer showing the current dimming level.\nIf step (from oic.r.baseresource) is present then it represents the increment between dimmer values.\nWhen range (from oic.r.baseresource) is omitted, then the range is [0,100].\nA value of 0 means total dimming; a value of 100 means no dimming.\nRetrieves the current dimming level.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/LockCodeResURI.swagger.json#/paths//LockCodeResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Updates the current lock code values.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/EnergyResURI.swagger.json#/paths//EnergyResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Energy%20Overload/Circuit%20Breaker>
+        a             skos:Concept ;
+        rdfs:label    "Energy Overload/Circuit Breaker" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/EnergyOverloadResURI.swagger.json#/paths//EnergyOverloadResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AirQualityBaselineResURI.swagger.json#/paths//AirQualityBaselineResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Brightness>
+        a             skos:Concept ;
+        rdfs:label    "Brightness" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/BrightnessResURI.swagger.json#/paths//BrightnessResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/BaseResourceSchemaResURI.swagger.json#/paths//BaseResourceSchemaResURI/post>
+        a                skos:Concept ;
+        skos:definition  "sets the read-write resource properties" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AutoWhiteBalanceResURI.swagger.json#/paths//AutoWhiteBalanceResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes an auto balance on/off feature.\nThe value is a boolean.\nAn AutoWhiteBalance value of 'true' means that the switch is on.\nAn AutoWhiteBalance value of 'false' means that the switch is off.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/CarbonMonoxideResURI.swagger.json#/paths//CarbonMonoxideResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes whether carbon monoxide has been sensed or not.\nThe value is a boolean.\nA value of 'true' means that carbon monoxide has been detected.\nA value of 'false' means that carbon monoxide has not been detected.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/OpenLevelResURI.swagger.json#/paths//OpenLevelResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/mediaSourceInputResURI.swagger.json#/paths//mediaSourceInputResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource provides the list of input media sources available on the device.\nThe sources are an array of mediaSource(s) as separately defined.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Colour%20Temperature>
+        a             skos:Concept ;
+        rdfs:label    "Colour Temperature" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/ColourTemperatureResURI.swagger.json#/paths//example/ColourTemperatureResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/BrightnessResURI.swagger.json#/paths//BrightnessResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the brightness of a light or lamp.\nbrightness is an integer showing the current brightness level as a quantized representation in the range 0-100.\nA brightness of 0 is the minimum for the resource.\nA brightness of 100 is the maximum for the resource.\nRetrieves the current brightness level.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/GeolocationResURI.swagger.json#/paths//GeolocationResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Generic%20Sensor>
+        a             skos:Concept ;
+        rdfs:label    "Generic Sensor" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/GenericSensorResURI.swagger.json#/paths//GenericSensorResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/MotionResURI.swagger.json#/paths//MotionResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Colour%20Saturation>
+        a             skos:Concept ;
+        rdfs:label    "Colour Saturation" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/ColourSaturationResURI.swagger.json#/paths//ColourSaturationResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Humidity>
+        a             skos:Concept ;
+        rdfs:label    "Humidity" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/HumidityResURI.swagger.json#/paths//HumidityResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Energy>
+        a             skos:Concept ;
+        rdfs:label    "Energy" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/EnergyResURI.swagger.json#/paths//EnergyResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/IceMakerResURI.swagger.json#/paths//IceMakerResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/PresenceResURI.swagger.json#/paths//PresenceResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes whether presence has been sensed or not.\nThe value is a boolean.\nA value of 'true' means that presence has been sensed.\nA value of 'false' means that presence not been sensed.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ThreeAxisResURI.swagger.json#/paths//ThreeAxisResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource provides a representation of the measurement from a three-axis sensor.\nThe orientation is an array of numbers representing x-plane, y-plane and z-plane values.\nThe unit of measurement for each pane is 'g'.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/LiquidLevelResURI.swagger.json#/paths//LiquidLevelResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ButtonResURI.swagger.json#/paths//ButtonResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the operation of a button style switch.\nThe value is a boolean.\nA value of 'true' means that the button is being pushed/pressed.\nA value of 'false' means that the button is not being pushed/pressed.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ContactResURI.swagger.json#/paths//ContactResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes whether a contact sensor has been tripped or not.\nTypical use case is in Security Systems detecting window or door open.\nThe value is a boolean.\nA value of 'true' means that contact has been broken (open).\nA value of 'false' means that contact is in place (closed).\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ModeResURI.swagger.json#/paths//ModeResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the desired mode.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/DRLCResURI.swagger.json#/paths//DRLCResURI/put>
+        a                skos:Concept ;
+        skos:definition  "Provides the DRLC action to be applied to the device or updates an existing action.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/TouchResURI.swagger.json#/paths//TouchResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes whether touch has been sensed or not.\nThe value is a boolean.\nA value of 'true' means that touch has been sensed.\nA value of 'false' means that touch not been sensed.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/PresenceResURI.swagger.json#/paths//PresenceResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/HeightResURI.swagger.json#/paths//HeightResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the Height.\n" .
+
+sw:GetOperation  skos:narrower  <http://openconnectivity.org/iotdatamodels/schemas/GlassBreakResURI.swagger.json#/paths//GlassBreakResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/LiquidLevelResURI.swagger.json#/paths//LiquidLevelResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/AccelerationResURI.swagger.json#/paths//AccelerationResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/MotionResURI.swagger.json#/paths//MotionResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/ContactResURI.swagger.json#/paths//ContactResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/AirQualityBaselineResURI.swagger.json#/paths//AirQualityBaselineResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/HeartRateZoneResURI.swagger.json#/paths//HeartRateZoneResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/ThreeAxisResURI.swagger.json#/paths//ThreeAxisResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/ConsumablesBaselineResURI.swagger.json#/paths//ConsumablesLLResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/RampTimeResURI.swagger.json#/paths//RampTimeResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/mediaSourceListResURI.swagger.json#/paths//mediaSourceListResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/TemperatureResURI.swagger.json#/paths//TemperatureResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/DimmingResURI.swagger.json#/paths//DimmingResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/BrightnessResURI.swagger.json#/paths//BrightnessResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/AltimeterResURI.swagger.json#/paths//AltimeterResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/AirQualityBaselineResURI.swagger.json#/paths//AirQualityLLResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/MovementResURI.swagger.json#/paths//MovementResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/BatteryResURI.swagger.json#/paths//BatteryResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/ColourRGBResURI.swagger.json#/paths//ColourRGBResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/ColourChromaResURI.swagger.json#/paths//example/ColourChromaResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/ValueConditionalResURI.swagger.json#/paths//ValueConditionalResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/OpenLevelResURI.swagger.json#/paths//OpenLevelResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/ModeResURI.swagger.json#/paths//ModeResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/ButtonResURI.swagger.json#/paths//ButtonResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/mediaSourceOutputResURI.swagger.json#/paths//mediaSourceOutputResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/EnergyResURI.swagger.json#/paths//EnergyResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/SpeechTTSResURI.swagger.json#/paths//SpeechTTSResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/SignalStrengthResURI.swagger.json#/paths//SignalStrengthResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/GrinderResURI.swagger.json#/paths//GrinderResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/LockCodeResURI.swagger.json#/paths//LockCodeResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/DoorResURI.swagger.json#/paths//DoorResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/ConsumableResURI.swagger.json#/paths//ConsumableResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/ColourSaturationResURI.swagger.json#/paths//ColourSaturationResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/GeolocationResURI.swagger.json#/paths//GeolocationResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/EnergyOverloadResURI.swagger.json#/paths//EnergyOverloadResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/BatteryMaterialResURI.swagger.json#/paths//BatteryMaterialResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/EnergyUsageResURI.swagger.json#/paths//EnergyUsageResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/AutomaticDocumentFeederResURI.swagger.json#/paths//AutomaticDocumentFeederResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/WeightResURI.swagger.json#/paths//WeightResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/FoamingResURI.swagger.json#/paths//FoamingResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/AirQualityResURI.swagger.json#/paths//AirQualityResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/AutoWhiteBalanceResURI.swagger.json#/paths//AutoWhiteBalanceResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/IlluminanceSensorResURI.swagger.json#/paths//IlluminanceSensorResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/EnergyConsumptionResURI.swagger.json#/paths//EnergyConsumptionResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/RefrigerationResURI.swagger.json#/paths//RefrigerationResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/HeatingZoneResURI.swagger.json#/paths//HeatingZoneResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/HeightResURI.swagger.json#/paths//HeightResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/AutoFocusResURI.swagger.json#/paths//AutoFocusResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/DRLCResURI.swagger.json#/paths//DRLCResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/LockStatusResURI.swagger.json#/paths//LockStatusResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/BinarySwitchResURI.swagger.json#/paths//BinarySwitchResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/AudioResURI.swagger.json#/paths//AudioResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/EcomodeResURI.swagger.json#/paths//EcomodeResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/DelayDefrostResURI.swagger.json#/paths//DelayDefrostResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/SelectableLevelsResURI.swagger.json#/paths//SelectableLevelsResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/EnergyGenerationResURI.swagger.json#/paths//EnergyGenerationResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/NightModeResURI.swagger.json#/paths//NightModeResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/CarbonDioxideResURI.swagger.json#/paths//CarbonDioxideResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/HeatingZoneBaselineResURI.swagger.json#/paths//HeatingZoneLLResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/ColourSpaceCoordinatesResURI.swagger.json#/paths//example/ColourSpaceCoordinatesResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/BaseResourceSchemaResURI.swagger.json#/paths//BaseResourceSchemaResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/AirFlowResURI.swagger.json#/paths//AirFlowResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/OperationalStateResURI.swagger.json#/paths//OperationalStateResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/SleepSensorResURI.swagger.json#/paths//SleepSensorResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/TouchResURI.swagger.json#/paths//TouchResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/MagneticFieldDirectionResURI.swagger.json#/paths//MagneticFieldDirectionResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/ClockResURI.swagger.json#/paths//ClockResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/mediaSourceResURI.swagger.json#/paths//mediaSourceResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/SmokeSensorResURI.swagger.json#/paths//SmokeSensorResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/AirFlowControlResURI.swagger.json#/paths//AirFlowControlResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/VehicleConnectorResURI.swagger.json#/paths//VehicleConnectorResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/CarbonMonoxideResURI.swagger.json#/paths//CarbonMonoxideResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/mediaSourceInputResURI.swagger.json#/paths//mediaSourceInputResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/ColourHueSaturationResURI.swagger.json#/paths//example/ColourHueSaturationResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/MediaResURI.swagger.json#/paths//MediaResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/WaterResURI.swagger.json#/paths//WaterResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/PanTiltZoomResURI.swagger.json#/paths//PanTiltZoomResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/PresenceResURI.swagger.json#/paths//PresenceResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/ActivityCountResURI.swagger.json#/paths//ActivityCountResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/HeatingZoneBaselineResURI.swagger.json#/paths//HeatingZoneBaselineResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/ColourTemperatureResURI.swagger.json#/paths//example/ColourTemperatureResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/TimePeriodResURI.swagger.json#/paths//TimePeriodResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/AtmosphericPressureResURI.swagger.json#/paths//AtmosphericPressureResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/UVRadiationResURI.swagger.json#/paths//UVRadiationResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/GenericSensorResURI.swagger.json#/paths//GenericSensorResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/BrewingResURI.swagger.json#/paths//BrewingResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/IceMakerResURI.swagger.json#/paths//IceMakerResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/HumidityResURI.swagger.json#/paths//HumidityResURI/get> , <http://openconnectivity.org/iotdatamodels/schemas/ConsumablesBaselineResURI.swagger.json#/paths//ConsumablesBaselineResURI/get> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/GlassBreakResURI.swagger.json#/paths//GlassBreakResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes a glass break sensor.\nThe value is a boolean.\nA value of 'true' means that glass break has been sensed.\nA value of 'false' means that glass break not been sensed.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/MagneticFieldDirectionResURI.swagger.json#/paths//MagneticFieldDirectionResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Speech%20Synthesis-TTS>
+        a             skos:Concept ;
+        rdfs:label    "Speech Synthesis-TTS" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/SpeechTTSResURI.swagger.json#/paths//SpeechTTSResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/mediaSourceListResURI.swagger.json#/paths//mediaSourceListResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Changes the status of the source(s).\nAllows changes of the sourceName and the status.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/MagneticFieldDirectionResURI.swagger.json#/paths//MagneticFieldDirectionResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the direction of the Earth's magnetic field at the observer's current point in space.\nTypical use case includes measurement of compass readings on a personal device.\nThe value is an array containing Hx, Hy, Hz (in that order) each of which are floats.\nEach of Hx, Hy and Hz are expressed in A/m (Amperes per metre)\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/GenericSensorResURI.swagger.json#/paths//GenericSensorResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Heart%20Rate%20Zone>
+        a             skos:Concept ;
+        rdfs:label    "Heart Rate Zone" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/HeartRateZoneResURI.swagger.json#/paths//HeartRateZoneResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Air%20Flow>
+        a             skos:Concept ;
+        rdfs:label    "Air Flow" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/AirFlowResURI.swagger.json#/paths//AirFlowResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/EnergyGenerationResURI.swagger.json#/paths//EnergyGenerationResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Energy%20Usage>
+        a             skos:Concept ;
+        rdfs:label    "Energy Usage" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/EnergyUsageResURI.swagger.json#/paths//EnergyUsageResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/FoamingResURI.swagger.json#/paths//FoamingResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the attributes associated with foaming. The foam strength of the liquid is represented as an integer.\nThe foam strength is an integer, the range of which may be enforced by the presence of a range Property defined in the baseresource.\nRetrieves the state of foaming.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AudioResURI.swagger.json#/paths//AudioResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/DoorResURI.swagger.json#/paths//DoorResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the open state of the door.\nA door is modelled by means of openState (Open/Closed), openDuration (ISO 8601 Time), and openAlarm (boolean).\nFor openState, the value 'Open' indicates the door is open.\nThe value 'Closed' indicates the door is closed.\nThe type of openDuration is an ISO 8601 Time encoded string.\nThe openAlarm value 'true' indicates that the open alarm is active.\nThe openAlarm value 'false' indicates that open alarm is not active.\nretrieves the state of the Door." .
+
+<http://openconnectivity.org/iotdatamodels/schemas/BaseResourceSchemaResURI.swagger.json#/paths//BaseResourceSchemaResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This is the base resource schema on which all other resources defined in this specification build.\nvalue is the sensed or actuated value of the Resource.\nprecision is the accuracy granularity of the value.\nrange is the range over which value is valid.\nstep is the step function over the defined range if applicable (e.g. always step by '2').\nretrieves the state of the resource." .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Illuminance%20Sensor>
+        a             skos:Concept ;
+        rdfs:label    "Illuminance Sensor" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/IlluminanceSensorResURI.swagger.json#/paths//IlluminanceSensorResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/LockStatusResURI.swagger.json#/paths//LockStatusResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/LiquidLevelResURI.swagger.json#/paths//LiquidLevelResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the attributes associated with liquid level. The current level and desired level are defined in terms of a percentage. The behaviour of when the currentlevel and desiredlevel are not equal is determined by the device manufacturer.\nRetrieves the state of liquid level.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/TimePeriodResURI.swagger.json#/paths//TimePeriodResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the time period over which any additionally provided\ninformation is derived or bounded.\nThe startTime and stopTime are ISO8601 encoded strings.  startTime must be present.\nThe interval is the interval of the time period in minutes, if present this value must be no less than 1 minute.\nstoptime and interval are mutually exclusive; both Properties cannot be present in a Resource instance.\nDefines a time period for information retrieval, action or other behaviour.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/WaterResURI.swagger.json#/paths//WaterResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes whether water has been sensed or not.\nThe value is a boolean.\nA value of 'true' means that water has been sensed.\nA value of 'false' means that water not been sensed.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Brewing>
+        a             skos:Concept ;
+        rdfs:label    "Brewing" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/BrewingResURI.swagger.json#/paths//BrewingResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Signal%20Strength>
+        a             skos:Concept ;
+        rdfs:label    "Signal Strength" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/SignalStrengthResURI.swagger.json#/paths//SignalStrengthResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Night%20Mode>
+        a             skos:Concept ;
+        rdfs:label    "Night Mode" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/NightModeResURI.swagger.json#/paths//NightModeResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AirQualityResURI.swagger.json#/paths//AirQualityResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/RefrigerationResURI.swagger.json#/paths//RefrigerationResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ClockResURI.swagger.json#/paths//ClockResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the desired datetime.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/OperationalStateResURI.swagger.json#/paths//OperationalStateResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Media%20Source%20List>
+        a             skos:Concept ;
+        rdfs:label    "Media Source List" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/mediaSourceListResURI.swagger.json#/paths//mediaSourceListResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Weight>
+        a             skos:Concept ;
+        rdfs:label    "Weight" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/WeightResURI.swagger.json#/paths//WeightResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/DelayDefrostResURI.swagger.json#/paths//DelayDefrostResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Activates the desired Delay Defrost functions\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Contact%20Sensor>
+        a             skos:Concept ;
+        rdfs:label    "Contact Sensor" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/ContactResURI.swagger.json#/paths//ContactResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Lock>
+        a             skos:Concept ;
+        rdfs:label    "Lock" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/LockStatusResURI.swagger.json#/paths//LockStatusResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/OpenLevelResURI.swagger.json#/paths//OpenLevelResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes how open or ajar an entity such as a window, door, blind or shutter is.\nThe openLevel can be read (acting as a sensor).\nThe openLevel can also be set (acting as an actuator).\nThe openLevel is device dependent across the range provided.\nWhen range (from oic.r.baseresource) is omitted then 0 to 100 is assumed where 0 means closed, 100 means fully open.\nIf a range is provided then the lower bound=closed, upper bound=open.\nIf step (from oic.r.baseresource) is present then it represents the increment between possible values; if not provided 1 is assumed.\nRetrieves the current openLevel.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Refrigeration>
+        a             skos:Concept ;
+        rdfs:label    "Refrigeration" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/RefrigerationResURI.swagger.json#/paths//RefrigerationResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/DelayDefrostResURI.swagger.json#/paths//DelayDefrostResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the delay defrost function as defined by the US Energy Star Specifications.\nSee Energy Star Refrigerator Requirements Version 5 Section 4)G\n(https://www.energystar.gov/sites/default/files/specs//private/ENERGY%20STAR%20Final%20Version%205.0%20Residential%20Refrigerators%20and%20Freezers%20Program%20Requirements.pdf)\nThe status is a boolean indicating whether the function is on, if off then defrost is scheduled as part of normal device operation.\nstartTime, from oir.r.time.period (mandatory) is an ISO8601 encoded start time for the interval in which defrost shall not occur.\nstopTime, from oic.r.time.period is an ISO8601 encoded stop time for the interval in which defrost shall not occur.\ninterval, from oic.r.time.period with additional range restrictions is the time in minutes of the period that starts at starttime (if not present the default is 240).\nstopTime and interval are mutually exlusive; they cannot both be present in a Resource instance\nRetrieves the current Delay Defrost function status\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/CarbonDioxideResURI.swagger.json#/paths//CarbonDioxideResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/PanTiltZoomResURI.swagger.json#/paths//PanTiltZoomResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/EnergyResURI.swagger.json#/paths//EnergyResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the attributes associated with electrical energy. This can be used for either rated (read-only), desired (read-write) or measured (read-only) energy. The voltage is in Volts (V), current in Amps (A), and frequency in Hertz (Hz).\nRetrieves the current energy.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ColourTemperatureResURI.swagger.json#/paths//example/ColourTemperatureResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Demand%20Response%20Load%20Control%20(DRLC).>
+        a             skos:Concept ;
+        rdfs:label    "Demand Response Load Control (DRLC)." ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/DRLCResURI.swagger.json#/paths//DRLCResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/PanTiltZoomResURI.swagger.json#/paths//PanTiltZoomResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource specifies the pan tilt and zoom capabilities of a device.\nThe resource rt is dynamic and reflects whether the values apply to\n  physical movement of the device or digital/virtual enhancements to the image.\nFor physical movement the rt is 'oic.r.movement.ptz'.\nFor digital/virtual image enhancements the rt is 'oic.r.image.ptz'.\nThe Pan and Tilt are specified in degrees.\nThe Zoom Factor is a value in the range 1-100 for linear (optical) zoom.\nThe Zoom Factor is a value in the range [1x, 2x, 4x, 8x, 16x, 32x] for digital zoom.\nIf there is no zoom value to set the Zoom Factor shall be '1x'.\nThe value 0 degrees means neutral, this is the vendor defined setting.\nNote that this resource also can be used to create an offset for physical movement.\nWhen that is the case, the rt value is: oic.r.movement.offset.ptz\nNote that this resource also can be used to create an offset for image movement.\nWhen that is the case, the rt value is: oic.r.image.offset.ptz\nWhen the pan_range value is omitted, then the range is [-180.0,180.0].\nIf pan is not supported then the range shall be [0.0,0.0]\nWhen the tilt_range value is omitted, then the range is [-180.0,180.0].\nIf tilt is not supported then the range shall be [0.0,0.0]\nRetrieves the current pan, tilt and zoom setting.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Heating%20Zone%20Collection>
+        a             skos:Concept ;
+        rdfs:label    "Heating Zone Collection" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/HeatingZoneBaselineResURI.swagger.json#/paths//HeatingZoneLLResURI> , <http://openconnectivity.org/iotdatamodels/schemas/HeatingZoneBaselineResURI.swagger.json#/paths//HeatingZoneBaselineResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ConsumablesBaselineResURI.swagger.json#/paths//ConsumablesLLResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource specifies things that can be consumed such as filter material, printer toner etc\nThe resource is a collection of instances of oic.r.consumable detailing the individual consumed items\nsupportedconsumables is the set of consumable types that this instance of the Resource supports\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/NightModeResURI.swagger.json#/paths//NightModeResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes a night mode on/off feature.\nA nightMode value of 'true' means that the feature is on.\nA nightMode value of 'false' means that the feature is off.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/SmokeSensorResURI.swagger.json#/paths//SmokeSensorResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ColourSpaceCoordinatesResURI.swagger.json#/paths//example/ColourSpaceCoordinatesResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the colour using colour space co-ordinates.\ncsc is the colour space coordinates in CIE colour space.\n  The first item in the array is the X coordinate.\n  The second item in the array is the Y coordinate.\n  If precision (from oic.r.baseresource) is provided it applies to both the X and Y coordinates.\nProvides the colour using colour space coordinates.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Button%20Switch>
+        a             skos:Concept ;
+        rdfs:label    "Button Switch" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/ButtonResURI.swagger.json#/paths//ButtonResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/DRLCResURI.swagger.json#/paths//DRLCResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes any to be applied or currently being applied DRLC signal.\nThe DRType is the ApplianceLoadReductionType defined in Zigbee/HA Smart Energy Profile 2.0.\nStart is a string containing an ISO8601 encoded start time.\nThe duration value is in minutes.\nOverride indicates whether the consumer has overridden the request (true) or not (false).\nProvides the current DRLC action that is being applied.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AutomaticDocumentFeederResURI.swagger.json#/paths//AutomaticDocumentFeederResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the state of an automatic document feeder, typically used with a scanner.\nThe states are read only.\nThe adfStates is an array of the possible operational states.\nadfProcessing is the OK state, other states are errors or require 'user attention'.\nThe currentAdfState is the current value of the ADF state on the device.\nRetrieves the current automatic document feeder state.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Carbon%20Monoxide%20Sensor>
+        a             skos:Concept ;
+        rdfs:label    "Carbon Monoxide Sensor" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/CarbonMonoxideResURI.swagger.json#/paths//CarbonMonoxideResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/HumidityResURI.swagger.json#/paths//HumidityResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the desired relative humidity level.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/SelectableLevelsResURI.swagger.json#/paths//SelectableLevelsResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/SignalStrengthResURI.swagger.json#/paths//SignalStrengthResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the strength of a signal by means of lqi and rssi.\nThe lqi is a floating point number that represents Link Quality Indicator.\nThe rssi is a floating point number that represents the received signal strength indicator.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ConsumableResURI.swagger.json#/paths//ConsumableResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Colour%20Space%20Coordinates>
+        a             skos:Concept ;
+        rdfs:label    "Colour Space Coordinates" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/ColourSpaceCoordinatesResURI.swagger.json#/paths//example/ColourSpaceCoordinatesResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/SleepSensorResURI.swagger.json#/paths//SleepSensorResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes whether human sleep has been sensed or not.\nThe value is a boolean.\nA value of 'true' means that sleep has been sensed.\nA value of 'false' means that sleep not been sensed.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/BrewingResURI.swagger.json#/paths//BrewingResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AccelerationResURI.swagger.json#/paths//AccelerationResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/GrinderResURI.swagger.json#/paths//GrinderResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets grinding values\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Foaming>
+        a             skos:Concept ;
+        rdfs:label    "Foaming" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/FoamingResURI.swagger.json#/paths//FoamingResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Base%20Resource%20Schema>
+        a             skos:Concept ;
+        rdfs:label    "Base Resource Schema" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/BaseResourceSchemaResURI.swagger.json#/paths//BaseResourceSchemaResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/GlassBreakResURI.swagger.json#/paths//GlassBreakResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/MovementResURI.swagger.json#/paths//MovementResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Sleep%20Sensor>
+        a             skos:Concept ;
+        rdfs:label    "Sleep Sensor" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/SleepSensorResURI.swagger.json#/paths//SleepSensorResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/EnergyUsageResURI.swagger.json#/paths//EnergyUsageResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes a cumulative time-based energy usage query..\nThe resource is a composite resource being made up as a collection of:\n  TimePeriod Resource\n  EnergyConsumption Resource\nRetrieves the energy usage information as a composite of consumption over time.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Pan%20Tilt%20Zoom%20Movement>
+        a             skos:Concept ;
+        rdfs:label    "Pan Tilt Zoom Movement" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/PanTiltZoomResURI.swagger.json#/paths//PanTiltZoomResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/UVRadiationResURI.swagger.json#/paths//UVRadiationResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource specifies UV radiation measurement.\nThe measurement is the current measured UV Index\nRetrieves the current UV Radiation value\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/RefrigerationResURI.swagger.json#/paths//RefrigerationResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes a refrigeration function.\nThe filter state is a read-only value providing the percentage life time remaining for the water filter.\nRapidFreeze is a boolean that controls the rapid freeze capability if present.\nRapidCool is a boolean that controls the rapid cool capability if present.\nDefrost is a boolean that controls the defrost cycle if present.\nAt least one of the listed Properties shall be present in a Resource Instance.\nRetrieves the current Refrigeration function status; all Properties supported by the Device are returned.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ColourChromaResURI.swagger.json#/paths//example/ColourChromaResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/MovementResURI.swagger.json#/paths//MovementResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the current device movement\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ThreeAxisResURI.swagger.json#/paths//ThreeAxisResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Colour%20RGB>
+        a             skos:Concept ;
+        rdfs:label    "Colour RGB" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/ColourRGBResURI.swagger.json#/paths//ColourRGBResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/DoorResURI.swagger.json#/paths//DoorResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the current Door properties.\nThe only property that can be set as part of an update operation is\n  the openAlarm.\nThis can be made active (true) or inactive (false)\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ColourSaturationResURI.swagger.json#/paths//ColourSaturationResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/FoamingResURI.swagger.json#/paths//FoamingResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/DRLCResURI.swagger.json#/paths//DRLCResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Media%20Source%20Input>
+        a             skos:Concept ;
+        rdfs:label    "Media Source Input" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/mediaSourceInputResURI.swagger.json#/paths//mediaSourceInputResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Three%20Axis%20Sensor>
+        a             skos:Concept ;
+        rdfs:label    "Three Axis Sensor" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/ThreeAxisResURI.swagger.json#/paths//ThreeAxisResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ColourTemperatureResURI.swagger.json#/paths//example/ColourTemperatureResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the colour using colour temperature conventions.\nct is the Mired colour temperature.\nThe equivalent value in Kelvin is obtained by Colour Temp(K) = 1,000,000/Colour Temp(Mired)\nProvides the colour using colour temperature conventions.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Glass%20Break%20Sensor>
+        a             skos:Concept ;
+        rdfs:label    "Glass Break Sensor" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/GlassBreakResURI.swagger.json#/paths//GlassBreakResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AtmosphericPressureResURI.swagger.json#/paths//AtmosphericPressureResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/SpeechTTSResURI.swagger.json#/paths//SpeechTTSResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Changes the utterance being rendered.\nExample shows a change in language selected.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Geolocation>
+        a             skos:Concept ;
+        rdfs:label    "Geolocation" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/GeolocationResURI.swagger.json#/paths//GeolocationResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AutoFocusResURI.swagger.json#/paths//AutoFocusResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes an auto focus on/off feature.\nThe value is a boolean.\nAn AutoFocus value of 'true' means that the switch is on.\nAn AutoFocus value of 'false' means that the switch is off.\nNote that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used the autofocus works only in the selected area.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AirQualityBaselineResURI.swagger.json#/paths//AirQualityBaselineResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes a sensor that provides the qualitative or measured Air Quality.\nThe resource is a collection of instances of oic.r.airquality detailing the individual exposed contaminant measures\nThere is one collection entry per contaminant type supported by the device. A device must expose at least one measured or qualitative value.\nRetrieves the current air quality.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Colour%20Chroma>
+        a             skos:Concept ;
+        rdfs:label    "Colour Chroma" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/ColourChromaResURI.swagger.json#/paths//example/ColourChromaResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/HeartRateZoneResURI.swagger.json#/paths//HeartRateZoneResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes a measured heart rate by the current Zone using the Zoladz method\nThe Zoladz method defines Zones based on maximum heart rate; Zone 1 is the lowest, Zone 5 is the highest.\nThe heartRateZone is an enumeration containing one of: \"Zone1\", \"Zone2\", \"Zone3\", \"Zone4\", \"Zone5\".\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AtmosphericPressureResURI.swagger.json#/paths//AtmosphericPressureResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource provides a measurement of Mean Sea Level Pressure experienced at the measuring point expressed in millibars.\nThe value is float which describes the atmospheric pressure in hPa (hectoPascals).\nNote that hPa and the also commonly used unit of millibars (mbar) are numerically equivalent.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Automatic%20Document%20Feeder>
+        a             skos:Concept ;
+        rdfs:label    "Automatic Document Feeder" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/AutomaticDocumentFeederResURI.swagger.json#/paths//AutomaticDocumentFeederResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Auto%20White%20Balance>
+        a             skos:Concept ;
+        rdfs:label    "Auto White Balance" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/AutoWhiteBalanceResURI.swagger.json#/paths//AutoWhiteBalanceResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ColourHueSaturationResURI.swagger.json#/paths//example/ColourHueSaturationResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Audio%20Controls>
+        a             skos:Concept ;
+        rdfs:label    "Audio Controls" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/AudioResURI.swagger.json#/paths//AudioResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Heating%20Zone>
+        a             skos:Concept ;
+        rdfs:label    "Heating Zone" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/HeatingZoneResURI.swagger.json#/paths//HeatingZoneResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/mediaSourceOutputResURI.swagger.json#/paths//mediaSourceOutputResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource provides the list of output media sources available on the device.\nThe sources are an array of mediaSource(s) as separately defined.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/MediaResURI.swagger.json#/paths//MediaResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Value%20Conditional>
+        a             skos:Concept ;
+        rdfs:label    "Value Conditional" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/ValueConditionalResURI.swagger.json#/paths//ValueConditionalResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/MotionResURI.swagger.json#/paths//MotionResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes whether motion has been sensed or not.\nThe value is a boolean.\nA value of 'true' means that motion has been sensed.\nA value of 'false' means that motion not been sensed.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/SleepSensorResURI.swagger.json#/paths//SleepSensorResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/PanTiltZoomResURI.swagger.json#/paths//PanTiltZoomResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the current pan, tilt and zoom value\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Eco%20Mode>
+        a             skos:Concept ;
+        rdfs:label    "Eco Mode" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/EcomodeResURI.swagger.json#/paths//EcomodeResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/BatteryMaterialResURI.swagger.json#/paths//BatteryMaterialResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Media%20Source>
+        a             skos:Concept ;
+        rdfs:label    "Media Source" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/mediaSourceResURI.swagger.json#/paths//mediaSourceResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/IceMakerResURI.swagger.json#/paths//IceMakerResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the desired Ice Maker status.\nOnly valid settings for status in a Post shall be [on,off].\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/LockCodeResURI.swagger.json#/paths//LockCodeResURI/get>
+        a                skos:Concept ;
+        skos:definition  "Resource describing a lock code.\nThe lockCodeList is an array of possible codes that may be associated with a lock.\nThese are all presented as strings.\nRetrieves the current lock code values.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AirQualityBaselineResURI.swagger.json#/paths//AirQualityLLResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ConsumablesBaselineResURI.swagger.json#/paths//ConsumablesLLResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/EcomodeResURI.swagger.json#/paths//EcomodeResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Height>
+        a             skos:Concept ;
+        rdfs:label    "Height" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/HeightResURI.swagger.json#/paths//HeightResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/OpenLevelResURI.swagger.json#/paths//OpenLevelResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the desired openLevel.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Water%20Sensor>
+        a             skos:Concept ;
+        rdfs:label    "Water Sensor" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/WaterResURI.swagger.json#/paths//WaterResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ModeResURI.swagger.json#/paths//ModeResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/HeartRateZoneResURI.swagger.json#/paths//HeartRateZoneResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/RampTimeResURI.swagger.json#/paths//RampTimeResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource that describes the Ramp Time of a dimming function.\nThis specifies the actual speed of changing between 2 dimming values.\nTime is specified in milliseconds [ms].\nWhen range (from oic.r.baseresource) is omitted the maximum value is 100 ms.\nThe RampTime of 0ms indicates the minimal delay possible by the implementation.\nRetrieves the current RampTime.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ColourHueSaturationResURI.swagger.json#/paths//example/ColourHueSaturationResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets current colour hue and saturation values.\nAt least one of hue or saturation shall be provided in the payload.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/SelectableLevelsResURI.swagger.json#/paths//SelectableLevelsResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This Resource provides a set of device defined 'levels' that can be selected for an operation.\nFor example where a humidifier has a discrete set that model different humidity levels that can be set.\navailablelevels is an array of the levels that can be selected, these can be a number or an integer.\ntargetlevel is the level that has currently been selected and is written to in order to select a new level.\nWhen retrieved the targetlevel provides the actual value that has been selected.\nRetrieves the current selectable levels.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/HeightResURI.swagger.json#/paths//HeightResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the properties associated with height of an object's physical size.\nHeight (height) is height of an object.\nRetrieves height of an object.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Air%20Quality%20Collection>
+        a             skos:Concept ;
+        rdfs:label    "Air Quality Collection" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/AirQualityBaselineResURI.swagger.json#/paths//AirQualityLLResURI> , <http://openconnectivity.org/iotdatamodels/schemas/AirQualityBaselineResURI.swagger.json#/paths//AirQualityBaselineResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/BatteryResURI.swagger.json#/paths//BatteryResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the attributes associated with a battery. The charge is an integer showing the current battery charge level as a percentage in the range 0 (fully discharged) to 100 (fully charged). The capacity represents the total capacity of battery in Amp Hours (Ah). The charging status and discharging status are represented by boolean values set to \"True\" indicating enabled and \"False\" indicating disabled. Low battery status is represented by a boolean value set to \"True\" indicating low charge level and \"False\" indicating otherwise, based upon the battery threshold represented as a percentage.\nRetrieves the state of the battery.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/mediaSourceResURI.swagger.json#/paths//mediaSourceResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Changes the status of the source.\nAllows changes of the sourceName and the status.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AirFlowResURI.swagger.json#/paths//AirFlowResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the properties associated with air flow.\nThe supporteddirections is the set of valid values for the direction property for a particular instance of this resource type.\nThe direction is the directionality of the air flow if applicable, if supporteddirections is also present it must be a value from that set.\nDirection values are dependent on the capabilities of the unit.\nThe speed is an integer representing the current speed level for the unit.\nThe range (from oic.r.baseresource) is an array of the min,max values for the speed level. If not present the range defaults to [0,100].\nautomode is the status of the automode feature; Off means automode is not enabled, On means automode is active and the speed is automatically controlled by the device.\nRetrieves the current air flow values.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ConsumableResURI.swagger.json#/paths//ConsumableResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource specifies a thing that can be consumed such as filter material, printer toner etc\nThe type is an enumeration defining the thing being consumed as defined by the Smart Home Device Specification\nThe remaining is an integer capturing the percentatge remaining life\nThe orderpercentage is an integer capturing the percentage life at which replacement or replenishment is recommended by the manufacturer\nThe url is a string containing a URL at which further information may be obtained with respect to the consumable\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ColourChromaResURI.swagger.json#/paths//example/ColourChromaResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the colour using chroma conventions.\nProperties are hue, saturation, csc, and ct.\nhue is the hue angle, it is an integer value as defined by the CIECAM02 model definition (see reference [CIE CIE159:2004]).\nsaturation is an integer value as defined by the CIECAM02 model definition (see reference [CIE CIE159:2004]).\nmaximumsaturation is the upper bound on the saturation supported by the Device.\n    If not present the maximum value for saturation is 32767.\ncsc is the colour space coordinates in CIE colour space.\n  The first item in the array is the X coordinate.\n  The second item in the array is the Y coordinate.\nct is the Mired colour temperature.\nProvides the colour using chroma conventions.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Open%20Level>
+        a             skos:Concept ;
+        rdfs:label    "Open Level" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/OpenLevelResURI.swagger.json#/paths//OpenLevelResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/WeightResURI.swagger.json#/paths//WeightResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/BatteryResURI.swagger.json#/paths//BatteryResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ConsumablesBaselineResURI.swagger.json#/paths//ConsumablesBaselineResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/NightModeResURI.swagger.json#/paths//NightModeResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ColourSpaceCoordinatesResURI.swagger.json#/paths//example/ColourSpaceCoordinatesResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets current colour space coordinates\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Activity%20Count>
+        a             skos:Concept ;
+        rdfs:label    "Activity Count" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/ActivityCountResURI.swagger.json#/paths//ActivityCountResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/mediaSourceListResURI.swagger.json#/paths//mediaSourceListResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource provides the list of media sources available on the device.\nThe sources are an array of mediaSource(s) as separately defined.\nThe basic resource type oic.r.mediaSourceList does not provide any indications whether the source is input or output.\nHence, two specializations of this resource exist.\nWhen a device exposes input sources then an instance of this resource with a resource type of oic.r.media.input is exposed.\nWhen a device exposes output sources then an instance of this resource with a resource type of oic.r.media.output is exposed.\nA device that exposes both input and output media sources then exposes two instances of this resource,\none with a resource type or oic.r.media.input and one with a resource type of oic.r.media.output\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/TimePeriodResURI.swagger.json#/paths//TimePeriodResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets or updates a time period for information retrieval, action or other behavior.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Presence%20Sensor>
+        a             skos:Concept ;
+        rdfs:label    "Presence Sensor" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/PresenceResURI.swagger.json#/paths//PresenceResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ClockResURI.swagger.json#/paths//ClockResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the properties associated with clock and time.\nClock is a time information.\nDatetime is using ISO 8601 datetime format (e.g: \"2007-04-05T14:30Z\") (Time+Date+Timezone)\nCountdown is the desired total seconds for countdown.\nRetrieves the current datetime data.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Carbon%20Dioxide%20Sensor>
+        a             skos:Concept ;
+        rdfs:label    "Carbon Dioxide Sensor" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/CarbonDioxideResURI.swagger.json#/paths//CarbonDioxideResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/BaseResourceSchemaResURI.swagger.json#/paths//BaseResourceSchemaResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/HeatingZoneResURI.swagger.json#/paths//HeatingZoneResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This Resource provides information about the status of a heating zone of a Cook-Top.\nIt describes the case of a Cook-Top whose zones can be activated dynamically (i.e. the device implements pot recognition).\nmaxheatinglevel defines the max level for the heating zone\nheatinglevel is the current heating level of the zone\n  For each element the value range is from 0 (indication that the zone is not heating) to maxheatinglevel,\nRetrieves the current heating zone information.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/UV%20Radiation>
+        a             skos:Concept ;
+        rdfs:label    "UV Radiation" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/UVRadiationResURI.swagger.json#/paths//UVRadiationResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/HeatingZoneResURI.swagger.json#/paths//HeatingZoneResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Smoke%20Sensor>
+        a             skos:Concept ;
+        rdfs:label    "Smoke Sensor" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/SmokeSensorResURI.swagger.json#/paths//SmokeSensorResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/GrinderResURI.swagger.json#/paths//GrinderResURI>
+        a       skos:Concept .
+
+sw:SwaggerAPI  skos:narrower  <http://openconnectivity.org/iotdatamodels/schemas/BatteryMaterial> , <http://openconnectivity.org/iotdatamodels/schemas/Mode> , <http://openconnectivity.org/iotdatamodels/schemas/Refrigeration> , <http://openconnectivity.org/iotdatamodels/schemas/Foaming> , <http://openconnectivity.org/iotdatamodels/schemas/Button%20Switch> , <http://openconnectivity.org/iotdatamodels/schemas/Lock> , <http://openconnectivity.org/iotdatamodels/schemas/Altimeter> , <http://openconnectivity.org/iotdatamodels/schemas/Colour%20Saturation> , <http://openconnectivity.org/iotdatamodels/schemas/VehicleConnector> , <http://openconnectivity.org/iotdatamodels/schemas/Speech%20Synthesis-TTS> , <http://openconnectivity.org/iotdatamodels/schemas/Battery> , <http://openconnectivity.org/iotdatamodels/schemas/Energy%20Consumption> , <http://openconnectivity.org/iotdatamodels/schemas/Clock> , <http://openconnectivity.org/iotdatamodels/schemas/Consumable> , <http://openconnectivity.org/iotdatamodels/schemas/Air%20Quality> , <http://openconnectivity.org/iotdatamodels/schemas/Ramp%20Time> , <http://openconnectivity.org/iotdatamodels/schemas/Glass%20Break%20Sensor> , <http://openconnectivity.org/iotdatamodels/schemas/Automatic%20Document%20Feeder> , <http://openconnectivity.org/iotdatamodels/schemas/Colour%20Chroma> , <http://openconnectivity.org/iotdatamodels/schemas/Base%20Resource%20Schema> , <http://openconnectivity.org/iotdatamodels/schemas/Weight> , <http://openconnectivity.org/iotdatamodels/schemas/Media%20Source%20Input> , <http://openconnectivity.org/iotdatamodels/schemas/Air%20Flow> , <http://openconnectivity.org/iotdatamodels/schemas/EnergyGeneration> , <http://openconnectivity.org/iotdatamodels/schemas/Media%20Source%20Output> , <http://openconnectivity.org/iotdatamodels/schemas/LiquidLevel> , <http://openconnectivity.org/iotdatamodels/schemas/Energy> , <http://openconnectivity.org/iotdatamodels/schemas/Colour%20Temperature> , <http://openconnectivity.org/iotdatamodels/schemas/Auto%20White%20Balance> , <http://openconnectivity.org/iotdatamodels/schemas/Energy%20Usage> , <http://openconnectivity.org/iotdatamodels/schemas/Heating%20Zone%20Collection> , <http://openconnectivity.org/iotdatamodels/schemas/Air%20Flow%20Control> , <http://openconnectivity.org/iotdatamodels/schemas/Demand%20Response%20Load%20Control%20(DRLC).> , <http://openconnectivity.org/iotdatamodels/schemas/Illuminance%20Sensor> , <http://openconnectivity.org/iotdatamodels/schemas/Colour%20Space%20Coordinates> , <http://openconnectivity.org/iotdatamodels/schemas/Geolocation> , <http://openconnectivity.org/iotdatamodels/schemas/Generic%20Sensor> , <http://openconnectivity.org/iotdatamodels/schemas/Night%20Mode> , <http://openconnectivity.org/iotdatamodels/schemas/Open%20Level> , <http://openconnectivity.org/iotdatamodels/schemas/UV%20Radiation> , <http://openconnectivity.org/iotdatamodels/schemas/Door> , <http://openconnectivity.org/iotdatamodels/schemas/Heating%20Zone> , <http://openconnectivity.org/iotdatamodels/schemas/Water%20Sensor> , <http://openconnectivity.org/iotdatamodels/schemas/Selectable%20Levels> , <http://openconnectivity.org/iotdatamodels/schemas/Height> , <http://openconnectivity.org/iotdatamodels/schemas/Contact%20Sensor> , <http://openconnectivity.org/iotdatamodels/schemas/Binary%20Switch> , <http://openconnectivity.org/iotdatamodels/schemas/Three%20Axis%20Sensor> , <http://openconnectivity.org/iotdatamodels/schemas/Temperature> , <http://openconnectivity.org/iotdatamodels/schemas/Acceleration%20Sensor> , <http://openconnectivity.org/iotdatamodels/schemas/Ice%20Maker> , <http://openconnectivity.org/iotdatamodels/schemas/Lock%20Code> , <http://openconnectivity.org/iotdatamodels/schemas/Brewing> , <http://openconnectivity.org/iotdatamodels/schemas/Media%20Source> , <http://openconnectivity.org/iotdatamodels/schemas/Audio%20Controls> , <http://openconnectivity.org/iotdatamodels/schemas/Magnetic%20Field%20Direction%20Sensor> , <http://openconnectivity.org/iotdatamodels/schemas/Time%20Period> , <http://openconnectivity.org/iotdatamodels/schemas/Smoke%20Sensor> , <http://openconnectivity.org/iotdatamodels/schemas/Atmospheric%20Pressure%20Sensor> , <http://openconnectivity.org/iotdatamodels/schemas/Carbon%20Dioxide%20Sensor> , <http://openconnectivity.org/iotdatamodels/schemas/Delay%20Defrost> , <http://openconnectivity.org/iotdatamodels/schemas/Auto%20Focus> , <http://openconnectivity.org/iotdatamodels/schemas/Grinder> , <http://openconnectivity.org/iotdatamodels/schemas/Brightness> , <http://openconnectivity.org/iotdatamodels/schemas/Humidity> , <http://openconnectivity.org/iotdatamodels/schemas/Colour%20Hue%20and%20Saturation> , <http://openconnectivity.org/iotdatamodels/schemas/Motion%20Sensor> , <http://openconnectivity.org/iotdatamodels/schemas/Presence%20Sensor> , <http://openconnectivity.org/iotdatamodels/schemas/Energy%20Overload/Circuit%20Breaker> , <http://openconnectivity.org/iotdatamodels/schemas/Eco%20Mode> , <http://openconnectivity.org/iotdatamodels/schemas/Media> , <http://openconnectivity.org/iotdatamodels/schemas/Sleep%20Sensor> , <http://openconnectivity.org/iotdatamodels/schemas/Movement> , <http://openconnectivity.org/iotdatamodels/schemas/Value%20Conditional> , <http://openconnectivity.org/iotdatamodels/schemas/Dimming> , <http://openconnectivity.org/iotdatamodels/schemas/Heart%20Rate%20Zone> , <http://openconnectivity.org/iotdatamodels/schemas/Media%20Source%20List> , <http://openconnectivity.org/iotdatamodels/schemas/Pan%20Tilt%20Zoom%20Movement> , <http://openconnectivity.org/iotdatamodels/schemas/Consumables> , <http://openconnectivity.org/iotdatamodels/schemas/Air%20Quality%20Collection> , <http://openconnectivity.org/iotdatamodels/schemas/Carbon%20Monoxide%20Sensor> , <http://openconnectivity.org/iotdatamodels/schemas/Colour%20RGB> , <http://openconnectivity.org/iotdatamodels/schemas/Activity%20Count> , <http://openconnectivity.org/iotdatamodels/schemas/Signal%20Strength> , <http://openconnectivity.org/iotdatamodels/schemas/Touch%20Sensor> , <http://openconnectivity.org/iotdatamodels/schemas/Operational%20State> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Acceleration%20Sensor>
+        a             skos:Concept ;
+        rdfs:label    "Acceleration Sensor" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/AccelerationResURI.swagger.json#/paths//AccelerationResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ValueConditionalResURI.swagger.json#/paths//ValueConditionalResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/HumidityResURI.swagger.json#/paths//HumidityResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes a sensed or desired humidity.\nThe value humidity is an integer describing the percentage measured relative humidity.\nThe value desiredHumidity is an integer showing the desired target relative humidity.\nRetrieves the current (relative) humidity level.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AirFlowResURI.swagger.json#/paths//AirFlowResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Mode>
+        a             skos:Concept ;
+        rdfs:label    "Mode" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/ModeResURI.swagger.json#/paths//ModeResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/VehicleConnectorResURI.swagger.json#/paths//VehicleConnectorResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AirFlowResURI.swagger.json#/paths//AirFlowResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the current air flow values.\nOnly direction and speed may be set by an update operation.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/OperationalStateResURI.swagger.json#/paths//OperationalStateResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the desired operational or job state.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/EnergyConsumptionResURI.swagger.json#/paths//EnergyConsumptionResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the energy consumed by the device since power up (the energy value is in Watt Hours [Wh]) \nand the instantaneous power draw of the device (the power value is in Watts [W]) at the time the resource was queried.\nThe power value is in Watts [W].\nThe energy value is in Watt Hours [Wh].\nProvides the current power draw and cumulative energy usage.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Media>
+        a             skos:Concept ;
+        rdfs:label    "Media" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/MediaResURI.swagger.json#/paths//MediaResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AudioResURI.swagger.json#/paths//AudioResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource defines basic audio control functions.\nThe volume is an integer containing a percentage [0,100].\nA volume of 0 (zero) means no sound produced.\nA volume of 100 means maximum sound production.\nThe mute control is implemented as a boolean.\nA mute value of true means that the device is muted (no audio).\nA mute value of false means that the device is not muted (audio).\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Air%20Quality>
+        a             skos:Concept ;
+        rdfs:label    "Air Quality" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/AirQualityResURI.swagger.json#/paths//AirQualityResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/BatteryMaterial>
+        a             skos:Concept ;
+        rdfs:label    "BatteryMaterial" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/BatteryMaterialResURI.swagger.json#/paths//BatteryMaterialResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/mediaSourceOutputResURI.swagger.json#/paths//mediaSourceOutputResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Changes the status of the source(s).\nAllows changes of the sourceName and the status.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AutoFocusResURI.swagger.json#/paths//AutoFocusResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ValueConditionalResURI.swagger.json#/paths//ValueConditionalResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource specifies conditions that can be applied to an observed value in any Resource.\nThese conditions are applied by the server exposing the Resource to any generated notifications because of subscriptions to the Resource.\nA unicast RETRIEVE to the Resource will receive the most recent value; which may not be the most recent notified value.\nA server exposes this Resource in association with the Resource conveying the observed value.\nThis is done by means of a new Resource instance with an RT of [\"oic.r.<thing being observed>\", \"oic.r.value.conditional\"], e.g [\"oic.r.temperature\", \"oic.r.value.conditional\"].  Please see Section 5.7.1 of the published OCF Resource Type Specification for more details.\nThe threshold is the amount by which the thing being observed must change before a notification is sent.\nThe minnotifyperiod is the minimum time in ms (milliseconds) that must elapse before a notification is sent.\nIf the maxnotifyperiod (time in ms (milliseconds)) elapses then a notification must be sent.\nThe maxnotifyperiod timer resets each time a notification is sent.\nA value of '0' for any of threshold, minnotifyperiod or maxnotifyperiod means that the capability is supported but not active.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/GenericSensorResURI.swagger.json#/paths//GenericSensorResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes whether some value or property or entity has been sensed or not.\nThe value is a boolean.\nA value of 'true' means that the target has been sensed.\nA value of 'false' means that the target has not been sensed.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/TemperatureResURI.swagger.json#/paths//TemperatureResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Delay%20Defrost>
+        a             skos:Concept ;
+        rdfs:label    "Delay Defrost" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/DelayDefrostResURI.swagger.json#/paths//DelayDefrostResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/MediaResURI.swagger.json#/paths//MediaResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource specifies the media types that an OCF Server supports.\nThe resource is an array of media elements.  Each element contains:\n    A URL at which the specified media type can be accessed.\n    A string array containing the definition of the media using SDP.\n    Each entry in the sdp array is an SDP line.\n    Each line shall follow the SDP description syntax as defined in the SDP specification.\nThe SDP specification can be found at http://tools.ietf.org/html/rfc4566.\nRetrieves the current media resource.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/RampTimeResURI.swagger.json#/paths//RampTimeResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the current RampTime.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Auto%20Focus>
+        a             skos:Concept ;
+        rdfs:label    "Auto Focus" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/AutoFocusResURI.swagger.json#/paths//AutoFocusResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ColourRGBResURI.swagger.json#/paths//ColourRGBResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the current colourRGB value\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ButtonResURI.swagger.json#/paths//ButtonResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ContactResURI.swagger.json#/paths//ContactResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AirQualityResURI.swagger.json#/paths//AirQualityResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes a qualitative or measured contaminant that can be used to infer Air Quality.\nMeasured is the actual sensed value with units per contaminant type as described below.\nQualitative is a representative value within the range provided where the minium value is minimum contamination and maximum value is maximum contamination for the specific contaminant.\nThe valueType indicates a qualitative or measured reading within the contaminantvalue Property.\ncontaminantvalue contains the actual measured or qualitative level.\nrange contains the allowed range for the value that is being reported (from oic.r.baseresource).\nIf valueType is 'Measured' then the units for the contaminant types are as follows:\n Methanal (also known as Formaldehyde): CH2O (ug/m^3),\n Carbon Dioxide: CO2 (ppm),\n Carbon Monoxide: CO (ppm),\n Particulate Matter (less than 2.5 microns in diameter): PM2.5 (ug/m^3),\n Particulate Matter (less than 10 microns in diameter): PM10 (ug/m^3),\n Volatile Organic Compounds: VOC (ug/m^3)\nRetrieves the current air quality.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/mediaSourceOutputResURI.swagger.json#/paths//mediaSourceOutputResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AccelerationResURI.swagger.json#/paths//AccelerationResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource provides a measure of proper acceleration (g force) as opposed to co-ordinate acceleration\n(which is dependent on the co-ordinate system and the observer).\nThe value is a float which describes the acceleration experienced by the object in \"g\".\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Door>
+        a             skos:Concept ;
+        rdfs:label    "Door" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/DoorResURI.swagger.json#/paths//DoorResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Ice%20Maker>
+        a             skos:Concept ;
+        rdfs:label    "Ice Maker" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/IceMakerResURI.swagger.json#/paths//IceMakerResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/RampTimeResURI.swagger.json#/paths//RampTimeResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/OperationalStateResURI.swagger.json#/paths//OperationalStateResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the operational and job states on a device.\nThe states can be read or set, setting indicates a desired state.\nA device may reject an attempt to set a state that would result\nin adverse operational characteristics.\nThe machineStates is an array of the possible operational states.\nThe currentMachineState is the current state of operation of the device.\nThe jobStates is an array of the possible job states.\nThe currentJobState is the currently active jobState.\nThe runningTime is the ISO8601 encoded elapsed time in the current operational state.\nThe remainingTime is the ISO8601 encoded time till completion of the current operational state.\nThe progressPercentage is the percentage completeness of the current jobState.\nRetrieves the current operational and job states.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/IlluminanceSensorResURI.swagger.json#/paths//IlluminanceSensorResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/HeatingZoneBaselineResURI.swagger.json#/paths//HeatingZoneBaselineResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AirFlowControlResURI.swagger.json#/paths//AirFlowControlResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the attributes associated with control of air flow,\nfor example as modelled by a Thermostat (fan), Room A/C or other device.\nThe resource is a composite resource being made up as a collection of:\n  AirFlow Resource\n  BinarySwitch Resource\nRetrieves the current air flow control values.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Motion%20Sensor>
+        a             skos:Concept ;
+        rdfs:label    "Motion Sensor" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/MotionResURI.swagger.json#/paths//MotionResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/UVRadiationResURI.swagger.json#/paths//UVRadiationResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Clock>
+        a             skos:Concept ;
+        rdfs:label    "Clock" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/ClockResURI.swagger.json#/paths//ClockResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ColourRGBResURI.swagger.json#/paths//ColourRGBResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource specifies the actual colour in the RGB space represented as an array of integers.\nEach colour value is described with a Red, Green, Blue component.\nThese colour values are encoded as an array of integer values ([R,G,B]).\nThe minimum and maximum colour value per component may be described by range (from oic.r.baseresource).\nWhen range (from oic.r.baseresource) is omitted, then the range is [0,255].\nRetrieves the current colour in RGB.\nValue is an array of integer values in the order R,G,B.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/WaterResURI.swagger.json#/paths//WaterResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AltimeterResURI.swagger.json#/paths//AltimeterResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Selectable%20Levels>
+        a             skos:Concept ;
+        rdfs:label    "Selectable Levels" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/SelectableLevelsResURI.swagger.json#/paths//SelectableLevelsResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/SignalStrengthResURI.swagger.json#/paths//SignalStrengthResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ActivityCountResURI.swagger.json#/paths//ActivityCountResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource specifies an activity count.\nThe resource can be readonly (oic.if.s interface) in which instance it represents a count.\nThe resource can be readwrite (oic.if.a interface) in which instance it represents a goal or target for a count.\nThe count property is an integer representing either the current count or goal value.\nRetrieves the current activity count.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/TemperatureResURI.swagger.json#/paths//TemperatureResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes a sensed or actuated Temperature value.\nThe temperature describes the current value measured.\nThe units is a single value that is one of C, F or K.\nIt provides the unit of measurement for the temperature value.\nIt is a read-only value that is provided by the server.\nIf the units Property is missing the default is Celsius [C].\nWhen range (from oic.r.baseresource) is omitted the default is +/- MAXINT.\nRetrieves the current temperature value.\nA client can specify the units for the requested temperature by use of a query parameter.\nIf no query parameter is provided the server provides its default measure or set value.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/RefrigerationResURI.swagger.json#/paths//RefrigerationResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Activates the desired Refrigeration functions.\nSuported values are rapidFreeze, rapidCool and defrost.\nAt least on of the supported values shall be provided.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Touch%20Sensor>
+        a             skos:Concept ;
+        rdfs:label    "Touch Sensor" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/TouchResURI.swagger.json#/paths//TouchResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/LiquidLevel>
+        a             skos:Concept ;
+        rdfs:label    "LiquidLevel" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/LiquidLevelResURI.swagger.json#/paths//LiquidLevelResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/DimmingResURI.swagger.json#/paths//DimmingResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/DoorResURI.swagger.json#/paths//DoorResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ActivityCountResURI.swagger.json#/paths//ActivityCountResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/CarbonDioxideResURI.swagger.json#/paths//CarbonDioxideResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes whether carbon dioxide has been sensed or not.\nThe value is a boolean.\nA value of 'true' means that carbon dioxide has been detected.\nA value of 'false' means that carbon dioxide has not been detected.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/BinarySwitchResURI.swagger.json#/paths//BinarySwitchResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Operational%20State>
+        a             skos:Concept ;
+        rdfs:label    "Operational State" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/OperationalStateResURI.swagger.json#/paths//OperationalStateResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/TemperatureResURI.swagger.json#/paths//TemperatureResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the desired temperature value.\nIf a unit is included and the server does not support the unit indicated the request will fail.\nIf the units are omitted value is taken to be in C.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/mediaSourceListResURI.swagger.json#/paths//mediaSourceListResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/CarbonMonoxideResURI.swagger.json#/paths//CarbonMonoxideResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/ConsumablesBaselineResURI.swagger.json#/paths//ConsumablesBaselineResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource specifies things that can be consumed such as filter material, printer toner etc\nThe resource is a collection of instances of oic.r.consumable detailing the individual consumed items\nsupportedconsumables is the set of consumable types that this instance of the Resource supports\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/EnergyGenerationResURI.swagger.json#/paths//EnergyGenerationResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the attributes associated with energy generation\nenergygenerated is a number that provides the energy generated in Watt-hour(Wh).\nRetrieves the current energy generation.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/mediaSourceInputResURI.swagger.json#/paths//mediaSourceInputResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/SelectableLevelsResURI.swagger.json#/paths//SelectableLevelsResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets the current level from the set that is selectable" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/BatteryMaterialResURI.swagger.json#/paths//BatteryMaterialResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the battery material represented as an enumerated set of strings.\nRetrieves the battery material.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AirFlowControlResURI.swagger.json#/paths//AirFlowControlResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/LockCodeResURI.swagger.json#/paths//LockCodeResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/SmokeSensorResURI.swagger.json#/paths//SmokeSensorResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes whether smoke has been sensed or not.\nThe value is a boolean.\nA value of 'true' means that smoke has been sensed.\nA value of 'false' means that smoke not been sensed.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/TimePeriodResURI.swagger.json#/paths//TimePeriodResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/HeightResURI.swagger.json#/paths//HeightResURI>
+        a       skos:Concept .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Consumable>
+        a             skos:Concept ;
+        rdfs:label    "Consumable" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/ConsumableResURI.swagger.json#/paths//ConsumableResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/BatteryResURI.swagger.json#/paths//BatteryResURI/post>
+        a                skos:Concept ;
+        skos:definition  "Sets current battery values\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/HeatingZoneBaselineResURI.swagger.json#/paths//HeatingZoneBaselineResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This Resource provides information about the status of the heating zones of a Cook-Top.\nIt describes the case of a Cook-Top whose zones can be activated dynamically (i.e. the device implements pot recognition).\nThe resource is a collection of instances of oic.r.heatingzone detailing the individual cooktop zones\nRetrieves the current heating zone information.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Lock%20Code>
+        a             skos:Concept ;
+        rdfs:label    "Lock Code" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/LockCodeResURI.swagger.json#/paths//LockCodeResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/AirQualityBaselineResURI.swagger.json#/paths//AirQualityLLResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes a sensor that provides the qualitative or measured Air Quality.\nThe resource is a collection of instances of oic.r.airquality detailing the individual exposed contaminant measures\nThere is one collection entry per contaminant type supported by the device. A device must expose at least one measured or qualitative value.\nRetrieves the current air quality.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/SpeechTTSResURI.swagger.json#/paths//SpeechTTSResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource may be created on the OIC Server that is capable of rendering speech by an OIC Client\n  and allows the client to provide an SSML document with text to render\n  or may be created on the OIC Server by some resident application.\nThe audio rendered is at this stage local to the Server (i.e. not streamed).\nThe utterance is an SSML document.\nThe supportedLanguages is an array of the RFC 5646 defined language tags that are supported.\nThe supportedVoices is an SSML document fragment indicating the voices that are supported.\nUtterance in the example shall be a properly escaped (JSON rules) SSML document. An example is given below:\n  \"<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n\r\n  <speak version=\"1.1\" xmlns=\"http://www.w3.org/2001/10/synthesis\"\n\r\n  \txmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n\r\n  \txsi:schemaLocation=\"http://www.w3.org/2001/10/synthesis\n\r\n  \thttp://www.w3.org/TR/speech-synthesis11/synthesis.xsd\"\n\r\n  \txml:lang=\"en-US\">\n\r\n  \n\r\n  \tThe title of the movie is:\n\r\n  \t\"Monty Pythons The Meaning of Life\"\n\r\n  \twhich is directed by Terry Jones.\n\r\n  </speak\"\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Air%20Flow%20Control>
+        a             skos:Concept ;
+        rdfs:label    "Air Flow Control" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/AirFlowControlResURI.swagger.json#/paths//AirFlowControlResURI> .
+
+<http://openconnectivity.org/iotdatamodels/schemas/BrewingResURI.swagger.json#/paths//BrewingResURI/get>
+        a                skos:Concept ;
+        skos:definition  "This resource describes the attributes associated with brewing. This resource is used for configuration only. Operation is handled independently of this resource. The amount requested is in ml. The strength of a brewed drink is an integer, the range of which may be enforced by the presence of a strengthrange Property.\nRetrieves the state of brewing.\n" .
+
+<http://openconnectivity.org/iotdatamodels/schemas/Consumables>
+        a             skos:Concept ;
+        rdfs:label    "Consumables" ;
+        skos:related  <http://openconnectivity.org/iotdatamodels/schemas/ConsumablesBaselineResURI.swagger.json#/paths//ConsumablesBaselineResURI> , <http://openconnectivity.org/iotdatamodels/schemas/ConsumablesBaselineResURI.swagger.json#/paths//ConsumablesLLResURI> .

@@ -1,0 +1,67 @@
+@prefix tip: <http://example.org/namespace/ble-gatt/tip#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+tip:TimeProfile a skos:Concept .
+tip:NextDSTChangeService a skos:Concept .
+tip:ReferenceTimeUpdateService  a skos:Concept .
+tip:TimewithDST a skos:Concept .
+tip:TimeUpdateControlPoint a skos:Concept .
+tip:TimeUpdateState a skos:Concept .
+
+
+tip:TimeProfile rdfs:label "Time Profile" .
+tip:TimeProfile rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=241874> .
+tip:TimeProfile skos:definition "The Time profile enables the device to get the date, time, time zone, and DST information and control the functions related the time." .
+tip:TimeProfile owl:versionInfo "1.0" .
+
+ble:Profile skos:narrower tip:TimeProfile .
+
+
+ble:Service skos:narrower tip:NextDSTChangeService .
+ble:Service skos:narrower tip:ReferenceTimeUpdateService .
+
+tip:TimeProfile skos:related ble:CurrentTimeService .
+
+tip:TimeProfile skos:related tip:NextDSTChangeService .
+tip:TimeProfile skos:related tip:ReferenceTimeUpdateService .
+
+
+
+tip:NextDSTChangeService rdfs:label "Daylight Saving Time Change Service" .
+tip:NextDSTChangeService  rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=241872> .
+tip:NextDSTChangeService  skos:definition "This service defines how the information about an upcoming DST change can be exposed using the Generic Attribute Profile (GATT)." .
+tip:NextDSTChangeService owl:versionInfo "1.0" .
+
+ 
+tip:NextDSTChangeService skos:related tip:TimewithDST .
+ble:Characteristic skos:narrower  tip:TimewithDST .
+
+tip:TimewithDST rdfs:label "Time with Daylight Saving Time" .
+tip:TimewithDST skos:definition "The Next DST Change Server returns the Time with DST to the time when the next DST change will occur and the DST offset that will be in effect after this change." .
+
+
+tip:ReferenceTimeUpdateService rdfs:label "Reference Time Update Service" .
+tip:ReferenceTimeUpdateService   rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=241873> .
+tip:ReferenceTimeUpdateService skos:definition "This service defines how a client can request an update from a reference time source from a time server using the Generic Attribute Profile (GATT)." .
+tip:ReferenceTimeUpdateService owl:versionInfo "1.0" .
+
+tip:ReferenceTimeUpdateService skos:related tip:TimeUpdateControlPoint .
+tip:ReferenceTimeUpdateService skos:related tip:TimeUpdateState .
+
+ble:Characteristic skos:narrower tip:TimeUpdateControlPoint .
+ble:Characteristic skos:narrower tip:TimeUpdateState .
+
+tip:TimeUpdateControlPoint rdfs:label "Time Update Control Point" .
+tip:TimeUpdateState rdfs:label "Time Update State".
+
+tip:TimeUpdateControlPoint skos:definition "The Time Update Control Point characteristic is used to request a reference time update on the server." .
+tip:TimeUpdateState skos:definition "The Time Update State characteristic returns the current state of the reference time update on the Reference Time Update server." .
+
+
+
+
+

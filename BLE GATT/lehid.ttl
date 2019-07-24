@@ -1,0 +1,88 @@
+@prefix lehid: <http://example.org/namespace/ble-gatt/lehid#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+lehid:HIDoverGATTProfile a skos:Concept .
+lehid:HIDService a skos:Concept .
+lehid:ProtocolMode a skos:Concept .
+lehid:Report a skos:Concept .
+lehid:ReportMap a skos:Concept .
+lehid:BootKeyboardInputReport a skos:Concept .
+lehid:BootKeyboardOutputReport a skos:Concept .
+lehid:BootMouseInputReport a skos:Concept .
+lehid:HIDInformation a skos:Concept .
+lehid:HIDControlPoint a skos:Concept .
+
+
+lehid:HIDoverGATTProfile rdfs:label "Low Energy Human Interface Device over GATT Profile" .
+lehid:HIDoverGATTProfile rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245141> .
+lehid:HIDoverGATTProfile  skos:definition "The HID over GATT profile defines the procedures and features to be used by Bluetooth low energy HID Devices using GATT and Bluetooth HID Hosts using GATT." .
+lehid:HIDoverGATTProfile owl:versionInfo "1.0" .
+
+ble:Profile skos:narrower lehid:HIDoverGATTProfile .
+
+ble:Service skos:narrower lehid:HIDService .
+
+
+lehid:HIDoverGATTProfile skos:related lehid:HIDService .
+lehid:HIDoverGATTProfile skos:related ble:ScanParametersService .
+lehid:HIDoverGATTProfile skos:related ble:DeviceInformationService .
+lehid:HIDoverGATTProfile skos:related ble:BatteryService .
+
+lehid:HIDService rdfs:label "Human Interface Device Service" .
+lehid:HIDService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245140> .
+lehid:HIDService skos:definition "The HID Service exposes data and associated formatting for HID Devices and HID Hosts. " .
+lehid:HIDService owl:versionInfo "1.0" .
+
+
+
+ble:Characteristic skos:narrower lehid:ProtocolMode  .
+ble:Characteristic skos:narrower  lehid:Report .
+ble:Characteristic skos:narrower  lehid:ReportMap .
+ble:Characteristic skos:narrower lehid:BootKeyboardInputReport .
+ble:Characteristic skos:narrower lehid:BootKeyboardOutputReport .
+ble:Characteristic skos:narrower lehid:BootMouseInputReport .
+ble:Characteristic skos:narrower lehid:HIDInformation .
+ble:Characteristic skos:narrower lehid:HIDControlPoint .
+
+lehid:HIDService skos:related lehid:ProtocolMode .
+lehid:HIDService skos:related lehid:Report .
+lehid:HIDService skos:related lehid:ReportMap .
+lehid:HIDService skos:related lehid:BootKeyboardInputReport .
+lehid:HIDService skos:related lehid:BootKeyboardOutputReport .
+lehid:HIDService skos:related lehid:BootMouseInputReport .
+lehid:HIDService skos:related lehid:HIDInformation .
+lehid:HIDService skos:related lehid:HIDControlPoint .
+
+lehid:ProtocolMode rdfs:label "Protocol Mode" . 
+lehid:ProtocolMode skos:definition "The Protocol Mode characteristic is used to expose the current protocol mode of the HID Service with which it is associated, or to set the desired protocol mode of the HID Service." .
+
+
+lehid:Report rdfs:label "Report" .
+lehid:Report skos:definition "The Report characteristic is used to exchange data between a HID Device and a HID Host." .
+
+lehid:ReportMap rdfs:label "Report Map" .
+lehid:ReportMap skos:definition "The Report Map characteristic is used to define formatting information for Input Report, Output Report, and Feature Report data transferred between a HID Device and HID Host." .
+
+lehid:BootKeyboardInputReport rdfs:label "Boot Keyboard Input Report" .
+lehid:BootKeyboardInputReport skos:definition "The Input Boot Keyboard Report characteristic is used to transfer fixed format and length Input Report data between a HID Host operating in Boot Protocol Mode and a HID Service corresponding to a boot keyboard." .
+
+lehid:BootKeyboardOutputReport rdfs:label "Boot Keyboard Output Report" .
+lehid:BootKeyboardOutputReport skos:definition "The Boot Keyboard Output Report characteristic is used to transfer fixed format and length Output Report data between a HID Host operating in Boot Protocol Mode and a HID Service corresponding to a boot keyboard." .
+
+
+lehid:BootMouseInputReport rdfs:label "Boot Mouse Input Report" .
+lehid:BootMouseInputReport  skos:definition "The Boot Mouse Input Report characteristic is used to transfer fixed format and length Input Report data between a HID Host operating in Boot Protocol Mode and a HID Service corresponding to a boot mouse." .
+
+
+lehid:HIDInformation rdfs:label "HID Information" .
+lehid:HIDInformation skos:definition "The HID Information characteristic is used to hold a set of values known as the HID Device’s HID Attributes." .
+
+
+lehid:HIDControlPoint rdfs:label  "HID Control Point" .
+lehid:HIDControlPoint skos:definition "The HID Control Point characteristic is a control-point attribute that defines Suspend and Exit Suspend HID Commands when written." .
+
