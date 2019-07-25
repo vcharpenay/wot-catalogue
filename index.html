@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <title>WoT Catalogue - Collection of formal concepts from the Web of Things</title>
         
         <script src="js/lunr.js"></script>
         <script src="js/urdf-browser.js"></script>
@@ -9,6 +10,13 @@
         <style>
             body {
                 margin: 0;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            #title {
+                font-weight: bold;
+                font-size: 20px;
+                margin-right: 20px;
             }
 
             #search-bar {
@@ -30,12 +38,14 @@
 
     <body>
         <div id="search-bar">
+            <span id="title">WoT Catalogue</span>
             <input id="search-field" type="text" placeholder="Enter a concept name...">
             <input id="search-button" type="button" value="Search">
         </div>
 
         <div id="search-results">
             <p id="search-results-count">
+                Downloading knowledge base...
             </p>
             <table>
                 <tbody id="search-results-list">
@@ -47,12 +57,15 @@
         <script id="catalogue-query" type="application/sparql-query">
             prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
             prefix skos: <http://www.w3.org/2004/02/skos/core#>
-            select ?concept ?label ?definition where {
-                graph ?g {
+            select ?concept ?scheme ?raw ?label ?definition where {
+                graph ?raw {
                     ?concept a skos:Concept ;
                              rdfs:label ?label ;
                              skos:definition ?definition .
                 }
+                # scheme name as folder name
+                bind (replace(str(?raw), "https://raw.githubusercontent.com/vcharpenay/wot-catalogue/master/", "") as ?local)
+                bind (strbefore(?local, "/") as ?scheme)
             }
         </script>
         
@@ -94,21 +107,26 @@
                     docs.forEach(doc => this.add(doc), this);
                 });
 
-                console.log(idx);
-
                 btn.onclick = () => {
                     let res = idx.search(field.value);
                     console.log(res)
 
-                    meta.textContent = `${res.length} result(s) found.`;
+                    meta.innerText = `${res.length} result(s) found.`;
                     
                     list.innerHTML = res.reduce((arr, m) => {
-                        console.log(m)
                         let doc = docs.find(doc => doc.concept == m.ref);
-                        let row = `<tr><td>${doc.concept}</td><td>${doc.label}</td><td>${doc.definition}</td></tr>`;
+                        let row = `<tr title="${doc.concept}">\
+                            <td><a href="${doc.raw}">${doc.scheme}</a></td>\
+                            <td><b>${doc.label}<b></td>\
+                            <td>${doc.definition}</td>\
+                        </tr>`;
                         return arr + row;
                     }, '');
                 };
+
+                field.onkeyup = e => { if (e.key == 'Enter') btn.onclick(); }
+
+                meta.innerText = '';
             })
 
             .catch(e => {
