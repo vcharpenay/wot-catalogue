@@ -1,0 +1,9 @@
+{
+    "description": "WoT catalogue processing scripts",
+    "author": "Victor Charpenay <victor.charpenay@fau.de>",
+    "name": "wot-catalogue",
+    "version": "0.1.0",
+    "dependencies": {
+        "urdf": "vcharpenay/uRDF.js"
+    }
+}

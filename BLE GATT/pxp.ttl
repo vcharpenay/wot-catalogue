@@ -1,4 +1,4 @@
-﻿@prefix pxp: <http://example.org/namespace/ble-gatt/pxp#> .
+@prefix pxp: <http://example.org/namespace/ble-gatt/pxp#> .
 @prefix ble: <http://example.org/namespace/ble-gatt#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
