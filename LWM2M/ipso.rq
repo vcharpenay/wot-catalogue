@@ -10,11 +10,11 @@ construct {
   ?obj a skos:Concept ;
        rdfs:label ?objLabel ;
        skos:definition ?objDef .
-  lwm2m:IPSOObject skos:narrower ?obj .
+  lwm2m:Object skos:narrower ?obj .
   ?res a skos:Concept ;
        rdfs:label ?resLabel ;
        skos:definition ?resDef .
-  lwm2m:IPSOResource skos:narrower ?res .
+  lwm2m:Resource skos:narrower ?res .
   ?obj skos:related ?res .
   ?res skos:related ?op, ?xsdDt .
 } where {
