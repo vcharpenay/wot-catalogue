@@ -8,14 +8,17 @@ prefix bacnet: <http://bacowl.sourceforge.net/2012/bacnet#>
 # source: http://bacowl.sourceforge.net/
 
 construct {
-  ?obj a skos:Concept .
+  ?obj a skos:Concept ;
+       rdfs:label ?objLabel .
   ?upperObj skos:narrower ?obj .
-  ?prop a skos:Concept .
+  ?prop a skos:Concept ;
+        rdfs:label ?propLabel .
   ?upperProp skos:narrower ?prop .
   ?obj skos:related ?prop .
   ?prop skos:related ?dt .
   
-  ?service a skos:Concept .
+  ?service a skos:Concept ;
+           rdfs:label ?serviceLabel .
   bacnet:ServicesSupported skos:narrower ?service .
 } where {
   {
@@ -34,6 +37,8 @@ construct {
                  owl:onDatatype ?xsd .
     }
     bind (if(bound(?xsd), ?xsd, ?propType) as ?dt)
+    bind (strafter(str(?obj), '#') as ?objLabel)
+    bind (strafter(str(?prop), '#') as ?propLabel)
   }
   union
   {
@@ -44,5 +49,6 @@ construct {
     ?oneOf a owl:Class ;
            owl:oneOf ?list .
     ?list rdf:rest*/rdf:first ?service .
+    bind (strafter(str(?service), '#') as ?serviceLabel)
   }
 }

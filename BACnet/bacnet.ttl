@@ -328,118 +328,147 @@
 
 GlobalGroupObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 PositiveIntegerValueObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 DeviceObject:lastRestartReason
         a             skos:Concept ;
+        rdfs:label    "lastRestartReason" ;
         skos:related  bacnet:RestartReason .
 
 AccessCredentialObject:lastAccessPoint
         a             skos:Concept ;
+        rdfs:label    "lastAccessPoint" ;
         skos:related  bacnet:DeviceObjectReference .
 
 DatePatternValueObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:string .
 
 LifeSafetyZoneObject:memberOf
         a             skos:Concept ;
+        rdfs:label    "memberOf" ;
         skos:related  bacnet:SequenceOfDeviceObjectReference .
 
 NotificationClassObject:priority
         a             skos:Concept ;
+        rdfs:label    "priority" ;
         skos:related  bacnet:ArrayOfUnsigned .
 
 EventLogObject:recordCount
         a             skos:Concept ;
+        rdfs:label    "recordCount" ;
         skos:related  xsd:unsignedLong .
 
 AnalogOutputObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 GroupObject:listOfGroupMembers
         a             skos:Concept ;
+        rdfs:label    "listOfGroupMembers" ;
         skos:related  bacnet:SequenceOfReadAccessSpecification .
 
 IntegerValueObject:units
         a             skos:Concept ;
+        rdfs:label    "units" ;
         skos:related  bacnet:EngineeringUnits .
 
 AccumulatorObject:lowLimit
         a             skos:Concept ;
+        rdfs:label    "lowLimit" ;
         skos:related  xsd:unsignedLong .
 
 AnalogValueObject:covIncrement
         a             skos:Concept ;
+        rdfs:label    "covIncrement" ;
         skos:related  xsd:float .
 
 AccessPointObject:lockoutRelinquishTime
         a             skos:Concept ;
+        rdfs:label    "lockoutRelinquishTime" ;
         skos:related  xsd:unsignedLong .
 
 MultiStateInputObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 AccessZoneObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 MultiStateInputObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 BitStringValueObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 PulseConverterObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:float .
 
 TimePatternValueObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  bacnet:DateTime .
 
 DeviceObject:daylightSavingsStatus
         a             skos:Concept ;
+        rdfs:label    "daylightSavingsStatus" ;
         skos:related  xsd:boolean .
 
 AccessZoneObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 TrendLogMultipleObject:enable
         a             skos:Concept ;
+        rdfs:label    "enable" ;
         skos:related  xsd:boolean .
 
 TrendLogObject:trigger
         a             skos:Concept ;
+        rdfs:label    "trigger" ;
         skos:related  xsd:boolean .
 
 AccessPointObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 TimePatternValueObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:string .
 
 AccumulatorObject:limitEnable
         a             skos:Concept ;
+        rdfs:label    "limitEnable" ;
         skos:related  bacnet:LimitEnable .
 
 PositiveIntegerValueObject:lowLimit
         a             skos:Concept ;
+        rdfs:label    "lowLimit" ;
         skos:related  xsd:unsignedLong .
 
 BinaryOutputObject:timeOfStateCountReset
         a             skos:Concept ;
+        rdfs:label    "timeOfStateCountReset" ;
         skos:related  bacnet:DateTime .
 
 bacnet:ServicesSupported
@@ -447,337 +476,422 @@ bacnet:ServicesSupported
 
 DeviceObject:alignIntervals
         a             skos:Concept ;
+        rdfs:label    "alignIntervals" ;
         skos:related  xsd:boolean .
 
 BinaryValueObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 CharacterStringValueObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 BinaryValueObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 BinaryInputObject:timeOfStateCountReset
         a             skos:Concept ;
+        rdfs:label    "timeOfStateCountReset" ;
         skos:related  bacnet:DateTime .
 
 ScheduleObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 ServicesSupported:removeListElement
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "removeListElement" .
 
 AccessZoneObject:occupancyUpperLimit
         a             skos:Concept ;
+        rdfs:label    "occupancyUpperLimit" ;
         skos:related  xsd:unsignedLong .
 
 MultiStateValueObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 bacnet:DateTimePatternValueObject
         a             skos:Concept ;
-        skos:related  DateTimePatternValueObject:statusFlags , DateTimePatternValueObject:presentValue , DateTimePatternValueObject:relinquishDefault , DateTimePatternValueObject:reliability , DateTimePatternValueObject:eventState , DateTimePatternValueObject:outOfService , DateTimePatternValueObject:isUtc , DateTimePatternValueObject:priorityArray .
+        rdfs:label    "DateTimePatternValueObject" ;
+        skos:related  DateTimePatternValueObject:reliability , DateTimePatternValueObject:presentValue , DateTimePatternValueObject:priorityArray , DateTimePatternValueObject:eventState , DateTimePatternValueObject:outOfService , DateTimePatternValueObject:statusFlags , DateTimePatternValueObject:relinquishDefault , DateTimePatternValueObject:isUtc .
 
 TimePatternValueObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 AnalogValueObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 ServicesSupported:writePropertyMultiple
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "writePropertyMultiple" .
 
 AnalogInputObject:lowLimit
         a             skos:Concept ;
+        rdfs:label    "lowLimit" ;
         skos:related  xsd:float .
 
 GlobalGroupObject:clientCovIncrement
         a             skos:Concept ;
+        rdfs:label    "clientCovIncrement" ;
         skos:related  bacnet:ClientCOV .
 
 DeviceObject:apduSegmentTimeout
         a             skos:Concept ;
+        rdfs:label    "apduSegmentTimeout" ;
         skos:related  xsd:unsignedLong .
 
 LoadControlObject:shedLevelDescriptions
         a             skos:Concept ;
+        rdfs:label    "shedLevelDescriptions" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 DeviceObject:protocolObjectTypesSupported
         a             skos:Concept ;
+        rdfs:label    "protocolObjectTypesSupported" ;
         skos:related  bacnet:ObjectTypesSupported .
 
 AccessPointObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 AnalogInputObject:highLimit
         a             skos:Concept ;
+        rdfs:label    "highLimit" ;
         skos:related  xsd:float .
 
 LoadControlObject:shedDuration
         a             skos:Concept ;
+        rdfs:label    "shedDuration" ;
         skos:related  xsd:unsignedLong .
 
 LifeSafetyPointObject:trackingValue
         a             skos:Concept ;
+        rdfs:label    "trackingValue" ;
         skos:related  bacnet:LifeSafetyState .
 
 BinaryOutputObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  bacnet:BinaryPV .
 
 CharacterStringValueObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 ScheduleObject:weeklySchedule
         a             skos:Concept ;
+        rdfs:label    "weeklySchedule" ;
         skos:related  bacnet:ArrayOfDailySchedule .
 
 PulseConverterObject:highLimit
         a             skos:Concept ;
+        rdfs:label    "highLimit" ;
         skos:related  xsd:float .
 
 bacnet:TrendLogObject
         a             skos:Concept ;
+        rdfs:label    "TrendLogObject" ;
         skos:related  TrendLogObject:ackedTransitions , TrendLogObject:intervalOffset , TrendLogObject:notificationThreshold , TrendLogObject:notificationClass , TrendLogObject:enable , TrendLogObject:totalRecordCount , TrendLogObject:logInterval , TrendLogObject:lastNotifyRecord , TrendLogObject:eventTimeStamps , TrendLogObject:statusFlags , TrendLogObject:eventMessageTexts , TrendLogObject:logBuffer , TrendLogObject:reliability , TrendLogObject:eventState , TrendLogObject:recordCount , TrendLogObject:alignIntervals , TrendLogObject:recordsSinceNotification , TrendLogObject:bufferSize , TrendLogObject:trigger , TrendLogObject:startTime , TrendLogObject:logDeviceObjectProperty , TrendLogObject:loggingType , TrendLogObject:eventEnable , TrendLogObject:clientCovIncrement , TrendLogObject:covResubscriptionInterval , TrendLogObject:stopWhenFull , TrendLogObject:notifyType , TrendLogObject:stopTime .
 
 LoadControlObject:requestedShedLevel
         a             skos:Concept ;
+        rdfs:label    "requestedShedLevel" ;
         skos:related  bacnet:ShedLevel .
 
 BitStringValueObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 TrendLogObject:bufferSize
         a             skos:Concept ;
+        rdfs:label    "bufferSize" ;
         skos:related  xsd:unsignedLong .
 
 IntegerValueObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 MultiStateValueObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 MultiStateValueObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 AccumulatorObject:scale
         a             skos:Concept ;
+        rdfs:label    "scale" ;
         skos:related  bacnet:Scale .
 
 LifeSafetyPointObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 GlobalGroupObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 DeviceObject:applicationSoftwareVersion
         a             skos:Concept ;
+        rdfs:label    "applicationSoftwareVersion" ;
         skos:related  xsd:string .
 
 AnalogOutputObject:minPresValue
         a             skos:Concept ;
+        rdfs:label    "minPresValue" ;
         skos:related  xsd:float .
 
 LargeAnalogValueObject:lowLimit
         a             skos:Concept ;
+        rdfs:label    "lowLimit" ;
         skos:related  xsd:double .
 
 AccessRightsObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 LoopObject:maximumOutput
         a             skos:Concept ;
+        rdfs:label    "maximumOutput" ;
         skos:related  xsd:float .
 
 AnalogOutputObject:covIncrement
         a             skos:Concept ;
+        rdfs:label    "covIncrement" ;
         skos:related  xsd:float .
 
 AccessCredentialObject:passbackExemption
         a             skos:Concept ;
+        rdfs:label    "passbackExemption" ;
         skos:related  xsd:boolean .
 
 AccumulatorObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 AnalogValueObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 AccessCredentialObject:globalIdentifier
         a             skos:Concept ;
+        rdfs:label    "globalIdentifier" ;
         skos:related  xsd:unsignedLong .
 
 GlobalGroupObject:covuPeriod
         a             skos:Concept ;
+        rdfs:label    "covuPeriod" ;
         skos:related  xsd:unsignedLong .
 
 DeviceObject:numberOfApduRetries
         a             skos:Concept ;
+        rdfs:label    "numberOfApduRetries" ;
         skos:related  xsd:unsignedLong .
 
 AccessUserObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 LifeSafetyPointObject:mode
         a             skos:Concept ;
+        rdfs:label    "mode" ;
         skos:related  bacnet:LifeSafetyMode .
 
 BinaryOutputObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 IntegerValueObject:covIncrement
         a             skos:Concept ;
+        rdfs:label    "covIncrement" ;
         skos:related  xsd:unsignedLong .
 
 AccessPointObject:threatLevel
         a             skos:Concept ;
+        rdfs:label    "threatLevel" ;
         skos:related  bacnet:AccessThreatLevel .
 
 LifeSafetyZoneObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 bacnet:BinaryValueObject
         a             skos:Concept ;
+        rdfs:label    "BinaryValueObject" ;
         skos:related  BinaryValueObject:statusFlags , BinaryValueObject:eventMessageTexts , BinaryValueObject:notificationClass , BinaryValueObject:priorityArray , BinaryValueObject:presentValue , BinaryValueObject:notifyType , BinaryValueObject:eventEnable , BinaryValueObject:reliability , BinaryValueObject:minimumOnTime , BinaryValueObject:relinquishDefault , BinaryValueObject:outOfService , BinaryValueObject:alarmValue , BinaryValueObject:changeOfStateTime , BinaryValueObject:timeOfStateCountReset , BinaryValueObject:timeOfActiveTimeReset , BinaryValueObject:activeText , BinaryValueObject:inactiveText , BinaryValueObject:minimumOffTime , BinaryValueObject:eventState , BinaryValueObject:ackedTransitions , BinaryValueObject:elapsedActiveTime , BinaryValueObject:eventTimeStamps , BinaryValueObject:changeOfStateCount , BinaryValueObject:timeDelay .
 
 AccessZoneObject:passbackMode
         a             skos:Concept ;
+        rdfs:label    "passbackMode" ;
         skos:related  bacnet:AccessPassbackMode .
 
 BinaryOutputObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 GlobalGroupObject:covResubscriptionInterval
         a             skos:Concept ;
+        rdfs:label    "covResubscriptionInterval" ;
         skos:related  xsd:unsignedLong .
 
 DeviceObject:localTime
         a             skos:Concept ;
+        rdfs:label    "localTime" ;
         skos:related  xsd:string .
 
 TrendLogMultipleObject:logInterval
         a             skos:Concept ;
+        rdfs:label    "logInterval" ;
         skos:related  xsd:unsignedLong .
 
 DateValueObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 AccessDoorObject:doorMembers
         a             skos:Concept ;
+        rdfs:label    "doorMembers" ;
         skos:related  bacnet:ArrayOfDeviceObjectReference .
 
 AnalogInputObject:updateInterval
         a             skos:Concept ;
+        rdfs:label    "updateInterval" ;
         skos:related  xsd:unsignedLong .
 
 FileObject:modificationDate
         a             skos:Concept ;
+        rdfs:label    "modificationDate" ;
         skos:related  bacnet:DateTime .
 
 AccessDoorObject:lockStatus
         a             skos:Concept ;
+        rdfs:label    "lockStatus" ;
         skos:related  bacnet:LockStatus .
 
 bacnet:FileObject  a  skos:Concept ;
+        rdfs:label    "FileObject" ;
         skos:related  FileObject:archive , FileObject:fileType , FileObject:readOnly , FileObject:fileAccessMethod , FileObject:modificationDate , FileObject:fileSize , FileObject:recordCount .
 
 BinaryValueObject:inactiveText
         a             skos:Concept ;
+        rdfs:label    "inactiveText" ;
         skos:related  xsd:string .
 
 OctetStringValueObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  xsd:base64Binary .
 
 ServicesSupported:vtData
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "vtData" .
 
 BinaryOutputObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 bacnet:GroupObject  a  skos:Concept ;
+        rdfs:label    "GroupObject" ;
         skos:related  GroupObject:presentValue , GroupObject:listOfGroupMembers .
 
 TimeValueObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  xsd:string .
 
 AccumulatorObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 DateTimePatternValueObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 LoadControlObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 AccessPointObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 AveragingObject:minimumValueTimestamp
         a             skos:Concept ;
+        rdfs:label    "minimumValueTimestamp" ;
         skos:related  bacnet:DateTime .
 
 BitStringValueObject:alarmValues
         a             skos:Concept ;
+        rdfs:label    "alarmValues" ;
         skos:related  bacnet:ArrayOfBitString .
 
 LifeSafetyZoneObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 CharacterStringValueObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 CredentialDataInputObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 LoopObject:derivativeConstantUnits
         a             skos:Concept ;
+        rdfs:label    "derivativeConstantUnits" ;
         skos:related  bacnet:EngineeringUnits .
 
 GlobalGroupObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 AccessPointObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 bacnet:AccessRightsObject
         a             skos:Concept ;
+        rdfs:label    "AccessRightsObject" ;
         skos:related  AccessRightsObject:globalIdentifier , AccessRightsObject:statusFlags , AccessRightsObject:positiveAccessRules , AccessRightsObject:reliability , AccessRightsObject:negativeAccessRules , AccessRightsObject:enable , AccessRightsObject:accompaniment .
 
 bacnet:StandardObject
@@ -785,152 +899,190 @@ bacnet:StandardObject
 
 BinaryInputObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 MultiStateInputObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 FileObject:recordCount
         a             skos:Concept ;
+        rdfs:label    "recordCount" ;
         skos:related  xsd:unsignedLong .
 
 LifeSafetyZoneObject:mode
         a             skos:Concept ;
+        rdfs:label    "mode" ;
         skos:related  bacnet:LifeSafetyMode .
 
 AveragingObject:validSamples
         a             skos:Concept ;
+        rdfs:label    "validSamples" ;
         skos:related  xsd:unsignedLong .
 
 LifeSafetyPointObject:memberOf
         a             skos:Concept ;
+        rdfs:label    "memberOf" ;
         skos:related  bacnet:SequenceOfDeviceObjectReference .
 
 AccessZoneObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 TrendLogMultipleObject:intervalOffset
         a             skos:Concept ;
+        rdfs:label    "intervalOffset" ;
         skos:related  xsd:unsignedLong .
 
 IntegerValueObject:lowLimit
         a             skos:Concept ;
+        rdfs:label    "lowLimit" ;
         skos:related  xsd:long .
 
 LargeAnalogValueObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 AnalogValueObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 DateTimeValueObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  bacnet:DateTime .
 
 IntegerValueObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 LifeSafetyZoneObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 PulseConverterObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 AnalogValueObject:units
         a             skos:Concept ;
+        rdfs:label    "units" ;
         skos:related  bacnet:EngineeringUnits .
 
 AccessCredentialObject:expiryTime
         a             skos:Concept ;
+        rdfs:label    "expiryTime" ;
         skos:related  bacnet:DateTime .
 
 OctetStringValueObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 AccessPointObject:authenticationPolicyNames
         a             skos:Concept ;
+        rdfs:label    "authenticationPolicyNames" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 BinaryValueObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 bacnet:AccessDoorObject
         a             skos:Concept ;
+        rdfs:label    "AccessDoorObject" ;
         skos:related  AccessDoorObject:statusFlags , AccessDoorObject:securedStatus , AccessDoorObject:reliability , AccessDoorObject:maintenanceRequired , AccessDoorObject:faultValues , AccessDoorObject:doorPulseTime , AccessDoorObject:lockStatus , AccessDoorObject:doorAlarmState , AccessDoorObject:maskedAlarmValues , AccessDoorObject:outOfService , AccessDoorObject:eventState , AccessDoorObject:doorStatus , AccessDoorObject:doorExtendedPulseTime , AccessDoorObject:priorityArray , AccessDoorObject:timeDelay , AccessDoorObject:notificationClass , AccessDoorObject:eventMessageTexts , AccessDoorObject:notifyType , AccessDoorObject:presentValue , AccessDoorObject:ackedTransitions , AccessDoorObject:relinquishDefault , AccessDoorObject:doorUnlockDelayTime , AccessDoorObject:eventTimeStamps , AccessDoorObject:doorOpenTooLongTime , AccessDoorObject:alarmValues , AccessDoorObject:eventEnable , AccessDoorObject:doorMembers .
 
 LifeSafetyPointObject:faultValues
         a             skos:Concept ;
+        rdfs:label    "faultValues" ;
         skos:related  bacnet:SequenceOfLifeSafetyState .
 
 bacnet:MultiStateOutputObject
         a             skos:Concept ;
+        rdfs:label    "MultiStateOutputObject" ;
         skos:related  MultiStateOutputObject:notifyType , MultiStateOutputObject:relinquishDefault , MultiStateOutputObject:statusFlags , MultiStateOutputObject:eventState , MultiStateOutputObject:priorityArray , MultiStateOutputObject:outOfService , MultiStateOutputObject:stateText , MultiStateOutputObject:eventTimeStamps , MultiStateOutputObject:eventEnable , MultiStateOutputObject:feedbackValue , MultiStateOutputObject:presentValue , MultiStateOutputObject:numberOfStates , MultiStateOutputObject:timeDelay , MultiStateOutputObject:ackedTransitions , MultiStateOutputObject:eventMessageTexts , MultiStateOutputObject:reliability , MultiStateOutputObject:deviceType , MultiStateOutputObject:notificationClass .
 
 LifeSafetyZoneObject:trackingValue
         a             skos:Concept ;
+        rdfs:label    "trackingValue" ;
         skos:related  bacnet:LifeSafetyState .
 
 MultiStateInputObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 AccumulatorObject:valueChangeTime
         a             skos:Concept ;
+        rdfs:label    "valueChangeTime" ;
         skos:related  bacnet:DateTime .
 
 ScheduleObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 BinaryInputObject:changeOfStateCount
         a             skos:Concept ;
+        rdfs:label    "changeOfStateCount" ;
         skos:related  xsd:unsignedLong .
 
 PositiveIntegerValueObject:deadband
         a             skos:Concept ;
+        rdfs:label    "deadband" ;
         skos:related  xsd:unsignedLong .
 
 AccessPointObject:verificationTime
         a             skos:Concept ;
+        rdfs:label    "verificationTime" ;
         skos:related  xsd:unsignedLong .
 
 CharacterStringValueObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 FileObject:archive  a  skos:Concept ;
+        rdfs:label    "archive" ;
         skos:related  xsd:boolean .
 
 MultiStateValueObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 EventLogObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 MultiStateOutputObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 BinaryInputObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 ServicesSupported:subscribeCOVProperty
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "subscribeCOVProperty" .
 
 EventLogObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 bacnet:ReadableProperty
@@ -938,789 +1090,989 @@ bacnet:ReadableProperty
 
 EventLogObject:stopTime
         a             skos:Concept ;
+        rdfs:label    "stopTime" ;
         skos:related  bacnet:DateTime .
 
 MultiStateOutputObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  xsd:unsignedLong .
 
 AccessZoneObject:alarmValues
         a             skos:Concept ;
+        rdfs:label    "alarmValues" ;
         skos:related  bacnet:SequenceOfAccessZoneOccupancyState .
 
 AnalogInputObject:deadband
         a             skos:Concept ;
+        rdfs:label    "deadband" ;
         skos:related  xsd:float .
 
 BinaryOutputObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 DeviceObject:vendorName
         a             skos:Concept ;
+        rdfs:label    "vendorName" ;
         skos:related  xsd:string .
 
 bacnet:TimeValueObject
         a             skos:Concept ;
+        rdfs:label    "TimeValueObject" ;
         skos:related  TimeValueObject:presentValue , TimeValueObject:statusFlags , TimeValueObject:outOfService , TimeValueObject:reliability , TimeValueObject:eventState , TimeValueObject:priorityArray , TimeValueObject:relinquishDefault .
 
 LoadControlObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 DateTimeValueObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  bacnet:DateTime .
 
 StructuredViewObject:nodeSubtype
         a             skos:Concept ;
+        rdfs:label    "nodeSubtype" ;
         skos:related  xsd:string .
 
 AnalogValueObject:maxPresValue
         a             skos:Concept ;
+        rdfs:label    "maxPresValue" ;
         skos:related  xsd:float .
 
 AccessUserObject:members
         a             skos:Concept ;
+        rdfs:label    "members" ;
         skos:related  bacnet:SequenceOfDeviceObjectReference .
 
 CommandObject:inProcess
         a             skos:Concept ;
+        rdfs:label    "inProcess" ;
         skos:related  xsd:boolean .
 
 GlobalGroupObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 PulseConverterObject:lowLimit
         a             skos:Concept ;
+        rdfs:label    "lowLimit" ;
         skos:related  xsd:float .
 
 AccessDoorObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 AccessPointObject:activeAuthenticationPolicy
         a             skos:Concept ;
+        rdfs:label    "activeAuthenticationPolicy" ;
         skos:related  xsd:unsignedLong .
 
 AccessRightsObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 LoopObject:setpoint  a  skos:Concept ;
+        rdfs:label    "setpoint" ;
         skos:related  xsd:float .
 
 TrendLogMultipleObject:loggingType
         a             skos:Concept ;
+        rdfs:label    "loggingType" ;
         skos:related  bacnet:LoggingType .
 
 AccumulatorObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 AccumulatorObject:deviceType
         a             skos:Concept ;
+        rdfs:label    "deviceType" ;
         skos:related  xsd:string .
 
 AccessPointObject:accessEventCredential
         a             skos:Concept ;
+        rdfs:label    "accessEventCredential" ;
         skos:related  bacnet:DeviceObjectReference .
 
 ScheduleObject:listOfObjectPropertyReferences
         a             skos:Concept ;
+        rdfs:label    "listOfObjectPropertyReferences" ;
         skos:related  bacnet:SequenceOfDeviceObjectPropertyReference .
 
 LargeAnalogValueObject:deadband
         a             skos:Concept ;
+        rdfs:label    "deadband" ;
         skos:related  xsd:double .
 
 LargeAnalogValueObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  xsd:long .
 
 LifeSafetyPointObject:acceptedModes
         a             skos:Concept ;
+        rdfs:label    "acceptedModes" ;
         skos:related  bacnet:SequenceOfLifeSafetyMode .
 
 AccessZoneObject:globalIdentifier
         a             skos:Concept ;
+        rdfs:label    "globalIdentifier" ;
         skos:related  xsd:unsignedLong .
 
 DatePatternValueObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 TrendLogObject:intervalOffset
         a             skos:Concept ;
+        rdfs:label    "intervalOffset" ;
         skos:related  xsd:unsignedLong .
 
 TrendLogObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 BinaryOutputObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 AnalogOutputObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 LoopObject:deadband  a  skos:Concept ;
+        rdfs:label    "deadband" ;
         skos:related  xsd:float .
 
 ServicesSupported:acknowledgeAlarm
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "acknowledgeAlarm" .
 
 AccumulatorObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 AccessDoorObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 NetworkSecurityObject:baseDeviceSecurityPolicy
         a             skos:Concept ;
+        rdfs:label    "baseDeviceSecurityPolicy" ;
         skos:related  bacnet:SecurityLevel .
 
 AnalogInputObject:deviceType
         a             skos:Concept ;
+        rdfs:label    "deviceType" ;
         skos:related  xsd:string .
 
 BitStringValueObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  bacnet:BitString .
 
 LargeAnalogValueObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 DeviceObject:protocolVersion
         a             skos:Concept ;
+        rdfs:label    "protocolVersion" ;
         skos:related  xsd:unsignedLong .
 
 ServicesSupported:iAm
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "iAm" .
 
 MultiStateOutputObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 LifeSafetyPointObject:maintenanceRequired
         a             skos:Concept ;
+        rdfs:label    "maintenanceRequired" ;
         skos:related  bacnet:Maintenance .
 
 LifeSafetyZoneObject:silenced
         a             skos:Concept ;
+        rdfs:label    "silenced" ;
         skos:related  bacnet:SilencedState .
 
 IntegerValueObject:limitEnable
         a             skos:Concept ;
+        rdfs:label    "limitEnable" ;
         skos:related  bacnet:LimitEnable .
 
 TrendLogObject:stopWhenFull
         a             skos:Concept ;
+        rdfs:label    "stopWhenFull" ;
         skos:related  xsd:boolean .
 
 AccessUserObject:userType
         a             skos:Concept ;
+        rdfs:label    "userType" ;
         skos:related  bacnet:AccessUserType .
 
 BinaryOutputObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 bacnet:LifeSafetyPointObject
         a             skos:Concept ;
+        rdfs:label    "LifeSafetyPointObject" ;
         skos:related  LifeSafetyPointObject:eventEnable , LifeSafetyPointObject:lifeSafetyAlarmValues , LifeSafetyPointObject:notificationClass , LifeSafetyPointObject:eventTimeStamps , LifeSafetyPointObject:timeDelay , LifeSafetyPointObject:ackedTransitions , LifeSafetyPointObject:faultValues , LifeSafetyPointObject:silenced , LifeSafetyPointObject:trackingValue , LifeSafetyPointObject:alarmValues , LifeSafetyPointObject:mode , LifeSafetyPointObject:acceptedModes , LifeSafetyPointObject:eventMessageTexts , LifeSafetyPointObject:deviceType , LifeSafetyPointObject:operationExpected , LifeSafetyPointObject:units , LifeSafetyPointObject:notifyType , LifeSafetyPointObject:reliability , LifeSafetyPointObject:outOfService , LifeSafetyPointObject:statusFlags , LifeSafetyPointObject:memberOf , LifeSafetyPointObject:directReading , LifeSafetyPointObject:maintenanceRequired , LifeSafetyPointObject:eventState , LifeSafetyPointObject:setting , LifeSafetyPointObject:presentValue .
 
 IntegerValueObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  xsd:long .
 
 FileObject:readOnly  a  skos:Concept ;
+        rdfs:label    "readOnly" ;
         skos:related  xsd:boolean .
 
 DeviceObject:timeSynchronizationRecipients
         a             skos:Concept ;
+        rdfs:label    "timeSynchronizationRecipients" ;
         skos:related  bacnet:SequenceOfRecipient .
 
 bacnet:ScheduleObject
         a             skos:Concept ;
+        rdfs:label    "ScheduleObject" ;
         skos:related  ScheduleObject:listOfObjectPropertyReferences , ScheduleObject:reliability , ScheduleObject:priorityForWriting , ScheduleObject:presentValue , ScheduleObject:weeklySchedule , ScheduleObject:exceptionSchedule , ScheduleObject:outOfService , ScheduleObject:statusFlags , ScheduleObject:scheduleDefault , ScheduleObject:effectivePeriod .
 
 LargeAnalogValueObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 NotificationClassObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 TrendLogObject:alignIntervals
         a             skos:Concept ;
+        rdfs:label    "alignIntervals" ;
         skos:related  xsd:boolean .
 
 DateTimePatternValueObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 ServicesSupported:subscribeCOV
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "subscribeCOV" .
 
 bacnet:CommandObject  a  skos:Concept ;
+        rdfs:label    "CommandObject" ;
         skos:related  CommandObject:presentValue , CommandObject:allWritesSuccessful , CommandObject:inProcess , CommandObject:action , CommandObject:actionText .
 
 BinaryInputObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 bacnet:BinaryOutputObject
         a             skos:Concept ;
+        rdfs:label    "BinaryOutputObject" ;
         skos:related  BinaryOutputObject:changeOfStateCount , BinaryOutputObject:timeOfStateCountReset , BinaryOutputObject:outOfService , BinaryOutputObject:ackedTransitions , BinaryOutputObject:notificationClass , BinaryOutputObject:inactiveText , BinaryOutputObject:elapsedActiveTime , BinaryOutputObject:statusFlags , BinaryOutputObject:priorityArray , BinaryOutputObject:notifyType , BinaryOutputObject:timeDelay , BinaryOutputObject:eventTimeStamps , BinaryOutputObject:timeOfActiveTimeReset , BinaryOutputObject:minimumOnTime , BinaryOutputObject:presentValue , BinaryOutputObject:changeOfStateTime , BinaryOutputObject:eventState , BinaryOutputObject:eventMessageTexts , BinaryOutputObject:minimumOffTime , BinaryOutputObject:feedbackValue , BinaryOutputObject:reliability , BinaryOutputObject:activeText , BinaryOutputObject:relinquishDefault , BinaryOutputObject:deviceType , BinaryOutputObject:eventEnable , BinaryOutputObject:polarity .
 
 bacnet:LoadControlObject
         a             skos:Concept ;
+        rdfs:label    "LoadControlObject" ;
         skos:related  LoadControlObject:shedLevels , LoadControlObject:statusFlags , LoadControlObject:shedDuration , LoadControlObject:notifyType , LoadControlObject:requestedShedLevel , LoadControlObject:eventTimeStamps , LoadControlObject:ackedTransitions , LoadControlObject:reliability , LoadControlObject:notificationClass , LoadControlObject:startTime , LoadControlObject:eventEnable , LoadControlObject:shedLevelDescriptions , LoadControlObject:eventMessageTexts , LoadControlObject:actualShedLevel , LoadControlObject:enable , LoadControlObject:eventState , LoadControlObject:presentValue , LoadControlObject:stateDescription , LoadControlObject:timeDelay , LoadControlObject:fullDutyBaseline , LoadControlObject:expectedShedLevel , LoadControlObject:dutyWindow .
 
 CredentialDataInputObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 LifeSafetyPointObject:alarmValues
         a             skos:Concept ;
+        rdfs:label    "alarmValues" ;
         skos:related  bacnet:SequenceOfLifeSafetyState .
 
 LargeAnalogValueObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 TrendLogMultipleObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 GlobalGroupObject:memberStatusFlags
         a             skos:Concept ;
+        rdfs:label    "memberStatusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 DeviceObject:localDate
         a             skos:Concept ;
+        rdfs:label    "localDate" ;
         skos:related  xsd:string .
 
 ServicesSupported:unconfirmedTextMessage
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "unconfirmedTextMessage" .
 
 PulseConverterObject:countChangeTime
         a             skos:Concept ;
+        rdfs:label    "countChangeTime" ;
         skos:related  bacnet:DateTime .
 
 MultiStateValueObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 TrendLogObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 BitStringValueObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 CommandObject:actionText
         a             skos:Concept ;
+        rdfs:label    "actionText" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 PulseConverterObject:units
         a             skos:Concept ;
+        rdfs:label    "units" ;
         skos:related  bacnet:EngineeringUnits .
 
 AnalogInputObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 AccessZoneObject:occupancyState
         a             skos:Concept ;
+        rdfs:label    "occupancyState" ;
         skos:related  bacnet:AccessZoneOccupancyState .
 
 MultiStateOutputObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 AnalogInputObject:minPresValue
         a             skos:Concept ;
+        rdfs:label    "minPresValue" ;
         skos:related  xsd:float .
 
 bacnet:NotificationClassObject
         a             skos:Concept ;
+        rdfs:label    "NotificationClassObject" ;
         skos:related  NotificationClassObject:priority , NotificationClassObject:recipientList , NotificationClassObject:notificationClass , NotificationClassObject:ackRequired .
 
 AnalogInputObject:covIncrement
         a             skos:Concept ;
+        rdfs:label    "covIncrement" ;
         skos:related  xsd:float .
 
 CharacterStringValueObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 BitStringValueObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 PositiveIntegerValueObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 TrendLogMultipleObject:trigger
         a             skos:Concept ;
+        rdfs:label    "trigger" ;
         skos:related  xsd:boolean .
 
 LifeSafetyZoneObject:deviceType
         a             skos:Concept ;
+        rdfs:label    "deviceType" ;
         skos:related  xsd:string .
 
 AnalogInputObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 PositiveIntegerValueObject:units
         a             skos:Concept ;
+        rdfs:label    "units" ;
         skos:related  bacnet:EngineeringUnits .
 
 IntegerValueObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 LoopObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 BinaryValueObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 MultiStateOutputObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 AccessPointObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 DeviceObject:activeVtSessions
         a             skos:Concept ;
+        rdfs:label    "activeVtSessions" ;
         skos:related  bacnet:SequenceOfVTSession .
 
 AccumulatorObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 LoadControlObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 AccessUserObject:userInformationReference
         a             skos:Concept ;
+        rdfs:label    "userInformationReference" ;
         skos:related  xsd:string .
 
 PositiveIntegerValueObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 IntegerValueObject:deadband
         a             skos:Concept ;
+        rdfs:label    "deadband" ;
         skos:related  xsd:unsignedLong .
 
 OctetStringValueObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 MultiStateValueObject:alarmValues
         a             skos:Concept ;
+        rdfs:label    "alarmValues" ;
         skos:related  bacnet:SequenceOfUnsigned .
 
 BitStringValueObject:bitText
         a             skos:Concept ;
+        rdfs:label    "bitText" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 GlobalGroupObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 AnalogValueObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 BinaryOutputObject:inactiveText
         a             skos:Concept ;
+        rdfs:label    "inactiveText" ;
         skos:related  xsd:string .
 
 bacnet:MultiStateValueObject
         a             skos:Concept ;
+        rdfs:label    "MultiStateValueObject" ;
         skos:related  MultiStateValueObject:relinquishDefault , MultiStateValueObject:statusFlags , MultiStateValueObject:reliability , MultiStateValueObject:faultValues , MultiStateValueObject:eventState , MultiStateValueObject:alarmValues , MultiStateValueObject:outOfService , MultiStateValueObject:eventMessageTexts , MultiStateValueObject:eventEnable , MultiStateValueObject:notificationClass , MultiStateValueObject:eventTimeStamps , MultiStateValueObject:timeDelay , MultiStateValueObject:stateText , MultiStateValueObject:numberOfStates , MultiStateValueObject:notifyType , MultiStateValueObject:presentValue , MultiStateValueObject:priorityArray , MultiStateValueObject:ackedTransitions .
 
 bacnet:BitStringValueObject
         a             skos:Concept ;
+        rdfs:label    "BitStringValueObject" ;
         skos:related  BitStringValueObject:alarmValues , BitStringValueObject:eventEnable , BitStringValueObject:eventMessageTexts , BitStringValueObject:reliability , BitStringValueObject:timeDelay , BitStringValueObject:relinquishDefault , BitStringValueObject:statusFlags , BitStringValueObject:presentValue , BitStringValueObject:priorityArray , BitStringValueObject:eventState , BitStringValueObject:ackedTransitions , BitStringValueObject:bitText , BitStringValueObject:outOfService , BitStringValueObject:notifyType , BitStringValueObject:bitMask , BitStringValueObject:notificationClass , BitStringValueObject:eventTimeStamps .
 
 StructuredViewObject:subordinateAnnotations
         a             skos:Concept ;
+        rdfs:label    "subordinateAnnotations" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 AccessZoneObject:passbackTimeout
         a             skos:Concept ;
+        rdfs:label    "passbackTimeout" ;
         skos:related  xsd:unsignedLong .
 
 AccessPointObject:accessEventAuthenticationFactor
         a             skos:Concept ;
+        rdfs:label    "accessEventAuthenticationFactor" ;
         skos:related  bacnet:AuthenticationFactor .
 
 AveragingObject:windowInterval
         a             skos:Concept ;
+        rdfs:label    "windowInterval" ;
         skos:related  xsd:unsignedLong .
 
 EventLogObject:logBuffer
         a             skos:Concept ;
+        rdfs:label    "logBuffer" ;
         skos:related  bacnet:SequenceOfEventLogRecord .
 
 BinaryValueObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 LoadControlObject:startTime
         a             skos:Concept ;
+        rdfs:label    "startTime" ;
         skos:related  bacnet:DateTime .
 
 AccessZoneObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 bacnet:OctetStringValueObject
         a             skos:Concept ;
+        rdfs:label    "OctetStringValueObject" ;
         skos:related  OctetStringValueObject:presentValue , OctetStringValueObject:statusFlags , OctetStringValueObject:reliability , OctetStringValueObject:eventState , OctetStringValueObject:outOfService , OctetStringValueObject:relinquishDefault , OctetStringValueObject:priorityArray .
 
 LargeAnalogValueObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 AnalogValueObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 LoopObject:timeDelay  a  skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 LoopObject:integralConstant
         a             skos:Concept ;
+        rdfs:label    "integralConstant" ;
         skos:related  xsd:float .
 
 CalendarObject:dateList
         a             skos:Concept ;
+        rdfs:label    "dateList" ;
         skos:related  bacnet:SequenceOfCalendarEntry .
 
 LifeSafetyPointObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 LoopObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 GlobalGroupObject:groupMembers
         a             skos:Concept ;
+        rdfs:label    "groupMembers" ;
         skos:related  bacnet:ArrayOfDeviceObjectPropertyReference .
 
 DeviceObject:configurationFiles
         a             skos:Concept ;
+        rdfs:label    "configurationFiles" ;
         skos:related  bacnet:ArrayOfObjectIdentifier .
 
 AnalogOutputObject:deviceType
         a             skos:Concept ;
+        rdfs:label    "deviceType" ;
         skos:related  xsd:string .
 
 AccessCredentialObject:occupancyExemption
         a             skos:Concept ;
+        rdfs:label    "occupancyExemption" ;
         skos:related  xsd:boolean .
 
 TrendLogObject:enable
         a             skos:Concept ;
+        rdfs:label    "enable" ;
         skos:related  xsd:boolean .
 
 BinaryValueObject:minimumOnTime
         a             skos:Concept ;
+        rdfs:label    "minimumOnTime" ;
         skos:related  xsd:unsignedLong .
 
 AccessDoorObject:faultValues
         a             skos:Concept ;
+        rdfs:label    "faultValues" ;
         skos:related  bacnet:SequenceOfDoorAlarmState .
 
 ServicesSupported:confirmedEventNotification
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "confirmedEventNotification" .
 
 AnalogValueObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 bacnet:AccessUserObject
         a             skos:Concept ;
+        rdfs:label    "AccessUserObject" ;
         skos:related  AccessUserObject:memberOf , AccessUserObject:statusFlags , AccessUserObject:userInformationReference , AccessUserObject:userType , AccessUserObject:userName , AccessUserObject:reliability , AccessUserObject:userExternalIdentifier , AccessUserObject:members , AccessUserObject:credentials , AccessUserObject:globalIdentifier .
 
 MultiStateOutputObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 EventLogObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 AccessCredentialObject:credentialStatus
         a             skos:Concept ;
+        rdfs:label    "credentialStatus" ;
         skos:related  bacnet:BinaryPV .
 
 DeviceObject:utcOffset
         a             skos:Concept ;
+        rdfs:label    "utcOffset" ;
         skos:related  xsd:long .
 
 LargeAnalogValueObject:limitEnable
         a             skos:Concept ;
+        rdfs:label    "limitEnable" ;
         skos:related  bacnet:LimitEnable .
 
 AccessZoneObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 ServicesSupported:createObject
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "createObject" .
 
 AccessUserObject:userExternalIdentifier
         a             skos:Concept ;
+        rdfs:label    "userExternalIdentifier" ;
         skos:related  xsd:string .
 
 LargeAnalogValueObject:units
         a             skos:Concept ;
+        rdfs:label    "units" ;
         skos:related  bacnet:EngineeringUnits .
 
 AccessZoneObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 AccessDoorObject:doorPulseTime
         a             skos:Concept ;
+        rdfs:label    "doorPulseTime" ;
         skos:related  xsd:unsignedLong .
 
 AnalogValueObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 TrendLogObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 LifeSafetyPointObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  bacnet:LifeSafetyState .
 
 LoopObject:setpointReference
         a             skos:Concept ;
+        rdfs:label    "setpointReference" ;
         skos:related  bacnet:SetpointReference .
 
 DateTimePatternValueObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  bacnet:DateTime .
 
 TrendLogMultipleObject:notificationThreshold
         a             skos:Concept ;
+        rdfs:label    "notificationThreshold" ;
         skos:related  xsd:unsignedLong .
 
 AccessZoneObject:occupancyCountEnable
         a             skos:Concept ;
+        rdfs:label    "occupancyCountEnable" ;
         skos:related  xsd:boolean .
 
 TrendLogMultipleObject:stopTime
         a             skos:Concept ;
+        rdfs:label    "stopTime" ;
         skos:related  bacnet:DateTime .
 
 PulseConverterObject:deadband
         a             skos:Concept ;
+        rdfs:label    "deadband" ;
         skos:related  xsd:float .
 
 LargeAnalogValueObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 LifeSafetyPointObject:directReading
         a             skos:Concept ;
+        rdfs:label    "directReading" ;
         skos:related  xsd:float .
 
 ServicesSupported:vtClose
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "vtClose" .
 
 TimePatternValueObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 EventEnrollmentObject:eventParameters
         a             skos:Concept ;
+        rdfs:label    "eventParameters" ;
         skos:related  bacnet:EventParameter .
 
 BinaryOutputObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 AnalogValueObject:limitEnable
         a             skos:Concept ;
+        rdfs:label    "limitEnable" ;
         skos:related  bacnet:LimitEnable .
 
 TrendLogObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 GlobalGroupObject:covuRecipients
         a             skos:Concept ;
+        rdfs:label    "covuRecipients" ;
         skos:related  bacnet:SequenceOfRecipient .
 
 GlobalGroupObject:updateInterval
         a             skos:Concept ;
+        rdfs:label    "updateInterval" ;
         skos:related  xsd:unsignedLong .
 
 LifeSafetyZoneObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 AccessCredentialObject:traceFlag
         a             skos:Concept ;
+        rdfs:label    "traceFlag" ;
         skos:related  xsd:boolean .
 
 AveragingObject:maximumValueTimestamp
         a             skos:Concept ;
+        rdfs:label    "maximumValueTimestamp" ;
         skos:related  bacnet:DateTime .
 
 DeviceObject:timeSynchronizationInterval
         a             skos:Concept ;
+        rdfs:label    "timeSynchronizationInterval" ;
         skos:related  xsd:unsignedLong .
 
 MultiStateOutputObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 LoopObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 AccumulatorObject:maxPresValue
         a             skos:Concept ;
+        rdfs:label    "maxPresValue" ;
         skos:related  xsd:unsignedLong .
 
 LoadControlObject:enable
         a             skos:Concept ;
+        rdfs:label    "enable" ;
         skos:related  xsd:boolean .
 
 EventLogObject:startTime
         a             skos:Concept ;
+        rdfs:label    "startTime" ;
         skos:related  bacnet:DateTime .
 
 TrendLogMultipleObject:lastNotifyRecord
         a             skos:Concept ;
+        rdfs:label    "lastNotifyRecord" ;
         skos:related  xsd:unsignedLong .
 
 PulseConverterObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 BinaryValueObject:minimumOffTime
         a             skos:Concept ;
+        rdfs:label    "minimumOffTime" ;
         skos:related  xsd:unsignedLong .
 
 BinaryOutputObject:polarity
         a             skos:Concept ;
+        rdfs:label    "polarity" ;
         skos:related  bacnet:Polarity .
 
 DeviceObject:slaveAddressBinding
         a             skos:Concept ;
+        rdfs:label    "slaveAddressBinding" ;
         skos:related  bacnet:SequenceOfAddressBinding .
 
 ScheduleObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 AnalogInputObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 LargeAnalogValueObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 TrendLogObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 BinaryValueObject:activeText
         a             skos:Concept ;
+        rdfs:label    "activeText" ;
         skos:related  xsd:string .
 
 LoadControlObject:fullDutyBaseline
         a             skos:Concept ;
+        rdfs:label    "fullDutyBaseline" ;
         skos:related  xsd:float .
 
 BinaryInputObject:inactiveText
         a             skos:Concept ;
+        rdfs:label    "inactiveText" ;
         skos:related  xsd:string .
 
 LifeSafetyPointObject:silenced
         a             skos:Concept ;
+        rdfs:label    "silenced" ;
         skos:related  bacnet:SilencedState .
 
 CharacterStringValueObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:string .
 
 MultiStateOutputObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 bacnet:PositiveIntegerValueObject
         a             skos:Concept ;
+        rdfs:label    "PositiveIntegerValueObject" ;
         skos:related  PositiveIntegerValueObject:reliability , PositiveIntegerValueObject:ackedTransitions , PositiveIntegerValueObject:eventEnable , PositiveIntegerValueObject:lowLimit , PositiveIntegerValueObject:relinquishDefault , PositiveIntegerValueObject:timeDelay , PositiveIntegerValueObject:priorityArray , PositiveIntegerValueObject:notifyType , PositiveIntegerValueObject:eventTimeStamps , PositiveIntegerValueObject:units , PositiveIntegerValueObject:deadband , PositiveIntegerValueObject:eventState , PositiveIntegerValueObject:statusFlags , PositiveIntegerValueObject:presentValue , PositiveIntegerValueObject:covIncrement , PositiveIntegerValueObject:outOfService , PositiveIntegerValueObject:notificationClass , PositiveIntegerValueObject:limitEnable , PositiveIntegerValueObject:eventMessageTexts , PositiveIntegerValueObject:highLimit .
 
 PositiveIntegerValueObject:limitEnable
         a             skos:Concept ;
+        rdfs:label    "limitEnable" ;
         skos:related  bacnet:LimitEnable .
 
 PositiveIntegerValueObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 DateTimePatternValueObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 DeviceObject:manualSlaveAddressBinding
         a             skos:Concept ;
+        rdfs:label    "manualSlaveAddressBinding" ;
         skos:related  bacnet:SequenceOfAddressBinding .
 
 AccessCredentialObject:activationTime
         a             skos:Concept ;
+        rdfs:label    "activationTime" ;
         skos:related  bacnet:DateTime .
 
 PositiveIntegerValueObject:covIncrement
         a             skos:Concept ;
+        rdfs:label    "covIncrement" ;
         skos:related  xsd:unsignedLong .
 
 ServicesSupported:confirmedPrivateTransfer
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "confirmedPrivateTransfer" .
 
 AnalogValueObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:float .
 
 bacnet:AnalogValueObject
         a             skos:Concept ;
+        rdfs:label    "AnalogValueObject" ;
         skos:related  AnalogValueObject:units , AnalogValueObject:notificationClass , AnalogValueObject:relinquishDefault , AnalogValueObject:eventEnable , AnalogValueObject:presentValue , AnalogValueObject:lowLimit , AnalogValueObject:eventState , AnalogValueObject:highLimit , AnalogValueObject:priorityArray , AnalogValueObject:eventTimeStamps , AnalogValueObject:timeDelay , AnalogValueObject:outOfService , AnalogValueObject:deadband , AnalogValueObject:resolution , AnalogValueObject:ackedTransitions , AnalogValueObject:minPresValue , AnalogValueObject:eventMessageTexts , AnalogValueObject:notifyType , AnalogValueObject:covIncrement , AnalogValueObject:limitEnable , AnalogValueObject:maxPresValue , AnalogValueObject:reliability , AnalogValueObject:statusFlags .
 
 LoopObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 bacnet:OptionalProperty
@@ -1728,750 +2080,940 @@ bacnet:OptionalProperty
 
 BinaryValueObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 AccessPointObject:accessTransactionEvents
         a             skos:Concept ;
+        rdfs:label    "accessTransactionEvents" ;
         skos:related  bacnet:SequenceOfAccessEvent .
 
 AveragingObject:varianceValue
         a             skos:Concept ;
+        rdfs:label    "varianceValue" ;
         skos:related  xsd:float .
 
 AnalogOutputObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 CharacterStringValueObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 LifeSafetyPointObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 BinaryValueObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 PulseConverterObject:inputReference
         a             skos:Concept ;
+        rdfs:label    "inputReference" ;
         skos:related  bacnet:ObjectPropertyReference .
 
 BitStringValueObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 PulseConverterObject:covPeriod
         a             skos:Concept ;
+        rdfs:label    "covPeriod" ;
         skos:related  xsd:unsignedLong .
 
 DeviceObject:backupPreparationTime
         a             skos:Concept ;
+        rdfs:label    "backupPreparationTime" ;
         skos:related  xsd:unsignedLong .
 
 BinaryInputObject:timeOfActiveTimeReset
         a             skos:Concept ;
+        rdfs:label    "timeOfActiveTimeReset" ;
         skos:related  bacnet:DateTime .
 
 LoopObject:covIncrement
         a             skos:Concept ;
+        rdfs:label    "covIncrement" ;
         skos:related  xsd:float .
 
 AnalogOutputObject:resolution
         a             skos:Concept ;
+        rdfs:label    "resolution" ;
         skos:related  xsd:float .
 
 bacnet:MultiStateInputObject
         a             skos:Concept ;
+        rdfs:label    "MultiStateInputObject" ;
         skos:related  MultiStateInputObject:notifyType , MultiStateInputObject:numberOfStates , MultiStateInputObject:timeDelay , MultiStateInputObject:stateText , MultiStateInputObject:reliability , MultiStateInputObject:faultValues , MultiStateInputObject:eventState , MultiStateInputObject:alarmValues , MultiStateInputObject:outOfService , MultiStateInputObject:statusFlags , MultiStateInputObject:presentValue , MultiStateInputObject:eventTimeStamps , MultiStateInputObject:eventEnable , MultiStateInputObject:eventMessageTexts , MultiStateInputObject:deviceType , MultiStateInputObject:ackedTransitions , MultiStateInputObject:notificationClass .
 
 TimeValueObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 AnalogInputObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 AccessPointObject:accessEventTime
         a             skos:Concept ;
+        rdfs:label    "accessEventTime" ;
         skos:related  bacnet:TimeStamp .
 
 AccessDoorObject:alarmValues
         a             skos:Concept ;
+        rdfs:label    "alarmValues" ;
         skos:related  bacnet:SequenceOfDoorAlarmState .
 
 AnalogValueObject:highLimit
         a             skos:Concept ;
+        rdfs:label    "highLimit" ;
         skos:related  xsd:float .
 
 AnalogValueObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 DeviceObject:timeOfDeviceRestart
         a             skos:Concept ;
+        rdfs:label    "timeOfDeviceRestart" ;
         skos:related  bacnet:TimeStamp .
 
 BinaryInputObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 BinaryValueObject:elapsedActiveTime
         a             skos:Concept ;
+        rdfs:label    "elapsedActiveTime" ;
         skos:related  xsd:unsignedLong .
 
 PositiveIntegerValueObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 bacnet:DateTimeValueObject
         a             skos:Concept ;
-        skos:related  DateTimeValueObject:statusFlags , DateTimeValueObject:presentValue , DateTimeValueObject:eventState , DateTimeValueObject:outOfService , DateTimeValueObject:isUtc , DateTimeValueObject:relinquishDefault , DateTimeValueObject:reliability , DateTimeValueObject:priorityArray .
+        rdfs:label    "DateTimeValueObject" ;
+        skos:related  DateTimeValueObject:eventState , DateTimeValueObject:isUtc , DateTimeValueObject:priorityArray , DateTimeValueObject:presentValue , DateTimeValueObject:relinquishDefault , DateTimeValueObject:outOfService , DateTimeValueObject:reliability , DateTimeValueObject:statusFlags .
 
 AccessCredentialObject:daysRemaining
         a             skos:Concept ;
+        rdfs:label    "daysRemaining" ;
         skos:related  xsd:long .
 
 MultiStateInputObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 PositiveIntegerValueObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 BinaryInputObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 AccumulatorObject:loggingObject
         a             skos:Concept ;
+        rdfs:label    "loggingObject" ;
         skos:related  bacnet:ObjectIdentifier .
 
 GlobalGroupObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 bacnet:CharacterStringValueObject
         a             skos:Concept ;
+        rdfs:label    "CharacterStringValueObject" ;
         skos:related  CharacterStringValueObject:eventEnable , CharacterStringValueObject:priorityArray , CharacterStringValueObject:notificationClass , CharacterStringValueObject:alarmValues , CharacterStringValueObject:reliability , CharacterStringValueObject:notifyType , CharacterStringValueObject:faultValues , CharacterStringValueObject:eventState , CharacterStringValueObject:ackedTransitions , CharacterStringValueObject:relinquishDefault , CharacterStringValueObject:eventTimeStamps , CharacterStringValueObject:outOfService , CharacterStringValueObject:eventMessageTexts , CharacterStringValueObject:timeDelay , CharacterStringValueObject:statusFlags , CharacterStringValueObject:presentValue .
 
 AccessCredentialObject:usesRemaining
         a             skos:Concept ;
+        rdfs:label    "usesRemaining" ;
         skos:related  xsd:long .
 
 LoopObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 AccessDoorObject:doorOpenTooLongTime
         a             skos:Concept ;
+        rdfs:label    "doorOpenTooLongTime" ;
         skos:related  xsd:unsignedLong .
 
 IntegerValueObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 AnalogOutputObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 TrendLogObject:notificationThreshold
         a             skos:Concept ;
+        rdfs:label    "notificationThreshold" ;
         skos:related  xsd:unsignedLong .
 
 LoopObject:updateInterval
         a             skos:Concept ;
+        rdfs:label    "updateInterval" ;
         skos:related  xsd:unsignedLong .
 
 ServicesSupported:readProperty
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "readProperty" .
 
 LifeSafetyPointObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 AnalogOutputObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  xsd:float .
 
 TrendLogMultipleObject:startTime
         a             skos:Concept ;
+        rdfs:label    "startTime" ;
         skos:related  bacnet:DateTime .
 
 LoadControlObject:stateDescription
         a             skos:Concept ;
+        rdfs:label    "stateDescription" ;
         skos:related  xsd:string .
 
 TrendLogMultipleObject:totalRecordCount
         a             skos:Concept ;
+        rdfs:label    "totalRecordCount" ;
         skos:related  xsd:unsignedLong .
 
 AccessPointObject:failedAttemptsTime
         a             skos:Concept ;
+        rdfs:label    "failedAttemptsTime" ;
         skos:related  xsd:unsignedLong .
 
 BinaryOutputObject:deviceType
         a             skos:Concept ;
+        rdfs:label    "deviceType" ;
         skos:related  xsd:string .
 
 LoopObject:controlledVariableValue
         a             skos:Concept ;
+        rdfs:label    "controlledVariableValue" ;
         skos:related  xsd:float .
 
 LoopObject:action  a  skos:Concept ;
+        rdfs:label    "action" ;
         skos:related  bacnet:Action .
 
 MultiStateValueObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 TrendLogMultipleObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 AccessPointObject:accessEvent
         a             skos:Concept ;
+        rdfs:label    "accessEvent" ;
         skos:related  bacnet:AccessEvent .
 
 ServicesSupported:addListElement
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "addListElement" .
 
 EventLogObject:recordsSinceNotification
         a             skos:Concept ;
+        rdfs:label    "recordsSinceNotification" ;
         skos:related  xsd:unsignedLong .
 
 ServicesSupported:getEnrollmentSummary
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "getEnrollmentSummary" .
 
 AccessZoneObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 TrendLogMultipleObject:bufferSize
         a             skos:Concept ;
+        rdfs:label    "bufferSize" ;
         skos:related  xsd:unsignedLong .
 
 AccessCredentialObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 AccessDoorObject:doorUnlockDelayTime
         a             skos:Concept ;
+        rdfs:label    "doorUnlockDelayTime" ;
         skos:related  xsd:unsignedLong .
 
 AnalogInputObject:limitEnable
         a             skos:Concept ;
+        rdfs:label    "limitEnable" ;
         skos:related  bacnet:LimitEnable .
 
 CredentialDataInputObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 DeviceObject:segmentationSupported
         a             skos:Concept ;
+        rdfs:label    "segmentationSupported" ;
         skos:related  bacnet:Segmentation .
 
 PulseConverterObject:adjustValue
         a             skos:Concept ;
+        rdfs:label    "adjustValue" ;
         skos:related  xsd:float .
 
 bacnet:DatePatternValueObject
         a             skos:Concept ;
+        rdfs:label    "DatePatternValueObject" ;
         skos:related  DatePatternValueObject:presentValue , DatePatternValueObject:statusFlags , DatePatternValueObject:priorityArray , DatePatternValueObject:relinquishDefault , DatePatternValueObject:outOfService , DatePatternValueObject:reliability , DatePatternValueObject:eventState .
 
 AccessCredentialObject:absenteeLimit
         a             skos:Concept ;
+        rdfs:label    "absenteeLimit" ;
         skos:related  xsd:unsignedLong .
 
 PulseConverterObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 bacnet:NetworkSecurityObject
         a             skos:Concept ;
+        rdfs:label    "NetworkSecurityObject" ;
         skos:related  NetworkSecurityObject:baseDeviceSecurityPolicy .
 
 AccessCredentialObject:belongsTo
         a             skos:Concept ;
+        rdfs:label    "belongsTo" ;
         skos:related  bacnet:DeviceObjectReference .
 
 BitStringValueObject:bitMask
         a             skos:Concept ;
+        rdfs:label    "bitMask" ;
         skos:related  bacnet:BitString .
 
 ServicesSupported:confirmedTextMessage
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "confirmedTextMessage" .
 
 MultiStateValueObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 NotificationClassObject:recipientList
         a             skos:Concept ;
+        rdfs:label    "recipientList" ;
         skos:related  bacnet:SequenceOfDestination .
 
 MultiStateOutputObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 EventEnrollmentObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 LoopObject:manipulatedVariableReference
         a             skos:Concept ;
+        rdfs:label    "manipulatedVariableReference" ;
         skos:related  bacnet:ObjectPropertyReference .
 
 ProgramObject:instanceOf
         a             skos:Concept ;
+        rdfs:label    "instanceOf" ;
         skos:related  xsd:string .
 
 ServicesSupported:unconfirmedCOVNotification
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "unconfirmedCOVNotification" .
 
 AccumulatorObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:SequenceOfCharacterString .
 
 MultiStateInputObject:stateText
         a             skos:Concept ;
+        rdfs:label    "stateText" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 PulseConverterObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 PulseConverterObject:updateTime
         a             skos:Concept ;
+        rdfs:label    "updateTime" ;
         skos:related  bacnet:DateTime .
 
 BinaryOutputObject:minimumOffTime
         a             skos:Concept ;
+        rdfs:label    "minimumOffTime" ;
         skos:related  xsd:unsignedLong .
 
 FileObject:fileType  a  skos:Concept ;
+        rdfs:label    "fileType" ;
         skos:related  xsd:string .
 
 bacnet:LifeSafetyZoneObject
         a             skos:Concept ;
-        skos:related  LifeSafetyZoneObject:maintenanceRequired , LifeSafetyZoneObject:memberOf , LifeSafetyZoneObject:presentValue , LifeSafetyZoneObject:statusFlags , LifeSafetyZoneObject:eventMessageTexts , LifeSafetyZoneObject:eventTimeStamps , LifeSafetyZoneObject:ackedTransitions , LifeSafetyZoneObject:timeDelay , LifeSafetyZoneObject:silenced , LifeSafetyZoneObject:outOfService , LifeSafetyZoneObject:lifeSafetyAlarmValues , LifeSafetyZoneObject:alarmValues , LifeSafetyZoneObject:eventState , LifeSafetyZoneObject:deviceType , LifeSafetyZoneObject:notificationClass , LifeSafetyZoneObject:mode , LifeSafetyZoneObject:operationExpected , LifeSafetyZoneObject:faultValues , LifeSafetyZoneObject:eventEnable , LifeSafetyZoneObject:reliability , LifeSafetyZoneObject:zoneMembers , LifeSafetyZoneObject:trackingValue , LifeSafetyZoneObject:acceptedModes , LifeSafetyZoneObject:notifyType .
+        rdfs:label    "LifeSafetyZoneObject" ;
+        skos:related  LifeSafetyZoneObject:maintenanceRequired , LifeSafetyZoneObject:memberOf , LifeSafetyZoneObject:presentValue , LifeSafetyZoneObject:statusFlags , LifeSafetyZoneObject:eventMessageTexts , LifeSafetyZoneObject:eventTimeStamps , LifeSafetyZoneObject:ackedTransitions , LifeSafetyZoneObject:timeDelay , LifeSafetyZoneObject:silenced , LifeSafetyZoneObject:outOfService , LifeSafetyZoneObject:lifeSafetyAlarmValues , LifeSafetyZoneObject:alarmValues , LifeSafetyZoneObject:eventState , LifeSafetyZoneObject:deviceType , LifeSafetyZoneObject:notificationClass , LifeSafetyZoneObject:mode , LifeSafetyZoneObject:operationExpected , LifeSafetyZoneObject:eventEnable , LifeSafetyZoneObject:faultValues , LifeSafetyZoneObject:reliability , LifeSafetyZoneObject:zoneMembers , LifeSafetyZoneObject:trackingValue , LifeSafetyZoneObject:acceptedModes , LifeSafetyZoneObject:notifyType .
 
 DeviceObject:backupFailureTimeout
         a             skos:Concept ;
+        rdfs:label    "backupFailureTimeout" ;
         skos:related  xsd:unsignedLong .
 
 AccessCredentialObject:masterExemption
         a             skos:Concept ;
+        rdfs:label    "masterExemption" ;
         skos:related  xsd:boolean .
 
 CharacterStringValueObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 BinaryInputObject:deviceType
         a             skos:Concept ;
+        rdfs:label    "deviceType" ;
         skos:related  xsd:string .
 
 AnalogOutputObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 CommandObject:allWritesSuccessful
         a             skos:Concept ;
+        rdfs:label    "allWritesSuccessful" ;
         skos:related  xsd:boolean .
 
 LifeSafetyZoneObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 BitStringValueObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 bacnet:TrendLogMultipleObject
         a             skos:Concept ;
+        rdfs:label    "TrendLogMultipleObject" ;
         skos:related  TrendLogMultipleObject:totalRecordCount , TrendLogMultipleObject:stopWhenFull , TrendLogMultipleObject:ackedTransitions , TrendLogMultipleObject:logBuffer , TrendLogMultipleObject:bufferSize , TrendLogMultipleObject:recordCount , TrendLogMultipleObject:enable , TrendLogMultipleObject:statusFlags , TrendLogMultipleObject:reliability , TrendLogMultipleObject:notificationClass , TrendLogMultipleObject:notificationThreshold , TrendLogMultipleObject:recordsSinceNotification , TrendLogMultipleObject:lastNotifyRecord , TrendLogMultipleObject:eventState , TrendLogMultipleObject:loggingType , TrendLogMultipleObject:stopTime , TrendLogMultipleObject:startTime , TrendLogMultipleObject:logDeviceObjectProperty , TrendLogMultipleObject:eventTimeStamps , TrendLogMultipleObject:trigger , TrendLogMultipleObject:logInterval , TrendLogMultipleObject:notifyType , TrendLogMultipleObject:eventEnable , TrendLogMultipleObject:eventMessageTexts , TrendLogMultipleObject:alignIntervals , TrendLogMultipleObject:intervalOffset .
 
 LargeAnalogValueObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 LifeSafetyZoneObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  bacnet:LifeSafetyState .
 
 bacnet:AnalogInputObject
         a             skos:Concept ;
+        rdfs:label    "AnalogInputObject" ;
         skos:related  AnalogInputObject:units , AnalogInputObject:notifyType , AnalogInputObject:statusFlags , AnalogInputObject:eventState , AnalogInputObject:timeDelay , AnalogInputObject:highLimit , AnalogInputObject:reliability , AnalogInputObject:updateInterval , AnalogInputObject:lowLimit , AnalogInputObject:eventMessageTexts , AnalogInputObject:resolution , AnalogInputObject:covIncrement , AnalogInputObject:eventEnable , AnalogInputObject:deadband , AnalogInputObject:minPresValue , AnalogInputObject:presentValue , AnalogInputObject:notificationClass , AnalogInputObject:deviceType , AnalogInputObject:ackedTransitions , AnalogInputObject:limitEnable , AnalogInputObject:outOfService , AnalogInputObject:eventTimeStamps , AnalogInputObject:maxPresValue .
 
 OctetStringValueObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:string .
 
 bacnet:LoopObject  a  skos:Concept ;
+        rdfs:label    "LoopObject" ;
         skos:related  LoopObject:derivativeConstantUnits , LoopObject:reliability , LoopObject:ackedTransitions , LoopObject:integralConstantUnits , LoopObject:eventEnable , LoopObject:setpoint , LoopObject:outOfService , LoopObject:deadband , LoopObject:timeDelay , LoopObject:controlledVariableUnits , LoopObject:maximumOutput , LoopObject:minimumOutput , LoopObject:manipulatedVariableReference , LoopObject:notificationClass , LoopObject:covIncrement , LoopObject:updateInterval , LoopObject:statusFlags , LoopObject:presentValue , LoopObject:derivativeConstant , LoopObject:action , LoopObject:eventMessageTexts , LoopObject:priorityForWriting , LoopObject:controlledVariableValue , LoopObject:integralConstant , LoopObject:setpointReference , LoopObject:outputUnits , LoopObject:errorLimit , LoopObject:controlledVariableReference , LoopObject:proportionalConstant , LoopObject:notifyType , LoopObject:eventTimeStamps , LoopObject:eventState , LoopObject:proportionalConstantUnits , LoopObject:bias .
 
 BinaryInputObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 AnalogInputObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 TrendLogObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 BinaryValueObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  bacnet:BinaryPV .
 
 DeviceObject:maxInfoFrames
         a             skos:Concept ;
+        rdfs:label    "maxInfoFrames" ;
         skos:related  xsd:unsignedLong .
 
 TimePatternValueObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 ServicesSupported:readPropertyMultiple
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "readPropertyMultiple" .
 
 AccessPointObject:zoneFrom
         a             skos:Concept ;
+        rdfs:label    "zoneFrom" ;
         skos:related  bacnet:DeviceObjectReference .
 
 LifeSafetyZoneObject:faultValues
         a             skos:Concept ;
+        rdfs:label    "faultValues" ;
         skos:related  bacnet:SequenceOfLifeSafetyState .
 
 EventEnrollmentObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 BinaryOutputObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 LoadControlObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 LargeAnalogValueObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 DeviceObject:protocolServicesSupported
         a             skos:Concept ;
+        rdfs:label    "protocolServicesSupported" ;
         skos:related  bacnet:ServicesSupported .
 
 AnalogValueObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 LifeSafetyPointObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 MultiStateInputObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 BinaryValueObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 AnalogOutputObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 AveragingObject:maximumValue
         a             skos:Concept ;
+        rdfs:label    "maximumValue" ;
         skos:related  xsd:float .
 
 AnalogOutputObject:limitEnable
         a             skos:Concept ;
+        rdfs:label    "limitEnable" ;
         skos:related  bacnet:LimitEnable .
 
 bacnet:CredentialDataInputObject
         a             skos:Concept ;
+        rdfs:label    "CredentialDataInputObject" ;
         skos:related  CredentialDataInputObject:supportedFormatClasses , CredentialDataInputObject:supportedFormats , CredentialDataInputObject:statusFlags , CredentialDataInputObject:presentValue , CredentialDataInputObject:outOfService , CredentialDataInputObject:reliability .
 
 ServicesSupported:whoHas
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "whoHas" .
 
 AnalogValueObject:resolution
         a             skos:Concept ;
+        rdfs:label    "resolution" ;
         skos:related  xsd:float .
 
 TimeValueObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 AccessPointObject:priorityForWriting
         a             skos:Concept ;
+        rdfs:label    "priorityForWriting" ;
         skos:related  xsd:unsignedLong .
 
 DeviceObject:lastRestoreTime
         a             skos:Concept ;
+        rdfs:label    "lastRestoreTime" ;
         skos:related  bacnet:TimeStamp .
 
 AccessDoorObject:doorExtendedPulseTime
         a             skos:Concept ;
+        rdfs:label    "doorExtendedPulseTime" ;
         skos:related  xsd:unsignedLong .
 
 AccessDoorObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 bacnet:LargeAnalogValueObject
         a             skos:Concept ;
+        rdfs:label    "LargeAnalogValueObject" ;
         skos:related  LargeAnalogValueObject:priorityArray , LargeAnalogValueObject:notifyType , LargeAnalogValueObject:eventState , LargeAnalogValueObject:statusFlags , LargeAnalogValueObject:ackedTransitions , LargeAnalogValueObject:eventMessageTexts , LargeAnalogValueObject:lowLimit , LargeAnalogValueObject:units , LargeAnalogValueObject:covIncrement , LargeAnalogValueObject:timeDelay , LargeAnalogValueObject:reliability , LargeAnalogValueObject:eventEnable , LargeAnalogValueObject:presentValue , LargeAnalogValueObject:deadband , LargeAnalogValueObject:relinquishDefault , LargeAnalogValueObject:outOfService , LargeAnalogValueObject:eventTimeStamps , LargeAnalogValueObject:highLimit , LargeAnalogValueObject:notificationClass , LargeAnalogValueObject:limitEnable .
 
 ServicesSupported:confirmedCOVNotification
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "confirmedCOVNotification" .
 
 AccessDoorObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 TrendLogMultipleObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 AccessCredentialObject:extendedTimeEnable
         a             skos:Concept ;
+        rdfs:label    "extendedTimeEnable" ;
         skos:related  xsd:boolean .
 
 LoopObject:controlledVariableReference
         a             skos:Concept ;
+        rdfs:label    "controlledVariableReference" ;
         skos:related  bacnet:ObjectPropertyReference .
 
 AccumulatorObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 EventLogObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 AccumulatorObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:unsignedLong .
 
 EventEnrollmentObject:objectPropertyReference
         a             skos:Concept ;
+        rdfs:label    "objectPropertyReference" ;
         skos:related  bacnet:DeviceObjectPropertyReference .
 
 TrendLogMultipleObject:recordsSinceNotification
         a             skos:Concept ;
+        rdfs:label    "recordsSinceNotification" ;
         skos:related  xsd:unsignedLong .
 
 AccessUserObject:memberOf
         a             skos:Concept ;
+        rdfs:label    "memberOf" ;
         skos:related  bacnet:SequenceOfDeviceObjectReference .
 
 PositiveIntegerValueObject:highLimit
         a             skos:Concept ;
+        rdfs:label    "highLimit" ;
         skos:related  xsd:unsignedLong .
 
 MultiStateValueObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 CommandObject:action  a  skos:Concept ;
+        rdfs:label    "action" ;
         skos:related  bacnet:ArrayOfActionList .
 
 DeviceObject:vendorIdentifier
         a             skos:Concept ;
+        rdfs:label    "vendorIdentifier" ;
         skos:related  xsd:unsignedLong .
 
 bacnet:AccessPointObject
         a             skos:Concept ;
+        rdfs:label    "AccessPointObject" ;
         skos:related  AccessPointObject:lockoutRelinquishTime , AccessPointObject:statusFlags , AccessPointObject:activeAuthenticationPolicy , AccessPointObject:zoneTo , AccessPointObject:verificationTime , AccessPointObject:occupancyLowerLimitEnforced , AccessPointObject:numberOfAuthenticationPolicies , AccessPointObject:accessEventTime , AccessPointObject:failedAttemptEvents , AccessPointObject:transactionNotificationClass , AccessPointObject:accessDoors , AccessPointObject:eventEnable , AccessPointObject:eventTimeStamps , AccessPointObject:eventState , AccessPointObject:reliability , AccessPointObject:occupancyCountAdjust , AccessPointObject:outOfService , AccessPointObject:eventMessageTexts , AccessPointObject:authorizationMode , AccessPointObject:accompanimentTime , AccessPointObject:accessTransactionEvents , AccessPointObject:authenticationPolicyNames , AccessPointObject:accessEvent , AccessPointObject:accessEventCredential , AccessPointObject:accessEventTag , AccessPointObject:accessEventAuthenticationFactor , AccessPointObject:priorityForWriting , AccessPointObject:zoneFrom , AccessPointObject:maxFailedAttempts , AccessPointObject:lockout , AccessPointObject:failedAttempts , AccessPointObject:authenticationStatus , AccessPointObject:ackedTransitions , AccessPointObject:musterPoint , AccessPointObject:notificationClass , AccessPointObject:occupancyUpperLimitEnforced , AccessPointObject:notifyType , AccessPointObject:accessAlarmEvents , AccessPointObject:failedAttemptsTime , AccessPointObject:threatLevel , AccessPointObject:authenticationPolicyList .
 
 DateTimeValueObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 BinaryInputObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 AccessZoneObject:lastCredentialRemoved
         a             skos:Concept ;
+        rdfs:label    "lastCredentialRemoved" ;
         skos:related  bacnet:DeviceObjectReference .
 
 DateValueObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 AccessPointObject:transactionNotificationClass
         a             skos:Concept ;
+        rdfs:label    "transactionNotificationClass" ;
         skos:related  xsd:unsignedLong .
 
 EventLogObject:enable
         a             skos:Concept ;
+        rdfs:label    "enable" ;
         skos:related  xsd:boolean .
 
 TrendLogObject:lastNotifyRecord
         a             skos:Concept ;
+        rdfs:label    "lastNotifyRecord" ;
         skos:related  xsd:unsignedLong .
 
 AnalogOutputObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 TimePatternValueObject:isUtc
         a             skos:Concept ;
+        rdfs:label    "isUtc" ;
         skos:related  xsd:boolean .
 
 LoadControlObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 PositiveIntegerValueObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 AnalogOutputObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 BinaryValueObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 AccumulatorObject:units
         a             skos:Concept ;
+        rdfs:label    "units" ;
         skos:related  bacnet:EngineeringUnits .
 
 AccessZoneObject:credentialsInZone
         a             skos:Concept ;
+        rdfs:label    "credentialsInZone" ;
         skos:related  bacnet:SequenceOfDeviceObjectReference .
 
 AccessDoorObject:securedStatus
         a             skos:Concept ;
+        rdfs:label    "securedStatus" ;
         skos:related  bacnet:DoorSecuredStatus .
 
 GlobalGroupObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 GlobalGroupObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 OctetStringValueObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 TrendLogMultipleObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 MultiStateOutputObject:stateText
         a             skos:Concept ;
+        rdfs:label    "stateText" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 AccessDoorObject:doorStatus
         a             skos:Concept ;
+        rdfs:label    "doorStatus" ;
         skos:related  bacnet:DoorStatus .
 
 BinaryValueObject:changeOfStateCount
         a             skos:Concept ;
+        rdfs:label    "changeOfStateCount" ;
         skos:related  xsd:unsignedLong .
 
 AccessCredentialObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 PulseConverterObject:scaleFactor
         a             skos:Concept ;
+        rdfs:label    "scaleFactor" ;
         skos:related  xsd:float .
 
 ScheduleObject:exceptionSchedule
         a             skos:Concept ;
+        rdfs:label    "exceptionSchedule" ;
         skos:related  bacnet:ArrayOfSpecialEvent .
 
 IntegerValueObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 IntegerValueObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 AccessUserObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 PulseConverterObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 DeviceObject:modelName
         a             skos:Concept ;
+        rdfs:label    "modelName" ;
         skos:related  xsd:string .
 
 LifeSafetyPointObject:setting
         a             skos:Concept ;
+        rdfs:label    "setting" ;
         skos:related  xsd:unsignedLong .
 
 AccessDoorObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 AccumulatorObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:SequenceOfTimeStamp .
 
 MultiStateValueObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:unsignedLong .
 
 AnalogOutputObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 AccessDoorObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 AnalogValueObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 LifeSafetyZoneObject:alarmValues
         a             skos:Concept ;
+        rdfs:label    "alarmValues" ;
         skos:related  bacnet:SequenceOfLifeSafetyState .
 
 AccessPointObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 DeviceObject:slaveProxyEnable
         a             skos:Concept ;
+        rdfs:label    "slaveProxyEnable" ;
         skos:related  bacnet:ArrayOfBoolean .
 
 AccessZoneObject:lastCredentialRemovedTime
         a             skos:Concept ;
+        rdfs:label    "lastCredentialRemovedTime" ;
         skos:related  bacnet:DateTime .
 
 IntegerValueObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 BinaryOutputObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 GroupObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  bacnet:SequenceOfReadAccessResult .
 
 bacnet:WritableProperty
@@ -2479,1559 +3021,1954 @@ bacnet:WritableProperty
 
 LifeSafetyPointObject:units
         a             skos:Concept ;
+        rdfs:label    "units" ;
         skos:related  bacnet:EngineeringUnits .
 
 AnalogOutputObject:lowLimit
         a             skos:Concept ;
+        rdfs:label    "lowLimit" ;
         skos:related  xsd:float .
 
 TrendLogObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 DeviceObject:systemStatus
         a             skos:Concept ;
+        rdfs:label    "systemStatus" ;
         skos:related  bacnet:DeviceStatus .
 
 AccessDoorObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 DateTimeValueObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 MultiStateOutputObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:unsignedLong .
 
 BinaryInputObject:activeText
         a             skos:Concept ;
+        rdfs:label    "activeText" ;
         skos:related  xsd:string .
 
 LoopObject:proportionalConstant
         a             skos:Concept ;
+        rdfs:label    "proportionalConstant" ;
         skos:related  xsd:float .
 
 AccessPointObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 AccessRightsObject:negativeAccessRules
         a             skos:Concept ;
+        rdfs:label    "negativeAccessRules" ;
         skos:related  bacnet:ArrayOfAccessRule .
 
 bacnet:EventEnrollmentObject
         a             skos:Concept ;
+        rdfs:label    "EventEnrollmentObject" ;
         skos:related  EventEnrollmentObject:notifyType , EventEnrollmentObject:eventParameters , EventEnrollmentObject:ackedTransitions , EventEnrollmentObject:eventMessageTexts , EventEnrollmentObject:eventTimeStamps , EventEnrollmentObject:eventState , EventEnrollmentObject:notificationClass , EventEnrollmentObject:eventType , EventEnrollmentObject:eventEnable , EventEnrollmentObject:objectPropertyReference .
 
 CharacterStringValueObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 bacnet:GlobalGroupObject
         a             skos:Concept ;
+        rdfs:label    "GlobalGroupObject" ;
         skos:related  GlobalGroupObject:eventTimeStamps , GlobalGroupObject:ackedTransitions , GlobalGroupObject:covuPeriod , GlobalGroupObject:eventMessageTexts , GlobalGroupObject:eventEnable , GlobalGroupObject:eventState , GlobalGroupObject:statusFlags , GlobalGroupObject:groupMembers , GlobalGroupObject:memberStatusFlags , GlobalGroupObject:reliability , GlobalGroupObject:covuRecipients , GlobalGroupObject:presentValue , GlobalGroupObject:notifyType , GlobalGroupObject:requestedUpdateInterval , GlobalGroupObject:clientCovIncrement , GlobalGroupObject:groupMemberNames , GlobalGroupObject:covResubscriptionInterval , GlobalGroupObject:outOfService , GlobalGroupObject:updateInterval , GlobalGroupObject:notificationClass , GlobalGroupObject:timeDelay .
 
 BinaryInputObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 AccessPointObject:occupancyUpperLimitEnforced
         a             skos:Concept ;
+        rdfs:label    "occupancyUpperLimitEnforced" ;
         skos:related  xsd:boolean .
 
 AccessCredentialObject:reasonForDisable
         a             skos:Concept ;
+        rdfs:label    "reasonForDisable" ;
         skos:related  bacnet:SequenceOfAccessCredentialDisableReason .
 
 ServicesSupported:whoIs
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "whoIs" .
 
 BitStringValueObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 ServicesSupported:iHave
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "iHave" .
 
 DeviceObject:intervalOffset
         a             skos:Concept ;
+        rdfs:label    "intervalOffset" ;
         skos:related  xsd:unsignedLong .
 
 DeviceObject:vtClassesSupported
         a             skos:Concept ;
+        rdfs:label    "vtClassesSupported" ;
         skos:related  bacnet:SequenceOfVTClass .
 
 TrendLogMultipleObject:alignIntervals
         a             skos:Concept ;
+        rdfs:label    "alignIntervals" ;
         skos:related  xsd:boolean .
 
 TrendLogObject:totalRecordCount
         a             skos:Concept ;
+        rdfs:label    "totalRecordCount" ;
         skos:related  xsd:unsignedLong .
 
 AnalogInputObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 bacnet:ProgramObject  a  skos:Concept ;
+        rdfs:label    "ProgramObject" ;
         skos:related  ProgramObject:instanceOf , ProgramObject:reliability , ProgramObject:programLocation , ProgramObject:descriptionOfHalt , ProgramObject:statusFlags , ProgramObject:outOfService , ProgramObject:programChange , ProgramObject:programState , ProgramObject:reasonForHalt .
 
 AccessUserObject:userName
         a             skos:Concept ;
+        rdfs:label    "userName" ;
         skos:related  xsd:string .
 
 AnalogValueObject:minPresValue
         a             skos:Concept ;
+        rdfs:label    "minPresValue" ;
         skos:related  xsd:float .
 
 AccumulatorObject:highLimit
         a             skos:Concept ;
+        rdfs:label    "highLimit" ;
         skos:related  xsd:unsignedLong .
 
 AccessCredentialObject:lastAccessEvent
         a             skos:Concept ;
+        rdfs:label    "lastAccessEvent" ;
         skos:related  bacnet:AccessEvent .
 
 ServicesSupported:utcTimeSynchronization
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "utcTimeSynchronization" .
 
 LifeSafetyZoneObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 EventEnrollmentObject:eventType
         a             skos:Concept ;
+        rdfs:label    "eventType" ;
         skos:related  bacnet:EventType .
 
 MultiStateValueObject:faultValues
         a             skos:Concept ;
+        rdfs:label    "faultValues" ;
         skos:related  bacnet:SequenceOfUnsigned .
 
 StructuredViewObject:subordinateList
         a             skos:Concept ;
+        rdfs:label    "subordinateList" ;
         skos:related  bacnet:ArrayOfDeviceObjectReference .
 
 AccessDoorObject:maskedAlarmValues
         a             skos:Concept ;
+        rdfs:label    "maskedAlarmValues" ;
         skos:related  bacnet:SequenceOfDoorAlarmState .
 
 BinaryOutputObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 EventEnrollmentObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 AccessDoorObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 LifeSafetyPointObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 AccessZoneObject:lastCredentialAddedTime
         a             skos:Concept ;
+        rdfs:label    "lastCredentialAddedTime" ;
         skos:related  bacnet:DateTime .
 
 LoopObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 bacnet:EventLogObject
         a             skos:Concept ;
+        rdfs:label    "EventLogObject" ;
         skos:related  EventLogObject:startTime , EventLogObject:eventTimeStamps , EventLogObject:notifyType , EventLogObject:logBuffer , EventLogObject:statusFlags , EventLogObject:eventEnable , EventLogObject:eventState , EventLogObject:stopTime , EventLogObject:recordCount , EventLogObject:stopWhenFull , EventLogObject:ackedTransitions , EventLogObject:notificationClass , EventLogObject:enable , EventLogObject:reliability , EventLogObject:eventMessageTexts , EventLogObject:bufferSize , EventLogObject:recordsSinceNotification , EventLogObject:totalRecordCount , EventLogObject:lastNotifyRecord , EventLogObject:notificationThreshold .
 
 LifeSafetyPointObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 BinaryValueObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 EventLogObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 LifeSafetyPointObject:lifeSafetyAlarmValues
         a             skos:Concept ;
+        rdfs:label    "lifeSafetyAlarmValues" ;
         skos:related  bacnet:SequenceOfLifeSafetyState .
 
 ServicesSupported:vtOpen
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "vtOpen" .
 
 AccessZoneObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 BinaryOutputObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  bacnet:BinaryPV .
 
 bacnet:DeviceObject  a  skos:Concept ;
+        rdfs:label    "DeviceObject" ;
         skos:related  DeviceObject:restoreCompletionTime , DeviceObject:objectList , DeviceObject:deviceAddressBinding , DeviceObject:maxInfoFrames , DeviceObject:vtClassesSupported , DeviceObject:timeSynchronizationInterval , DeviceObject:backupPreparationTime , DeviceObject:vendorName , DeviceObject:timeSynchronizationRecipients , DeviceObject:maxSegmentsAccepted , DeviceObject:vendorIdentifier , DeviceObject:autoSlaveDiscovery , DeviceObject:firmwareRevision , DeviceObject:utcTimeSynchronizationRecipients , DeviceObject:modelName , DeviceObject:activeCovSubscriptions , DeviceObject:lastRestoreTime , DeviceObject:backupFailureTimeout , DeviceObject:activeVtSessions , DeviceObject:location , DeviceObject:restorePreparationTime , DeviceObject:backupAndRestoreState , DeviceObject:utcOffset , DeviceObject:maxMaster , DeviceObject:protocolRevision , DeviceObject:lastRestartReason , DeviceObject:maxApduLengthAccepted , DeviceObject:apduSegmentTimeout , DeviceObject:configurationFiles , DeviceObject:applicationSoftwareVersion , DeviceObject:restartNotificationRecipients , DeviceObject:manualSlaveAddressBinding , DeviceObject:intervalOffset , DeviceObject:numberOfApduRetries , DeviceObject:protocolObjectTypesSupported , DeviceObject:localTime , DeviceObject:daylightSavingsStatus , DeviceObject:protocolServicesSupported , DeviceObject:segmentationSupported , DeviceObject:localDate , DeviceObject:apduTimeout , DeviceObject:systemStatus , DeviceObject:alignIntervals , DeviceObject:protocolVersion , DeviceObject:slaveProxyEnable , DeviceObject:databaseRevision , DeviceObject:timeOfDeviceRestart , DeviceObject:slaveAddressBinding , DeviceObject:structuredObjectList .
 
 LoopObject:derivativeConstant
         a             skos:Concept ;
+        rdfs:label    "derivativeConstant" ;
         skos:related  xsd:float .
 
 CalendarObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:boolean .
 
 AccessPointObject:musterPoint
         a             skos:Concept ;
+        rdfs:label    "musterPoint" ;
         skos:related  xsd:boolean .
 
 TrendLogObject:covResubscriptionInterval
         a             skos:Concept ;
+        rdfs:label    "covResubscriptionInterval" ;
         skos:related  xsd:unsignedLong .
 
 DateTimeValueObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 ProgramObject:programState
         a             skos:Concept ;
+        rdfs:label    "programState" ;
         skos:related  bacnet:ProgramState .
 
 DeviceObject:restorePreparationTime
         a             skos:Concept ;
+        rdfs:label    "restorePreparationTime" ;
         skos:related  xsd:unsignedLong .
 
 AccessPointObject:lockout
         a             skos:Concept ;
+        rdfs:label    "lockout" ;
         skos:related  xsd:boolean .
 
 BinaryOutputObject:elapsedActiveTime
         a             skos:Concept ;
+        rdfs:label    "elapsedActiveTime" ;
         skos:related  xsd:unsignedLong .
 
 BinaryValueObject:alarmValue
         a             skos:Concept ;
+        rdfs:label    "alarmValue" ;
         skos:related  bacnet:BinaryPV .
 
 bacnet:DateValueObject
         a             skos:Concept ;
+        rdfs:label    "DateValueObject" ;
         skos:related  DateValueObject:presentValue , DateValueObject:statusFlags , DateValueObject:outOfService , DateValueObject:priorityArray , DateValueObject:reliability , DateValueObject:eventState , DateValueObject:relinquishDefault .
 
 AccessDoorObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  bacnet:DoorValue .
 
 DatePatternValueObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 PulseConverterObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 ScheduleObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  bacnet:Any .
 
 BinaryValueObject:timeOfActiveTimeReset
         a             skos:Concept ;
+        rdfs:label    "timeOfActiveTimeReset" ;
         skos:related  bacnet:DateTime .
 
 DeviceObject:activeCovSubscriptions
         a             skos:Concept ;
+        rdfs:label    "activeCovSubscriptions" ;
         skos:related  bacnet:SequenceOfCOVSubscription .
 
 CredentialDataInputObject:supportedFormats
         a             skos:Concept ;
+        rdfs:label    "supportedFormats" ;
         skos:related  bacnet:ArrayOfAuthenticationFactorFormat .
 
 bacnet:AccumulatorObject
         a             skos:Concept ;
+        rdfs:label    "AccumulatorObject" ;
         skos:related  AccumulatorObject:limitMonitoringInterval , AccumulatorObject:loggingRecord , AccumulatorObject:valueSet , AccumulatorObject:eventState , AccumulatorObject:loggingObject , AccumulatorObject:scale , AccumulatorObject:eventEnable , AccumulatorObject:highLimit , AccumulatorObject:limitEnable , AccumulatorObject:statusFlags , AccumulatorObject:outOfService , AccumulatorObject:valueChangeTime , AccumulatorObject:ackedTransitions , AccumulatorObject:lowLimit , AccumulatorObject:notifyType , AccumulatorObject:pulseRate , AccumulatorObject:eventTimeStamps , AccumulatorObject:prescale , AccumulatorObject:reliability , AccumulatorObject:presentValue , AccumulatorObject:timeDelay , AccumulatorObject:maxPresValue , AccumulatorObject:deviceType , AccumulatorObject:notificationClass , AccumulatorObject:eventMessageTexts , AccumulatorObject:units , AccumulatorObject:valueBeforeChange .
 
 AccessCredentialObject:lastUseTime
         a             skos:Concept ;
+        rdfs:label    "lastUseTime" ;
         skos:related  bacnet:DateTime .
 
 DeviceObject:databaseRevision
         a             skos:Concept ;
+        rdfs:label    "databaseRevision" ;
         skos:related  xsd:unsignedLong .
 
 DateTimePatternValueObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 TrendLogMultipleObject:logDeviceObjectProperty
         a             skos:Concept ;
+        rdfs:label    "logDeviceObjectProperty" ;
         skos:related  bacnet:ArrayOfDeviceObjectPropertyReference .
 
 AccessUserObject:globalIdentifier
         a             skos:Concept ;
+        rdfs:label    "globalIdentifier" ;
         skos:related  xsd:unsignedLong .
 
 AccessZoneObject:occupancyCount
         a             skos:Concept ;
+        rdfs:label    "occupancyCount" ;
         skos:related  xsd:unsignedLong .
 
 MultiStateInputObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 AnalogOutputObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 BitStringValueObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 BitStringValueObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 LargeAnalogValueObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 LoopObject:bias  a    skos:Concept ;
+        rdfs:label    "bias" ;
         skos:related  xsd:float .
 
 TrendLogMultipleObject:stopWhenFull
         a             skos:Concept ;
+        rdfs:label    "stopWhenFull" ;
         skos:related  xsd:boolean .
 
 AnalogOutputObject:maxPresValue
         a             skos:Concept ;
+        rdfs:label    "maxPresValue" ;
         skos:related  xsd:float .
 
 AccessZoneObject:lastCredentialAdded
         a             skos:Concept ;
+        rdfs:label    "lastCredentialAdded" ;
         skos:related  bacnet:DeviceObjectReference .
 
 IntegerValueObject:highLimit
         a             skos:Concept ;
+        rdfs:label    "highLimit" ;
         skos:related  xsd:long .
 
 DateTimePatternValueObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 DeviceObject:maxSegmentsAccepted
         a             skos:Concept ;
+        rdfs:label    "maxSegmentsAccepted" ;
         skos:related  xsd:unsignedLong .
 
 AccessPointObject:occupancyLowerLimitEnforced
         a             skos:Concept ;
+        rdfs:label    "occupancyLowerLimitEnforced" ;
         skos:related  xsd:boolean .
 
 TrendLogMultipleObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 AnalogOutputObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 LifeSafetyZoneObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 BinaryOutputObject:feedbackValue
         a             skos:Concept ;
+        rdfs:label    "feedbackValue" ;
         skos:related  bacnet:BinaryPV .
 
 EventLogObject:notificationThreshold
         a             skos:Concept ;
+        rdfs:label    "notificationThreshold" ;
         skos:related  xsd:unsignedLong .
 
 AccessPointObject:numberOfAuthenticationPolicies
         a             skos:Concept ;
+        rdfs:label    "numberOfAuthenticationPolicies" ;
         skos:related  xsd:unsignedLong .
 
 PositiveIntegerValueObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 TimeValueObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 GlobalGroupObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 GlobalGroupObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  bacnet:ArrayOfPropertyAccessResult .
 
 AccessDoorObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 PulseConverterObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 LifeSafetyPointObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 AccessPointObject:zoneTo
         a             skos:Concept ;
+        rdfs:label    "zoneTo" ;
         skos:related  bacnet:DeviceObjectReference .
 
 AveragingObject:averageValue
         a             skos:Concept ;
+        rdfs:label    "averageValue" ;
         skos:related  xsd:float .
 
 PositiveIntegerValueObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:unsignedLong .
 
 DeviceObject:protocolRevision
         a             skos:Concept ;
+        rdfs:label    "protocolRevision" ;
         skos:related  xsd:unsignedLong .
 
 AnalogOutputObject:deadband
         a             skos:Concept ;
+        rdfs:label    "deadband" ;
         skos:related  xsd:float .
 
 IntegerValueObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 AccessRightsObject:globalIdentifier
         a             skos:Concept ;
+        rdfs:label    "globalIdentifier" ;
         skos:related  xsd:unsignedLong .
 
 DeviceObject:utcTimeSynchronizationRecipients
         a             skos:Concept ;
+        rdfs:label    "utcTimeSynchronizationRecipients" ;
         skos:related  bacnet:SequenceOfRecipient .
 
 AccumulatorObject:loggingRecord
         a             skos:Concept ;
+        rdfs:label    "loggingRecord" ;
         skos:related  bacnet:AccumulatorRecord .
 
 BinaryInputObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  bacnet:BinaryPV .
 
 PulseConverterObject:covIncrement
         a             skos:Concept ;
+        rdfs:label    "covIncrement" ;
         skos:related  xsd:float .
 
 AccessPointObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 EventEnrollmentObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 AccumulatorObject:limitMonitoringInterval
         a             skos:Concept ;
+        rdfs:label    "limitMonitoringInterval" ;
         skos:related  xsd:unsignedLong .
 
 LoopObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:float .
 
 ServicesSupported:lifeSafetyOperation
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "lifeSafetyOperation" .
 
 AccessPointObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 PositiveIntegerValueObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 MultiStateInputObject:faultValues
         a             skos:Concept ;
+        rdfs:label    "faultValues" ;
         skos:related  bacnet:SequenceOfUnsigned .
 
 LoopObject:errorLimit
         a             skos:Concept ;
+        rdfs:label    "errorLimit" ;
         skos:related  xsd:float .
 
 AnalogInputObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 AnalogInputObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 FileObject:fileSize  a  skos:Concept ;
+        rdfs:label    "fileSize" ;
         skos:related  xsd:unsignedLong .
 
 bacnet:AccessCredentialObject
         a             skos:Concept ;
+        rdfs:label    "AccessCredentialObject" ;
         skos:related  AccessCredentialObject:credentialDisable , AccessCredentialObject:reliability , AccessCredentialObject:credentialStatus , AccessCredentialObject:authenticationFactors , AccessCredentialObject:daysRemaining , AccessCredentialObject:statusFlags , AccessCredentialObject:activationTime , AccessCredentialObject:threatAuthority , AccessCredentialObject:masterExemption , AccessCredentialObject:globalIdentifier , AccessCredentialObject:assignedAccessRights , AccessCredentialObject:lastUseTime , AccessCredentialObject:passbackExemption , AccessCredentialObject:expiryTime , AccessCredentialObject:belongsTo , AccessCredentialObject:usesRemaining , AccessCredentialObject:occupancyExemption , AccessCredentialObject:reasonForDisable , AccessCredentialObject:extendedTimeEnable , AccessCredentialObject:traceFlag , AccessCredentialObject:lastAccessPoint , AccessCredentialObject:absenteeLimit , AccessCredentialObject:lastAccessEvent .
 
 DatePatternValueObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 LifeSafetyPointObject:operationExpected
         a             skos:Concept ;
+        rdfs:label    "operationExpected" ;
         skos:related  bacnet:LifeSafetyOperation .
 
 AnalogInputObject:resolution
         a             skos:Concept ;
+        rdfs:label    "resolution" ;
         skos:related  xsd:float .
 
 AccessZoneObject:adjustValue
         a             skos:Concept ;
+        rdfs:label    "adjustValue" ;
         skos:related  xsd:long .
 
 AccessCredentialObject:threatAuthority
         a             skos:Concept ;
+        rdfs:label    "threatAuthority" ;
         skos:related  bacnet:AccessThreatLevel .
 
 bacnet:StructuredViewObject
         a             skos:Concept ;
+        rdfs:label    "StructuredViewObject" ;
         skos:related  StructuredViewObject:subordinateList , StructuredViewObject:nodeType , StructuredViewObject:nodeSubtype , StructuredViewObject:subordinateAnnotations .
 
 GlobalGroupObject:groupMemberNames
         a             skos:Concept ;
+        rdfs:label    "groupMemberNames" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 AccessZoneObject:occupancyLowerLimit
         a             skos:Concept ;
+        rdfs:label    "occupancyLowerLimit" ;
         skos:related  xsd:unsignedLong .
 
 CredentialDataInputObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  bacnet:AuthenticationFactor .
 
 PulseConverterObject:count
         a             skos:Concept ;
+        rdfs:label    "count" ;
         skos:related  xsd:unsignedLong .
 
 AccessRightsObject:enable
         a             skos:Concept ;
+        rdfs:label    "enable" ;
         skos:related  xsd:boolean .
 
 TrendLogObject:recordCount
         a             skos:Concept ;
+        rdfs:label    "recordCount" ;
         skos:related  xsd:unsignedLong .
 
 AccessPointObject:accompanimentTime
         a             skos:Concept ;
+        rdfs:label    "accompanimentTime" ;
         skos:related  xsd:unsignedLong .
 
 MultiStateValueObject:numberOfStates
         a             skos:Concept ;
+        rdfs:label    "numberOfStates" ;
         skos:related  xsd:unsignedLong .
 
 AccessRightsObject:accompaniment
         a             skos:Concept ;
+        rdfs:label    "accompaniment" ;
         skos:related  bacnet:DeviceObjectReference .
 
 LoopObject:integralConstantUnits
         a             skos:Concept ;
+        rdfs:label    "integralConstantUnits" ;
         skos:related  bacnet:EngineeringUnits .
 
 DateTimePatternValueObject:isUtc
         a             skos:Concept ;
+        rdfs:label    "isUtc" ;
         skos:related  xsd:boolean .
 
 TimePatternValueObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 LoopObject:priorityForWriting
         a             skos:Concept ;
+        rdfs:label    "priorityForWriting" ;
         skos:related  xsd:unsignedLong .
 
 MultiStateOutputObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 AccessPointObject:failedAttemptEvents
         a             skos:Concept ;
+        rdfs:label    "failedAttemptEvents" ;
         skos:related  bacnet:SequenceOfAccessEvent .
 
 TrendLogMultipleObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 LifeSafetyZoneObject:lifeSafetyAlarmValues
         a             skos:Concept ;
+        rdfs:label    "lifeSafetyAlarmValues" ;
         skos:related  bacnet:SequenceOfLifeSafetyState .
 
 BinaryValueObject:timeOfStateCountReset
         a             skos:Concept ;
+        rdfs:label    "timeOfStateCountReset" ;
         skos:related  bacnet:DateTime .
 
 TrendLogObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 AccessPointObject:maxFailedAttempts
         a             skos:Concept ;
+        rdfs:label    "maxFailedAttempts" ;
         skos:related  xsd:unsignedLong .
 
 DateTimeValueObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 PositiveIntegerValueObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 ServicesSupported:unconfirmedEventNotification
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "unconfirmedEventNotification" .
 
 AccessDoorObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 DeviceObject:maxMaster
         a             skos:Concept ;
+        rdfs:label    "maxMaster" ;
         skos:related  xsd:unsignedLong .
 
 BitStringValueObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  bacnet:BitString .
 
 LargeAnalogValueObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:double .
 
 BinaryInputObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 AccessPointObject:accessDoors
         a             skos:Concept ;
+        rdfs:label    "accessDoors" ;
         skos:related  bacnet:ArrayOfDeviceObjectReference .
 
 ServicesSupported:deleteObject
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "deleteObject" .
 
 MultiStateValueObject:stateText
         a             skos:Concept ;
+        rdfs:label    "stateText" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 LoadControlObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 LargeAnalogValueObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 ProgramObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 DeviceObject:firmwareRevision
         a             skos:Concept ;
+        rdfs:label    "firmwareRevision" ;
         skos:related  xsd:string .
 
 DatePatternValueObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 CharacterStringValueObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 BinaryOutputObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 EventLogObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 LoadControlObject:shedLevels
         a             skos:Concept ;
+        rdfs:label    "shedLevels" ;
         skos:related  bacnet:ArrayOfUnsigned .
 
 MultiStateValueObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 ServicesSupported:deviceCommunicationControl
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "deviceCommunicationControl" .
 
 GlobalGroupObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 EventEnrollmentObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 StructuredViewObject:nodeType
         a             skos:Concept ;
+        rdfs:label    "nodeType" ;
         skos:related  bacnet:NodeType .
 
 bacnet:BinaryInputObject
         a             skos:Concept ;
+        rdfs:label    "BinaryInputObject" ;
         skos:related  BinaryInputObject:eventTimeStamps , BinaryInputObject:timeOfActiveTimeReset , BinaryInputObject:reliability , BinaryInputObject:ackedTransitions , BinaryInputObject:changeOfStateCount , BinaryInputObject:timeOfStateCountReset , BinaryInputObject:elapsedActiveTime , BinaryInputObject:activeText , BinaryInputObject:alarmValue , BinaryInputObject:changeOfStateTime , BinaryInputObject:eventMessageTexts , BinaryInputObject:polarity , BinaryInputObject:notifyType , BinaryInputObject:outOfService , BinaryInputObject:eventState , BinaryInputObject:notificationClass , BinaryInputObject:deviceType , BinaryInputObject:presentValue , BinaryInputObject:timeDelay , BinaryInputObject:statusFlags , BinaryInputObject:eventEnable , BinaryInputObject:inactiveText .
 
 AccessUserObject:credentials
         a             skos:Concept ;
+        rdfs:label    "credentials" ;
         skos:related  bacnet:SequenceOfDeviceObjectReference .
 
 BitStringValueObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 AnalogOutputObject:highLimit
         a             skos:Concept ;
+        rdfs:label    "highLimit" ;
         skos:related  xsd:float .
 
 ScheduleObject:scheduleDefault
         a             skos:Concept ;
+        rdfs:label    "scheduleDefault" ;
         skos:related  bacnet:Any .
 
 AnalogInputObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 PulseConverterObject:countBeforeChange
         a             skos:Concept ;
+        rdfs:label    "countBeforeChange" ;
         skos:related  xsd:unsignedLong .
 
 LargeAnalogValueObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 LifeSafetyPointObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 CredentialDataInputObject:supportedFormatClasses
         a             skos:Concept ;
+        rdfs:label    "supportedFormatClasses" ;
         skos:related  bacnet:ArrayOfUnsigned .
 
 EventEnrollmentObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 BinaryInputObject:elapsedActiveTime
         a             skos:Concept ;
+        rdfs:label    "elapsedActiveTime" ;
         skos:related  xsd:unsignedLong .
 
 BitStringValueObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 AnalogValueObject:lowLimit
         a             skos:Concept ;
+        rdfs:label    "lowLimit" ;
         skos:related  xsd:float .
 
 MultiStateInputObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:unsignedLong .
 
 IntegerValueObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 EventLogObject:lastNotifyRecord
         a             skos:Concept ;
+        rdfs:label    "lastNotifyRecord" ;
         skos:related  xsd:unsignedLong .
 
 ServicesSupported:getEventInformation
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "getEventInformation" .
 
 DateTimeValueObject:isUtc
         a             skos:Concept ;
+        rdfs:label    "isUtc" ;
         skos:related  xsd:boolean .
 
 LifeSafetyZoneObject:zoneMembers
         a             skos:Concept ;
+        rdfs:label    "zoneMembers" ;
         skos:related  bacnet:SequenceOfDeviceObjectReference .
 
 MultiStateInputObject:alarmValues
         a             skos:Concept ;
+        rdfs:label    "alarmValues" ;
         skos:related  bacnet:SequenceOfUnsigned .
 
 ServicesSupported:writeProperty
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "writeProperty" .
 
 LifeSafetyZoneObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 EventEnrollmentObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 MultiStateOutputObject:numberOfStates
         a             skos:Concept ;
+        rdfs:label    "numberOfStates" ;
         skos:related  xsd:unsignedLong .
 
 LoadControlObject:dutyWindow
         a             skos:Concept ;
+        rdfs:label    "dutyWindow" ;
         skos:related  xsd:unsignedLong .
 
 AnalogOutputObject:units
         a             skos:Concept ;
+        rdfs:label    "units" ;
         skos:related  bacnet:EngineeringUnits .
 
 GlobalGroupObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 MultiStateValueObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 AccessZoneObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 PulseConverterObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 PositiveIntegerValueObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  xsd:unsignedLong .
 
 DeviceObject:apduTimeout
         a             skos:Concept ;
+        rdfs:label    "apduTimeout" ;
         skos:related  xsd:unsignedLong .
 
 AccessPointObject:authenticationPolicyList
         a             skos:Concept ;
+        rdfs:label    "authenticationPolicyList" ;
         skos:related  bacnet:ArrayOfAuthenticationPolicy .
 
 ProgramObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 CharacterStringValueObject:faultValues
         a             skos:Concept ;
+        rdfs:label    "faultValues" ;
         skos:related  bacnet:ArrayOfOptionalCharacterString .
 
 DateValueObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:string .
 
 ScheduleObject:priorityForWriting
         a             skos:Concept ;
+        rdfs:label    "priorityForWriting" ;
         skos:related  xsd:unsignedLong .
 
 BinaryValueObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  bacnet:BinaryPV .
 
 LargeAnalogValueObject:highLimit
         a             skos:Concept ;
+        rdfs:label    "highLimit" ;
         skos:related  xsd:double .
 
 MultiStateValueObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 EventLogObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 IntegerValueObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 AccumulatorObject:pulseRate
         a             skos:Concept ;
+        rdfs:label    "pulseRate" ;
         skos:related  xsd:unsignedLong .
 
 CommandObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:unsignedLong .
 
 TrendLogObject:logBuffer
         a             skos:Concept ;
+        rdfs:label    "logBuffer" ;
         skos:related  bacnet:SequenceOfLogRecord .
 
 LoopObject:controlledVariableUnits
         a             skos:Concept ;
+        rdfs:label    "controlledVariableUnits" ;
         skos:related  bacnet:EngineeringUnits .
 
 AnalogValueObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 LifeSafetyZoneObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 ProgramObject:descriptionOfHalt
         a             skos:Concept ;
+        rdfs:label    "descriptionOfHalt" ;
         skos:related  xsd:string .
 
 BinaryOutputObject:changeOfStateTime
         a             skos:Concept ;
+        rdfs:label    "changeOfStateTime" ;
         skos:related  bacnet:DateTime .
 
 ServicesSupported:timeSynchronization
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "timeSynchronization" .
 
 AnalogValueObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  xsd:float .
 
 TrendLogObject:recordsSinceNotification
         a             skos:Concept ;
+        rdfs:label    "recordsSinceNotification" ;
         skos:related  xsd:unsignedLong .
 
 LoopObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 AnalogOutputObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:float .
 
 ServicesSupported:atomicReadFile
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "atomicReadFile" .
 
 CharacterStringValueObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 DeviceObject:deviceAddressBinding
         a             skos:Concept ;
+        rdfs:label    "deviceAddressBinding" ;
         skos:related  bacnet:SequenceOfAddressBinding .
 
 OctetStringValueObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 AveragingObject:objectPropertyReference
         a             skos:Concept ;
+        rdfs:label    "objectPropertyReference" ;
         skos:related  bacnet:DeviceObjectPropertyReference .
 
 GlobalGroupObject:requestedUpdateInterval
         a             skos:Concept ;
+        rdfs:label    "requestedUpdateInterval" ;
         skos:related  xsd:unsignedLong .
 
 AccessDoorObject:doorAlarmState
         a             skos:Concept ;
+        rdfs:label    "doorAlarmState" ;
         skos:related  bacnet:DoorAlarmState .
 
 EventLogObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 AnalogInputObject:maxPresValue
         a             skos:Concept ;
+        rdfs:label    "maxPresValue" ;
         skos:related  xsd:float .
 
 AveragingObject:attemptedSamples
         a             skos:Concept ;
+        rdfs:label    "attemptedSamples" ;
         skos:related  xsd:unsignedLong .
 
 IntegerValueObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:long .
 
 LoadControlObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  bacnet:ShedState .
 
 AccessDoorObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  bacnet:DoorValue .
 
 DeviceObject:maxApduLengthAccepted
         a             skos:Concept ;
+        rdfs:label    "maxApduLengthAccepted" ;
         skos:related  xsd:unsignedLong .
 
 MultiStateInputObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 EventLogObject:totalRecordCount
         a             skos:Concept ;
+        rdfs:label    "totalRecordCount" ;
         skos:related  xsd:unsignedLong .
 
 ProgramObject:reasonForHalt
         a             skos:Concept ;
+        rdfs:label    "reasonForHalt" ;
         skos:related  bacnet:ProgramError .
 
 bacnet:IntegerValueObject
         a             skos:Concept ;
+        rdfs:label    "IntegerValueObject" ;
         skos:related  IntegerValueObject:units , IntegerValueObject:outOfService , IntegerValueObject:highLimit , IntegerValueObject:notificationClass , IntegerValueObject:eventMessageTexts , IntegerValueObject:deadband , IntegerValueObject:eventState , IntegerValueObject:limitEnable , IntegerValueObject:timeDelay , IntegerValueObject:relinquishDefault , IntegerValueObject:priorityArray , IntegerValueObject:lowLimit , IntegerValueObject:reliability , IntegerValueObject:statusFlags , IntegerValueObject:notifyType , IntegerValueObject:ackedTransitions , IntegerValueObject:eventTimeStamps , IntegerValueObject:presentValue , IntegerValueObject:covIncrement , IntegerValueObject:eventEnable .
 
 MultiStateOutputObject:deviceType
         a             skos:Concept ;
+        rdfs:label    "deviceType" ;
         skos:related  xsd:string .
 
 LoadControlObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 FileObject:fileAccessMethod
         a             skos:Concept ;
+        rdfs:label    "fileAccessMethod" ;
         skos:related  bacnet:FileAccessMethod .
 
 BinaryInputObject:alarmValue
         a             skos:Concept ;
+        rdfs:label    "alarmValue" ;
         skos:related  bacnet:BinaryPV .
 
 BinaryValueObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 TrendLogObject:startTime
         a             skos:Concept ;
+        rdfs:label    "startTime" ;
         skos:related  bacnet:DateTime .
 
 AccumulatorObject:prescale
         a             skos:Concept ;
+        rdfs:label    "prescale" ;
         skos:related  bacnet:Prescale .
 
 ServicesSupported:unconfirmedPrivateTransfer
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "unconfirmedPrivateTransfer" .
 
 ProgramObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 bacnet:AveragingObject
         a             skos:Concept ;
+        rdfs:label    "AveragingObject" ;
         skos:related  AveragingObject:attemptedSamples , AveragingObject:validSamples , AveragingObject:windowSamples , AveragingObject:minimumValue , AveragingObject:maximumValue , AveragingObject:windowInterval , AveragingObject:maximumValueTimestamp , AveragingObject:minimumValueTimestamp , AveragingObject:averageValue , AveragingObject:varianceValue , AveragingObject:objectPropertyReference .
 
 AccessDoorObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 BinaryOutputObject:minimumOnTime
         a             skos:Concept ;
+        rdfs:label    "minimumOnTime" ;
         skos:related  xsd:unsignedLong .
 
 ServicesSupported:readRange
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "readRange" .
 
 CharacterStringValueObject:alarmValues
         a             skos:Concept ;
+        rdfs:label    "alarmValues" ;
         skos:related  bacnet:ArrayOfOptionalCharacterString .
 
 LoopObject:minimumOutput
         a             skos:Concept ;
+        rdfs:label    "minimumOutput" ;
         skos:related  xsd:float .
 
 ScheduleObject:effectivePeriod
         a             skos:Concept ;
+        rdfs:label    "effectivePeriod" ;
         skos:related  bacnet:DateRange .
 
 LifeSafetyZoneObject:acceptedModes
         a             skos:Concept ;
+        rdfs:label    "acceptedModes" ;
         skos:related  bacnet:SequenceOfLifeSafetyMode .
 
 LoadControlObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 LoopObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 DateTimeValueObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 TimeValueObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 MultiStateOutputObject:feedbackValue
         a             skos:Concept ;
+        rdfs:label    "feedbackValue" ;
         skos:related  xsd:unsignedLong .
 
 IntegerValueObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 AnalogInputObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 CharacterStringValueObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  xsd:string .
 
 AveragingObject:minimumValue
         a             skos:Concept ;
+        rdfs:label    "minimumValue" ;
         skos:related  xsd:float .
 
 DatePatternValueObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 TrendLogObject:logInterval
         a             skos:Concept ;
+        rdfs:label    "logInterval" ;
         skos:related  xsd:unsignedLong .
 
 BinaryOutputObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 MultiStateInputObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 AccessZoneObject:exitPoints
         a             skos:Concept ;
+        rdfs:label    "exitPoints" ;
         skos:related  bacnet:SequenceOfDeviceObjectReference .
 
 AccessCredentialObject:authenticationFactors
         a             skos:Concept ;
+        rdfs:label    "authenticationFactors" ;
         skos:related  bacnet:ArrayOfCredentialAuthenticationFactor .
 
 DeviceObject:restoreCompletionTime
         a             skos:Concept ;
+        rdfs:label    "restoreCompletionTime" ;
         skos:related  xsd:unsignedLong .
 
 ServicesSupported:getAlarmSummary
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "getAlarmSummary" .
 
 TrendLogObject:stopTime
         a             skos:Concept ;
+        rdfs:label    "stopTime" ;
         skos:related  bacnet:DateTime .
 
 TrendLogMultipleObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 AccessPointObject:occupancyCountAdjust
         a             skos:Concept ;
+        rdfs:label    "occupancyCountAdjust" ;
         skos:related  xsd:boolean .
 
 MultiStateInputObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 AnalogValueObject:deadband
         a             skos:Concept ;
+        rdfs:label    "deadband" ;
         skos:related  xsd:float .
 
 LoadControlObject:eventTimeStamps
         a             skos:Concept ;
+        rdfs:label    "eventTimeStamps" ;
         skos:related  bacnet:ArrayOfTimeStamp .
 
 MultiStateOutputObject:priorityArray
         a             skos:Concept ;
+        rdfs:label    "priorityArray" ;
         skos:related  bacnet:PriorityArray .
 
 BitStringValueObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 bacnet:AnalogOutputObject
         a             skos:Concept ;
+        rdfs:label    "AnalogOutputObject" ;
         skos:related  AnalogOutputObject:units , AnalogOutputObject:notificationClass , AnalogOutputObject:eventMessageTexts , AnalogOutputObject:outOfService , AnalogOutputObject:reliability , AnalogOutputObject:relinquishDefault , AnalogOutputObject:limitEnable , AnalogOutputObject:covIncrement , AnalogOutputObject:statusFlags , AnalogOutputObject:priorityArray , AnalogOutputObject:resolution , AnalogOutputObject:timeDelay , AnalogOutputObject:deadband , AnalogOutputObject:deviceType , AnalogOutputObject:eventState , AnalogOutputObject:lowLimit , AnalogOutputObject:notifyType , AnalogOutputObject:presentValue , AnalogOutputObject:eventEnable , AnalogOutputObject:highLimit , AnalogOutputObject:eventTimeStamps , AnalogOutputObject:ackedTransitions , AnalogOutputObject:maxPresValue , AnalogOutputObject:minPresValue .
 
 LifeSafetyPointObject:deviceType
         a             skos:Concept ;
+        rdfs:label    "deviceType" ;
         skos:related  xsd:string .
 
 AccessPointObject:authorizationMode
         a             skos:Concept ;
+        rdfs:label    "authorizationMode" ;
         skos:related  bacnet:AuthorizationMode .
 
 AccumulatorObject:valueSet
         a             skos:Concept ;
+        rdfs:label    "valueSet" ;
         skos:related  xsd:unsignedLong .
 
 AveragingObject:windowSamples
         a             skos:Concept ;
+        rdfs:label    "windowSamples" ;
         skos:related  xsd:unsignedLong .
 
 DatePatternValueObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  bacnet:DateTime .
 
 AccessRightsObject:positiveAccessRules
         a             skos:Concept ;
+        rdfs:label    "positiveAccessRules" ;
         skos:related  bacnet:ArrayOfAccessRule .
 
 DateValueObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 AccumulatorObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 DeviceObject:structuredObjectList
         a             skos:Concept ;
+        rdfs:label    "structuredObjectList" ;
         skos:related  bacnet:ArrayOfObjectIdentifier .
 
 ProgramObject:programLocation
         a             skos:Concept ;
+        rdfs:label    "programLocation" ;
         skos:related  xsd:string .
 
 LoopObject:outputUnits
         a             skos:Concept ;
+        rdfs:label    "outputUnits" ;
         skos:related  bacnet:EngineeringUnits .
 
 DeviceObject:backupAndRestoreState
         a             skos:Concept ;
+        rdfs:label    "backupAndRestoreState" ;
         skos:related  bacnet:BackupState .
 
 MultiStateInputObject:deviceType
         a             skos:Concept ;
+        rdfs:label    "deviceType" ;
         skos:related  xsd:string .
 
 PulseConverterObject:limitEnable
         a             skos:Concept ;
+        rdfs:label    "limitEnable" ;
         skos:related  bacnet:LimitEnable .
 
 LifeSafetyZoneObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 PulseConverterObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 DeviceObject:restartNotificationRecipients
         a             skos:Concept ;
+        rdfs:label    "restartNotificationRecipients" ;
         skos:related  bacnet:SequenceOfRecipient .
 
 NotificationClassObject:ackRequired
         a             skos:Concept ;
+        rdfs:label    "ackRequired" ;
         skos:related  bacnet:EventTransitionBits .
 
 AccumulatorObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 ProgramObject:programChange
         a             skos:Concept ;
+        rdfs:label    "programChange" ;
         skos:related  bacnet:ProgramRequest .
 
 MultiStateValueObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 CharacterStringValueObject:notificationClass
         a             skos:Concept ;
+        rdfs:label    "notificationClass" ;
         skos:related  xsd:unsignedLong .
 
 EventLogObject:bufferSize
         a             skos:Concept ;
+        rdfs:label    "bufferSize" ;
         skos:related  xsd:unsignedLong .
 
 TrendLogMultipleObject:recordCount
         a             skos:Concept ;
+        rdfs:label    "recordCount" ;
         skos:related  xsd:unsignedLong .
 
 MultiStateInputObject:numberOfStates
         a             skos:Concept ;
+        rdfs:label    "numberOfStates" ;
         skos:related  xsd:unsignedLong .
 
 LoadControlObject:actualShedLevel
         a             skos:Concept ;
+        rdfs:label    "actualShedLevel" ;
         skos:related  bacnet:ShedLevel .
 
 TimePatternValueObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 TrendLogMultipleObject:logBuffer
         a             skos:Concept ;
+        rdfs:label    "logBuffer" ;
         skos:related  bacnet:SequenceOfLogMultipleRecord .
 
 AccessZoneObject:entryPoints
         a             skos:Concept ;
+        rdfs:label    "entryPoints" ;
         skos:related  bacnet:SequenceOfDeviceObjectReference .
 
 BinaryOutputObject:changeOfStateCount
         a             skos:Concept ;
+        rdfs:label    "changeOfStateCount" ;
         skos:related  xsd:unsignedLong .
 
 AnalogValueObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 TrendLogObject:clientCovIncrement
         a             skos:Concept ;
+        rdfs:label    "clientCovIncrement" ;
         skos:related  bacnet:ClientCOV .
 
 DateValueObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 ServicesSupported:reinitializeDevice
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "reinitializeDevice" .
 
 BinaryOutputObject:timeOfActiveTimeReset
         a             skos:Concept ;
+        rdfs:label    "timeOfActiveTimeReset" ;
         skos:related  bacnet:DateTime .
 
 AccessCredentialObject:credentialDisable
         a             skos:Concept ;
+        rdfs:label    "credentialDisable" ;
         skos:related  bacnet:AccessCredentialDisable .
 
 AccessZoneObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 BinaryValueObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 OctetStringValueObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 MultiStateValueObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  xsd:unsignedLong .
 
 BinaryOutputObject:activeText
         a             skos:Concept ;
+        rdfs:label    "activeText" ;
         skos:related  xsd:string .
 
 LoopObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 AccessDoorObject:maintenanceRequired
         a             skos:Concept ;
+        rdfs:label    "maintenanceRequired" ;
         skos:related  bacnet:Maintenance .
 
 AnalogInputObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 MultiStateOutputObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 bacnet:AccessZoneObject
         a             skos:Concept ;
+        rdfs:label    "AccessZoneObject" ;
         skos:related  AccessZoneObject:entryPoints , AccessZoneObject:occupancyCount , AccessZoneObject:notifyType , AccessZoneObject:outOfService , AccessZoneObject:credentialsInZone , AccessZoneObject:globalIdentifier , AccessZoneObject:eventState , AccessZoneObject:lastCredentialRemovedTime , AccessZoneObject:reliability , AccessZoneObject:occupancyUpperLimit , AccessZoneObject:lastCredentialRemoved , AccessZoneObject:exitPoints , AccessZoneObject:occupancyState , AccessZoneObject:eventTimeStamps , AccessZoneObject:lastCredentialAdded , AccessZoneObject:passbackMode , AccessZoneObject:eventMessageTexts , AccessZoneObject:timeDelay , AccessZoneObject:adjustValue , AccessZoneObject:passbackTimeout , AccessZoneObject:lastCredentialAddedTime , AccessZoneObject:occupancyCountEnable , AccessZoneObject:eventEnable , AccessZoneObject:occupancyLowerLimit , AccessZoneObject:ackedTransitions , AccessZoneObject:statusFlags , AccessZoneObject:notificationClass , AccessZoneObject:alarmValues .
 
 AccumulatorObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 AnalogOutputObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 PulseConverterObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 LoadControlObject:expectedShedLevel
         a             skos:Concept ;
+        rdfs:label    "expectedShedLevel" ;
         skos:related  bacnet:ShedLevel .
 
 LoopObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 BinaryInputObject:polarity
         a             skos:Concept ;
+        rdfs:label    "polarity" ;
         skos:related  bacnet:Polarity .
 
 BinaryInputObject:changeOfStateTime
         a             skos:Concept ;
+        rdfs:label    "changeOfStateTime" ;
         skos:related  bacnet:DateTime .
 
 DateTimePatternValueObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  bacnet:DateTime .
 
 LifeSafetyZoneObject:operationExpected
         a             skos:Concept ;
+        rdfs:label    "operationExpected" ;
         skos:related  bacnet:LifeSafetyOperation .
 
 AccessPointObject:accessAlarmEvents
         a             skos:Concept ;
+        rdfs:label    "accessAlarmEvents" ;
         skos:related  bacnet:SequenceOfAccessEvent .
 
 AnalogInputObject:units
         a             skos:Concept ;
+        rdfs:label    "units" ;
         skos:related  bacnet:EngineeringUnits .
 
 BinaryInputObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 IntegerValueObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 TrendLogObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 TrendLogObject:logDeviceObjectProperty
         a             skos:Concept ;
+        rdfs:label    "logDeviceObjectProperty" ;
         skos:related  bacnet:DeviceObjectPropertyReference .
 
 LifeSafetyPointObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 AccumulatorObject:valueBeforeChange
         a             skos:Concept ;
+        rdfs:label    "valueBeforeChange" ;
         skos:related  xsd:unsignedLong .
 
 AccessZoneObject:eventEnable
         a             skos:Concept ;
+        rdfs:label    "eventEnable" ;
         skos:related  bacnet:EventTransitionBits .
 
 TrendLogMultipleObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 LoopObject:proportionalConstantUnits
         a             skos:Concept ;
+        rdfs:label    "proportionalConstantUnits" ;
         skos:related  bacnet:EngineeringUnits .
 
 PositiveIntegerValueObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 TimeValueObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:string .
 
 DeviceObject:objectList
         a             skos:Concept ;
+        rdfs:label    "objectList" ;
         skos:related  bacnet:ArrayOfObjectIdentifier .
 
 PulseConverterObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 PositiveIntegerValueObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 LoadControlObject:reliability
         a             skos:Concept ;
+        rdfs:label    "reliability" ;
         skos:related  bacnet:Reliability .
 
 EventLogObject:stopWhenFull
         a             skos:Concept ;
+        rdfs:label    "stopWhenFull" ;
         skos:related  xsd:boolean .
 
 DateValueObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 bacnet:PulseConverterObject
         a             skos:Concept ;
+        rdfs:label    "PulseConverterObject" ;
         skos:related  PulseConverterObject:covIncrement , PulseConverterObject:covPeriod , PulseConverterObject:inputReference , PulseConverterObject:ackedTransitions , PulseConverterObject:count , PulseConverterObject:eventTimeStamps , PulseConverterObject:outOfService , PulseConverterObject:lowLimit , PulseConverterObject:countBeforeChange , PulseConverterObject:scaleFactor , PulseConverterObject:eventMessageTexts , PulseConverterObject:reliability , PulseConverterObject:limitEnable , PulseConverterObject:countChangeTime , PulseConverterObject:units , PulseConverterObject:eventState , PulseConverterObject:notifyType , PulseConverterObject:notificationClass , PulseConverterObject:highLimit , PulseConverterObject:presentValue , PulseConverterObject:timeDelay , PulseConverterObject:eventEnable , PulseConverterObject:deadband , PulseConverterObject:adjustValue , PulseConverterObject:statusFlags , PulseConverterObject:updateTime .
 
 TrendLogObject:loggingType
         a             skos:Concept ;
+        rdfs:label    "loggingType" ;
         skos:related  bacnet:LoggingType .
 
 LifeSafetyZoneObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 AccessPointObject:accessEventTag
         a             skos:Concept ;
+        rdfs:label    "accessEventTag" ;
         skos:related  xsd:unsignedLong .
 
 BinaryValueObject:changeOfStateTime
         a             skos:Concept ;
+        rdfs:label    "changeOfStateTime" ;
         skos:related  bacnet:DateTime .
 
 AccessPointObject:failedAttempts
         a             skos:Concept ;
+        rdfs:label    "failedAttempts" ;
         skos:related  xsd:unsignedLong .
 
 DeviceObject:location
         a             skos:Concept ;
+        rdfs:label    "location" ;
         skos:related  xsd:string .
 
 bacnet:TimePatternValueObject
         a             skos:Concept ;
-        skos:related  TimePatternValueObject:statusFlags , TimePatternValueObject:presentValue , TimePatternValueObject:reliability , TimePatternValueObject:outOfService , TimePatternValueObject:relinquishDefault , TimePatternValueObject:priorityArray , TimePatternValueObject:isUtc , TimePatternValueObject:eventState .
+        rdfs:label    "TimePatternValueObject" ;
+        skos:related  TimePatternValueObject:isUtc , TimePatternValueObject:reliability , TimePatternValueObject:statusFlags , TimePatternValueObject:eventState , TimePatternValueObject:relinquishDefault , TimePatternValueObject:outOfService , TimePatternValueObject:presentValue , TimePatternValueObject:priorityArray .
 
 MultiStateInputObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 DateValueObject:relinquishDefault
         a             skos:Concept ;
+        rdfs:label    "relinquishDefault" ;
         skos:related  xsd:string .
 
 LifeSafetyZoneObject:maintenanceRequired
         a             skos:Concept ;
+        rdfs:label    "maintenanceRequired" ;
         skos:related  xsd:boolean .
 
 ServicesSupported:atomicWriteFile
-        a       skos:Concept .
+        a           skos:Concept ;
+        rdfs:label  "atomicWriteFile" .
 
 LargeAnalogValueObject:covIncrement
         a             skos:Concept ;
+        rdfs:label    "covIncrement" ;
         skos:related  xsd:unsignedLong .
 
 AccessPointObject:authenticationStatus
         a             skos:Concept ;
+        rdfs:label    "authenticationStatus" ;
         skos:related  bacnet:AuthenticationStatus .
 
 AccessCredentialObject:assignedAccessRights
         a             skos:Concept ;
+        rdfs:label    "assignedAccessRights" ;
         skos:related  bacnet:ArrayOfAssignedAccessRights .
 
 CharacterStringValueObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
 
 bacnet:CalendarObject
         a             skos:Concept ;
+        rdfs:label    "CalendarObject" ;
         skos:related  CalendarObject:dateList , CalendarObject:presentValue .
 
 BinaryInputObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 AccessDoorObject:timeDelay
         a             skos:Concept ;
+        rdfs:label    "timeDelay" ;
         skos:related  xsd:unsignedLong .
 
 DeviceObject:autoSlaveDiscovery
         a             skos:Concept ;
+        rdfs:label    "autoSlaveDiscovery" ;
         skos:related  bacnet:ArrayOfBoolean .
 
 EventLogObject:ackedTransitions
         a             skos:Concept ;
+        rdfs:label    "ackedTransitions" ;
         skos:related  bacnet:EventTransitionBits .
 
 TrendLogMultipleObject:eventMessageTexts
         a             skos:Concept ;
+        rdfs:label    "eventMessageTexts" ;
         skos:related  bacnet:ArrayOfCharacterString .
 
 TimeValueObject:eventState
         a             skos:Concept ;
+        rdfs:label    "eventState" ;
         skos:related  bacnet:EventState .
 
 MultiStateOutputObject:notifyType
         a             skos:Concept ;
+        rdfs:label    "notifyType" ;
         skos:related  bacnet:NotifyType .
 
 AnalogInputObject:presentValue
         a             skos:Concept ;
+        rdfs:label    "presentValue" ;
         skos:related  xsd:float .
 
 LifeSafetyPointObject:outOfService
         a             skos:Concept ;
+        rdfs:label    "outOfService" ;
         skos:related  xsd:boolean .
 
 AccessPointObject:statusFlags
         a             skos:Concept ;
+        rdfs:label    "statusFlags" ;
         skos:related  bacnet:StatusFlags .
