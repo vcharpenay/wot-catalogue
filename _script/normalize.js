@@ -27,7 +27,6 @@ function norm(label) {
 let promises = ls('..')
     .filter(f =>  f.match(/.*\/.*\/.*\.ttl$/)) // Turtle file inside a directory
     .map(f => {
-        console.log(f)
         let ttl = fs.readFileSync(f, 'utf-8');
         return urdf.load(ttl, { format: 'text/turtle' });
     });

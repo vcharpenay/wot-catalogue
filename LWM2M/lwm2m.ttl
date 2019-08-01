@@ -3,7 +3,7 @@
 @prefix lwm2m: <http://openmobilealliance.org/tech/profiles/LWM2M#> .
 
 lwm2m: a skos:ConceptScheme ;
-       rdfs:label "Light-weight Machine-to-Machine (LWM2M)" ;
+       rdfs:label "Light-weight Machine-to-Machine (LWM2M)" ;
        skos:hasTopConcept lwm2m:IPSOObject ;
        rdfs:seeAlso <https://www.omaspecworks.org/develop-with-oma-specworks/ipso-smart-objects/> .
 
@@ -18,7 +18,7 @@ lwm2m:Resource a skos:Concept ;
                    skos:related lwm2m:Operation .
 
 lwm2m:Operation a skos:Concept ;
-                rdfs:label "Operation" ;
+                rdfs:label "Operation" ;
                 skos:definition "Each Object and Resource is defined to have one or more operations that it supports." ;
                 skos:narrower lwm2m:R, lwm2m:W, lwm2m:E, lwm2m:RW .
 

@@ -3,7 +3,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 sdt: a skos:ConceptScheme ;
-     rdfs:label "Smart Device Template",
+     rdfs:label "Smart Device Template" ;
      rdfs:seeAlso <https://github.com/Homegateway/SmartDeviceTemplate> ;
      skos:hasTopConcept sdt:Device .
 

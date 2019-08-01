@@ -19,17 +19,17 @@ sw:Path a skos:Concept ;
 
 sw:Operation a skos:Concept ;
              rdfs:label "Operation" ;
-             skos:definition "Describes a single API operation on a path." ;
+             skos:definition "Describes a single API operation on a path." ;
              skos:narrower sw:GetOperation, sw:PostOperation, sw:PutOperation .
 
-sw:GetOperation a skos:Concept ;
+sw:GetOperation a skos:Concept ;
                 rdfs:label "GET Operation" ;
                 skos:definition "A definition of a GET operation on this path." .
 
-sw:PostOperation a skos:Concept ;
+sw:PostOperation a skos:Concept ;
                 rdfs:label "POST Operation" ;
                 skos:definition "A definition of a POST operation on this path." .
 
-sw:PutOperation a skos:Concept ;
+sw:PutOperation a skos:Concept ;
                 rdfs:label "PUT Operation" ;
                 skos:definition "A definition of a PUT operation on this path." .
