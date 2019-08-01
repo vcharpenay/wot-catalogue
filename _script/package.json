@@ -4,6 +4,7 @@
     "name": "wot-catalogue",
     "version": "0.1.0",
     "dependencies": {
-        "urdf": "vcharpenay/uRDF.js"
+        "urdf": "vcharpenay/uRDF.js",
+        "wordpos": "1.2"
     }
 }
