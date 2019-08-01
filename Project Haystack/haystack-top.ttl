@@ -1,0 +1,49 @@
+@prefix ph:    <https://project-haystack.org/def/ph/3.9.5#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+ph: a skos:ConceptScheme ;
+    rdfs:label "Project Haystack" ;
+    rdfs:seeAlso <https://project-haystack.org/doc/Structure> ;
+    skos:hasTopConcept ph:site .
+
+phIoT:site a skos:Concept ;
+           rdfs:label "site" ;
+           skos:definition "Site is a geographic location of the built environment. Typically site maps to one building with its own unique street address." ;
+           skos:related phIoT:equip, phIoT:space .
+
+phIoT:equip a skos:Concept ;
+           rdfs:label "equip" ;
+           skos:definition "Equipment asset" ;
+            skos:related phIoT:point .
+
+phIoT:space a skos:Concept ;
+           rdfs:label "space" ;
+           skos:definition "Space is a three-dimensional volume in the built environment" .
+
+phIoT:point a skos:Concept ;
+           rdfs:label "point" ;
+           skos:definition "Data point such as a sensor or actuator" ;
+            skos:narrower phIoT:sensor, phIoT:cmd, phIoT:sp ;
+            skos:related phScience:phenomenon, phScience:quantity .
+
+phIoT:sensor a skos:Concept ;
+           rdfs:label "sensor" ;
+           skos:definition "Point is a sensor, input, AI/BI" .
+
+phIoT:cmd a skos:Concept ;
+           rdfs:label "cmd" ;
+           skos:definition "Point is a command, actuator, AO/BO" .
+
+phIoT:sp a skos:Concept ;
+           rdfs:label "sp" ;
+           skos:definition "Point is a setpoint, soft point, internal control variable, schedule" .
+
+phScience:phenomenon a skos:Concept ;
+                     rdfs:label "phenomenon" ;
+                     skos:definition "Aspect of scientific interest with measurable quantities" ;
+                     skos:related phScience:quantity .
+
+phScience:quantity a skos:Concept ;
+                     rdfs:label "quantity" ;
+                     skos:definition "Measurable property of a substance or phenomenon" .

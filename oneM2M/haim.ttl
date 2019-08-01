@@ -30,19 +30,19 @@
         a                skos:Concept ;
         rdfs:label       "refrigeration" ;
         skos:definition  "This ModuleClass describes a refrigeration function. This is not a Refrigerator device. The filter state is a read-only value providing the percentage life time remaining for the water filter. RapidFreeze is a boolean that controls the rapid freeze capability if present. RapidCool is a boolean that controls the rapid cool capability if present. Defrost is a boolean that controls the defrost cycle if present." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.refrigeration.defrost> , <urn:org.onem2m.home.moduleclass.refrigeration.rapidCool> , <urn:org.onem2m.home.moduleclass.refrigeration.filterLifetime> , <urn:org.onem2m.home.moduleclass.refrigeration.rapidFreeze> .
+        skos:related     <urn:org.onem2m.home.moduleclass.refrigeration.defrost> , <urn:org.onem2m.home.moduleclass.refrigeration.filterLifetime> , <urn:org.onem2m.home.moduleclass.refrigeration.rapidCool> , <urn:org.onem2m.home.moduleclass.refrigeration.rapidFreeze> .
 
 <urn:org.onem2m.home.moduleclass.oximeter>
         a                skos:Concept ;
         rdfs:label       "oximeter" ;
         skos:definition  "This ModuleClass provides the capability to report the measurement of blood characteristics." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.oximeter.oxygenSaturation> , <urn:org.onem2m.home.moduleclass.oximeter.diastolicPressure> , <urn:org.onem2m.home.moduleclass.oximeter.systolicPressure> , <urn:org.onem2m.home.moduleclass.oximeter.pulseRate> .
+        skos:related     <urn:org.onem2m.home.moduleclass.oximeter.diastolicPressure> , <urn:org.onem2m.home.moduleclass.oximeter.oxygenSaturation> , <urn:org.onem2m.home.moduleclass.oximeter.systolicPressure> , <urn:org.onem2m.home.moduleclass.oximeter.pulseRate> .
 
 <urn:org.onem2m.home.moduleclass.audioVolume>
         a                skos:Concept ;
         rdfs:label       "audioVolume" ;
         skos:definition  "This ModuleClass provides capabilities to control and monitor volume." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.audioVolume.muteEnabled> , <urn:org.onem2m.home.moduleclass.audioVolume.stepValue> , <urn:org.onem2m.home.moduleclass.audioVolume.maxValue> , <urn:org.onem2m.home.moduleclass.audioVolume.volumePercentage> .
+        skos:related     <urn:org.onem2m.home.moduleclass.audioVolume.volumePercentage> , <urn:org.onem2m.home.moduleclass.audioVolume.muteEnabled> , <urn:org.onem2m.home.moduleclass.audioVolume.stepValue> , <urn:org.onem2m.home.moduleclass.audioVolume.maxValue> .
 
 <urn:org.onem2m.home.moduleclass.oximeter.diastolicPressure>
         a                skos:Concept ;
@@ -73,6 +73,9 @@
         rdfs:label       "directionLeft" ;
         skos:definition  "The current status of the leftward blowing enablement. \"True\" indicates enabaled, and \"False\" indicates not enabled." ;
         skos:related     xsd:boolean .
+
+sdt:DataType  skos:narrower  "m2m:timestamp" ;
+        skos:narrower  hd:waterFlowStrength , hd:alertColourCode , hd:supportedModes , hd:tone , hd:windStrength , hd:supportedInputSource , hd:spinLevelStrength , hd:doorState , hd:liquidLevel .
 
 <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.visceraFat>
         a                skos:Concept ;
@@ -204,7 +207,7 @@
         a                skos:Concept ;
         rdfs:label       "smokeSensor" ;
         skos:definition  "This ModuleClass provides the capabilities to indicate the detection of smoke and raises an alarm if the triggering criterion is met." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.smokeSensor.alarm> , <urn:org.onem2m.home.moduleclass.smokeSensor.detectedTime> .
+        skos:related     <urn:org.onem2m.home.moduleclass.smokeSensor.detectedTime> , <urn:org.onem2m.home.moduleclass.smokeSensor.alarm> .
 
 <urn:org.onem2m.home.moduleclass.clock.currentTime>
         a                skos:Concept ;
@@ -270,7 +273,7 @@
         a                skos:Concept ;
         rdfs:label       "wind" ;
         skos:definition  "This ModuleClass is for controlling wind strength and direction of a device." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.wind.windStrength> , <urn:org.onem2m.home.moduleclass.wind.directionDown> , <urn:org.onem2m.home.moduleclass.wind.directionRight> , <urn:org.onem2m.home.moduleclass.wind.directionUp> , <urn:org.onem2m.home.moduleclass.wind.directionLeft> .
+        skos:related     <urn:org.onem2m.home.moduleclass.wind.directionDown> , <urn:org.onem2m.home.moduleclass.wind.directionRight> , <urn:org.onem2m.home.moduleclass.wind.directionLeft> , <urn:org.onem2m.home.moduleclass.wind.windStrength> , <urn:org.onem2m.home.moduleclass.wind.directionUp> .
 
 <urn:org.onem2m.home.moduleclass.relativeHumidity.relativeHumidity>
         a                skos:Concept ;
@@ -318,7 +321,7 @@
         a                skos:Concept ;
         rdfs:label       "televisionChannel" ;
         skos:definition  "This ModuleClass provides capabilities to set and get channels of a device that has a channel list." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.televisionChannel.previousChannel> , <urn:org.onem2m.home.moduleclass.televisionChannel.availableChannels> , <urn:org.onem2m.home.moduleclass.televisionChannel.channelId> .
+        skos:related     <urn:org.onem2m.home.moduleclass.televisionChannel.previousChannel> , <urn:org.onem2m.home.moduleclass.televisionChannel.channelId> , <urn:org.onem2m.home.moduleclass.televisionChannel.availableChannels> .
 
 <urn:org.onem2m.home.moduleclass.motionSensor.sensitivity>
         a                skos:Concept ;
@@ -348,7 +351,7 @@
         a                skos:Concept ;
         rdfs:label       "temperatureAlarm" ;
         skos:definition  "This ModuleClass provides the capabilities to indicate the detection of abnormal temperatures and raises an alarm if the triggering criterion is met." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.temperatureAlarm.temperature> , <urn:org.onem2m.home.moduleclass.temperatureAlarm.temperatureThreshhold> , <urn:org.onem2m.home.moduleclass.temperatureAlarm.alarm> .
+        skos:related     <urn:org.onem2m.home.moduleclass.temperatureAlarm.alarm> , <urn:org.onem2m.home.moduleclass.temperatureAlarm.temperature> , <urn:org.onem2m.home.moduleclass.temperatureAlarm.temperatureThreshhold> .
 
 <urn:org.onem2m.home.moduleclass.runMode.supportedModes>
         a                skos:Concept ;
@@ -390,7 +393,7 @@
         a                skos:Concept ;
         rdfs:label       "temperature" ;
         skos:definition  "This ModuleClass provides capabilities to represent the current temperature and target temperature of devices such as an air conditioner, refrigerator, oven and etc." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.temperature.minValue> , <urn:org.onem2m.home.moduleclass.temperature.targetTemperature> , <urn:org.onem2m.home.moduleclass.temperature.unit> , <urn:org.onem2m.home.moduleclass.temperature.maxValue> , <urn:org.onem2m.home.moduleclass.temperature.stepValue> , <urn:org.onem2m.home.moduleclass.temperature.currentTemperature> .
+        skos:related     <urn:org.onem2m.home.moduleclass.temperature.stepValue> , <urn:org.onem2m.home.moduleclass.temperature.minValue> , <urn:org.onem2m.home.moduleclass.temperature.unit> , <urn:org.onem2m.home.moduleclass.temperature.targetTemperature> , <urn:org.onem2m.home.moduleclass.temperature.maxValue> , <urn:org.onem2m.home.moduleclass.temperature.currentTemperature> .
 
 <urn:org.onem2m.home.moduleclass.energyGeneration.multiplyingFactors>
         a                skos:Concept ;
@@ -432,7 +435,7 @@
         a                skos:Concept ;
         rdfs:label       "energyGeneration" ;
         skos:definition  "This ModuleClass provides information about generation data on electric generator devices such as a photo voltaic power system, fuel cells, or microgeneration." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.energyGeneration.powerGenerationData> , <urn:org.onem2m.home.moduleclass.energyGeneration.roundingEnergyGeneration> , <urn:org.onem2m.home.moduleclass.energyGeneration.significantDigits> , <urn:org.onem2m.home.moduleclass.energyGeneration.multiplyingFactors> .
+        skos:related     <urn:org.onem2m.home.moduleclass.energyGeneration.multiplyingFactors> , <urn:org.onem2m.home.moduleclass.energyGeneration.significantDigits> , <urn:org.onem2m.home.moduleclass.energyGeneration.roundingEnergyGeneration> , <urn:org.onem2m.home.moduleclass.energyGeneration.powerGenerationData> .
 
 <urn:org.onem2m.home.moduleclass.audioVolume.muteEnabled>
         a                skos:Concept ;
@@ -486,13 +489,13 @@
         a                skos:Concept ;
         rdfs:label       "colour" ;
         skos:definition  "This ModuleClass provides the capabilities to set the value of Red, Green, Blue for the colour device." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.colour.blue> , <urn:org.onem2m.home.moduleclass.colour.red> , <urn:org.onem2m.home.moduleclass.colour.green> .
+        skos:related     <urn:org.onem2m.home.moduleclass.colour.blue> , <urn:org.onem2m.home.moduleclass.colour.green> , <urn:org.onem2m.home.moduleclass.colour.red> .
 
 <urn:org.onem2m.home.moduleclass.alarmSpeaker>
         a                skos:Concept ;
         rdfs:label       "alarmSpeaker" ;
         skos:definition  "This ModuleClass provides the capability to initiate an alarm." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.alarmSpeaker.tone> , <urn:org.onem2m.home.moduleclass.alarmSpeaker.light> , <urn:org.onem2m.home.moduleclass.alarmSpeaker.alarmStatus> .
+        skos:related     <urn:org.onem2m.home.moduleclass.alarmSpeaker.light> , <urn:org.onem2m.home.moduleclass.alarmSpeaker.alarmStatus> , <urn:org.onem2m.home.moduleclass.alarmSpeaker.tone> .
 
 <urn:org.onem2m.home.moduleclass.audioVideoInput>
         a                skos:Concept ;
@@ -516,7 +519,7 @@
         a                skos:Concept ;
         rdfs:label       "battery" ;
         skos:definition  "Battery indicates the detection of low battery and gives an alarm if triggering criterion is met. The charge value in the module shows the current battery charge level." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.battery.charging> , <urn:org.onem2m.home.moduleclass.battery.batteryThreshold> , <urn:org.onem2m.home.moduleclass.battery.level> , <urn:org.onem2m.home.moduleclass.battery.lowBattery> , <urn:org.onem2m.home.moduleclass.battery.discharging> , <urn:org.onem2m.home.moduleclass.battery.capacity> .
+        skos:related     <urn:org.onem2m.home.moduleclass.battery.capacity> , <urn:org.onem2m.home.moduleclass.battery.discharging> , <urn:org.onem2m.home.moduleclass.battery.charging> , <urn:org.onem2m.home.moduleclass.battery.batteryThreshold> , <urn:org.onem2m.home.moduleclass.battery.lowBattery> , <urn:org.onem2m.home.moduleclass.battery.level> .
 
 <urn:org.onem2m.home.moduleclass.faultDetection.description>
         a                skos:Concept ;
@@ -618,7 +621,7 @@
         a                skos:Concept ;
         rdfs:label       "faultDetection" ;
         skos:definition  "This ModuleClass provides information about whether a fault has occurred in the actual device." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.faultDetection.code> , <urn:org.onem2m.home.moduleclass.faultDetection.status> , <urn:org.onem2m.home.moduleclass.faultDetection.description> .
+        skos:related     <urn:org.onem2m.home.moduleclass.faultDetection.description> , <urn:org.onem2m.home.moduleclass.faultDetection.status> , <urn:org.onem2m.home.moduleclass.faultDetection.code> .
 
 <urn:org.onem2m.home.moduleclass.televisionChannel.previousChannel>
         a                skos:Concept ;
@@ -660,7 +663,7 @@
         a                skos:Concept ;
         rdfs:label       "signalStrength" ;
         skos:definition  "This ModuleClass provides the capability to monitor the strength of the signal." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.signalStrength.lqi> , <urn:org.onem2m.home.moduleclass.signalStrength.rssi> .
+        skos:related     <urn:org.onem2m.home.moduleclass.signalStrength.rssi> , <urn:org.onem2m.home.moduleclass.signalStrength.lqi> .
 
 <urn:org.onem2m.home.moduleclass.motionSensor.silentTime>
         a                skos:Concept ;
@@ -672,7 +675,7 @@
         a                skos:Concept ;
         rdfs:label       "motionSensor" ;
         skos:definition  "This ModuleClass provides the capabilities to indicate the occurrence of motion and raises an alarm if the triggering criterion is met." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.motionSensor.alarm> , <urn:org.onem2m.home.moduleclass.motionSensor.silentTime> , <urn:org.onem2m.home.moduleclass.motionSensor.sensitivity> .
+        skos:related     <urn:org.onem2m.home.moduleclass.motionSensor.sensitivity> , <urn:org.onem2m.home.moduleclass.motionSensor.alarm> , <urn:org.onem2m.home.moduleclass.motionSensor.silentTime> .
 
 <urn:org.onem2m.home.moduleclass.recorder>
         a                skos:Concept ;
@@ -744,7 +747,7 @@
         a                skos:Concept ;
         rdfs:label       "hotWaterSupply" ;
         skos:definition  "This ModuleClass provides information about the status of supplying hot water into tanks or bath tubs." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.hotWaterSupply.status> , <urn:org.onem2m.home.moduleclass.hotWaterSupply.bath> .
+        skos:related     <urn:org.onem2m.home.moduleclass.hotWaterSupply.bath> , <urn:org.onem2m.home.moduleclass.hotWaterSupply.status> .
 
 <urn:org.onem2m.home.moduleclass.temperature.minValue>
         a                skos:Concept ;

@@ -1,0 +1,35 @@
+@prefix sw:    <http://swagger.io/v2/schema.json#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+sw: a skos:ConceptScheme ;
+    rdfs:label "Swagger/OpenAPI Specification" ;
+    rdfs:seeAlso <http://spec.openapis.org/oas/v3.0.2> ;
+    skos:hasTopConcept sw:SwaggerAPI .
+
+sw:SwaggerAPI a skos:Concept ;
+              rdfs:label "Swagger/OpenAPI Definition" ;
+              skos:definition "This is the root document object of the OpenAPI document." ;
+              skos:related sw:Path .
+
+sw:Path a skos:Concept ;
+        rdfs:label "Path" ;
+        skos:definition "Holds the relative paths to the individual endpoints and their operations. The path is appended to the URL from the Server Object in order to construct the full URL. The Paths MAY be empty, due to ACL constraints." ;
+        skos:related sw:Operation .
+
+sw:Operation a skos:Concept ;
+             rdfs:label "Operation" ;
+             skos:definition "Describes a single API operation on a path." ;
+             skos:narrower sw:GetOperation, sw:PostOperation, sw:PutOperation .
+
+sw:GetOperation a skos:Concept ;
+                rdfs:label "GET Operation" ;
+                skos:definition "A definition of a GET operation on this path." .
+
+sw:PostOperation a skos:Concept ;
+                rdfs:label "POST Operation" ;
+                skos:definition "A definition of a POST operation on this path." .
+
+sw:PutOperation a skos:Concept ;
+                rdfs:label "PUT Operation" ;
+                skos:definition "A definition of a PUT operation on this path." .

@@ -10,12 +10,12 @@ lwm2m: a skos:ConceptScheme ;
 lwm2m:Object a skos:Concept ;
                  rdfs:label "Object" ;
                  skos:definition "The LWM2M Enabler defines a simple resource model where each piece of information made available by the LWM2M Client is a Resource. Resources are logically organized into Objects." ;
-                 skos:narrower lwm2m:IPSOResource, lwm2m:Operation .
+                 skos:related lwm2m:IPSOResource, lwm2m:Operation .
 
 lwm2m:Resource a skos:Concept ;
                    rdfs:label "Resource" ;
                    skos:definition "The LWM2M Enabler defines a simple resource model where each piece of information made available by the LWM2M Client is a Resource. Resources are defined per Object, and each Resource is given a unique identifier within that Object." ;
-                   skos:narrower lwm2m .
+                   skos:related lwm2m:Operation .
 
 lwm2m:Operation a skos:Concept ;
                 rdfs:label "Operation" ;

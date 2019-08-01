@@ -16,13 +16,15 @@ construct {
           skos:definition ?def ;
           rdfs:seeAlso ?source .
   ?parent skos:narrower ?marker .
+  ?other skos:related ?marker . 
 } where {
-  ?marker rdfs:subClassOf+ ph:marker ;
+  values ?top { phIoT:site phIoT:equip phIoT:space phIoT:point phScience:phenomenon phScience:quantity }
+  ?marker rdfs:subClassOf+ ?top ;
           rdfs:label ?label ;
-          rdfs:comment ?def .
+          rdfs:comment ?def ;
+          rdfs:subClassOf ?parent .
   optional {
-    ?marker rdfs:subClassOf ?parent .
-    filter (?parent != ph:marker)
+    ?marker phScience:quantityOf ?other
   }
   optional {
     ?marker ph:wikipedia ?url .

@@ -1,0 +1,42 @@
+@prefix sdt: <http://www.onem2m.org/ontology/SDT#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sdt: a skos:ConceptScheme ;
+     rdfs:label "Smart Device Template",
+     rdfs:seeAlso <https://github.com/Homegateway/SmartDeviceTemplate> ;
+     skos:hasTopConcept sdt:Device .
+
+sdt:Device a skos:Concept ;
+           rdfs:label "Device" ;
+           skos:definition "For each physical device on the network at least one Device must be defined. If the physical device is a simple device, i.e. it does not contain embedded devices, e.g. a light switch, it does not include further SubDevices. On the other hand, if the physical is a compound device, i.e. it does contain embedded devices that can be addressed separately, the Device should contain SubDevices for each of the identifiable embedded devices." ;
+           skos:related sdt:Module, sdt:Property .
+
+sdt:Module a skos:Concept ;
+           rdfs:label "Module" ;
+           skos:definition "Module elements are basically constraints or templates for how to model functionality of real things/appliances/devices within the Domain. There could be an infinite number of possible functionalities, however it is recommended to identify a not-too-large selection of them as generic examples and allow for additional proprietary extensions. In a particular Domain there will be one Module for each of the agreed ModuleClasses plus additional ones for each extension of a ModuleClass." ;
+           skos:related sdt:Property, sdt:DataPoint, sdt:Action, sdt:Event .
+
+sdt:Property a skos:Concept ;
+             rdfs:label "Property" ;
+             skos:definition "Property elements are used to append to Devices and their ModuleClass elements with arbitrary additional information. For Devices it would be very common for a manufacturer to want to add into the XML file which is describing the device such information as \"Manufacturing Site\", \"Date of Manufacture\", \"Certification Code\", \"Energy Label Code\", \"compatible LAN technology\", \"URL for the device handbook\", \"physical limits of operation environments\", etc." ;
+             skos:related sdt:DataType .
+
+sdt:Action a skos:Concept ;
+           rdfs:label "Action" ;
+           skos:definition "Action elements are an efficient way of describing arbitrary sequences of operations/methods; these are very common in automation. Typical example include \"FactoryReset\", and \"AutoCalibrate\". Actions preserve transaction integrity by putting together all the parameters (\"args\", see next section) with the method which checks and executes them, in one step." ;
+           skos:related sdt:DataType .
+
+sdt:Event a skos:Concept ;
+            rdfs:label "Event" ;
+            skos:definition "Event elements are needed for automation protocols which \"push\" information, instead of relying on polling by the software application. A typical example would be a \"SensorAlert\" where a window sensor immediately transmits a change of its state from \"closed\" to \"open\", which could be used in a burglar alarm application, needs to be ready to accept such information immediately, and not wait for a regular polling of the device." ;
+            skos:related sdt:DataPoint .
+
+sdt:DataPoint a skos:Concept ;
+              rdfs:label "DataPoint" ;
+              skos:definition "A DataPoint element represents an aspect of a device which can be read/written to, and forms part of a device’s data model. Manipulating DataPoints is the most common way of controlling devices. Each DataPoint has an associated type (e.g. simple integer/real numbers, string of text, struct, or arrays thereof) which facillitates data integrity. Note that all RESTful systems (e.g. CoAP) use only DataPoint operations, so the mapping of a data models using an SDT into RESTful applications is easy." ;
+              skos:related sdt:DataType .
+
+sdt:DataType a skos:Concept ;
+             rdfs:label "DataType" ;
+             skos:definition "The data type can be simple integers or string text, or rather complex. The DataType element is a \"container\" for the various aspects of a type." .

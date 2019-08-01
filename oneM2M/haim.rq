@@ -21,6 +21,7 @@ construct {
   ?type skos:narrower ?characteristic .
   ?mod skos:related ?characteristic .
   ?characteristic skos:related ?dt .
+  sdt:DataType skos:narrower ?enum .
 } where {
   ?mod rdfs:subClassOf sdt:ModuleClass, ?opRestriction ;
        rdfs:label ?modLabel ;
@@ -41,6 +42,7 @@ construct {
                   owl:onProperty base:hasDataTypeAndRange ;
                   owl:hasValue ?val .
   bind (if(strstarts(?val, "xs:"), iri(replace(?val, "xs:", str(xsd:))),
-      if(strstarts(?val, "hd:"), iri(replace(?val, "hd:", str(hd:))),
+        if(strstarts(?val, "hd:"), iri(replace(?val, "hd:", str(hd:))),
         ?val)) as ?dt)
+  bind (if(strstarts(?val, "hd:"), ?dt, lcase(?dt)) as ?enum) # conditional binding
 }
