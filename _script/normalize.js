@@ -17,8 +17,8 @@ function ls(dir) {
 
 function norm(label) {
     return label
-        .replace(/\W/g, ' ')
-        .replace(/([^A-Z])([A-Z])([^A-Z])/g, '$1 $2$3') // camel-case label
+        .replace(/\W|_/g, ' ')
+        .replace(/(\S)?([A-Z])([a-z0-9])/g, '$1 $2$3') // camel-case label
         .replace(/\s+/g, ' ')
         .trim()
         .toLowerCase();

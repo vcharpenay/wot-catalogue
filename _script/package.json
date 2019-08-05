@@ -5,6 +5,7 @@
     "version": "0.1.0",
     "dependencies": {
         "urdf": "vcharpenay/uRDF.js",
-        "wordpos": "1.2"
+        "wordpos": "1.2",
+        "pluralize": "8.0.0"
     }
 }

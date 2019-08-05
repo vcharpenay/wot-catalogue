@@ -363,9 +363,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/AccessDoorObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessDoorObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessDoorObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/AccessDoorObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccessDoorObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessDoorObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/AccessDoorObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccessDoorObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccessDoorObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessDoorObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessDoorObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessDoorObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -485,9 +486,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#numberOfAuthenticationPolicies> <http://www.w3.org/2004/02/skos/core#prefLabel> "number ofauthentication policies" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#numberOfAuthenticationPolicies> <http://www.w3.org/2004/02/skos/core#prefLabel> "number of authentication policies" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#numberOfAuthenticationPolicies> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "number" .
-<http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#numberOfAuthenticationPolicies> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofauthentication" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#numberOfAuthenticationPolicies> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#numberOfAuthenticationPolicies> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "authentication" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#numberOfAuthenticationPolicies> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "policies" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#occupancyCountAdjust> <http://www.w3.org/2004/02/skos/core#prefLabel> "occupancy count adjust" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#occupancyCountAdjust> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "occupancy" .
@@ -503,9 +505,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#occupancyUpperLimitEnforced> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "upper" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#occupancyUpperLimitEnforced> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "limit" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#occupancyUpperLimitEnforced> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "enforced" .
-<http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#priorityForWriting> <http://www.w3.org/2004/02/skos/core#prefLabel> "priority for writing" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#priorityForWriting> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "priority" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessPointObject#priorityForWriting> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "for" .
@@ -589,9 +592,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#alarmValues> <http://www.w3.org/2004/02/skos/core#prefLabel> "alarm values" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#alarmValues> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "alarm" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#alarmValues> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "values" .
-<http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#credentialsInZone> <http://www.w3.org/2004/02/skos/core#prefLabel> "credentials inzone" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#credentialsInZone> <http://www.w3.org/2004/02/skos/core#prefLabel> "credentials in zone" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#credentialsInZone> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "credentials" .
-<http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#credentialsInZone> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "inzone" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#credentialsInZone> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "in" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#credentialsInZone> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "zone" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#entryPoints> <http://www.w3.org/2004/02/skos/core#prefLabel> "entry points" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#entryPoints> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "entry" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#entryPoints> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "points" .
@@ -657,9 +661,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#occupancyUpperLimit> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "occupancy" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#occupancyUpperLimit> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "upper" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#occupancyUpperLimit> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "limit" .
-<http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#passbackMode> <http://www.w3.org/2004/02/skos/core#prefLabel> "passback mode" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#passbackMode> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "passback" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccessZoneObject#passbackMode> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "mode" .
@@ -723,9 +728,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/AccumulatorObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccumulatorObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccumulatorObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/AccumulatorObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccumulatorObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccumulatorObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/AccumulatorObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccumulatorObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/AccumulatorObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccumulatorObject#prescale> <http://www.w3.org/2004/02/skos/core#prefLabel> "prescale" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccumulatorObject#prescale> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "prescale" .
 <http://bacowl.sourceforge.net/2012/bacnet/AccumulatorObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
@@ -805,9 +811,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogInputObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogInputObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogInputObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/AnalogInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/AnalogInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/AnalogInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/AnalogInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/AnalogInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogInputObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogInputObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogInputObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -874,9 +881,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogOutputObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogOutputObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogOutputObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/AnalogOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/AnalogOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/AnalogOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/AnalogOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/AnalogOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogOutputObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogOutputObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogOutputObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -943,9 +951,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/AnalogValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/AnalogValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/AnalogValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/AnalogValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/AnalogValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/AnalogValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -1012,13 +1021,15 @@
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#alarmValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "alarm value" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#alarmValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "alarm" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#alarmValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#prefLabel> "change ofstate count" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#prefLabel> "change of state count" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "change" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofstate" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "state" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "count" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#prefLabel> "change ofstate time" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#prefLabel> "change of state time" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "change" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofstate" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "state" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#deviceType> <http://www.w3.org/2004/02/skos/core#prefLabel> "device type" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#deviceType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "device" .
@@ -1050,9 +1061,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#polarity> <http://www.w3.org/2004/02/skos/core#prefLabel> "polarity" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#polarity> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "polarity" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
@@ -1066,14 +1078,16 @@
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeDelay> <http://www.w3.org/2004/02/skos/core#prefLabel> "time delay" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeDelay> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeDelay> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "delay" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#prefLabel> "time ofactive time reset" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#prefLabel> "time of active time reset" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofactive" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "active" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "reset" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#prefLabel> "time ofstate count reset" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#prefLabel> "time of state count reset" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofstate" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "state" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "count" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryInputObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "reset" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#ackedTransitions> <http://www.w3.org/2004/02/skos/core#prefLabel> "acked transitions" .
@@ -1082,13 +1096,15 @@
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#activeText> <http://www.w3.org/2004/02/skos/core#prefLabel> "active text" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#activeText> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "active" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#activeText> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "text" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#prefLabel> "change ofstate count" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#prefLabel> "change of state count" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "change" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofstate" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "state" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "count" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#prefLabel> "change ofstate time" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#prefLabel> "change of state time" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "change" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofstate" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "state" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#deviceType> <http://www.w3.org/2004/02/skos/core#prefLabel> "device type" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#deviceType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "device" .
@@ -1121,18 +1137,20 @@
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#minimumOffTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "minimum" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#minimumOffTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "off" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#minimumOffTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#minimumOnTime> <http://www.w3.org/2004/02/skos/core#prefLabel> "minimum ontime" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#minimumOnTime> <http://www.w3.org/2004/02/skos/core#prefLabel> "minimum on time" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#minimumOnTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "minimum" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#minimumOnTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ontime" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#minimumOnTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "on" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#minimumOnTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#notificationClass> <http://www.w3.org/2004/02/skos/core#prefLabel> "notification class" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#notificationClass> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notification" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#notificationClass> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "class" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#polarity> <http://www.w3.org/2004/02/skos/core#prefLabel> "polarity" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#polarity> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "polarity" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
@@ -1152,14 +1170,16 @@
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeDelay> <http://www.w3.org/2004/02/skos/core#prefLabel> "time delay" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeDelay> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeDelay> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "delay" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#prefLabel> "time ofactive time reset" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#prefLabel> "time of active time reset" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofactive" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "active" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "reset" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#prefLabel> "time ofstate count reset" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#prefLabel> "time of state count reset" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofstate" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "state" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "count" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryOutputObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "reset" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#ackedTransitions> <http://www.w3.org/2004/02/skos/core#prefLabel> "acked transitions" .
@@ -1171,13 +1191,15 @@
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#alarmValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "alarm value" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#alarmValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "alarm" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#alarmValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#prefLabel> "change ofstate count" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#prefLabel> "change of state count" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "change" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofstate" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "state" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#changeOfStateCount> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "count" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#prefLabel> "change ofstate time" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#prefLabel> "change of state time" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "change" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofstate" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "state" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#changeOfStateTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#elapsedActiveTime> <http://www.w3.org/2004/02/skos/core#prefLabel> "elapsed active time" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#elapsedActiveTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "elapsed" .
@@ -1204,18 +1226,20 @@
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#minimumOffTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "minimum" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#minimumOffTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "off" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#minimumOffTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#minimumOnTime> <http://www.w3.org/2004/02/skos/core#prefLabel> "minimum ontime" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#minimumOnTime> <http://www.w3.org/2004/02/skos/core#prefLabel> "minimum on time" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#minimumOnTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "minimum" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#minimumOnTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ontime" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#minimumOnTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "on" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#minimumOnTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#notificationClass> <http://www.w3.org/2004/02/skos/core#prefLabel> "notification class" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#notificationClass> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notification" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#notificationClass> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "class" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -1233,14 +1257,16 @@
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeDelay> <http://www.w3.org/2004/02/skos/core#prefLabel> "time delay" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeDelay> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeDelay> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "delay" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#prefLabel> "time ofactive time reset" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#prefLabel> "time of active time reset" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofactive" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "active" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeOfActiveTimeReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "reset" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#prefLabel> "time ofstate count reset" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#prefLabel> "time of state count reset" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
-<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofstate" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "state" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "count" .
 <http://bacowl.sourceforge.net/2012/bacnet/BinaryValueObject#timeOfStateCountReset> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "reset" .
 <http://bacowl.sourceforge.net/2012/bacnet/BitStringValueObject#ackedTransitions> <http://www.w3.org/2004/02/skos/core#prefLabel> "acked transitions" .
@@ -1275,9 +1301,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/BitStringValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/BitStringValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/BitStringValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/BitStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/BitStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/BitStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/BitStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/BitStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/BitStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/BitStringValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/BitStringValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/BitStringValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -1330,9 +1357,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/CharacterStringValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/CharacterStringValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/CharacterStringValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/CharacterStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/CharacterStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/CharacterStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/CharacterStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/CharacterStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/CharacterStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/CharacterStringValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/CharacterStringValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/CharacterStringValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -1365,9 +1393,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/CommandObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/CommandObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/CommandObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
-<http://bacowl.sourceforge.net/2012/bacnet/CredentialDataInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/CredentialDataInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/CredentialDataInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/CredentialDataInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/CredentialDataInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/CredentialDataInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/CredentialDataInputObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/CredentialDataInputObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/CredentialDataInputObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -1386,9 +1415,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/DatePatternValueObject#eventState> <http://www.w3.org/2004/02/skos/core#prefLabel> "event state" .
 <http://bacowl.sourceforge.net/2012/bacnet/DatePatternValueObject#eventState> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "event" .
 <http://bacowl.sourceforge.net/2012/bacnet/DatePatternValueObject#eventState> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "state" .
-<http://bacowl.sourceforge.net/2012/bacnet/DatePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/DatePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/DatePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/DatePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/DatePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/DatePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/DatePatternValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/DatePatternValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/DatePatternValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -1409,9 +1439,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/DateTimePatternValueObject#isUtc> <http://www.w3.org/2004/02/skos/core#prefLabel> "is utc" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateTimePatternValueObject#isUtc> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "is" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateTimePatternValueObject#isUtc> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "utc" .
-<http://bacowl.sourceforge.net/2012/bacnet/DateTimePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/DateTimePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateTimePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/DateTimePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/DateTimePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/DateTimePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateTimePatternValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateTimePatternValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateTimePatternValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -1432,9 +1463,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/DateTimeValueObject#isUtc> <http://www.w3.org/2004/02/skos/core#prefLabel> "is utc" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateTimeValueObject#isUtc> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "is" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateTimeValueObject#isUtc> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "utc" .
-<http://bacowl.sourceforge.net/2012/bacnet/DateTimeValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/DateTimeValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateTimeValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/DateTimeValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/DateTimeValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/DateTimeValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateTimeValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateTimeValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateTimeValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -1452,9 +1484,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/DateValueObject#eventState> <http://www.w3.org/2004/02/skos/core#prefLabel> "event state" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateValueObject#eventState> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "event" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateValueObject#eventState> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "state" .
-<http://bacowl.sourceforge.net/2012/bacnet/DateValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/DateValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/DateValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/DateValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/DateValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/DateValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -1473,9 +1506,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#activeCovSubscriptions> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "active" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#activeCovSubscriptions> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "cov" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#activeCovSubscriptions> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "subscriptions" .
-<http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#activeVtSessions> <http://www.w3.org/2004/02/skos/core#prefLabel> "active vtsessions" .
+<http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#activeVtSessions> <http://www.w3.org/2004/02/skos/core#prefLabel> "active vt sessions" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#activeVtSessions> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "active" .
-<http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#activeVtSessions> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "vtsessions" .
+<http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#activeVtSessions> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "vt" .
+<http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#activeVtSessions> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "sessions" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#alignIntervals> <http://www.w3.org/2004/02/skos/core#prefLabel> "align intervals" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#alignIntervals> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "align" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#alignIntervals> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "intervals" .
@@ -1567,9 +1601,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#modelName> <http://www.w3.org/2004/02/skos/core#prefLabel> "model name" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#modelName> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "model" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#modelName> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "name" .
-<http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#numberOfApduRetries> <http://www.w3.org/2004/02/skos/core#prefLabel> "number ofapdu retries" .
+<http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#numberOfApduRetries> <http://www.w3.org/2004/02/skos/core#prefLabel> "number of apdu retries" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#numberOfApduRetries> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "number" .
-<http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#numberOfApduRetries> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofapdu" .
+<http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#numberOfApduRetries> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#numberOfApduRetries> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "apdu" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#numberOfApduRetries> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "retries" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#objectList> <http://www.w3.org/2004/02/skos/core#prefLabel> "object list" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#objectList> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "object" .
@@ -1619,9 +1654,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#systemStatus> <http://www.w3.org/2004/02/skos/core#prefLabel> "system status" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#systemStatus> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "system" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#systemStatus> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "status" .
-<http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#timeOfDeviceRestart> <http://www.w3.org/2004/02/skos/core#prefLabel> "time ofdevice restart" .
+<http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#timeOfDeviceRestart> <http://www.w3.org/2004/02/skos/core#prefLabel> "time of device restart" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#timeOfDeviceRestart> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
-<http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#timeOfDeviceRestart> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofdevice" .
+<http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#timeOfDeviceRestart> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#timeOfDeviceRestart> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "device" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#timeOfDeviceRestart> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "restart" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#timeSynchronizationInterval> <http://www.w3.org/2004/02/skos/core#prefLabel> "time synchronization interval" .
 <http://bacowl.sourceforge.net/2012/bacnet/DeviceObject#timeSynchronizationInterval> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
@@ -1815,9 +1851,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/GlobalGroupObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/GlobalGroupObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/GlobalGroupObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/GlobalGroupObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/GlobalGroupObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/GlobalGroupObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/GlobalGroupObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/GlobalGroupObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/GlobalGroupObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/GlobalGroupObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/GlobalGroupObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/GlobalGroupObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -1836,9 +1873,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/GlobalGroupObject#updateInterval> <http://www.w3.org/2004/02/skos/core#prefLabel> "update interval" .
 <http://bacowl.sourceforge.net/2012/bacnet/GlobalGroupObject#updateInterval> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "update" .
 <http://bacowl.sourceforge.net/2012/bacnet/GlobalGroupObject#updateInterval> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "interval" .
-<http://bacowl.sourceforge.net/2012/bacnet/GroupObject#listOfGroupMembers> <http://www.w3.org/2004/02/skos/core#prefLabel> "list ofgroup members" .
+<http://bacowl.sourceforge.net/2012/bacnet/GroupObject#listOfGroupMembers> <http://www.w3.org/2004/02/skos/core#prefLabel> "list of group members" .
 <http://bacowl.sourceforge.net/2012/bacnet/GroupObject#listOfGroupMembers> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "list" .
-<http://bacowl.sourceforge.net/2012/bacnet/GroupObject#listOfGroupMembers> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofgroup" .
+<http://bacowl.sourceforge.net/2012/bacnet/GroupObject#listOfGroupMembers> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/GroupObject#listOfGroupMembers> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "group" .
 <http://bacowl.sourceforge.net/2012/bacnet/GroupObject#listOfGroupMembers> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "members" .
 <http://bacowl.sourceforge.net/2012/bacnet/GroupObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/GroupObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
@@ -1880,9 +1918,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/IntegerValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/IntegerValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/IntegerValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/IntegerValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/IntegerValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/IntegerValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/IntegerValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/IntegerValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/IntegerValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/IntegerValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/IntegerValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/IntegerValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -1939,9 +1978,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/LargeAnalogValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/LargeAnalogValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/LargeAnalogValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/LargeAnalogValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/LargeAnalogValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/LargeAnalogValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/LargeAnalogValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/LargeAnalogValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/LargeAnalogValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/LargeAnalogValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/LargeAnalogValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/LargeAnalogValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -2015,9 +2055,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyPointObject#operationExpected> <http://www.w3.org/2004/02/skos/core#prefLabel> "operation expected" .
 <http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyPointObject#operationExpected> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "operation" .
 <http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyPointObject#operationExpected> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "expected" .
-<http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyPointObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyPointObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyPointObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyPointObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyPointObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyPointObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyPointObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyPointObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyPointObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -2089,9 +2130,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyZoneObject#operationExpected> <http://www.w3.org/2004/02/skos/core#prefLabel> "operation expected" .
 <http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyZoneObject#operationExpected> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "operation" .
 <http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyZoneObject#operationExpected> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "expected" .
-<http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyZoneObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyZoneObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyZoneObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyZoneObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyZoneObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyZoneObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyZoneObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyZoneObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/LifeSafetyZoneObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -2253,9 +2295,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/LoopObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/LoopObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/LoopObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/LoopObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/LoopObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/LoopObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/LoopObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/LoopObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/LoopObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/LoopObject#outputUnits> <http://www.w3.org/2004/02/skos/core#prefLabel> "output units" .
 <http://bacowl.sourceforge.net/2012/bacnet/LoopObject#outputUnits> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "output" .
 <http://bacowl.sourceforge.net/2012/bacnet/LoopObject#outputUnits> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "units" .
@@ -2321,12 +2364,14 @@
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#prefLabel> "number ofstates" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#prefLabel> "number of states" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "number" .
-<http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofstates" .
-<http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "states" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateInputObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -2370,12 +2415,14 @@
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#prefLabel> "number ofstates" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#prefLabel> "number of states" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "number" .
-<http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofstates" .
-<http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "states" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateOutputObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -2425,12 +2472,14 @@
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#prefLabel> "number ofstates" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#prefLabel> "number of states" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "number" .
-<http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofstates" .
-<http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#numberOfStates> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "states" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/MultiStateValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -2470,9 +2519,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/OctetStringValueObject#eventState> <http://www.w3.org/2004/02/skos/core#prefLabel> "event state" .
 <http://bacowl.sourceforge.net/2012/bacnet/OctetStringValueObject#eventState> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "event" .
 <http://bacowl.sourceforge.net/2012/bacnet/OctetStringValueObject#eventState> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "state" .
-<http://bacowl.sourceforge.net/2012/bacnet/OctetStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/OctetStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/OctetStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/OctetStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/OctetStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/OctetStringValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/OctetStringValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/OctetStringValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/OctetStringValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -2524,9 +2574,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/PositiveIntegerValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/PositiveIntegerValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/PositiveIntegerValueObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/PositiveIntegerValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/PositiveIntegerValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/PositiveIntegerValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/PositiveIntegerValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/PositiveIntegerValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/PositiveIntegerValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/PositiveIntegerValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/PositiveIntegerValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/PositiveIntegerValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -2546,15 +2597,17 @@
 <http://bacowl.sourceforge.net/2012/bacnet/PositiveIntegerValueObject#timeDelay> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "delay" .
 <http://bacowl.sourceforge.net/2012/bacnet/PositiveIntegerValueObject#units> <http://www.w3.org/2004/02/skos/core#prefLabel> "units" .
 <http://bacowl.sourceforge.net/2012/bacnet/PositiveIntegerValueObject#units> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "units" .
-<http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#descriptionOfHalt> <http://www.w3.org/2004/02/skos/core#prefLabel> "description ofhalt" .
+<http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#descriptionOfHalt> <http://www.w3.org/2004/02/skos/core#prefLabel> "description of halt" .
 <http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#descriptionOfHalt> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "description" .
-<http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#descriptionOfHalt> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofhalt" .
+<http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#descriptionOfHalt> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#descriptionOfHalt> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "halt" .
 <http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#instanceOf> <http://www.w3.org/2004/02/skos/core#prefLabel> "instance of" .
 <http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#instanceOf> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "instance" .
 <http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#instanceOf> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
-<http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#programChange> <http://www.w3.org/2004/02/skos/core#prefLabel> "program change" .
 <http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#programChange> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "program" .
 <http://bacowl.sourceforge.net/2012/bacnet/ProgramObject#programChange> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "change" .
@@ -2629,9 +2682,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/PulseConverterObject#notifyType> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify type" .
 <http://bacowl.sourceforge.net/2012/bacnet/PulseConverterObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notify" .
 <http://bacowl.sourceforge.net/2012/bacnet/PulseConverterObject#notifyType> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "type" .
-<http://bacowl.sourceforge.net/2012/bacnet/PulseConverterObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/PulseConverterObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/PulseConverterObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/PulseConverterObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/PulseConverterObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/PulseConverterObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/PulseConverterObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/PulseConverterObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/PulseConverterObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -2657,14 +2711,16 @@
 <http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#exceptionSchedule> <http://www.w3.org/2004/02/skos/core#prefLabel> "exception schedule" .
 <http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#exceptionSchedule> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "exception" .
 <http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#exceptionSchedule> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "schedule" .
-<http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#listOfObjectPropertyReferences> <http://www.w3.org/2004/02/skos/core#prefLabel> "list ofobject property references" .
+<http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#listOfObjectPropertyReferences> <http://www.w3.org/2004/02/skos/core#prefLabel> "list of object property references" .
 <http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#listOfObjectPropertyReferences> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "list" .
-<http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#listOfObjectPropertyReferences> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofobject" .
+<http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#listOfObjectPropertyReferences> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#listOfObjectPropertyReferences> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "object" .
 <http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#listOfObjectPropertyReferences> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "property" .
 <http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#listOfObjectPropertyReferences> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "references" .
-<http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/ScheduleObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -2698,8 +2754,9 @@
 <http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#atomicWriteFile> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "atomic" .
 <http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#atomicWriteFile> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "write" .
 <http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#atomicWriteFile> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "file" .
-<http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#confirmedCOVNotification> <http://www.w3.org/2004/02/skos/core#prefLabel> "confirmedcovnotification" .
-<http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#confirmedCOVNotification> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "confirmedcovnotification" .
+<http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#confirmedCOVNotification> <http://www.w3.org/2004/02/skos/core#prefLabel> "confirmedcov notification" .
+<http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#confirmedCOVNotification> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "confirmedcov" .
+<http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#confirmedCOVNotification> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notification" .
 <http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#confirmedEventNotification> <http://www.w3.org/2004/02/skos/core#prefLabel> "confirmed event notification" .
 <http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#confirmedEventNotification> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "confirmed" .
 <http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#confirmedEventNotification> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "event" .
@@ -2763,13 +2820,15 @@
 <http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#removeListElement> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "element" .
 <http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#subscribeCOV> <http://www.w3.org/2004/02/skos/core#prefLabel> "subscribecov" .
 <http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#subscribeCOV> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "subscribecov" .
-<http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#subscribeCOVProperty> <http://www.w3.org/2004/02/skos/core#prefLabel> "subscribecovproperty" .
-<http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#subscribeCOVProperty> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "subscribecovproperty" .
+<http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#subscribeCOVProperty> <http://www.w3.org/2004/02/skos/core#prefLabel> "subscribecov property" .
+<http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#subscribeCOVProperty> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "subscribecov" .
+<http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#subscribeCOVProperty> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "property" .
 <http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#timeSynchronization> <http://www.w3.org/2004/02/skos/core#prefLabel> "time synchronization" .
 <http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#timeSynchronization> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
 <http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#timeSynchronization> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "synchronization" .
-<http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#unconfirmedCOVNotification> <http://www.w3.org/2004/02/skos/core#prefLabel> "unconfirmedcovnotification" .
-<http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#unconfirmedCOVNotification> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "unconfirmedcovnotification" .
+<http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#unconfirmedCOVNotification> <http://www.w3.org/2004/02/skos/core#prefLabel> "unconfirmedcov notification" .
+<http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#unconfirmedCOVNotification> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "unconfirmedcov" .
+<http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#unconfirmedCOVNotification> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "notification" .
 <http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#unconfirmedEventNotification> <http://www.w3.org/2004/02/skos/core#prefLabel> "unconfirmed event notification" .
 <http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#unconfirmedEventNotification> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "unconfirmed" .
 <http://bacowl.sourceforge.net/2012/bacnet/ServicesSupported#unconfirmedEventNotification> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "event" .
@@ -2826,9 +2885,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/TimePatternValueObject#isUtc> <http://www.w3.org/2004/02/skos/core#prefLabel> "is utc" .
 <http://bacowl.sourceforge.net/2012/bacnet/TimePatternValueObject#isUtc> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "is" .
 <http://bacowl.sourceforge.net/2012/bacnet/TimePatternValueObject#isUtc> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "utc" .
-<http://bacowl.sourceforge.net/2012/bacnet/TimePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/TimePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/TimePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/TimePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/TimePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/TimePatternValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/TimePatternValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/TimePatternValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/TimePatternValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -2846,9 +2906,10 @@
 <http://bacowl.sourceforge.net/2012/bacnet/TimeValueObject#eventState> <http://www.w3.org/2004/02/skos/core#prefLabel> "event state" .
 <http://bacowl.sourceforge.net/2012/bacnet/TimeValueObject#eventState> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "event" .
 <http://bacowl.sourceforge.net/2012/bacnet/TimeValueObject#eventState> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "state" .
-<http://bacowl.sourceforge.net/2012/bacnet/TimeValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/TimeValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#prefLabel> "out of service" .
 <http://bacowl.sourceforge.net/2012/bacnet/TimeValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "out" .
-<http://bacowl.sourceforge.net/2012/bacnet/TimeValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "ofservice" .
+<http://bacowl.sourceforge.net/2012/bacnet/TimeValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "of" .
+<http://bacowl.sourceforge.net/2012/bacnet/TimeValueObject#outOfService> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "service" .
 <http://bacowl.sourceforge.net/2012/bacnet/TimeValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "present value" .
 <http://bacowl.sourceforge.net/2012/bacnet/TimeValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "present" .
 <http://bacowl.sourceforge.net/2012/bacnet/TimeValueObject#presentValue> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "value" .
@@ -5380,10 +5441,11 @@
 <urn:org.onem2m.home.moduleclass.timer.absoluteStopTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "absolute" .
 <urn:org.onem2m.home.moduleclass.timer.absoluteStopTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "stop" .
 <urn:org.onem2m.home.moduleclass.timer.absoluteStopTime> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
-<urn:org.onem2m.home.moduleclass.timer.estimatedTimeToEnd> <http://www.w3.org/2004/02/skos/core#prefLabel> "estimated time toend" .
+<urn:org.onem2m.home.moduleclass.timer.estimatedTimeToEnd> <http://www.w3.org/2004/02/skos/core#prefLabel> "estimated time to end" .
 <urn:org.onem2m.home.moduleclass.timer.estimatedTimeToEnd> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "estimated" .
 <urn:org.onem2m.home.moduleclass.timer.estimatedTimeToEnd> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
-<urn:org.onem2m.home.moduleclass.timer.estimatedTimeToEnd> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "toend" .
+<urn:org.onem2m.home.moduleclass.timer.estimatedTimeToEnd> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "to" .
+<urn:org.onem2m.home.moduleclass.timer.estimatedTimeToEnd> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "end" .
 <urn:org.onem2m.home.moduleclass.timer.referenceTimer> <http://www.w3.org/2004/02/skos/core#prefLabel> "reference timer" .
 <urn:org.onem2m.home.moduleclass.timer.referenceTimer> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "reference" .
 <urn:org.onem2m.home.moduleclass.timer.referenceTimer> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "timer" .
@@ -5393,14 +5455,16 @@
 <urn:org.onem2m.home.moduleclass.timer.targetDuration> <http://www.w3.org/2004/02/skos/core#prefLabel> "target duration" .
 <urn:org.onem2m.home.moduleclass.timer.targetDuration> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "target" .
 <urn:org.onem2m.home.moduleclass.timer.targetDuration> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "duration" .
-<urn:org.onem2m.home.moduleclass.timer.targetTimeToStart> <http://www.w3.org/2004/02/skos/core#prefLabel> "target time tostart" .
+<urn:org.onem2m.home.moduleclass.timer.targetTimeToStart> <http://www.w3.org/2004/02/skos/core#prefLabel> "target time to start" .
 <urn:org.onem2m.home.moduleclass.timer.targetTimeToStart> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "target" .
 <urn:org.onem2m.home.moduleclass.timer.targetTimeToStart> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
-<urn:org.onem2m.home.moduleclass.timer.targetTimeToStart> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "tostart" .
-<urn:org.onem2m.home.moduleclass.timer.targetTimeToStop> <http://www.w3.org/2004/02/skos/core#prefLabel> "target time tostop" .
+<urn:org.onem2m.home.moduleclass.timer.targetTimeToStart> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "to" .
+<urn:org.onem2m.home.moduleclass.timer.targetTimeToStart> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "start" .
+<urn:org.onem2m.home.moduleclass.timer.targetTimeToStop> <http://www.w3.org/2004/02/skos/core#prefLabel> "target time to stop" .
 <urn:org.onem2m.home.moduleclass.timer.targetTimeToStop> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "target" .
 <urn:org.onem2m.home.moduleclass.timer.targetTimeToStop> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "time" .
-<urn:org.onem2m.home.moduleclass.timer.targetTimeToStop> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "tostop" .
+<urn:org.onem2m.home.moduleclass.timer.targetTimeToStop> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "to" .
+<urn:org.onem2m.home.moduleclass.timer.targetTimeToStop> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "stop" .
 <urn:org.onem2m.home.moduleclass.turbo> <http://www.w3.org/2004/02/skos/core#prefLabel> "turbo" .
 <urn:org.onem2m.home.moduleclass.turbo> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "turbo" .
 <urn:org.onem2m.home.moduleclass.turbo.turboEnabled> <http://www.w3.org/2004/02/skos/core#prefLabel> "turbo enabled" .
