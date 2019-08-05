@@ -5,10 +5,26 @@ const pluralize = require('pluralize');
 
 const q = '\
 prefix skos: <http://www.w3.org/2004/02/skos/core#>\
-select distinct ?l where {\
-    ?concept skos:hiddenLabel ?l\
+select distinct ?c ?l where {\
+    ?c skos:prefLabel ?l\
 }\
 ';
+
+function ngrams(words) {
+    if (words.length == 1) return [words];
+
+    let p = words[0] + ' ' + words[1];
+
+    let ngrams2 = ngrams([p, ...words.slice(2)]);
+    let ngrams1 = ngrams(words.slice(1)).map(ng => [words[0], ...ng]);
+    
+    return [...ngrams2, ...ngrams1];
+}
+
+function byLength(ngram, mgram) {
+    // TODO is [4, 2] better than [3, 3]?
+    return ngram.length - mgram.length;
+}
 
 const txt = fs.readFileSync('../labels.ttl', 'utf-8');
 
@@ -19,21 +35,35 @@ urdf.load(txt, { format: 'text/turtle' })
 .then(() => urdf.query(q))
 
 .then(res => {
-    res = res.map(b => b.l.value);
+    labels = res.map(b => b.l.value)
+                .map(l => ngrams(l.split(' ')).sort(byLength));
 
-    let promises = res.map(l => {
-        if (pluralize.isPlural(l)) l = pluralize.singular(l);
-        // TODO process verbs in past tense (-ed + irregular verbs)
+    let promises = res.map(b => {
+        let concept = b.c.value;
+        let label = b.l.value;
 
-        return Promise.all([
-            wpos.lookupNoun(l),
-            wpos.lookupVerb(l),
-            wpos.lookupAdjective(l),
-            wpos.lookupAdverb(l)
-        ])
-        .then(pos => {
-            let synset = pos.find(s => s.length > 0) || [];
-            return [l, synset];
+        let sequences = ngrams(label.split(' ')).sort(byLength);
+        return Promise.all(sequences.map(seq => {
+            return Promise.all(seq.map(w => {
+                if (pluralize.isPlural(w)) w = pluralize.singular(w);
+                // TODO process verbs in past tense (-ed + irregular verbs)
+                // TODO same for -ing forms
+        
+                return Promise.all([
+                    wpos.lookupNoun(w),
+                    wpos.lookupVerb(w),
+                    wpos.lookupAdjective(w),
+                    wpos.lookupAdverb(w)
+                ])
+                .then(pos => {
+                    let synset = pos.find(s => s.length > 0) || [];
+                    return synset;
+                });
+            }));
+        }))
+        .then(synsets => {
+            let seq = synsets.find(seq => seq.some(s => s.length > 0)) || [];
+            return [concept, seq];
         });
     });
 
@@ -41,9 +71,8 @@ urdf.load(txt, { format: 'text/turtle' })
 })
 
 .then(synsets => {
-    synsets.forEach(([w, set]) => {
-        // console.log(set.length)
-        console.log(w + '(' + set.length + ')');
-        set.forEach(ss => console.log('\t' + ss.synonyms));
+    synsets.forEach(([c, s]) => {
+        console.log(c + ' (' + s.length + ')');
+        s.forEach(ss => console.log('\t' + ss.length));
     });
 });
