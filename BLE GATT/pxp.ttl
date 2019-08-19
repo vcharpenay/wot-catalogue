@@ -1,4 +1,4 @@
-@prefix pxp: <http://example.org/namespace/ble-gatt/pxp#> .
+﻿@prefix pxp: <http://example.org/namespace/ble-gatt/pxp#> .
 @prefix ble: <http://example.org/namespace/ble-gatt#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -35,6 +35,15 @@ ble:Characteristic skos:narrower pxp:TxPowerLevel .
 pxp:TxPowerLevel rdfs:label "Transmit Power Level" .
 pxp:TxPowerLevel skos:definition "The Tx Power Level characteristic represents the current transmit power." .
 
+pxp:TxPowerLevel skos:related ble:Read .
+
+pxp:TxPowerLevel skos:related pxp:TxPowerLevelField .
+pxp:TxPowerLevelField a skos:Concept .
+ble:Value skos:narrower pxp:TxPowerLevelField .
+pxp:TxPowerLevelField rdfs:label "Transmit Power Level Field" .
+pxp:TxPowerLevelField skos:definition "The Tx Power Level characteristic returns the current transmit power level when read using the GATT Characteristic Read Value procedure." .
+pxp:TxPowerLevelField skos:related xsd:Byte .
+
 ble:Service skos:narrower pxp:LinkLossService .
 
 pxp:LinkLossService  rdfs:label "Link Loss Service" .
@@ -48,3 +57,6 @@ ble:Characteristic skos:narrower pxp:LinkLossAlertLevel .
 
 pxp:LinkLossAlertLevel rdfs:label "Alert Level of Link Loss Service" .
 pxp:LinkLossAlertLevel skos:definition "The Alert Level characteristic is used to expose the current link loss alert level that is used to determine how the device alerts when the link is lost." .
+
+pxp:LinkLossAlertLevel skos:related ble:Read, ble:Write .
+pxp:LinkLossAlertLevel skos:related xsd:unsignedByte .

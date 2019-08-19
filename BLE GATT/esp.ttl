@@ -7,7 +7,11 @@
 
 esp:EnvironmentalSensingProfile a skos:Concept .
 esp:EnvironmentalSensingService  a skos:Concept .
-esp:ESSCharacteristic a skos:Concept .
+esp:ESMeasurement a skos:Concept .
+esp:ESTriggerSetting a skos:Concept .
+esp:CharacteristicUserDescription a skos:Concept .
+esp:ValidRange a skos:Concept .
+esp:ESConfiguration a skos:Concept .
 esp:DescriptorValueChanged a skos:Concept .
 
 esp:EnvironmentalSensingProfile  rdfs:label "Environmental Sensing Profile" .
@@ -29,16 +33,49 @@ esp:EnvironmentalSensingService skos:definition "The Environmental Sensing Servi
 esp:EnvironmentalSensingService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=294797> .
 
 
-ble:Characteristic skos:narrower esp:ESSCharacteristic.
 ble:Characteristic skos:narrower esp:DescriptorValueChanged .
+ble:Characteristic skos:narrower esp:ESMeasurement .
+ble:Characteristic skos:narrower esp:ESTriggerSetting .
+ble:Characteristic skos:narrower esp:CharacteristicUserDescription .
+ble:Characteristic skos:narrower esp:ValidRange .
+ble:Characteristic skos:narrower esp:ESConfiguration .
 
-esp:EnvironmentalSensingService skos:related esp:ESSCharacteristic.
+esp:EnvironmentalSensingService skos:related esp:ESMeasurement .
+esp:EnvironmentalSensingService skos:related esp:ESTriggerSetting .
+esp:EnvironmentalSensingService skos:related esp:CharacteristicUserDescription .
+esp:EnvironmentalSensingService skos:related esp:ValidRange .
+esp:EnvironmentalSensingService skos:related esp:ESConfiguration .
 esp:EnvironmentalSensingService skos:related esp:DescriptorValueChanged .
 
 
-esp:ESSCharacteristic rdfs:label "Environmental Sensing Service Characteristic" .
-esp:ESSCharacteristic skos:definition "ESS Characteristics have been identified as being time-sensitive characteristics." .
+esp:ESMeasurement  rdfs:label "Environmental Sensing Measurement" .
+esp:ESMeasurement skos:definition "ESS Characteristics have been identified as being time-sensitive characteristics." .
+
+esp:ESTriggerSetting  rdfs:label "Environmental Sensing Trigger Setting" .
+esp:ESTriggerSetting  skos:definition "ESS Characteristics have been identified as being time-sensitive characteristics." .
+
+esp:CharacteristicUserDescription  rdfs:label "Characteristic User Description" .
+esp:CharacteristicUserDescription skos:definition "ESS Characteristics have been identified as being time-sensitive characteristics." .
+
+esp:ValidRange rdfs:label "Valid Range" .
+esp:ValidRange skos:definition "ESS Characteristics have been identified as being time-sensitive characteristics." .
+
+esp:ESConfiguration  rdfs:label "Environmental Sensing Configuration" .
+esp:ESConfiguration skos:definition "ESS Characteristics have been identified as being time-sensitive characteristics." .
 
 esp:DescriptorValueChanged rdfs:label "Descriptor Value Changed" .
 esp:DescriptorValueChanged skos:definition "It enables a Server to alert bonded Clients that the value of one or more ESS-related descriptors for a given ESS Characteristic have changed and need to be re-read" .
+
+esp:ESMeasurement skos:related ble:Read, ble:Notify  .
+esp:ESTriggerSetting skos:related ble:Read, ble:Write  .
+esp:CharacteristicUserDescription skos:related ble:Read, ble:Write  .
+esp:ValidRange skos:related ble:Read .
+esp:ESConfiguration skos:related ble:Read, ble:Write .
+esp:DescriptorValueChanged skos:related ble:Indicate .
+
+
+
+
+
+
 

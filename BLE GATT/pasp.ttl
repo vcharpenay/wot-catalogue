@@ -45,3 +45,10 @@ pasp:AlertStatus skos:definition "The Alert Status Characteristic exposes the al
 pasp:RingerSetting skos:definition "The Ringer Setting characteristic exposes the state of the server device's ringer." .
 pasp:RingerControlPoint skos:editorialNote "Not found yet" .
 
+pasp:AlertStatus skos:related ble:Read, ble:Notify .
+pasp:RingerSetting skos:related ble:Read, ble:Notify .
+pasp:RingerControlPoint skos:related ble:WritewithoutResponse .
+
+pasp:AlertStatus skos:related xsd:unsigedByte .
+pasp:RingerSetting skos:related xsd:unsigedByte .
+pasp:RingerControlPoint skos:related xsd:unsigedByte .

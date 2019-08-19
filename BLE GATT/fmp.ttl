@@ -16,3 +16,4 @@ fmp:FindMeProfile owl:versionInfo "1.0" .
 ble:Profile skos:narrower fmp:FindMeProfile .
 fmp:FindMeProfile skos:related ble:ImmediateAlertService . 
 
+

@@ -102,6 +102,59 @@ otp:ObjectChanged skos:definition "The Object Changed characteristic enables a C
 
 
 
+otp:OTSFeature skos:related ble:Read .
+otp:ObjectName skos:related ble:Read, ble:Write .
+otp:ObjectType skos:related ble:Read .
+otp:ObjectSize skos:related ble:Read .
+otp:ObjectFirstCreated skos:related ble:Read, ble:Write .
+otp:ObjectLastModified skos:related ble:Read, ble:Write .
+otp:ObjectID skos:related ble:Read .
+otp:ObjectProperties skos:related ble:Read, ble:Write  .
+otp:ObjectActionControlPoint skos:related ble:Write, ble:Indicate  .
+otp:ObjectListControlPoint skos:related ble:Write, ble:Indicate .
+otp:ObjectListFilter skos:related ble:Write, ble:Read .
+otp:ObjectChanged skos:related ble:Indicate .
 
+otp:ObjectSize skos:related otp:CurrentSizeField .
+otp:CurrentSizeField a skos:Concept .
+ble:Value skos:narrower otp:CurrentSizeField .
+otp:CurrentSizeField rdfs:label "Current Size Field" .
+otp:CurrentSizeField skos:definition "The value of the Current Size field represents an integer number of octets equal to the actual size of the object." .
+otp:CurrentSizeField skos:related xsd:unsignedInt .
 
+otp:ObjectSize skos:related otp:AllocatedSizeField  .
+otp:AllocatedSizeField a skos:Concept .
+ble:Value skos:narrower otp:AllocatedSizeField .
+otp:AllocatedSizeField rdfs:label "Allocated Size Field" .
+otp:AllocatedSizeField skos:definition "This value indicates the amount of memory the Server has reserved for holding the object contents." .
+otp:AllocatedSizeField skos:related xsd:unsignedInt .
 
+otp:ObjectID skos:related otp:ObjectIDField  .
+otp:ObjectIDField  a skos:Concept .
+ble:Value skos:narrower otp:ObjectIDField  .
+otp:ObjectIDField rdfs:label "Object ID Field" .
+otp:ObjectIDField skos:definition "The Server shall allocate an Object ID value to each object when the object is created on the Server. The Object ID characteristic returns its associated value when read." .
+otp:ObjectIDField skos:related xsd:unsignedInt .
+
+otp:ObjectChanged skos:related otp:ObjectIDField .
+
+otp:ObjectName skos:related otp:ObjectNameField .
+otp:ObjectNameField  a skos:Concept .
+ble:Value skos:narrower otp:ObjectNameField  .
+otp:ObjectNameField rdfs:label "Object Name Field" .
+otp:ObjectNameField skos:definition "The Object Name characteristic returns its associated value when read." .
+otp:ObjectNameField skos:related xsd:string .
+
+otp:ObjectFirstCreated skos:related otp:ObjectFirstCreatedField .
+otp:ObjectFirstCreatedField  a skos:Concept .
+ble:Value skos:narrower otp:ObjectFirstCreatedField  .
+otp:ObjectFirstCreatedField rdfs:label "Object First-Created Field" .
+otp:ObjectFirstCreatedField skos:definition "The Object First-Created characteristic returns its associated value when read. The date and time value shall be represented in Coordinated Universal Time (UTC)." .
+otp:ObjectFirstCreatedField skos:related xsd:dateTime .
+
+otp:ObjectLastModified skos:related otp:ObjectLastModifiedField .
+otp:ObjectLastModifiedField   a skos:Concept .
+ble:Value skos:narrower otp:ObjectLastModifiedField  .
+otp:ObjectLastModifiedField rdfs:label "Object Last-Modified Field" .
+otp:ObjectLastModifiedField skos:definition "The Object Last-Modified characteristic returns its associated value when read. The date and time value shall be represented in Coordinated Universal Time (UTC)." .
+otp:ObjectLastModifiedField skos:related xsd:dateTime .

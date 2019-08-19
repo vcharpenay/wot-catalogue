@@ -59,3 +59,33 @@ htp:MeasurementInterval skos:definition "The Measurement Interval characteristic
 
 htp:ValidRangeDescriptor rdfs:label "Valid Range" .
 htp:ValidRangeDescriptor skos:definition "The Valid Range declaration is an optional characteristic descriptor that defines the valid range of values for the Characteristic Value." .
+
+htp:TemperatureMeasurement skos:related ble:Indicate .
+htp:TemperatureType skos:related ble:Read .
+htp:IntermediateTemperature skos:related ble:Notify .
+htp:MeasurementInterval skos:related ble:Read .
+htp:ValidRangeDescriptor skos:related ble:Read .
+
+htp:TemperatureMeasurementValueField a skos:Concept .
+ble:Value skos:narrower htp:TemperatureMeasurementValueField .
+htp:TemperatureMeasurement skos:related htp:TemperatureMeasurementValueField .
+htp:TemperatureMeasurementValueField rdfs:label "Temperature Measurement Value Field" .
+htp:TemperatureMeasurementValueField skos:definition "This Temperature Measurement Value field shall be included in the Temperature Measurement characteristic." .
+htp:TemperatureMeasurementValueField  skos:related xsd:float .
+
+htp:TimeStampField  a skos:Concept .
+ble:Value skos:narrower htp:TimeStampField .
+htp:TemperatureMeasurement skos:related htp:TimeStampField .
+htp:TimeStampField rdfs:label "Time Stamp Field" .
+htp:TimeStampField skos:definition "The value of the Time Stamp field is derived from a source of date and time at the time of measurement." .
+htp:TimeStampField  skos:related xsd:dateTime .
+
+htp:IntermediateTemperatureValueField  a skos:Concept .
+ble:Value skos:narrower htp:IntermediateTemperatureValueField .
+htp:TemperatureMeasurement skos:related htp:IntermediateTemperatureValueField .
+htp:IntermediateTemperatureValueField rdfs:label "Intermediate Temperature Value Field" .
+htp:IntermediateTemperatureValueField skos:definition "This Intermediate Temperature Value field shall be included in the Intermediate Temperature characteristic." .
+htp:IntermediateTemperatureValueField  skos:related xsd:float .
+
+
+htp:IntermediateTemperatureValueField skos:related htp:TimeStampField .

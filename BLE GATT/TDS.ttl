@@ -1,0 +1,75 @@
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+
+ble:TransportDiscoveryService a skos:Concept .
+ble:TDSControlPoint a skos:Concept .
+
+ble:Service skos:narrower ble:TransportDiscoveryService .
+
+ble:TransportDiscoveryService rdfs:label "Transport Discovery Service" .
+ble:TransportDiscoveryService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=309929> .
+ble:TransportDiscoveryService skos:definition "This service enables a device using Bluetooth low energy wireless technology to expose services that are available on a transport other than Bluetooth low energy." .
+ble:TransportDiscoveryService  owl:versionInfo "1.0" .
+
+
+ble:Characteristic skos:narrower ble:TDSControlPoint .
+
+ble:TransportDiscoveryService skos:related ble:TDSControlPoint .
+
+ble:TDSControlPoint rdfs:label "Transport Discovery Control Point".
+ble:TDSControlPoint skos:definition "The TDS Control Point characteristic is used to request activation of a transport." .
+
+
+ble:TransportDiscoveryService skos:related ble:OrganizationIDField, ble:TransportDataLengthField, ble:TransportDataField .
+
+ble:OrganizationIDField  a skos:Concept .
+ble:TransportDataLengthField a skos:Concept .
+ble:TransportDataField a skos:Concept .
+ble:Value skos:narrower ble:OrganizationIDField .
+ble:Value skos:narrower ble:TransportDataLengthField .
+ble:Value skos:narrower ble:TransportDataField .
+
+ble:OrganizationIDField  skos:related xsd:unsignedByte .
+ble:TransportDataLengthField skos:related xsd:unsignedByte .
+
+ble:OrganizationIDField rdfs:label "Organization ID Field" .
+ble:OrganizationIDField skos:definition "This field shall contain a 1 octet Organization ID value from the Bluetooth SIG Assigned Numbers with the value set to the appropriate organization." .
+
+ble:TransportDataLengthField  rdfs:label "Transport Data Length Field" .
+ble:TransportDataLengthField  skos:definition "This field shall contain a 1 octet value that represents the total number of octets in the Transport Data field that follows." .
+
+ble:TransportDataField  rdfs:label "Transport Data Field" .
+ble:TransportDataField  skos:definition "If used, this field contains organization-specific data and shall be byte-aligned." .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -51,3 +51,58 @@ plxp:PLXSpotcheckMeasurement skos:definition "The PLX Spot-check Measurement cha
 plxp:PLXContinuousMeasurement skos:definition "The PLX Continuous Measurement characteristic, if supported, shall be used to send periodic pulse oximetry measurements." .
 plxp:PLXFeatures skos:definition "The PLX Features characteristic shall be used to describe the supported features of the Server." .
 
+plxp:PLXSpotcheckMeasurement skos:related  ble:Indicate .
+plxp:PLXContinuousMeasurement skos:related  ble:Notify .
+plxp:PLXFeatures skos:related  ble:Read .
+
+
+plxp:PLXSpotcheckMeasurement skos:related plxp:SpO2PRSpotCheckField .
+plxp:PLXSpotcheckMeasurement skos:related plxp:TimestampField . 
+
+plxp:SpO2PRSpotCheckField a skos:Concept .
+plxp:TimestampField a skos:Concept . 
+ble:Value skos:narrower plxp:SpO2PRSpotCheckField , plxp:TimestampField .
+
+plxp:SpO2PRSpotCheckField rdfs:label "Percent oxygen saturation of hemoglobin and Pulse Rate Spot Check" .
+plxp:TimestampField rdfs:label "Timestamp field" .
+plxp:SpO2PRSpotCheckField skos:definition  "The SpO2PR-Spot-Check field shall be included in the PLX Spot-check Measurement characteristic." .
+plxp:TimestampField skos:definition "The Timestamp field shall be included in the PLX Spot-check Measurement characteristic if the Server supports storing Spot-check measurements." .
+plxp:TimestampField skos:related xsd:dateTime .
+plxp:SpO2PRSpotCheckField skos:related xsd:float .
+
+
+
+plxp:PLXContinuousMeasurement skos:related plxp:SpO2PRNormalfield , plxp:SpO2PRFastfield, plxp:SpO2PRSlowfield .
+ble:Value skos:narrower plxp:SpO2PRNormalfield , plxp:SpO2PRFastfield, plxp:SpO2PRSlowfield .
+plxp:SpO2PRNormalfield a skos:Concept .
+plxp:SpO2PRFastfield a skos:Concept .
+plxp:SpO2PRSlowfield a skos:Concept . 
+
+plxp:SpO2PRNormalfield rdfs:label "Percent oxygen saturation of hemoglobin and Pulse Rate (SpO2PR)-Normal Field" .
+plxp:SpO2PRFastfield rdfs:label "Percent oxygen saturation of hemoglobin and Pulse Rate(SpO2PR)-Fast Field"  .
+plxp:SpO2PRSlowfield rdfs:label  "Percent oxygen saturation of hemoglobin and Pulse Rate(SpO2PR)-Slow Field" . 
+
+plxp:SpO2PRNormalfield skos:definition  "The SpO2PR-Normal field shall be included in the PLX Continuous Measurement characteristic." .
+plxp:SpO2PRFastfield skos:definition  "The SpO2PR-Fast field reports fast responding oximetry measurements of the sensor." .
+plxp:SpO2PRSlowfield skos:definition  "The SpO2PR-Slow field reports slow responding oximetry measurements of the sensor." . 
+
+
+plxp:SpO2PRNormalfield skos:related xsd:float .
+plxp:SpO2PRFastfield skos:related xsd:float .
+plxp:SpO2PRSlowfield skos:related xsd:float .
+
+
+ble:Value skos:narrower plxp:PulseAmplitudeIndex .
+plxp:PulseAmplitudeIndex a skos:Concept .
+plxp:PulseAmplitudeIndex rdfs:label "Pulse Amplitude Index" .
+plxp:PulseAmplitudeIndex skos:definition "The Pulse Amplitude Index is a percentage indicator indicating the perfusion level (amount of blood being delivered to the capillary bed) of a user." .
+plxp:PulseAmplitudeIndex skos:related xsd:float .
+
+plxp:PLXSpotcheckMeasurement skos:related plxp:PulseAmplitudeIndex .
+plxp:PLXContinuousMeasurement skos:related plxp:PulseAmplitudeIndex .
+
+
+
+
+
+

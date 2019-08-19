@@ -61,7 +61,11 @@ tip:TimeUpdateState rdfs:label "Time Update State".
 tip:TimeUpdateControlPoint skos:definition "The Time Update Control Point characteristic is used to request a reference time update on the server." .
 tip:TimeUpdateState skos:definition "The Time Update State characteristic returns the current state of the reference time update on the Reference Time Update server." .
 
+tip:TimeUpdateControlPoint skos:related ble:WritewithoutResponse .
+tip:TimeUpdateState skos:related ble:Read .
 
-
+tip:TimewithDST  skos:related ble:Read .
+tip:TimeUpdateControlPoint skos:related xsd:unsignedByte .
+tip:TimeUpdateState skos:related xsd:unsignedByte .
 
 

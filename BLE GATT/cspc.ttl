@@ -42,4 +42,39 @@ cscp:CSCMeasurement skos:definition "The CSC Measurement characteristic is used 
 cscp:CSCFeature rdfs:label "Cycling Speed and Cadence Feature" .
 cscp:CSCFeature skos:definition "The CSC Feature characteristic shall be used to describe the supported features of the Server." .
 
+cscp:CSCMeasurement skos:related ble:Notify .
+cscp:CSCFeature skos:related ble:Read .
+
+
+cscp:CumulativeWheelRevolutions a skos:Concept .
+ble:Value skos:narrower cscp:CumulativeWheelRevolutions .
+cscp:CSCMeasurement skos:related cscp:CumulativeWheelRevolutions .
+cscp:CumulativeWheelRevolutions rdfs:label "Cumulative Wheel Revolutions" .
+cscp:CumulativeWheelRevolutions skos:definition "The Cumulative Wheel Revolutions value and the Last Wheel Event Time value allow the Client to calculate the speed (instantaneous and average) as well as the distance travelled." .
+cscp:CumulativeWheelRevolutions skos:related xsd:unsignedInt .
+
+cscp:LastWheelEventTime a skos:Concept .
+ble:Value skos:narrower cscp:LastWheelEventTime  .
+cscp:CSCMeasurement skos:related cscp:LastWheelEventTime  .
+cscp:LastWheelEventTime  rdfs:label "Last Wheel Event Time Fields" .
+cscp:LastWheelEventTime  skos:definition "The Cumulative Wheel Revolutions value and the Last Wheel Event Time value allow the Client to calculate the speed (instantaneous and average) as well as the distance travelled." .
+cscp:LastWheelEventTime  skos:related xsd:unsignedShort .
+
+cscp:CumulativeCrankRevolutions a skos:Concept .
+ble:Value skos:narrower cscp:CumulativeCrankRevolutions .
+cscp:CSCMeasurement skos:related cscp:CumulativeCrankRevolutions .
+cscp:CumulativeCrankRevolutions rdfs:label "Cumulative Crank Revolutions" .
+cscp:CumulativeCrankRevolutions skos:definition "The Cumulative Crank Revolutions value and the Last Crank Event Time value allow the Client to calculate the cadence (instantaneous and average) at which the user turns the crank." .
+cscp:CumulativeCrankRevolutions skos:related xsd:unsignedShort .
+
+cscp:LastCrankEventTime a skos:Concept .
+ble:Value skos:narrower cscp:LastCrankEventTime  .
+cscp:CSCMeasurement skos:related cscp:LastCrankEventTime  .
+cscp:LastCrankEventTime  rdfs:label "Cumulative Crank Revolutions and Last Crank Event Time Fields" .
+cscp:LastCrankEventTime skos:definition "The Cumulative Crank Revolutions value and the Last Crank Event Time value allow the Client to calculate the cadence (instantaneous and average) at which the user turns the crank." .
+cscp:LastCrankEventTime skos:related xsd:unsignedShort .
+
+
+
+
 

@@ -69,8 +69,55 @@ cgmp:cgmpSessionRunTime skos:definition "The cgmp Session Run Time shall define 
 cgmp:cgmpSpecificOpsControlPoint skos:definition "The Client shall perform a write to the cgmp Specific Ops Control Point to request a desired cgmp specific procedure at the Server.".
 
 
+cgmp:cgmpMeasurement skos:related ble:Nofity .
+cgmp:cgmpFeature skos:related ble:Read . 
+cgmp:cgmpStatus skos:related ble:Read . 
+cgmp:cgmpSessionStartTime skos:related ble:Read, ble:Write . 
+cgmp:cgmpSessionRunTime skos:related ble:Read .
+ble:RecordAccessControlPoint skos:related ble:Indicate, ble:Write . 
+cgmp:cgmpSpecificOpsControlPoint skos:related ble:Indicate, ble:Write .
 
 
+cgmp:cgmpMeasurement skos:related cgmp:CGMGlucoseConcentrationField .
+cgmp:cgmpMeasurement skos:related cgmp:TimeOffsetField .
+cgmp:cgmpMeasurement skos:related cgmp:SensorStatusAnnunciationField  .
+cgmp:cgmpMeasurement skos:related cgmp:CGMTrendInformationField .
+cgmp:cgmpMeasurement skos:related cgmp:CGMQualityField .
+cgmp:cgmpMeasurement skos:related cgmp:E2ECRCField .
+
+ble:Value skos:narrower cgmp:SizeField . 
+ble:Value skos:narrower cgmp:CGMGlucoseConcentrationField .
+ble:Value skos:narrower cgmp:TimeOffsetField .
+ble:Value skos:narrower cgmp:CGMTrendInformationField .
+ble:Value skos:narrower cgmp:CGMQualityField .
+ble:Value skos:narrower cgmp:E2ECRCField .
+
+cgmp:SizeField a skos:Concept .
+cgmp:CGMGlucoseConcentrationField a skos:Concept .
+cgmp:TimeOffsetField a skos:Concept .
+cgmp:CGMTrendInformationField a skos:Concept .
+cgmp:CGMQualityField a skos:Concept .
+cgmp:E2ECRCField a skos:Concept .
+
+cgmp:CGMGlucoseConcentrationField skos:related xsd:float .
+cgmp:TimeOffsetField skos:related xsd:unsignedShort .
+cgmp:CGMTrendInformationField skos:related xsd:float .
+cgmp:CGMQualityField skos:related  xsd:float .
+cgmp:SizeField skos:related xsd:unsignedByte .
+
+cgmp:SizeField rdfs:label "Size Field" .
+cgmp:CGMGlucoseConcentrationField rdfs:label "CGM Glucose Concentration Field" .
+cgmp:TimeOffsetField rdfs:label "Time Offset Field" .
+cgmp:CGMTrendInformationField rdfs:label "Continuous Glucose Monitoring Trend Information Field" .
+cgmp:CGMQualityField  rdfs:label "Continuous Glucose Monitoring Quality Field" .
+cgmp:E2ECRCField rdfs:label "End-to-End Cyclic Redundancy Check Field".
+
+cgmp:SizeField skos:definition "The Size Field represents the size of the CGM Measurement record." .
+cgmp:CGMGlucoseConcentrationField skos:definition "The CGM Glucose Concentration field contains the CGM glucose concentration." .
+cgmp:TimeOffsetField skos:definition "The Time Offset field is used in conjunction with the CGM Session Start Time to represent the time difference of the separate CGM measurements in relation to the session start time." .
+cgmp:CGMTrendInformationField skos:definition "This field contains the CGM Trend information in (mg/dL)/min as an SFLOAT data type" .
+cgmp:CGMQualityField skos:definition "This field contains the CGM Quality information in % as an SFLOAT data type." .
+cgmp:E2ECRCField skos:definition "If the device supports E2E-safety (E2E-CRC Supported bit is set in CGM Features), the measurement shall be protected by a CRC calculated over all field." .
 
 
 

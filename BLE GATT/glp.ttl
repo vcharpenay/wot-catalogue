@@ -45,3 +45,42 @@ glp:GlucoseMeasurementContext skos:definition  "The Glucose Measurement Context 
 glp:GlucoseFeature rdfs:label "Glucose Feature" .
 glp:GlucoseFeature skos:definition  "The Glucose Feature characteristic shall be used to describe the supported features of the Server." .
 
+ble:Value skos:narrower glp:SequenceNumberField .
+glp:SequenceNumberField a skos:Concept .
+glp:GlucoseMeasurement skos:related glp:SequenceNumberField .
+glp:SequenceNumberField rdfs:label "Sequence Number Field" .
+glp:SequenceNumberField skos:definition "The Sequence Number represents the chronological order of the patient records in the Server measurement database." .
+glp:SequenceNumberField skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower glp:BaseTimeField  .
+glp:BaseTimeField  a skos:Concept .
+glp:GlucoseMeasurement skos:related glp:BaseTimeField  .
+glp:BaseTimeField  rdfs:label "Base Time Field" .
+glp:BaseTimeField  skos:definition "The Base Time field represents the value of an internal real-time clock or equivalent that keeps time relative to its initial setting in resolution of seconds." .
+glp:BaseTimeField  skos:related xsd:dateTime .
+
+ble:Value skos:narrower glp:TimeOffsetField  .
+glp:TimeOffsetField  a skos:Concept .
+glp:GlucoseMeasurement skos:related glp:TimeOffsetField  .
+glp:TimeOffsetField  rdfs:label "Time Offset Field" .
+glp:TimeOffsetField  skos:definition "The Time Offset field is used in conjunction with the Base Time field to represent the user-facing date and time at the time of measurement." .
+glp:TimeOffsetField skos:related xsd:short .
+
+
+ble:Value skos:narrower glp:GlucoseConcentrationField   .
+glp:GlucoseConcentrationField  a skos:Concept .
+glp:GlucoseMeasurement skos:related glp:GlucoseConcentrationField  .
+glp:GlucoseConcentrationField  rdfs:label "Glucose Concentration Field" .
+glp:GlucoseConcentrationField  skos:definition "The Glucose Concentration field is optional, but if it is present, the Type-Sample Location field shall also be present." .
+glp:GlucoseConcentrationField skos:related xsd:float .
+
+
+
+
+
+
+
+
+
+
+

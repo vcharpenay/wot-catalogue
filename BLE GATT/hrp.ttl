@@ -45,3 +45,42 @@ hrp:BodySensorLocation skos:definition  "The Body Sensor Location characteristic
 hrp:HeartRateControlPoint rdfs:label "Heart Rate Control Point" .
 hrp:HeartRateControlPoint skos:definition  "The Heart Rate Control Point characteristic is used to enable a Client to write control points to a Server to control behavior." .
 
+hrp:HeartRateMeasurement skos:related ble:Notify .
+hrp:BodySensorLocation skos:related ble:Read .
+hrp:HeartRateControlPoint skos:related ble:Write .
+
+
+ble:Value skos:narrower hrp:HeartRateValueField  .
+hrp:HeartRateValueField  a skos:Concept .
+hrp:HeartRateMeasurement skos:related hrp:HeartRateValueField   .
+hrp:HeartRateValueField   rdfs:label "Heart Rate Measurement Value" .
+hrp:HeartRateValueField    skos:definition "The Heart Rate Measurement Value field shall be included in the Heart Rate Measurement characteristic." .
+hrp:HeartRateValueField skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower hrp:EnergyExpendedField  .
+hrp:EnergyExpendedField   a skos:Concept .
+hrp:HeartRateMeasurement skos:related hrp:EnergyExpendedField    .
+hrp:EnergyExpendedField    rdfs:label "Energy Expended Field" .
+hrp:EnergyExpendedField     skos:definition "The Energy Expended field represents the accumulated energy expended in kilo Joules since the last time it was reset." .
+hrp:EnergyExpendedField  skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower hrp:RRIntervalField   .
+hrp:RRIntervalField    a skos:Concept .
+hrp:HeartRateMeasurement skos:related hrp:RRIntervalField     .
+hrp:RRIntervalField    rdfs:label "RR(Rh factor) - Interval field" .
+hrp:RRIntervalField     skos:definition "The RR-Interval field may be included in the Heart Rate Measurement characteristic if the device supports RR-Interval measurements." .
+hrp:RRIntervalField  skos:related xsd:unsignedShort .
+
+
+
+
+
+
+
+
+
+
+
+
+
+

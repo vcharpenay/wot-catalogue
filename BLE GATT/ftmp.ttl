@@ -110,6 +110,524 @@ ftmp:SupportedHeartRateRange skos:definition "The Supported Heart Rate Range cha
 ftmp:FitnessMachineControlPoint skos:definition "The Fitness Machine Control Point characteristic is used to request a specific function to be executed on the Server." .
 ftmp:FitnessMachineStatus skos:definition "The Fitness Machine Status characteristic is used to send the status of the Server." .
 
+ftmp:FitnessMachineFeature skos:related ble:Read .
+ftmp:TreadmillData skos:related ble:Notify .
+ftmp:CrossTrainerData skos:related ble:Notify .
+ftmp:StepClimberData skos:related ble:Notify .
+ftmp:StairClimberData skos:related ble:Notify .
+ftmp:RowerData skos:related ble:Notify .
+ftmp:IndoorBikeData skos:related ble:Notify .
+ftmp:TrainingStatus skos:related ble:Read, ble:Notify .
+ftmp:SupportedSpeedRange skos:related ble:Read .
+ftmp:SupportedInclinationRange skos:related ble:Read .
+ftmp:SupportedResistanceLevelRange skos:related ble:Read .
+ftmp:SupportedPowerRange skos:related ble:Read .
+ftmp:SupportedHeartRateRange skos:related ble:Read .
+ftmp:FitnessMachineControlPoint skos:related ble:Write, ble:Indicate .
+ftmp:FitnessMachineStatus skos:related ble:Notify .
+
+ble:Value skos:narrower ftmp:InstantaneousSpeedField .
+ftmp:InstantaneousSpeedField a skos:Concept .
+ftmp:TreadmillData skos:related ftmp:InstantaneousSpeedField .
+ftmp:InstantaneousSpeedField rdfs:label "Instantaneous Speed Field" .
+ftmp:InstantaneousSpeedField skos:definition "The Instantaneous Speed field represents the instantaneous speed of the belt of the treadmill." .
+ftmp:InstantaneousSpeedField skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower ftmp:AverageSpeedField .
+ftmp:AverageSpeedField a skos:Concept .
+ftmp:TreadmillData skos:related ftmp:AverageSpeedField .
+ftmp:AverageSpeedField rdfs:label "Average Speed Field" .
+ftmp:AverageSpeedField skos:definition "The Average Speed field represents the average speed since the beginning of the training session." .
+ftmp:AverageSpeedField skos:related xsd:unsignedShort .
+
+
+ble:Value skos:narrower ftmp:TotalDistanceField .
+ftmp:TotalDistanceField a skos:Concept .
+ftmp:TreadmillData skos:related ftmp:TotalDistanceField  .
+ftmp:TotalDistanceField  rdfs:label "Total Distance Field" .
+ftmp:TotalDistanceField  skos:definition "The Total Distance field represents the total distance reported by the Server since the beginning of the training session." .
+ftmp:TotalDistanceField skos:related xsd:unsignedInt .
+
+ble:Value skos:narrower ftmp:InclinationField .
+ftmp:InclinationField a skos:Concept .
+ftmp:TreadmillData skos:related ftmp:InclinationField  .
+ftmp:InclinationField rdfs:label "Inclination Field" .
+ftmp:InclinationField  skos:definition "The Inclination field represents the current inclination of the Server. A positive value means that the user feels as if they are going uphill and a negative value means that the user feels as if they are going downhill." .
+ftmp:InclinationField skos:related xsd:short .
+
+ble:Value skos:narrower ftmp:RampAngleSettingField .
+ftmp:RampAngleSettingField a skos:Concept .
+ftmp:TreadmillData skos:related ftmp:RampAngleSettingField  .
+ftmp:RampAngleSettingField rdfs:label "Ramp Angle Setting Field" .
+ftmp:RampAngleSettingField  skos:definition "The Ramp Angle Setting field represents the current setting of the ramp angle of the Server." .
+ftmp:RampAngleSettingField skos:related xsd:short .
+
+ftmp:TreadmillData skos:related ftmp:PositiveElevationGainField  .
+ftmp:TreadmillData skos:related ftmp:NegativeElevationGainField .
+
+ble:Value skos:narrower ftmp:NegativeElevationGainField .
+ftmp:NegativeElevationGainField a skos:Concept .
+
+ftmp:NegativeElevationGainField rdfs:label "Negative Elevation Gain Field" .
+ftmp:NegativeElevationGainField  skos:definition "The Negative Elevation Gain field represents the negative elevation gain since the training session has started." .
+ftmp:NegativeElevationGainField skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower ftmp:InstantaneousPaceField .
+ftmp:InstantaneousPaceField  a skos:Concept .
+ftmp:TreadmillData skos:related ftmp:InstantaneousPaceField   .
+ftmp:InstantaneousPaceField  rdfs:label "Instantaneous Pace Field" .
+ftmp:InstantaneousPaceField   skos:definition "The Instantaneous Pace field represents the instantaneous pace of a user while exercising." .
+ftmp:InstantaneousPaceField skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower ftmp:AveragePaceField .
+ftmp:AveragePaceField  a skos:Concept .
+ftmp:TreadmillData skos:related ftmp:AveragePaceField  .
+ftmp:AveragePaceField  rdfs:label "Average Pace Field" .
+ftmp:AveragePaceField   skos:definition "The Average Pace field represents the average pace of a user since the beginning of the training session." .
+ftmp:AveragePaceField skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower ftmp:TotalEnergyField .
+ftmp:TotalEnergyField  a skos:Concept .
+ftmp:TreadmillData skos:related ftmp:TotalEnergyField  .
+ftmp:TotalEnergyField  rdfs:label "Total Energy Field" .
+ftmp:TotalEnergyField   skos:definition "The Total Energy field represents the total expended energy of a user since the training session has started." .
+ftmp:TotalEnergyField skos:related xsd:short .
+
+
+ble:Value skos:narrower ftmp:EnergyperHourField .
+ftmp:EnergyperHourField   a skos:Concept .
+ftmp:TreadmillData skos:related ftmp:EnergyperHourField   .
+ftmp:EnergyperHourField rdfs:label "Energy per Hour Field" .
+ftmp:EnergyperHourField  skos:definition "The Energy per Hour field represents the average expended energy of a user during a period of one hour." .
+ftmp:EnergyperHourField skos:related xsd:short .
+
+
+ble:Value skos:narrower ftmp:EnergyperMinuteField .
+ftmp:EnergyperMinuteField  a skos:Concept .
+ftmp:TreadmillData skos:related ftmp:EnergyperMinuteField  .
+ftmp:EnergyperMinuteField  rdfs:label "Energy per Minute Field" .
+ftmp:EnergyperMinuteField   skos:definition "The Energy per Minute field represents the average expended energy of a user during a period of one minute." .
+ftmp:EnergyperMinuteField skos:related xsd:short .
+
+ble:Value skos:narrower ftmp:HeartRateField .
+ftmp:HeartRateField  a skos:Concept .
+ftmp:TreadmillData skos:related ftmp:HeartRateField  .
+ftmp:HeartRateField  rdfs:label "Heart Rate Field" .
+ftmp:HeartRateField   skos:definition "The Heart Rate field represents the current heart rate value of the user (e.g., measured via the contact heart rate or any other means)." .
+ftmp:HeartRateField skos:related xsd:unsignedByte .
+
+ble:Value skos:narrower ftmp:ElapsedTimeField .
+ftmp:ElapsedTimeField  a skos:Concept .
+ftmp:TreadmillData skos:related ftmp:ElapsedTimeField  .
+ftmp:ElapsedTimeField  rdfs:label "Elapsed Time Field" .
+ftmp:ElapsedTimeField   skos:definition "The Elapsed Time field represents the elapsed time of a training session since the training session has started." .
+ftmp:ElapsedTimeField skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower ftmp:RemainingTimeField .
+ftmp:RemainingTimeField  a skos:Concept .
+ftmp:TreadmillData skos:related ftmp:RemainingTimeField  .
+ftmp:RemainingTimeField  rdfs:label "Remaining Time Field" .
+ftmp:RemainingTimeField   skos:definition "The Remaining Time field represents the remaining time of a training session that has been selected." .
+ftmp:RemainingTimeField  skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower ftmp:ForceonBeltField .
+ftmp:ForceonBeltField  a skos:Concept .
+ftmp:TreadmillData skos:related ftmp:ForceonBeltField  .
+ftmp:ForceonBeltField  rdfs:label "Force on Belt Field" .
+ftmp:ForceonBeltField   skos:definition "The Force on Belt field represents the force being applied to the treadmill belt by the user’s steps" .
+ftmp:ForceonBeltField skos:related xsd:short .
+
+ble:Value skos:narrower ftmp:PowerOutputField .
+ftmp:PowerOutputField  a skos:Concept .
+ftmp:TreadmillData skos:related ftmp:PowerOutputField  .
+ftmp:PowerOutputField  rdfs:label "Power Output Field" .
+ftmp:PowerOutputField   skos:definition "The Power Output field represents the power being applied to the treadmill by the user’s steps" .
+ftmp:PowerOutputField skos:related xsd:short .
+
+ftmp:TreadmillData skos:related ftmp:MetabolicEquivalentField .
+
+
+
+
+
+ftmp:CrossTrainerData skos:related ftmp:InstantaneousSpeedField .
+ftmp:CrossTrainerData skos:related ftmp:AverageSpeedField .
+ftmp:CrossTrainerData skos:related ftmp:TotalDistanceField .
+ftmp:CrossTrainerData skos:related ftmp:InclinationField .
+ftmp:CrossTrainerData skos:related ftmp:PositiveElevationGainField .
+ftmp:CrossTrainerData skos:related ftmp:NegativeElevationGainField .
+ftmp:CrossTrainerData skos:related ftmp:RampAngleSettingField .
+ftmp:CrossTrainerData skos:related ftmp:TotalEnergyField .
+ftmp:CrossTrainerData skos:related ftmp:EnergyperHourField .
+ftmp:CrossTrainerData skos:related ftmp:EnergyperMinuteField .
+ftmp:CrossTrainerData skos:related ftmp:HeartRateField .
+ftmp:CrossTrainerData skos:related ftmp:ElapsedTimeField .
+ftmp:CrossTrainerData skos:related ftmp:RemainingTimeField .
+
+ble:Value skos:narrower ftmp:StepperMinuteField .
+ftmp:StepperMinuteField  a skos:Concept .
+ftmp:CrossTrainerData skos:related ftmp:StepperMinuteField  .
+ftmp:StepperMinuteField  rdfs:label "Step per Minute Field" .
+ftmp:StepperMinuteField   skos:definition "The Step per Minute Rate field represents the average step rate of a user during a period of one minute." .
+ftmp:StepperMinuteField skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower ftmp:AverageStepRateField .
+ftmp:AverageStepRateField  a skos:Concept .
+ftmp:CrossTrainerData skos:related ftmp:AverageStepRateField  .
+ftmp:AverageStepRateField  rdfs:label "Average Step Rate Field" .
+ftmp:AverageStepRateField   skos:definition "The Average Step Rate field represents the average step rate since the beginning of the training session." .
+ftmp:AverageStepRateField skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower ftmp:StrideCountField .
+ftmp:StrideCountField   a skos:Concept .
+ftmp:CrossTrainerData skos:related ftmp:StrideCountField   .
+ftmp:StrideCountField   rdfs:label "Stride Count Field" .
+ftmp:StrideCountField    skos:definition "The Stride Count field represents the total number of strides since the beginning of the training session." .
+ftmp:StrideCountField  skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower ftmp:ResistanceLevelField .
+ftmp:ResistanceLevelField   a skos:Concept .
+ftmp:CrossTrainerData skos:related ftmp:ResistanceLevelField   .
+ftmp:ResistanceLevelField   rdfs:label "Resistance Level Field" .
+ftmp:ResistanceLevelField    skos:definition "The Resistance Level field represents the value of the current value of the resistance level of the Server." .
+ftmp:ResistanceLevelField    skos:related xsd:Short .
+
+ble:Value skos:narrower ftmp:InstantaneousPowerField .
+ftmp:InstantaneousPowerField   a skos:Concept .
+ftmp:CrossTrainerData skos:related ftmp:ResistanceLevelField   .
+ftmp:InstantaneousPowerField   rdfs:label "Instantaneous Power Field" .
+ftmp:InstantaneousPowerField    skos:definition "The Instantaneous Power field represents the value of the instantaneous power measured by the Server." .
+ftmp:InstantaneousPowerField   skos:related xsd:Short .
+
+ble:Value skos:narrower ftmp:AveragePowerField .
+ftmp:AveragePowerField   a skos:Concept .
+ftmp:CrossTrainerData skos:related ftmp:AveragePowerField   .
+ftmp:AveragePowerField   rdfs:label "Average Power Field" .
+ftmp:AveragePowerField    skos:definition "The Average Power field represents the value of the average power measured by the Server since the beginning of the training session." .
+ftmp:AveragePowerField   skos:related xsd:Short .
+
+
+ble:Value skos:narrower ftmp:MetabolicEquivalentField .
+ftmp:MetabolicEquivalentField   a skos:Concept .
+ftmp:CrossTrainerData skos:related ftmp:MetabolicEquivalentField   .
+ftmp:MetabolicEquivalentField   rdfs:label "Metabolic Equivalent Field" .
+ftmp:MetabolicEquivalentField    skos:definition "The Metabolic Equivalent field represents the metabolic equivalent of the user." .
+ftmp:MetabolicEquivalentField   skos:related xsd:unsignedByte .
+
+ftmp:StepClimberData skos:related ftmp:StepperMinuteField .
+ftmp:StepClimberData skos:related ftmp:AverageStepRateField .
+ftmp:StepClimberData skos:related ftmp:TotalEnergyField .
+ftmp:StepClimberData skos:related ftmp:EnergyperHourField .
+ftmp:StepClimberData skos:related ftmp:EnergyperMinuteField .
+ftmp:StepClimberData skos:related ftmp:RemainingTimeField .
+ftmp:StepClimberData skos:related ftmp:HeartRateField .
+ftmp:StepClimberData skos:related ftmp:MetabolicEquivalentField .
+ftmp:StepClimberData skos:related ftmp:ElapsedTimeField .
+
+ble:Value skos:narrower ftmp:FloorsField .
+ftmp:FloorsField    a skos:Concept .
+ftmp:StepClimberData skos:related ftmp:FloorsField   .
+ftmp:FloorsField   rdfs:label "Floors Field" .
+ftmp:FloorsField  skos:definition "The Floors field represents the total number of floors counted by the Server since the beginning of the training session." .
+ftmp:FloorsField skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower ftmp:StepCountField .
+ftmp:StepCountField   a skos:Concept .
+ftmp:StepClimberData skos:related ftmp:StepCountField .
+ftmp:StepCountField   rdfs:label "Step Count Field" .
+ftmp:StepCountField  skos:definition "The Step Count field represents the total number of steps counted by the Server since the beginning of the training session." .
+ftmp:StepCountField skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower ftmp:PositiveElevationGainField .
+ftmp:PositiveElevationGainField  a skos:Concept .
+ftmp:StepClimberData skos:related ftmp:PositiveElevationGainField .
+ftmp:PositiveElevationGainField   rdfs:label "Positive Elevation Gain Field" .
+ftmp:PositiveElevationGainField  skos:definition "The Positive Elevation Gain field represents the positive elevation gain since the beginning of the training session." .
+ftmp:PositiveElevationGainField skos:related xsd:unsignedShort .
+
+
+ftmp:StairClimberData skos:related ftmp:FloorsField .
+ftmp:StairClimberData skos:related ftmp:StepperMinuteRateField .
+ftmp:StairClimberData skos:related ftmp:AverageStepRateField.
+ftmp:StairClimberData skos:related ftmp:PositiveElevationGainField .
+ftmp:StairClimberData skos:related ftmp:StrideCountField .
+ftmp:StairClimberData skos:related ftmp:TotalEnergyField .
+ftmp:StairClimberData skos:related ftmp:EnergyperHourField .
+ftmp:StairClimberData skos:related ftmp:EnergyperMinuteField .
+ftmp:StairClimberData skos:related ftmp:RemainingTimeField .
+ftmp:StairClimberData skos:related ftmp:HeartRateField .
+ftmp:StairClimberData skos:related ftmp:MetabolicEquivalentField .
+ftmp:StairClimberData skos:related ftmp:ElapsedTimeField .
+
+ 
+ble:Value skos:narrower ftmp:StrokeRateField .
+ftmp:StrokeRateField  a skos:Concept .
+ftmp:RowerData skos:related ftmp:StrokeRateField .
+ftmp:StrokeRateField   rdfs:label "Stroke Rate Field" .
+ftmp:StrokeRateField  skos:definition "The Stroke Rate field represents the instantaneous stroke rate measured by the Server." .
+ftmp:StrokeRateField skos:related xsd:unsignedByte .
+
+ble:Value skos:narrower ftmp:StrokeCountField .
+ftmp:StrokeCountField   a skos:Concept .
+ftmp:RowerData skos:related ftmp:StrokeCountField  .
+ftmp:StrokeCountField    rdfs:label "Stroke Count Field" .
+ftmp:StrokeCountField   skos:definition "The Stroke Count field represents the total number of strokes since the beginning of the training session." .
+ftmp:StrokeCountField skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower ftmp:AverageStrokeRateField .
+ftmp:AverageStrokeRateField    a skos:Concept .
+ftmp:RowerData skos:related ftmp:AverageStrokeRateField   .
+ftmp:AverageStrokeRateField    rdfs:label "Average Stroke Rate Field" .
+ftmp:AverageStrokeRateField  skos:definition "The Average Stroke Rate field represents the average speed since the beginning of the training session." .
+ftmp:AverageStrokeRateField skos:related xsd:unsignedByte .
+
+ftmp:RowerData skos:related ftmp:TotalDistanceField .
+ftmp:RowerData skos:related ftmp:InstantaneousPaceField .
+ftmp:RowerData skos:related ftmp:AveragePaceField .
+ftmp:RowerData skos:related ftmp:AveragePowerField .
+ftmp:RowerData skos:related  ftmp:InstantaneousPowerField .
+ftmp:RowerData skos:related ftmp:ResistanceLevelField.
+ftmp:RowerData skos:related ftmp:TotalEnergyField .
+ftmp:RowerData skos:related ftmp:EnergyperHourField .
+ftmp:RowerData skos:related ftmp:EnergyperMinuteField .
+ftmp:RowerData  skos:related ftmp:RemainingTimeField .
+ftmp:RowerData  skos:related ftmp:HeartRateField .
+ftmp:RowerData  skos:related ftmp:MetabolicEquivalentField .
+ftmp:RowerData  skos:related ftmp:ElapsedTimeField .
+
+
+ftmp:IndoorBikeData skos:related ftmp:InstantaneousSpeedField .
+ftmp:IndoorBikeData skos:related ftmp:AverageSpeedField .
+ftmp:IndoorBikeData skos:related ftmp:TotalDistanceField .
+ftmp:IndoorBikeData skos:related ftmp:ResistanceLevelField.
+ftmp:IndoorBikeData skos:related  ftmp:InstantaneousPowerField .
+ftmp:IndoorBikeData skos:related  ftmp:AveragePowerField .
+ftmp:IndoorBikeData skos:related ftmp:TotalEnergyField .
+ftmp:IndoorBikeData skos:related ftmp:EnergyperHourField .
+ftmp:IndoorBikeData skos:related ftmp:EnergyperMinuteField .
+ftmp:IndoorBikeData  skos:related ftmp:RemainingTimeField .
+ftmp:IndoorBikeData  skos:related ftmp:HeartRateField .
+ftmp:IndoorBikeData  skos:related ftmp:MetabolicEquivalentField .
+ftmp:IndoorBikeData  skos:related ftmp:ElapsedTimeField .
+
+ble:Value skos:narrower ftmp:InstantaneousCadenceField .
+ftmp:InstantaneousCadenceField    a skos:Concept .
+ftmp:IndoorBikeData skos:related ftmp:InstantaneousCadenceField   .
+ftmp:InstantaneousCadenceField    rdfs:label "Instantaneous Cadence Field" .
+ftmp:InstantaneousCadenceField  skos:definition "The Instantaneous Cadence field represents the instantaneous cadence of the user." .
+ftmp:InstantaneousCadenceField skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower ftmp:AverageCadenceField .
+ftmp:AverageCadenceField    a skos:Concept .
+ftmp:IndoorBikeData skos:related ftmp:AverageCadenceField   .
+ftmp:AverageCadenceField    rdfs:label "Average Cadence Field" .
+ftmp:AverageCadenceField  skos:definition "The Average Speed field represents the average cadence since the beginning of the training session." .
+ftmp:AverageCadenceField skos:related xsd:unsignedShort .
+
+
+
+ftmp:TrainingStatus skos:related ftmp:TrainingStatusField .
+ble:Value skos:narrower ftmp:TrainingStatusField .
+ftmp:TrainingStatusField    a skos:Concept .
+ftmp:TrainingStatusField    rdfs:label "Training Status Field" .
+ftmp:TrainingStatusField  skos:definition "The Training Status field represents the current training state while a user is exercising." .
+ftmp:TrainingStatusField skos:related xsd:unsignedInt .
+
+ftmp:TrainingStatusField skos:narrower ftmp:Idle .
+ftmp:TrainingStatusField skos:narrower ftmp:WarmingUp .
+ftmp:TrainingStatusField skos:narrower ftmp:LowIntensityInterval .
+ftmp:TrainingStatusField skos:narrower ftmp:HighIntensityInterval .
+ftmp:TrainingStatusField skos:narrower ftmp:RecoveryInterval .
+ftmp:TrainingStatusField skos:narrower ftmp:Isometric .
+ftmp:TrainingStatusField skos:narrower ftmp:HeartRateControl .
+ftmp:TrainingStatusField skos:narrower ftmp:FitnessTest .
+ftmp:TrainingStatusField skos:narrower ftmp:LowSpeedOutside .
+ftmp:TrainingStatusField skos:narrower ftmp:HighSpeedOutside .
+ftmp:TrainingStatusField skos:narrower ftmp:CoolDown .
+ftmp:TrainingStatusField skos:narrower ftmp:WattControl .
+ftmp:TrainingStatusField skos:narrower ftmp:ManualMode .
+ftmp:TrainingStatusField skos:narrower ftmp:PreWorkout .
+ftmp:TrainingStatusField skos:narrower ftmp:PostWorkout .
+
+ftmp:Idle rdfs:label "Idle" .
+ftmp:WarmingUp rdfs:label "Warming Up" .
+ftmp:LowIntensityInterval rdfs:label "Low Intensity Interval".
+ftmp:HighIntensityInterval rdfs:label "High Intensity Interval" .
+ftmp:RecoveryInterval rdfs:label "Recovery Interval".
+ftmp:Isometric rdfs:label "Isometric".
+ftmp:HeartRateControl rdfs:label "Heart Rate Control" .
+ftmp:FitnessTest rdfs:label "Fitness Test" .
+ftmp:LowSpeedOutside rdfs:label "Speed Outside of Control Region - Low".
+ftmp:HighSpeedOutside rdfs:label "Speed Outside of Control Region - High" .
+ftmp:CoolDown rdfs:label "Cool Down" .
+ftmp:WattControl rdfs:label "Watt Control" .
+ftmp:ManualMode rdfs:label "Manual Mode" .
+ftmp:PreWorkout rdfs:label "Pre-Workout" .
+ftmp:PostWorkout rdfs:label "Post-Workout" .
+
+
+ftmp:Idle skos:definition "0x01 - Idle" .
+ftmp:WarmingUp skos:definition "0x02 - Warming Up" .
+ftmp:LowIntensityInterval skos:definition  "0x03-Low Intensity Interval".
+ftmp:HighIntensityInterval skos:definition "0x04 - High Intensity Interval" .
+ftmp:RecoveryInterval skos:definition "0x05 - Recovery Interval".
+ftmp:Isometric skos:definition  "0x06-Isometric".
+ftmp:HeartRateControl skos:definition "0x07 - Heart Rate Control".
+ftmp:FitnessTest skos:definition "0x08 - Fitness Test".
+ftmp:LowSpeedOutside skos:definition "0x09 - Speed Outside of Control Region - Low (increase speed to return to controllable region)".
+ftmp:HighSpeedOutside skos:definition "0x0A - Speed Outside of Control Region - High (decrease speed to return to controllable region)" .
+ftmp:CoolDown skos:definition "0x0B - Cool Down" .
+ftmp:WattControl skos:definition "0x0C- Watt Control".
+ftmp:ManualMode skos:definition "0x0D - Manual Mode (Quick Start)" .
+ftmp:PreWorkout skos:definition "0x0E - Pre-Workout" .
+ftmp:PostWorkout skos:definition "0x0F - Post-Workout" .
+
+ftmp:Idle a skos:Concept  .
+ftmp:WarmingUp a skos:Concept .
+ftmp:LowIntensityInterval a skos:Concept .
+ftmp:HighIntensityInterval a skos:Concept .
+ftmp:RecoveryInterval a skos:Concept .
+ftmp:Isometric a skos:Concept .
+ftmp:HeartRateControl a skos:Concept .
+ftmp:FitnessTest a skos:Concept .
+ftmp:LowSpeedOutside a skos:Concept .
+ftmp:HighSpeedOutside a skos:Concept .
+ftmp:CoolDown a skos:Concept .
+ftmp:WattControl a skos:Concept .
+ftmp:ManualMode a skos:Concept  .
+ftmp:PreWorkout a skos:Concept .
+ftmp:PostWorkout a skos:Concept .
+
+ble:Value skos:narrower ftmp:Idle  .
+ble:Value skos:narrower ftmp:WarmingUp .
+ble:Value skos:narrower ftmp:LowIntensityInterval .
+ble:Value skos:narrower ftmp:HighIntensityInterval .
+ble:Value skos:narrower ftmp:RecoveryInterval  .
+ble:Value skos:narrower ftmp:Isometric  .
+ble:Value skos:narrower ftmp:HeartRateControl  .
+ble:Value skos:narrower ftmp:FitnessTest  .
+ble:Value skos:narrower ftmp:LowSpeedOutside  .
+ble:Value skos:narrower ftmp:HighSpeedOutside .
+ble:Value skos:narrower ftmp:CoolDown .
+ble:Value skos:narrower ftmp:WattControl .
+ble:Value skos:narrower ftmp:ManualMode  .
+ble:Value skos:narrower ftmp:PreWorkout  .
+ble:Value skos:narrower ftmp:PostWorkout  .
+
+
+
+ftmp:TrainingStatus skos:related ftmp:TrainingStatusStringField .
+ble:Value skos:narrower ftmp:TrainingStatusStringField .
+ftmp:TrainingStatusStringField    a skos:Concept .
+ftmp:TrainingStatusStringField    rdfs:label "Training Status String Field" .
+ftmp:TrainingStatusStringField  skos:definition "The Training Status String field is a string-based field that can be used to give more specific information related to the training status." .
+ftmp:TrainingStatusStringField  skos:related xsd:string .
+
+ble:Value skos:narrower ftmp:MinimumSpeedfield, ftmp:MaximumSpeedfield, ftmp:MinimumSpeedIncrementfield .
+ftmp:MinimumSpeedfield a skos:Concept . 
+ftmp:MaximumSpeedfield a skos:Concept .
+ftmp:MinimumSpeedIncrementfield a skos:Concept .
+
+ftmp:SupportedSpeedRange skos:related ftmp:MinimumSpeedfield, ftmp:MaximumSpeedfield, ftmp:MinimumSpeedIncrementfield .
+
+ftmp:MinimumSpeedfield rdfs:label "Minimum Speed" . 
+ftmp:MaximumSpeedfield rdfs:label "Maximum Speed" .
+ftmp:MinimumSpeedIncrementfield rdfs:label "Minimum Speed Increment" .
+
+ftmp:MinimumSpeedfield skos:definition "Minimum Kilometer per hour with a resolution of 0.01" . 
+ftmp:MaximumSpeedfield skos:definition "Maximum Kilometer per hour with a resolution of 0.01" .
+ftmp:MinimumSpeedIncrementfield skos:definition "Minimum Meters per second with a resolution of 0.01" .
+
+ftmp:MinimumSpeedfield skos:related xsd:unsignedShort . 
+ftmp:MaximumSpeedfield skos:related xsd:unsignedShort .
+ftmp:MinimumSpeedIncrementfield skos:related xsd:unsignedShort .
+
+
+
+ble:Value skos:narrower ftmp:MinimumPowerfield, ftmp:MaximumPowerfield, ftmp:MinimumPowerIncrementfield .
+ftmp:MinimumPowerfield a skos:Concept . 
+ftmp:MaximumPowerfield a skos:Concept .
+ftmp:MinimumPowerIncrementfield a skos:Concept .
+
+ftmp:SupportedPowerRange skos:related ftmp:MinimumPowerfield, ftmp:MaximumPowerfield, ftmp:MinimumPowerIncrementfield .
+
+ftmp:MinimumPowerfield rdfs:label "Minimum Power" . 
+ftmp:MaximumPowerfield rdfs:label "Maximum Power" .
+ftmp:MinimumPowerIncrementfield rdfs:label "Minimum Power Increment" .
+
+ftmp:MinimumPowerfield skos:definition "Minimum Watt  with a resolution of 1" . 
+ftmp:MaximumPowerfield skos:definition "Maximum Watt  with a resolution of 1" .
+ftmp:MinimumPowerIncrementfield skos:definition "Minimum Watt  with a resolution of 1" .
+
+ftmp:MinimumPowerfield skos:related xsd:Short . 
+ftmp:MaximumPowerfield skos:related xsd:Short .
+ftmp:MinimumPowerIncrementfield skos:related xsd:unsignedShort .
+
+
+ble:Value skos:narrower ftmp:MinimumResistanceLevelField, ftmp:MaximumResistanceLevelField, ftmp:MinimumResistanceIncrementfield .
+ftmp:MinimumResistanceLevelField a skos:Concept . 
+ftmp:MaximumResistanceLevelField a skos:Concept .
+ftmp:MinimumResistanceIncrementfield a skos:Concept .
+
+ftmp:SupportedResistanceLevelRange skos:related ftmp:MinimumPowerfield, ftmp:MaximumResistanceLevelField, ftmp:MinimumResistanceIncrementfield .
+
+ftmp:MinimumResistanceLevelField rdfs:label "Minimum Resistance Level" . 
+ftmp:MaximumResistanceLevelField rdfs:label "Maximum Resistance Level" .
+ftmp:MinimumResistanceIncrementfield rdfs:label "Minimum Resistance Increment" .
+
+ftmp:MinimumResistanceLevelField skos:definition "Unitless with a resolution of 0.1" . 
+ftmp:MaximumResistanceLevelField skos:definition "Unitless with a resolution of 0.1" .
+ftmp:MinimumResistanceIncrementfield skos:definition "Unitless with a resolution of 0.1" .
+
+ftmp:MinimumResistanceLevelField skos:related xsd:Short . 
+ftmp:MaximumResistanceLevelField skos:related xsd:Short .
+ftmp:MinimumResistanceIncrementfield skos:related xsd:unsignedShort .
+
+
+ble:Value skos:narrower ftmp:MinimumInclinationfield, ftmp:MaximumInclinationfield, ftmp:MinimumInclinationIncrementfield .
+ftmp:MinimumInclinationfield a skos:Concept . 
+ftmp:MaximumInclinationfield a skos:Concept .
+ftmp:MinimumInclinationIncrementfield a skos:Concept .
+
+ftmp:SupportedInclinationRange skos:related ftmp:MinimumInclinationfield, ftmp:MaximumInclinationfield, ftmp:MinimumInclinationIncrementfield .
+
+ftmp:MinimumInclinationfield rdfs:label "Minimum Inclination" . 
+ftmp:MaximumInclinationfield rdfs:label "Maximum Inclination" .
+ftmp:MinimumInclinationIncrementfield rdfs:label "Minimum Inclination Increment" .
+
+ftmp:MinimumInclinationfield skos:definition "Minimum Percent with a resolution of 0.1" . 
+ftmp:MaximumInclinationfield skos:definition "Maximum Percent with a resolution of 0.1" .
+ftmp:MinimumInclinationIncrementfield skos:definition "Minimum Percent with a resolution of 0.1" .
+
+ftmp:MinimumInclinationfield skos:related xsd:Short . 
+ftmp:MaximumInclinationfield skos:related xsd:Short .
+ftmp:MinimumInclinationIncrementfield skos:related xsd:unsignedShort .
+
+
+ble:Value skos:narrower ftmp:MinimumHeartRatefield, ftmp:MaximumHeartRatefield, ftmp:MinimumHeartRateIncrementfield .
+ftmp:MinimumHeartRatefield a skos:Concept . 
+ftmp:MaximumHeartRatefield a skos:Concept .
+ftmp:MinimumHeartRateIncrementfield a skos:Concept .
+
+ftmp:SupportedHeartRateRange skos:related ftmp:MinimumHeartRatefield, ftmp:MaximumHeartRatefield, ftmp:MinimumHeartRateIncrementfield .
+
+ftmp:MinimumHeartRatefield rdfs:label "Minimum Heart Rate" . 
+ftmp:MaximumHeartRatefield rdfs:label "Maximum Heart Rate" .
+ftmp:MinimumHeartRateIncrementfield rdfs:label "Minimum Heart Rate Increment" .
+
+ftmp:MinimumHeartRatefield skos:definition "Minimum Beats per minute with a resolution of 1" . 
+ftmp:MaximumHeartRatefield skos:definition "Maximum Beats per minute with a resolution of 1" .
+ftmp:MinimumHeartRateIncrementfield skos:definition "Minimum Beats per minute with a resolution of 1" .
+
+ftmp:MinimumHeartRatefield skos:related xsd:unsignedByte . 
+ftmp:MaximumHeartRatefield skos:related xsd:unsignedByte .
+ftmp:MinimumHeartRateIncrementfield skos:related xsd:unsignedByte .
+
+
+
+
+
+
 
 
 

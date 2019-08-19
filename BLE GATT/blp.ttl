@@ -18,7 +18,6 @@ blp:BloodPressureProfile owl:versionInfo "1.0.1" .
 
 ble:Profile skos:narrower blp:BloodPressureProfile .
 
-ble:Service skos:narrower blp:DeviceInformationService .
 ble:Service skos:narrower blp:BloodPressureService .
 
 blp:BloodPressureProfile skos:related blp:BloodPressureService .
@@ -45,6 +44,52 @@ blp:IntermediateCuffPressure rdfs:label "Intermediate Cuff Pressure" .
 blp:IntermediateCuffPressure skos:definition "The Intermediate Cuff Pressure characteristic may be used to send Current Cuff Pressure values to a device for display purposes while the measurement is in progress" .
 blp:BloodPressureFeature rdfs:label "Blood Pressure Feature".
 blp:BloodPressureFeature skos:definition "The Blood Pressure Feature characteristic shall be used to describe the supported features of the Blood Pressure Sensor.".                                                                     
+
+blp:BloodPressureMeasurement skos:related ble:Indicate .
+blp:IntermediateCuffPressure skos:related ble:Notify .
+blp:BloodPressureFeature skos:related ble:Read .
+
+blp:BloodPressureMeasurementCompoundValueField a skos:Concept .
+ble:Value skos:narrower blp:BloodPressureMeasurementCompoundValueField .
+blp:BloodPressureMeasurement skos:related blp:BloodPressureMeasurementCompoundValueField .
+blp:BloodPressureMeasurementCompoundValueField rdfs:label "Blood Pressure Measurement Compound Value Field" .
+blp:BloodPressureMeasurementCompoundValueField skos:definition "It is composed of three subfields: Systolic, Diastolic and Mean Arterial Pressure (MAP)" .
+blp:BloodPressureMeasurementCompoundValueField skos:related xsd:float .
+
+blp:TimeStampField a skos:Concept .
+ble:Value skos:narrower blp:TimeStampField  .
+blp:BloodPressureMeasurement skos:related blp:TimeStampField .
+blp:TimeStampField rdfs:label "Time Stamp Field" .
+blp:TimeStampField skos:definition "It is composed of three subfields: Systolic, Diastolic and Mean Arterial Pressure (MAP)." .
+blp:TimeStampField skos:related xsd:dateTime .
+
+blp:PulseRateField  a skos:Concept .
+ble:Value skos:narrower blp:PulseRateField  .
+blp:BloodPressureMeasurement skos:related blp:PulseRateField .
+blp:PulseRateField rdfs:label "Pulse Rate Field" .
+blp:PulseRateField skos:definition "The Pulse Rate field may be included in the Blood Pressure Measurement characteristic if the device supports pulse rate measurements." .
+blp:PulseRateField  skos:related xsd:float .
+
+blp:UserIDField  a skos:Concept .
+ble:Value skos:narrower blp:UserIDField .
+blp:BloodPressureMeasurement skos:related blp:UserIDField .
+blp:UserIDField rdfs:label "User ID Field" .
+blp:UserIDField skos:definition "The User ID field shall be included in the Blood Pressure Measurement characteristic if the device supports multiple users." .
+blp:UserIDField skos:related xsd:unsignedByte .
+
+
+blp:IntermediateCuffPressureCompoundValueField skos:related xsd:float .
+blp:IntermediateCuffPressureCompoundValueField  a skos:Concept .
+ble:Value skos:narrower blp:IntermediateCuffPressureCompoundValueField .
+
+blp:IntermediateCuffPressure skos:related blp:IntermediateCuffPressureCompoundValueField .
+blp:IntermediateCuffPressureCompoundValueField rdfs:label "Intermediate Cuff Pressure Compound Value Field" .
+blp:IntermediateCuffPressureCompoundValueField skos:definition "This Intermediate Cuff Pressure Compound Value field is composed of three subfields: Current Cuff Pressure and two unused subfields and is included in the Intermediate Cuff Pressure characteristic." .
+blp:IntermediateCuffPressureCompoundValueField skos:related xsd:float .
+
+blp:IntermediateCuffPressure skos:related blp:TimeStampField, blp:PulseRateField, blp:UserIDField .
+
+
 
 
 

@@ -53,6 +53,37 @@ anp:AlertNotificationControlPoint rdfs:label "Alert Notification Control Point" 
 
 anp:SupportedNewAlertCategory skos:definition "A bit map showing which categories of new alert are supported and which are not.".
 anp:NewAlert skos:definition "The count of new alerts (for a given category) in the server" .
-anp:SupportedUnreadAlertCategory  skos:definition "a bit map showing which categories of unread alert events are supported and which are not." .
+anp:SupportedUnreadAlertCategory  skos:definition "A bit map showing which categories of unread alert events are supported and which are not." .
 anp:UnreadAlertStatus skos:definition "The count of unread alert events existing in the server. The count of unread alert events is provided with the Category ID." .
 anp:AlertNotificationControlPoint skos:definition "This characteristic allows the client device to enable/disable the alert notification of new alert and unread alert events more selectively than can be done by setting or clearing the notification bit in the Client Characteristic configuration for each alert characteristic.".
+
+anp:SupportedNewAlertCategory skos:related ble:Read .
+anp:NewAlert skos:related ble:Notify .
+anp:SupportedUnreadAlertCategory  skos:related ble:Read.
+anp:UnreadAlertStatus skos:related ble:Notify .
+anp:AlertNotificationControlPoint skos:related ble:Write .
+
+anp:NumberofNewAlert a skos:Concept .
+ble:Value skos:narrower anp:NumberofNewAlert .
+anp:NewAlert skos:related anp:NumberofNewAlert .
+anp:NumberofNewAlert rdfs:label "Number of New Alert" .
+anp:NumberofNewAlert skos:definition "This characteristic provides the count of new alerts (for a given category) in the server." .
+anp:NumberofNewAlert skos:related xsd:unsignedByte .
+
+anp:CategoryID a skos:Concept .
+ble:Value skos:narrower anp:CategoryID .
+anp:NewAlert skos:related anp:CategoryID .
+anp:CategoryID rdfs:label "Category ID" .
+anp:CategoryID skos:definition "This field shows the category of the new alert." .
+
+
+anp:TextStringInformation a skos:Concept .
+ble:Value skos:narrower anp:TextStringInformation .
+anp:NewAlert skos:related anp:TextStringInformation .
+anp:TextStringInformation rdfs:label "Text String Information" .
+anp:TextStringInformation skos:definition "The field provides brief text information for the last alert." .
+anp:TextStringInformation skos:related xsd:string .
+
+
+
+
