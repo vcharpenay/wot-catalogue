@@ -126,12 +126,8 @@ ftmp:SupportedHeartRateRange skos:related ble:Read .
 ftmp:FitnessMachineControlPoint skos:related ble:Write, ble:Indicate .
 ftmp:FitnessMachineStatus skos:related ble:Notify .
 
-ble:Value skos:narrower ftmp:InstantaneousSpeedField .
-ftmp:InstantaneousSpeedField a skos:Concept .
-ftmp:TreadmillData skos:related ftmp:InstantaneousSpeedField .
-ftmp:InstantaneousSpeedField rdfs:label "Instantaneous Speed Field" .
-ftmp:InstantaneousSpeedField skos:definition "The Instantaneous Speed field represents the instantaneous speed of the belt of the treadmill." .
-ftmp:InstantaneousSpeedField skos:related xsd:unsignedShort .
+ftmp:TreadmillData skos:related ble:InstantaneousSpeedField .
+
 
 ble:Value skos:narrower ftmp:AverageSpeedField .
 ftmp:AverageSpeedField a skos:Concept .
@@ -250,7 +246,7 @@ ftmp:TreadmillData skos:related ftmp:MetabolicEquivalentField .
 
 
 
-ftmp:CrossTrainerData skos:related ftmp:InstantaneousSpeedField .
+ftmp:CrossTrainerData skos:related ble:InstantaneousSpeedField .
 ftmp:CrossTrainerData skos:related ftmp:AverageSpeedField .
 ftmp:CrossTrainerData skos:related ftmp:TotalDistanceField .
 ftmp:CrossTrainerData skos:related ftmp:InclinationField .
@@ -290,21 +286,17 @@ ftmp:ResistanceLevelField   a skos:Concept .
 ftmp:CrossTrainerData skos:related ftmp:ResistanceLevelField   .
 ftmp:ResistanceLevelField   rdfs:label "Resistance Level Field" .
 ftmp:ResistanceLevelField    skos:definition "The Resistance Level field represents the value of the current value of the resistance level of the Server." .
-ftmp:ResistanceLevelField    skos:related xsd:Short .
+ftmp:ResistanceLevelField    skos:related xsd:short .
 
-ble:Value skos:narrower ftmp:InstantaneousPowerField .
-ftmp:InstantaneousPowerField   a skos:Concept .
-ftmp:CrossTrainerData skos:related ftmp:ResistanceLevelField   .
-ftmp:InstantaneousPowerField   rdfs:label "Instantaneous Power Field" .
-ftmp:InstantaneousPowerField    skos:definition "The Instantaneous Power field represents the value of the instantaneous power measured by the Server." .
-ftmp:InstantaneousPowerField   skos:related xsd:Short .
+ftmp:CrossTrainerData skos:related  ble:InstantaneousPowerField   .
+
 
 ble:Value skos:narrower ftmp:AveragePowerField .
 ftmp:AveragePowerField   a skos:Concept .
 ftmp:CrossTrainerData skos:related ftmp:AveragePowerField   .
 ftmp:AveragePowerField   rdfs:label "Average Power Field" .
 ftmp:AveragePowerField    skos:definition "The Average Power field represents the value of the average power measured by the Server since the beginning of the training session." .
-ftmp:AveragePowerField   skos:related xsd:Short .
+ftmp:AveragePowerField   skos:related xsd:short .
 
 
 ble:Value skos:narrower ftmp:MetabolicEquivalentField .
@@ -385,7 +377,7 @@ ftmp:RowerData skos:related ftmp:TotalDistanceField .
 ftmp:RowerData skos:related ftmp:InstantaneousPaceField .
 ftmp:RowerData skos:related ftmp:AveragePaceField .
 ftmp:RowerData skos:related ftmp:AveragePowerField .
-ftmp:RowerData skos:related  ftmp:InstantaneousPowerField .
+ftmp:RowerData skos:related  ble:InstantaneousPowerField .
 ftmp:RowerData skos:related ftmp:ResistanceLevelField.
 ftmp:RowerData skos:related ftmp:TotalEnergyField .
 ftmp:RowerData skos:related ftmp:EnergyperHourField .
@@ -396,11 +388,11 @@ ftmp:RowerData  skos:related ftmp:MetabolicEquivalentField .
 ftmp:RowerData  skos:related ftmp:ElapsedTimeField .
 
 
-ftmp:IndoorBikeData skos:related ftmp:InstantaneousSpeedField .
+ftmp:IndoorBikeData skos:related ble:InstantaneousSpeedField .
 ftmp:IndoorBikeData skos:related ftmp:AverageSpeedField .
 ftmp:IndoorBikeData skos:related ftmp:TotalDistanceField .
 ftmp:IndoorBikeData skos:related ftmp:ResistanceLevelField.
-ftmp:IndoorBikeData skos:related  ftmp:InstantaneousPowerField .
+ftmp:IndoorBikeData skos:related  ble:InstantaneousPowerField .
 ftmp:IndoorBikeData skos:related  ftmp:AveragePowerField .
 ftmp:IndoorBikeData skos:related ftmp:TotalEnergyField .
 ftmp:IndoorBikeData skos:related ftmp:EnergyperHourField .
@@ -559,8 +551,8 @@ ftmp:MinimumPowerfield skos:definition "Minimum Watt  with a resolution of 1" .
 ftmp:MaximumPowerfield skos:definition "Maximum Watt  with a resolution of 1" .
 ftmp:MinimumPowerIncrementfield skos:definition "Minimum Watt  with a resolution of 1" .
 
-ftmp:MinimumPowerfield skos:related xsd:Short . 
-ftmp:MaximumPowerfield skos:related xsd:Short .
+ftmp:MinimumPowerfield skos:related xsd:short . 
+ftmp:MaximumPowerfield skos:related xsd:short .
 ftmp:MinimumPowerIncrementfield skos:related xsd:unsignedShort .
 
 
@@ -579,8 +571,8 @@ ftmp:MinimumResistanceLevelField skos:definition "Unitless with a resolution of 
 ftmp:MaximumResistanceLevelField skos:definition "Unitless with a resolution of 0.1" .
 ftmp:MinimumResistanceIncrementfield skos:definition "Unitless with a resolution of 0.1" .
 
-ftmp:MinimumResistanceLevelField skos:related xsd:Short . 
-ftmp:MaximumResistanceLevelField skos:related xsd:Short .
+ftmp:MinimumResistanceLevelField skos:related xsd:short . 
+ftmp:MaximumResistanceLevelField skos:related xsd:short .
 ftmp:MinimumResistanceIncrementfield skos:related xsd:unsignedShort .
 
 
@@ -599,8 +591,8 @@ ftmp:MinimumInclinationfield skos:definition "Minimum Percent with a resolution 
 ftmp:MaximumInclinationfield skos:definition "Maximum Percent with a resolution of 0.1" .
 ftmp:MinimumInclinationIncrementfield skos:definition "Minimum Percent with a resolution of 0.1" .
 
-ftmp:MinimumInclinationfield skos:related xsd:Short . 
-ftmp:MaximumInclinationfield skos:related xsd:Short .
+ftmp:MinimumInclinationfield skos:related xsd:short . 
+ftmp:MaximumInclinationfield skos:related xsd:short .
 ftmp:MinimumInclinationIncrementfield skos:related xsd:unsignedShort .
 
 

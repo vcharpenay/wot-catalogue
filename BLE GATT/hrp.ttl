@@ -24,7 +24,7 @@ hrp:HeartRateProfile skos:related ble:DeviceInformationService .
 hrp:HeartRateProfile skos:related hrp:HeartRateService .
 
 hrp:HeartRateService rdfs:label "Heart Rate Service" .
-hrp:HeartRateService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=239865> .
+hrp:HeartRateService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=239866> .
 hrp:HeartRateService skos:definition "The Heart Rate Service exposes heart rate and other data related to a heart rate sensor intended for fitness applications." .
 hrp:HeartRateService owl:versionInfo "1.0" .
 

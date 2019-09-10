@@ -69,7 +69,7 @@ cgmp:cgmpSessionRunTime skos:definition "The cgmp Session Run Time shall define 
 cgmp:cgmpSpecificOpsControlPoint skos:definition "The Client shall perform a write to the cgmp Specific Ops Control Point to request a desired cgmp specific procedure at the Server.".
 
 
-cgmp:cgmpMeasurement skos:related ble:Nofity .
+cgmp:cgmpMeasurement skos:related ble:Notify .
 cgmp:cgmpFeature skos:related ble:Read . 
 cgmp:cgmpStatus skos:related ble:Read . 
 cgmp:cgmpSessionStartTime skos:related ble:Read, ble:Write . 
@@ -92,6 +92,12 @@ ble:Value skos:narrower cgmp:CGMTrendInformationField .
 ble:Value skos:narrower cgmp:CGMQualityField .
 ble:Value skos:narrower cgmp:E2ECRCField .
 
+cgmp:cgmpStatus skos:related cgmp:TimeOffsetField .
+cgmp:cgmpStatus skos:related cgmp:E2ECRCField .
+cgmp:cgmpSessionStartTime skos:related cgmp:SessionStartTimeField, cgmp:E2ECRCField, cgmp:TimeZoneField, cgmp:DTSOffsetField .
+cgmp:cgmpSessionRunTime skos:related cgmp:E2ECRCField, cgmp:cgmpSessionRunTimeField.
+
+
 cgmp:SizeField a skos:Concept .
 cgmp:CGMGlucoseConcentrationField a skos:Concept .
 cgmp:TimeOffsetField a skos:Concept .
@@ -104,6 +110,7 @@ cgmp:TimeOffsetField skos:related xsd:unsignedShort .
 cgmp:CGMTrendInformationField skos:related xsd:float .
 cgmp:CGMQualityField skos:related  xsd:float .
 cgmp:SizeField skos:related xsd:unsignedByte .
+cgmp:E2ECRCField skos:related xsd:unsignedShort .
 
 cgmp:SizeField rdfs:label "Size Field" .
 cgmp:CGMGlucoseConcentrationField rdfs:label "CGM Glucose Concentration Field" .
@@ -118,6 +125,38 @@ cgmp:TimeOffsetField skos:definition "The Time Offset field is used in conjuncti
 cgmp:CGMTrendInformationField skos:definition "This field contains the CGM Trend information in (mg/dL)/min as an SFLOAT data type" .
 cgmp:CGMQualityField skos:definition "This field contains the CGM Quality information in % as an SFLOAT data type." .
 cgmp:E2ECRCField skos:definition "If the device supports E2E-safety (E2E-CRC Supported bit is set in CGM Features), the measurement shall be protected by a CRC calculated over all field." .
+
+
+cgmp:cgmpFeature skos:related cgmp:E2ECRCField .
+
+cgmp:SessionStartTimeField a skos:Concept .
+cgmp:TimeZoneField a skos:Concept .
+cgmp:DTSOffsetField a skos:Concept .
+cgmp:cgmpSessionRunTimeField a skos:Concept .
+
+ble:Value skos:narrower cgmp:SessionStartTimeField .
+ble:Value skos:narrower cgmp:TimeZoneField .
+ble:Value skos:narrower cgmp:DTSOffsetField .
+ble:Value skos:narrower cgmp:cgmpSessionRunTimeField .
+
+cgmp:SessionStartTimeField rdfs:label "Session Start Time Field" .
+cgmp:TimeZoneField rdfs:label "Time zone Field" .
+cgmp:DTSOffsetField rdfs:label "Daylight Saving Time Offset Field" .
+cgmp:cgmpSessionRunTimeField rdfs:label "Session Run Time Field".
+
+cgmp:SessionStartTimeField skos:definition "The Session Start Time Field defines the time of the initial CGM measurement" . 
+cgmp:TimeZoneField skos:definition "To know an absolute Time, it is necessary to know the Time Zone to which the Session  Start Time is related to." .
+cgmp:DTSOffsetField skos:definition "To know an absolute Time, it is also necessary to know the Daylight Saving setting" .
+cgmp:cgmpSessionRunTimeField skos:definition "The CGM Session Run Time shall define the expected run time of the CGM session" .
+
+cgmp:SessionStartTimeField skos:related xsd:unsignedShort .
+cgmp:TimeZoneField skos:related xsd:byte .
+cgmp:DTSOffsetField skos:related xsd:unsignedByte .
+cgmp:cgmpSessionRunTimeField skos:related xsd:unsignedShort .
+
+
+
+
 
 
 

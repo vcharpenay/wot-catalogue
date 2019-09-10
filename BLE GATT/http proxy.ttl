@@ -60,8 +60,9 @@ ble:HTTPSSecurity skos:definition "The HTTPS Security characteristic contains th
 
 
 ble:WriteLong a skos:Concept .
-ble:ReadLong a skos:Concept .
-
+ble:WriteLong rdfs:label "Write Long" .
+ble:WriteLong skos:definition "Characteristic Value is written to a server when the client knows the Characteristic Value Handle but the length of the Characteristic Value is longer than can be sent in a single Write Request Attribute protocol message." .
+ble:Property skos:narrower ble:WriteLong .
 
 ble:URI skos:related ble:Write, ble:WriteLong .
 ble:HTTPHeaders  skos:related ble:Read, ble:Write, ble:ReadLong, ble:WriteLong .

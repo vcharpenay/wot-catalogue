@@ -13,7 +13,7 @@ pasp:RingerSetting a skos:Concept .
 pasp:RingerControlPoint a skos:Concept .
 
 pasp:PhoneAlertStatusProfile rdfs:label "Phone Alert Status Profile" .
-pasp:PhoneAlertStatusProfile rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=261266> .
+pasp:PhoneAlertStatusProfile rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=241861> .
 pasp:PhoneAlertStatusProfile skos:definition "This profile enables a PUID device to alert its user about the alert status of a phone connected to the PUID device." .
 pasp:PhoneAlertStatusProfile owl:versionInfo "1.0" .
 
@@ -49,6 +49,15 @@ pasp:AlertStatus skos:related ble:Read, ble:Notify .
 pasp:RingerSetting skos:related ble:Read, ble:Notify .
 pasp:RingerControlPoint skos:related ble:WritewithoutResponse .
 
-pasp:AlertStatus skos:related xsd:unsigedByte .
-pasp:RingerSetting skos:related xsd:unsigedByte .
-pasp:RingerControlPoint skos:related xsd:unsigedByte .
+pasp:AlertStatusValue skos:related xsd:unsignedByte .
+pasp:RingerSetting skos:related xsd:unsignedByte .
+pasp:RingerControlPoint skos:related xsd:unsignedByte .
+
+pasp:AlertStatus skos:related pasp:AlertStatusValue .
+ble:Value skos:narrower pasp:AlertStatusValue .
+pasp:AlertStatusValue a skos:Concept .
+pasp:AlertStatusValue rdfs:label "Alert Status Value" .
+pasp:AlertStatusValue skos:definition "The Alert Status characteristic returns the current value of server’s alert status when read" .
+
+
+

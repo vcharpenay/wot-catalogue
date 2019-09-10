@@ -57,17 +57,16 @@ plxp:PLXFeatures skos:related  ble:Read .
 
 
 plxp:PLXSpotcheckMeasurement skos:related plxp:SpO2PRSpotCheckField .
-plxp:PLXSpotcheckMeasurement skos:related plxp:TimestampField . 
+plxp:PLXSpotcheckMeasurement skos:related ble:TimestampField . 
 
 plxp:SpO2PRSpotCheckField a skos:Concept .
-plxp:TimestampField a skos:Concept . 
-ble:Value skos:narrower plxp:SpO2PRSpotCheckField , plxp:TimestampField .
+
+ble:Value skos:narrower plxp:SpO2PRSpotCheckField .
 
 plxp:SpO2PRSpotCheckField rdfs:label "Percent oxygen saturation of hemoglobin and Pulse Rate Spot Check" .
-plxp:TimestampField rdfs:label "Timestamp field" .
+
 plxp:SpO2PRSpotCheckField skos:definition  "The SpO2PR-Spot-Check field shall be included in the PLX Spot-check Measurement characteristic." .
-plxp:TimestampField skos:definition "The Timestamp field shall be included in the PLX Spot-check Measurement characteristic if the Server supports storing Spot-check measurements." .
-plxp:TimestampField skos:related xsd:dateTime .
+
 plxp:SpO2PRSpotCheckField skos:related xsd:float .
 
 

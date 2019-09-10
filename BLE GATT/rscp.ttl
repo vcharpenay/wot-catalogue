@@ -51,35 +51,32 @@ rscp:RSCMeasurement skos:related ble:Notify .
 rscp:RSCFeature skos:related ble:Read, ble:Write .
 rscp:SCControlPoint skos:related ble:Indicate, ble:Write .
 
-rscp:InstantaneousSpeedField a skos:Concept .
 rscp:InstantaneousCadenceField a skos:Concept .
 rscp:InstantaneousStrideLengthField a skos:Concept .
 rscp:TotalDistanceField a skos:Concept .
 
-ble:Value skos:narrower rscp:InstantaneousSpeedField .
 ble:Value skos:narrower rscp:InstantaneousCadenceField .
 ble:Value skos:narrower rscp:InstantaneousStrideLengthField .
 ble:Value skos:narrower rscp:TotalDistanceField .
 
-rscp:RSCMeasurement skos:related rscp:InstantaneousSpeedField .
+rscp:RSCMeasurement skos:related ble:InstantaneousSpeedField .
 rscp:RSCMeasurement skos:related rscp:InstantaneousCadenceField .
 rscp:RSCMeasurement skos:related rscp:InstantaneousStrideLengthField .
 rscp:RSCMeasurement skos:related rscp:TotalDistanceField .
 
 rscp:TotalDistanceField skos:related xsd:unsignedInt .
-rscp:InstantaneousSpeedField skos:related xsd:unsignedShort .
 rscp:InstantaneousCadenceField skos:related xsd:unsignedByte .
 rscp:InstantaneousStrideLengthField skos:related xsd:unsignedShort .
 
-rscp:InstantaneousSpeedField rdfs:label "Instantaneous Speed Field" .
+
 rscp:InstantaneousCadenceField rdfs:label "Instantaneous Cadence Field" .
 rscp:InstantaneousStrideLengthField rdfs:label "Instantaneous Stride Length Field" .
 rscp:TotalDistanceField rdfs:label "Total Distance Field" .
 
-rscp:InstantaneousSpeedField skos:definition "The Instantaneous Speed field shall be included in the RSC Measurement characteristic." .
 rscp:InstantaneousCadenceField skos:definition "The Instantaneous Cadence represents the number of times per minute a foot fall occurs." .
 rscp:InstantaneousStrideLengthField skos:definition "The Instantaneous Stride Length field may be included in the RSC Measurement characteristic if the device supports the Instantaneous Stride Length feature." .
 rscp:TotalDistanceField skos:definition "The Total Distance field may be included in the RSC Measurement characteristic if the device supports the Total Distance feature." .
+
 
 
 

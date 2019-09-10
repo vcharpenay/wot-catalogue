@@ -42,7 +42,7 @@ pxp:TxPowerLevelField a skos:Concept .
 ble:Value skos:narrower pxp:TxPowerLevelField .
 pxp:TxPowerLevelField rdfs:label "Transmit Power Level Field" .
 pxp:TxPowerLevelField skos:definition "The Tx Power Level characteristic returns the current transmit power level when read using the GATT Characteristic Read Value procedure." .
-pxp:TxPowerLevelField skos:related xsd:Byte .
+pxp:TxPowerLevelField skos:related xsd:byte .
 
 ble:Service skos:narrower pxp:LinkLossService .
 

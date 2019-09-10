@@ -50,8 +50,9 @@ aiop:Digital skos:definition "The Digital characteristic is used to expose and c
 aiop:Analog rdfs:label "Analog characteristic" .
 aiop:Analog skos:definition "The Analog characteristic is used to read or write the value of one of the IOM’s analog signals." .
 
-aiop:Aggregate rdfs:label "Digital characteristic" .
+aiop:Aggregate rdfs:label "Aggregate characteristic" .
 aiop:Aggregate skos:definition "Aggregate characteristic is used to aggregate all Digital characteristics with the Read property set (if any available) and all of the Analog characteristics with Read properties set (if any available)." .
+
 
 
 aiop:AnalogSignalValue a skos:Concept .

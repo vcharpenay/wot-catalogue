@@ -101,7 +101,7 @@ ble:Latitude skos:related ble:LatitudeValue .
 ble:LatitudeValue  a skos:Concept .
 ble:Value skos:narrower ble:LatitudeValue  .
 ble:LatitudeValue  rdfs:label "The current value of the Latitude Characteristic." .
-ble:LatitudeValue  skos:definition "When read, the Server shall return the current value of the Longitude Characteristic." .
+ble:LatitudeValue  skos:definition "When read, the Server shall return the current value of the Latitude Characteristic." .
 ble:LatitudeValue  skos:related xsd:integer .
 
 
@@ -157,7 +157,7 @@ ble:LocationName skos:related ble:LocationNameValue .
 ble:LocationNameValue     a skos:Concept .
 ble:Value skos:narrower ble:LocationNameValue   .
 ble:LocationNameValue    rdfs:label "Location Name Value" .
-ble:LocationNameValue    skos:definition "When read, the Server shall return the current value of the Uncertainty Characteristic." .
+ble:LocationNameValue    skos:definition "When read, the Server shall return the current value of the Location Name Characteristic." .
 ble:LocationNameValue   skos:related xsd:string .
 
 

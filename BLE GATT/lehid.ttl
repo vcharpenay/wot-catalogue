@@ -164,3 +164,29 @@ lehid:bcdHID skos:related xsd:unsignedShort .
 lehid:bCountryCode skos:related xsd:unsignedByte .
 
 
+lehid:HIDControlPoint skos:related lehid:HIDControlPointCharacteristicValue .
+lehid:HIDControlPointCharacteristicValue a skos:Concept .
+ble:Value skos:narrower lehid:HIDControlPointCharacteristicValue . 
+lehid:HIDControlPointCharacteristicValue rdfs:label "HID Control Point Characteristic Value" .
+lehid:HIDControlPointCharacteristicValue skos:definition "The HID Control Point characteristic value contains an enumeration of values when written" .
+lehid:HIDControlPointCharacteristicValue skos:related xsd:unsignedByte .
+
+lehid:HIDControlPointCharacteristicValue skos:narrower lehid:Suspend .
+lehid:HIDControlPointCharacteristicValue skos:narrower lehid:ExitSuspend .
+ble:Value skos:narrower lehid:Suspend, lehid:ExitSuspend .
+lehid:Suspend a skos:Concept .
+lehid:ExitSuspend a skos:Concept .
+lehid:Suspend rdfs:label "Suspend" .
+lehid:ExitSuspend rdfs:label "Exit Suspend" .
+lehid:Suspend skos:definition "Informs HID Device that HID Host is entering the Suspend State" .
+lehid:ExitSuspend skos:definition "Informs HID Device that HID Host is exiting the Suspend State" .
+
+
+
+
+
+
+
+
+
+

@@ -150,11 +150,27 @@ otp:ObjectFirstCreatedField  a skos:Concept .
 ble:Value skos:narrower otp:ObjectFirstCreatedField  .
 otp:ObjectFirstCreatedField rdfs:label "Object First-Created Field" .
 otp:ObjectFirstCreatedField skos:definition "The Object First-Created characteristic returns its associated value when read. The date and time value shall be represented in Coordinated Universal Time (UTC)." .
-otp:ObjectFirstCreatedField skos:related xsd:dateTime .
+
 
 otp:ObjectLastModified skos:related otp:ObjectLastModifiedField .
 otp:ObjectLastModifiedField   a skos:Concept .
 ble:Value skos:narrower otp:ObjectLastModifiedField  .
 otp:ObjectLastModifiedField rdfs:label "Object Last-Modified Field" .
 otp:ObjectLastModifiedField skos:definition "The Object Last-Modified characteristic returns its associated value when read. The date and time value shall be represented in Coordinated Universal Time (UTC)." .
-otp:ObjectLastModifiedField skos:related xsd:dateTime .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

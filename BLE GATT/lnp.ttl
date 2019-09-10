@@ -65,13 +65,10 @@ lnp:PositionQuality skos:related ble:Read .
 lnp:LNControlPoint skos:related ble:Write, ble:Indicate .
 lnp:Navigation skos:related ble:Notify .
 
+lnp:LNControlPoint skos:related xsd:unsignedByte .
 
-lnp:LocationandSpeed skos:related lnp:InstantaneousSpeedField . 
-ble:Value skos:narrower lnp:InstantaneousSpeedField .
-lnp:InstantaneousSpeedField a skos:Concept .
-lnp:InstantaneousSpeedField rdfs:label "Instantaneous Speed Field" .
-lnp:InstantaneousSpeedField skos:definition "The Instantaneous Speed field represents the instantaneous value of the speed measured by the sensor." .
-lnp:InstantaneousSpeedField skos:related xsd:unsignedShort .
+lnp:LocationandSpeed skos:related ble:InstantaneousSpeedField . 
+
 
 ble:Value skos:narrower lnp:TotalDistanceField .
 lnp:TotalDistanceField a skos:Concept .
@@ -120,7 +117,7 @@ lnp:UTCTimeField  a skos:Concept .
 lnp:LocationandSpeed skos:related lnp:UTCTimeField  .
 lnp:UTCTimeField   rdfs:label "UTC Time Field" .
 lnp:UTCTimeField   skos:definition "This field represents the time at the Sensor when the position was received in Coordinated Universal Time format." .
-lnp:RollingTimeField  skos:related xsd:dateTime .
+
 
 
 

@@ -57,7 +57,7 @@ glp:BaseTimeField  a skos:Concept .
 glp:GlucoseMeasurement skos:related glp:BaseTimeField  .
 glp:BaseTimeField  rdfs:label "Base Time Field" .
 glp:BaseTimeField  skos:definition "The Base Time field represents the value of an internal real-time clock or equivalent that keeps time relative to its initial setting in resolution of seconds." .
-glp:BaseTimeField  skos:related xsd:dateTime .
+
 
 ble:Value skos:narrower glp:TimeOffsetField  .
 glp:TimeOffsetField  a skos:Concept .
@@ -73,6 +73,59 @@ glp:GlucoseMeasurement skos:related glp:GlucoseConcentrationField  .
 glp:GlucoseConcentrationField  rdfs:label "Glucose Concentration Field" .
 glp:GlucoseConcentrationField  skos:definition "The Glucose Concentration field is optional, but if it is present, the Type-Sample Location field shall also be present." .
 glp:GlucoseConcentrationField skos:related xsd:float .
+
+
+glp:GlucoseMeasurementContext skos:related glp:SequenceNumberField .
+glp:GlucoseMeasurementContext skos:related glp:CarbohydrateIDField, glp:CarbohydrateField, glp:MealField, glp:ExerciseDurationField, glp:ExerciseIntensityField, 
+glp:MedicationIDField, glp:MedicationField, glp:HbA1cField .
+
+ble:Value skos:narrower glp:CarbohydrateIDField .
+ble:Value skos:narrower glp:CarbohydrateField .
+ble:Value skos:narrower glp:MealField .
+ble:Value skos:narrower glp:ExerciseDurationField .
+ble:Value skos:narrower glp:ExerciseIntensityField  .
+ble:Value skos:narrower glp:MedicationIDField .
+ble:Value skos:narrower glp:MedicationField .
+ble:Value skos:narrower glp:HbA1cField .
+
+glp:CarbohydrateIDField a skos:Concept .
+glp:CarbohydrateField a skos:Concept .
+glp:MealField a skos:Concept .
+glp:ExerciseDurationField a skos:Concept .
+glp:ExerciseIntensityField  a skos:Concept .
+glp:MedicationIDField a skos:Concept .
+glp:MedicationField a skos:Concept .
+glp:HbA1cField a skos:Concept .
+
+glp:CarbohydrateIDField rdfs:label "Carbohydrate ID Field" .
+glp:CarbohydrateField rdfs:label "Carbohydrate - units of kilograms" .
+glp:MealField rdfs:label "Meal" .
+glp:ExerciseDurationField rdfs:label "Exercise Duration" .
+glp:ExerciseIntensityField  rdfs:label "xercise Intensity" .
+glp:MedicationIDField rdfs:label "Medication ID" .
+glp:MedicationField rdfs:label "Medication - units of kilograms" .
+glp:HbA1cField rdfs:label "Hemoglobin A1c" .
+
+glp:CarbohydrateIDField skos:definition "Field exists if the key of bit 0 of the Flags field is set to 1." .
+glp:CarbohydrateField skos:definition "Field exists if the key of bit 0 of the Flags field is set to 1." .
+glp:MealField skos:definition "Field exists if the key of bit 1 of the Flags field is set to 1" .
+glp:ExerciseDurationField skos:definition "Field exists if the key of bit 3 of the Flags field is set to 1" .
+glp:ExerciseIntensityField  skos:definition "Field exists if the key of bit 3 of the Flags field is set to 1" .
+glp:MedicationIDField skos:definition "Field exists if the key of bit 4 of the Flags field is set to 1" .
+glp:MedicationField skos:definition "C6: Field exists if the key of bit 4 of the Flags field is set to 1, C8: Field exists if the key of bit 5 of the Flags field is set to 0" .
+glp:HbA1cField skos:definition "Field exists if the key of bit 6 of the Flags field is set to 1" .
+
+glp:CarbohydrateIDField skos:related xsd:unsignedByte .
+glp:CarbohydrateField skos:related xsd:float .
+glp:MealField skos:related xsd:unsignedByte .
+glp:ExerciseDurationField skos:related xsd:unsignedShort .
+glp:ExerciseIntensityField  skos:related xsd:unsignedByte  .
+glp:MedicationIDField skos:related xsd:unsignedByte .
+glp:MedicationField skos:related xsd:float .
+glp:HbA1cField skos:related xsd:float .
+
+
+
 
 
 

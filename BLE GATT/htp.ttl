@@ -73,12 +73,9 @@ htp:TemperatureMeasurementValueField rdfs:label "Temperature Measurement Value F
 htp:TemperatureMeasurementValueField skos:definition "This Temperature Measurement Value field shall be included in the Temperature Measurement characteristic." .
 htp:TemperatureMeasurementValueField  skos:related xsd:float .
 
-htp:TimeStampField  a skos:Concept .
-ble:Value skos:narrower htp:TimeStampField .
-htp:TemperatureMeasurement skos:related htp:TimeStampField .
-htp:TimeStampField rdfs:label "Time Stamp Field" .
-htp:TimeStampField skos:definition "The value of the Time Stamp field is derived from a source of date and time at the time of measurement." .
-htp:TimeStampField  skos:related xsd:dateTime .
+htp:TemperatureMeasurement skos:related ble:TimeStampField .
+
+
 
 htp:IntermediateTemperatureValueField  a skos:Concept .
 ble:Value skos:narrower htp:IntermediateTemperatureValueField .
@@ -89,3 +86,11 @@ htp:IntermediateTemperatureValueField  skos:related xsd:float .
 
 
 htp:IntermediateTemperatureValueField skos:related htp:TimeStampField .
+
+htp:MeasurementInterval skos:related htp:MeasurementIntervalValue .
+
+htp:MeasurementIntervalValue a skos:Concept .
+ble:Value skos:narrower htp:MeasurementIntervalValue .
+htp:MeasurementIntervalValue rdfs:label "Measurement Interval Value" .
+htp:MeasurementIntervalValue skos:definition "The Measurement Interval characteristic returns the measurement interval value when read." .
+htp:MeasurementIntervalValue skos:related xsd:unsignedShort . 

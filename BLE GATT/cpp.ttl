@@ -59,14 +59,10 @@ cpp:CyclingPowerVector skos:definition "The Cycling Power Vector characteristic 
 cpp:CyclingPowerFeature skos:related ble:Read .
 cpp:CyclingPowerMeasurement skos:related ble:Notify . 
 cpp:CyclingPowerControlPoint skos:related ble:Write, ble:Indicate .
-cpp:CyclingPowerVector skos:related ble:Nofify.
+cpp:CyclingPowerVector skos:related ble:Notify.
 
-cpp:InstantaneousPowerField a skos:Concept .
-ble:Value skos:narrower cpp:InstantaneousPowerField .
-cpp:CyclingPowerMeasurement skos:related cpp:InstantaneousPowerField .
-cpp:InstantaneousPowerField rdfs:label "Instantaneous Power Field" . 
-cpp:InstantaneousPowerField skos:definition "The Instantaneous Power field represents the value of the power measured by the Server." .
-cpp:InstantaneousPowerField skos:related xsd:short .
+
+cpp:CyclingPowerMeasurement skos:related ble:InstantaneousPowerField .
 
 cpp:PedalPowerBalanceField  a skos:Concept .
 ble:Value skos:narrower cpp:PedalPowerBalanceField .
@@ -97,19 +93,8 @@ cpp:LastWheelEventTime rdfs:label "Wheel Revolution Data - Last Wheel Event Time
 cpp:LastWheelEventTime skos:definition "Last Wheel Event Time is one value of The Wheel Revolution Data field pair, always goes in pair with Cumulative Wheel Revolutions field." .
 cpp:CumulativeWheelRevolutions skos:related xsd:unsignedShort .
 
-cpp:CumulativeCrankRevolutions a skos:Concept .
-ble:Value skos:narrower cpp:CumulativeCrankRevolutions  .
-cpp:CyclingPowerMeasurement skos:related cpp:CumulativeCrankRevolutions .
-cpp:CumulativeCrankRevolutions  rdfs:label "Cumulative Crank Revolutions" . 
-cpp:CumulativeCrankRevolutions  skos:definition "The Cumulative Crank Revolutions value represents the number of times a crank rotates and is one value of Crank Revolution Data pair." .
-cpp:CumulativeCrankRevolutions skos:related xsd:unsignedShort .
-
-cpp:LastCrankEventTime a skos:Concept .
-ble:Value skos:narrower cpp:LastCrankEventTime  .
-cpp:CyclingPowerMeasurement skos:related cpp:LastCrankEventTime .
-cpp:LastCrankEventTime  rdfs:label "Last Crank Event Time" . 
-cpp:LastCrankEventTime  skos:definition "The Last Crank Event Time is one value of Crank Revolution Data pair and always presents as a pair with Cumulative Crank Revolutions." .
-cpp:LastCrankEventTime skos:related xsd:unsignedShort .
+cpp:CyclingPowerMeasurement skos:related ble:CumulativeCrankRevolutions .
+cpp:CyclingPowerMeasurement skos:related ble:LastCrankEventTime .
 
 
 cpp:MaximumForceMagnitude  a skos:Concept .
@@ -178,8 +163,34 @@ cpp:AccumulatedEnergyField   skos:definition "The Accumulated Energy field repre
 
 
 
+cpp:CyclingPowerVector skos:related ble:CumulativeCrankRevolutions, ble:LastCrankEventTime .
+cpp:CyclingPowerVector skos:related cpp:FirstCrankMeasurementAngleField, cpp:InstantaneousForceMagnitudeArrayField, cpp:InstantaneousTorqueMagnitudeArrayField .
+
+cpp:FirstCrankMeasurementAngleField rdfs:label "First Crank Measurement Angle Field" .
+cpp:InstantaneousForceMagnitudeArrayField rdfs:label "Instantaneous Force Magnitude Array Field" .
+cpp:InstantaneousTorqueMagnitudeArrayField rdfs:label "Instantaneous Torque Magnitude Array Field" .
+
+cpp:FirstCrankMeasurementAngleField a skos:Concept .
+cpp:InstantaneousForceMagnitudeArrayField a skos:Concept .
+cpp:InstantaneousTorqueMagnitudeArrayField a skos:Concept .
+
+ble:Value skos:narrower cpp:FirstCrankMeasurementAngleField .
+ble:Value skos:narrower cpp:InstantaneousForceMagnitudeArrayField .
+ble:Value skos:narrower cpp:InstantaneousTorqueMagnitudeArrayField .
+
+cpp:FirstCrankMeasurementAngleField skos:definition "This represents the angle of the first sample at the start of a measurement and is used by the Client in conjunction with the Instantaneous Magnitude values and the Sampling Rate to assemble a force (or torque) vector array to show a user the forces throughout a crank rotation" .
+cpp:InstantaneousForceMagnitudeArrayField skos:definition "Included in this field are one or more Instantaneous Magnitude values which are expressed in Newtons with a resolution of 1 Newton" .
+cpp:InstantaneousTorqueMagnitudeArrayField skos:definition " Included in this field are one or more Instantaneous Magnitude values which are expressed in Newton meter with a resolution of 1/32 Newton meter" .
+
+cpp:FirstCrankMeasurementAngleField skos:related xsd:unsignedShort .
+cpp:InstantaneousForceMagnitudeArrayField skos:related xsd:short .
+cpp:InstantaneousTorqueMagnitudeArrayField skos:related xsd:short .
+
+cpp:CyclingPowerControlPoint skos:related xsd:unsignedByte .
 
 
+
+ 
 
 
 

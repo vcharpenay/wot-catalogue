@@ -78,12 +78,7 @@ wsp:BodyFatPercentageField rdfs:label "Body Fat Percentage Field" .
 wsp:BodyFatPercentageField skos:definition "The Body Fat Percentage field shall be included in the Body Composition Measurement characteristic." .
 wsp:BodyFatPercentageField skos:related xsd:unsignedShort .
 
-wsp:UserIDField a skos:Concept .
-ble:Value skos:narrower wsp:UserIDField .
-wsp:BodyCompositionMeasurement skos:related wsp:UserIDField .
-wsp:UserIDField rdfs:label "User ID Field" .
-wsp:UserIDField skos:definition "The User ID field shall be included in the Body Composition Measurement characteristic and Weight Measurement characteristic if the device supports the Multiple Users feature.".
-wsp:UserIDField  skos:related xsd:unsignedByte .
+wsp:BodyCompositionMeasurement skos:related ble:UserIDField .
 
 wsp:BasalMetabolismField a skos:Concept .
 ble:Value skos:narrower wsp:BasalMetabolismField .
