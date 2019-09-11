@@ -29,6 +29,12 @@ function wordnetId(synset) {
     return `http://wordnet-rdf.princeton.edu/id/${id}-${synset.pos}`;
 }
 
+function wordnetLemma(word) {
+    let escaped = encodeURIComponent(word);
+    // TODO in theory, POS should be taken into account (#{word}-{pos})
+    return `http://wordnet-rdf.princeton.edu/rdf/lemma/${escaped}`;
+}
+
 const txt = fs.readFileSync('../labels.ttl', 'utf-8');
 
 const wpos = new WordPOS();
@@ -51,8 +57,8 @@ urdf.load(txt, { format: 'text/turtle' })
             // TODO process verbs in past tense (-ed + irregular verbs)
             // TODO same for -ing forms
 
-            if (!denotations[w]) denotations[w] = [];
-            denotations[w].push(concept);
+            if (!denotations[concept]) denotations[concept] = [];
+            denotations[concept].push(w);
 
             if (senses[w]) return Promise.resolve();
     
@@ -75,18 +81,36 @@ urdf.load(txt, { format: 'text/turtle' })
 
 .then(() => {
     let skos = 'http://www.w3.org/2004/02/skos/core#';
+    let ontolex = 'http://www.w3.org/ns/lemon/ontolex#';
 
     let words = Object.keys(senses);
 
     let nt = words.reduce((nt, w) => {
-        let entities = senses[w].map(wordnetId);
+        let s = senses[w];
+
+        if (s.length == 0) return nt;
+        
+        let entry = wordnetLemma(w);
+        let entities = s.map(wordnetId);
 
         return entities.reduce((nt, e) => {
-            return denotations[w].reduce((nt, c) => {
-                return nt + `<${c}> <${skos}mappingRelation> <${e}> .\n`;
-            }, nt);
+            return nt + `<${entry}> <${ontolex}evokes> <${e}>.\n`;
         }, nt);
     }, '');
+
+    let concepts = Object.keys(denotations);
+
+    nt = concepts.reduce((nt, c) => {
+        let words = denotations[c];
+        words = words.filter(w => senses[w].length > 0);
+        words = words.filter(w => !words.some(other => other != w && other.includes(w)));
+
+        let entries = words.map(wordnetLemma);
+
+        return entries.reduce((nt, e) => {
+            return nt + `<${c}> <${skos}mappingRelation> <${e}> .\n`;
+        }, nt);
+    }, nt);
 
     fs.writeFileSync('../wordnet-mapping.ttl', nt);
 })
