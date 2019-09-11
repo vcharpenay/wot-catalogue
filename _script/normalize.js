@@ -40,9 +40,7 @@ Promise.all(promises)
         let skos = 'http://www.w3.org/2004/02/skos/core#';
         let c = b.concept.value;
         let l = norm(b.label.value);
-        nt += `<${c}> <${skos}prefLabel> "${l}" .\n`;
-        return l.split(' ')
-                .reduce((nt, kw) => nt + `<${c}> <${skos}hiddenLabel> "${kw}" .\n`, nt)
+        return nt + `<${c}> <${skos}prefLabel> "${l}" .\n`;
     }, ''))
 
 .then(nt => fs.writeFileSync('../labels.ttl', nt))
