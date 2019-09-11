@@ -10,28 +10,6 @@ select distinct ?c ?l where {\
 }\
 ';
 
-function subgraph(concepts, relations) {
-    return concepts.reduce((g, c) => {
-        if (relations[c] && !g[c]) {
-            g[c] = relations[c];
-
-            let sg = subgraph(relations[c], relations);
-            for (let sc in sg) g[sc] = sg[sc];
-        }
-
-        return g;
-    }, {});
-}
-
-// TODO  when considering a full knowledge graph,
-//       should also take the number of edges into account
-//       (here, only number of vertices).
-function fitness(concepts, relations) {
-    let g = subgraph(concepts, relations);
-
-    return 1 / Object.keys(g).length;
-}
-
 function ngrams(words) {
     let all = [];
 
@@ -50,15 +28,6 @@ function wordnetId(synset) {
     id = '00000000'.substring(0, 8 - id.length) + id;
     return `http://wordnet-rdf.princeton.edu/id/${id}-${synset.pos}`;
 }
- 
-const links = fs.readFileSync('all-hypernyms.csv', 'utf-8')
-    .split('\n')
-    .map(r => r.split(',').map(col => col.replace(/"|,| /g, '')))
-    .reduce((idx, [sub, sup]) => {
-        if (!idx[sub]) idx[sub] = [];
-        idx[sub].push(sup);
-        return idx;
-    }, {});
 
 const txt = fs.readFileSync('../labels.ttl', 'utf-8');
 
@@ -96,7 +65,7 @@ urdf.load(txt, { format: 'text/turtle' })
             .then(pos => {
                 // selects only one POS, by preference (n, v, s, a)
                 let synsets = pos.find(s => s.length > 0) || [];
-                senses[w] = synsets.map(wordnetId);
+                senses[w] = synsets;
             });
         }));
     });
@@ -105,29 +74,17 @@ urdf.load(txt, { format: 'text/turtle' })
 })
 
 .then(() => {
-    let labels = Object.keys(senses)
-        .filter(l => senses[l].length > 0)
-        .sort((l1, l2) => senses[l1].length - senses[l2].length);
-        
-    // greedy algorithm
-    // TODO disambiguate per concept scheme, not globally
-    let disambiguated = labels.reduce((dis, l) => {
-        let prev = Object.values(dis);
-
-        let best = senses[l].map(s => [s, fitness([...prev, s], links)])
-                 .sort((f1, f2) => f2[1] - f1[1])
-                 [0][0];
-
-        dis[l] = best;
-
-        return dis;
-    }, {});
-
     let skos = 'http://www.w3.org/2004/02/skos/core#';
 
-    let nt = labels.reduce((nt, l) => {
-        return denotations[l].reduce((nt, c) => {
-            return nt + `<${c}> <${skos}mappingRelation> <${disambiguated[l]}> .\n`;
+    let words = Object.keys(senses);
+
+    let nt = words.reduce((nt, w) => {
+        let entities = senses[w].map(wordnetId);
+
+        return entities.reduce((nt, e) => {
+            return denotations[w].reduce((nt, c) => {
+                return nt + `<${c}> <${skos}mappingRelation> <${e}> .\n`;
+            }, nt);
         }, nt);
     }, '');
 

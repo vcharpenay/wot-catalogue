@@ -4,8 +4,10 @@
     "name": "wot-catalogue",
     "version": "0.1.0",
     "dependencies": {
+        "lunr": "^2.3.6",
+        "mediawiki": "0.0.14",
+        "pluralize": "8.0.0",
         "urdf": "vcharpenay/uRDF.js",
-        "wordpos": "1.2",
-        "pluralize": "8.0.0"
+        "wordpos": "1.2"
     }
 }
