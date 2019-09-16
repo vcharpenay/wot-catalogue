@@ -60,6 +60,10 @@ function searchClaims(ids) {
     });
 }
 
+function escape(str) {
+    return str.replace(/\"/g, "\\\"");
+}
+
 const txt = fs.readFileSync('../labels.ttl', 'utf-8');
 
 const denotations = {};
@@ -73,7 +77,7 @@ const claims = fs.existsSync('../wikidata-claims.json')
     : {};
 
 const batchSize = 25;
-const maxRecursions = 3;
+const maxRecursions = 1; // no recursion
 const maxClaimsPerBlock = 25000;
 
 urdf.load(txt, { format: 'text/turtle' })
@@ -197,7 +201,43 @@ urdf.load(txt, { format: 'text/turtle' })
 })
 
 .then(() => {
-    // TODO generate N-Triples
+    let skos = 'http://www.w3.org/2004/02/skos/core#';
+    let ontolex = 'http://www.w3.org/ns/lemon/ontolex#';
+
+    let words = Object.keys(senses);
+
+    let nt = words.reduce((nt, w) => {
+        return senses[w].reduce((nt, s) => {
+            let l = escape(s.label);
+            let def = escape(s.description || '');
+
+            return nt += `<${s.concepturi}> <${skos}prefLabel> "${l}" .\n`
+                       + `<${s.concepturi}> <${skos}definition> "${def}" .\n`;
+        }, nt);
+    }, '');
+
+    // TODO include claims
+
+    fs.writeFileSync('../wikidata-concepts.ttl', nt);
+
+    fs.writeFileSync('../wikidata-mapping.ttl', ''); // erase previous content
+
+    words.forEach(w => {
+        nt = '';
+        let tag = `tag:${encodeURIComponent(w)}`;
+
+        if (senses[w].length > 0) {
+            nt += denotations[w].reduce((nt, c) => {
+                return nt += `<${c}> <${skos}mappingRelation> <${tag}> .\n`;
+            }, nt);
+        }
+
+        nt += senses[w].reduce((nt, s) => {
+            return nt += `<${tag}> <${ontolex}evokes> <${s.concepturi}>.\n`;
+        }, nt);
+
+        fs.writeFileSync('../wikidata-mapping.ttl', nt, { flag: 'a' });
+    });
 })
 
 .catch(e => {
@@ -208,5 +248,5 @@ urdf.load(txt, { format: 'text/turtle' })
     if (!fs.existsSync('../wikidata-claims.json')) {
         fs.writeFileSync('../wikidata-claims.tmp.json', JSON.stringify(claims));
     }
-    console.error(e.message);
+    console.error(e);
 });
