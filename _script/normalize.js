@@ -8,12 +8,20 @@ select * where {\
     ?concept a skos:Concept; rdfs:label ?label .\
 }';
 
-function ls(dir) {
-    return fs.readdirSync(dir)
-      .map(f => dir + '/' + f)
-      .map(f => fs.statSync(f).isDirectory() ? ls(f) : [f])
-      .reduce((l, subl) => l.concat(subl), []);
-}
+const files = [
+    '../BACnet/bacnet-top.ttl',
+    '../BACnet/bacnet.ttl',
+    '../BLE GATT/gatt.ttl',
+    // '../BLE GATT/ble.ttl',
+    '../LWM2M/lwm2m.ttl',
+    '../LWM2M/ipso.ttl',
+    '../OCF/swagger.ttl',
+    '../OCF/oneiota.ttl',
+    '../oneM2M/sdt.ttl',
+    '../oneM2M/haim.ttl',
+    '../Project Haystack/haystack-top.ttl',
+    '../Project Haystack/haystack.ttl'
+];
 
 function norm(label) {
     return label
@@ -24,14 +32,16 @@ function norm(label) {
         .toLowerCase();
 }
 
-let promises = ls('..')
-    .filter(f =>  f.match(/.*\/.*\/.*\.ttl$/)) // Turtle file inside a directory
+let promises = files
     .map(f => {
         let ttl = fs.readFileSync(f, 'utf-8');
+        console.log(`Reading ${f}...`);
         return urdf.load(ttl, { format: 'text/turtle' });
     });
 
 Promise.all(promises)
+
+.then(() => console.log('Done reading files. Normalizing labels...'))
 
 .then(() => urdf.query(q)) // TODO missing labels
 
@@ -44,5 +54,7 @@ Promise.all(promises)
     }, ''))
 
 .then(nt => fs.writeFileSync('../labels.ttl', nt))
+
+.then(() => console.log('Done. Output written to ../labels.ttl.'))
 
 .catch(e => console.error(e));
