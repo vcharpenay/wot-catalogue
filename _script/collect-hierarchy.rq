@@ -1,0 +1,4 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix : <http://vcharpenay.link/wot-catalogue#>
+construct { ?entity ?p ?parent . }
+where { ?entity ?p ?parent . ?p rdfs:subPropertyOf :subsumedBy . }
