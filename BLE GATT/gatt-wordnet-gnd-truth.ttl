@@ -1,0 +1,593 @@
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix pwid: <http://wordnet-rdf.princeton.edu/id/> .
+@prefix plxp:  <http://example.org/namespace/ble-gatt/plxp#> .
+@prefix ftmp:  <http://example.org/namespace/ble-gatt/ftmp#> .
+@prefix esp:   <http://example.org/namespace/ble-gatt/esp#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix fmp:   <http://example.org/namespace/ble-gatt/fmp#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lehid: <http://example.org/namespace/ble-gatt/lehid#> .
+@prefix wsp:   <http://example.org/namespace/ble-gatt/wsp#> .
+@prefix tip:   <http://example.org/namespace/ble-gatt/tip#> .
+@prefix ble:   <http://example.org/namespace/ble-gatt#> .
+@prefix rscp:  <http://example.org/namespace/ble-gatt/rscp#> .
+@prefix rcp:   <http://example.org/namespace/ble-gatt/rcp#> .
+@prefix cpp:   <http://example.org/namespace/ble-gatt/cpp#> .
+@prefix anp:   <http://example.org/namespace/ble-gatt/anp#> .
+@prefix aiop:  <http://example.org/namespace/ble-gatt/aiop#> .
+@prefix scpp:  <http://example.org/namespace/ble-gatt/scpp#> .
+@prefix htp:   <http://example.org/namespace/ble-gatt/htp#> .
+@prefix hrp:   <http://example.org/namespace/ble-gatt/hrp#> .
+@prefix blp:   <http://example.org/namespace/ble-gatt/blp#> .
+@prefix pxp:   <http://example.org/namespace/ble-gatt/pxp#> .
+@prefix cgmp:  <http://example.org/namespace/ble-gatt/cgmp#> .
+@prefix otp:   <http://example.org/namespace/ble-gatt/otp#> .
+@prefix glp:   <http://example.org/namespace/ble-gatt/glp#> .
+@prefix lnp:   <http://example.org/namespace/ble-gatt/lnp#> .
+@prefix cscp:  <http://example.org/namespace/ble-gatt/cscp#> .
+@prefix idp:   <http://example.org/namespace/ble-gatt/idp#> .
+@prefix ipsp:  <http://example.org/namespace/ble-gatt/ipsp#> .
+@prefix pasp:  <http://example.org/namespace/ble-gatt/pasp#> .
+
+
+lehid:bcdHID 	skos:mappingRelation	pwid:05849159-n , 	pwid:06436708-n, 	pwid:06587403-n ,  pwid:03187746-n .
+
+idp:InfusionSetDetached	skos:mappingRelation  pwid:00324358-n,  pwid:00570568-s .
+pxp:Proximityprofile	skos:mappingRelation	pwid:05093074-n .			
+cgmp:ContinuousGlucoseMonitoringProfile	skos:mappingRelation	pwid:00597095-a ,	pwid:14908271-n ,	pwid:00881437-n .	
+anp:AlertNotificationProfile	skos:mappingRelation	pwid:06816015-n ,	pwid:07227084-n .		
+rcp:ReconnectionConfigurationProfile	skos:mappingRelation	pwid:05739724-n .			
+cscp:CyclingSpeedandCadenceProfile	skos:mappingRelation	pwid:00452356-n ,	pwid:15307914-n ,	pwid:04999057-n .	
+
+lehid:HIDoverGATTProfile	skos:mappingRelation		pwid:06587403-n  ,	pwid:03187746-n .	
+
+idp:InsulinDeliveryProfile	skos:mappingRelation	pwid:05417989-n ,	pwid:00318033-n .		
+rscp:RunningSpeedandCadenceProfile	skos:mappingRelation	pwid:00294760-n ,	pwid:15307914-n ,	pwid:04999057-n .	
+glp:GlucoseProfile	skos:mappingRelation	pwid:14908271-n .			
+esp:EnvironmentalSensingProfile	skos:mappingRelation	pwid:02954640-a  ,	pwid:00878552-n .		
+tip:TimeProfile	skos:mappingRelation	pwid:15154879-n .			
+pasp:PhoneAlertStatusProfile	skos:mappingRelation	pwid:02995984-n ,	pwid:06816015-n ,	pwid:00024900-n  .	
+ftmp:FitnessMachineProfile	skos:mappingRelation	pwid:14570034-n ,	pwid:03705309-n .		
+htp:HealthThermometerProfile	skos:mappingRelation	pwid:13946812-n ,	pwid:04429007-n .		
+cpp:CyclingPowerProfile	skos:mappingRelation	pwid:00452356-n ,	pwid:11473433-n .		
+blp:BloodPressureProfile	skos:mappingRelation	pwid:11450082-n .			
+lnp:LocationandNavigationProfile	skos:mappingRelation	pwid:00027365-n ,	pwid:00817462-n .		
+scpp:ScanParametersProfile	skos:mappingRelation	pwid:14073625-n ,	pwid:06367706-n .		
+aiop:AutomationIOProfile	skos:mappingRelation	pwid:14598049-n  ,	pwid:07279488-n ,	pwid:07279593-n .	
+otp:ObjectTransferProfile	skos:mappingRelation	pwid:00002684-n ,	pwid:00202520-n .		
+wsp:WeightScaleProfile	skos:mappingRelation	pwid:05034301-n ,	pwid:04149040-n .		
+hrp:HeartRateProfile	skos:mappingRelation	pwid:15305913-n .			
+			
+ipsp:InternetProtocolSupportProfile	skos:mappingRelation	pwid:03585784-n ,	pwid:06677853-n .		
+plxp:PulseOximeterProfile	skos:mappingRelation	pwid:15305913-n ,	pwid:03874321-n .		
+
+
+
+ble:BatteryService	skos:mappingRelation	pwid:02813606-n .			
+lnp:LocationandNavigationService	skos:mappingRelation	pwid:08613087-n,	pwid:00817462-n.		
+otp:ObjectTransferService	skos:mappingRelation	pwid:00002684-n,	pwid:00202520-n.		
+ble:CurrentTimeService	skos:mappingRelation	pwid:00669281-a,	pwid:15154879-n.		
+rcp:ReconnectionConfigurationService	skos:mappingRelation		pwid:05739724-n.		
+wsp:WeightScaleService	skos:mappingRelation	pwid:05034301-n,	pwid:04149040-n.		
+ble:ImmediateAlertService	skos:mappingRelation	pwid:01736131-s,	pwid:06816015-n.		
+htp:HealthThermometerService	skos:mappingRelation	pwid:13946812-n,	pwid:04429007-n.		
+cscp:CyclingSpeedandCadenceService	skos:mappingRelation	pwid:00452356-n,	pwid:15307914-n ,	pwid:04999057-n .	
+ble:DeviceInformationService	skos:mappingRelation	pwid:03187746-n,	pwid:06646883-n.		
+idp:InsulinDeliveryService	skos:mappingRelation	pwid:05417989-n,	pwid:00318033-n.		
+pxp:TxPowerService	skos:mappingRelation	pwid:00122186-n,	pwid:11470903-n.		
+ble:UserDataService	skos:mappingRelation	pwid:10761247-n,	pwid:05824748-n.		
+plxp:PulseOximeterService	skos:mappingRelation	pwid:15305913-n,	pwid:03874321-n.		
+rscp:RunningSpeedandCadenceService	skos:mappingRelation	pwid:00294760-n,	pwid:15307914-n ,	pwid:04999057-n .	
+tip:NextDSTChangeService	skos:mappingRelation	pwid:00128838-s,	pwid:15141831-n ,	pwid:11432841-n .	
+glp:GlucoseService	skos:mappingRelation	pwid:14908271-n .			
+pasp:PhoneAlertStatusService	skos:mappingRelation	pwid:02995984-n,	pwid:06816015-n,	pwid:00024900-n .	
+cpp:CyclingPowerService	skos:mappingRelation	pwid:00452356-n,	pwid:05624029-n.		
+aiop:AutomationIOService	skos:mappingRelation	pwid:14598049-n ,	pwid:07279488-n.		
+hrp:HeartRateService	skos:mappingRelation	pwid:15305913-n .			
+tip:ReferenceTimeUpdateService	skos:mappingRelation	pwid:06367922-n,	pwid:15154879-n,	pwid:06655934-n .	
+ftmp:FitnessMachineService	skos:mappingRelation	pwid:14570034-n,	pwid:03705309-n.		
+pxp:LinkLossService	skos:mappingRelation	pwid:13893444-n,	pwid:07348249-n.		
+wsp:BodyCompositionService	skos:mappingRelation	pwid:05223633-n,	pwid:04940721-n.		
+esp:EnvironmentalSensingService	skos:mappingRelation	pwid:02954640-a,	pwid:00878552-n.		
+lehid:HIDService	skos:mappingRelation	pwid:06587403-n ,	pwid:03187746-n.		
+blp:BloodPressureService	skos:mappingRelation	pwid:11450082-n .			
+anp:AlertNotificationService	skos:mappingRelation	pwid:06816015-n,	pwid:07227084-n.		
+			
+cgmp:cgmpService	skos:mappingRelation	pwid:00597095-a,	pwid:14908271-n,	pwid:00881724-n .	
+ipsp:IPSupportService	skos:mappingRelation	pwid:03585784-n,	pwid:06677853-n.		
+ble:ScanParametersService	skos:mappingRelation	pwid:14073625-n,	pwid:06367706-n.		
+			
+ble:IndoorPositioningService	skos:mappingRelation	pwid:00956317-s,	pwid:01053255-n.		
+
+pxp:Proximityprofile	skos:mappingRelation	pwid:05093074-n .			
+cgmp:ContinuousGlucoseMonitoringProfile	skos:mappingRelation	pwid:00597095-a ,	pwid:14908271-n ,	 pwid:00881437-n .	
+anp:AlertNotificationProfile	skos:mappingRelation	pwid:06816015-n ,	pwid:07227084-n .		
+rcp:ReconnectionConfigurationProfile	skos:mappingRelation	pwid:05739724-n .			
+cscp:CyclingSpeedandCadenceProfile	skos:mappingRelation	pwid:00452356-n ,	pwid:15307914-n ,	pwid:04999057-n .	
+lehid:HIDoverGATTProfile	skos:mappingRelation	pwid:06587403-n  ,	pwid:03187746-n .		
+idp:InsulinDeliveryProfile	skos:mappingRelation	pwid:05417989-n ,	pwid:00318033-n .		
+rscp:RunningSpeedandCadenceProfile	skos:mappingRelation	pwid:00294760-n ,	pwid:15307914-n ,	pwid:04999057-n .	
+glp:GlucoseProfile	skos:mappingRelation	pwid:14908271-n .			
+esp:EnvironmentalSensingProfile	skos:mappingRelation	pwid:02954640-a  ,	pwid:00878552-n .		
+tip:TimeProfile	skos:mappingRelation	pwid:15154879-n .			
+pasp:PhoneAlertStatusProfile	skos:mappingRelation	pwid:02995984-n ,	pwid:06816015-n ,	pwid:13943868-n  .	
+ftmp:FitnessMachineProfile	skos:mappingRelation	pwid:14570034-n ,	pwid:03705309-n .		
+htp:HealthThermometerProfile	skos:mappingRelation	pwid:13946812-n ,	pwid:04429007-n .		
+cpp:CyclingPowerProfile	skos:mappingRelation	pwid:00452356-n ,	pwid:05037846-n .		
+blp:BloodPressureProfile	skos:mappingRelation	pwid:11450082-n .			
+lnp:LocationandNavigationProfile	skos:mappingRelation	pwid:00027365-n ,	pwid:00817462-n .		
+scpp:ScanParametersProfile	skos:mappingRelation	pwid:00645186-n,	pwid:06367706-n.		
+aiop:AutomationIOProfile	skos:mappingRelation	pwid:14598049-n  ,	pwid:07279488-n ,	pwid:07279593-n .	
+otp:ObjectTransferProfile	skos:mappingRelation	pwid:00002684-n ,	pwid:00202520-n .		
+wsp:WeightScaleProfile	skos:mappingRelation	pwid:05034301-n ,	pwid:04149040-n .		
+hrp:HeartRateProfile	skos:mappingRelation	pwid:15305913-n .			
+			
+ipsp:InternetProtocolSupportProfile	skos:mappingRelation	pwid:03585784-n ,	pwid:06677853-n .		
+plxp:PulseOximeterProfile	skos:mappingRelation	pwid:15305913-n ,	pwid:03874321-n .		
+
+ble:BatteryService	skos:mappingRelation	pwid:02813606-n .		
+lnp:LocationandNavigationService	skos:mappingRelation	pwid:00027365-n,	pwid:00817462-n.	
+otp:ObjectTransferService	skos:mappingRelation	pwid:00002684-n,	pwid:00202520-n.	
+ble:CurrentTimeService	skos:mappingRelation	pwid:00669281-a,	pwid:15154879-n.	
+rcp:ReconnectionConfigurationService	skos:mappingRelation		pwid:05739724-n.	
+wsp:WeightScaleService	skos:mappingRelation	pwid:05034301-n,	pwid:04149040-n.	
+ble:ImmediateAlertService	skos:mappingRelation	pwid:01736131-s,	pwid:06816015-n.	
+htp:HealthThermometerService	skos:mappingRelation	pwid:13946812-n,	pwid:04429007-n.	
+cscp:CyclingSpeedandCadenceService	skos:mappingRelation	pwid:00452356-n,	pwid:15307914-n ,	pwid:04999057-n .
+ble:DeviceInformationService	skos:mappingRelation	pwid:03187746-n,	pwid:06646883-n.	
+idp:InsulinDeliveryService	skos:mappingRelation	pwid:05417989-n,	pwid:00318033-n.	
+pxp:TxPowerService	skos:mappingRelation	pwid:00122186-n,	pwid:11470903-n.	
+ble:UserDataService	skos:mappingRelation	pwid:10761247-n,	pwid:05824748-n.	
+plxp:PulseOximeterService	skos:mappingRelation	pwid:15305913-n,	pwid:03874321-n.	
+rscp:RunningSpeedandCadenceService	skos:mappingRelation	pwid:00294760-n,	pwid:15307914-n ,	pwid:04999057-n .
+tip:NextDSTChangeService	skos:mappingRelation	pwid:00128838-s,	pwid:15141831-n ,	pwid:11432841-n .
+glp:GlucoseService	skos:mappingRelation	pwid:14908271-n .		
+pasp:PhoneAlertStatusService	skos:mappingRelation	pwid:02995984-n,	pwid:06816015-n ,	pwid:13943868-n .
+cpp:CyclingPowerService	skos:mappingRelation	pwid:00452356-n,	pwid:05037846-n .	
+aiop:AutomationIOService	skos:mappingRelation	pwid:14598049-n ,	pwid:07279488-n, pwid:07279593-n .	
+hrp:HeartRateService	skos:mappingRelation	pwid:15305913-n .		
+tip:ReferenceTimeUpdateService	skos:mappingRelation	pwid:06367922-n,	pwid:15154879-n,	pwid:06655934-n .
+ftmp:FitnessMachineService	skos:mappingRelation	pwid:14570034-n,	pwid:03705309-n.	
+pxp:LinkLossService	skos:mappingRelation	pwid:13893444-n,	pwid:14441101-n .	
+wsp:BodyCompositionService	skos:mappingRelation	pwid:05223633-n,	pwid:04940721-n.	
+esp:EnvironmentalSensingService	skos:mappingRelation	pwid:02954640-a,	pwid:00878552-n.	
+lehid:HIDService	skos:mappingRelation	pwid:06587403-n ,	pwid:03187746-n.	
+blp:BloodPressureService	skos:mappingRelation	pwid:11450082-n .		
+anp:AlertNotificationService	skos:mappingRelation	pwid:06816015-n,	pwid:07227084-n.	
+ble:BondManagementService	skos:mappingRelation	pwid:02758357-n,	pwid:01135602-n .	
+cgmp:cgmpService	skos:mappingRelation	pwid:00597095-a ,	pwid:14908271-n ,	 pwid:00881437-n .
+ipsp:IPSupportService	skos:mappingRelation	pwid:03585784-n,	pwid:06677853-n.	
+ble:ScanParametersService	skos:mappingRelation	pwid:00645186-n,	pwid:06367706-n.	
+ble:HTTPProxyService	skos:mappingRelation	pwid:06678592-n .		
+ble:IndoorPositioningService	skos:mappingRelation	pwid:00956317-s,	pwid:01053255-n.	
+ble:TransportDiscoveryService	skos:mappingRelation	pwid:00316812-n ,	pwid:00043933-n .	
+
+
+
+aiop:Aggregate	skos:mappingRelation		pwid:07968050-n .							
+aiop:Analog	skos:mappingRelation		pwid:04753670-n .							
+aiop:Digital	skos:mappingRelation		pwid:02723968-a .					
+anp:AlertNotificationControlPoint	skos:mappingRelation		pwid:06816015-n,	pwid:07227084-n,	pwid:03101611-n,	pwid:15205381-n .				
+anp:NewAlert	skos:mappingRelation		pwid:00129805-s,	pwid:06816015-n .						
+anp:SupportedNewAlertCategory	skos:mappingRelation		pwid:02361206-a,	pwid:00129805-s,	pwid:06816015-n,	pwid:08014145-n.				
+anp:SupportedUnreadAlertCategory	skos:mappingRelation		pwid:02361206-a,	pwid:01312790-s,	pwid:06816015-n,	pwid:08014145-n.				
+anp:UnreadAlertStatus	skos:mappingRelation		pwid:01312790-s,	pwid:06816015-n,	pwid:13943868-n .					
+blp:BloodPressureFeature	skos:mappingRelation		pwid:11450082-n,	pwid:05858316-n .						
+blp:BloodPressureMeasurement	skos:mappingRelation		pwid:11450082-n,	pwid:00998911-n .						
+blp:IntermediateCuffPressure	skos:mappingRelation		pwid:01536076-s,	pwid:03150509-n,	pwid:11515441-n .					
+cgmp:cgmpFeature	skos:mappingRelation		pwid:00597095-a ,	pwid:14908271-n ,	 pwid:00881437-n ,	pwid:05858316-n .				
+cgmp:cgmpMeasurement	skos:mappingRelation		pwid:00597095-a,	pwid:14908271-n,	 pwid:00881437-n ,	pwid:00998911-n .				
+cgmp:cgmpSessionRunTime	skos:mappingRelation		pwid:00597095-a,	pwid:14908271-n,	pwid:00881437-n ,	pwid:15286931-n ,	pwid:15154879-n .			
+cgmp:cgmpSessionStartTime	skos:mappingRelation		pwid:00597095-a,	pwid:14908271-n,	pwid:00881437-n ,	pwid:15290329-n ,	pwid:15154879-n .			
+cgmp:cgmpSpecificOpsControlPoint	skos:mappingRelation		pwid:05826326-n,	pwid:00597095-a,	pwid:14908271-n,	pwid:00881437-n ,	pwid:03101611-n,	pwid:15205381-n .		
+cgmp:cgmpStatus	skos:mappingRelation		pwid:00597095-a ,	pwid:14908271-n ,	 pwid:00881437-n ,	pwid:13943868-n.				
+cpp:CyclingPowerControlPoint	skos:mappingRelation		pwid:00452356-n,	pwid:05037846-n,	pwid:03101611-n,	pwid:15205381-n .				
+cpp:CyclingPowerFeature	skos:mappingRelation		pwid:00452356-n,	pwid:05037846-n,	pwid:05858316-n .					
+cpp:CyclingPowerMeasurement	skos:mappingRelation		pwid:00452356-n,	pwid:05037846-n,	pwid:00998911-n .					
+cpp:CyclingPowerVector	skos:mappingRelation		pwid:00452356-n,	pwid:05037846-n,	pwid:09492415-n .					
+cscp:CSCFeature	skos:mappingRelation		pwid:00452356-n,	pwid:15307914-n,	pwid:04999057-n,	pwid:05858316-n .				
+cscp:CSCMeasurement	skos:mappingRelation		pwid:00452356-n,	pwid:15307914-n,	pwid:04999057-n,	pwid:00998911-n .				
+esp:CharacteristicUserDescription	skos:mappingRelation		pwid:05858316-n,	pwid:10761247-n,	pwid:06737512-n .					
+esp:DescriptorValueChanged	skos:mappingRelation		pwid:05832071-n,	pwid:00355544-a .						
+esp:ESConfigurationDescriptor	skos:mappingRelation		pwid:02954640-a,	pwid:00878552-n,	pwid:05739724-n,	pwid:05832071-n .				
+esp:ESMeasurementDescriptor	skos:mappingRelation		pwid:02954640-a,	pwid:00878552-n,	pwid:00998911-n ,	pwid:05832071-n .				
+esp:ESTriggerSettingDescriptor	skos:mappingRelation		pwid:02954640-a,	pwid:00878552-n,	pwid:04490329-n,	pwid:14536419-n ,	pwid:05832071-n .			
+esp:ValidRangeDescriptor	skos:mappingRelation		pwid:00941928-s,	pwid:08646496-n ,	pwid:05832071-n .					
+ftmp:CrossTrainerData	skos:mappingRelation				pwid:05824748-n .					
+ftmp:FitnessMachineControlPoint	skos:mappingRelation		pwid:14570034-n,	pwid:03705309-n,	pwid:03101611-n,	pwid:15205381-n .				
+ftmp:FitnessMachineFeature	skos:mappingRelation		pwid:14570034-n,	pwid:03705309-n,	pwid:05858316-n .					
+ftmp:FitnessMachineStatus	skos:mappingRelation		pwid:14570034-n,	pwid:03705309-n,	pwid:13943868-n .					
+ftmp:IndoorBikeData	skos:mappingRelation		pwid:00956317-s,	pwid:03796045-n,	pwid:05824748-n.					
+ftmp:RowerData	skos:mappingRelation			pwid:05824748-n .						
+ftmp:StairClimberData	skos:mappingRelation		pwid:04322052-n,	pwid:09948756-n,	pwid:05824748-n.					
+ftmp:StepClimberData	skos:mappingRelation		pwid:00286401-n,	pwid:09948756-n,	pwid:05824748-n.					
+ftmp:SupportedHeartRateRange	skos:mappingRelation		pwid:01219607-v ,	pwid:15305913-n,	pwid:08646496-n.					
+ftmp:SupportedInclinationRange	skos:mappingRelation		pwid:01219607-v ,	pwid:04951225-n,	pwid:08646496-n.					
+ftmp:SupportedPowerRange	skos:mappingRelation		pwid:01219607-v ,	pwid:11470903-n ,	pwid:08646496-n.					
+ftmp:SupportedResistanceLevelRange	skos:mappingRelation		pwid:01219607-v ,	pwid:11524386-n,	pwid:08646496-n.					
+ftmp:SupportedSpeedRange	skos:mappingRelation		pwid:01219607-v ,	pwid:15307914-n,	pwid:08646496-n.					
+ftmp:TrainingStatus	skos:mappingRelation		pwid:00895653-n,	pwid:13943868-n .						
+ftmp:TreadmillData	skos:mappingRelation		pwid:04484622-n,	pwid:05824748-n .						
+glp:GlucoseFeature	skos:mappingRelation		pwid:14908271-n,	pwid:05858316-n .						
+glp:GlucoseMeasurement	skos:mappingRelation		pwid:14908271-n,	pwid:00998911-n .						
+glp:GlucoseMeasurementContext	skos:mappingRelation		pwid:14908271-n,	pwid:00998911-n ,	pwid:14536419-n.					
+hrp:BodySensorLocation	skos:mappingRelation		pwid:05223633-n,	pwid:03185635-n,	pwid:00027365-n.					
+hrp:HeartRateControlPoint	skos:mappingRelation		pwid:15305913-n,	pwid:03101611-n,	pwid:15205381-n .					
+hrp:HeartRateMeasurement	skos:mappingRelation		pwid:15305913-n,	pwid:00998911-n .						
+htp:IntermediateTemperature	skos:mappingRelation		pwid:01536076-s,	pwid:05018974-n .						
+htp:MeasurementInterval	skos:mappingRelation		pwid:00998911-n,	pwid:15294470-n .						
+htp:TemperatureMeasurement	skos:mappingRelation		pwid:05018974-n,	pwid:00998911-n .						
+htp:TemperatureType	skos:mappingRelation		pwid:05018974-n,	pwid:05848697-n .						
+htp:ValidRangeDescriptor	skos:mappingRelation		pwid:00941928-s,	pwid:08646496-n,	pwid:05832071-n .					
+idp:IDDAnnunciationStatus	skos:mappingRelation		pwid:05417989-n,	pwid:00318033-n,	pwid:03187746-n,	pwid:13943868-n ,	pwid:06611268-n .			
+idp:IDDCommandControlPoint	skos:mappingRelation		pwid:05417989-n,	pwid:00318033-n,	pwid:03187746-n,	pwid:07182782-n,	pwid:03101611-n ,	pwid:15205381-n 	.	
+idp:IDDCommandData	skos:mappingRelation		pwid:05417989-n,	pwid:00318033-n,	pwid:03187746-n,	pwid:07182782-n,	pwid:05824748-n .			
+idp:IDDFeatures	skos:mappingRelation		pwid:05417989-n,	pwid:00318033-n,	pwid:03187746-n,	pwid:05858316-n .				
+idp:IDDHistoryData	skos:mappingRelation		pwid:05417989-n,	pwid:00318033-n,	pwid:03187746-n,	pwid:06526084-n,	pwid:05824748-n .			
+idp:IDDRecordAccessControlPoint	skos:mappingRelation		pwid:05417989-n,	pwid:00318033-n,	pwid:03187746-n,	pwid:06659969-n,	pwid:02673692-n,	pwid:03101611-n,	pwid:15205381-n .	
+idp:IDDStatus	skos:mappingRelation		pwid:05417989-n,	pwid:00318033-n,	pwid:03187746-n,	pwid:13943868-n .				
+idp:IDDStatusChanged	skos:mappingRelation		pwid:05417989-n,	pwid:00318033-n,	pwid:03187746-n,	pwid:13943868-n ,	pwid:00355544-a .			
+idp:IDDStatusReaderControlPoint	skos:mappingRelation		pwid:05417989-n,	pwid:00318033-n,	pwid:03187746-n,	pwid:13943868-n ,	pwid:10528455-n,	pwid:03101611-n,	pwid:15205381-n .	
+lehid:BootKeyboardInputReport	skos:mappingRelation		pwid:00098100-v,	pwid:03619216-n,	pwid:07279488-n,	pwid:06659969-n .				
+lehid:BootMouseInputReport	skos:mappingRelation		pwid:00098100-v,	pwid:03799022-n,	pwid:07279488-n,	pwid:06659969-n .				
+lehid:HIDControlPoint	skos:mappingRelation		pwid:06587403-n ,	pwid:03187746-n,	pwid:03101611-n,	pwid:15205381-n .				
+lehid:HIDInformation	skos:mappingRelation		pwid:06587403-n ,	pwid:03187746-n,	pwid:06646883-n .					
+lehid:ProtocolMode	skos:mappingRelation		pwid:06677853-n,	pwid:13946962-n .						
+lehid:Report	skos:mappingRelation		pwid:06659969-n .							
+lehid:ReportMap	skos:mappingRelation		pwid:06659969-n .							
+lnp:LNControlPoint	skos:mappingRelation		pwid:00027365-n,	pwid:00817462-n,	pwid:03101611-n,	pwid:15205381-n .				
+lnp:LNFeature	skos:mappingRelation		pwid:00027365-n,	pwid:00817462-n,	pwid:05858316-n .					
+lnp:LocationandSpeed	skos:mappingRelation		pwid:00027365-n,	pwid:15307914-n .						
+lnp:Navigation	skos:mappingRelation		pwid:00817462-n .							
+lnp:PositionQuality	skos:mappingRelation		pwid:08639173-n ,	pwid:05857811-n .						
+otp:ObjectActionControlPoint	skos:mappingRelation		pwid:00002684-n,	pwid:00038116-n,	pwid:03101611-n,	pwid:15205381-n .				
+otp:ObjectChanged	skos:mappingRelation		pwid:00002684-n,	pwid:00355544-a .						
+otp:ObjectFirstCreated	skos:mappingRelation		pwid:00002684-n ,	pwid:00104262-r,	pwid:01757596-v.					
+otp:ObjectID	skos:mappingRelation		pwid:00002684-n,	pwid:06898133-n .						
+otp:ObjectLastModified	skos:mappingRelation		pwid:00002684-n,	pwid:01016876-a,	pwid:01544533-a.					
+otp:ObjectListControlPoint	skos:mappingRelation		pwid:00002684-n,	pwid:06492991-n,	pwid:03101611-n,	pwid:15205381-n .				
+otp:ObjectListFilter	skos:mappingRelation		pwid:00002684-n,	pwid:06492991-n.						
+otp:ObjectName	skos:mappingRelation		pwid:00002684-n,	pwid:06344646-n .						
+otp:ObjectProperties	skos:mappingRelation		pwid:00002684-n,	pwid:04923519-n .						
+otp:ObjectSize	skos:mappingRelation		pwid:00002684-n,	pwid:05106204-n .						
+otp:ObjectType	skos:mappingRelation		pwid:00002684-n,	pwid:05848697-n .						
+otp:OTSFeature	skos:mappingRelation		pwid:00002684-n,	pwid:00202520-n,	pwid:05858316-n.					
+pasp:AlertStatus	skos:mappingRelation		pwid:06816015-n,	pwid:13943868-n .						
+pasp:RingerControlPoint	skos:mappingRelation			pwid:03101611-n,	pwid:15205381-n .					
+pasp:RingerSetting	skos:mappingRelation			pwid:14536419-n .						
+plxp:PLXContinuousMeasurement	skos:mappingRelation		pwid:15305913-n,	pwid:03874321-n,	pwid:00998911-n,	pwid:00597095-a.				
+plxp:PLXFeatures	skos:mappingRelation		pwid:15305913-n,	pwid:03874321-n,	pwid:05858316-n.					
+plxp:PLXSpotcheckMeasurement	skos:mappingRelation		pwid:15305913-n,	pwid:03874321-n,	pwid:00998911-n,	pwid:00142960-n.				
+pxp:LinkLossAlertLevel	skos:mappingRelation		pwid:13893444-n,	pwid:14441101-n,	pwid:06816015-n.					
+pxp:TxPowerLevel	skos:mappingRelation		pwid:00122186-n,	pwid:11470903-n .						
+rcp:RCCP	skos:mappingRelation		pwid:05739724-n ,	pwid:03101611-n,	pwid:15205381-n .					
+rcp:RCFeature	skos:mappingRelation		pwid:05739724-n,	pwid:05858316-n.						
+rcp:RCSettings	skos:mappingRelation		pwid:05739724-n,	pwid:14536419-n .						
+rscp:RSCFeature	skos:mappingRelation		pwid:00294760-n,	pwid:15307914-n ,	pwid:04999057-n ,	pwid:05858316-n.				
+rscp:RSCMeasurement	skos:mappingRelation		pwid:00294760-n,	pwid:15307914-n ,	pwid:04999057-n ,	pwid:00998911-n.				
+rscp:SCControlpoint	skos:mappingRelation		pwid:15307914-n,	pwid:04999057-n,	pwid:03101611-n,	pwid:15205381-n .				
+tip:TimeUpdateControlPoint	skos:mappingRelation		pwid:15154879-n,	pwid:06655934-n,	pwid:03101611-n,	pwid:15205381-n .				
+tip:TimeUpdateState	skos:mappingRelation		pwid:15154879-n,	pwid:06655934-n,	pwid:00024900-n.					
+tip:TimewithDST	skos:mappingRelation		pwid:15154879-n,	pwid:15141831-n .						
+wsp:BodyCompositionFeature	skos:mappingRelation		pwid:05223633-n,	pwid:04940721-n,	pwid:05858316-n.					
+wsp:BodyCompositionMeasurement	skos:mappingRelation		pwid:05223633-n,	pwid:04940721-n,	pwid:00998911-n.					
+wsp:WeightMeasurement	skos:mappingRelation		pwid:05034301-n,	pwid:00998911-n .						
+wsp:WeightScaleFeature	skos:mappingRelation		pwid:05034301-n,	pwid:04149040-n,	pwid:05858316-n.					
+ble:AlertLevel	skos:mappingRelation		pwid:06816015-n,	pwid:05101152-n .						
+ble:BatteryLevel	skos:mappingRelation		pwid:02813606-n,	pwid:05101152-n .						
+ble:BondManagementControlPoint	skos:mappingRelation		pwid:02758357-n,	pwid:01135602-n,	pwid:03101611-n,	pwid:15205381-n .				
+ble:BondManagementFeature	skos:mappingRelation		pwid:02758357-n,	pwid:01135602-n,	pwid:05858316-n.					
+ble:CurrentTime	skos:mappingRelation		pwid:00669281-a,	pwid:15154879-n .						
+ble:DatabaseChangeIncrement	skos:mappingRelation		pwid:06650349-n,	pwid:11432841-n,	pwid:05116247-n.					
+ble:FirmwareRevision	skos:mappingRelation		pwid:06369221-n,	pwid:06375556-n .						
+ble:HardwareRevision	skos:mappingRelation		pwid:03498434-n,	pwid:06375556-n .						
+ble:IEEE11073-20601RegulatoryCertificationDataList	skos:mappingRelation		pwid:06483016-n ,	pwid:02011781-s .						
+ble:LocalTimeInformation	skos:mappingRelation		pwid:15141495-n,	pwid:06646883-n .						
+ble:ManufacturerName	skos:mappingRelation		pwid:10311977-n,	pwid:06344646-n .						
+ble:ModelNumber	skos:mappingRelation		pwid:05854179-n,	pwid:06436708-n .						
+ble:PnPID	skos:mappingRelation			pwid:06898133-n .						
+ble:RecordAccessControlPoint	skos:mappingRelation		pwid:06659969-n,	pwid:02673692-n,	pwid:03101611-n,	pwid:15205381-n .				
+ble:ReferenceTimeInformation	skos:mappingRelation		pwid:06367922-n,	pwid:15154879-n,	pwid:06646883-n.					
+ble:ScanIntervalWindow	skos:mappingRelation		pwid:00645186-n,	pwid:15294470-n ,	pwid:15325026-n.					
+ble:ScanRefresh	skos:mappingRelation		pwid:00645186-n .							
+ble:SCControlPoint	skos:mappingRelation		pwid:15307914-n,	pwid:04999057-n,	pwid:03101611-n,	pwid:15205381-n .				
+ble:SensorLocation	skos:mappingRelation		pwid:03185635-n,	pwid:00027365-n .						
+ble:SerialNumber	skos:mappingRelation		pwid:02807844-a,	pwid:06436708-n .						
+ble:SoftwareRevision	skos:mappingRelation		pwid:06578068-n,	pwid:06375556-n .						
+ble:SystemID	skos:mappingRelation		pwid:04384144-n,	pwid:06898133-n .						
+ble:UDSCharacteristic	skos:mappingRelation		pwid:10761247-n,	pwid:05824748-n .						
+ble:UserControlPoint	skos:mappingRelation		pwid:10761247-n,	pwid:03101611-n,	pwid:15205381-n .					
+ble:UserIndex	skos:mappingRelation		pwid:10761247-n,	pwid:06652323-n .						
+lehid:BootKeyboardOutputReport	skos:mappingRelation		pwid:00098100-v ,	pwid:03619216-n,	pwid:07279593-n,	pwid:06659969-n .				
+								
+ble:HTTPHeaders	skos:mappingRelation		pwid:06678592-n ,	pwid:06355341-n .						
+ble:HTTPEntityBody	skos:mappingRelation		pwid:06678592-n ,	pwid:00001740-n ,	pwid:05223633-n .					
+ble:HTTPControlPoint	skos:mappingRelation		pwid:06678592-n ,	pwid:03101611-n,	pwid:15205381-n .					
+ble:HTTPStatusCode	skos:mappingRelation		pwid:06678592-n ,	pwid:13943868-n ,	pwid:06365341-n .					
+ble:HTTPSSecurity	skos:mappingRelation		pwid:06678592-n .							
+ble:TDSControlPoint	skos:mappingRelation		pwid:00316812-n ,	pwid:00043933-n ,	pwid:03101611-n,	pwid:15205381-n .				
+ble:IndoorPositioningConfiguration	skos:mappingRelation		pwid:00956317-s ,	pwid:01053255-n,	pwid:05739724-n .					
+ble:Latitude	skos:mappingRelation		pwid:08613087-n .							
+ble:Longitude	skos:mappingRelation		pwid:08614224-n .							
+ble:LocalNorthCoordinate	skos:mappingRelation		pwid:02767118-a ,	pwid:13857626-n ,	pwid:06020279-n .					
+ble:LocalEastCoordinate	skos:mappingRelation		pwid:02767118-a ,	pwid:13857863-n ,	pwid:06020279-n .					
+ble:FloorNumber	skos:mappingRelation		pwid:03370438-n ,	pwid:06609408-n .						
+ble:Altitude	skos:mappingRelation		pwid:13858570-n .							
+ble:Uncertainty	skos:mappingRelation		pwid:05706212-n .							
+ble:LocationName	skos:mappingRelation		pwid:00027365-n ,	pwid:06344646-n  .						
+aiop:AnalogSignalValue	skos:mappingRelation	pwid:04753670-n ,	pwid:11467415-n .					
+anp:CategoryID	skos:mappingRelation	pwid:08014145-n ,	pwid:06898133-n .					
+anp:NumberofNewAlert	skos:mappingRelation	pwid:13597304-n ,	pwid:01645077-a,	pwid:06816015-n .		 		
+anp:TextStringInformation	skos:mappingRelation	pwid:06399623-n ,	pwid:06646883-n .					
+ble:DatabaseChangeIncrementValue	skos:mappingRelation	pwid:06650349-n ,	pwid:11432841-n ,	pwid:05116247-n .				
+ble:LE_Scan_Interval	skos:mappingRelation	pwid:01215141-a ,	pwid:11472635-n ,	pwid:06025625-n  ,	pwid:00645186-n .			
+ble:LE_Scan_Window	skos:mappingRelation	pwid:01215141-a ,	pwid:11472635-n ,	pwid:00645186-n ,	pwid:15325026-n .			
+ble:ManufacturerIdentifier	skos:mappingRelation	pwid:10311977-n ,	pwid:07285306-n .					
+ble:OrganizationallyUniqueIdentifier	skos:mappingRelation	pwid:00416968-r ,	pwid:02222756-s  ,	pwid:07285306-n .				
+ble:ProductIDField	skos:mappingRelation	pwid:04014270-n ,	pwid:06898133-n .		 			
+ble:ProductVersionField	skos:mappingRelation	pwid:04014270-n ,	pwid:05849159-n .					
+ble:Serverrequiresrefresh	skos:mappingRelation	pwid:04182208-n ,	pwid:00757790-v ,	pwid:00698618-v  .				
+ble:UDSCharacteristicValue	skos:mappingRelation	pwid:10761247-n ,	pwid:05858316-n ,	pwid:05824748-n .				
+ble:VendorIDField	skos:mappingRelation	pwid:10596736-n ,	pwid:06898133-n .		 			
+ble:VendorIDSourceField	skos:mappingRelation	pwid:10596736-n ,	pwid:06898133-n ,	pwid:06687867-n .				
+blp:BloodPressureMeasurementCompoundValueField	skos:mappingRelation	pwid:11450082-n ,	pwid:05878802-n ,	pwid:00998911-n .				
+blp:IntermediateCuffPressureCompoundValueField	skos:mappingRelation	pwid:01536076-s ,	pwid:05878802-n .					
+blp:PulseRateField	skos:mappingRelation	pwid:15305913-n .						
+cgmp:CGMGlucoseConcentrationField	skos:mappingRelation	pwid:14908271-n ,	pwid:05096011-n  .					
+cgmp:CGMQualityField	skos:mappingRelation	pwid:05857811-n .						
+cgmp:CGMTrendInformationField	skos:mappingRelation	pwid:06207399-n ,	pwid:06646883-n .					
+cgmp:E2ECRCField	skos:mappingRelation	pwid:00103637-r ,	pwid:06369039-n .					
+cgmp:SizeField	skos:mappingRelation	pwid:05106204-n .						
+cgmp:TimeZoneField	skos:mappingRelation	pwid:08709014-n .						
+cgmp:TimeOffsetField	skos:mappingRelation	pwid:15154879-n ,	pwid:13312212-n .					
+cpp:AccumulatedEnergyField	skos:mappingRelation	pwid:00883689-s  ,	pwid:11472635-n .					
+cpp:AccumulatedTorqueField	skos:mappingRelation	pwid:00883689-s  ,	pwid:11540135-n .					
+cpp:BottomDeadSpotAngleField	skos:mappingRelation	pwid:08529042-n ,	pwid:00672155-s ,	pwid:13910202-n .				
+cpp:CumulativeWheelRevolutions	skos:mappingRelation	pwid:00048680-s ,	pwid:02837983-n ,	pwid:07455579-n .				
+cpp:LastWheelEventTime	skos:mappingRelation	pwid:01013868-s ,	pwid:02837983-n ,	pwid:00029677-n ,	pwid:15154879-n .			
+cpp:MaximumAngle	skos:mappingRelation	pwid:01498873-a ,	pwid:13910202-n .					
+cpp:MaximumForceMagnitude	skos:mappingRelation	pwid:01498873-a ,	pwid:05042508-n ,	pwid:05097645-n .				
+cpp:MaximumTorqueMagnitude	skos:mappingRelation	pwid:01498873-a ,	pwid:11540135-n ,	pwid:05097645-n .				
+cpp:MinimumAngle	skos:mappingRelation	pwid:01499316-a ,	pwid:13910202-n .					
+cpp:MinimumForceMagnitude	skos:mappingRelation	pwid:01499316-a ,	pwid:05042508-n ,	pwid:05097645-n .				
+cpp:MinimumTorqueMagnitude	skos:mappingRelation	pwid:01499316-a ,	pwid:11540135-n ,	pwid:05097645-n .				
+cpp:PedalPowerBalanceField	skos:mappingRelation	pwid:02786981-a ,	pwid:05037846-n ,	pwid:14025764-n .				
+cpp:TopDeadSpotAngleField	skos:mappingRelation	pwid:08681598-n ,	pwid:00672155-s ,	pwid:13910202-n .				
+cscp:CumulativeWheelRevolutions	skos:mappingRelation	pwid:00048680-s ,	pwid:02837983-n ,	pwid:07455579-n .				
+cscp:LastWheelEventTime	skos:mappingRelation	pwid:01013868-s ,	pwid:02837983-n ,	pwid:00029677-n ,	pwid:15154879-n .			
+ftmp:AverageCadenceField	skos:mappingRelation	pwid:01599054-s ,	pwid:04999057-n .					
+ftmp:AveragePaceField	skos:mappingRelation	pwid:01599054-s ,	pwid:15308315-n  .					
+ftmp:AveragePowerField	skos:mappingRelation	pwid:01599054-s ,	pwid:05037846-n .					
+ftmp:AverageSpeedField	skos:mappingRelation	pwid:01599054-s ,	pwid:15307914-n .					
+ftmp:AverageStepRateField	skos:mappingRelation	pwid:01599054-s ,	pwid:00286401-n ,	pwid:15311467-n .				
+ftmp:AverageStrokeRateField	skos:mappingRelation	pwid:01599054-s ,	pwid:00570935-n ,	pwid:15311467-n .				
+ftmp:ElapsedTimeField	skos:mappingRelation	pwid:15156075-n .						
+ftmp:EnergyperHourField	skos:mappingRelation	pwid:01599054-s ,	pwid:11472635-n ,	pwid:15252642-n .				
+ftmp:EnergyperMinuteField	skos:mappingRelation	pwid:01599054-s ,	pwid:11472635-n ,	pwid:15259561-n .				
+ftmp:FloorsField	skos:mappingRelation	pwid:03370438-n .						
+ftmp:ForceonBeltField	skos:mappingRelation	pwid:05042508-n  ,	pwid:04484622-n ,	pwid:02831067-n .				
+ftmp:HeartRateField	skos:mappingRelation	pwid:15305913-n .						
+ftmp:InclinationField	skos:mappingRelation	pwid:04951225-n .						
+ftmp:InstantaneousCadenceField	skos:mappingRelation	pwid:00982222-s ,	pwid:04999057-n .					
+ftmp:InstantaneousPaceField	skos:mappingRelation	pwid:00982222-s ,	pwid:15308315-n  .					
+ftmp:MaximumHeartRatefield	skos:mappingRelation	pwid:01498873-a ,	pwid:15305913-n .					
+ftmp:MaximumInclinationfield	skos:mappingRelation	pwid:01498873-a ,	pwid:04951225-n .					
+ftmp:MaximumPowerfield	skos:mappingRelation	pwid:01498873-a ,	pwid:05037846-n .					
+ftmp:MaximumResistanceLevelField	skos:mappingRelation	pwid:01498873-a ,	pwid:11524386-n ,	pwid:05101152-n .				
+ftmp:MaximumSpeedfield	skos:mappingRelation	pwid:01498873-a ,	pwid:15307914-n .					
+ftmp:MetabolicEquivalentField	skos:mappingRelation	pwid:02986641-a  ,	pwid:05033674-n .					
+ftmp:MinimumHeartRatefield	skos:mappingRelation	pwid:01499316-a ,	pwid:15305913-n .					
+ftmp:MinimumHeartRateIncrementfield	skos:mappingRelation	pwid:01499316-a ,	pwid:15305913-n ,	pwid:05116247-n .				
+ftmp:MinimumInclinationfield	skos:mappingRelation	pwid:01499316-a ,	pwid:04951225-n .					
+ftmp:MinimumInclinationIncrementfield	skos:mappingRelation	pwid:01499316-a ,	pwid:04951225-n ,	pwid:05116247-n .				
+ftmp:MinimumPowerfield	skos:mappingRelation	pwid:01499316-a ,	pwid:05037846-n .					
+ftmp:MinimumPowerIncrementfield	skos:mappingRelation	pwid:01499316-a ,	pwid:05037846-n ,	pwid:05116247-n .				
+ftmp:MinimumResistanceIncrementfield	skos:mappingRelation	pwid:01499316-a ,	pwid:11524386-n ,	pwid:05116247-n .				
+ftmp:MinimumResistanceLevelField	skos:mappingRelation	pwid:01499316-a ,	pwid:11524386-n ,	pwid:05101152-n .				
+ftmp:MinimumSpeedfield	skos:mappingRelation	pwid:01499316-a ,	pwid:15307914-n .					
+ftmp:MinimumSpeedIncrementfield	skos:mappingRelation	pwid:01499316-a ,	pwid:15307914-n ,	pwid:05116247-n .				
+ftmp:NegativeElevationGainField	skos:mappingRelation	pwid:01825480-s ,	pwid:05138548-n ,	pwid:13776433-n .				
+ftmp:PositiveElevationGainField	skos:mappingRelation	pwid:01825196-s ,	pwid:05138548-n ,	pwid:13776433-n .				
+ftmp:PowerOutputField	skos:mappingRelation	pwid:05037846-n ,	pwid:13780885-n .					
+ftmp:RampAngleSettingField	skos:mappingRelation	pwid:04058661-n ,	pwid:13910202-n ,	pwid:14536419-n  .				
+ftmp:RemainingTimeField	skos:mappingRelation	pwid:00929746-s  ,	pwid:15137796-n .					
+ftmp:ResistanceLevelField	skos:mappingRelation	pwid:11524386-n ,	pwid:05101152-n .					
+ftmp:StepCountField	skos:mappingRelation	pwid:00286401-n ,	pwid:13612964-n .					
+ftmp:StepperMinuteField	skos:mappingRelation	pwid:01599054-s ,	pwid:00286401-n ,	pwid:15259561-n .				
+ftmp:StrideCountField	skos:mappingRelation	pwid:00286733-n ,	pwid:13612964-n .					
+ftmp:StrokeCountField	skos:mappingRelation	pwid:00570935-n ,	pwid:13612964-n .					
+ftmp:StrokeRateField	skos:mappingRelation	pwid:00570935-n ,	pwid:15311467-n .					
+ftmp:TotalDistanceField	skos:mappingRelation	pwid:00517305-s ,	pwid:05136830-n .					
+ftmp:TotalEnergyField	skos:mappingRelation	pwid:00517305-s ,	pwid:11472635-n .					
+ftmp:TrainingStatusField	skos:mappingRelation	pwid:00895653-n ,	pwid:13943868-n  .					
+ftmp:TrainingStatusStringField	skos:mappingRelation	pwid:00895653-n ,	pwid:13943868-n  .					
+glp:BaseTimeField	skos:mappingRelation	pwid:05801562-n ,	pwid:15154879-n .					
+glp:GlucoseConcentrationField	skos:mappingRelation	pwid:14908271-n ,	pwid:05096011-n  .					
+glp:SequenceNumberField	skos:mappingRelation	pwid:08476263-n ,	pwid:06609408-n .					
+glp:TimeOffsetField	skos:mappingRelation	pwid:15154879-n ,	pwid:13312212-n .					
+hrp:EnergyExpendedField	skos:mappingRelation	pwid:11472635-n ,	pwid:01160888-v .					
+hrp:HeartRateValueField	skos:mappingRelation	pwid:15305913-n .						
+hrp:RRIntervalField	skos:mappingRelation	pwid:15062444-n ,	pwid:06025625-n .					
+htp:IntermediateTemperatureValueField	skos:mappingRelation	pwid:01536076-s ,	pwid:05018974-n .					
+htp:TemperatureMeasurementValueField	skos:mappingRelation	pwid:05018974-n ,	pwid:00998911-n .					
+idp:AnnunciationInstanceID	skos:mappingRelation		pwid:07323507-n ,	pwid:06898133-n .				
+idp:AuxInfo1Valuefield	skos:mappingRelation	pwid:01860057-s ,	pwid:06646883-n .					
+idp:AuxInfo2Contextfield	skos:mappingRelation	pwid:01860057-s ,	pwid:06646883-n ,	pwid:14536419-n .				
+idp:AuxInfo3LowerBoundfield	skos:mappingRelation	pwid:01860057-s ,	pwid:06646883-n ,	pwid:13927017-n .				
+idp:AuxInfo4UpperBoundfield	skos:mappingRelation	pwid:01860057-s ,	pwid:06646883-n ,	pwid:13926861-n .				
+idp:E2ECounterfield	skos:mappingRelation	pwid:00103637-r ,	pwid:03122071-n .					
+idp:E2ECRCfield	skos:mappingRelation	pwid:00103637-r ,	pwid:06369039-n .					
+idp:InsulinConcentrationfield	skos:mappingRelation	pwid:05417989-n ,	pwid:05096011-n  .					
+idp:OperationalStatefield	skos:mappingRelation	pwid:03025801-a ,	pwid:00024900-n .					
+idp:RelativeOffsetfield	skos:mappingRelation	pwid:00006050-a ,	pwid:13312212-n .					
+idp:ReservoirRemainingAmountfield	skos:mappingRelation	pwid:13799066-n ,	pwid:00929746-s  ,	pwid:05869651-n .				
+idp:SequenceNumberfield	skos:mappingRelation	pwid:08476263-n ,	pwid:06609408-n .					
+idp:TherapyControlStatefield	skos:mappingRelation	pwid:00662334-n ,	pwid:03101611-n ,	pwid:00024900-n .		
+
+			
+
+lehid:bCountryCode	skos:mappingRelation	pwid:08514304-n ,	pwid:06365341-n .					
+lehid:BootKeyboardInputReportValue	skos:mappingRelation	pwid:00098100-v ,	pwid:03619216-n ,	pwid:07279488-n ,	pwid:06659969-n .			
+lehid:BootKeyboardOutputReportValue	skos:mappingRelation	pwid:00098100-v ,	pwid:03619216-n ,	pwid:07279593-n ,	pwid:06659969-n .			
+lehid:BootMouseInputReportValue	skos:mappingRelation	pwid:00098100-v ,	pwid:03799022-n ,	pwid:07279488-n ,	pwid:06659969-n .			
+lehid:ProtocolModeValue	skos:mappingRelation	pwid:06677853-n ,	pwid:13946962-n .					
+lehid:ReportMapValue	skos:mappingRelation	pwid:06659969-n  .						
+lehid:ReportValue	skos:mappingRelation	pwid:06659969-n  .						
+lnp:BeaconsNumberSolutionField	skos:mappingRelation	pwid:04049010-n ,	pwid:13597304-n ,	pwid:06756201-n .				
+lnp:BeaconsNumberViewField	skos:mappingRelation	pwid:04049010-n ,	pwid:13597304-n ,	pwid:00883327-n .				
+lnp:BearingField	skos:mappingRelation	pwid:08698626-n .						
+lnp:EHPEField	skos:mappingRelation	pwid:05811387-n  ,	pwid:01235508-a  ,	pwid:07314187-n .				
+lnp:ElevationField	skos:mappingRelation	pwid:05138548-n .						
+lnp:EstimatedTimeArrivalField	skos:mappingRelation	pwid:05811387-n  ,	pwid:15205769-n .					
+lnp:EVPEField	skos:mappingRelation	pwid:05811387-n  ,	pwid:01236220-a ,	pwid:07314187-n .				
+lnp:HDOPField	skos:mappingRelation	pwid:01235508-a  ,	pwid:04811129-n ,	pwid:00363485-n .				
+lnp:HeadingField	skos:mappingRelation	pwid:08698626-n .						
+lnp:LocationLatitude	skos:mappingRelation	pwid:08613087-n ,	pwid:00027365-n .					
+lnp:LocationLongitude	skos:mappingRelation	pwid:08614224-n ,	pwid:00027365-n .					
+lnp:RemainingDistanceField	skos:mappingRelation	pwid:00929746-s  ,	pwid:05136830-n .					
+lnp:RemainingVerticalDistanceField	skos:mappingRelation	pwid:00929746-s  ,	pwid:01236220-a ,	pwid:05136830-n .				
+lnp:RollingTimeField	skos:mappingRelation	pwid:15295388-n ,	pwid:00812391-s .					
+lnp:TimetoFirstFixField	skos:mappingRelation	pwid:15295388-n ,	pwid:01014459-a ,	pwid:00156307-n .				
+lnp:TotalDistanceField	skos:mappingRelation	pwid:00517305-s ,	pwid:05136830-n .					
+lnp:UTCTimeField	skos:mappingRelation	pwid:15155386-n .						
+lnp:VDOPField	skos:mappingRelation	pwid:01236220-a ,	pwid:04811129-n ,	pwid:00363485-n .				
+otp:AllocatedSizeField	skos:mappingRelation	pwid:02238869-v ,	pwid:05106204-n .					
+otp:CurrentSizeField	skos:mappingRelation	pwid:00669281-a ,	pwid:05106204-n .					
+otp:ObjectFirstCreatedField	skos:mappingRelation	pwid:00002684-n ,	pwid:00104262-r ,	pwid:01757596-v .				
+otp:ObjectIDField	skos:mappingRelation	pwid:00002684-n ,	pwid:06898133-n .					
+otp:ObjectLastModifiedField	skos:mappingRelation	pwid:00002684-n ,	pwid:01016876-a ,	pwid:01544533-a .				
+otp:ObjectNameField	skos:mappingRelation	pwid:00002684-n ,	pwid:06344646-n  .					
+plxp:PulseAmplitudeIndex	skos:mappingRelation	pwid:07415506-n ,	pwid:05105573-n ,	pwid:06652323-n .				
+plxp:SpO2PRFastfield	skos:mappingRelation	pwid:13839738-n ,	pwid:14672278-n ,	pwid:13948221-n  ,	pwid:15048807-n ,	pwid:15305913-n ,	pwid:00979699-a .	
+plxp:SpO2PRNormalfield	skos:mappingRelation	pwid:13839738-n ,	pwid:14672278-n ,	pwid:13948221-n  ,	pwid:15048807-n ,	pwid:15305913-n ,	pwid:01598231-a .	
+plxp:SpO2PRSlowfield	skos:mappingRelation	pwid:13839738-n ,	pwid:14672278-n ,	pwid:13948221-n  ,	pwid:15048807-n ,	pwid:15305913-n ,	pwid:00983718-a .	
+plxp:SpO2PRSpotCheckField	skos:mappingRelation	pwid:13839738-n ,	pwid:14672278-n ,	pwid:13948221-n  ,	pwid:15048807-n ,	pwid:15305913-n ,	pwid:00142960-n .	
+pxp:TxPowerLevelField	skos:mappingRelation	pwid:00122186-n ,	pwid:11470903-n .					
+rscp:InstantaneousCadenceField	skos:mappingRelation	pwid:00982222-s ,	pwid:04999057-n .					
+rscp:InstantaneousStrideLengthField	skos:mappingRelation	pwid:00982222-s ,	pwid:13779389-n ,	pwid:05136466-n .				
+rscp:TotalDistanceField	skos:mappingRelation	pwid:00517305-s ,	pwid:05136830-n .					
+wsp:BasalMetabolismField	skos:mappingRelation	pwid:13458926-n .						
+wsp:BIM	skos:mappingRelation	pwid:06652665-n .						
+wsp:BodyFatPercentageField	skos:mappingRelation	pwid:05223633-n ,	pwid:14888511-n ,	pwid:13839738-n .				
+wsp:BodyWaterField	skos:mappingRelation	pwid:05223633-n ,	pwid:14869913-n .					
+wsp:FatFreeMassField	skos:mappingRelation	pwid:14888511-n ,	pwid:00024946-r  ,	pwid:05106204-n .				
+wsp:HeightField	skos:mappingRelation	pwid:05144430-n .						
+wsp:ImpedanceField	skos:mappingRelation	pwid:11524386-n .						
+wsp:MuscleMassField	skos:mappingRelation	pwid:05296556-n ,	pwid:05106204-n .					
+wsp:MusclePercentageField	skos:mappingRelation	pwid:05296556-n ,	pwid:13839738-n .					
+wsp:SoftLeanMassField	skos:mappingRelation		pwid:05106204-n .					
+ble:UserIDField	skos:mappingRelation	pwid:10761247-n ,	pwid:06898133-n .					
+wsp:WeightField	skos:mappingRelation	pwid:05034301-n .						
+							
+ble:USBImplementerForum	skos:mappingRelation	pwid:03391266-n ,	pwid:00486949-v .					
+ble:TimeStampField	skos:mappingRelation	pwid:15154879-n ,	pwid:06659969-n ,	pwid:02723968-a .				
+ble:CumulativeCrankRevolutions	skos:mappingRelation	pwid:00048680-s ,	pwid:07455579-n .					
+ble:LastCrankEventTime	skos:mappingRelation	pwid:01013868-s ,	pwid:00029677-n ,	pwid:15154879-n .				
+ble:InstantaneousPowerField	skos:mappingRelation	pwid:00982222-s ,	pwid:05037846-n .					
+ble:InstantaneousSpeedField	skos:mappingRelation	pwid:00982222-s ,	pwid:15307914-n .					
+cgmp:SessionStartTimeField	skos:mappingRelation	pwid:00597095-a, pwid:14908271-n , pwid:00881437-n, pwid:15290329-n, pwid:15154879-n .						
+cgmp:DTSOffsetField	skos:mappingRelation	pwid:15141831-n ,	pwid:13312212-n .					
+cgmp:cgmpSessionRunTimeField	skos:mappingRelation	pwid:00597095-a, pwid:14908271-n , pwid:00881437-n, pwid:15286931-n, pwid:15154879-n .						
+cpp:FirstCrankMeasurementAngleField	skos:mappingRelation	pwid:01014459-a ,	pwid:13910202-n ,	pwid:00998911-n .				
+cpp:InstantaneousForceMagnitudeArrayField	skos:mappingRelation	pwid:00982222-s ,	pwid:05042508-n ,	pwid:05097645-n ,	pwid:07955622-n .			
+cpp:InstantaneousTorqueMagnitudeArrayField	skos:mappingRelation	pwid:00982222-s ,	pwid:11540135-n ,	pwid:05097645-n ,	pwid:07955622-n .			
+ftmp:Idle	skos:mappingRelation	pwid:00037301-s .						
+							
+ftmp:LowIntensityInterval	skos:mappingRelation	pwid:01215141-a ,	pwid:05043549-n ,	pwid:06025625-n .				
+ftmp:HighIntensityInterval	skos:mappingRelation	pwid:01213526-a ,	pwid:05043549-n ,	pwid:06025625-n .				
+ftmp:RecoveryInterval	skos:mappingRelation		pwid:07434392-n ,	pwid:06025625-n .				
+ftmp:Isometric	skos:mappingRelation	pwid:00356893-a .						
+ftmp:HeartRateControl	skos:mappingRelation	pwid:15305913-n ,	pwid:03101611-n .					
+ftmp:FitnessTest	skos:mappingRelation	pwid:14570034-n ,	pwid:00792739-n .					
+ftmp:LowSpeedOutside	skos:mappingRelation	pwid:01215141-a ,	pwid:15307914-n ,	pwid:08631047-n .				
+ftmp:HighSpeedOutside	skos:mappingRelation	pwid:01213526-a ,	pwid:15307914-n ,	pwid:08631047-n .				
+						
+ftmp:WattControl	skos:mappingRelation	pwid:13666001-n  ,	pwid:03101611-n .					
+ftmp:ManualMode	skos:mappingRelation	pwid:00184143-a ,	pwid:13946962-n .					
+ftmp:PreWorkout	skos:mappingRelation	pwid:00061477-r ,	pwid:02616880-v .					
+ftmp:PostWorkout	skos:mappingRelation	pwid:00061741-r ,	pwid:02616880-v .					
+glp:CarbohydrateIDField	skos:mappingRelation	pwid:14816873-n ,	pwid:06898133-n .					
+glp:CarbohydrateField	skos:mappingRelation	pwid:14816873-n .						
+glp:MealField	skos:mappingRelation	pwid:15270801-n .						
+glp:ExerciseDurationField	skos:mappingRelation	pwid:00625978-n ,	pwid:15158573-n .					
+glp:ExerciseIntensityField	skos:mappingRelation	pwid:00625978-n ,	pwid:05043549-n .					
+glp:MedicationIDField	skos:mappingRelation	pwid:03745652-n ,	pwid:06898133-n .					
+glp:MedicationField	skos:mappingRelation	pwid:03745652-n .						
+glp:HbA1cField	skos:mappingRelation	pwid:15048807-n .						
+htp:MeasurementIntervalValue	skos:mappingRelation	pwid:00998911-n ,	pwid:06025625-n .					
+idp:Undetermined	skos:mappingRelation	pwid:01615331-a .						
+idp:Stop	skos:mappingRelation	pwid:07380449-n .						
+idp:Pause	skos:mappingRelation	pwid:01064741-n .						
+idp:Run	skos:mappingRelation	pwid:01529078-v .						
+idp:Off	skos:mappingRelation	pwid:01655911-a .						
+							
+idp:Preparing	skos:mappingRelation	pwid:00407168-v .						
+						
+idp:Waiting	skos:mappingRelation	pwid:15297015-n .						
+idp:Ready	skos:mappingRelation	pwid:14055005-n .						
+idp:AnnunciationType	skos:mappingRelation	pwid:06611268-n ,	pwid:05848697-n .					
+idp:AnnunciationStatus	skos:mappingRelation	pwid:06611268-n ,	pwid:13943868-n .					
+idp:Pending	skos:mappingRelation	pwid:01008292-s  .						
+							
+idp:Confirmed	skos:mappingRelation	pwid:01638538-a .						
+idp:SystemIssue	skos:mappingRelation	pwid:04384144-n ,	pwid:14434009-n .					
+idp:MechanicalIssue	skos:mappingRelation	pwid:02902437-a ,	pwid:14434009-n .					
+idp:OcclusionDetected	skos:mappingRelation	pwid:14124251-n ,	pwid:02158938-v .					
+idp:ReservoirIssue	skos:mappingRelation	pwid:13799066-n ,	pwid:14434009-n .					
+idp:ReservoirEmpty	skos:mappingRelation	pwid:13799066-n ,	pwid:01090234-a .					
+idp:ReservoirLow	skos:mappingRelation	pwid:13799066-n ,	pwid:01215141-a .					
+idp:PrimingIssue	skos:mappingRelation	pwid:14434009-n .						
+idp:InfusionSetIncomplete	skos:mappingRelation	pwid:01008130-s ,	pwid:00324358-n .					
+					
+idp:PowerSourceInsufficient	skos:mappingRelation	pwid:11470903-n ,	pwid:13580156-n , pwid:02344427-a .				
+idp:BatteryEmpty	skos:mappingRelation	pwid:02813606-n ,	pwid:01090234-a .					
+idp:BatteryLow	skos:mappingRelation	pwid:02813606-n ,	pwid:01215141-a .					
+idp:BatteryMedium	skos:mappingRelation	pwid:02813606-n ,	pwid:01536076-s .					
+idp:BatteryFull	skos:mappingRelation	pwid:02813606-n ,	pwid:00524974-s .					
+idp:Temperatureoutofrange	skos:mappingRelation	pwid:05018974-n .						
+idp:Airpressureoutofrange	skos:mappingRelation	pwid:11449572-n .						
+idp:BolusCanceled	skos:mappingRelation	pwid:02869814-n ,	pwid:01656338-a .					
+idp:TBROver	skos:mappingRelation	pwid:01760139-a ,	pwid:01861961-s .					
+idp:TBRCanceled	skos:mappingRelation	pwid:01760139-a ,	pwid:01861961-s ,	pwid:01656338-a .				
+idp:MaxDelivery	skos:mappingRelation	pwid:13798337-n ,	pwid:00318033-n .					
+idp:DateTimeIssue	skos:mappingRelation	pwid:15145165-n  ,	pwid:15154879-n ,	pwid:14434009-n .				
+idp:Temperature	skos:mappingRelation	pwid:05018974-n .						
+idp:ManufacturerReserved	skos:mappingRelation	pwid:10311977-n ,	pwid:01995406-a .					
+idp:GenericDevice	skos:mappingRelation	pwid:01105857-s ,	pwid:03187746-n .					
+idp:Insulin	skos:mappingRelation	pwid:05417989-n .						
+idp:EventData	skos:mappingRelation	pwid:00029677-n ,	pwid:05824748-n .					
+idp:BolusIDfield	skos:mappingRelation	pwid:02869814-n ,	pwid:06898133-n .					
+idp:BolusFastAmountfield	skos:mappingRelation	pwid:02869814-n ,	pwid:00086488-r ,	pwid:05869651-n .				
+idp:BolusExtendedAmountfield	skos:mappingRelation	pwid:02869814-n ,	pwid:01389168-s ,	pwid:05869651-n .				
+idp:BolusDurationfield	skos:mappingRelation	pwid:02869814-n ,	pwid:15158573-n .					
+idp:BolusDelayTime	skos:mappingRelation	pwid:02869814-n ,	pwid:15297015-n .					
+ble:IndoorPositioningValue	skos:mappingRelation	pwid:00956317-s ,	pwid:01053255-n .					
+ble:LatitudeValue	skos:mappingRelation	pwid:08613087-n .						
+ble:LongitudeValue	skos:mappingRelation	pwid:08614224-n .						
+ble:LocalNorthCoordinateValue	skos:mappingRelation	pwid:02767118-a ,	pwid:13857626-n ,	pwid:06020279-n .				
+ble:LocalEastCoordinateValue	skos:mappingRelation	pwid:02767118-a ,	pwid:13857863-n ,	pwid:06020279-n .				
+ble:FloorNumberValue	skos:mappingRelation	pwid:03370438-n ,	pwid:06609408-n .					
+ble:AltitudeValue	skos:mappingRelation	pwid:13858570-n .						
+ble:UncertaintyValue	skos:mappingRelation	pwid:05706212-n .						
+ble:LocationNameValue	skos:mappingRelation	pwid:00027365-n ,	pwid:06344646-n  .					
+lehid:BootProtocolMode	skos:mappingRelation	pwid:00098100-v ,	pwid:06677853-n ,	pwid:13946962-n .				
+lehid:ReportProtocolMode	skos:mappingRelation	pwid:06659969-n  ,	pwid:06677853-n ,	pwid:13946962-n .				
+lehid:HIDControlPointCharacteristicValue	skos:mappingRelation	pwid:06587403-n  ,	pwid:03187746-n ,	pwid:03101611-n ,	pwid:15205381-n .			
+lehid:Suspend	skos:mappingRelation	pwid:02649824-v .						
+lehid:ExitSuspend	skos:mappingRelation		pwid:02649824-v .					
+pasp:AlertStatusValue	skos:mappingRelation	pwid:06816015-n ,	pwid:13943868-n  .					
+ble:OrganizationIDField	skos:mappingRelation	pwid:02909528-a  ,	pwid:06898133-n .					
+ble:TransportDataLengthField	skos:mappingRelation	pwid:00316812-n  ,	pwid:05824748-n , pwid:05140372-n .					
+ble:TransportDataField	skos:mappingRelation	pwid:00316812-n  ,	pwid:05824748-n .					
+
+
+ble:Read	skos:mappingRelation	pwid:00621911-v .	
+ble:Write	skos:mappingRelation	pwid:00995046-v .	
+ble:Notify	skos:mappingRelation	pwid:00875364-v .	
+ble:Indicate	skos:mappingRelation	pwid:00925764-v .	
+ble:WritewithoutResponse	skos:mappingRelation	pwid:00995046-v ,	pwid:06758700-n .
+ble:ReadLong	skos:mappingRelation	pwid:00621911-v .	
+ble:ReliableWrite	skos:mappingRelation	pwid:00995046-v ,	pwid:00727525-a .

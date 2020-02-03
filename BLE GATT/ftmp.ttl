@@ -1,4 +1,4 @@
-@prefix ftmp: <http://example.org/namespace/ble-gatt/ftmp#> .
+﻿@prefix ftmp: <http://example.org/namespace/ble-gatt/ftmp#> .
 @prefix ble: <http://example.org/namespace/ble-gatt#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -413,7 +413,7 @@ ble:Value skos:narrower ftmp:AverageCadenceField .
 ftmp:AverageCadenceField    a skos:Concept .
 ftmp:IndoorBikeData skos:related ftmp:AverageCadenceField   .
 ftmp:AverageCadenceField    rdfs:label "Average Cadence Field" .
-ftmp:AverageCadenceField  skos:definition "The Average Speed field represents the average cadence since the beginning of the training session." .
+ftmp:AverageCadenceField  skos:definition "The Average Cadence field represents the average cadence since the beginning of the training session." .
 ftmp:AverageCadenceField skos:related xsd:unsignedShort .
 
 

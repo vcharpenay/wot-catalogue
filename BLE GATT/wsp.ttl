@@ -115,12 +115,12 @@ wsp:SoftLeanMassField rdfs:label "Soft Lean Mass Field" .
 wsp:SoftLeanMassField skos:definition "The Soft Lean Mass field may be included in the Body Composition Measurement characteristic if the device supports the Soft Lean Mass feature.".
 wsp:SoftLeanMassField skos:related xsd:unsignedShort.
 
-wsp:BodyWateField a skos:Concept .
-ble:Value skos:narrower wsp:BodyWateField .
-wsp:BodyCompositionMeasurement skos:related wsp:BodyWateField .
-wsp:BodyWateField rdfs:label "Body Wate Field" .
-wsp:BodyWateField skos:definition "The Body Water Mass field may be included in the Body Composition Measurement characteristic if the device supports the Body Water Mass feature.".
-wsp:BodyWateField skos:related xsd:unsignedShort.
+wsp:BodyWaterField a skos:Concept .
+ble:Value skos:narrower wsp:BodyWaterField .
+wsp:BodyCompositionMeasurement skos:related wsp:BodyWaterField .
+wsp:BodyWaterField rdfs:label "Body Wate Field" .
+wsp:BodyWaterField skos:definition "The Body Water Mass field may be included in the Body Composition Measurement characteristic if the device supports the Body Water Mass feature.".
+wsp:BodyWaterField skos:related xsd:unsignedShort.
 
 
 wsp:ImpedanceField a skos:Concept .
