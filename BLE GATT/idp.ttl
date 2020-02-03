@@ -1,0 +1,414 @@
+@prefix idp: <http://example.org/namespace/ble-gatt/idp#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+idp:InsulinDeliveryProfile a skos:Concept .
+idp:InsulinDeliveryService a skos:Concept .
+idp:IDDStatusChanged a skos:Concept .
+idp:IDDStatus a skos:Concept .
+idp:IDDAnnunciationStatus a skos:Concept .
+idp:IDDFeatures a skos:Concept .
+idp:IDDStatusReaderControlPoint a skos:Concept .
+idp:IDDCommandData a skos:Concept .
+idp:IDDCommandControlPoint a skos:Concept .
+idp:IDDRecordAccessControlPoint a skos:Concept .
+idp:IDDHistoryData a skos:Concept .
+
+idp:InsulinDeliveryProfile  rdfs:label "Insulin Delivery Profile" .
+idp:InsulinDeliveryProfile skos:editorialNote "Not found yet, require membership ro get access." .
+idp:InsulinDeliveryProfile owl:versionInfo "1.0" .
+
+
+ble:Profile skos:narrower idp:InsulinDeliveryProfile .
+ble:Service skos:narrower idp:InsulinDeliveryService.
+
+idp:InsulinDeliveryProfile skos:related idp:InsulinDeliveryService .
+
+idp:InsulinDeliveryService  rdfs:label "Insulin Delivery Service" .
+idp:InsulinDeliveryService rdfs:seeAlso <https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=447826> .
+idp:InsulinDeliveryService skos:definition "The Insulin Delivery Service (IDS) exposes the control capability and the status of an Insulin Delivery Device running an insulin infusion therapy." .
+idp:InsulinDeliveryService  owl:versionInfo "1.0" .
+
+
+idp:InsulinDeliveryService skos:related idp:IDDStatusChanged .
+idp:InsulinDeliveryService skos:related idp:IDDStatus .
+idp:InsulinDeliveryService skos:related idp:IDDAnnunciationStatus .
+idp:InsulinDeliveryService skos:related idp:IDDFeatures .
+idp:InsulinDeliveryService skos:related idp:IDDStatusReaderControlPoint .
+idp:InsulinDeliveryService skos:related idp:IDDCommandControlPoint .
+idp:InsulinDeliveryService skos:related idp:IDDCommandData.
+idp:InsulinDeliveryService skos:related idp:IDDRecordAccessControlPoint .
+idp:InsulinDeliveryService skos:related idp:IDDHistoryData .
+
+ble:Characteristic skos:narrower  idp:IDDStatusChanged .
+ble:Characteristic skos:narrower  idp:IDDStatus .
+ble:Characteristic skos:narrower  idp:IDDAnnunciationStatus .
+ble:Characteristic skos:narrower  idp:IDDFeatures .
+ble:Characteristic skos:narrower  idp:IDDStatusReaderControlPoint .
+ble:Characteristic skos:narrower  idp:IDDCommandData .
+ble:Characteristic skos:narrower  idp:IDDCommandControlPoint .
+ble:Characteristic skos:narrower  idp:IDDRecordAccessControlPoint .
+ble:Characteristic skos:narrower  idp:IDDHistoryData .
+
+idp:IDDStatusChanged rdfs:label "Insulin Delivery Device Status Changed" .
+idp:IDDStatusChanged skos:definition "The IDD Status Changed characteristic is comprised of status changes of the insulin therapy and the Insulin Delivery Device." .
+
+idp:IDDStatus rdfs:label "Insulin Delivery Device Status" .
+idp:IDDStatus skos:definition "The IDD Status characteristic is comprised of status values of the Insulin Delivery Device and the insulin therapy." .
+
+idp:IDDAnnunciationStatus rdfs:label "Insulin Delivery Device Annunciation Status" .
+idp:IDDAnnunciationStatus skos:definition "The IDD Annunciation Status characteristic is a variable length structure comprising of messages that describe state changes of the Insulin Delivery Device and in the therapy relevant functions." .
+
+idp:IDDFeatures rdfs:label "Insulin Delivery Device Feature" .
+idp:IDDFeatures skos:definition "The IDD Features characteristic shall be used to describe the supported features of the Server." . 
+
+idp:IDDStatusReaderControlPoint rdfs:label "Insulin Delivery Device Status Reader Control Point" .
+idp:IDDStatusReaderControlPoint skos:definition "The IDD Status Reader Control Point provides insulin therapy relevant status information (e.g., currently running boluses or current basal rate)." .
+
+idp:IDDCommandControlPoint  rdfs:label "Insulin Delivery Device Command Control Point" . 
+idp:IDDCommandControlPoint  skos:definition "The IDD Command Control Point provides procedures to support the insulin therapy by adapting therapy parameters to operate the insulin therapy remotely and to perform a remote operation of the device maintenance." .
+
+idp:IDDCommandData  rdfs:label "Insulin Delivery Device Command Data" . 
+idp:IDDCommandData  skos:definition "The IDD Command Data characteristic is comprised of response records from executed procedures of the IDD Command Control Point." .
+
+idp:IDDRecordAccessControlPoint rdfs:label "Insulin Delivery Device Record Access Control Point" .
+idp:IDDRecordAccessControlPoint skos:definition "This control point is used by the Insulin Delivery Service to provide basic management functionality of the history database of the Insulin Delivery Device including historical data of the insulin therapy, device state changes, and annunciations." .
+
+idp:IDDHistoryData rdfs:label "Insulin Delivery Device History Data" .
+idp:IDDHistoryData skos:definition "The IDD History Data characteristic is comprised of response records from executed procedures of the IDD Record Access Control Point." .
+
+idp:IDDStatusChanged skos:related ble:Read, ble:Indicate .
+idp:IDDStatus skos:related ble:Read, ble:Indicate .
+idp:IDDAnnunciationStatus skos:related ble:Read, ble:Indicate .
+idp:IDDFeatures skos:related ble:Read .
+idp:IDDStatusReaderControlPoint skos:related ble:Write, ble:Indicate .
+idp:IDDCommandData skos:related ble:Write, ble:Indicate .
+idp:IDDCommandControlPoint skos:related ble:Notify .
+idp:IDDRecordAccessControlPoint skos:related ble:Write, ble:Indicate .
+idp:IDDHistoryData skos:related ble:Notify .
+
+
+idp:IDDStatusChanged skos:related idp:E2ECounterfield, idp:E2ECRCfield .
+idp:IDDStatus skos:related idp:E2ECounterfield, idp:E2ECRCfield .
+idp:IDDAnnunciationStatus skos:related  idp:E2ECounterfield , idp:E2ECRCfield.
+idp:IDDFeatures skos:related  idp:E2ECounterfield, idp:E2ECRCfield .
+idp:IDDStatusReaderControlPoint skos:related idp:E2ECounterfield , idp:E2ECRCfield.
+idp:IDDCommandData skos:related idp:E2ECounterfield , idp:E2ECRCfield .
+idp:IDDCommandControlPoint skos:related  idp:E2ECounterfield , idp:E2ECRCfield.
+idp:IDDRecordAccessControlPoint skos:related  idp:E2ECounterfield , idp:E2ECRCfield.
+
+
+idp:E2ECounterfield a skos:Concept .
+ble:Value skos:narrower idp:E2ECounterfield .
+idp:E2ECounterfield rdfs:label "End to End Counter field" .
+idp:E2ECounterfield skos:definition "The E2E-Counter field, when used correctly, provides that messages are received in the correct order." .
+idp:E2ECounterfield skos:related xsd:unsignedByte .
+
+idp:E2ECRCfield a skos:Concept .
+ble:Value skos:narrower idp:E2ECRCfield .
+idp:E2ECRCfield rdfs:label "End to End Cyclic Redundancy Check field" .
+idp:E2ECRCfield skos:definition "If the Server supports E2E-Protection, all fields of a characteristic shall be secured by a CRC calculated over all fields of the characteristic payload." .
+idp:E2ECRCfield skos:related xsd:unsignedShort .
+
+
+
+idp:IDDStatus skos:related idp:TherapyControlStatefield, idp:OperationalStatefield .   
+idp:TherapyControlStatefield a skos:Concept .
+idp:OperationalStatefield a skos:Concept . 
+ble:Value skos:narrower idp:TherapyControlStatefield, idp:OperationalStatefield .
+idp:TherapyControlStatefield rdfs:label "Therapy Control State field" .
+idp:OperationalStatefield rdfs:label "Operational State field" . 
+idp:TherapyControlStatefield skos:definition "The Therapy Control State field describes the therapy state of the insulin delivery (e.g., stop, pause, run)." .
+idp:OperationalStatefield skos:definition "The Operational State field represents the operational state of the Insulin Delivery Device in the context of running an insulin infusion therapy (e.g., priming)." . 
+idp:TherapyControlStatefield skos:related xsd:unsignedByte .
+idp:OperationalStatefield skos:related xsd:unsignedByte .
+
+idp:TherapyControlStatefield skos:narrower idp:Undetermined, idp:Stop, idp:Pause, idp:Run .
+
+idp:Undetermined a skos:Concept .
+idp:Pause a skos:Concept .
+idp:Run a skos:Concept .
+idp:Stop a skos:Concept .
+
+ble:Value skos:narrower idp:Undetermined .
+ble:Value skos:narrower idp:Pause .
+ble:Value skos:narrower idp:Run .
+ble:Value skos:narrower idp:Stop .
+
+idp:Undetermined rdfs:label "Undetermined" .
+idp:Pause rdfs:label "Pause" .
+idp:Run rdfs:label "Run" .
+idp:Stop rdfs:label "Stop" .
+
+idp:Undetermined skos:definition "The operational state is undetermined" .
+skos:definition skos:definition "The insulin infusion therapy is stopped but the Insulin Delivery Device can still be configured (e.g., priming)." .
+idp:Run skos:definition "The insulin infusion therapy is running (i.e., the device delivers insulin related to the therapy)." .
+idp:Pause skos:definition "The insulin infusion therapy is paused (i.e., the device does not deliver insulin related to the therapy but delivers the missed amount of insulin after leaving state Pause and entering state Run)." .
+
+idp:OperationalStatefield skos:related idp:Undetermined, idp:Off, idp:Standby, idp:Preparing, idp:Priming, idp:Waiting, idp:Ready .
+
+idp:Off a skos:Concept .
+idp:Standby a skos:Concept .
+idp:Preparing a skos:Concept .
+idp:Priming a skos:Concept .
+idp:Waiting a skos:Concept .
+idp:Ready a skos:Concept .
+
+ble:Value skos:narrower idp:Off .
+ble:Value skos:narrower idp:Standby .
+ble:Value skos:narrower idp:Preparing .
+ble:Value skos:narrower idp:Priming .
+ble:Value skos:narrower idp:Waiting .
+ble:Value skos:narrower idp:Ready .
+
+idp:Off rdfs:label "Off" .
+idp:Standby rdfs:label "Stand By" .
+idp:Preparing rdfs:label "Preparing" .
+idp:Priming rdfs:label "Priming" .
+idp:Waiting rdfs:label "Waiting" .
+idp:Ready rdfs:label "Ready" .
+
+idp:Off skos:definition "The Insulin Delivery Device is switched off and no functionality is available" .
+idp:Standby skos:definition "No insulin is delivered and resuming from this state is faster than from state Off" .
+idp:Preparing skos:definition "The Insulin Delivery Device prepares the insulin infusion therapy" .
+idp:Priming skos:definition "The Insulin Delivery Device fills the fluidic path from the reservoir to the body with insulin" .
+idp:Waiting skos:definition "The Insulin Delivery Device waits for an interaction" .
+idp:Ready skos:definition "The Insulin Delivery Device is ready for the insulin infusion therapy" .
+
+
+idp:IDDStatus skos:related idp:ReservoirRemainingAmountfield . 
+idp:ReservoirRemainingAmountfield a skos:Concept .
+ble:Value skos:narrower idp:ReservoirRemainingAmountfield .
+idp:ReservoirRemainingAmountfield rdfs:label "Reservoir Remaining Amount field"  .
+idp:ReservoirRemainingAmountfield skos:definition "The Reservoir Remaining Amount field represents the remaining amount of insulin in the reservoir in IU." .
+idp:ReservoirRemainingAmountfield skos:related xsd:float .
+
+
+idp:IDDAnnunciationStatus  skos:related idp:AnnunciationInstanceID, idp:AnnunciationType, idp:AnnunciationStatus, idp:AuxInfo1Valuefield , idp:AuxInfo2Contextfield, idp:AuxInfo3LowerBoundfield, idp:AuxInfo4UpperBoundfield .
+
+ble:Value skos:narrower idp:AnnunciationInstanceID, idp:AnnunciationType, idp:AnnunciationStatus, idp:AuxInfo1Valuefield , idp:AuxInfo2Contextfield, idp:AuxInfo3LowerBoundfield, idp:AuxInfo4UpperBoundfield .
+
+idp:AuxInfo1Valuefield a skos:Concept . 
+idp:AuxInfo2Contextfield a skos:Concept .
+idp:AuxInfo3LowerBoundfield a skos:Concept .
+idp:AuxInfo4UpperBoundfield a skos:Concept .
+idp:AnnunciationInstanceID a skos:Concept .
+idp:AnnunciationType a skos:Concept .
+idp:AnnunciationStatus a skos:Concept .
+
+idp:AuxInfo1Valuefield rdfs:label " AuxInfo1 Value field" . 
+idp:AuxInfo2Contextfield rdfs:label "AuxInfo2 Context values" .
+idp:AuxInfo3LowerBoundfield rdfs:label "AuxInfo3 Lower Bound field" .
+idp:AuxInfo4UpperBoundfield rdfs:label "AuxInfo4 Upper Bound field" .
+idp:AnnunciationInstanceID rdfs:label "Annunciation Instance ID " .
+idp:AnnunciationType rdfs:label "Annunciation Type" .
+idp:AnnunciationStatus rdfs:label "Annunciation Status" .
+
+idp:AuxInfo1Valuefield skos:definition "The AuxInfo1 field shall contain the value of the temperature." . 
+idp:AuxInfo2Contextfield skos:definition "The second octet of the AuxInfo2 field shall contain a Context field." .
+idp:AuxInfo3LowerBoundfield skos:definition "The AuxInfo3 field shall contain the value of the lower bound of the temperature." .
+idp:AuxInfo4UpperBoundfield skos:definition "The AuxInfo4 field shall contain the value of the upper bound of the temperature." .
+idp:AnnunciationInstanceID skos:definition "The Annunciation Instance ID field represents a unique identifier as a uint16 data type created by the Server application for all annunciations that occur in the course of time." .
+idp:AnnunciationInstanceID skos:related xsd:unsignedShort .
+
+idp:AnnunciationType skos:definition "This Annunciation Type field describes the kind of annunciation in the scope of the Server application" .
+idp:AnnunciationStatus skos:definition "This Annunciation Status field represents the current status of an annunciation" .
+
+idp:AnnunciationType skos:related xsd:unsignedShort .
+idp:AnnunciationStatus skos:related xsd:unsignedByte.
+
+
+idp:AnnunciationStatus skos:narrower idp:Undetermined, idp:Pending, idp:Snoozed, idp:Confirmed .
+ble:Value skos:narrower idp:Pending, idp:Snoozed, idp:Confirmed .
+idp:Pending a skos:Concept .
+idp:Snoozed a skos:Concept .
+idp:Confirmed a skos:Concept .
+
+idp:Pending rdfs:label "Pending" .
+idp:Snoozed rdfs:label "Snoozed" .
+idp:Confirmed rdfs:label "Confirmed" .
+
+idp:Pending skos:definition "The annunciation is currently pending and requires a user action for snoozing or confirmation" .
+idp:Snoozed skos:definition "The annunciation was noticed by the user and is set to pop up again at a short time later" .
+idp:Confirmed skos:definition "The annunciation was confirmed by the user" .
+
+idp:AnnunciationType skos:narrower idp:SystemIssue , idp:MechanicalIssue,idp:OcclusionDetected, idp:ReservoirIssue, idp:ReservoirEmpty, idp:ReservoirLow, idp:PrimingIssue , idp:InfusionSetIncomplete, idp:InfusionSetDetached, idp:PowerSourceInsufficient, idp:BatteryEmpty, idp:BatteryLow, idp:BatteryMedium, idp:BatteryFull, idp:Temperatureoutofrange, idp:Airpressureoutofrange, idp:BolusCanceled, idp:TBROver, idp:TBRCanceled, idp:MaxDelivery, idp:DateTimeIssue, idp:Temperature, idp:ManufacturerReserved . 
+
+ble:Value skos:narrower idp:SystemIssue , idp:MechanicalIssue,idp:OcclusionDetected, idp:ReservoirIssue, idp:ReservoirEmpty, idp:ReservoirLow, idp:PrimingIssue, idp:InfusionSetIncomplete, idp:InfusionSetDetached, idp:PowerSourceInsufficient, idp:BatteryEmpty, idp:BatteryLow, idp:BatteryMedium, idp:BatteryFull, idp:Temperatureoutofrange, idp:Airpressureoutofrange, idp:BolusCanceled, idp:TBROver, idp:TBRCanceled, idp:MaxDelivery, idp:DateTimeIssue, idp:Temperature, idp:ManufacturerReserved .
+
+idp:SystemIssue a skos:Concept .
+idp:MechanicalIssue a skos:Concept .
+idp:OcclusionDetected a skos:Concept .
+idp:ReservoirIssue a skos:Concept .
+idp:ReservoirEmpty a skos:Concept .
+idp:ReservoirLow a skos:Concept .
+idp:PrimingIssue a skos:Concept .
+idp:InfusionSetIncomplete a skos:Concept .
+idp:InfusionSetDetached a skos:Concept .
+idp:PowerSourceInsufficient a skos:Concept .
+idp:BatteryEmpty a skos:Concept .
+idp:BatteryLow a skos:Concept .
+idp:BatteryMedium a skos:Concept .
+idp:BatteryFull a skos:Concept .
+idp:Temperatureoutofrange a skos:Concept .
+idp:Airpressureoutofrange a skos:Concept .
+idp:BolusCanceled a skos:Concept .
+idp:TBROver a skos:Concept .
+idp:TBRCanceled a skos:Concept .
+idp:MaxDelivery a skos:Concept .
+idp:DateTimeIssue a skos:Concept .
+idp:Temperature a skos:Concept .
+idp:ManufacturerReserved  a skos:Concept .
+
+
+idp:SystemIssue rdfs:label "System Issue" .
+idp:MechanicalIssue rdfs:label  "Mechanical Issue" .
+idp:OcclusionDetected rdfs:label "Occlusion Detected" .
+idp:ReservoirIssue rdfs:label  "Reservoir Issue" .
+idp:ReservoirEmpty rdfs:label "Reservoir Empty" .
+idp:ReservoirLow rdfs:label "Reservoir Low" .
+idp:PrimingIssue rdfs:label "Priming Issue" .
+idp:InfusionSetIncomplete rdfs:label "Infusion Set Incomplete" .
+idp:InfusionSetDetached rdfs:label "Infusion Set Detached" .
+idp:PowerSourceInsufficient rdfs:label "Power Source Insufficient" .
+idp:BatteryEmpty rdfs:label "Battery Empty" .
+idp:BatteryLow rdfs:label "Battery Low" .
+idp:BatteryMedium rdfs:label "Battery Medium" .
+idp:BatteryFull rdfs:label "Battery Full" .
+idp:Temperatureoutofrange rdfs:label "Temperature out of range" .
+idp:Airpressureoutofrange rdfs:label "Air pressure out of range" .
+idp:BolusCanceled rdfs:label "Bolus Canceled" .
+idp:TBROver rdfs:label "The temporary basal Over" .
+idp:TBRCanceled rdfs:label "The temporary basal Canceled" .
+idp:MaxDelivery rdfs:label "Max Delivery" .
+idp:DateTimeIssue rdfs:label "Date Time Issue" .
+idp:Temperature rdfs:label "Temperature" .
+idp:ManufacturerReserved  rdfs:label "Manufacturer Reserved Hamming Code Value Range" .
+
+idp:SystemIssue skos:definition "A general device fault or system error occurred (e.g., electronical or software error)." .
+idp:MechanicalIssue skos:definition "A mechanical error occurred" .
+idp:OcclusionDetected skos:definition "An occlusion occurred (e.g., clogging of infusion set)." .
+idp:ReservoirIssue skos:definition "An error related to the replacement or functioning of the reservoir occurred." .
+idp:ReservoirEmpty skos:definition "The reservoir is empty" .
+idp:ReservoirLow skos:definition "The reservoir fill level reached a defined low threshold." .
+idp:PrimingIssue skos:definition "There is a priming issue after replacement of reservoir and/or infusion set" .
+idp:InfusionSetIncomplete skos:definition "The physical connection between infusion set (including tubing and/or cannula) and the Insulin Delivery Device is incomplete." .
+idp:InfusionSetDetached skos:definition "The infusion set (including tubing and/or cannula) is not attached to the body." .
+idp:PowerSourceInsufficient skos:definition "The Insulin Delivery Device has insufficient power to charge the device" .
+idp:BatteryEmpty skos:definition "The Insulin Delivery Device has no operational runtime left" .
+idp:BatteryLow skos:definition "The Insulin Delivery Device has a low operational runtime" .
+idp:BatteryMedium skos:definition "The Insulin Delivery Device has a medium operational runtime" .
+idp:BatteryFull skos:definition "The Insulin Delivery Device has a full operational runtime" .
+idp:Temperatureoutofrange skos:definition "The temperature is outside of the normal operating range." .
+idp:Airpressureoutofrange skos:definition "The air pressure is outside of the normal operating range (e.g., altitude)." .
+idp:BolusCanceled skos:definition "A running bolus was canceled (e.g., Insulin Delivery Device changed from run to standby mode)" .
+idp:TBROver skos:definition "The temporary basal rate expired (i.e., the programmed duration is over)." .
+idp:TBRCanceled skos:definition "The temporary basal rate canceled (e.g., device changed from run to standby mode)." .
+idp:MaxDelivery skos:definition "The delivery reached a defined high threshold based on maximum bolus and maximum basal rates" .
+idp:DateTimeIssue skos:definition "The date time of the device was never set or has been lost (e.g., due to a battery replacement)." .
+idp:Temperature skos:definition "The Insulin Delivery Device reports a temperature measurement." .
+idp:ManufacturerReserved skos:definition "All Hamming codes values in the range of 0xF000 and 0xFFF0 are manufacturer reserved" .
+
+
+
+idp:AuxInfo2Contextfield skos:narrower idp:GenericDevice, idp:Insulin .
+ble:Value skos:narrower idp:GenericDevice, idp:Insulin .
+idp:GenericDevice a skos:Concept .
+idp:Insulin a skos:Concept .
+idp:GenericDevice rdfs:label "Generic Device" .
+idp:Insulin rdfs:label "Insulin" .
+idp:GenericDevice skos:definition "The reported temperature refers to the Insulin Delivery Device in general." .
+idp:Insulin skos:definition "The reported temperature refers to the insulin delivered by the Insulin Delivery Device in general (e.g. the insulin in the reservoir)." .
+
+
+idp:AuxInfo1Valuefield skos:related xsd:float . 
+idp:AuxInfo2Contextfield skos:related xsd:unsignedByte .
+idp:AuxInfo3LowerBoundfield skos:related xsd:float .
+idp:AuxInfo4UpperBoundfield skos:related xsd:float .
+
+idp:IDDFeatures skos:related idp:InsulinConcentrationfield .
+ble:Value skos:narrower idp:InsulinConcentrationfield .
+idp:InsulinConcentrationfield a skos:Concept .
+idp:InsulinConcentrationfield rdfs:label "Insulin Concentration field" .
+idp:InsulinConcentrationfield skos:definition "The Insulin Concentration field shall be included in the IDD Features characteristic to expose the intended insulin concentration of the Insulin Delivery Device." .
+
+
+
+idp:IDDHistoryData skos:related idp:SequenceNumberfield .
+idp:SequenceNumberfield a skos:Concept .
+ble:Value skos:narrower idp:SequenceNumberfield .
+idp:SequenceNumberfield rdfs:label "Sequence Number field" .
+idp:SequenceNumberfield skos:definition "The Sequence Number shall be assigned to each IDD History Data characteristic value to maintain the chronological order of the history records in the Server history database." .
+idp:SequenceNumberfield skos:related xsd:unsignedInt .
+
+idp:IDDHistoryData skos:related idp:RelativeOffsetfield  .
+idp:RelativeOffsetfield  a skos:Concept .
+ble:Value skos:narrower idp:RelativeOffsetfield  .
+idp:RelativeOffsetfield  rdfs:label "Relative Offset field" .
+idp:RelativeOffsetfield  skos:definition "The Relative Offset field represents the elapsed time in seconds since the last recorded Reference Time event." .
+idp:RelativeOffsetfield  skos:related xsd:unsignedShort .
+
+
+idp:IDDHistoryData skos:related idp:EventData   .
+idp:EventData  a skos:Concept .
+ble:Value skos:narrower idp:EventData  .
+idp:EventData  rdfs:label "Recording Reason field" .
+idp:EventData  skos:definition "The Recording Reason field specifies the reason why the Reference Time event was recorded." .
+
+
+
+
+
+idp:IDDStatusReaderControlPoint skos:related idp:BolusIDfield .
+ble:Value skos:narrower idp:BolusIDfield .
+idp:BolusIDfield  a skos:Concept .
+idp:BolusIDfield rdfs:label "Bolus ID Field" .
+idp:BolusIDfield skos:definition "The Bolus ID field represents a unique identifier as a uint16 data type created by the Server Application for a programmed bolus." .
+idp:BolusIDfield skos:related xsd:unsignedShort .
+
+idp:IDDStatusReaderControlPoint skos:related idp:BolusFastAmountfield .
+ble:Value skos:narrower idp:BolusFastAmountfield .
+idp:BolusFastAmountfield  a skos:Concept .
+idp:BolusFastAmountfield rdfs:label "Bolus Fast Amount field" .
+idp:BolusFastAmountfield skos:definition "The Bolus Fast Amount field represents the fast amount of the bolus." .
+idp:BolusFastAmountfield skos:related xsd:float .
+
+
+idp:IDDStatusReaderControlPoint skos:related idp:BolusExtendedAmountfield  .
+ble:Value skos:narrower idp:BolusExtendedAmountfield .
+idp:BolusExtendedAmountfield  a skos:Concept .
+idp:BolusExtendedAmountfield rdfs:label "Bolus Extended Amount field" .
+idp:BolusExtendedAmountfield skos:definition "The Bolus Extended Amount field represents the extended amount of the bolus." .
+idp:BolusExtendedAmountfield skos:related xsd:float .
+
+
+
+idp:IDDStatusReaderControlPoint skos:related idp:BolusDurationfield   .
+ble:Value skos:narrower idp:BolusDurationfield .
+idp:BolusDurationfield  a skos:Concept .
+idp:BolusDurationfield rdfs:label "Bolus Duration field" .
+idp:BolusDurationfield skos:definition "The Bolus Duration field represents the duration of the bolus." .
+idp:BolusDelayTime skos:related xsd:unsignedShort .
+
+idp:IDDStatusReaderControlPoint skos:related idp:BolusDelayTime   .
+ble:Value skos:narrower idp:BolusDelayTime .
+idp:BolusDelayTime  a skos:Concept .
+idp:BolusDelayTime rdfs:label "Bolus Delay Time" .
+idp:BolusDelayTime skos:definition "The Bolus Delay Time field represents the delay time of the bolus." .
+idp:BolusDelayTime skos:related xsd:unsignedShort .
+
+
+
+
+
+
+
+
+
+
+
+

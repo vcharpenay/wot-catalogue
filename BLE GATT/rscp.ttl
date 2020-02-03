@@ -1,0 +1,92 @@
+@prefix rscp: <http://example.org/namespace/ble-gatt/rscp#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rscp:RunningSpeedandCadenceProfile a skos:Concept .
+rscp:RunningSpeedandCadenceService a skos:Concept .
+rscp:RSCMeasurement a skos:Concept .
+rscp:RSCFeature a skos:Concept .
+rscp:SCControlpoint a skos:Concept .
+
+rscp:RunningSpeedandCadenceProfile rdfs:label "Running Speed and Cadence Profile" .
+rscp:RunningSpeedandCadenceProfile rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=261266> .
+rscp:RunningSpeedandCadenceProfile skos:definition "TThe Running Speed and Cadence Profile is used to enable a data collection device to obtain data from a Running Speed and Cadence Sensor (RSC Sensor) that exposes the Running Speed and Cadence Service." .
+rscp:RunningSpeedandCadenceProfile owl:versionInfo "1.0" .
+
+
+rscp:RunningSpeedandCadenceService rdfs:label "Running Speed and Cadence Service" .
+rscp:RunningSpeedandCadenceService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=261265> .
+rscp:RunningSpeedandCadenceService skos:definition "This service exposes speed, cadence and other data from a Running Speed and Cadence sensor intended for fitness applications." .
+rscp:RunningSpeedandCadenceService owl:versionInfo "1.0" .
+
+
+ble:Profile skos:narrower rscp:RunningSpeedandCadenceProfile .
+ble:Service skos:narrower rscp:RunningSpeedandCadenceService .
+
+rscp:RunningSpeedandCadenceProfile skos:related rscp:RunningSpeedandCadenceService .
+rscp:RunningSpeedandCadenceProfile skos:related ble:DeviceInformationService.
+
+ble:Characteristic skos:narrower rscp:RSCMeasurement .
+ble:Characteristic skos:narrower rscp:RSCFeature .
+ble:Characteristic skos:narrower rscp:SCControlPoint .
+
+rscp:RunningSpeedandCadenceService skos:related rscp:RSCMeasurement .
+rscp:RunningSpeedandCadenceService skos:related rscp:RSCFeature .
+rscp:RunningSpeedandCadenceService skos:related ble:SensorLocation .
+rscp:RunningSpeedandCadenceService skos:related rscp:SCControlPoint .
+
+rscp:RSCMeasurement rdfs:label "Running Speed and Cadence Measurement" .
+rscp:RSCFeature rdfs:label "Running Speed and Cadence Feature" .
+
+rscp:RSCMeasurement skos:definition "The RSC Measurement characteristic is used to send speed and cadence measurements." .
+rscp:RSCFeature  skos:definition "The RSC Feature characteristic shall be used to describe the supported features of the Server." .
+
+rscp:SCControlpoint rdfs:label "Speed and Cadance Control Point" .
+rscp:SCControlpoint skos:definition "If the SC Control Point is supported, profiles utilizing this service are required to ensure that the Client configures the SC Control Point characteristic for indications (i.e. via the Client Characteristic Configuration descriptor) at the first connection." .
+
+rscp:RSCMeasurement skos:related ble:Notify .
+rscp:RSCFeature skos:related ble:Read, ble:Write .
+rscp:SCControlPoint skos:related ble:Indicate, ble:Write .
+
+rscp:InstantaneousCadenceField a skos:Concept .
+rscp:InstantaneousStrideLengthField a skos:Concept .
+rscp:TotalDistanceField a skos:Concept .
+
+ble:Value skos:narrower rscp:InstantaneousCadenceField .
+ble:Value skos:narrower rscp:InstantaneousStrideLengthField .
+ble:Value skos:narrower rscp:TotalDistanceField .
+
+rscp:RSCMeasurement skos:related ble:InstantaneousSpeedField .
+rscp:RSCMeasurement skos:related rscp:InstantaneousCadenceField .
+rscp:RSCMeasurement skos:related rscp:InstantaneousStrideLengthField .
+rscp:RSCMeasurement skos:related rscp:TotalDistanceField .
+
+rscp:TotalDistanceField skos:related xsd:unsignedInt .
+rscp:InstantaneousCadenceField skos:related xsd:unsignedByte .
+rscp:InstantaneousStrideLengthField skos:related xsd:unsignedShort .
+
+
+rscp:InstantaneousCadenceField rdfs:label "Instantaneous Cadence Field" .
+rscp:InstantaneousStrideLengthField rdfs:label "Instantaneous Stride Length Field" .
+rscp:TotalDistanceField rdfs:label "Total Distance Field" .
+
+rscp:InstantaneousCadenceField skos:definition "The Instantaneous Cadence represents the number of times per minute a foot fall occurs." .
+rscp:InstantaneousStrideLengthField skos:definition "The Instantaneous Stride Length field may be included in the RSC Measurement characteristic if the device supports the Instantaneous Stride Length feature." .
+rscp:TotalDistanceField skos:definition "The Total Distance field may be included in the RSC Measurement characteristic if the device supports the Total Distance feature." .
+
+
+
+
+
+
+
+
+
+
+
+
+
+

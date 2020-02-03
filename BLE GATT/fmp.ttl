@@ -1,0 +1,19 @@
+@prefix fmp: <http://example.org/namespace/ble-gatt/fmp#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+fmp:FindMeProfile a skos:Concept .
+
+fmp:FindMeProfile rdfs:label "Find Me Profile" .
+fmp:FindMeProfile rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=239389> .
+fmp:FindMeProfile skos:definition "The Find Me profile defines the behavior when a button is pressed on one device to cause an alerting signal on a peer device." .
+fmp:FindMeProfile owl:versionInfo "1.0" .
+
+ble:Profile skos:narrower fmp:FindMeProfile .
+fmp:FindMeProfile skos:related ble:ImmediateAlertService . 
+
+

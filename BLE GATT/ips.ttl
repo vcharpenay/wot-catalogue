@@ -1,0 +1,166 @@
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+ble:IndoorPositioningService a skos:Concept .
+ble:IndoorPositioningConfiguration a skos:Concept .
+ble:Latitude a skos:Concept .
+ble:Longitude a skos:Concept .
+ble:LocalNorthCoordinate a skos:Concept .
+ble:LocalEastCoordinate a skos:Concept .
+ble:FloorNumber a skos:Concept .
+ble:Altitude a skos:Concept .
+ble:Uncertainty a skos:Concept .
+ble:LocationName a skos:Concept .
+
+
+ble:Service skos:narrower ble:IndoorPositioningService .
+
+ble:IndoorPositioningService rdfs:label "Indoor Positioning Service" .
+ble:IndoorPositioningService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=302114> .
+ble:IndoorPositioningService skos:definition "The Indoor Positioning Service exposes location information to support mobile devices to position themselves in an environment where GNSS signals are not available, for example in indoor premises." .
+ble:IndoorPositioningService  owl:versionInfo "1.0" .
+
+
+ble:Characteristic skos:narrower ble:IndoorPositioningConfiguration .
+ble:Characteristic skos:narrower ble:Latitude .
+ble:Characteristic skos:narrower ble:Longitude .
+ble:Characteristic skos:narrower ble:LocalNorthCoordinate .
+ble:Characteristic skos:narrower ble:LocalEastCoordinate .
+ble:Characteristic skos:narrower ble:FloorNumber .
+ble:Characteristic skos:narrower ble:Altitude .
+ble:Characteristic skos:narrower ble:Uncertainty .
+ble:Characteristic skos:narrower ble:LocationName .
+
+
+
+ble:IndoorPositioningService skos:related ble:IndoorPositioningConfiguration .
+ble:IndoorPositioningService skos:related ble:Latitude .
+ble:IndoorPositioningService skos:related ble:Longitude .
+ble:IndoorPositioningService skos:related ble:LocalNorthCoordinate .
+ble:IndoorPositioningService skos:related ble:LocalEastCoordinate .
+ble:IndoorPositioningService skos:related ble:FloorNumber .
+ble:IndoorPositioningService skos:related ble:Altitude .
+ble:IndoorPositioningService skos:related ble:Uncertainty .
+ble:IndoorPositioningService skos:related ble:LocationName  .
+
+
+ble:IndoorPositioningConfiguration rdfs:label "Indoor Positioning Configuration".
+ble:IndoorPositioningConfiguration skos:definition "The Indoor Positioning Configuration Characteristic describes the advertise information data embedded in the Indoor Positioning Service AD type." .
+
+ble:Latitude rdfs:label "Latitude".
+ble:Latitude skos:definition "The Latitude Characteristic describes the global WGS84 North coordinate of the device." .
+
+ble:Longitude rdfs:label "Longitude".
+ble:Longitude skos:definition "The Longitude Characteristic describes the global WGS84 East coordinate of the device." .
+
+ble:LocalNorthCoordinate rdfs:label "Local North Coordinate".
+ble:LocalNorthCoordinate skos:definition "The Local North Coordinate Characteristic describes the North coordinate of the device using a local coordinate system." .
+
+ble:LocalEastCoordinate rdfs:label "Local East Coordinate".
+ble:LocalEastCoordinate skos:definition "The Local East Coordinate Characteristic describes the East coordinate of the device using a local coordinate system." .
+
+ble:FloorNumber rdfs:label "Floor Number".
+ble:FloorNumber skos:definition "The Floor Number Characteristic describes the floor number in which the device is installed." .
+
+ble:Altitude rdfs:label "Altitude".
+ble:Altitude skos:definition "The Altitude Characteristic describes the altitude of the device above the WGS84 datum." .
+
+ble:Uncertainty rdfs:label "Uncertainty".
+ble:Uncertainty skos:definition "The Uncertainty Characteristic describes the uncertainty of the location information the device exposes." .
+
+ble:LocationName  rdfs:label "Location Name".
+ble:LocationName  skos:definition "The Location Name Characteristic describes the name of the location in which the device is installed in accordance to the civicLocation." .
+
+
+
+ble:IndoorPositioningConfiguration skos:related ble:Read, ble:Write, ble:WritewithoutResponse, ble:ReliableWrite  .
+ble:Latitude skos:related ble:Read, ble:Write, ble:WritewithoutResponse, ble:ReliableWrite .
+ble:Longitude  skos:related ble:Read, ble:Write, ble:WritewithoutResponse, ble:ReliableWrite .
+ble:LocalNorthCoordinate skos:related ble:Read, ble:Write, ble:WritewithoutResponse, ble:ReliableWrite .
+ble:LocalEastCoordinate skos:related ble:Read, ble:Write, ble:WritewithoutResponse, ble:ReliableWrite .
+ble:FloorNumber skos:related ble:Read, ble:Write, ble:WritewithoutResponse, ble:ReliableWrite .
+ble:Altitude skos:related ble:Read, ble:Write, ble:WritewithoutResponse, ble:ReliableWrite .
+ble:Uncertainty skos:related ble:Read, ble:Write, ble:WritewithoutResponse, ble:ReliableWrite .
+ble:LocationName  skos:related ble:Read, ble:Write, ble:WritewithoutResponse, ble:ReliableWrite .
+
+
+
+ble:IndoorPositioningConfiguration skos:related ble:IndoorPositioningValue .
+ble:IndoorPositioningValue a skos:Concept .
+ble:Value skos:narrower ble:IndoorPositioningValue .
+ble:IndoorPositioningValue rdfs:label "The current value of  the Indoor Positioning Configuration Characteristic" .
+ble:IndoorPositioningValue skos:definition "When read, the Indoor Positioning Configuration Characteristic shall return the current value of the characteristic." .
+ble:IndoorPositioningValue skos:related xsd:unsignedByte .
+
+
+ble:Latitude skos:related ble:LatitudeValue .
+ble:LatitudeValue  a skos:Concept .
+ble:Value skos:narrower ble:LatitudeValue  .
+ble:LatitudeValue  rdfs:label "The current value of the Latitude Characteristic." .
+ble:LatitudeValue  skos:definition "When read, the Server shall return the current value of the Latitude Characteristic." .
+ble:LatitudeValue  skos:related xsd:integer .
+
+
+ble:Longitude skos:related ble:LongitudeValue .
+ble:LongitudeValue  a skos:Concept .
+ble:Value skos:narrower ble:LongitudeValue  .
+ble:LongitudeValue  rdfs:label "The current value of the Longitude Characteristic" .
+ble:LongitudeValue  skos:definition "When read, the Server shall return the current value of the Longitude Characteristic." .
+ble:LongitudeValue  skos:related xsd:integer .
+
+ble:LocalNorthCoordinate skos:related ble:LocalNorthCoordinateValue .
+ble:LocalNorthCoordinateValue   a skos:Concept .
+ble:Value skos:narrower ble:LocalNorthCoordinateValue .
+ble:LocalNorthCoordinateValue   rdfs:label "The current value of the Local North Coordinate Characteristic" .
+ble:LocalNorthCoordinateValue   skos:definition "When read, the Server shall return the current value of the Local North Coordinate Characteristic." .
+ble:LocalNorthCoordinateValue   skos:related xsd:Short .
+
+ble:LocalEastCoordinate skos:related ble:LocalEastCoordinateValue .
+ble:LocalEastCoordinateValue   a skos:Concept .
+ble:Value skos:narrower ble:LocalEastCoordinateValue .
+ble:LocalEastCoordinateValue   rdfs:label "The current value of the Local East Coordinate Characteristic" .
+ble:LocalEastCoordinateValue   skos:definition "When read, the Server shall return the current value of the Local East Coordinate Characteristic." .
+ble:LocalEastCoordinateValue   skos:related xsd:Short .
+
+
+
+ble:FloorNumber skos:related ble:FloorNumberValue .
+ble:FloorNumberValue   a skos:Concept .
+ble:Value skos:narrower ble:FloorNumberValue .
+ble:FloorNumberValue   rdfs:label "Floor Number Value" .
+ble:FloorNumberValue   skos:definition "When read, the Server shall return the current value of the Floor Number Characteristic." .
+ble:FloorNumberValue   skos:related xsd:unsignedByte .
+
+
+
+ble:Altitude skos:related ble:AltitudeValue .
+ble:AltitudeValue   a skos:Concept .
+ble:Value skos:narrower ble:AltitudeValue .
+ble:AltitudeValue  rdfs:label "Altitude Value" .
+ble:AltitudeValue   skos:definition "When read, the Server shall return the current value of the Altitude Characteristic." .
+ble:AltitudeValue   skos:related xsd:unsignedShort .
+
+
+
+ble:Uncertainty skos:related ble:UncertaintyValue .
+ble:UncertaintyValue    a skos:Concept .
+ble:Value skos:narrower ble:UncertaintyValue  .
+ble:UncertaintyValue   rdfs:label "Uncertainty Value" .
+ble:UncertaintyValue    skos:definition "When read, the Server shall return the current value of the Uncertainty Characteristic." .
+ble:UncertaintyValue    skos:related xsd:unsignedByte .
+
+ble:LocationName skos:related ble:LocationNameValue .
+ble:LocationNameValue     a skos:Concept .
+ble:Value skos:narrower ble:LocationNameValue   .
+ble:LocationNameValue    rdfs:label "Location Name Value" .
+ble:LocationNameValue    skos:definition "When read, the Server shall return the current value of the Location Name Characteristic." .
+ble:LocationNameValue   skos:related xsd:string .
+
+
+
+
+

@@ -1,0 +1,60 @@
+@prefix rcp: <http://example.org/namespace/ble-gatt/rcp#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rcp:ReconnectionConfigurationProfile a skos:Concept .
+rcp:ReconnectionConfigurationService a skos:Concept .
+rcp:RCFeature  a skos:Concept .
+rcp:RCSettings  a skos:Concept .
+rcp:RCCP a skos:Concept .
+
+rcp:ReconnectionConfigurationProfile rdfs:label "Reconnection Configuration Profile" .
+rcp:ReconnectionConfigurationProfile rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=435662> .
+rcp:ReconnectionConfigurationProfile skos:definition "This Bluetooth profile specification defines requirements to enable a Reconnection Configuration Client to modify a variety of communication parameters of a Reconnection Configuration Server." .
+rcp:ReconnectionConfigurationProfile owl:versionInfo "1.0" .
+
+
+
+rcp:ReconnectionConfigurationService rdfs:label "Reconnection Configuration Service" .
+rcp:ReconnectionConfigurationService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=435661> .
+rcp:ReconnectionConfigurationService skos:definition "This GATT-based service enables the control of certain communication parameters of a Bluetooth Low Energy peripheral device." .
+rcp:ReconnectionConfigurationService owl:versionInfo "1.0" .
+
+
+ble:Profile skos:narrower rcp:ReconnectionConfigurationProfile .
+ble:Service skos:narrower rcp:ReconnectionConfigurationService .
+
+rcp:ReconnectionConfigurationProfile skos:related rcp:ReconnectionConfigurationService .
+rcp:ReconnectionConfigurationProfile skos:related ble:BondManagementService .
+
+
+rcp:ReconnectionConfigurationService skos:related rcp:RCFeature .
+rcp:ReconnectionConfigurationService skos:related rcp:RCSettings .
+rcp:ReconnectionConfigurationService skos:related rcp:RCCP .
+
+ble:Characteristic skos:narrower rcp:RCFeature .
+ble:Characteristic skos:narrower rcp:RCSettings .
+ble:Characteristic skos:narrower rcp:RCCP .
+
+rcp:RCFeature  rdfs:label "Reconnection Configuration Feature" .
+rcp:RCSettings  rdfs:label "Reconnection Configuration Settings" .
+rcp:RCCP rdfs:label "Reconnection Configuration Control Point" .
+
+rcp:RCFeature skos:definition "The RC Features characteristic shall be used to describe the supported features of the Reconnection Configuration server." .
+rcp:RCSettings  skos:definition "The RC Settings characteristic shall be used to both read and notify supported features on the Reconnection Configuration server." .
+rcp:RCCP skos:definition "The Reconnection Configuration Control Point (RCCP) characteristic shall be used to execute a supported procedure on the Reconnection Configuration server." .
+
+rcp:RCFeature skos:related ble:Read .
+rcp:RCSettings skos:related ble:Read, ble:Notify .
+rcp:RCCP skos:related ble:Indicate, ble:Write .
+
+
+
+
+
+
+
+

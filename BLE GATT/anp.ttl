@@ -1,0 +1,89 @@
+@prefix anp: <http://example.org/namespace/ble-gatt/anp#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+anp:AlertNotificationProfile a skos:Concept .
+anp:AlertNotificationService a skos:Concept .
+anp:SupportedNewAlertCategory a skos:Concept .
+anp:NewAlert a skos:Concept .
+anp:SupportedUnreadAlertCategory a skos:Concept .
+anp:UnreadAlertStatus a skos:Concept .
+anp:AlertNotificationControlPoint a skos:Concept .
+
+
+anp:AlertNotificationProfile rdfs:label "Alert Notification Profile" .
+anp:AlertNotificationProfile rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=242286> .
+anp:AlertNotificationProfile skos:definition "The Alert Notification profile allows a device like a watch to obtain information from a cellphone about incoming calls, missed calls and SMS/MMS messages." .
+anp:AlertNotificationProfile owl:versionInfo "1.0" .
+
+ble:Profile skos:narrower anp:AlertNotificationProfile .
+
+ble:Service skos:narrower anp:AlertNotificationService.
+
+anp:AlertNotificationProfile skos:related anp:AlertNotificationService .
+
+anp:AlertNotificationService rdfs:label "Alert Notification service" .
+anp:AlertNotificationService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=242287> .
+anp:AlertNotificationService skos:definition "Alert Notification service exposes the different types of alerts with the short text messages, the count of new alert messages, and the count of unread alerts" .
+anp:AlertNotificationService owl:versionInfo "1.0" .
+
+ble:Characteristic skos:narrower  anp:SupportedNewAlertCategory .
+ble:Characteristic skos:narrower  anp:NewAlert .
+ble:Characteristic skos:narrower  anp:SupportedUnreadAlertCategory .
+ble:Characteristic skos:narrower  anp:UnreadAlertStatus .
+ble:Characteristic skos:narrower  anp:AlertNotificationControlPoint .
+
+anp:AlertNotificationService skos:related anp:SupportedNewAlertCategory .
+anp:AlertNotificationService skos:related anp:NewAlert .
+anp:AlertNotificationService skos:related anp:SupportedUnreadAlertCategory .
+anp:AlertNotificationService skos:related anp:UnreadAlertStatus .
+anp:AlertNotificationService skos:related anp:AlertNotificationControlPoint .
+
+
+anp:SupportedNewAlertCategory rdfs:label "Supported New Alert Category" .
+anp:NewAlert rdfs:label "New Alert" .
+anp:SupportedUnreadAlertCategory  rdfs:label "Supported Unread Alert Category".
+anp:UnreadAlertStatus rdfs:label "Unread Alert Status" .
+anp:AlertNotificationControlPoint rdfs:label "Alert Notification Control Point" .
+
+
+anp:SupportedNewAlertCategory skos:definition "A bit map showing which categories of new alert are supported and which are not.".
+anp:NewAlert skos:definition "The count of new alerts (for a given category) in the server" .
+anp:SupportedUnreadAlertCategory  skos:definition "A bit map showing which categories of unread alert events are supported and which are not." .
+anp:UnreadAlertStatus skos:definition "The count of unread alert events existing in the server. The count of unread alert events is provided with the Category ID." .
+anp:AlertNotificationControlPoint skos:definition "This characteristic allows the client device to enable/disable the alert notification of new alert and unread alert events more selectively than can be done by setting or clearing the notification bit in the Client Characteristic configuration for each alert characteristic.".
+
+anp:SupportedNewAlertCategory skos:related ble:Read .
+anp:NewAlert skos:related ble:Notify .
+anp:SupportedUnreadAlertCategory  skos:related ble:Read.
+anp:UnreadAlertStatus skos:related ble:Notify .
+anp:AlertNotificationControlPoint skos:related ble:Write .
+
+anp:NumberofNewAlert a skos:Concept .
+ble:Value skos:narrower anp:NumberofNewAlert .
+anp:NewAlert skos:related anp:NumberofNewAlert .
+anp:NumberofNewAlert rdfs:label "Number of New Alert" .
+anp:NumberofNewAlert skos:definition "This characteristic provides the count of new alerts (for a given category) in the server." .
+anp:NumberofNewAlert skos:related xsd:unsignedByte .
+
+anp:CategoryID a skos:Concept .
+ble:Value skos:narrower anp:CategoryID .
+anp:NewAlert skos:related anp:CategoryID .
+anp:CategoryID rdfs:label "Category ID" .
+anp:CategoryID skos:definition "This field shows the category of the new alert." .
+
+
+anp:TextStringInformation a skos:Concept .
+ble:Value skos:narrower anp:TextStringInformation .
+anp:NewAlert skos:related anp:TextStringInformation .
+anp:TextStringInformation rdfs:label "Text String Information" .
+anp:TextStringInformation skos:definition "The field provides brief text information for the last alert." .
+anp:TextStringInformation skos:related xsd:string .
+
+
+
+

@@ -1,0 +1,86 @@
+@prefix hrp: <http://example.org/namespace/ble-gatt/hrp#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+hrp:HeartRateProfile a skos:Concept .
+hrp:HeartRateService a skos:Concept .
+hrp:HeartRateMeasurement a skos:Concept .
+hrp:BodySensorLocation a skos:Concept .
+hrp:HeartRateControlPoint a skos:Concept .
+
+hrp:HeartRateProfile rdfs:label "Heart Rate Profile" .
+hrp:HeartRateProfile rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=239865> .
+hrp:HeartRateProfile skos:definition "The Heart Rate Profile is used to enable a data collection device to obtain data from a Heart Rate Sensor that exposes the Heart Rate Service." .
+hrp:HeartRateProfile owl:versionInfo "1.0" .
+
+ble:Profile skos:narrower hrp:HeartRateProfile .
+ble:Service skos:narrower hrp:HeartRateService .
+
+hrp:HeartRateProfile skos:related ble:DeviceInformationService .
+hrp:HeartRateProfile skos:related hrp:HeartRateService .
+
+hrp:HeartRateService rdfs:label "Heart Rate Service" .
+hrp:HeartRateService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=239866> .
+hrp:HeartRateService skos:definition "The Heart Rate Service exposes heart rate and other data related to a heart rate sensor intended for fitness applications." .
+hrp:HeartRateService owl:versionInfo "1.0" .
+
+ble:Characteristic skos:narrower hrp:HeartRateMeasurement .
+ble:Characteristic skos:narrower hrp:BodySensorLocation .
+ble:Characteristic skos:narrower hrp:HeartRateControlPoint .
+
+hrp:HeartRateService skos:related hrp:HeartRateMeasurement .
+hrp:HeartRateService skos:related hrp:BodySensorLocation .
+hrp:HeartRateService skos:related hrp:HeartRateControlPoint .
+
+hrp:HeartRateMeasurement rdfs:label "Heart Rate Measurement" .
+hrp:HeartRateMeasurement skos:definition  "The Heart Rate Measurement characteristic is used to send a heart rate measurement." .
+
+hrp:BodySensorLocation  rdfs:label "Body Sensor Location" .
+hrp:BodySensorLocation skos:definition  "The Body Sensor Location characteristic of the device is used to describe the intended location of the heart rate measurement for the device." .
+
+hrp:HeartRateControlPoint rdfs:label "Heart Rate Control Point" .
+hrp:HeartRateControlPoint skos:definition  "The Heart Rate Control Point characteristic is used to enable a Client to write control points to a Server to control behavior." .
+
+hrp:HeartRateMeasurement skos:related ble:Notify .
+hrp:BodySensorLocation skos:related ble:Read .
+hrp:HeartRateControlPoint skos:related ble:Write .
+
+
+ble:Value skos:narrower hrp:HeartRateValueField  .
+hrp:HeartRateValueField  a skos:Concept .
+hrp:HeartRateMeasurement skos:related hrp:HeartRateValueField   .
+hrp:HeartRateValueField   rdfs:label "Heart Rate Measurement Value" .
+hrp:HeartRateValueField    skos:definition "The Heart Rate Measurement Value field shall be included in the Heart Rate Measurement characteristic." .
+hrp:HeartRateValueField skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower hrp:EnergyExpendedField  .
+hrp:EnergyExpendedField   a skos:Concept .
+hrp:HeartRateMeasurement skos:related hrp:EnergyExpendedField    .
+hrp:EnergyExpendedField    rdfs:label "Energy Expended Field" .
+hrp:EnergyExpendedField     skos:definition "The Energy Expended field represents the accumulated energy expended in kilo Joules since the last time it was reset." .
+hrp:EnergyExpendedField  skos:related xsd:unsignedShort .
+
+ble:Value skos:narrower hrp:RRIntervalField   .
+hrp:RRIntervalField    a skos:Concept .
+hrp:HeartRateMeasurement skos:related hrp:RRIntervalField     .
+hrp:RRIntervalField    rdfs:label "RR(Rh factor) - Interval field" .
+hrp:RRIntervalField     skos:definition "The RR-Interval field may be included in the Heart Rate Measurement characteristic if the device supports RR-Interval measurements." .
+hrp:RRIntervalField  skos:related xsd:unsignedShort .
+
+
+
+
+
+
+
+
+
+
+
+
+
+

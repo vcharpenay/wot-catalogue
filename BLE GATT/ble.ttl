@@ -1,0 +1,453 @@
+﻿@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ble:Profile a skos:Concept .
+ble:Service a skos:Concept .
+ble:Characteristic a skos:Concept .
+ble:Property a skos:Concept .
+ble:Value a skos:Concept .
+
+ble:Read a skos:Concept .
+ble:Write a skos:Concept .
+ble:Notify a skos:Concept .
+ble:Indicate a skos:Concept .
+ble:WritewithoutResponse a skos:Concept .
+ble:ReliableWrite a skos:Concept .
+ble:ReadLong a skos:Concept .
+
+ble:DeviceInformationService a skos:Concept .
+ble:ManufacturerName a skos:Concept .
+ble:ModelNumber a skos:Concept .
+ble:SystemID a skos:Concept .
+ble:SerialNumber a skos:Concept .
+ble:HardwareRevision a skos:Concept .
+ble:FirmwareRevision a skos:Concept .
+ble:SoftwareRevision a skos:Concept .
+ble:IEEE11073-20601RegulatoryCertificationDataList a skos:Concept .
+ble:PnPID a skos:Concept .
+
+ble:BondManagementService a skos:Concept .
+ble:BondManagementControlPoint a skos:Concept .
+ble:BondManagementFeature a skos:Concept .
+
+ble:BatteryService a skos:Concept .
+ble:BatteryLevel a skos:Concept .
+
+ble:CurrentTimeService a skos:Concept .
+ble:CurrentTime a skos:Concept .
+ble:LocalTimeInformation a skos:Concept .
+ble:ReferenceTimeInformation a skos:Concept .
+
+ble:ScanParametersService a skos:Concept .
+ble:ScanIntervalWindow a skos:Concept .
+ble:ScanRefresh a skos:Concept .
+
+ble:UserDataService a skos:Concept .
+ble:UDSCharacteristic  a skos:Concept .
+ble:DatabaseChangeIncrement  a skos:Concept .
+ble:UserIndex a skos:Concept .
+ble:UserControlPoint  a skos:Concept .
+
+ble:SensorLocation a skos:Concept .
+ble:RecordAccessControlPoint a skos:Concept .
+ble:SCControlPoint a skos:Concept .
+
+
+ble:ImmediateAlertService a skos:Concept .
+ble:AlertLevel a skos:Concept .
+
+
+ble:Profile skos:related ble:Service .
+ble:Service skos:related ble:Characteristic .
+ble:Characteristic skos:related ble:Property .
+ble:Characteristic skos:related ble:Value .
+
+ble:Service skos:narrower ble:DeviceInformationService . 
+ble:Service skos:narrower ble:BatteryService .
+ble:Service skos:narrower ble:BondManagementService . 
+ble:Service skos:narrower ble:CurrentTimeService .
+ble:Service skos:narrower ble:ScanParametersService .
+ble:Service skos:narrower ble:UserDataService .
+ble:Service skos:narrower ble:ImmediateAlertService .
+
+ble:Property skos:narrower ble:Read, ble:ReadLong .
+ble:Property skos:narrower ble:Write .
+ble:Property skos:narrower ble:Notify .
+ble:Property skos:narrower ble:Indicate .
+ble:Property skos:narrower ble:WritewithoutResponse, ble:ReliableWrite .
+
+ble:Read rdfs:label "Read" .
+ble:Write rdfs:label "Write" .
+ble:Notify  rdfs:label "Notify" .
+ble:Indicate rdfs:label "Indicate" .
+ble:WritewithoutResponse rdfs:label "Write without Response" .
+ble:ReliableWrite rdfs:label "Reliable Write" .
+ble:ReadLong rdfs:label "Read Long" .
+
+ble:Read skos:definition "A Characteristic Value is read from a server when the client knows the Characteristic Value Handle" .
+ble:Write skos:definition "A Characteristic Value is writen to a server when the client knows the Characteristic Value Handle" .
+ble:Notify  skos:definition "A server is configured to notify a Characteristic Value to a client without expecting any Attribute Protocol layer acknowledgment that the notification was successfully received" .
+ble:Indicate skos:definition "A server is configured to indicate a Characteristic Value to a client and expects an Attribute Protocol layer acknowledgment that the indication was successfully received" .
+ble:WritewithoutResponse skos:definition "A Characteristic Value is writen to a server when the client knows the Characteristic Value Handle and the client does not need an acknowledgment that the write was successfully performed" .
+ble:ReliableWrite skos:definition "Characteristic Value is written to a server when the client knows the Characteristic Value Handle, and assurance is required that the correct Characteristic Value is going to be written by transferring the Characteristic Value to be written in both directions before the write is performed." .
+ble:ReadLong skos:definition "Characteristic Value is read from a server when the client knows the Characteristic Value Handle and the length of the Characteristic Value is longer than can be sent in a single Read Response Attribute protocol message." .
+
+ble:DeviceInformationService rdfs:label "Device Information Service." .
+ble:DeviceInformationService skos:definition "The Device Information Service exposes manufacturer and/or vendor information about a device." .
+ble:DeviceInformationService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=244369> .
+ble:DeviceInformationService owl:versionInfo  "1.1" .
+
+ble:Characteristic skos:narrower ble:ManufacturerName .
+ble:Characteristic skos:narrower ble:ModelNumber .
+ble:Characteristic skos:narrower ble:SystemID .
+ble:Characteristic skos:narrower ble:SerialNumber .
+ble:Characteristic skos:narrower ble:HardwareRevision .
+ble:Characteristic skos:narrower ble:FirmwareRevision .
+ble:Characteristic skos:narrower ble:SoftwareRevision .
+ble:Characteristic skos:narrower ble:IEEE11073-20601RegulatoryCertificationDataList .
+ble:Characteristic skos:narrower ble:PnPID .
+
+ble:DeviceInformationService skos:related ble:ManufacturerName .
+ble:DeviceInformationService skos:related ble:ModelNumber .
+ble:DeviceInformationService skos:related ble:SystemID .
+ble:DeviceInformationService skos:related ble:SerialNumber .
+ble:DeviceInformationService skos:related ble:HardwareRevision .
+ble:DeviceInformationService skos:related ble:FirmwareRevision .
+ble:DeviceInformationService skos:related ble:SoftwareRevision .
+ble:DeviceInformationService skos:related ble:IEEE11073-20601RegulatoryCertificationDataList .
+ble:DeviceInformationService skos:related ble:PnPID .
+
+ble:ManufacturerName skos:related xsd:string .
+ble:ModelNumber skos:related xsd:string .
+ble:SerialNumber skos:related xsd:string .
+ble:HardwareRevision skos:related xsd:string .
+ble:FirmwareRevision  skos:related xsd:string .
+ble:SoftwareRevision skos:related xsd:string .
+ble:IEEE11073-20601RegulatoryCertificationDataList skos:related xsd:string .
+
+
+ble:ManufacturerName skos:related ble:Read .
+ble:ModelNumber skos:related ble:Read .
+ble:SerialNumber skos:related ble:Read .
+ble:HardwareRevision skos:related ble:Read .
+ble:FirmwareRevision  skos:related ble:Read .
+ble:SoftwareRevision skos:related ble:Read .
+ble:SystemID skos:related ble:Read .
+ble:PnPID skos:related ble:Read .
+ble:IEEE11073-20601RegulatoryCertificationDataList skos:related ble:Read .
+
+
+ble:VendorIDSourceField a skos:Concept .
+ble:VendorIDField a skos:Concept .
+ble:VendorIDField a skos:Concept .
+ble:ProductIDField a skos:Concept .
+ble:ProductVersionField a skos:Concept .
+
+ble:Value skos:narrower ble:VendorIDSourceField .
+ble:Value skos:narrower ble:VendorIDField .
+ble:Value skos:narrower ble:ProductIDField .
+ble:Value skos:narrower ble:ProductVersionField .
+
+ble:PnPID skos:related ble:VendorIDSourceField .
+
+ble:VendorIDSourceField skos:narrower ble:BluetoothSIG .
+ble:VendorIDSourceField skos:narrower ble:USBImplementerForum .
+
+ble:BluetoothSIG a skos:Concept .
+ble:USBImplementerForum a skos:Concept .
+
+ble:Value skos:narrower ble:BluetoothSIG  .
+ble:Value skos:narrower ble:USBImplementerForum .
+
+ble:BluetoothSIG skos:related xsd:unsignedByte .
+ble:USBImplementerForum skos:related xsd:unsignedByte .
+
+ble:VendorIDSourceField rdfs:label "Vendor ID Source Field" .
+ble:BluetoothSIG rdfs:label "Bluetooth Special Interest Group" .
+ble:USBImplementerForum rdfs:label "USB Implementer’s Forum" .
+
+ble:VendorIDSourceField skos:definition "The Vendor ID Source field designates which organization assigned the value used in the Vendor ID field value." .
+ble:BluetoothSIG skos:definition "Bluetooth SIG- assigned Device ID Vendor ID value from the Assigned Numbers document." .
+ble:USBImplementerForum skos:definition "USB Implementer’s Forum assigned Vendor ID value." .
+
+ble:PnPID skos:related ble:VendorIDField .
+ble:VendorIDField rdfs:label "Vendor ID Field" .
+ble:VendorIDField skos:definition "The Vendor ID field is intended to uniquely identify the vendor of the device." .
+ble:VendorIDField skos:related xsd:unsignedShort .
+
+ble:PnPID skos:related ble:ProductIDField .
+ble:ProductIDField rdfs:label "Product ID Field" .
+ble:ProductIDField skos:definition "The Product ID field is intended to distinguish between different products made by the vendor identified with the Vendor ID field." .
+ble:ProductIDField skos:related xsd:unsignedShort .
+
+ble:PnPID skos:related ble:ProductVersionField  .
+ble:ProductVersionField rdfs:label "Product Version Field" .
+ble:ProductVersionField skos:definition "The Product Version field is a numeric expression identifying the device release number in Binary-Coded Decimal." .
+
+ble:ProductVersionField skos:related xsd:unsignedShort .
+
+ble:SystemID skos:related ble:ManufacturerIdentifier,  ble:OrganizationallyUniqueIdentifier.
+ble:ManufacturerIdentifier a skos:Concept .
+ble:OrganizationallyUniqueIdentifier a skos:Concept .
+ble:Value skos:narrower ble:ManufacturerIdentifier .
+ble:Value skos:narrower ble:OrganizationallyUniqueIdentifier .
+ble:ManufacturerIdentifier a skos:Concept .
+ble:OrganizationallyUniqueIdentifier a skos:Concept .
+ble:OrganizationallyUniqueIdentifier skos:related xsd:unsignedInt .
+ble:ManufacturerIdentifier  skos:related xsd:unsignedInt .
+
+ble:OrganizationallyUniqueIdentifier rdfs:label "Organizationally Unique Identifier" .
+ble:ManufacturerIdentifier  rdfs:label "Manufacturer Identifier" .
+
+ble:OrganizationallyUniqueIdentifier skos:definition "The System ID characteristic shall represent a structure containing an Organizationally Unique Identifier (OUI)  is unique for each individual instance of the product." .
+ble:ManufacturerIdentifier  skos:definition "The System ID characteristic shall represent a structure containing a manufacturer-defined identifier following an Organizationally Unique Identifier (OUI) and is unique for each individual instance of the product." .
+
+ble:ManufacturerName rdfs:label "Manufacturer Name" .
+ble:ManufacturerName skos:definition "The Manufacturer Name String characteristic shall represent the name of the manufacturer of the device." .
+
+ble:ModelNumber skos:definition "The Model Number String characteristic shall represent the model number that is assigned by the device vendor." .
+ble:ModelNumber rdfs:label "Model Number" .
+
+ble:SerialNumber rdfs:label "Serial Number" .
+ble:SerialNumber skos:definition "The Serial Number String characteristic shall represent the serial number for a particular instance of the device." .
+
+ble:SystemID rdfs:label "System ID" .
+ble:SystemID skos:definition "The System ID characteristic shall represent a structure containing an Organizationally Unique Identifier (OUI) followed by a manufacturer-defined identifier and is unique for each individual instance of the product" .
+
+ble:IEEE11073-20601RegulatoryCertificationDataList rdfs:label "Institute of Electrical and Electronics Engineers (IEEE) 11073-20601 Regulatory Certification Data List" .
+ble:IEEE11073-20601RegulatoryCertificationDataList skos:definition "The IEEE 11073-20601 Regulatory Certification Data List characteristic shall represent regulatory and certification information for the product in a list defined in IEEE 11073-20601" .
+ble:HardwareRevision rdfs:label "Hardware Revision".
+ble:HardwareRevision skos:definition "The Hardware Revision String characteristic shall represent the hardware revision for the hardware within the device.".
+ble:FirmwareRevision  rdfs:label "Firmware Revision" .
+ble:FirmwareRevision  skos:definition "The Firmware Revision String characteristic shall represent the firmware revision for the firmware within the device." .
+ble:SoftwareRevision rdfs:label "SoftwareRevision" .
+ble:SoftwareRevision skos:definition "The Software Revision String characteristic shall represent the software revision for the software within the device." .
+ble:PnPID rdfs:label "Plug and Play Identification" .
+ble:PnPID skos:definition "The PnP_ID characteristic is a set of values that shall be used to create a device ID value that is unique for this device. Included in the characteristic are a Vendor ID source field, a Vendor ID field, a Product ID field, and a Product Version field" .
+
+
+
+ble:BatteryService owl:versionInfo "1.0" .
+ble:BatteryService rdfs:label "Battery Service".
+ble:BatteryService skos:definition "The Battery Service exposes the Battery Level of a single battery or set of batteries in a device." .
+ble:BatteryService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245138> .
+
+
+ble:BatteryService skos:related ble:BatteryLevel .
+ble:Characteristic skos:narrower ble:BatteryLevel .
+ble:BatteryLevel rdfs:label "Battery Level" .
+ble:BatteryLevel skos:definition "The Battery Level characteristic is read using the GATT Read Characteristic Value subprocedure and returns the current battery level as a percentage." .
+
+ble:BatteryLevel skos:related ble:Read, ble:Notify .
+ble:BatteryLevel skos:related xsd:unsignedByte .
+
+ble:BondManagementService rdfs:label "Bond Management Service" .
+ble:BondManagementService skos:definition "This Specification proposes that this service will enable users to manage their bonds on devices with a limited user interface." .
+ble:BondManagementService owl:versionInfo "1.0" .
+ble:BondManagementService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=293524> .
+
+ble:Characteristic skos:narrower ble:BondManagementControlPoint .
+ble:Characteristic skos:narrower ble:BondManagementFeature . 
+
+ble:BondManagementService skos:related ble:BondManagementControlPoint .
+ble:BondManagementService skos:related ble:BondManagementFeature .
+
+ble:BondManagementControlPoint rdfs:label "Bond Management Control Point" .
+ble:BondManagementFeature rdfs:label "Bond Management Feature" .
+
+ble:BondManagementControlPoint skos:definition "The Server shall evaluate a GATT Characteristic Value Write procedure or a GATT Characteristic Value Reliable Write procedure to the Bond Management Control".
+ble:BondManagementFeature skos:definition "The Bond Management Feature characteristic shall be used to indicate the supported features of the server." .
+
+ble:BondManagementControlPoint skos:related ble:Write .
+ble:BondManagementFeature skos:related ble:Read .
+
+
+ble:CurrentTimeService rdfs:label "Current Time Service" .
+ble:CurrentTimeService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=292957> .
+ble:CurrentTimeService skos:definition "This service defines how a Bluetooth device can expose date and time information to other Bluetooth devices." .
+ble:CurrentTimeService owl:versionInfo "1.1" .
+
+ble:Characteristic skos:narrower  ble:CurrentTime .
+ble:Characteristic skos:narrower  ble:LocalTimeInformation .
+ble:Characteristic skos:narrower  ble:ReferenceTimeInformation .
+
+ble:CurrentTimeService skos:related ble:CurrentTime .
+ble:CurrentTimeService skos:related ble:LocalTimeInformation .
+ble:CurrentTimeService skos:related ble:ReferenceTimeInformation .
+
+ble:CurrentTime rdfs:label "Current Time" .
+ble:LocalTimeInformation rdfs:label "Local Time Information".
+ble:ReferenceTimeInformation rdfs:label "Reference Time Information".
+
+ble:CurrentTime skos:definition "The Current Time characteristic returns the current date and time in the server device." .
+ble:LocalTimeInformation skos:definition "The Local Time Information characteristic returns the local time information that includes time zone and DST offset." .
+ble:ReferenceTimeInformation skos:definition "The Reference Time Information characteristic returns the information about the reference time source." .
+
+
+ble:CurrentTime skos:related ble:Read, ble:Notify, ble:Write .
+ble:LocalTimeInformation skos:related ble:Read, ble:Write .
+ble:ReferenceTimeInformation skos:related ble:Read .
+
+
+ble:ScanParametersService rdfs:label "Scan Parameters Service" .
+ble:ScanParametersService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245143> .
+ble:ScanParametersService skos:definition "The Scan Parameters Service enables a GATT Server device to expose a characteristic for the GATT Client to write its scan interval and scan window on the GATT Server device, and enables a GATT Server to request a refresh of the GATT Client scan interval and scan window." .
+ble:ScanParametersService owl:versionInfo "1.0" .
+ble:ScanParametersService skos:related  ble:ScanIntervalWindow .
+ble:ScanParametersService skos:related ble:ScanRefresh .
+ble:Characteristic skos:narrower  ble:ScanIntervalWindow  .
+ble:Characteristic skos:narrower  ble:ScanRefresh .
+ble:ScanIntervalWindow rdfs:label "Scan Interval Window" .
+ble:ScanRefresh rdfs:label "Scan Refresh" .
+ble:ScanIntervalWindow skos:definition "The Scan Interval Window characteristic is used to store the scan parameters of the Client." .
+ble:ScanRefresh skos:definition "The Scan Refresh characteristic is used to notify the Client that the Server requires the Scan Interval Window characteristic to be written with the latest values upon notification." .
+
+ble:ScanIntervalWindow skos:related ble:WritewithoutResponse .
+ble:ScanRefresh skos:related ble:Notify .
+
+ble:ScanIntervalWindow skos:related ble:LE_Scan_Interval .
+ble:ScanIntervalWindow skos:related ble:LE_Scan_Window .
+ble:Value skos:narrower ble:LE_Scan_Interval .
+ble:Value skos:narrower ble:LE_Scan_Window .
+
+ble:LE_Scan_Window a skos:Concept .
+ble:LE_Scan_Interval a skos:Concept .
+ble:LE_Scan_Window rdfs:label "Low Energy_Scan_Interval" .
+ble:LE_Scan_Interval rdfs:label "Low Energy_Scan_Window" .
+ble:LE_Scan_Window skos:definition "The maximum LE_Scan_Interval of the Clien." . 
+ble:LE_Scan_Interval skos:definition "The minimum LE_Scan_Window of the Client corresponding to the LE_Scan_Interval."  .
+ble:LE_Scan_Window skos:related xsd:unsignedShort .
+ble:LE_Scan_Interval skos:related xsd:unsignedShort .
+
+ble:ScanRefresh skos:related ble:Serverrequiresrefresh . 
+ble:Serverrequiresrefresh a skos:Concept . 
+ble:Value  skos:narrower ble:Serverrequiresrefresh . 
+ble:Serverrequiresrefresh rdfs:label "Server requires refresh" .
+ble:Serverrequiresrefresh skos:definition "Scan Refresh characteristic value  is a single octet." .
+ble:Serverrequiresrefresh skos:related xsd:unsignedByte .
+
+ble:UserDataService  rdfs:label "User Data Service" .
+ble:UserDataService  rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=288352> .
+ble:UserDataService  skos:definition "The User Data Service (UDS) exposes user-related data in the sports and fitness environment." .
+ble:UserDataService  rdfs:comment "This allows remote access and update of user data by a Client as well as the synchronization of user data between a Server and a Client." .
+ble:UserDataService  owl:versionInfo "1.0" .
+
+ble:Characteristic skos:narrower ble:UDSCharacteristic .
+ble:Characteristic skos:narrower ble:DatabaseChangeIncrement.
+ble:Characteristic skos:narrower ble:UserIndex .
+ble:Characteristic skos:narrower ble:UserControlPoint .
+
+ble:UserDataService skos:related ble:UDSCharacteristic .
+ble:UserDataService skos:related ble:DatabaseChangeIncrement .
+ble:UserDataService skos:related ble:UserIndex .
+ble:UserDataService skos:related ble:UserControlPoint.
+
+ble:UDSCharacteristic rdfs:label "User Data Service Characteristic" .
+ble:DatabaseChangeIncrement rdfs:label "Database Change Increment" .
+ble:UserIndex rdfs:label "User Index" .
+ble:UserControlPoint rdfs:label "User Control Point" .
+
+ble:UDSCharacteristic skos:definition "Each UDS Characteristic is defined in the User Data Service Characteristics table" . 
+ble:DatabaseChangeIncrement skos:definition "When read or notified, the Database Change Increment characteristic returns a value that is used by a Client to determine whether or not the UDS Characteristics need to be synchronized between the Server and the Client.".
+ble:UserIndex skos:definition "When read, the User Index characteristic returns the index of the current user (i.e. the user that has given consent) to access the UDS Characteristics.".
+ble:UserControlPoint skos:definition "The User Control Point characteristic is used to request a specific function to be executed on the receiving device." .
+
+
+ble:UDSCharacteristic skos:related ble:Read, ble:Write .
+ble:DatabaseChangeIncrement skos:related ble:Read, ble:Write .
+ble:UserIndex skos:related ble:Read .
+ble:UserControlPoint skos:related ble:Write, ble:Indicate .
+
+ble:UDSCharacteristic skos:related  ble:UDSCharacteristicValue .
+ble:Value skos:narrower ble:UDSCharacteristicValue .
+ble:UDSCharacteristicValue a skos:Concept .
+ble:UDSCharacteristicValue rdfs:label "User Data Service Characteristic Value" .
+ble:UDSCharacteristicValue skos:definition "A UDS Characteristic returns its associated characteristic value when read.".
+
+ble:DatabaseChangeIncrement skos:related  ble:DatabaseChangeIncrementValue .
+ble:Value skos:narrower ble:DatabaseChangeIncrementValue .
+ble:DatabaseChangeIncrementValue a skos:Concept .
+ble:DatabaseChangeIncrementValue rdfs:label "Database Change Increment Value" .
+ble:DatabaseChangeIncrementValue skos:definition "When read or notified, the Database Change Increment characteristic returns a value that is used by a Client to determine whether or not the UDS Characteristics need to be synchronized between the Server and the Client.".
+ble:DatabaseChangeIncrementValue skos:related xsd:unsignedInt .
+
+
+ble:ImmediateAlertService rdfs:label "Immediate Alert Service" .
+ble:ImmediateAlertService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=239390> .
+ble:ImmediateAlertService skos:definition "This service exposes a control point to allow a peer device to cause the device to immediately alert." .
+ble:ImmediateAlertService owl:versionInfo "1.0" .
+
+ble:Characteristic skos:narrower ble:AlertLevel .
+ble:ImmediateAlertService skos:related ble:AlertLevel .
+
+ble:AlertLevel rdfs:label "Alert Level" .
+ble:AlertLevel skos:definition  "The Alert Level characteristic is a control point that allows a peer to command this device to alert to a given level." .
+
+ble:AlertLevel skos:related ble:WritewithoutResponse .
+
+ble:Characteristic skos:narrower ble:SCControlPoint .
+ble:SCControlPoint rdfs:label "Speed and Cadence Control Point" .
+ble:SCControlPoint skos:definition "The SC Control Point is used by a Client to control certain behaviors of the Server." .
+
+ble:Characteristic skos:narrower ble:SensorLocation .
+ble:SensorLocation rdfs:label "Sensor Location" .
+ble:SensorLocation skos:definition "The Sensor Location characteristic of the device is used to describe the physical location of the Server when correctly fitted." .
+
+ble:SensorLocation skos:related ble:Read .
+ble:SensorLocation skos:related xsd:unsignedByte .
+
+ble:Characteristic skos:narrower ble:RecordAccessControlPoint .
+ble:RecordAccessControlPoint rdfs:label "Record Access Control Point" .
+ble:RecordAccessControlPoint skos:definition "The Record Access Control Point shall be used to control notifications and other data operations." . 
+ble:RecordAccessControlPoint skos:related ble:Indicate, ble:Write .
+
+
+
+ble:TimeStampField  a skos:Concept .
+ble:Value skos:narrower ble:TimeStampField .
+ble:TimeStampField rdfs:label "Time Stamp Field" .
+ble:TimeStampField skos:definition "The value of the Time Stamp field is derived from a source of date and time at the time of measurement." .
+
+
+ble:UserIDField a skos:Concept .
+ble:Value skos:narrower ble:UserIDField .
+ble:UserIDField rdfs:label "User ID Field" .
+ble:UserIDField skos:definition "The User ID field shall be included in the characteristic if the device supports the Multiple Users feature.".
+ble:UserIDField  skos:related xsd:unsignedByte .
+
+
+ble:CumulativeCrankRevolutions a skos:Concept .
+ble:Value skos:narrower ble:CumulativeCrankRevolutions  .
+ble:CumulativeCrankRevolutions  rdfs:label "Cumulative Crank Revolutions" . 
+ble:CumulativeCrankRevolutions  skos:definition "The Cumulative Crank Revolutions value represents the number of times a crank rotates and is one value of Crank Revolution Data pair." .
+ble:CumulativeCrankRevolutions skos:related xsd:unsignedShort .
+
+ble:LastCrankEventTime a skos:Concept .
+ble:Value skos:narrower ble:LastCrankEventTime  .
+ble:LastCrankEventTime  rdfs:label "Last Crank Event Time" . 
+ble:LastCrankEventTime  skos:definition "The Last Crank Event Time is one value of Crank Revolution Data pair and always presents as a pair with Cumulative Crank Revolutions." .
+ble:LastCrankEventTime skos:related xsd:unsignedShort .
+
+
+
+ble:Value skos:narrower ble:InstantaneousPowerField .
+ble:InstantaneousPowerField   a skos:Concept .
+ble:InstantaneousPowerField   rdfs:label "Instantaneous Power Field" .
+ble:InstantaneousPowerField    skos:definition "The Instantaneous Power field represents the value of the instantaneous power measured by the Server." .
+ble:InstantaneousPowerField   skos:related xsd:short .
+
+ble:Value skos:narrower ble:InstantaneousSpeedField .
+ble:InstantaneousSpeedField a skos:Concept .
+ble:InstantaneousSpeedField rdfs:label "Instantaneous Speed Field" .
+ble:InstantaneousSpeedField skos:definition "The Instantaneous Speed field represents the instantaneous value of the speed measured by the sensor." .
+ble:InstantaneousSpeedField skos:related xsd:unsignedShort .
+
+
+ble: a skos:ConceptScheme .
+ble: skos:hasTopConcept ble:Profile .
+
+ble: rdfs:seeAlso <https://www.bluetooth.com/specifications/gatt/> .
+ble: rdfs:comment "Generic Attribute Profile (GATT) is built on top of the Attribute Protocol (ATT) and establishes common operations and a framework for the data transported and stored by the Attribute Protocol. For more information on GATT, please refer to Volume 0, Section 6 of the Bluetooth Core Specification." .

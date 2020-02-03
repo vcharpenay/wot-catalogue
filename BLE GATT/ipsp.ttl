@@ -1,0 +1,30 @@
+@prefix ipsp: <http://example.org/namespace/ble-gatt/ipsp#> .
+@prefix ble: <http://example.org/namespace/ble-gatt#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+ipsp:InternetProtocolSupportProfile a skos:Concept .
+ipsp:IPSupportService a skos:Concept .
+
+
+ipsp:InternetProtocolSupportProfile rdfs:label "Internet Protocol Support Profile" .
+ipsp:InternetProtocolSupportProfile rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=296307> .
+ipsp:InternetProtocolSupportProfile skos:definition "This Profile Specification proposes the support of exchanging IPv6 packets between devices over the Bluetooth Low Energy transport." .
+ipsp:InternetProtocolSupportProfile  owl:versionInfo "1.0" .
+
+
+ble:Profile skos:narrower ipsp:InternetProtocolSupportProfile .
+ble:Service skos:narrower ipsp:IPSupportService .
+
+ipsp:InternetProtocolSupportProfile skos:related ipsp:IPSupportService .
+
+
+ipsp:IPSupportService rdfs:label "IP Support Service" .
+ipsp:IPSupportService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=296307> .
+ipsp:IPSupportService skos:definition "The IP support service is used during service discovery to determine support for the IP Support Profile’s Node role." .
+ipsp:IPSupportService  owl:versionInfo "1.0" .
+
+ipsp:IPSupportService rdfs:comment "This service does not define any characteristics." .
