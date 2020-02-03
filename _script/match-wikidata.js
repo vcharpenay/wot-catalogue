@@ -128,7 +128,7 @@ urdf.load(txt, { format: 'text/turtle' })
             }, nt);
         }
 
-        nt += senses[w].reduce((nt, s) => {
+        nt += exactMatches.reduce((nt, s) => {
             return nt += `<${tag}> <${ontolex}evokes> <${s.concepturi}>.\n`;
         }, nt);
 
