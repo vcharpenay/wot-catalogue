@@ -84,38 +84,13 @@
                 '/oneM2M/haim.ttl',
                 '/BACnet/bacnet.ttl',
                 '/Project Haystack/haystack.ttl',
-                '/BLE GATT/aiop.ttl',
-                '/BLE GATT/ble.ttl',
-                '/BLE GATT/cgmp.ttl',
-                '/BLE GATT/cspc.ttl',
-                '/BLE GATT/fmp.ttl',
-                '/BLE GATT/glp.ttl',
-                '/BLE GATT/htp.ttl',
-                '/BLE GATT/ipsp.ttl',
-                '/BLE GATT/lnp.ttl',
-                '/BLE GATT/pasp.ttl',
-                '/BLE GATT/pxp.ttl',
-                '/BLE GATT/rscp.ttl',
-                '/BLE GATT/tip.ttl',
-                '/BLE GATT/anp.ttl',
-                '/BLE GATT/blp.ttl',
-                '/BLE GATT/cpp.ttl',
-                '/BLE GATT/esp.ttl',
-                '/BLE GATT/ftmp.ttl',
-                '/BLE GATT/hrp.ttl',
-                '/BLE GATT/idp.ttl',
-                '/BLE GATT/lehid.ttl',
-                '/BLE GATT/otp.ttl',
-                '/BLE GATT/plxp.ttl',
-                '/BLE GATT/rcp.ttl',
-                '/BLE GATT/scpp.ttl',
-                '/BLE GATT/wsp.ttl'
+                '/BLE GATT/gatt.ttl'
             ];
 
             let race = files.map(f => urdf.loadFrom(base + f, { format: 'text/turtle' }));
             Promise.all(race)
             
-            .then(() => urdf.query(catalogue.textContent))
+            .then(() => urdf.query(catalogue.innerText))
 
             .then(res => {
                 let docs = res.map(b => {
