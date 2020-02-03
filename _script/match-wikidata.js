@@ -43,25 +43,13 @@ function searchEntities(word) {
     });
 }
 
-function searchClaims(ids) {
-    if (ids.length == 0) return Promise.resolve();
+function isExactMatch(word, sense) {
+    let normalized = sense.match.text
+        .replace(/\W|_/g, ' ')
+        .trim()
+        .toLowerCase();
 
-    return new Promise((resolve, reject) => {
-        let req = bot.get({
-            action: 'wbgetentities',
-            ids: ids.reduce((str, id) => str + '|' + id),
-            props: 'claims',
-            format: 'json',
-            languages: 'en'
-        });
-
-        req.complete(resp => resolve(resp));
-        req.error(e => reject(e));
-    });
-}
-
-function escape(str) {
-    return str.replace(/\"/g, "\\\"");
+    return word == normalized;
 }
 
 const txt = fs.readFileSync('../labels.ttl', 'utf-8');
@@ -72,19 +60,14 @@ const senses = fs.existsSync('../wikidata-senses.json')
     ? JSON.parse(fs.readFileSync('../wikidata-senses.json'))
     : {};
 
-const claims = fs.existsSync('../wikidata-claims.json')
-    ? JSON.parse(fs.readFileSync('../wikidata-claims.json'))
-    : {};
-
-const batchSize = 25;
-const maxRecursions = 1; // no recursion
-const maxClaimsPerBlock = 25000;
-
 urdf.load(txt, { format: 'text/turtle' })
+
+.then(() => console.log('Retrieving labels...'))
 
 .then(() => urdf.query(q))
 
 .then(res => {
+
     res.forEach(b => {
         let concept = b.c.value;
         let label = b.l.value;
@@ -96,10 +79,10 @@ urdf.load(txt, { format: 'text/turtle' })
     });
 
     if (Object.keys(senses).length > 0) {
-        // Wikidata content already cached
+        console.log('Wikidata cache hit. Skipping service query...');
         return Promise.resolve();
     } else {
-        // Wikidata search service is queried, if no cache found
+        console.log('Querying Wikidata search service with labels...');
         let words = Object.keys(denotations).reduce((set, w) => {
             if (set.indexOf(w) < 0) set.push(w);
             return set;
@@ -123,82 +106,7 @@ urdf.load(txt, { format: 'text/turtle' })
     }
 })
 
-.then(() => {
-    if (Object.keys(claims).length > 0) {
-        // Wikidata claims already cached
-        return Promise.resolve();
-    } else {
-        return new Promise((resolve, reject) => {
-            let recursions = {};
-            let queue = [];
-            let block = 0;
-
-            // recursive process
-            let processClaims = resp => {
-                let batch = [];
-    
-                // TODO if request failed, get ids from somewhere
-                let ids = Object.keys(resp.entities || {});
-                queue = queue.filter(id => ids.indexOf(id) < 0);
-    
-                if (!resp.success) return;
-        
-                for (let id in resp.entities) {
-                    claims[id] = resp.entities[id].claims;
-        
-                    if (recursions[id] < maxRecursions) {
-                        for (let p in claims[id]) {
-                            claims[id][p].forEach(st => {
-                                if (st.mainsnak.datatype == 'wikibase-item' && st.mainsnak.datavalue) {
-                                    let otherId = st.mainsnak.datavalue.value.id;
-                                    if (!recursions[otherId] && !batch.includes(otherId)) {
-                                        batch.push(otherId);
-                                        recursions[otherId] = recursions[id] + 1;
-                                        queue.push(otherId);
-                                    }
-                                }
-                            });
-                        }
-                    }
-        
-                    console.log(`done: ${id}`);
-                }
-
-                for (let i = 0; i < batch.length; i += batchSize) {
-                    let subbatch = batch.slice(i, i + batchSize);
-                    searchClaims(subbatch).then(resp => processClaims(resp));
-                }
-
-                if (Object.keys(claims).length > maxClaimsPerBlock) {
-                    fs.writeFileSync(`../wikidata-claims-${block++}.json`, JSON.stringify(claims));
-                    claims = {};
-                }
-
-                if (queue.length == 0) resolve();
-            };
-        
-            let batch = [];
-            let words = Object.keys(senses);
-
-            while (words.length > 0) {
-                let w = words.pop();
-        
-                senses[w].forEach(s => {
-                    batch.push(s.id);
-                    recursions[s.id] = 0;
-                    queue.push(s.id);
-                });
-        
-                if (words.length == 0 || batch.length > batchSize) {
-                    let b = batch.map(s => s); // copy of batch
-                    searchClaims(b).then(resp => processClaims(resp));
-        
-                    batch = [];
-                }
-            }
-        });
-    }
-})
+.then(() => console.log('Done matching labels with Wikidata senses. Writing to file...'))
 
 .then(() => {
     let skos = 'http://www.w3.org/2004/02/skos/core#';
@@ -206,27 +114,15 @@ urdf.load(txt, { format: 'text/turtle' })
 
     let words = Object.keys(senses);
 
-    let nt = words.reduce((nt, w) => {
-        return senses[w].reduce((nt, s) => {
-            let l = escape(s.label);
-            let def = escape(s.description || '');
-
-            return nt += `<${s.concepturi}> <${skos}prefLabel> "${l}" .\n`
-                       + `<${s.concepturi}> <${skos}definition> "${def}" .\n`;
-        }, nt);
-    }, '');
-
-    // TODO include claims
-
-    fs.writeFileSync('../wikidata-concepts.ttl', nt);
-
     fs.writeFileSync('../wikidata-mapping.ttl', ''); // erase previous content
 
     words.forEach(w => {
-        nt = '';
+        let nt = '';
         let tag = `tag:${encodeURIComponent(w)}`;
 
-        if (senses[w].length > 0) {
+        let exactMatches = senses[w].filter(s => isExactMatch(w, s));
+
+        if (exactMatches.length > 0) {
             nt += denotations[w].reduce((nt, c) => {
                 return nt += `<${c}> <${skos}mappingRelation> <${tag}> .\n`;
             }, nt);
@@ -240,13 +136,13 @@ urdf.load(txt, { format: 'text/turtle' })
     });
 })
 
+.then(() => console.log('Done. Output written to ../wikidata-mapping.ttl.'))
+
 .catch(e => {
     // log intermediate results and exit
     if (!fs.existsSync('../wikidata-senses.json')) {
         fs.writeFileSync('../wikidata-senses.tmp.json', JSON.stringify(senses));
     }
-    if (!fs.existsSync('../wikidata-claims.json')) {
-        fs.writeFileSync('../wikidata-claims.tmp.json', JSON.stringify(claims));
-    }
+
     console.error(e);
 });
