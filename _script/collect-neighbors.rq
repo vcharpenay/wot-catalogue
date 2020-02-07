@@ -1,0 +1,3 @@
+prefix wikibase: <http://wikiba.se/ontology#>
+construct { ?entity ?p ?other . }
+where { ?wp wikibase:directClaim ?p . ?entity ?p ?other . }
