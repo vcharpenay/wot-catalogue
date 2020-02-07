@@ -1,0 +1,31 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/> 
+prefix wd: <http://www.wikidata.org/entity/>
+prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+construct { ?tag skos:closeMatch ?e }
+where {
+    {
+        select distinct ?tag where {
+            graph <tag:wot> { ?c a skos:Concept }
+            graph <tag:lex> { ?c skos:mappingRelation ?tag }
+        }
+    }
+    graph <tag:lex> { ?tag ontolex:evokes ?e }
+    # whitelist and blacklist filtering of parent entities
+    graph <tag:wikidata> {
+    	values ?whitelist { wd:Q1183543 wd:Q937228 }
+        ?e <tag:subclass>* ?whitelist
+        filter not exists {
+    		values ?blacklist { wd:Q17334923 wd:Q17537576 }
+            ?e <tag:subclass>* ?blacklist
+        }
+    }
+    # filtering of entities subsumed by other matches
+    filter not exists {
+        graph <tag:lex> { ?tag ontolex:evokes ?other }
+        graph <tag:wikidata> { ?e <tag:subclass>+ ?other }
+    }
+}
