@@ -1,0 +1,4 @@
+prefix wikibase: <http://wikiba.se/ontology#>
+prefix schema: <http://schema.org/>
+construct { ?p schema:name ?l ; schema:description ?def . }
+where { ?p a wikibase:Property ; schema:name ?l ; schema:description ?def . }
