@@ -10,44 +10,18 @@ construct {
     ?from a rdfs:Class ; rdfs:label ?lfrom ; rdfs:comment ?deffrom .
     ?to a rdfs:Class ; rdfs:label ?lto ; rdfs:comment ?defto .
     ?from_r a rdf:Property ; schema:domainIncludes ?from ; schema:rangeIncludes ?to ; rdfs:label ?lr ; rdfs:comment ?defr ; rdfs:subPropertyOf ?r .
-    ?from rdfs:subClassof ?from_sc . ?to rdfs:subClassOf ?to_sc .
 } where {
-    {
-        graph <tag:tmp> {
-            ?from ?r ?to filter (strstarts(str(?r), str(wdt:)) && ?r != wdt:P279 && ?r != wdt:P31)
-            bind (iri(replace(str(?r), "prop/direct", "entity")) as ?ri) # indirect property
-        }
-        graph <tag:wikidata> {
-            optional { ?ri schema:name ?lr filter (lang(?lr) = "en") }
-            optional { ?ri schema:description ?defr filter (lang(?defr) = "en") }
-        }
-        bind (iri(concat(str(?from), "_", replace(str(?r), str(wdt:), ""))) as ?from_r)
-    }
-    union
-    {
-        graph <tag:tmp> { ?from ?r ?to }
-        graph <tag:wikidata> {
-            {
-                ?from wdt:P31|wdt:P279 ?from_sc
-                filter not exists {
-                    ?from (wdt:P31|wdt:P279)+ ?other_sc .
-                    ?other_sc (wdt:P31|wdt:P279)+ ?from_sc .
-                }
-            }
-            union
-            {
-                ?to wdt:P31|wdt:P279 ?to_sc
-                filter not exists {
-                    ?to (wdt:P31|wdt:P279)+ ?other_sc .
-                    ?other_sc (wdt:P31|wdt:P279)+ ?to_sc .
-                }
-            }
-        }
+    graph <tag:tmp> {
+        ?from ?r ?to filter (strstarts(str(?r), str(wdt:)) && ?r != wdt:P279 && ?r != wdt:P31)
+        bind (iri(replace(str(?r), "prop/direct", "entity")) as ?ri) # indirect property
     }
     graph <tag:wikidata> {
         optional { ?from schema:name ?lfrom filter (lang(?lfrom) = "en") }
         optional { ?from schema:description ?deffrom filter (lang(?deffrom) = "en") }
         optional { ?to schema:name ?lto filter (lang(?lto) = "en") }
         optional { ?to schema:description ?defto filter (lang(?defto) = "en") }
+        optional { ?ri schema:name ?lr filter (lang(?lr) = "en") }
+        optional { ?ri schema:description ?defr filter (lang(?defr) = "en") }
     }
+    bind (iri(concat(str(?from), "_", replace(str(?r), str(wdt:), ""))) as ?from_r)
 }
