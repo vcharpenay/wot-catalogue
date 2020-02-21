@@ -12,7 +12,7 @@ const files = [
     '../BACnet/bacnet-top.ttl',
     '../BACnet/bacnet.ttl',
     '../BLE GATT/gatt.ttl',
-    // '../BLE GATT/ble.ttl',
+    '../BLE GATT/ble.ttl', 
     '../LWM2M/lwm2m.ttl',
     '../LWM2M/ipso.ttl',
     '../OCF/swagger.ttl',

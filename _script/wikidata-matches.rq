@@ -4,6 +4,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix schema: <http://schema.org/> 
 prefix wd: <http://www.wikidata.org/entity/>
+prefix wdt: <http://www.wikidata.org/prop/direct/>
 prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#>
 construct { ?tag skos:closeMatch ?e }
 where {
@@ -17,15 +18,15 @@ where {
     # whitelist and blacklist filtering of parent entities
     graph <tag:wikidata> {
     	values ?whitelist { wd:Q1183543 wd:Q937228 }
-        ?e <tag:subclass>* ?whitelist
+        ?e (wdt:P31|wdt:P279)* ?whitelist
         filter not exists {
     		values ?blacklist { wd:Q17334923 wd:Q17537576 }
-            ?e <tag:subclass>* ?blacklist
+            ?e (wdt:P31|wdt:P279)* ?blacklist
         }
     }
     # filtering of entities subsumed by other matches
     filter not exists {
         graph <tag:lex> { ?tag ontolex:evokes ?other }
-        graph <tag:wikidata> { ?e <tag:subclass>+ ?other }
+        graph <tag:wikidata> { ?e (wdt:P31|wdt:P279)+ ?other }
     }
 }

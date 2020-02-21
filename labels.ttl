@@ -964,6 +964,7 @@
 <http://example.org/namespace/ble-gatt#Longitude> <http://www.w3.org/2004/02/skos/core#prefLabel> "longitude" .
 <http://example.org/namespace/ble-gatt#LongitudeValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "the current value of the longitude characteristic" .
 <http://example.org/namespace/ble-gatt#OrganizationIDField> <http://www.w3.org/2004/02/skos/core#prefLabel> "organization id field" .
+<http://example.org/namespace/ble-gatt#RecordAccessControlPoint> <http://www.w3.org/2004/02/skos/core#prefLabel> "record access control point" .
 <http://example.org/namespace/ble-gatt#TDSControlPoint> <http://www.w3.org/2004/02/skos/core#prefLabel> "transport discovery control point" .
 <http://example.org/namespace/ble-gatt#TransportDataField> <http://www.w3.org/2004/02/skos/core#prefLabel> "transport data field" .
 <http://example.org/namespace/ble-gatt#TransportDataLengthField> <http://www.w3.org/2004/02/skos/core#prefLabel> "transport data length field" .
@@ -1360,6 +1361,63 @@
 <http://example.org/namespace/ble-gatt/wsp#WeightScaleFeature> <http://www.w3.org/2004/02/skos/core#prefLabel> "weight scale feature" .
 <http://example.org/namespace/ble-gatt/wsp#WeightScaleProfile> <http://www.w3.org/2004/02/skos/core#prefLabel> "weight scale profile" .
 <http://example.org/namespace/ble-gatt/wsp#WeightScaleService> <http://www.w3.org/2004/02/skos/core#prefLabel> "weight scale service" .
+<http://example.org/namespace/ble-gatt#AlertLevel> <http://www.w3.org/2004/02/skos/core#prefLabel> "alert level" .
+<http://example.org/namespace/ble-gatt#BatteryLevel> <http://www.w3.org/2004/02/skos/core#prefLabel> "battery level" .
+<http://example.org/namespace/ble-gatt#BatteryService> <http://www.w3.org/2004/02/skos/core#prefLabel> "battery service" .
+<http://example.org/namespace/ble-gatt#BluetoothSIG> <http://www.w3.org/2004/02/skos/core#prefLabel> "bluetooth special interest group" .
+<http://example.org/namespace/ble-gatt#BondManagementControlPoint> <http://www.w3.org/2004/02/skos/core#prefLabel> "bond management control point" .
+<http://example.org/namespace/ble-gatt#BondManagementFeature> <http://www.w3.org/2004/02/skos/core#prefLabel> "bond management feature" .
+<http://example.org/namespace/ble-gatt#BondManagementService> <http://www.w3.org/2004/02/skos/core#prefLabel> "bond management service" .
+<http://example.org/namespace/ble-gatt#CumulativeCrankRevolutions> <http://www.w3.org/2004/02/skos/core#prefLabel> "cumulative crank revolutions" .
+<http://example.org/namespace/ble-gatt#CurrentTime> <http://www.w3.org/2004/02/skos/core#prefLabel> "current time" .
+<http://example.org/namespace/ble-gatt#CurrentTimeService> <http://www.w3.org/2004/02/skos/core#prefLabel> "current time service" .
+<http://example.org/namespace/ble-gatt#DatabaseChangeIncrement> <http://www.w3.org/2004/02/skos/core#prefLabel> "database change increment" .
+<http://example.org/namespace/ble-gatt#DatabaseChangeIncrementValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "database change increment value" .
+<http://example.org/namespace/ble-gatt#DeviceInformationService> <http://www.w3.org/2004/02/skos/core#prefLabel> "device information service" .
+<http://example.org/namespace/ble-gatt#FirmwareRevision> <http://www.w3.org/2004/02/skos/core#prefLabel> "firmware revision" .
+<http://example.org/namespace/ble-gatt#HardwareRevision> <http://www.w3.org/2004/02/skos/core#prefLabel> "hardware revision" .
+<http://example.org/namespace/ble-gatt#IEEE11073-20601RegulatoryCertificationDataList> <http://www.w3.org/2004/02/skos/core#prefLabel> "institute of electrical and electronics engineers ieee 11073 20601 regulatory certification data list" .
+<http://example.org/namespace/ble-gatt#ImmediateAlertService> <http://www.w3.org/2004/02/skos/core#prefLabel> "immediate alert service" .
+<http://example.org/namespace/ble-gatt#Indicate> <http://www.w3.org/2004/02/skos/core#prefLabel> "indicate" .
+<http://example.org/namespace/ble-gatt#InstantaneousPowerField> <http://www.w3.org/2004/02/skos/core#prefLabel> "instantaneous power field" .
+<http://example.org/namespace/ble-gatt#InstantaneousSpeedField> <http://www.w3.org/2004/02/skos/core#prefLabel> "instantaneous speed field" .
+<http://example.org/namespace/ble-gatt#LE_Scan_Interval> <http://www.w3.org/2004/02/skos/core#prefLabel> "low energy scan window" .
+<http://example.org/namespace/ble-gatt#LE_Scan_Window> <http://www.w3.org/2004/02/skos/core#prefLabel> "low energy scan interval" .
+<http://example.org/namespace/ble-gatt#LastCrankEventTime> <http://www.w3.org/2004/02/skos/core#prefLabel> "last crank event time" .
+<http://example.org/namespace/ble-gatt#LocalTimeInformation> <http://www.w3.org/2004/02/skos/core#prefLabel> "local time information" .
+<http://example.org/namespace/ble-gatt#ManufacturerIdentifier> <http://www.w3.org/2004/02/skos/core#prefLabel> "manufacturer identifier" .
+<http://example.org/namespace/ble-gatt#ManufacturerName> <http://www.w3.org/2004/02/skos/core#prefLabel> "manufacturer name" .
+<http://example.org/namespace/ble-gatt#ModelNumber> <http://www.w3.org/2004/02/skos/core#prefLabel> "model number" .
+<http://example.org/namespace/ble-gatt#Notify> <http://www.w3.org/2004/02/skos/core#prefLabel> "notify" .
+<http://example.org/namespace/ble-gatt#OrganizationallyUniqueIdentifier> <http://www.w3.org/2004/02/skos/core#prefLabel> "organizationally unique identifier" .
+<http://example.org/namespace/ble-gatt#PnPID> <http://www.w3.org/2004/02/skos/core#prefLabel> "plug and play identification" .
+<http://example.org/namespace/ble-gatt#ProductIDField> <http://www.w3.org/2004/02/skos/core#prefLabel> "product id field" .
+<http://example.org/namespace/ble-gatt#ProductVersionField> <http://www.w3.org/2004/02/skos/core#prefLabel> "product version field" .
+<http://example.org/namespace/ble-gatt#Read> <http://www.w3.org/2004/02/skos/core#prefLabel> "read" .
+<http://example.org/namespace/ble-gatt#ReadLong> <http://www.w3.org/2004/02/skos/core#prefLabel> "read long" .
+<http://example.org/namespace/ble-gatt#ReferenceTimeInformation> <http://www.w3.org/2004/02/skos/core#prefLabel> "reference time information" .
+<http://example.org/namespace/ble-gatt#ReliableWrite> <http://www.w3.org/2004/02/skos/core#prefLabel> "reliable write" .
+<http://example.org/namespace/ble-gatt#SCControlPoint> <http://www.w3.org/2004/02/skos/core#prefLabel> "speed and cadence control point" .
+<http://example.org/namespace/ble-gatt#ScanIntervalWindow> <http://www.w3.org/2004/02/skos/core#prefLabel> "scan interval window" .
+<http://example.org/namespace/ble-gatt#ScanParametersService> <http://www.w3.org/2004/02/skos/core#prefLabel> "scan parameters service" .
+<http://example.org/namespace/ble-gatt#ScanRefresh> <http://www.w3.org/2004/02/skos/core#prefLabel> "scan refresh" .
+<http://example.org/namespace/ble-gatt#SensorLocation> <http://www.w3.org/2004/02/skos/core#prefLabel> "sensor location" .
+<http://example.org/namespace/ble-gatt#SerialNumber> <http://www.w3.org/2004/02/skos/core#prefLabel> "serial number" .
+<http://example.org/namespace/ble-gatt#Serverrequiresrefresh> <http://www.w3.org/2004/02/skos/core#prefLabel> "server requires refresh" .
+<http://example.org/namespace/ble-gatt#SoftwareRevision> <http://www.w3.org/2004/02/skos/core#prefLabel> "software revision" .
+<http://example.org/namespace/ble-gatt#SystemID> <http://www.w3.org/2004/02/skos/core#prefLabel> "system id" .
+<http://example.org/namespace/ble-gatt#TimeStampField> <http://www.w3.org/2004/02/skos/core#prefLabel> "time stamp field" .
+<http://example.org/namespace/ble-gatt#UDSCharacteristic> <http://www.w3.org/2004/02/skos/core#prefLabel> "user data service characteristic" .
+<http://example.org/namespace/ble-gatt#UDSCharacteristicValue> <http://www.w3.org/2004/02/skos/core#prefLabel> "user data service characteristic value" .
+<http://example.org/namespace/ble-gatt#USBImplementerForum> <http://www.w3.org/2004/02/skos/core#prefLabel> "usb implementer s forum" .
+<http://example.org/namespace/ble-gatt#UserControlPoint> <http://www.w3.org/2004/02/skos/core#prefLabel> "user control point" .
+<http://example.org/namespace/ble-gatt#UserDataService> <http://www.w3.org/2004/02/skos/core#prefLabel> "user data service" .
+<http://example.org/namespace/ble-gatt#UserIDField> <http://www.w3.org/2004/02/skos/core#prefLabel> "user id field" .
+<http://example.org/namespace/ble-gatt#UserIndex> <http://www.w3.org/2004/02/skos/core#prefLabel> "user index" .
+<http://example.org/namespace/ble-gatt#VendorIDField> <http://www.w3.org/2004/02/skos/core#prefLabel> "vendor id field" .
+<http://example.org/namespace/ble-gatt#VendorIDSourceField> <http://www.w3.org/2004/02/skos/core#prefLabel> "vendor id source field" .
+<http://example.org/namespace/ble-gatt#Write> <http://www.w3.org/2004/02/skos/core#prefLabel> "write" .
+<http://example.org/namespace/ble-gatt#WritewithoutResponse> <http://www.w3.org/2004/02/skos/core#prefLabel> "write without response" .
 <http://openmobilealliance.org/tech/profiles/LWM2M#E> <http://www.w3.org/2004/02/skos/core#prefLabel> "execute operation" .
 <http://openmobilealliance.org/tech/profiles/LWM2M#Object> <http://www.w3.org/2004/02/skos/core#prefLabel> "object" .
 <http://openmobilealliance.org/tech/profiles/LWM2M#Operation> <http://www.w3.org/2004/02/skos/core#prefLabel> "operation" .
