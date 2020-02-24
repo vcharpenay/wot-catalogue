@@ -1,0 +1,4 @@
+prefix : <http://ti.rw.fau.de/vocab#>
+#construct { ?e a :HierarchyNode . } where {  ?e a :HierarchyNode .  }
+construct { ?e1 ?p ?e2 . }
+where { ?e1 a :ClosureNode ; ?p ?e2 . ?e2 a :ClosureNode . ?p a :ClosureEdge . }
