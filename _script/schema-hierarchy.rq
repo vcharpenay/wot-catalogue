@@ -6,6 +6,9 @@ prefix wikibase: <http://wikiba.se/ontology#>
 prefix bd: <http://www.bigdata.com/rdf#>
 prefix skos: <http://www.w3.org/2004/02/skos/core#>
 prefix wdt: <http://www.wikidata.org/prop/direct/>
+
+# sparql --data wikidata-closure.nt --query _script/schema-hierarchy.rq > schema-hierarchy.ttl
+
 construct {
     ?child a rdfs:Class .
     ?parent a rdfs:Class .
@@ -13,16 +16,15 @@ construct {
 } where {
     {
         select distinct ?e where {
-    		graph <tag:tmp> { { ?e ?r ?other } union { ?other ?r ?e } }
+    		{ { ?e ?r ?other } union { ?other ?r ?e } }
         }
     }
+
     # TODO look up the whole Wikidata hierarchy (not only closure)?
-    graph <tag:tmp> {
-        ?e (wdt:P31|wdt:P279)? ?child . # depth 2
-        ?child wdt:P31|wdt:P279 ?parent .
-        filter not exists {
-            ?child wdt:P31|wdt:P279 ?other .
-            ?other (wdt:P31|wdt:P279)+ ?parent
-        }
+    ?e (wdt:P31|wdt:P279)? ?child . # depth 2
+    ?child wdt:P31|wdt:P279 ?parent .
+    filter not exists {
+        ?child wdt:P31|wdt:P279 ?other .
+        ?other (wdt:P31|wdt:P279)+ ?parent
     }
 }

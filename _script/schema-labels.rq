@@ -6,40 +6,43 @@ prefix wikibase: <http://wikiba.se/ontology#>
 prefix bd: <http://www.bigdata.com/rdf#>
 prefix skos: <http://www.w3.org/2004/02/skos/core#>
 prefix wdt: <http://www.wikidata.org/prop/direct/>
+
+# sparql --data wikidata-closure.nt --data wikidata-labels.en.nt --data wikidata-property-labels.nt --query _script/schema-labels.rq > schema-labels.ttl
+
 construct {
     ?entity rdfs:label ?l ; rdfs:comment ?def .
 } where {
     {
         select distinct ?entity ?l ?def where {
-            graph <tag:tmp> { ?from ?r ?to }
+            ?from ?r ?to filter (strstarts(str(?r), str(wdt:)))
+
             bind (?from as ?entity)
-            graph <tag:wikidata> {
-                optional { ?entity schema:name ?l filter (lang(?l) = "en") }
-                optional { ?entity schema:description ?def filter (lang(?def) = "en") }
-            }
+            
+            optional { ?entity schema:name ?l filter (lang(?l) = "en") }
+            optional { ?entity schema:description ?def filter (lang(?def) = "en") }
         }
     }
     union
     {
         select distinct ?entity ?l ?def where {
-            graph <tag:tmp> { ?from ?r ?to }
+            ?from ?r ?to filter (strstarts(str(?r), str(wdt:)))
+
             bind (?to as ?entity)
-            graph <tag:wikidata> {
-                optional { ?entity schema:name ?l filter (lang(?l) = "en") }
-                optional { ?entity schema:description ?def filter (lang(?def) = "en") }
-            }
+            
+            optional { ?entity schema:name ?l filter (lang(?l) = "en") }
+            optional { ?entity schema:description ?def filter (lang(?def) = "en") }
         }
     }
     union
     {
         select distinct ?entity ?l ?def where {
-            graph <tag:tmp> { ?from ?r ?to } filter (?r != wdt:P31 && ?r != wdt:P279)
+            ?from ?r ?to filter (strstarts(str(?r), str(wdt:)) && ?r != wdt:P31 && ?r != wdt:P279)
+
             bind (iri(replace(str(?r), str(wdt:), str(wd:))) as ?ri) # indirect property
             bind (iri(concat(str(?from), "_", replace(str(?ri), str(wd:), ""))) as ?entity)
-            graph <tag:wikidata> {
-                optional { ?ri schema:name ?l filter (lang(?l) = "en") }
-                optional { ?ri schema:description ?def filter (lang(?def) = "en") }
-            }
+            
+            optional { ?ri schema:name ?l filter (lang(?l) = "en") }
+            optional { ?ri schema:description ?def filter (lang(?def) = "en") }
         }
     }
 }

@@ -6,12 +6,13 @@ prefix wikibase: <http://wikiba.se/ontology#>
 prefix bd: <http://www.bigdata.com/rdf#>
 prefix skos: <http://www.w3.org/2004/02/skos/core#>
 prefix wdt: <http://www.wikidata.org/prop/direct/>
+
+# sparql --data wikidata-closure.nt --query _script/schema-properties.rq > schema-properties.ttl
+
 construct {
     ?from a rdfs:Class . ?to a rdfs:Class .
     ?from_r a rdf:Property ; schema:domainIncludes ?from ; schema:rangeIncludes ?to ; rdfs:subPropertyOf ?r .
 } where {
-    graph <tag:tmp> {
-        ?from ?r ?to filter (strstarts(str(?r), str(wdt:))) filter (?r != wdt:P279 && ?r != wdt:P31)
-    }
+    ?from ?r ?to filter (strstarts(str(?r), str(wdt:))) filter (?r != wdt:P279 && ?r != wdt:P31)
     bind (iri(concat(str(?from), "_", replace(str(?r), str(wdt:), ""))) as ?from_r)
 }

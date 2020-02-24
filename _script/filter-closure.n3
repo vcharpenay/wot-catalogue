@@ -7,7 +7,7 @@
 @prefix wdt: <http://www.wikidata.org/prop/direct/> .
 @prefix : <http://ti.rw.fau.de/vocab#> .
 
-# ldfu -i wikidata-entities.nt wikidata-hierarchy.nt wikidata-mappings3.ttl -p _script/filter-closure.n3 -q _script/filter-closure.rq wikidata-closure.nt
+# ldfu -i wikidata-entities.nt wikidata-hierarchy.nt wikidata-unique-matches.nt -p _script/filter-closure.n3 -q _script/filter-closure.rq wikidata-closure.nt
 
 # initial selection of closure nodes
 

@@ -6,27 +6,24 @@ prefix schema: <http://schema.org/>
 prefix wd: <http://www.wikidata.org/entity/>
 prefix wdt: <http://www.wikidata.org/prop/direct/>
 prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+
+# sparql --data wikidata-hierarchy.nt --data wikidata-mapping.ttl --query _script/wikidata-matches.rq --results "N-Triples" > wikidata-matches.nt
+
 construct { ?tag skos:closeMatch ?e }
 where {
-    {
-        select distinct ?tag where {
-            graph <tag:wot> { ?c a skos:Concept }
-            graph <tag:lex> { ?c skos:mappingRelation ?tag }
-        }
-    }
-    graph <tag:lex> { ?tag ontolex:evokes ?e }
+    ?tag ontolex:evokes ?e .
+
     # whitelist and blacklist filtering of parent entities
-    graph <tag:wikidata> {
-    	values ?whitelist { wd:Q1183543 wd:Q937228 }
-        ?e (wdt:P31|wdt:P279)* ?whitelist
-        filter not exists {
-    		values ?blacklist { wd:Q17334923 wd:Q17537576 }
-            ?e (wdt:P31|wdt:P279)* ?blacklist
-        }
+    values ?whitelist { wd:Q1183543 wd:Q937228 }
+    ?e (wdt:P31|wdt:P279)* ?whitelist .
+    filter not exists {
+        values ?blacklist { wd:Q17334923 wd:Q17537576 wd:Q42889 wd:Q1211967 wd:Q2015382 wd:Q192581 wd:Q1781513 wd:Q12136 wd:Q2135465 }
+        ?e (wdt:P31|wdt:P279)* ?blacklist .
     }
+
     # filtering of entities subsumed by other matches
     filter not exists {
-        graph <tag:lex> { ?tag ontolex:evokes ?other }
-        graph <tag:wikidata> { ?e (wdt:P31|wdt:P279)+ ?other }
+        ?tag ontolex:evokes ?other .
+        ?e (wdt:P31|wdt:P279)+ ?other .
     }
 }
