@@ -12,66 +12,77 @@
         a                skos:Concept ;
         rdfs:label       "powerGenerationData" ;
         skos:definition  "Amount of instaneous generation data." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.audioVideoInput.inputSourceID>
         a                skos:Concept ;
         rdfs:label       "inputSourceID" ;
         skos:definition  "Activated input source ID in the supported input source list, supportedInputSources." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.binarySwitch>
         a                skos:Concept ;
         rdfs:label       "binarySwitch" ;
         skos:definition  "This ModuleClass provides capabilities to control and monitor the state of power." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.binarySwitch.powerState> .
 
 <urn:org.onem2m.home.moduleclass.refrigeration>
         a                skos:Concept ;
         rdfs:label       "refrigeration" ;
         skos:definition  "This ModuleClass describes a refrigeration function. This is not a Refrigerator device. The filter state is a read-only value providing the percentage life time remaining for the water filter. RapidFreeze is a boolean that controls the rapid freeze capability if present. RapidCool is a boolean that controls the rapid cool capability if present. Defrost is a boolean that controls the defrost cycle if present." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.refrigeration.defrost> , <urn:org.onem2m.home.moduleclass.refrigeration.filterLifetime> , <urn:org.onem2m.home.moduleclass.refrigeration.rapidCool> , <urn:org.onem2m.home.moduleclass.refrigeration.rapidFreeze> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.refrigeration.defrost> , <urn:org.onem2m.home.moduleclass.refrigeration.rapidFreeze> , <urn:org.onem2m.home.moduleclass.refrigeration.filterLifetime> , <urn:org.onem2m.home.moduleclass.refrigeration.rapidCool> .
 
 <urn:org.onem2m.home.moduleclass.oximeter>
         a                skos:Concept ;
         rdfs:label       "oximeter" ;
         skos:definition  "This ModuleClass provides the capability to report the measurement of blood characteristics." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.oximeter.diastolicPressure> , <urn:org.onem2m.home.moduleclass.oximeter.oxygenSaturation> , <urn:org.onem2m.home.moduleclass.oximeter.systolicPressure> , <urn:org.onem2m.home.moduleclass.oximeter.pulseRate> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.oximeter.systolicPressure> , <urn:org.onem2m.home.moduleclass.oximeter.oxygenSaturation> , <urn:org.onem2m.home.moduleclass.oximeter.pulseRate> , <urn:org.onem2m.home.moduleclass.oximeter.diastolicPressure> .
 
 <urn:org.onem2m.home.moduleclass.audioVolume>
         a                skos:Concept ;
         rdfs:label       "audioVolume" ;
         skos:definition  "This ModuleClass provides capabilities to control and monitor volume." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.audioVolume.volumePercentage> , <urn:org.onem2m.home.moduleclass.audioVolume.muteEnabled> , <urn:org.onem2m.home.moduleclass.audioVolume.stepValue> , <urn:org.onem2m.home.moduleclass.audioVolume.maxValue> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.audioVolume.maxValue> , <urn:org.onem2m.home.moduleclass.audioVolume.volumePercentage> , <urn:org.onem2m.home.moduleclass.audioVolume.stepValue> , <urn:org.onem2m.home.moduleclass.audioVolume.muteEnabled> .
 
 <urn:org.onem2m.home.moduleclass.oximeter.diastolicPressure>
         a                skos:Concept ;
         rdfs:label       "diastolicPressure" ;
         skos:definition  "The measurement of diastolic pressure by Oximeter. The common unit is millimetre of mercury (mmHg)." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.signalStrength.rssi>
         a                skos:Concept ;
         rdfs:label       "rssi" ;
         skos:definition  "The current value of received signal strength indicator, which reflects the raw signal level." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.audioVolume.stepValue>
         a                skos:Concept ;
         rdfs:label       "stepValue" ;
         skos:definition  "Step value used by UpVolume and DownVolume Actions." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.temperatureAlarm.temperature>
         a                skos:Concept ;
         rdfs:label       "temperature" ;
         skos:definition  "To report the value of the temperature. The common unit is celsius (C)." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.wind.directionLeft>
         a                skos:Concept ;
         rdfs:label       "directionLeft" ;
         skos:definition  "The current status of the leftward blowing enablement. \"True\" indicates enabaled, and \"False\" indicates not enabled." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 sdt:DataType  skos:narrower  "m2m:timestamp" ;
@@ -81,690 +92,805 @@ sdt:DataType  skos:narrower  "m2m:timestamp" ;
         a                skos:Concept ;
         rdfs:label       "visceraFat" ;
         skos:definition  "The viscera fat content measurement from the BIA; the common unit is percentage." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.battery.capacity>
         a                skos:Concept ;
         rdfs:label       "capacity" ;
         skos:definition  "The total capacity of battery in mAh." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.clock.currentDate>
         a                skos:Concept ;
         rdfs:label       "currentDate" ;
         skos:definition  "Information of the current date" ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:date .
 
 <urn:org.onem2m.home.moduleclass.relativeHumidity.desiredHumidity>
         a                skos:Concept ;
         rdfs:label       "desiredHumidity" ;
         skos:definition  "Desired value for Humidity." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.height.height>
         a                skos:Concept ;
         rdfs:label       "height" ;
         skos:definition  "The height measurement. The common unit is centimetre (cm)." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.height>
         a                skos:Concept ;
         rdfs:label       "height" ;
         skos:definition  "This ModuleClass provides the capability to report the measurement of height." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.height.height> .
 
 <urn:org.onem2m.home.moduleclass.energyConsumption.power>
         a                skos:Concept ;
         rdfs:label       "power" ;
         skos:definition  "The power of the device. The common unit is Watt (W)." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.powerSave>
         a                skos:Concept ;
         rdfs:label       "powerSave" ;
         skos:definition  "This ModuleClass provides capabilities to enable power saving mode and monitor the current status." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.powerSave.powerSaveEnabled> .
 
 <urn:org.onem2m.home.moduleclass.timer.targetTimeToStop>
         a                skos:Concept ;
         rdfs:label       "targetTimeToStop" ;
         skos:definition  "A TimeSpan (e.g. a time-based value, App Defined Epoch, Fixed) expressed in seconds. The value indicates the time when the appliance is expected to stop its operation, starting counting from the last ReferenceTimer." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.oximeter.pulseRate>
         a                skos:Concept ;
         rdfs:label       "pulseRate" ;
         skos:definition  "The measurement of pulserate by Oximeter. The common unit is in beats per minute." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.audioVolume.volumePercentage>
         a                skos:Concept ;
         rdfs:label       "volumePercentage" ;
         skos:definition  "The rounded percentage of the current volume in the range of [0, maxValue]. 0 percentage shall mean no sound produced." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.colourSaturation.colourSaturation>
         a                skos:Concept ;
         rdfs:label       "colourSaturation" ;
         skos:definition  "The status of colour saturation level." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.refrigeration.rapidFreeze>
         a                skos:Concept ;
         rdfs:label       "rapidFreeze" ;
         skos:definition  "Indicates whether the unit has a rapid freeze capability active." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.clock>
         a                skos:Concept ;
         rdfs:label       "clock" ;
         skos:definition  "This ModuleClass provides the information about current date and time." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.clock.currentTime> , <urn:org.onem2m.home.moduleclass.clock.currentDate> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.clock.currentDate> , <urn:org.onem2m.home.moduleclass.clock.currentTime> .
 
 <urn:org.onem2m.home.moduleclass.energyConsumption>
         a                skos:Concept ;
         rdfs:label       "energyConsumption" ;
         skos:definition  "This ModuleClass describes the energy consumed by the device since power up. One particular use case for energyConsumption ModuleClass is smart meter." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.energyConsumption.frequency> , <urn:org.onem2m.home.moduleclass.energyConsumption.current> , <urn:org.onem2m.home.moduleclass.energyConsumption.multiplyingFactors> , <urn:org.onem2m.home.moduleclass.energyConsumption.significantDigits> , <urn:org.onem2m.home.moduleclass.energyConsumption.power> , <urn:org.onem2m.home.moduleclass.energyConsumption.roundingEnergyConsumption> , <urn:org.onem2m.home.moduleclass.energyConsumption.absoluteEnergyConsumption> , <urn:org.onem2m.home.moduleclass.energyConsumption.voltage> .
 
 <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.fat>
         a                skos:Concept ;
         rdfs:label       "fat" ;
         skos:definition  "The fat content measurement from the BIA; the common unit is percentage." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.waterLevel>
         a                skos:Concept ;
         rdfs:label       "waterLevel" ;
         skos:definition  "This ModuleClass provides the level and supply source of water for an appliance." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.waterLevel.liquidLevel> .
 
 <urn:org.onem2m.home.moduleclass.timer.estimatedTimeToEnd>
         a                skos:Concept ;
         rdfs:label       "estimatedTimeToEnd" ;
         skos:definition  "A Timer (e.g. a time-based value, App Defined Epoch, Progressive) expressed in seconds. The value indicates the time to the ends of appliance operations. It is calculated at runtime by device itself during the execution of its operation." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.battery.level>
         a                skos:Concept ;
         rdfs:label       "level" ;
         skos:definition  "The rounded percentage of the current level of battery in the range of [0, 100]. 0 percentage shall mean no battery remained." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.weight>
         a                skos:Concept ;
         rdfs:label       "weight" ;
         skos:definition  "This ModuleClass provides the capability to report the measurement of weight." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.weight.weight> .
 
 <urn:org.onem2m.home.moduleclass.smokeSensor.alarm>
         a                skos:Concept ;
         rdfs:label       "alarm" ;
         skos:definition  "The detection of smoke." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.smokeSensor>
         a                skos:Concept ;
         rdfs:label       "smokeSensor" ;
         skos:definition  "This ModuleClass provides the capabilities to indicate the detection of smoke and raises an alarm if the triggering criterion is met." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.smokeSensor.detectedTime> , <urn:org.onem2m.home.moduleclass.smokeSensor.alarm> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.smokeSensor.alarm> , <urn:org.onem2m.home.moduleclass.smokeSensor.detectedTime> .
 
 <urn:org.onem2m.home.moduleclass.clock.currentTime>
         a                skos:Concept ;
         rdfs:label       "currentTime" ;
         skos:definition  "Information of the current time" ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:time .
 
 <urn:org.onem2m.home.moduleclass.boiler.status>
         a                skos:Concept ;
         rdfs:label       "status" ;
         skos:definition  "The status of boiling." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.timer.runningTime>
         a                skos:Concept ;
         rdfs:label       "runningTime" ;
         skos:definition  "It is a Timer (e.g. a time-based value, App Defined Epoch, Progressive) expressed in seconds. It indicates the time of the current operation. Usually its value is increasing of one value each second. It starts counting from 0 when the operation starts and stops counting when the operation ends." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.boiler>
         a                skos:Concept ;
         rdfs:label       "boiler" ;
         skos:definition  "This ModuleClass provides the status of boiling function for water heaters." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.boiler.status> .
 
 <urn:org.onem2m.home.moduleclass.temperature.currentTemperature>
         a                skos:Concept ;
         rdfs:label       "currentTemperature" ;
         skos:definition  "The current temperature." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.battery.lowBattery>
         a                skos:Concept ;
         rdfs:label       "lowBattery" ;
         skos:definition  "To indicate that the battery is in low charge level." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.energyConsumption.significantDigits>
         a                skos:Concept ;
         rdfs:label       "significantDigits" ;
         skos:definition  "The number of effective digits for data." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.wind.directionRight>
         a                skos:Concept ;
         rdfs:label       "directionRight" ;
         skos:definition  "Right side enablement (0:off, 1:on) The current status of the rightward blowing enablement. \"True\" indicates enabaled, and \"False\" indicates not enabled." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.energyConsumption.current>
         a                skos:Concept ;
         rdfs:label       "current" ;
         skos:definition  "The current of the device. The common unit is ampere (A)." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.signalStrength.lqi>
         a                skos:Concept ;
         rdfs:label       "lqi" ;
         skos:definition  "The current value of link quality indicator, which reflects the scaling of rssi by dividing the received signal strength over reference signal strength. The common unit for lqi is percentage [0,100]. For the detailed definition, please see IEEE 802.15.4 [i.4], clause 6.7.8." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.wind>
         a                skos:Concept ;
         rdfs:label       "wind" ;
         skos:definition  "This ModuleClass is for controlling wind strength and direction of a device." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.wind.directionDown> , <urn:org.onem2m.home.moduleclass.wind.directionRight> , <urn:org.onem2m.home.moduleclass.wind.directionLeft> , <urn:org.onem2m.home.moduleclass.wind.windStrength> , <urn:org.onem2m.home.moduleclass.wind.directionUp> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.wind.directionLeft> , <urn:org.onem2m.home.moduleclass.wind.directionUp> , <urn:org.onem2m.home.moduleclass.wind.directionRight> , <urn:org.onem2m.home.moduleclass.wind.directionDown> , <urn:org.onem2m.home.moduleclass.wind.windStrength> .
 
 <urn:org.onem2m.home.moduleclass.relativeHumidity.relativeHumidity>
         a                skos:Concept ;
         rdfs:label       "relativeHumidity" ;
         skos:definition  "The measurement of the relative humidity value; the common unit is percentage." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.timer>
         a                skos:Concept ;
         rdfs:label       "timer" ;
         skos:definition  "This ModuleClass provides capabilities to monitor and control the times when the appliance executes its operations (i.e. when it starts, when it ends…)." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.timer.targetTimeToStop> , <urn:org.onem2m.home.moduleclass.timer.runningTime> , <urn:org.onem2m.home.moduleclass.timer.referenceTimer> , <urn:org.onem2m.home.moduleclass.timer.targetTimeToStart> , <urn:org.onem2m.home.moduleclass.timer.absoluteStartTime> , <urn:org.onem2m.home.moduleclass.timer.targetDuration> , <urn:org.onem2m.home.moduleclass.timer.absoluteStopTime> , <urn:org.onem2m.home.moduleclass.timer.estimatedTimeToEnd> .
 
 <urn:org.onem2m.home.moduleclass.alarmSpeaker.light>
         a                skos:Concept ;
         rdfs:label       "light" ;
         skos:definition  "Representing the lighting mode of the alarm." ;
+        skos:inScheme    sdt: ;
         skos:related     hd:alertColourCode .
 
 <urn:org.onem2m.home.moduleclass.pushButton>
         a                skos:Concept ;
         rdfs:label       "pushButton" ;
         skos:definition  "This ModuleClass provides the capability to indicate the operation of a button style switch. A typical application can be an SOS button." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.pushButton.pushed> .
 
 <urn:org.onem2m.home.moduleclass.doorStatus.doorState>
         a                skos:Concept ;
         rdfs:label       "doorState" ;
         skos:definition  "\"Closed\" indicates that door is closed, \"Open\"indicates that the door is open, \"Opening\" indicates that the door is opening, \"Closing\" indicates that the door is closing, \"Stopped\" indicates that the door is in stationary state." ;
+        skos:inScheme    sdt: ;
         skos:related     hd:doorState .
 
 <urn:org.onem2m.home.moduleclass.colourSaturation>
         a                skos:Concept ;
         rdfs:label       "colourSaturation" ;
         skos:definition  "This ModuleClass describes a colour saturation value. The value is an integer. A colourSaturation has a range of [0,100]. A colourSaturation value of 0 means producing black and white images. A colourSaturation value of 50 means producing device specific normal colour images. A colourSaturation value of 100 means producing device very colourfull images." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.colourSaturation.colourSaturation> .
 
 <urn:org.onem2m.home.moduleclass.timer.absoluteStopTime>
         a                skos:Concept ;
         rdfs:label       "absoluteStopTime" ;
         skos:definition  "An absolute time to specify the stop time." ;
+        skos:inScheme    sdt: ;
         skos:related     "m2m:timestamp" .
 
 <urn:org.onem2m.home.moduleclass.televisionChannel>
         a                skos:Concept ;
         rdfs:label       "televisionChannel" ;
         skos:definition  "This ModuleClass provides capabilities to set and get channels of a device that has a channel list." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.televisionChannel.previousChannel> , <urn:org.onem2m.home.moduleclass.televisionChannel.channelId> , <urn:org.onem2m.home.moduleclass.televisionChannel.availableChannels> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.televisionChannel.previousChannel> , <urn:org.onem2m.home.moduleclass.televisionChannel.availableChannels> , <urn:org.onem2m.home.moduleclass.televisionChannel.channelId> .
 
 <urn:org.onem2m.home.moduleclass.motionSensor.sensitivity>
         a                skos:Concept ;
         rdfs:label       "sensitivity" ;
         skos:definition  "The level of the detection accuracy of the motion sensor. This DataPoint can be used to control the number of the report." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.turbo.turboEnabled>
         a                skos:Concept ;
         rdfs:label       "turboEnabled" ;
         skos:definition  "The current status of the Turbo Mode. \"True\" indicates enabaled, and \"False\" indicates not enabled." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.rinseLevel.rinseLevel>
         a                skos:Concept ;
         rdfs:label       "rinseLevel" ;
         skos:definition  "The level of rinse (see clause 5.5.3). A higher value indicates a higher rinse level." ;
+        skos:inScheme    sdt: ;
         skos:related     hd:liquidLevel .
 
 <urn:org.onem2m.home.moduleclass.colour.green>
         a                skos:Concept ;
         rdfs:label       "green" ;
         skos:definition  "The G value of RGB; the range is [0,255]" ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.temperatureAlarm>
         a                skos:Concept ;
         rdfs:label       "temperatureAlarm" ;
         skos:definition  "This ModuleClass provides the capabilities to indicate the detection of abnormal temperatures and raises an alarm if the triggering criterion is met." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.temperatureAlarm.alarm> , <urn:org.onem2m.home.moduleclass.temperatureAlarm.temperature> , <urn:org.onem2m.home.moduleclass.temperatureAlarm.temperatureThreshhold> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.temperatureAlarm.alarm> , <urn:org.onem2m.home.moduleclass.temperatureAlarm.temperatureThreshhold> , <urn:org.onem2m.home.moduleclass.temperatureAlarm.temperature> .
 
 <urn:org.onem2m.home.moduleclass.runMode.supportedModes>
         a                skos:Concept ;
         rdfs:label       "supportedModes" ;
         skos:definition  "List of possible modes the device supports (see clause 5.5.7)" ;
+        skos:inScheme    sdt: ;
         skos:related     hd:supportedModes .
 
 <urn:org.onem2m.home.moduleclass.recorder.duration>
         a                skos:Concept ;
         rdfs:label       "duration" ;
         skos:definition  "The duration for video/audio recording. Set to trigger the recorder. The common unit is seconds." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.powerSave.powerSaveEnabled>
         a                skos:Concept ;
         rdfs:label       "powerSaveEnabled" ;
         skos:definition  "The current status of the Power Saving Mode. \"True\" indicates enabaled, and \"false\" indicates not enabled." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.brightness>
         a                skos:Concept ;
         rdfs:label       "brightness" ;
         skos:definition  "This ModuleClass describes the brightness of a light e.g. from a lamp. Brightness is scaled as a percentage. A lamp or a monitor can be adjusted to a level of light between very dim (0 % is the minimum brightness) and very bright (100 % is the maximum brightness)." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.brightness.brightness> .
 
 <urn:org.onem2m.home.moduleclass.battery.batteryThreshold>
         a                skos:Concept ;
         rdfs:label       "batteryThreshold" ;
         skos:definition  "(and optionally to generate an alarm, see clause 5.3.1)." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.energyGeneration.roundingEnergyGeneration>
         a                skos:Concept ;
         rdfs:label       "roundingEnergyGeneration" ;
         skos:definition  "This energy generation data can be calculated by using significantFigures and multiplyingFactors." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.temperature>
         a                skos:Concept ;
         rdfs:label       "temperature" ;
         skos:definition  "This ModuleClass provides capabilities to represent the current temperature and target temperature of devices such as an air conditioner, refrigerator, oven and etc." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.temperature.stepValue> , <urn:org.onem2m.home.moduleclass.temperature.minValue> , <urn:org.onem2m.home.moduleclass.temperature.unit> , <urn:org.onem2m.home.moduleclass.temperature.targetTemperature> , <urn:org.onem2m.home.moduleclass.temperature.maxValue> , <urn:org.onem2m.home.moduleclass.temperature.currentTemperature> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.temperature.maxValue> , <urn:org.onem2m.home.moduleclass.temperature.stepValue> , <urn:org.onem2m.home.moduleclass.temperature.targetTemperature> , <urn:org.onem2m.home.moduleclass.temperature.unit> , <urn:org.onem2m.home.moduleclass.temperature.minValue> , <urn:org.onem2m.home.moduleclass.temperature.currentTemperature> .
 
 <urn:org.onem2m.home.moduleclass.energyGeneration.multiplyingFactors>
         a                skos:Concept ;
         rdfs:label       "multiplyingFactors" ;
         skos:definition  "The unit for data (multiplying factors), e.g. 1 kWh, 0,1 kWh, 0,01 kWh, etc." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:floatr .
 
 <urn:org.onem2m.home.moduleclass.keypad>
         a                skos:Concept ;
         rdfs:label       "keypad" ;
         skos:definition  "This ModuleClass provides the capability to require a user defined service through the key-in number. For example, a user can define key 1 as \"require a takeout from restaurant XXX with combo meal 1\". The IoT service provider or user can define the services." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.keypad.keyNumber> .
 
 <urn:org.onem2m.home.moduleclass.timer.targetDuration>
         a                skos:Concept ;
         rdfs:label       "targetDuration" ;
         skos:definition  "A TimeSpan (e.g. a time-based value, App Defined Epoch, Fixed) expressed in seconds. The value indicates a time, representing the target duration of the operation as per user selection." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.temperature.targetTemperature>
         a                skos:Concept ;
         rdfs:label       "targetTemperature" ;
         skos:definition  "The desired temperature to reach." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.wind.windStrength>
         a                skos:Concept ;
         rdfs:label       "windStrength" ;
         skos:definition  "The current strength of the wind(see clause 5.5.9)." ;
+        skos:inScheme    sdt: ;
         skos:related     hd:windStrength .
 
 <urn:org.onem2m.home.moduleclass.runMode.operationMode>
         a                skos:Concept ;
         rdfs:label       "operationMode" ;
         skos:definition  "Currently active mode." ;
+        skos:inScheme    sdt: ;
         skos:related     hd:supportedModes .
 
 <urn:org.onem2m.home.moduleclass.energyGeneration>
         a                skos:Concept ;
         rdfs:label       "energyGeneration" ;
         skos:definition  "This ModuleClass provides information about generation data on electric generator devices such as a photo voltaic power system, fuel cells, or microgeneration." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.energyGeneration.multiplyingFactors> , <urn:org.onem2m.home.moduleclass.energyGeneration.significantDigits> , <urn:org.onem2m.home.moduleclass.energyGeneration.roundingEnergyGeneration> , <urn:org.onem2m.home.moduleclass.energyGeneration.powerGenerationData> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.energyGeneration.multiplyingFactors> , <urn:org.onem2m.home.moduleclass.energyGeneration.roundingEnergyGeneration> , <urn:org.onem2m.home.moduleclass.energyGeneration.powerGenerationData> , <urn:org.onem2m.home.moduleclass.energyGeneration.significantDigits> .
 
 <urn:org.onem2m.home.moduleclass.audioVolume.muteEnabled>
         a                skos:Concept ;
         rdfs:label       "muteEnabled" ;
         skos:definition  "The current status of the mute enablement. \"True\" indicates enabled, and \"False\" indicates not enabled." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis>
         a                skos:Concept ;
         rdfs:label       "bioElectricalImpedanceAnalysis" ;
         skos:definition  "This ModuleClass provides the analysis of human body tissue based on impedance measurement." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.muscle> , <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.bone> , <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.resistance> , <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.visceraFat> , <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.fat> , <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.water> , <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.kcal> .
 
 <urn:org.onem2m.home.moduleclass.energyGeneration.significantDigits>
         a                skos:Concept ;
         rdfs:label       "significantDigits" ;
         skos:definition  "The number of effective digits for data." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.temperatureAlarm.alarm>
         a                skos:Concept ;
         rdfs:label       "alarm" ;
         skos:definition  "The detection of abnormal temperature." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.energyConsumption.roundingEnergyConsumption>
         a                skos:Concept ;
         rdfs:label       "roundingEnergyConsumption" ;
         skos:definition  "This energy consumption data can be calculated by using significantDigits and multiplyingFactors." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.energyConsumption.frequency>
         a                skos:Concept ;
         rdfs:label       "frequency" ;
         skos:definition  "The frequency of the device. The common unit is hertz (Hz)." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.hotWaterSupply.bath>
         a                skos:Concept ;
         rdfs:label       "bath" ;
         skos:definition  "The status of filling bath tub." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.energyConsumption.absoluteEnergyConsumption>
         a                skos:Concept ;
         rdfs:label       "absoluteEnergyConsumption" ;
         skos:definition  "The absolute energy consumption, reflecting the real measurement of accumulative energy. The common unit is Watt-hour (Wh)." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.colour>
         a                skos:Concept ;
         rdfs:label       "colour" ;
         skos:definition  "This ModuleClass provides the capabilities to set the value of Red, Green, Blue for the colour device." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.colour.blue> , <urn:org.onem2m.home.moduleclass.colour.green> , <urn:org.onem2m.home.moduleclass.colour.red> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.colour.green> , <urn:org.onem2m.home.moduleclass.colour.blue> , <urn:org.onem2m.home.moduleclass.colour.red> .
 
 <urn:org.onem2m.home.moduleclass.alarmSpeaker>
         a                skos:Concept ;
         rdfs:label       "alarmSpeaker" ;
         skos:definition  "This ModuleClass provides the capability to initiate an alarm." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.alarmSpeaker.light> , <urn:org.onem2m.home.moduleclass.alarmSpeaker.alarmStatus> , <urn:org.onem2m.home.moduleclass.alarmSpeaker.tone> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.alarmSpeaker.tone> , <urn:org.onem2m.home.moduleclass.alarmSpeaker.light> , <urn:org.onem2m.home.moduleclass.alarmSpeaker.alarmStatus> .
 
 <urn:org.onem2m.home.moduleclass.audioVideoInput>
         a                skos:Concept ;
         rdfs:label       "audioVideoInput" ;
         skos:definition  "This ModuleClass provides capabilities to control and monitor audio video input source of device such as TV or SetTopBox." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.audioVideoInput.inputSourceID> , <urn:org.onem2m.home.moduleclass.audioVideoInput.supportedInputSources> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.audioVideoInput.supportedInputSources> , <urn:org.onem2m.home.moduleclass.audioVideoInput.inputSourceID> .
 
 <urn:org.onem2m.home.moduleclass.electricVehicleConnector.status>
         a                skos:Concept ;
         rdfs:label       "status" ;
         skos:definition  "The status of connection." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.battery.discharging>
         a                skos:Concept ;
         rdfs:label       "discharging" ;
         skos:definition  "The status of discharging. \"True\" indicates enabled, and \"False\" indicates not enabled." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.battery>
         a                skos:Concept ;
         rdfs:label       "battery" ;
         skos:definition  "Battery indicates the detection of low battery and gives an alarm if triggering criterion is met. The charge value in the module shows the current battery charge level." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.battery.capacity> , <urn:org.onem2m.home.moduleclass.battery.discharging> , <urn:org.onem2m.home.moduleclass.battery.charging> , <urn:org.onem2m.home.moduleclass.battery.batteryThreshold> , <urn:org.onem2m.home.moduleclass.battery.lowBattery> , <urn:org.onem2m.home.moduleclass.battery.level> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.battery.lowBattery> , <urn:org.onem2m.home.moduleclass.battery.batteryThreshold> , <urn:org.onem2m.home.moduleclass.battery.capacity> , <urn:org.onem2m.home.moduleclass.battery.discharging> , <urn:org.onem2m.home.moduleclass.battery.level> , <urn:org.onem2m.home.moduleclass.battery.charging> .
 
 <urn:org.onem2m.home.moduleclass.faultDetection.description>
         a                skos:Concept ;
         rdfs:label       "description" ;
         skos:definition  "Message of the fault." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:string .
 
 <urn:org.onem2m.home.moduleclass.colour.red>
         a                skos:Concept ;
         rdfs:label       "red" ;
         skos:definition  "The R value of RGB; the range is [0,255]" ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.colour.blue>
         a                skos:Concept ;
         rdfs:label       "blue" ;
         skos:definition  "The B value of RGB; the range is [0,255]" ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.motionSensor.alarm>
         a                skos:Concept ;
         rdfs:label       "alarm" ;
         skos:definition  "The detection of the motion occurrence." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.audioVideoInput.supportedInputSources>
         a                skos:Concept ;
         rdfs:label       "supportedInputSources" ;
         skos:definition  "List of supported input sources for the given device (see clause 5.5.2)." ;
+        skos:inScheme    sdt: ;
         skos:related     hd:supportedInputSource .
 
 <urn:org.onem2m.home.moduleclass.waterSensor.alarm>
         a                skos:Concept ;
         rdfs:label       "alarm" ;
         skos:definition  "The detection of water." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.doorStatus>
         a                skos:Concept ;
         rdfs:label       "doorStatus" ;
         skos:definition  "This ModuleClass provides the status of a door. It is intended to be part of a larger object such as a refrigerator and an oven that might have multiple doors." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.doorStatus.openAlarm> , <urn:org.onem2m.home.moduleclass.doorStatus.openDuration> , <urn:org.onem2m.home.moduleclass.doorStatus.doorState> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.doorStatus.openAlarm> , <urn:org.onem2m.home.moduleclass.doorStatus.doorState> , <urn:org.onem2m.home.moduleclass.doorStatus.openDuration> .
 
 <urn:org.onem2m.home.moduleclass.audioVolume.maxValue>
         a                skos:Concept ;
         rdfs:label       "maxValue" ;
         skos:definition  "Maximum value allowed for Volume." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.televisionChannel.channelId>
         a                skos:Concept ;
         rdfs:label       "channelId" ;
         skos:definition  "Current channel ID." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.energyConsumption.voltage>
         a                skos:Concept ;
         rdfs:label       "voltage" ;
         skos:definition  "The voltage of the device. The common unit is volts (V)." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.smokeSensor.detectedTime>
         a                skos:Concept ;
         rdfs:label       "detectedTime" ;
         skos:definition  "The time the smoke is detected." ;
+        skos:inScheme    sdt: ;
         skos:related     "m2m:timestamp" .
 
 <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.resistance>
         a                skos:Concept ;
         rdfs:label       "resistance" ;
         skos:definition  "The resistance of human body; the common unit is ohm." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.pushButton.pushed>
         a                skos:Concept ;
         rdfs:label       "pushed" ;
         skos:definition  "To indicate the press of the button." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.oximeter.oxygenSaturation>
         a                skos:Concept ;
         rdfs:label       "oxygenSaturation" ;
         skos:definition  "The measurement of oxygensaturation by Oximeter. The common unit is in percentage." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.binarySwitch.powerState>
         a                skos:Concept ;
         rdfs:label       "powerState" ;
         skos:definition  "The current status of the binarySwitch. \"True\" indicates turned-on, and \"False\" indicates turnedoff." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.rinseLevel>
         a                skos:Concept ;
         rdfs:label       "rinseLevel" ;
         skos:definition  "This ModuleClass provides capabilities to control and monitor the level of rinse. It is intended to be part of object which uses rinse such as a washing machine." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.rinseLevel.rinseLevel> .
 
 <urn:org.onem2m.home.moduleclass.faultDetection>
         a                skos:Concept ;
         rdfs:label       "faultDetection" ;
         skos:definition  "This ModuleClass provides information about whether a fault has occurred in the actual device." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.faultDetection.description> , <urn:org.onem2m.home.moduleclass.faultDetection.status> , <urn:org.onem2m.home.moduleclass.faultDetection.code> .
 
 <urn:org.onem2m.home.moduleclass.televisionChannel.previousChannel>
         a                skos:Concept ;
         rdfs:label       "previousChannel" ;
         skos:definition  "The channel number which was selected previously." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.temperature.stepValue>
         a                skos:Concept ;
         rdfs:label       "stepValue" ;
         skos:definition  "Step value allowed for targetTemperature." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.timer.absoluteStartTime>
         a                skos:Concept ;
         rdfs:label       "absoluteStartTime" ;
         skos:definition  "An absolute time to specify the start time." ;
+        skos:inScheme    sdt: ;
         skos:related     "m2m:timestamp" .
 
 <urn:org.onem2m.home.moduleclass.weight.weight>
         a                skos:Concept ;
         rdfs:label       "weight" ;
         skos:definition  "The weight measurement. The common unit is kilogram (kg)." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.hotWaterSupply.status>
         a                skos:Concept ;
         rdfs:label       "status" ;
         skos:definition  "The status of watering operation." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.televisionChannel.availableChannels>
         a                skos:Concept ;
         rdfs:label       "availableChannels" ;
         skos:definition  "The list of available channel numbers which may be build by automatic scan and/or manual selction." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.signalStrength>
         a                skos:Concept ;
         rdfs:label       "signalStrength" ;
         skos:definition  "This ModuleClass provides the capability to monitor the strength of the signal." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.signalStrength.rssi> , <urn:org.onem2m.home.moduleclass.signalStrength.lqi> .
 
 <urn:org.onem2m.home.moduleclass.motionSensor.silentTime>
         a                skos:Concept ;
         rdfs:label       "silentTime" ;
         skos:definition  "The time that the motionSensor restrains from sending an alarm in case continous motions are detected after one alarm is produced. This DataPoint can be used to avoid repeated alarm reports." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.motionSensor>
         a                skos:Concept ;
         rdfs:label       "motionSensor" ;
         skos:definition  "This ModuleClass provides the capabilities to indicate the occurrence of motion and raises an alarm if the triggering criterion is met." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.motionSensor.sensitivity> , <urn:org.onem2m.home.moduleclass.motionSensor.alarm> , <urn:org.onem2m.home.moduleclass.motionSensor.silentTime> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.motionSensor.silentTime> , <urn:org.onem2m.home.moduleclass.motionSensor.sensitivity> , <urn:org.onem2m.home.moduleclass.motionSensor.alarm> .
 
 <urn:org.onem2m.home.moduleclass.recorder>
         a                skos:Concept ;
         rdfs:label       "recorder" ;
         skos:definition  "This ModuleClass provides the capability to record the video/audio for a defined duration." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.recorder.duration> .
 
 <urn:org.onem2m.home.moduleclass.wind.directionUp>
         a                skos:Concept ;
         rdfs:label       "directionUp" ;
         skos:definition  "The current status of the upward blowing enablement. \"True\" indicates enabaled, and \"False\" indicates not enabled." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.energyConsumption.multiplyingFactors>
         a                skos:Concept ;
         rdfs:label       "multiplyingFactors" ;
         skos:definition  "The unit for data (multiplying factors), e.g. 1 kWh, 0,1 kWh, 0,01 kWh, etc." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:floatr .
 
 <urn:org.onem2m.home.moduleclass.refrigeration.rapidCool>
         a                skos:Concept ;
         rdfs:label       "rapidCool" ;
         skos:definition  "Indicates whether the unit has a rapid cool capability active." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.alarmSpeaker.tone>
         a                skos:Concept ;
         rdfs:label       "tone" ;
         skos:definition  "Representing the tones of the alarm" ;
+        skos:inScheme    sdt: ;
         skos:related     hd:tone .
 
 <urn:org.onem2m.home.moduleclass.brightness.brightness>
         a                skos:Concept ;
         rdfs:label       "brightness" ;
         skos:definition  "The status of brightness level in percentage." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.faultDetection.status>
         a                skos:Concept ;
         rdfs:label       "status" ;
         skos:definition  "Status of fault detection." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.waterLevel.liquidLevel>
         a                skos:Concept ;
         rdfs:label       "liquidLevel" ;
         skos:definition  "The desired level of water (see clause 5.5.3)." ;
+        skos:inScheme    sdt: ;
         skos:related     hd:liquidLevel .
 
 <urn:org.onem2m.home.moduleclass.waterSensor>
         a                skos:Concept ;
         rdfs:label       "waterSensor" ;
         skos:definition  "This ModuleClass provides the capabilities to indicate whether or not water has been sensed and raises an alarm if the triggering criterion is met." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.waterSensor.alarm> .
 
 <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.water>
         a                skos:Concept ;
         rdfs:label       "water" ;
         skos:definition  "The water content measurement from the BIA; the common unit is percentage." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.refrigeration.defrost>
         a                skos:Concept ;
         rdfs:label       "defrost" ;
         skos:definition  "Indicates whether a defrost cycle is currently active." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.hotWaterSupply>
         a                skos:Concept ;
         rdfs:label       "hotWaterSupply" ;
         skos:definition  "This ModuleClass provides information about the status of supplying hot water into tanks or bath tubs." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.hotWaterSupply.bath> , <urn:org.onem2m.home.moduleclass.hotWaterSupply.status> .
 
 <urn:org.onem2m.home.moduleclass.temperature.minValue>
         a                skos:Concept ;
         rdfs:label       "minValue" ;
         skos:definition  "Minimum value of targetTemperature." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.alarmSpeaker.alarmStatus>
         a                skos:Concept ;
         rdfs:label       "alarmStatus" ;
         skos:definition  "\"True\" indicates the alarm start while \"False\" indicates the alarm stop." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.refrigeration.filterLifetime>
         a                skos:Concept ;
         rdfs:label       "filterLifetime" ;
         skos:definition  "Percentage life time remaining for the water filter." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 sdt:DataPoint  skos:narrower  <urn:org.onem2m.home.moduleclass.alarmSpeaker.alarmStatus> , <urn:org.onem2m.home.moduleclass.temperatureAlarm.temperatureThreshhold> , <urn:org.onem2m.home.moduleclass.audioVideoInput.supportedInputSources> , <urn:org.onem2m.home.moduleclass.televisionChannel.channelId> , <urn:org.onem2m.home.moduleclass.energyGeneration.significantDigits> , <urn:org.onem2m.home.moduleclass.refrigeration.filterLifetime> , <urn:org.onem2m.home.moduleclass.temperature.currentTemperature> , <urn:org.onem2m.home.moduleclass.waterLevel.liquidLevel> , <urn:org.onem2m.home.moduleclass.relativeHumidity.relativeHumidity> , <urn:org.onem2m.home.moduleclass.energyGeneration.multiplyingFactors> , <urn:org.onem2m.home.moduleclass.energyConsumption.current> , <urn:org.onem2m.home.moduleclass.temperatureAlarm.temperature> , <urn:org.onem2m.home.moduleclass.audioVideoInput.inputSourceID> , <urn:org.onem2m.home.moduleclass.timer.estimatedTimeToEnd> , <urn:org.onem2m.home.moduleclass.refrigeration.rapidFreeze> , <urn:org.onem2m.home.moduleclass.temperatureAlarm.alarm> , <urn:org.onem2m.home.moduleclass.wind.directionDown> , <urn:org.onem2m.home.moduleclass.temperature.minValue> , <urn:org.onem2m.home.moduleclass.colour.red> , <urn:org.onem2m.home.moduleclass.oximeter.diastolicPressure> , <urn:org.onem2m.home.moduleclass.battery.lowBattery> , <urn:org.onem2m.home.moduleclass.doorStatus.openDuration> , <urn:org.onem2m.home.moduleclass.rinseLevel.rinseLevel> , <urn:org.onem2m.home.moduleclass.boiler.status> , <urn:org.onem2m.home.moduleclass.smokeSensor.alarm> , <urn:org.onem2m.home.moduleclass.energyGeneration.powerGenerationData> , <urn:org.onem2m.home.moduleclass.audioVolume.muteEnabled> , <urn:org.onem2m.home.moduleclass.faultDetection.description> , <urn:org.onem2m.home.moduleclass.wind.windStrength> , <urn:org.onem2m.home.moduleclass.clock.currentDate> , <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.water> , <urn:org.onem2m.home.moduleclass.energyConsumption.multiplyingFactors> , <urn:org.onem2m.home.moduleclass.waterSensor.alarm> , <urn:org.onem2m.home.moduleclass.hotWaterSupply.bath> , <urn:org.onem2m.home.moduleclass.keypad.keyNumber> , <urn:org.onem2m.home.moduleclass.oximeter.pulseRate> , <urn:org.onem2m.home.moduleclass.wind.directionUp> , <urn:org.onem2m.home.moduleclass.oximeter.oxygenSaturation> , <urn:org.onem2m.home.moduleclass.audioVolume.stepValue> , <urn:org.onem2m.home.moduleclass.doorStatus.openAlarm> , <urn:org.onem2m.home.moduleclass.energyConsumption.frequency> , <urn:org.onem2m.home.moduleclass.audioVolume.volumePercentage> , <urn:org.onem2m.home.moduleclass.spinLevel.spinLevelStrength> , <urn:org.onem2m.home.moduleclass.runMode.supportedModes> , <urn:org.onem2m.home.moduleclass.faultDetection.code> , <urn:org.onem2m.home.moduleclass.televisionChannel.previousChannel> , <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.kcal> , <urn:org.onem2m.home.moduleclass.temperature.stepValue> , <urn:org.onem2m.home.moduleclass.alarmSpeaker.light> , <urn:org.onem2m.home.moduleclass.signalStrength.lqi> , <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.resistance> , <urn:org.onem2m.home.moduleclass.energyConsumption.significantDigits> , <urn:org.onem2m.home.moduleclass.powerSave.powerSaveEnabled> , <urn:org.onem2m.home.moduleclass.timer.referenceTimer> , <urn:org.onem2m.home.moduleclass.recorder.duration> , <urn:org.onem2m.home.moduleclass.energyConsumption.absoluteEnergyConsumption> , <urn:org.onem2m.home.moduleclass.energyConsumption.power> , <urn:org.onem2m.home.moduleclass.height.height> , <urn:org.onem2m.home.moduleclass.electricVehicleConnector.status> , <urn:org.onem2m.home.moduleclass.oximeter.systolicPressure> , <urn:org.onem2m.home.moduleclass.timer.runningTime> , <urn:org.onem2m.home.moduleclass.faultDetection.status> , <urn:org.onem2m.home.moduleclass.battery.charging> , <urn:org.onem2m.home.moduleclass.battery.discharging> , <urn:org.onem2m.home.moduleclass.relativeHumidity.desiredHumidity> , <urn:org.onem2m.home.moduleclass.pushButton.pushed> , <urn:org.onem2m.home.moduleclass.clock.currentTime> , <urn:org.onem2m.home.moduleclass.turbo.turboEnabled> , <urn:org.onem2m.home.moduleclass.colour.green> , <urn:org.onem2m.home.moduleclass.alarmSpeaker.tone> , <urn:org.onem2m.home.moduleclass.battery.level> , <urn:org.onem2m.home.moduleclass.runMode.operationMode> , <urn:org.onem2m.home.moduleclass.smokeSensor.detectedTime> , <urn:org.onem2m.home.moduleclass.energyConsumption.voltage> , <urn:org.onem2m.home.moduleclass.brightness.brightness> , <urn:org.onem2m.home.moduleclass.colourSaturation.colourSaturation> , <urn:org.onem2m.home.moduleclass.timer.targetDuration> , <urn:org.onem2m.home.moduleclass.wind.directionLeft> , <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.muscle> , <urn:org.onem2m.home.moduleclass.battery.capacity> , <urn:org.onem2m.home.moduleclass.weight.weight> , <urn:org.onem2m.home.moduleclass.doorStatus.doorState> , <urn:org.onem2m.home.moduleclass.timer.targetTimeToStop> , <urn:org.onem2m.home.moduleclass.refrigeration.rapidCool> , <urn:org.onem2m.home.moduleclass.timer.absoluteStopTime> , <urn:org.onem2m.home.moduleclass.waterFlow.waterLevelStrength> , <urn:org.onem2m.home.moduleclass.temperature.maxValue> , <urn:org.onem2m.home.moduleclass.timer.absoluteStartTime> , <urn:org.onem2m.home.moduleclass.audioVolume.maxValue> , <urn:org.onem2m.home.moduleclass.hotWaterSupply.status> , <urn:org.onem2m.home.moduleclass.temperature.unit> , <urn:org.onem2m.home.moduleclass.timer.targetTimeToStart> , <urn:org.onem2m.home.moduleclass.colour.blue> , <urn:org.onem2m.home.moduleclass.battery.batteryThreshold> , <urn:org.onem2m.home.moduleclass.energyConsumption.roundingEnergyConsumption> , <urn:org.onem2m.home.moduleclass.motionSensor.alarm> , <urn:org.onem2m.home.moduleclass.televisionChannel.availableChannels> , <urn:org.onem2m.home.moduleclass.energyGeneration.roundingEnergyGeneration> , <urn:org.onem2m.home.moduleclass.temperature.targetTemperature> , <urn:org.onem2m.home.moduleclass.wind.directionRight> , <urn:org.onem2m.home.moduleclass.motionSensor.sensitivity> , <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.fat> , <urn:org.onem2m.home.moduleclass.refrigeration.defrost> , <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.bone> , <urn:org.onem2m.home.moduleclass.motionSensor.silentTime> , <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.visceraFat> , <urn:org.onem2m.home.moduleclass.signalStrength.rssi> , <urn:org.onem2m.home.moduleclass.binarySwitch.powerState> .
@@ -773,96 +899,112 @@ sdt:DataPoint  skos:narrower  <urn:org.onem2m.home.moduleclass.alarmSpeaker.alar
         a                skos:Concept ;
         rdfs:label       "maxValue" ;
         skos:definition  "Maximum value of targetTemperature." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.waterFlow>
         a                skos:Concept ;
         rdfs:label       "waterFlow" ;
         skos:definition  "This ModuleClass is for controlling water strength of a device." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.waterFlow.waterLevelStrength> .
 
 <urn:org.onem2m.home.moduleclass.waterFlow.waterLevelStrength>
         a                skos:Concept ;
         rdfs:label       "waterLevelStrength" ;
         skos:definition  "The desired level of water flow (see clause 5.5.8). A higher value indicates higher water flow." ;
+        skos:inScheme    sdt: ;
         skos:related     hd:waterFlowStrength .
 
 <urn:org.onem2m.home.moduleclass.doorStatus.openAlarm>
         a                skos:Concept ;
         rdfs:label       "openAlarm" ;
         skos:definition  "The state of the door open alarm. \"True\" indicates that the open alarm is active. \"False\" indicates that the open alarm is not active." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.temperatureAlarm.temperatureThreshhold>
         a                skos:Concept ;
         rdfs:label       "temperatureThreshhold" ;
         skos:definition  "The threshhold to trigger the alarm." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.bone>
         a                skos:Concept ;
         rdfs:label       "bone" ;
         skos:definition  "The bone content measurement from the BIA; the common unit is percentage." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.muscle>
         a                skos:Concept ;
         rdfs:label       "muscle" ;
         skos:definition  "The muscle content measurement from the BIA; the common unit is percentage." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.oximeter.systolicPressure>
         a                skos:Concept ;
         rdfs:label       "systolicPressure" ;
         skos:definition  "The measurement of systolic pressure by Oximeter. The common unit is millimetre of mercury (mmHg)." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.turbo>
         a                skos:Concept ;
         rdfs:label       "turbo" ;
         skos:definition  "This ModuleClass provides capabilities to enable turbo mode and monitor the current status of the turbo function. It is intended to be part of objects which use turbo function such as an air conditioner, a washing machine etc." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.turbo.turboEnabled> .
 
 <urn:org.onem2m.home.moduleclass.spinLevel.spinLevelStrength>
         a                skos:Concept ;
         rdfs:label       "spinLevelStrength" ;
         skos:definition  "The value of spin-dry level (see clause 5.5.4). A higher value indicates a higher spin level." ;
+        skos:inScheme    sdt: ;
         skos:related     hd:spinLevelStrength .
 
 <urn:org.onem2m.home.moduleclass.faultDetection.code>
         a                skos:Concept ;
         rdfs:label       "code" ;
         skos:definition  "Code of the fault." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.timer.targetTimeToStart>
         a                skos:Concept ;
         rdfs:label       "targetTimeToStart" ;
         skos:definition  "A TimeSpan (e.g. a time-based value, App Defined Epoch, Fixed) expressed in seconds. The value indicates the time when the appliance is expected to start its operation, starting counting from the last ReferenceTimer." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.spinLevel>
         a                skos:Concept ;
         rdfs:label       "spinLevel" ;
         skos:definition  "This ModuleClass provides capabilities to control and monitor the level of spin. It is intended to be part of objects which use spinning function such as a washing machine and a dryer." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.spinLevel.spinLevelStrength> .
 
 <urn:org.onem2m.home.moduleclass.runMode>
         a                skos:Concept ;
         rdfs:label       "runMode" ;
         skos:definition  "This ModuleClasses provides capabilities to control and monitor the operational modes of appliances." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.runMode.operationMode> , <urn:org.onem2m.home.moduleclass.runMode.supportedModes> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.runMode.supportedModes> , <urn:org.onem2m.home.moduleclass.runMode.operationMode> .
 
 <urn:org.onem2m.home.moduleclass.doorStatus.openDuration>
         a                skos:Concept ;
         rdfs:label       "openDuration" ;
         skos:definition  "The time duration the door has been open." ;
+        skos:inScheme    sdt: ;
         skos:related     "m2m:timestamp" .
 
 <urn:org.onem2m.home.moduleclass.electricVehicleConnector>
         a                skos:Concept ;
         rdfs:label       "electricVehicleConnector" ;
         skos:definition  "This ModuleClass provides the information about charging/discharging devices for electric vehicles." ;
+        skos:inScheme    sdt: ;
         skos:related     <urn:org.onem2m.home.moduleclass.electricVehicleConnector.status> .
 
 sdt:Module  skos:narrower  <urn:org.onem2m.home.moduleclass.rinseLevel> , <urn:org.onem2m.home.moduleclass.energyConsumption> , <urn:org.onem2m.home.moduleclass.runMode> , <urn:org.onem2m.home.moduleclass.boiler> , <urn:org.onem2m.home.moduleclass.wind> , <urn:org.onem2m.home.moduleclass.faultDetection> , <urn:org.onem2m.home.moduleclass.powerSave> , <urn:org.onem2m.home.moduleclass.turbo> , <urn:org.onem2m.home.moduleclass.colour> , <urn:org.onem2m.home.moduleclass.alarmSpeaker> , <urn:org.onem2m.home.moduleclass.binarySwitch> , <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis> , <urn:org.onem2m.home.moduleclass.brightness> , <urn:org.onem2m.home.moduleclass.hotWaterSupply> , <urn:org.onem2m.home.moduleclass.waterSensor> , <urn:org.onem2m.home.moduleclass.televisionChannel> , <urn:org.onem2m.home.moduleclass.signalStrength> , <urn:org.onem2m.home.moduleclass.timer> , <urn:org.onem2m.home.moduleclass.energyGeneration> , <urn:org.onem2m.home.moduleclass.smokeSensor> , <urn:org.onem2m.home.moduleclass.keypad> , <urn:org.onem2m.home.moduleclass.audioVolume> , <urn:org.onem2m.home.moduleclass.battery> , <urn:org.onem2m.home.moduleclass.temperature> , <urn:org.onem2m.home.moduleclass.clock> , <urn:org.onem2m.home.moduleclass.recorder> , <urn:org.onem2m.home.moduleclass.doorStatus> , <urn:org.onem2m.home.moduleclass.waterFlow> , <urn:org.onem2m.home.moduleclass.pushButton> , <urn:org.onem2m.home.moduleclass.temperatureAlarm> , <urn:org.onem2m.home.moduleclass.oximeter> , <urn:org.onem2m.home.moduleclass.motionSensor> , <urn:org.onem2m.home.moduleclass.spinLevel> , <urn:org.onem2m.home.moduleclass.refrigeration> , <urn:org.onem2m.home.moduleclass.colourSaturation> , <urn:org.onem2m.home.moduleclass.audioVideoInput> , <urn:org.onem2m.home.moduleclass.weight> , <urn:org.onem2m.home.moduleclass.electricVehicleConnector> , <urn:org.onem2m.home.moduleclass.relativeHumidity> , <urn:org.onem2m.home.moduleclass.waterLevel> , <urn:org.onem2m.home.moduleclass.height> .
@@ -871,40 +1013,47 @@ sdt:Module  skos:narrower  <urn:org.onem2m.home.moduleclass.rinseLevel> , <urn:o
         a                skos:Concept ;
         rdfs:label       "directionDown" ;
         skos:definition  "The current status of the downward blowing enablement. \"True\" indicates enabaled, and \"False\" indicates not enabled." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.timer.referenceTimer>
         a                skos:Concept ;
         rdfs:label       "referenceTimer" ;
         skos:definition  "A Timer (e.g. a time-based value, App Defined Epoch, Progressive) expressed in seconds. The value indicates a time counter to be used as reference for the other time-based data points of this ModuleClass. Usually it is the time since the last event of power on of the producer (or more in detail the boot of its connectivity node)." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.battery.charging>
         a                skos:Concept ;
         rdfs:label       "charging" ;
         skos:definition  "The status of charging. \"True\" indicates enabled, and \"False\" indicates not enabled." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:boolean .
 
 <urn:org.onem2m.home.moduleclass.bioElectricalImpedanceAnalysis.kcal>
         a                skos:Concept ;
         rdfs:label       "kcal" ;
         skos:definition  "The kcal (kilocalories) measurement from the BIA." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:float .
 
 <urn:org.onem2m.home.moduleclass.temperature.unit>
         a                skos:Concept ;
         rdfs:label       "unit" ;
         skos:definition  "The unit for the temperature values. The default is celsius (C)." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:string .
 
 <urn:org.onem2m.home.moduleclass.keypad.keyNumber>
         a                skos:Concept ;
         rdfs:label       "keyNumber" ;
         skos:definition  "The number of key." ;
+        skos:inScheme    sdt: ;
         skos:related     xsd:integer .
 
 <urn:org.onem2m.home.moduleclass.relativeHumidity>
         a                skos:Concept ;
         rdfs:label       "relativeHumidity" ;
         skos:definition  "This ModuleClass provides the capability for the device to report the humidity based on a specified rule that is vendor discretionary." ;
-        skos:related     <urn:org.onem2m.home.moduleclass.relativeHumidity.relativeHumidity> , <urn:org.onem2m.home.moduleclass.relativeHumidity.desiredHumidity> .
+        skos:inScheme    sdt: ;
+        skos:related     <urn:org.onem2m.home.moduleclass.relativeHumidity.desiredHumidity> , <urn:org.onem2m.home.moduleclass.relativeHumidity.relativeHumidity> .

@@ -8,7 +8,8 @@ prefix base: <http://www.onem2m.org/ontology/Base_Ontology#>
 prefix sdt: <http://www.onem2m.org/ontology/SDT#>
 prefix hd: <http://www.onem2m.org/ontology/HD#>
 
-# source: https://github.com/vcharpenay/wot-cloud/
+# curl https://raw.githubusercontent.com/vcharpenay/wot-cloud/master/owl/oneM2M_HAIM.ttl > haim-owl.ttl
+# sparql --data haim-owl.ttl --query haim.rq > haim.ttl
 
 construct {
   ?mod a skos:Concept ;
@@ -22,6 +23,9 @@ construct {
   ?mod skos:related ?characteristic .
   ?characteristic skos:related ?dt .
   sdt:DataType skos:narrower ?enum .
+
+  ?mod skos:inScheme sdt: .
+  ?characteristic skos:inScheme sdt: .
 } where {
   ?mod rdfs:subClassOf sdt:ModuleClass, ?opRestriction ;
        rdfs:label ?modLabel ;
