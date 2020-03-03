@@ -1,0 +1,58 @@
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+# sparql --data BACnet/bacnet.ttl --data BLE\ GATT/gatt.ttl --data LWM2M/ipso.ttl --data OCF/oneiota.ttl --data oneM2M/haim.ttl --data Project\ Haystack/haystack.ttl --data wikidata-mapping.ttl --data wikidata-unique-matches.nt --query _script/count-matches-top.rq
+
+select ?ambiguous ?total where {
+    {
+        select (count(*) / 2 as ?ambiguous) where {
+            # twice the same subquery: pairwise comparison of tag sets
+            {
+                select ?top1 (group_concat(?str ; separator = "_") as ?tags1) where {
+                    {
+                        select distinct ?top ?str where {
+                            {
+                                select ?top where {
+                                    ?top a skos:Concept .
+                                    filter not exists { ?other skos:related ?top }
+                                }
+                            }
+                            ?c a skos:Concept ; skos:mappingRelation ?tag .
+                            ?tag skos:closeMatch ?e .
+                            ?top skos:related* ?c .
+                            bind (replace(str(?tag), "tag:", "") as ?str)
+                        } order by ?str
+                    }
+                    bind (?top as ?top1)
+                } group by ?top1
+            }
+            {
+                select ?top2 (group_concat(?str ; separator = "_") as ?tags2) where {
+                    {
+                        select distinct ?top ?str where {
+                            {
+                                select ?top where {
+                                    ?top a skos:Concept .
+                                    filter not exists { ?other skos:related ?top }
+                                }
+                            }
+                            ?c a skos:Concept ; skos:mappingRelation ?tag .
+                            ?tag skos:closeMatch ?e .
+                            ?top skos:related* ?c .
+                            bind (replace(str(?tag), "tag:", "") as ?str)
+                        } order by ?str
+                    }
+                    bind (?top as ?top2)
+                } group by ?top2
+            }
+            filter (?top1 != ?top2 && ?tags1 = ?tags2)
+        }
+    }
+    {
+        select (count(*) as ?total) where {
+            ?top a skos:Concept .
+            filter not exists { ?other skos:related ?top }
+        }
+    }
+}

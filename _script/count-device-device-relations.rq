@@ -1,0 +1,10 @@
+prefix wd: <http://www.wikidata.org/entity/>
+prefix wdt: <http://www.wikidata.org/prop/direct/>
+
+# sparql --data wikidata-closure.nt --query _script/count-device-device-relations.rq
+
+select ?rel (count(*) as ?count) where {
+    ?device1 (wdt:P31|wdt:P279)* wd:Q1183543 .
+    ?device2 (wdt:P31|wdt:P279)* wd:Q1183543 .
+    ?device1 ?rel ?device2 .
+} group by ?rel order by desc(?count)

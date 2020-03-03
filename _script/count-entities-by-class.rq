@@ -1,0 +1,15 @@
+prefix wd: <http://www.wikidata.org/entity/>
+prefix wdt: <http://www.wikidata.org/prop/direct/>
+
+# sparql --data wikidata-closure.nt --query _script/count-entities-by-class.rq
+
+select ?top (count(*) as ?count) where {
+    {
+        select ?top where {
+            ?e wdt:P31|wdt:P279 ?top
+            # TODO missing entities with no children
+            filter not exists { ?top wdt:P31|wdt:P279 ?upper . }
+        }
+    }
+    ?e (wdt:P31|wdt:P279)* ?top .
+} group by ?top order by desc(?count)

@@ -1,0 +1,36 @@
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+
+# sparql --data wikidata-mapping.ttl --data wikidata-unique-matches.nt --query _script/count-matches.rq
+
+select * where {
+    {
+        select (count(*) as ?matches) where {
+            ?c skos:mappingRelation ?tag .
+            ?tag skos:closeMatch ?e .
+        }
+    }
+    {
+        select (count(*) as ?all) where {
+            ?c skos:mappingRelation ?tag .
+        }
+    }
+    {
+        select (count(*) as ?byconcept) where {
+            {
+                select distinct ?c where {
+                    ?c skos:mappingRelation ?tag .
+                    ?tag skos:closeMatch ?e .
+                }
+            }
+        }
+    }
+    {
+        select (count(*) as ?allbyconcept) where {
+            {
+                select distinct ?c where {
+                    ?c skos:mappingRelation ?tag .
+                }
+            }
+        }
+    }
+}
