@@ -46,6 +46,8 @@ select ?ambiguous ?total where {
                     bind (?top as ?top2)
                 } group by ?top2
             }
+            ?top1 skos:inScheme ?scheme .
+            ?top2 skos:inScheme ?scheme .
             filter (?top1 != ?top2 && ?tags1 = ?tags2)
         }
     }
