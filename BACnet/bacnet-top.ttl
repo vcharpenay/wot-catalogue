@@ -9,17 +9,22 @@ bacnet: a skos:ConceptScheme ;
 
 bacnet:servicesSupported a skos:Concept ;
                          rdfs:label "servicesSupported" ;
+                         skos:inScheme  bacnet: ;
                          skos:narrower bacnet:StandardObject .
 
 bacnet:StandardObject a skos:Concept ;
                       rdfs:label "StandardObject" ;
+                      skos:inScheme  bacnet: ;
                       skos:narrower bacnet:ReadableProperty, bacnet:WritableProperty, bacnet:OptionalProperty .
 
 bacnet:ReadableProperty a skos:Concept ;
-                        rdfs:label "ReadableProperty" .
+                        rdfs:label "ReadableProperty" ;
+                        skos:inScheme  bacnet: .
 
 bacnet:WritableProperty a skos:Concept ;
-                        rdfs:label "WritableProperty" .
+                        rdfs:label "WritableProperty" ;
+                        skos:inScheme  bacnet: .
 
 bacnet:OptionalProperty a skos:Concept ;
-                        rdfs:label "OptionalProperty" .
+                        rdfs:label "OptionalProperty" ;
+                        skos:inScheme  bacnet: .
