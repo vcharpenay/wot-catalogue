@@ -4,7 +4,8 @@ prefix skos: <http://www.w3.org/2004/02/skos/core#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix lwm2m: <http://openmobilealliance.org/tech/profiles/LWM2M#>
 
-# source: https://github.com/vcharpenay/wot-cloud/
+# curl https://raw.githubusercontent.com/vcharpenay/wot-cloud/master/owl/IPSO.ttl > ipso-owl.ttl
+# sparql --data ipso-owl.ttl --query ipso.rq > ipso.ttl
 
 construct {
   ?obj a skos:Concept ;
@@ -17,6 +18,9 @@ construct {
   lwm2m:Resource skos:narrower ?res .
   ?obj skos:related ?res .
   ?res skos:related ?op, ?xsdDt .
+
+  ?obj skos:inScheme lwm2m: .
+  ?res skos:inScheme lwm2m: .
 } where {
   ?obj rdfs:subClassOf lwm2m:IPSOObject ;
      lwm2m:name ?objLabel ;

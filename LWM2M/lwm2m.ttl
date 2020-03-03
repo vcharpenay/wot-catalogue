@@ -10,26 +10,33 @@ lwm2m: a skos:ConceptScheme ;
 lwm2m:Object a skos:Concept ;
                  rdfs:label "Object" ;
                  skos:definition "The LWM2M Enabler defines a simple resource model where each piece of information made available by the LWM2M Client is a Resource. Resources are logically organized into Objects." ;
+                 skos:inScheme lwm2m: ;
                  skos:related lwm2m:IPSOResource, lwm2m:Operation .
 
 lwm2m:Resource a skos:Concept ;
                    rdfs:label "Resource" ;
                    skos:definition "The LWM2M Enabler defines a simple resource model where each piece of information made available by the LWM2M Client is a Resource. Resources are defined per Object, and each Resource is given a unique identifier within that Object." ;
+                   skos:inScheme lwm2m: ;
                    skos:related lwm2m:Operation .
 
 lwm2m:Operation a skos:Concept ;
                 rdfs:label "Operation" ;
                 skos:definition "Each Object and Resource is defined to have one or more operations that it supports." ;
+                 skos:inScheme lwm2m: ;
                 skos:narrower lwm2m:R, lwm2m:W, lwm2m:E, lwm2m:RW .
 
 lwm2m:R a skos:Concept ;
-        rdfs:label "Read Operation" .
+        rdfs:label "Read Operation" ;
+        skos:inScheme lwm2m: .
 
 lwm2m:W a skos:Concept ;
-        rdfs:label "Write Operation" .
+        rdfs:label "Write Operation" ;
+        skos:inScheme lwm2m: .
 
 lwm2m:E a skos:Concept ;
-        rdfs:label "Execute Operation" .
+        rdfs:label "Execute Operation" ;
+        skos:inScheme lwm2m: .
 
 lwm2m:RW a skos:Concept ;
-        rdfs:label "Read/Write Operation" .
+        rdfs:label "Read/Write Operation" ;
+        skos:inScheme lwm2m: .

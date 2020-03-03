@@ -8,590 +8,688 @@
         a                skos:Concept ;
         rdfs:label       "Digital Output State" ;
         skos:definition  "The current state of a digital output." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:boolean , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5814>
         a                skos:Concept ;
         rdfs:label       "Max Range reactive power" ;
         skos:definition  "The maximum reactive power that can be measured by the sensor" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5522>
         a                skos:Concept ;
         rdfs:label       "Clip" ;
         skos:definition  "Audio Clip that is playable (i.e. short audio recording indicating the floor in an elevator)." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:hexBinary , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5701>
         a                skos:Concept ;
         rdfs:label       "Sensor Units" ;
         skos:definition  "Measurement Units Definition e.g. “Cel” for Temperature in Celsius." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:string , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5827>
         a                skos:Concept ;
         rdfs:label       "Avg Load Adj Pct" ;
         skos:definition  "Defines the maximum energy usage of the receivng device, as a percentage of the device's normal maximum energy usage." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:string , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3340>
         a                skos:Concept ;
         rdfs:label       "Timer" ;
         skos:definition  "This IPSO object is used to time events and actions, using patterns common to industrial timers. A POST to the trigger resource or On/Off input state change starts the timing operation, and the timer remaining time shows zero when the operation is complete. The patterns supported are One-Shot (mode 1), On-Time or Interval (mode 2), Time delay on pick-up or TDPU (tmode 3), and Time Delay on Drop-Out or TDDO (mode 4). Mode 0 disables the timer, so the output follows the input with no delay. A counter is provided to count occurrences of the timer output changing from 0 to 1. Writing a value of zero resets the counter. The Digital Input State resource reports the state of the timer output.\n        " ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5544> , <urn:oma:lwm2m:oma:res:5521> , <urn:oma:lwm2m:oma:res:5543> , <urn:oma:lwm2m:oma:res:5534> , <urn:oma:lwm2m:oma:res:5526> , <urn:oma:lwm2m:oma:res:5525> , <urn:oma:lwm2m:oma:res:5501> , <urn:oma:lwm2m:oma:res:5850> , <urn:oma:lwm2m:oma:res:5538> , <urn:oma:lwm2m:oma:res:5523> , <urn:oma:lwm2m:oma:res:5750> .
 
 <urn:oma:lwm2m:ext:3312>
         a                skos:Concept ;
         rdfs:label       "Power Control" ;
         skos:definition  "Description: This Object is used to control a power source, such as a Smart Plug.  It allows a power relay to be turned on or off and its dimmer setting to be control as a % between 0 and 100." ;
-        skos:related     <urn:oma:lwm2m:oma:res:5820> , <urn:oma:lwm2m:oma:res:5851> , <urn:oma:lwm2m:oma:res:5850> , <urn:oma:lwm2m:oma:res:5852> , <urn:oma:lwm2m:oma:res:5805> , <urn:oma:lwm2m:oma:res:5750> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5851> , <urn:oma:lwm2m:oma:res:5820> , <urn:oma:lwm2m:oma:res:5805> , <urn:oma:lwm2m:oma:res:5850> , <urn:oma:lwm2m:oma:res:5852> .
 
 <urn:oma:lwm2m:oma:res:5507>
         a                skos:Concept ;
         rdfs:label       "Fractional Time" ;
         skos:definition  "For shorter times of a fraction of a second (i.e. 0.23)." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5548>
         a                skos:Concept ;
         rdfs:label       "Level" ;
         skos:definition  "Audio volume control, float value between 0 and 100 as a percentage." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3325>
         a                skos:Concept ;
         rdfs:label       "Concentration" ;
         skos:definition  "This IPSO object should be used to the particle concentration measurement of a medium. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is parts per million  (ucum: ppm).\n        " ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5603> .
 
 <urn:oma:lwm2m:oma:res:5601>
         a                skos:Concept ;
         rdfs:label       "Min Measured Value" ;
         skos:definition  "The minimum value measured by the sensor since power ON or reset" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:ext:3338>
         a                skos:Concept ;
         rdfs:label       "Buzzer" ;
         skos:definition  "This IPSO object should be used to actuate an audible alarm such as a buzzer, beeper, or vibration alarm. There is a dimmer control for setting the relative loudness of the alarm, and an optional duration control to limit the length of time the alarm sounds when turned on. Each time a “1” is written to the On/Off resource, the alarm will sound again for the configured duration. If no duration is programmed or the setting is zero, writing a “1” to the On/Off resource will result in the alarm sounding continuously until a “0” is written to the On/Off resource.\n        " ;
-        skos:related     <urn:oma:lwm2m:oma:res:5850> , <urn:oma:lwm2m:oma:res:5525> , <urn:oma:lwm2m:oma:res:5521> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5548> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5525> , <urn:oma:lwm2m:oma:res:5521> , <urn:oma:lwm2m:oma:res:5850> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5548> .
 
 <urn:oma:lwm2m:oma:res:5821>
         a                skos:Concept ;
         rdfs:label       "Current Calibration" ;
         skos:definition  "Read or Write the current calibration coefficient" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5501>
         a                skos:Concept ;
         rdfs:label       "Digital Input Counter" ;
         skos:definition  "The cumulative value of active state detected." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:integer , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5806>
         a                skos:Concept ;
         rdfs:label       "Active Power Calibration" ;
         skos:definition  "Request an active power calibration by writing the value of a calibrated load." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:W .
 
 <urn:oma:lwm2m:oma:res:5542>
         a                skos:Concept ;
         rdfs:label       "Down Counter" ;
         skos:definition  "Counts the times the decrease control has been operated. Writing a 0 resets the counter." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:integer , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5514>
         a                skos:Concept ;
         rdfs:label       "Longitude" ;
         skos:definition  "The decimal notation of longitude, e.g. 153.21760 (World Geodetic System 1984)." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:string , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5900>
         a                skos:Concept ;
         rdfs:label       "Set Point Value" ;
         skos:definition  "The setpoint value." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3332>
         a                skos:Concept ;
         rdfs:label       "Direction" ;
         skos:definition  "This IPSO object is used to report the direction indicated by a compass, wind vane, or other directional indicator. The units of measure is plane angle degrees (ucum:deg).\n        " ;
-        skos:related     <urn:oma:lwm2m:oma:res:5705> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5605> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5705> .
 
 <urn:oma:lwm2m:oma:res:5527>
         a                skos:Concept ;
         rdfs:label       "Text" ;
         skos:definition  "A string of text." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:string , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3304>
         a                skos:Concept ;
         rdfs:label       "Humidity" ;
         skos:definition  "Description: This IPSO object should be used with a humidity sensor to report a humidity measurement.  It also provides resources for minimum/maximum measured values and the minimum/maximum range that can be measured by the humidity sensor. An example measurement unit is relative humidity as a percentage (ucum:%)." ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5700> .
 
 <urn:oma:lwm2m:oma:res:5706>
         a                skos:Concept ;
         rdfs:label       "Colour" ;
         skos:definition  "A string representing a value in some color space" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:string , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3345>
         a                skos:Concept ;
         rdfs:label       "Multiple Axis Joystick" ;
         skos:definition  "This IPSO object can be used to report the position of a shuttle or joystick control. A digital input is provided to report the state of an associated push button.\n        " ;
-        skos:related     <urn:oma:lwm2m:oma:res:5501> , <urn:oma:lwm2m:oma:res:5704> , <urn:oma:lwm2m:oma:res:5703> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5702> , <urn:oma:lwm2m:oma:res:5500> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5704> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5702> , <urn:oma:lwm2m:oma:res:5703> , <urn:oma:lwm2m:oma:res:5500> , <urn:oma:lwm2m:oma:res:5501> .
 
 <urn:oma:lwm2m:ext:3317>
         a                skos:Concept ;
         rdfs:label       "Current" ;
         skos:definition  "This IPSO object should be used with an ammeter to report measured electric current in amperes. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is volts (ucum: A).\n        " ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5821> .
 
 <urn:oma:lwm2m:oma:res:5800>
         a                skos:Concept ;
         rdfs:label       "Instantaneous active power" ;
         skos:definition  "The current active power" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5813>
         a                skos:Concept ;
         rdfs:label       "Min Range reactive power" ;
         skos:definition  "The minimum active power that can be measured by the sensor" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5521>
         a                skos:Concept ;
         rdfs:label       "Delay Duration" ;
         skos:definition  "The duration of the time delay." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5700>
         a                skos:Concept ;
         rdfs:label       "Sensor Value" ;
         skos:definition  "Last or Current Measured Value from the Sensor" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5826>
         a                skos:Concept ;
         rdfs:label       "Criticality Level" ;
         skos:definition  "The criticality of the event.  The device receiving the event will react in an appropriate fashion for the device." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:string , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5534>
         a                skos:Concept ;
         rdfs:label       "Counter" ;
         skos:definition  "Counts the number of times the timer output transitions from 0 to 1." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:integer , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3311>
         a                skos:Concept ;
         rdfs:label       "Light Control" ;
         skos:definition  "Description: This Object is used to control a light source, such as a LED or other light.  It allows a light to be turned on or off and its dimmer setting to be control as a % between 0 and 100. An optional colour setting enables a string to be used to indicate the desired colour." ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5805> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5851> , <urn:oma:lwm2m:oma:res:5706> , <urn:oma:lwm2m:oma:res:5820> , <urn:oma:lwm2m:oma:res:5850> , <urn:oma:lwm2m:oma:res:5852> .
 
 <urn:oma:lwm2m:oma:res:5506>
         a                skos:Concept ;
         rdfs:label       "Current Time" ;
         skos:definition  "Unix Time. A signed integer representing the number of seconds since Jan 1st, 1970 in the UTC time zone." ;
+        skos:inScheme    lwm2m: ;
         skos:related     lwm2m:Time , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5519>
         a                skos:Concept ;
         rdfs:label       "Min Limit" ;
         skos:definition  "The minimum value that can be measured by the sensor." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5547>
         a                skos:Concept ;
         rdfs:label       "Multi-state Input" ;
         skos:definition  "The current state of a Multi-state input or selector." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:integer , lwm2m:R .
 
 <urn:oma:lwm2m:ext:3324>
         a                skos:Concept ;
         rdfs:label       "Loudness" ;
         skos:definition  "This IPSO object should be used to report loudness or noise level measurements. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is decibels (ucum: dB).\n        " ;
-        skos:related     <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5604> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5604> .
 
 <urn:oma:lwm2m:oma:res:5600>
         a                skos:Concept ;
         rdfs:label       "Analog Input Current Value" ;
         skos:definition  "The current value of the analog input." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
-lwm2m:Resource  skos:narrower  <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5507> , <urn:oma:lwm2m:oma:res:5505> , <urn:oma:lwm2m:oma:res:5525> , <urn:oma:lwm2m:oma:res:5531> , <urn:oma:lwm2m:oma:res:5551> , <urn:oma:lwm2m:oma:res:5506> , <urn:oma:lwm2m:oma:res:5504> , <urn:oma:lwm2m:oma:res:5851> , <urn:oma:lwm2m:oma:res:5828> , <urn:oma:lwm2m:oma:res:5850> , <urn:oma:lwm2m:oma:res:5827> , <urn:oma:lwm2m:oma:res:5546> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5705> , <urn:oma:lwm2m:oma:res:5534> , <urn:oma:lwm2m:oma:res:5815> , <urn:oma:lwm2m:oma:res:5912> , <urn:oma:lwm2m:oma:res:5529> , <urn:oma:lwm2m:oma:res:5513> , <urn:oma:lwm2m:oma:res:5704> , <urn:oma:lwm2m:oma:res:5814> , <urn:oma:lwm2m:oma:res:5911> , <urn:oma:lwm2m:oma:res:5528> , <urn:oma:lwm2m:oma:res:5501> , <urn:oma:lwm2m:oma:res:5822> , <urn:oma:lwm2m:oma:res:5548> , <urn:oma:lwm2m:oma:res:5802> , <urn:oma:lwm2m:oma:res:5543> , <urn:oma:lwm2m:oma:res:5500> , <urn:oma:lwm2m:oma:res:5518> , <urn:oma:lwm2m:oma:res:5516> , <urn:oma:lwm2m:oma:res:5536> , <urn:oma:lwm2m:oma:res:5801> , <urn:oma:lwm2m:oma:res:5542> , <urn:oma:lwm2m:oma:res:5904> , <urn:oma:lwm2m:oma:res:5515> , <urn:oma:lwm2m:oma:res:5530> , <urn:oma:lwm2m:oma:res:5550> , <urn:oma:lwm2m:oma:res:5503> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5826> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5810> , <urn:oma:lwm2m:oma:res:5825> , <urn:oma:lwm2m:oma:res:5524> , <urn:oma:lwm2m:oma:res:5512> , <urn:oma:lwm2m:oma:res:5703> , <urn:oma:lwm2m:oma:res:5650> , <urn:oma:lwm2m:oma:res:5813> , <urn:oma:lwm2m:oma:res:5910> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5509> , <urn:oma:lwm2m:oma:res:5511> , <urn:oma:lwm2m:oma:res:5527> , <urn:oma:lwm2m:oma:res:5702> , <urn:oma:lwm2m:oma:res:5533> , <urn:oma:lwm2m:oma:res:5547> , <urn:oma:lwm2m:oma:res:5812> , <urn:oma:lwm2m:oma:res:5508> , <urn:oma:lwm2m:oma:res:5853> , <urn:oma:lwm2m:oma:res:5526> , <urn:oma:lwm2m:oma:res:5806> , <urn:oma:lwm2m:oma:res:5521> , <urn:oma:lwm2m:oma:res:5800> , <urn:oma:lwm2m:oma:res:5541> , <urn:oma:lwm2m:oma:res:5903> , <urn:oma:lwm2m:oma:res:5520> , <urn:oma:lwm2m:oma:res:5805> , <urn:oma:lwm2m:oma:res:5514> , <urn:oma:lwm2m:oma:res:5852> , <urn:oma:lwm2m:oma:res:5820> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5751> , <urn:oma:lwm2m:oma:res:5600> , <urn:oma:lwm2m:oma:res:5706> , <urn:oma:lwm2m:oma:res:5816> , <urn:oma:lwm2m:oma:res:5824> , <urn:oma:lwm2m:oma:res:5545> , <urn:oma:lwm2m:oma:res:5523> , <urn:oma:lwm2m:oma:res:5804> , <urn:oma:lwm2m:oma:res:5522> , <urn:oma:lwm2m:oma:res:5502> , <urn:oma:lwm2m:oma:res:5823> , <urn:oma:lwm2m:oma:res:5803> , <urn:oma:lwm2m:oma:res:5538> , <urn:oma:lwm2m:oma:res:5544> , <urn:oma:lwm2m:oma:res:5900> , <urn:oma:lwm2m:oma:res:5519> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5517> , <urn:oma:lwm2m:oma:res:5510> , <urn:oma:lwm2m:oma:res:5537> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5532> , <urn:oma:lwm2m:oma:res:5811> .
+lwm2m:Resource  skos:narrower  <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5507> , <urn:oma:lwm2m:oma:res:5505> , <urn:oma:lwm2m:oma:res:5525> , <urn:oma:lwm2m:oma:res:5531> , <urn:oma:lwm2m:oma:res:5551> , <urn:oma:lwm2m:oma:res:5506> , <urn:oma:lwm2m:oma:res:5504> , <urn:oma:lwm2m:oma:res:5851> , <urn:oma:lwm2m:oma:res:5828> , <urn:oma:lwm2m:oma:res:5850> , <urn:oma:lwm2m:oma:res:5827> , <urn:oma:lwm2m:oma:res:5546> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5705> , <urn:oma:lwm2m:oma:res:5534> , <urn:oma:lwm2m:oma:res:5815> , <urn:oma:lwm2m:oma:res:5912> , <urn:oma:lwm2m:oma:res:5529> , <urn:oma:lwm2m:oma:res:5513> , <urn:oma:lwm2m:oma:res:5704> , <urn:oma:lwm2m:oma:res:5814> , <urn:oma:lwm2m:oma:res:5911> , <urn:oma:lwm2m:oma:res:5528> , <urn:oma:lwm2m:oma:res:5822> , <urn:oma:lwm2m:oma:res:5501> , <urn:oma:lwm2m:oma:res:5548> , <urn:oma:lwm2m:oma:res:5802> , <urn:oma:lwm2m:oma:res:5543> , <urn:oma:lwm2m:oma:res:5500> , <urn:oma:lwm2m:oma:res:5518> , <urn:oma:lwm2m:oma:res:5516> , <urn:oma:lwm2m:oma:res:5536> , <urn:oma:lwm2m:oma:res:5801> , <urn:oma:lwm2m:oma:res:5542> , <urn:oma:lwm2m:oma:res:5904> , <urn:oma:lwm2m:oma:res:5515> , <urn:oma:lwm2m:oma:res:5530> , <urn:oma:lwm2m:oma:res:5550> , <urn:oma:lwm2m:oma:res:5503> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5826> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5810> , <urn:oma:lwm2m:oma:res:5825> , <urn:oma:lwm2m:oma:res:5524> , <urn:oma:lwm2m:oma:res:5512> , <urn:oma:lwm2m:oma:res:5703> , <urn:oma:lwm2m:oma:res:5650> , <urn:oma:lwm2m:oma:res:5813> , <urn:oma:lwm2m:oma:res:5910> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5509> , <urn:oma:lwm2m:oma:res:5511> , <urn:oma:lwm2m:oma:res:5527> , <urn:oma:lwm2m:oma:res:5702> , <urn:oma:lwm2m:oma:res:5533> , <urn:oma:lwm2m:oma:res:5547> , <urn:oma:lwm2m:oma:res:5812> , <urn:oma:lwm2m:oma:res:5508> , <urn:oma:lwm2m:oma:res:5853> , <urn:oma:lwm2m:oma:res:5526> , <urn:oma:lwm2m:oma:res:5806> , <urn:oma:lwm2m:oma:res:5521> , <urn:oma:lwm2m:oma:res:5800> , <urn:oma:lwm2m:oma:res:5541> , <urn:oma:lwm2m:oma:res:5903> , <urn:oma:lwm2m:oma:res:5520> , <urn:oma:lwm2m:oma:res:5805> , <urn:oma:lwm2m:oma:res:5514> , <urn:oma:lwm2m:oma:res:5852> , <urn:oma:lwm2m:oma:res:5820> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5751> , <urn:oma:lwm2m:oma:res:5600> , <urn:oma:lwm2m:oma:res:5706> , <urn:oma:lwm2m:oma:res:5816> , <urn:oma:lwm2m:oma:res:5824> , <urn:oma:lwm2m:oma:res:5545> , <urn:oma:lwm2m:oma:res:5523> , <urn:oma:lwm2m:oma:res:5804> , <urn:oma:lwm2m:oma:res:5522> , <urn:oma:lwm2m:oma:res:5502> , <urn:oma:lwm2m:oma:res:5823> , <urn:oma:lwm2m:oma:res:5803> , <urn:oma:lwm2m:oma:res:5538> , <urn:oma:lwm2m:oma:res:5544> , <urn:oma:lwm2m:oma:res:5900> , <urn:oma:lwm2m:oma:res:5519> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5517> , <urn:oma:lwm2m:oma:res:5510> , <urn:oma:lwm2m:oma:res:5537> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5532> , <urn:oma:lwm2m:oma:res:5811> .
 
 <urn:oma:lwm2m:ext:3337>
         a                skos:Concept ;
         rdfs:label       "Positioner" ;
         skos:definition  "This IPSO object should be used with a generic position actuator from 0 to 100%. This resource optionally allows setting the transition time for an operation that changes the position of the actuator, and for reading the remaining time of the currently active transition.\n        " ;
-        skos:related     <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5538> , <urn:oma:lwm2m:oma:res:5520> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5519> , <urn:oma:lwm2m:oma:res:5537> , <urn:oma:lwm2m:oma:res:5536> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5601> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5538> , <urn:oma:lwm2m:oma:res:5520> , <urn:oma:lwm2m:oma:res:5519> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5537> , <urn:oma:lwm2m:oma:res:5536> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5601> .
 
 <urn:oma:lwm2m:oma:res:5820>
         a                skos:Concept ;
         rdfs:label       "Power Factor" ;
         skos:definition  "If applicable, the power factor of the current consumption." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5500>
         a                skos:Concept ;
         rdfs:label       "Digital Input State" ;
         skos:definition  "The current state of a digital input." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:boolean , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5805>
         a                skos:Concept ;
         rdfs:label       "Cumulative active power" ;
         skos:definition  "The cumulative active power since the last cumulative energy reset or device start" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5541>
         a                skos:Concept ;
         rdfs:label       "Up Counter" ;
         skos:definition  "Counts the number of times the increase control has been operated. Writing a 0 resets the counter." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:integer , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5513>
         a                skos:Concept ;
         rdfs:label       "Max Z Value" ;
         skos:definition  "The maximum measured value along the Z axis" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:ext:3331>
         a                skos:Concept ;
         rdfs:label       "Energy" ;
         skos:definition  "This IPSO object should be used to report energy consumption (Cumulative Power) of an electrical load. An example measurement unit is Watt Hours (ucum:W*h).\n        " ;
-        skos:related     <urn:oma:lwm2m:oma:res:5822> , <urn:oma:lwm2m:oma:res:5805> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5701> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5822> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5805> .
 
 <urn:oma:lwm2m:oma:res:5526>
         a                skos:Concept ;
         rdfs:label       "Mode" ;
         skos:definition  "Type of timer pattern used by the patterns." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:integer , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3303>
         a                skos:Concept ;
         rdfs:label       "Temperature" ;
         skos:definition  "Description: This IPSO object should be used with a temperature sensor to report a temperature measurement.  It also provides resources for minimum/maximum measured values and the minimum/maximum range that can be measured by the temperature sensor. An example measurement unit is degrees Celsius (ucum:Cel)." ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5601> .
 
 <urn:oma:lwm2m:oma:res:5705>
         a                skos:Concept ;
         rdfs:label       "Compass Direction" ;
         skos:definition  "The compass direction" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5912>
         a                skos:Concept ;
         rdfs:label       "Element Description" ;
         skos:definition  "The description of each bit as a string. First instance describes the least significant bit, second instance the second least significant bit." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:string , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3344>
         a                skos:Concept ;
         rdfs:label       "Up/Down Control" ;
         skos:definition  "This IPSO object is used to report the state of an up/down control element like a pair of push buttons or a rotary encoder. Counters for increase and decrease operations are provided for counting pulses from a quadrature encoder.\n        " ;
-        skos:related     <urn:oma:lwm2m:oma:res:5542> , <urn:oma:lwm2m:oma:res:5541> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5533> , <urn:oma:lwm2m:oma:res:5532> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5532> , <urn:oma:lwm2m:oma:res:5542> , <urn:oma:lwm2m:oma:res:5541> , <urn:oma:lwm2m:oma:res:5533> , <urn:oma:lwm2m:oma:res:5750> .
 
 <urn:oma:lwm2m:ext:3316>
         a                skos:Concept ;
         rdfs:label       "Voltage" ;
         skos:definition  "This IPSO object should be used with voltmeter sensor to report measured voltage between two points.  It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is volts (ucum: V).\n        " ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5603> .
 
 <urn:oma:lwm2m:ext:3203>
         a                skos:Concept ;
         rdfs:label       "Analog Output" ;
         skos:definition  "This IPSO object is a generic object that can be used with any kind of analog output interface." ;
-        skos:related     <urn:oma:lwm2m:oma:res:5650> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5750> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5650> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5603> .
 
 <urn:oma:lwm2m:ext:3329>
         a                skos:Concept ;
         rdfs:label       "Power Factor" ;
         skos:definition  "This IPSO object should be used to report a measurement or calculation of the power factor of a reactive electrical load. Power Factor is normally the ratio of non-reactive power to total power. This object also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor.\n        " ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5601> .
 
 <urn:oma:lwm2m:oma:res:5605>
         a                skos:Concept ;
         rdfs:label       "Reset Min and Max Measured Values" ;
         skos:definition  "Reset the Min and Max Measured Values to Current Value" ;
+        skos:inScheme    lwm2m: ;
         skos:related     lwm2m: , lwm2m:E .
 
 <urn:oma:lwm2m:oma:res:5812>
         a                skos:Concept ;
         rdfs:label       "Max Measured reactive power" ;
         skos:definition  "The maximum reactive power measured by the sensor since it is ON" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5520>
         a                skos:Concept ;
         rdfs:label       "Max Limit" ;
         skos:definition  "The maximum value that can be measured by the sensor." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5853>
         a                skos:Concept ;
         rdfs:label       "Muti-state Output" ;
         skos:definition  "A string describing a state for multiple level output such as Pilot Wire" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:string , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5825>
         a                skos:Concept ;
         rdfs:label       "Duration In Min" ;
         skos:definition  "The duration of the load control event." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:string , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5533>
         a                skos:Concept ;
         rdfs:label       "Decrease Input State" ;
         skos:definition  "Indicates a decrease control action." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:boolean , lwm2m:R .
 
 <urn:oma:lwm2m:ext:3310>
         a                skos:Concept ;
         rdfs:label       "Load Control" ;
         skos:definition  "Description: This Object is used for demand-response load control and other load control in automation application (not limited to power)." ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5826> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5828> , <urn:oma:lwm2m:oma:res:5823> , <urn:oma:lwm2m:oma:res:5825> , <urn:oma:lwm2m:oma:res:5824> , <urn:oma:lwm2m:oma:res:5827> .
 
 <urn:oma:lwm2m:oma:res:5505>
         a                skos:Concept ;
         rdfs:label       "Digital Input Counter Reset" ;
         skos:definition  "Reset the Counter value." ;
+        skos:inScheme    lwm2m: ;
         skos:related     lwm2m: , lwm2m:E .
 
 <urn:oma:lwm2m:oma:res:5546>
         a                skos:Concept ;
         rdfs:label       "Max Y Coordinate" ;
         skos:definition  "The highest Y coordinate the display supports before wrapping to the next line." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:integer , lwm2m:R .
 
 <urn:oma:lwm2m:ext:3323>
         a                skos:Concept ;
         rdfs:label       "Pressure" ;
         skos:definition  "This IPSO object should be used to report pressure measurements. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is pascals (ucum: Pa).\n        " ;
-        skos:related     <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5602> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5602> .
 
 <urn:oma:lwm2m:oma:res:5518>
         a                skos:Concept ;
         rdfs:label       "Timestamp" ;
         skos:definition  "The timestamp of when the location measurement was performed." ;
+        skos:inScheme    lwm2m: ;
         skos:related     lwm2m:Time , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5904>
         a                skos:Concept ;
         rdfs:label       "Clear to Busy delay" ;
         skos:definition  "Delay from the clear state to the busy state in ms" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:integer , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3336>
         a                skos:Concept ;
         rdfs:label       "Location" ;
         skos:definition  "This IPSO object represents GPS coordinates. This object is compatible with the LWM2M management object for location, but uses reusable resources.\n        " ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5513> , <urn:oma:lwm2m:oma:res:5705> , <urn:oma:lwm2m:oma:res:5515> , <urn:oma:lwm2m:oma:res:5514> , <urn:oma:lwm2m:oma:res:5517> , <urn:oma:lwm2m:oma:res:5516> , <urn:oma:lwm2m:oma:res:5518> .
 
 <urn:oma:lwm2m:ext:3308>
         a                skos:Concept ;
         rdfs:label       "Set Point" ;
         skos:definition  "Description: This IPSO object should be used to set a desired value to a controller, such as a thermostat. This object enables a setpoint to be expressed units defined in the UCUM specification, to match an associated sensor or measurement value. A special resource is added to set the colour of an object." ;
-        skos:related     <urn:oma:lwm2m:oma:res:5706> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5900> , <urn:oma:lwm2m:oma:res:5750> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5900> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5706> .
 
 <urn:oma:lwm2m:ext:3349>
         a                skos:Concept ;
         rdfs:label       "Bitmap" ;
         skos:definition  "Summarize several digital inputs to one value by mapping each bit to a digital input." ;
-        skos:related     <urn:oma:lwm2m:oma:res:5912> , <urn:oma:lwm2m:oma:res:5910> , <urn:oma:lwm2m:oma:res:5911> , <urn:oma:lwm2m:oma:res:5750> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5910> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5911> , <urn:oma:lwm2m:oma:res:5912> .
 
 <urn:oma:lwm2m:oma:res:5804>
         a                skos:Concept ;
         rdfs:label       "Max Range active power" ;
         skos:definition  "The maximum active power that can be measured by the sensor" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5512>
         a                skos:Concept ;
         rdfs:label       "Min Z Value" ;
         skos:definition  "The minimum measured value along the Z axis" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:ext:3330>
         a                skos:Concept ;
         rdfs:label       "Distance" ;
         skos:definition  "This IPSO object should be used to report a distance measurement. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is Meters (ucum: m).\n        " ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5602> .
 
 <urn:oma:lwm2m:oma:res:5525>
         a                skos:Concept ;
         rdfs:label       "Minimum Off-time" ;
         skos:definition  "The off time when On/Off control remains on." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3302>
         a                skos:Concept ;
         rdfs:label       "Presence" ;
         skos:definition  "Presence sensor with digital sensing, optional delay parameters" ;
-        skos:related     <urn:oma:lwm2m:oma:res:5505> , <urn:oma:lwm2m:oma:res:5751> , <urn:oma:lwm2m:oma:res:5904> , <urn:oma:lwm2m:oma:res:5501> , <urn:oma:lwm2m:oma:res:5903> , <urn:oma:lwm2m:oma:res:5500> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5505> , <urn:oma:lwm2m:oma:res:5903> , <urn:oma:lwm2m:oma:res:5904> , <urn:oma:lwm2m:oma:res:5500> , <urn:oma:lwm2m:oma:res:5501> , <urn:oma:lwm2m:oma:res:5751> .
 
 <urn:oma:lwm2m:oma:res:5704>
         a                skos:Concept ;
         rdfs:label       "Z Value" ;
         skos:definition  "The measured value along the Z axis." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5911>
         a                skos:Concept ;
         rdfs:label       "Bitmap Input Reset" ;
         skos:definition  "Reset the Bitmap Input value." ;
+        skos:inScheme    lwm2m: ;
         skos:related     lwm2m: , lwm2m:E .
 
 <urn:oma:lwm2m:ext:3343>
         a                skos:Concept ;
         rdfs:label       "Dimmer" ;
         skos:definition  "This IPSO object should be used with a dimmer or level control to report the state of the control.\n        " ;
-        skos:related     <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5548> , <urn:oma:lwm2m:oma:res:5853> , <urn:oma:lwm2m:oma:res:5852> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5853> , <urn:oma:lwm2m:oma:res:5548> , <urn:oma:lwm2m:oma:res:5852> .
 
 <urn:oma:lwm2m:oma:res:5538>
         a                skos:Concept ;
         rdfs:label       "Remaining Time" ;
         skos:definition  "The time remaining in an operation." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:ext:3315>
         a                skos:Concept ;
         rdfs:label       "Barometer" ;
         skos:definition  "Description: This IPSO object should be used with an air pressure sensor to report a barometer measurement.  It also provides resources for minimum/maximum measured values and the minimum/maximum range that can be measured by the barometer sensor. An example measurement unit is kPa (ucum:kPa)." ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5700> .
 
 <urn:oma:lwm2m:ext:3202>
         a                skos:Concept ;
         rdfs:label       "Analog Input" ;
         skos:definition  "Generic analog input for non-specific sensors" ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5600> , <urn:oma:lwm2m:oma:res:5751> .
 
 <urn:oma:lwm2m:ext:3328>
         a                skos:Concept ;
         rdfs:label       "Power" ;
         skos:definition  "This IPSO object should be used to report power measurements. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is Watts (ucum: W). This resource may be used for either real power or apparent power (units= ucum:VA) measurements. The Application type can be use for reactive power or active power for example.\n        " ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5750> .
 
 <urn:oma:lwm2m:oma:res:5604>
         a                skos:Concept ;
         rdfs:label       "Max Range Value" ;
         skos:definition  "The maximum value that can be measured by the sensor" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5811>
         a                skos:Concept ;
         rdfs:label       "Min Measured reactive power" ;
         skos:definition  "The minimum reactive power measured by the sensor since it is ON" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5852>
         a                skos:Concept ;
         rdfs:label       "On Time" ;
         skos:definition  "The time in seconds that the device has been on. Writing a value of 0 resets the counter." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:integer , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5824>
         a                skos:Concept ;
         rdfs:label       "Start Time" ;
         skos:definition  "Time when the load control event will start started." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:string , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5532>
         a                skos:Concept ;
         rdfs:label       "Increase Input State" ;
         skos:definition  "Indicates an increase control action." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:boolean , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5504>
         a                skos:Concept ;
         rdfs:label       "Digital Input Edge Selection" ;
         skos:definition  "The edge selection as an integer (1 = Falling edge, 2 = Rising edge, 3 = Both Rising and Falling edge)." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:integer , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3350>
         a                skos:Concept ;
         rdfs:label       "Stopwatch" ;
         skos:definition  "An ascending timer that counts how long time has passed since the timer was started after reset." ;
-        skos:related     <urn:oma:lwm2m:oma:res:5544> , <urn:oma:lwm2m:oma:res:5501> , <urn:oma:lwm2m:oma:res:5850> , <urn:oma:lwm2m:oma:res:5750> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5501> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5850> , <urn:oma:lwm2m:oma:res:5544> .
 
 <urn:oma:lwm2m:oma:res:5545>
         a                skos:Concept ;
         rdfs:label       "Max X Coordinate" ;
         skos:definition  "The highest X coordinate the display supports before wrapping to the next line." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:integer , lwm2m:R .
 
 <urn:oma:lwm2m:ext:3322>
         a                skos:Concept ;
         rdfs:label       "Load" ;
         skos:definition  "This IPSO object should be used with a load sensor (as in a scale) to report the applied weight or force. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is kilograms (ucum: Kg).\n        " ;
-        skos:related     <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5604> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5604> .
 
 <urn:oma:lwm2m:oma:res:5517>
         a                skos:Concept ;
         rdfs:label       "Velocity" ;
         skos:definition  "The velocity of the device as defined in 3GPP 23.032 GAD specification. This set of values may not be available if the device is static." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:hexBinary , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5903>
         a                skos:Concept ;
         rdfs:label       "Busy to Clear delay" ;
         skos:definition  "Delay from the detection state to the clear state in ms" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:integer , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3335>
         a                skos:Concept ;
         rdfs:label       "Colour" ;
         skos:definition  "This IPSO object should be used to report the measured value of a colour sensor in some colour space described by the units resource.\n        " ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5706> , <urn:oma:lwm2m:oma:res:5750> .
 
 <urn:oma:lwm2m:ext:3348>
         a                skos:Concept ;
         rdfs:label       "Multi-state Selector" ;
         skos:definition  "This IPSO object is used to represent the state of a Multi-state selector switch with a number of fixed positions.\n        " ;
-        skos:related     <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5547> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5547> , <urn:oma:lwm2m:oma:res:5750> .
 
 <urn:oma:lwm2m:oma:res:5803>
         a                skos:Concept ;
         rdfs:label       "Min Range active power" ;
         skos:definition  "The minimum active power that can be measured by the sensor" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5511>
         a                skos:Concept ;
         rdfs:label       "Max Y Value" ;
         skos:definition  "The maximum measured value along the Y axis" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5816>
         a                skos:Concept ;
         rdfs:label       "Reactive Power Calibration" ;
         skos:definition  "Request a reactive power calibration by writing the value of a calibrated load." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:W .
 
 <urn:oma:lwm2m:oma:res:5524>
         a                skos:Concept ;
         rdfs:label       "Duration" ;
         skos:definition  "The duration of the sound once trigger." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3301>
         a                skos:Concept ;
         rdfs:label       "Illuminance" ;
         skos:definition  "Illuminance sensor, example units = lx" ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5701> .
 
 <urn:oma:lwm2m:oma:res:5910>
         a                skos:Concept ;
         rdfs:label       "Bitmap Input" ;
         skos:definition  "Integer in which each of the bits are associated with specific digital input value. Represented as a binary signed integer in network byte order, and in two's complement representation. Using values in range 0-127 is recommended to avoid ambiguities with byte order and negative values." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:integer , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5703>
         a                skos:Concept ;
         rdfs:label       "Y Value" ;
         skos:definition  "The measured value along the Y axis." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 lwm2m:Object  skos:narrower  <urn:oma:lwm2m:ext:3340> , <urn:oma:lwm2m:ext:3331> , <urn:oma:lwm2m:ext:3318> , <urn:oma:lwm2m:ext:3334> , <urn:oma:lwm2m:ext:3347> , <urn:oma:lwm2m:ext:3338> , <urn:oma:lwm2m:ext:3333> , <urn:oma:lwm2m:ext:3346> , <urn:oma:lwm2m:ext:3201> , <urn:oma:lwm2m:ext:3345> , <urn:oma:lwm2m:ext:3200> , <urn:oma:lwm2m:ext:3303> , <urn:oma:lwm2m:ext:3320> , <urn:oma:lwm2m:ext:3311> , <urn:oma:lwm2m:ext:3302> , <urn:oma:lwm2m:ext:3315> , <urn:oma:lwm2m:ext:3323> , <urn:oma:lwm2m:ext:3327> , <urn:oma:lwm2m:ext:3350> , <urn:oma:lwm2m:ext:3329> , <urn:oma:lwm2m:ext:3341> , <urn:oma:lwm2m:ext:3336> , <urn:oma:lwm2m:ext:3319> , <urn:oma:lwm2m:ext:3335> , <urn:oma:lwm2m:ext:3348> , <urn:oma:lwm2m:ext:3339> , <urn:oma:lwm2m:ext:3343> , <urn:oma:lwm2m:ext:3202> , <urn:oma:lwm2m:ext:3300> , <urn:oma:lwm2m:ext:3304> , <urn:oma:lwm2m:ext:3312> , <urn:oma:lwm2m:ext:3325> , <urn:oma:lwm2m:ext:3316> , <urn:oma:lwm2m:ext:3324> , <urn:oma:lwm2m:ext:3328> , <urn:oma:lwm2m:ext:3306> , <urn:oma:lwm2m:ext:3330> , <urn:oma:lwm2m:ext:3308> , <urn:oma:lwm2m:ext:3342> , <urn:oma:lwm2m:ext:3337> , <urn:oma:lwm2m:ext:3332> , <urn:oma:lwm2m:ext:3349> , <urn:oma:lwm2m:ext:3344> , <urn:oma:lwm2m:ext:3203> , <urn:oma:lwm2m:ext:3310> , <urn:oma:lwm2m:ext:3301> , <urn:oma:lwm2m:ext:3314> , <urn:oma:lwm2m:ext:3305> , <urn:oma:lwm2m:ext:3322> , <urn:oma:lwm2m:ext:3313> , <urn:oma:lwm2m:ext:3326> , <urn:oma:lwm2m:ext:3317> , <urn:oma:lwm2m:ext:3321> .
@@ -600,310 +698,362 @@ lwm2m:Object  skos:narrower  <urn:oma:lwm2m:ext:3340> , <urn:oma:lwm2m:ext:3331>
         a                skos:Concept ;
         rdfs:label       "On/Off switch" ;
         skos:definition  "This IPSO object should be used with an On/Off switch to report the state of the switch." ;
-        skos:related     <urn:oma:lwm2m:oma:res:5500> , <urn:oma:lwm2m:oma:res:5853> , <urn:oma:lwm2m:oma:res:5501> , <urn:oma:lwm2m:oma:res:5852> , <urn:oma:lwm2m:oma:res:5750> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5501> , <urn:oma:lwm2m:oma:res:5500> , <urn:oma:lwm2m:oma:res:5853> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5852> .
 
 <urn:oma:lwm2m:oma:res:5537>
         a                skos:Concept ;
         rdfs:label       "Transition Time" ;
         skos:definition  "The time expected to move the actuator to the new position." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3314>
         a                skos:Concept ;
         rdfs:label       "Magnetometer" ;
         skos:definition  "Description: This IPSO object can be used to represent a 1-3 axis magnetometer with optional compass direction." ;
-        skos:related     <urn:oma:lwm2m:oma:res:5704> , <urn:oma:lwm2m:oma:res:5705> , <urn:oma:lwm2m:oma:res:5703> , <urn:oma:lwm2m:oma:res:5702> , <urn:oma:lwm2m:oma:res:5701> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5704> , <urn:oma:lwm2m:oma:res:5702> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5703> , <urn:oma:lwm2m:oma:res:5705> .
 
 <urn:oma:lwm2m:oma:res:5509>
         a                skos:Concept ;
         rdfs:label       "Max X Value" ;
         skos:definition  "The maximum measured value along the X axis" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:ext:3201>
         a                skos:Concept ;
         rdfs:label       "Digital Output" ;
         skos:definition  "Generic digital output for non-specific actuators" ;
-        skos:related     <urn:oma:lwm2m:oma:res:5550> , <urn:oma:lwm2m:oma:res:5551> , <urn:oma:lwm2m:oma:res:5750> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5551> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5550> .
 
 <urn:oma:lwm2m:ext:3327>
         a                skos:Concept ;
         rdfs:label       "Conductivity" ;
         skos:definition  "This IPSO object should be used to report a measurement of the electric conductivity of a medium or sample. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is Siemens (ucum: S).\n        " ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5750> .
 
 <urn:oma:lwm2m:oma:res:5603>
         a                skos:Concept ;
         rdfs:label       "Min Range Value" ;
         skos:definition  "The minimum value that can be measured by the sensor" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5810>
         a                skos:Concept ;
         rdfs:label       "Instantaneous reactive power" ;
         skos:definition  "The current reactive power" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5851>
         a                skos:Concept ;
         rdfs:label       "Dimmer" ;
         skos:definition  "This resource represents a light dimmer setting, which has an Integer value between 0 and 100 as a percentage." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:integer , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5823>
         a                skos:Concept ;
         rdfs:label       "Event Identifier" ;
         skos:definition  "The event identifier as a string." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:string , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5531>
         a                skos:Concept ;
         rdfs:label       "Contrast" ;
         skos:definition  "Proportional control, integer value between 0 and 100 as a percentage." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5503>
         a                skos:Concept ;
         rdfs:label       "Digital Input Debounce" ;
         skos:definition  "The debounce period in ms. ." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:integer , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3321>
         a                skos:Concept ;
         rdfs:label       "Altitude" ;
         skos:definition  "This IPSO object should be used with an altitude sensor to report altitude above sea level in meters. Note that Altitude can be calculated from the measured pressure given the local sea level pressure.  It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is meters (ucum: m).\n        " ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5821> .
 
 <urn:oma:lwm2m:oma:res:5544>
         a                skos:Concept ;
         rdfs:label       "Cumulative Time" ;
         skos:definition  "The total time in seconds that the timer input is true. Writing a 0 resets the time." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5751>
         a                skos:Concept ;
         rdfs:label       "Sensor Type" ;
         skos:definition  "The type of the sensor (for instance PIR type)" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:string , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5516>
         a                skos:Concept ;
         rdfs:label       "Uncertainty" ;
         skos:definition  "The accuracy of the position in meters." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:string , lwm2m:R .
 
 <urn:oma:lwm2m:ext:3334>
         a                skos:Concept ;
         rdfs:label       "Gyrometer" ;
         skos:definition  "This IPSO Object is used to report the current reading of a gyrometer sensor in 3 axes. It provides tracking of the minimum and maximum angular rate in all 3 axes. An example unit of measure is radians per second (ucum:rad/s).\n        " ;
-        skos:related     <urn:oma:lwm2m:oma:res:5702> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5510> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5704> , <urn:oma:lwm2m:oma:res:5508> , <urn:oma:lwm2m:oma:res:5703> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5512> , <urn:oma:lwm2m:oma:res:5511> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5509> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5513> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5702> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5510> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5704> , <urn:oma:lwm2m:oma:res:5508> , <urn:oma:lwm2m:oma:res:5703> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5512> , <urn:oma:lwm2m:oma:res:5511> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5509> , <urn:oma:lwm2m:oma:res:5513> , <urn:oma:lwm2m:oma:res:5604> .
 
 <urn:oma:lwm2m:oma:res:5529>
         a                skos:Concept ;
         rdfs:label       "Y Coordinate" ;
         skos:definition  "Y Coordinate." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:integer , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3306>
         a                skos:Concept ;
         rdfs:label       "Actuation" ;
         skos:definition  "This IPSO object is dedicated to remote actuation such as ON/OFF action or dimming. A multi-state output can also be described as a string. This is useful to send pilot wire orders for instance. It also provides a resource to reflect the time that the device has been switched on." ;
-        skos:related     <urn:oma:lwm2m:oma:res:5852> , <urn:oma:lwm2m:oma:res:5853> , <urn:oma:lwm2m:oma:res:5851> , <urn:oma:lwm2m:oma:res:5850> , <urn:oma:lwm2m:oma:res:5750> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5851> , <urn:oma:lwm2m:oma:res:5852> , <urn:oma:lwm2m:oma:res:5850> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5853> .
 
 <urn:oma:lwm2m:ext:3347>
         a                skos:Concept ;
         rdfs:label       "Push button" ;
         skos:definition  "This IPSO object is used to report the state of a momentary action push button control and to count the number of times the control has been operated since the last observation.\n        " ;
-        skos:related     <urn:oma:lwm2m:oma:res:5501> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5500> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5500> , <urn:oma:lwm2m:oma:res:5501> , <urn:oma:lwm2m:oma:res:5750> .
 
 <urn:oma:lwm2m:ext:3319>
         a                skos:Concept ;
         rdfs:label       "Depth" ;
         skos:definition  "This IPSO object should be used to report depth measurements. It can, for example, be used to describe a generic rain gauge that measures the accumulated rainfall in millimetres (mm) or in fathoms (fth).\n        " ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5605> .
 
 <urn:oma:lwm2m:oma:res:5802>
         a                skos:Concept ;
         rdfs:label       "Max Measured  active power" ;
         skos:definition  "The maximum active power measured by the sensor since it is ON" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5510>
         a                skos:Concept ;
         rdfs:label       "Min Y Value" ;
         skos:definition  "The minimum measured value along the Y axis" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5551>
         a                skos:Concept ;
         rdfs:label       "Digital Output Polarity" ;
         skos:definition  "The polarity of a digital ouput as a Boolean (0 = Normal, 1= Reversed)." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:boolean , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5815>
         a                skos:Concept ;
         rdfs:label       "Cumulative reactive power" ;
         skos:definition  "The cumulative reactive power since the last cumulative energy reset or device start" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5523>
         a                skos:Concept ;
         rdfs:label       "Trigger" ;
         skos:definition  "Trigger initiating actuation." ;
+        skos:inScheme    lwm2m: ;
         skos:related     lwm2m: , lwm2m:E .
 
 <urn:oma:lwm2m:ext:3300>
         a                skos:Concept ;
         rdfs:label       "Generic Sensor" ;
         skos:definition  "This IPSO object allow the description of a generic sensor. It is based on the description of a value and a unit according to the UCUM specification. Thus, any type of value defined within this specification can be reporting using this object.\nSpecific object for a given range of sensors is described later in the document, enabling to identify the type of sensors directly from its Object ID. This object may be used as a generic object if a dedicated one does not exist." ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5751> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5750> .
 
 <urn:oma:lwm2m:oma:res:5702>
         a                skos:Concept ;
         rdfs:label       "X Value" ;
         skos:definition  "The measured value along the X axis." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5828>
         a                skos:Concept ;
         rdfs:label       "Duty Cycle" ;
         skos:definition  "Defines the duty cycle for the load control event, i.e, what percentage of time the receiving device is allowed to be on." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:string , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3341>
         a                skos:Concept ;
         rdfs:label       "Addressable Text Display" ;
         skos:definition  "This IPSO object is used to send text to a text-only or text mode graphics display. POSTing a string of text to the text resource causes it to be displayed at the selected X and Y locations on the display. If X or Y are set to a value greater than the size of the display, the position “wraps around” to the modulus of the setting and the display size. Likewise, if the text string overflows the display size, the text “wraps around” and displays on the next line down or, if the last line has been written, wraps around to the top of the display. Brightness and Contrast controls are provided to allow control of various display types including STN and DSTN type LCD character displays. POSTing an empty payload to the Clear Display resource causes the display to be erased.\n        " ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5528> , <urn:oma:lwm2m:oma:res:5527> , <urn:oma:lwm2m:oma:res:5546> , <urn:oma:lwm2m:oma:res:5548> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5545> , <urn:oma:lwm2m:oma:res:5531> , <urn:oma:lwm2m:oma:res:5530> , <urn:oma:lwm2m:oma:res:5529> .
 
 <urn:oma:lwm2m:oma:res:5536>
         a                skos:Concept ;
         rdfs:label       "Current Position" ;
         skos:definition  "Current position or desired position of a positioner actuator." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3313>
         a                skos:Concept ;
         rdfs:label       "Accelerometer" ;
         skos:definition  "Description: This IPSO object can be used to represent a 1-3 axis accelerometer." ;
-        skos:related     <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5702> , <urn:oma:lwm2m:oma:res:5703> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5704> , <urn:oma:lwm2m:oma:res:5701> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5702> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5704> , <urn:oma:lwm2m:oma:res:5703> , <urn:oma:lwm2m:oma:res:5604> .
 
 <urn:oma:lwm2m:oma:res:5508>
         a                skos:Concept ;
         rdfs:label       "Min X Value" ;
         skos:definition  "The minimum measured value along the X axis" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:ext:3200>
         a                skos:Concept ;
         rdfs:label       "Digital Input" ;
         skos:definition  "Generic digital input for non-specific sensors" ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5502> , <urn:oma:lwm2m:oma:res:5504> , <urn:oma:lwm2m:oma:res:5505> , <urn:oma:lwm2m:oma:res:5500> , <urn:oma:lwm2m:oma:res:5501> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5503> , <urn:oma:lwm2m:oma:res:5751> .
 
 <urn:oma:lwm2m:ext:3326>
         a                skos:Concept ;
         rdfs:label       "Acidity" ;
         skos:definition  "This IPSO object should be used to report an acidity measurement of a liquid. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is pH.\n        " ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5601> .
 
 <urn:oma:lwm2m:oma:res:5602>
         a                skos:Concept ;
         rdfs:label       "Max Measured Value" ;
         skos:definition  "The maximum value measured by the sensor since power ON or reset" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
 
 <urn:oma:lwm2m:ext:3339>
         a                skos:Concept ;
         rdfs:label       "Audio Clip" ;
         skos:definition  "This IPSO object should be used for a speaker that plays a pre-recorded audio clip or an audio output that is sent elsewhere. For example, an elevator which announces the floor of the building. A resource is provided to store the clip, a dimmer resource controls the relative sound level of the playback, and a duration resource limits the maximum playback time. After the duration time is reached, any remaining samples in the clip are ignored, and the clip player will be ready to play another clip." ;
-        skos:related     <urn:oma:lwm2m:oma:res:5524> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5548> , <urn:oma:lwm2m:oma:res:5523> , <urn:oma:lwm2m:oma:res:5522> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5524> , <urn:oma:lwm2m:oma:res:5522> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5523> , <urn:oma:lwm2m:oma:res:5548> .
 
 <urn:oma:lwm2m:oma:res:5850>
         a                skos:Concept ;
         rdfs:label       "On/Off" ;
         skos:definition  "On/Off" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:boolean , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5822>
         a                skos:Concept ;
         rdfs:label       "Reset Cumulative energy" ;
         skos:definition  "Reset both cumulative active/reactive power" ;
+        skos:inScheme    lwm2m: ;
         skos:related     lwm2m: , lwm2m:E .
 
 <urn:oma:lwm2m:oma:res:5530>
         a                skos:Concept ;
         rdfs:label       "Clear Display" ;
         skos:definition  "Command to clear the display." ;
+        skos:inScheme    lwm2m: ;
         skos:related     lwm2m: , lwm2m:E .
 
 <urn:oma:lwm2m:oma:res:5502>
         a                skos:Concept ;
         rdfs:label       "Digital Input Polarity" ;
         skos:definition  "The polarity of the digital input as a Boolean (0 = Normal, 1= Reversed)" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:boolean , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3320>
         a                skos:Concept ;
         rdfs:label       "Percentage" ;
         skos:definition  "This IPSO object should can be used to report measurements relative to a 0-100% scale. For example it could be used to measure the level of a liquid in a vessel or container in units of %.\n        " ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5821> .
 
 <urn:oma:lwm2m:oma:res:5543>
         a                skos:Concept ;
         rdfs:label       "Digital State" ;
         skos:definition  "The current state of the timer output." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:boolean , lwm2m:R .
 
 <urn:oma:lwm2m:oma:res:5750>
         a                skos:Concept ;
         rdfs:label       "Application Type" ;
         skos:definition  "The application type of the sensor or actuator as a string, for instance, “Air Pressure”" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:string , lwm2m:RW .
 
 <urn:oma:lwm2m:oma:res:5515>
         a                skos:Concept ;
         rdfs:label       "Altitude" ;
         skos:definition  "The decimal notation of altitude in meters above sea level." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:string , lwm2m:R .
 
 <urn:oma:lwm2m:ext:3333>
         a                skos:Concept ;
         rdfs:label       "Time" ;
         skos:definition  "This IPSO object is used to report the current time in seconds since January 1, 1970 UTC. There is also a fractional time counter that has a range of less than one second.\n        " ;
-        skos:related     <urn:oma:lwm2m:oma:res:5507> , <urn:oma:lwm2m:oma:res:5506> , <urn:oma:lwm2m:oma:res:5750> .
+        skos:inScheme    lwm2m: ;
+        skos:related     <urn:oma:lwm2m:oma:res:5506> , <urn:oma:lwm2m:oma:res:5507> , <urn:oma:lwm2m:oma:res:5750> .
 
 <urn:oma:lwm2m:oma:res:5528>
         a                skos:Concept ;
         rdfs:label       "X Coordinate" ;
         skos:definition  "X Coordinate." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:integer , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3305>
         a                skos:Concept ;
         rdfs:label       "Power Measurement" ;
         skos:definition  "This IPSO object should be used over a power measurement sensor to report a remote power measurement.  It also provides resources for minimum/maximum measured values and the minimum/maximum range for both active and reactive power. Il also provides resources for cumulative energy, calibration, and the power factor." ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5800> , <urn:oma:lwm2m:oma:res:5803> , <urn:oma:lwm2m:oma:res:5820> , <urn:oma:lwm2m:oma:res:5812> , <urn:oma:lwm2m:oma:res:5806> , <urn:oma:lwm2m:oma:res:5802> , <urn:oma:lwm2m:oma:res:5804> , <urn:oma:lwm2m:oma:res:5822> , <urn:oma:lwm2m:oma:res:5811> , <urn:oma:lwm2m:oma:res:5814> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5816> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5805> , <urn:oma:lwm2m:oma:res:5810> , <urn:oma:lwm2m:oma:res:5801> , <urn:oma:lwm2m:oma:res:5813> , <urn:oma:lwm2m:oma:res:5815> .
 
 <urn:oma:lwm2m:oma:res:5650>
         a                skos:Concept ;
         rdfs:label       "Analog Output Current Value" ;
         skos:definition  "The current state of the analogue output." ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:RW .
 
 <urn:oma:lwm2m:ext:3346>
         a                skos:Concept ;
         rdfs:label       "Rate" ;
         skos:definition  "This object type should be used to report a rate measurement, for example the speed of a vehicle, or the rotational speed of a drive shaft. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor.An example measurement unit is Feet per Second (ucum:ft_us/s).\n        " ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5602> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5700> .
 
 <urn:oma:lwm2m:ext:3318>
         a                skos:Concept ;
         rdfs:label       "Frequency" ;
         skos:definition  "This IPSO object should be used to report frequency measurements. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is volts (ucum: Hz).\n        " ;
+        skos:inScheme    lwm2m: ;
         skos:related     <urn:oma:lwm2m:oma:res:5700> , <urn:oma:lwm2m:oma:res:5821> , <urn:oma:lwm2m:oma:res:5605> , <urn:oma:lwm2m:oma:res:5603> , <urn:oma:lwm2m:oma:res:5701> , <urn:oma:lwm2m:oma:res:5750> , <urn:oma:lwm2m:oma:res:5601> , <urn:oma:lwm2m:oma:res:5604> , <urn:oma:lwm2m:oma:res:5602> .
 
 <urn:oma:lwm2m:oma:res:5801>
         a                skos:Concept ;
         rdfs:label       "Min Measured active power" ;
         skos:definition  "The minimum active power measured by the sensor since it is ON" ;
+        skos:inScheme    lwm2m: ;
         skos:related     xsd:float , lwm2m:R .
