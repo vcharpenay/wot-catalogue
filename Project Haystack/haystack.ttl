@@ -1,776 +1,956 @@
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix phIct: <https://project-haystack.org/def/phIct/3.9.5#> .
-@prefix ph:    <https://project-haystack.org/def/ph/3.9.5#> .
+@prefix phIct: <https://project-haystack.org/def/phIct/3.9.7#> .
+@prefix ph:    <https://project-haystack.org/def/ph/3.9.7#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix phScience: <https://project-haystack.org/def/phScience/3.9.5#> .
+@prefix phScience: <https://project-haystack.org/def/phScience/3.9.7#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix phIoT: <https://project-haystack.org/def/phIoT/3.9.5#> .
+@prefix phIoT: <https://project-haystack.org/def/phIoT/3.9.7#> .
 
-phIoT:meter  a           skos:Concept ;
-        rdfs:label       "meter" ;
-        skos:definition  "Equipment to meter a substance or phenomenon" ;
-        skos:narrower    phIoT:elec-meter , phIoT:thermal-meter , phIoT:flow-meter .
-
-phScience:wind-speed  a  skos:Concept ;
-        rdfs:label       "wind-speed" ;
-        skos:definition  "Wind flow speed" .
-
-phIoT:actuator  a        skos:Concept ;
-        rdfs:label       "actuator" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Actuator> ;
-        skos:definition  "Equipment to move or control a mechanism.  Actuators may be manually\noperated or automated via a control system to convert an energy source\ninto mechanical energy.  Typically the energy source is electricity,\nhydraulics, or pneumatics." ;
-        skos:narrower    phIoT:damper-actuator , phIoT:valve-actuator .
-
-phIoT:gasoline  a        skos:Concept ;
-        rdfs:label       "gasoline" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Gasoline> ;
-        skos:definition  "Petroleum derived liquid used as a fuel source" .
-
-phIoT:hot-water-coil  a  skos:Concept ;
-        rdfs:label       "hot-water-coil" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Heat_exchanger#HVAC_air_coils> ;
-        skos:definition  "Coil used to transfer heat from hot-water to air." .
-
-phIoT:steam-coil  a      skos:Concept ;
-        rdfs:label       "steam-coil" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Heat_exchanger#HVAC_air_coils> ;
-        skos:definition  "Coil used to transfer heat from steam to air." .
-
-phScience:cloudage  a    skos:Concept ;
-        rdfs:label       "cloudage" ;
-        skos:definition  "Percentage of sky obscurred by clouds. This is also known as cloudiness, or cloud amount." .
-
-phIoT:drive-freq  a      skos:Concept ;
-        rdfs:label       "drive-freq" ;
-        skos:definition  "Motor frequency measured in \"Hz\"." .
-
-phIoT:condenser-water
-        a                skos:Concept ;
-        rdfs:label       "condenser-water" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Water> ;
-        skos:definition  "Water used used to remove heat through condensation" .
-
-phIoT:naturalGas  a      skos:Concept ;
-        rdfs:label       "naturalGas" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Natural_gas> ;
-        skos:definition  "Fossil fuel energy source consisting largely of methane and other hydrocarbons" .
-
-phIoT:motor  a           skos:Concept ;
-        rdfs:label       "motor" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Electric_motor> ;
-        skos:definition  "Equipment that converts electrical energy into mechanical energy" ;
-        skos:narrower    phIoT:vfd , phIoT:fan-motor , phIoT:pump-motor .
-
-phIoT:roof-floor  a      skos:Concept ;
-        rdfs:label       "roof-floor" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Storey> ;
-        skos:definition  "The roof floor is the topmost level of a building.  It is often\nwhere HVAC equipment is located such as rooftop AHUs." .
-
-phScience:solid  a       skos:Concept ;
-        rdfs:label       "solid" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Solid> ;
-        skos:definition  "Substance with definite shape and volume" ;
-        skos:narrower    phScience:ice .
-
-phIoT:damper-actuator
-        a                skos:Concept ;
-        rdfs:label       "damper-actuator" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Damper_(flow)> ;
-        skos:definition  "Actuator to regulate the flow of air." .
-
-phScience:freq  a        skos:Concept ;
-        rdfs:label       "freq" ;
-        skos:definition  "Occurrences per unit time" ;
-        skos:narrower    phIoT:ac-freq .
-
-phScience:elec-energy
-        a                skos:Concept ;
-        rdfs:label       "elec-energy" ;
-        skos:definition  "Electrical energy consumed" .
-
-phIoT:coolingTower  a    skos:Concept ;
-        rdfs:label       "coolingTower" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Cooling_tower> ;
-        skos:definition  "Equipment to transfer waste heat into the atmosphere" .
-
-phScience:phenomenon  skos:narrower  phScience:light , phIoT:drive , phScience:solar , phScience:wind , phScience:elec , phIoT:state , phScience:substance , phScience:weather .
-
-phIoT:flow-meter  a      skos:Concept ;
-        rdfs:label       "flow-meter" ;
-        skos:definition  "Meter to measure flow rate and total volume of fluid" .
-
-phIoT:radiator  a        skos:Concept ;
-        rdfs:label       "radiator" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Radiator_(heating)> ;
-        skos:definition  "Heats a space using exposed pipes or coils.  Hot water and steam\nradiators are often cast iron and installed directly in the space\nor along the baseboard.  Electric radiators are typically installed\non the baseboard." .
-
-phIoT:tank  a            skos:Concept ;
-        rdfs:label       "tank" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Storage_tank> ;
-        skos:definition  "Tank used to store a substance for temporary holding" .
-
-phIoT:elec-coil  a       skos:Concept ;
-        rdfs:label       "elec-coil" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Heating_element> ;
-        skos:definition  "Heating element which converts electricity into heat" .
-
-phScience:air-temp  a    skos:Concept ;
-        rdfs:label       "air-temp" ;
-        skos:definition  "Dry bulb temperature" .
-
-phScience:feelsLike  a   skos:Concept ;
-        rdfs:label       "feelsLike" ;
-        skos:definition  "Apparent temperature perceived when considering humidity, wind chill, and heat index" .
-
-phIoT:coolingOnly-vav
-        a                skos:Concept ;
-        rdfs:label       "coolingOnly-vav" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Variable_air_volume> ;
-        skos:definition  "Cooling only VAV without fan or reheat" .
-
-phScience:steam  a       skos:Concept ;
-        rdfs:label       "steam" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Steam> ;
-        skos:definition  "Water in its gas form" .
-
-phIoT:subterranean-floor
-        a                skos:Concept ;
-        rdfs:label       "subterranean-floor" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Storey> ;
-        skos:definition  "Floor below ground level.  Subterranean floors are also known as\nbasements, lower levels, or cellars." .
-
-phScience:direction  a   skos:Concept ;
-        rdfs:label       "direction" ;
-        skos:definition  "Compass direction measured in degrees: North: 0° = 360°, East: 90°, South: 180°, West: 270°" ;
-        skos:narrower    phScience:wind-direction .
+phScience:tvoc  a        skos:Concept ;
+        rdfs:label       "tvoc" ;
+        skos:definition  "Total volatile organic compound (TVOC).  This is a general term applied to the overall total volatile organic compouns (VOCs) detected." ;
+        skos:inScheme    ph: .
 
 phScience:air  a         skos:Concept ;
         rdfs:label       "air" ;
         rdfs:seeAlso     <https://en.wikipedia.org/wiki/Atmosphere_of_Earth> ;
         skos:definition  "The mixture of gases which surrounds the earth" ;
-        skos:related     phScience:feelsLike , phScience:pm25 , phScience:webBulb , phScience:tvoc , phScience:co2 , phScience:humidity , phScience:pm10 , phScience:air-temp , phScience:airQuality , phScience:dewPoint .
+        skos:inScheme    ph: ;
+        skos:related     phScience:air-temp , phScience:pm10 , phScience:feelsLike , phScience:webBulb , phScience:airQuality , phScience:humidity , phScience:pm25 , phScience:tvoc , phScience:co2 , phScience:dewPoint .
 
 phIoT:ac-elec  a         skos:Concept ;
         rdfs:label       "ac-elec" ;
         rdfs:seeAlso     <https://en.wikipedia.org/wiki/Alternating_current> ;
         skos:definition  "Alternating current electricity" ;
-        skos:related     phIoT:pf , phIoT:volt-magnitude , phIoT:volt-imbalance , phIoT:apparent-power , phIoT:current-imbalance , phIoT:reactive-power , phIoT:current-magnitude , phIoT:active-power , phIoT:volt-angle , phIoT:current-angle , phIoT:current-thd , phIoT:ac-freq .
+        skos:inScheme    ph: ;
+        skos:related     phIoT:current-angle , phIoT:apparent-power , phIoT:volt-angle , phIoT:pf , phIoT:ac-freq , phIoT:volt-magnitude , phIoT:current-magnitude , phIoT:reactive-power , phIoT:volt-imbalance , phIoT:active-power , phIoT:current-imbalance , phIoT:current-thd .
 
-phIoT:pump-motor  a      skos:Concept ;
-        rdfs:label       "pump-motor" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Pump> ;
-        skos:definition  "Motor used with a pump to move fluid." .
+phScience:elec-volt  a   skos:Concept ;
+        rdfs:label       "elec-volt" ;
+        skos:definition  "Electrical voltage, potential difference" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:volt-magnitude .
 
-phIoT:mau  a             skos:Concept ;
-        rdfs:label       "mau" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Air_handler> ;
-        skos:definition  "Makeup Air Unit: An AHU that brings in 100% outside air and no\nrecirculated air." .
-
-phScience:fluid  a       skos:Concept ;
-        rdfs:label       "fluid" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Fluid> ;
-        skos:definition  "Liquid or gas" ;
-        skos:narrower    phScience:liquid , phScience:gas , phIoT:refrig ;
-        skos:related     phScience:flow , phScience:pressure , phScience:level .
-
-phIoT:wire  a            skos:Concept ;
-        rdfs:label       "wire" ;
-        skos:definition  "Cabling used to convey electricity or data" .
-
-phIoT:duct  a            skos:Concept ;
-        rdfs:label       "duct" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Duct_(flow)> ;
-        skos:definition  "Conduit used to convey air for HVAC" .
-
-phScience:light  a       skos:Concept ;
-        rdfs:label       "light" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Light> ;
-        skos:definition  "Electromagnetic radiation in the visibile spectrum" ;
-        skos:related     phScience:luminance , phScience:luminous-intensity , phScience:illuminance , phScience:luminous-flux .
-
-phIoT:zone-space  a      skos:Concept ;
-        rdfs:label       "zone-space" ;
-        skos:definition  "Space associated with a specific system" ;
-        skos:narrower    phIoT:hvac-zone-space , phIoT:lighting-zone-space .
-
-phIoT:apparent-power  a  skos:Concept ;
-        rdfs:label       "apparent-power" ;
-        skos:definition  "Apparent power is perceived magnitude of power due to the combination of active and reactive power" .
-
-phScience:precipitation
-        a                skos:Concept ;
-        rdfs:label       "precipitation" ;
-        skos:definition  "Amount of atmospheric water vapor fallen including rain, sleet, snow, and hail" .
-
-phIoT:domestic-water  a  skos:Concept ;
-        rdfs:label       "domestic-water" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Water> ;
-        skos:definition  "Tap water for drinking, washing, cooking, and flushing of toliets" .
-
-phIoT:coil  a            skos:Concept ;
-        rdfs:label       "coil" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Heat_exchanger#HVAC_air_coils> ;
-        skos:definition  "Heat exchanger used to heat or cool air.  Coils are sub-components\nof HVAC equipment such as `airHandlingEquip`." ;
-        skos:narrower    phIoT:coolingCoil , phIoT:heatingCoil .
-
-phScience:gas  a         skos:Concept ;
-        rdfs:label       "gas" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Gas> ;
-        skos:definition  "Substance with neither definite volume nor shape" ;
-        skos:narrower    phScience:air , phScience:steam , phIoT:naturalGas .
-
-phScience:elec-power  a  skos:Concept ;
-        rdfs:label       "elec-power" ;
-        skos:definition  "Electrical energy consumed per unit time" ;
-        skos:narrower    phIoT:active-power .
-
-phIoT:luminaire  a       skos:Concept ;
-        rdfs:label       "luminaire" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Light_fixture> ;
-        skos:definition  "Light fixture using electricity to provide illumination" .
-
-phIoT:stateQuantity  a   skos:Concept ;
-        rdfs:label       "stateQuantity" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/State_(computer_science)> ;
-        skos:definition  "What is sensed or controlled of software, hardware, or process state." ;
-        skos:narrower    phIoT:enable , phIoT:run .
-
-phIoT:heatExchanger  a   skos:Concept ;
-        rdfs:label       "heatExchanger" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Heat_exchanger> ;
-        skos:definition  "Equipment to transfer heat between two working fluids." ;
-        skos:narrower    phIoT:coil .
-
-phScience:luminous-intensity
-        a                skos:Concept ;
-        rdfs:label       "luminous-intensity" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Luminous_intensity> ;
-        skos:definition  "Perceived light in a particular direction per unit solid angle.\n\nAlso see [ies.org]`https://www.ies.org/definitions/luminous-intensity/`" .
-
-phScience:daytime  a     skos:Concept ;
-        rdfs:label       "daytime" ;
-        skos:definition  "Time between sunrise and sunset" .
-
-phIoT:ac-freq  a         skos:Concept ;
-        rdfs:label       "ac-freq" ;
-        skos:definition  "Frequency of alternating current" .
-
-phScience:flow  a        skos:Concept ;
-        rdfs:label       "flow" ;
-        skos:definition  "Measure of volumetric flow of fluid" .
-
-phIoT:valve-actuator  a  skos:Concept ;
-        rdfs:label       "valve-actuator" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Valve> ;
-        skos:definition  "Actuator to regulate the flow of fluid." .
-
-phIoT:fan-motor  a       skos:Concept ;
-        rdfs:label       "fan-motor" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Fan_(machine)> ;
-        skos:definition  "Motor used with a fan to create air flow." .
-
-phScience:energy  a      skos:Concept ;
-        rdfs:label       "energy" ;
-        skos:definition  "Measure of ability to do work" ;
-        skos:narrower    phScience:elec-energy .
-
-phScience:speed  a       skos:Concept ;
-        rdfs:label       "speed" ;
-        skos:definition  "Distance per unit time" ;
-        skos:narrower    phScience:wind-speed .
-
-phIoT:enable  a          skos:Concept ;
-        rdfs:label       "enable" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/State_(computer_science)> ;
-        skos:definition  "Secondary on/off `point` of an `equip` especially used with a `vfd`.\nEnable is used with Bool points where true indicates on and false\nindicates off.  Equip with an enable should always also define a `run`\npoint which indicates the primary on/off state of the equipment." .
-
-phScience:webBulb  a     skos:Concept ;
-        rdfs:label       "webBulb" ;
-        skos:definition  "Wet bulb air temperature.  Temperature which the air would have if cooled to saturation by the evaporation of water into it." .
-
-phIoT:chilled-water-coil
-        a                skos:Concept ;
-        rdfs:label       "chilled-water-coil" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Heat_exchanger#HVAC_air_coils> ;
-        skos:definition  "Coil used to transfer heat from air to chilled water." .
-
-phIoT:hvac-zone-space
-        a                skos:Concept ;
-        rdfs:label       "hvac-zone-space" ;
-        skos:definition  "Zone related to conditioning of a space's air temperature and quality" .
-
-phIoT:cav  a             skos:Concept ;
-        rdfs:label       "cav" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Constant_air_volume> ;
-        skos:definition  "Constant air volume terminal unit.  CAV systems use a constant\nair flow rate with a variable air temperature." .
-
-phScience:quantity  skos:narrower  phScience:energy , phScience:visibility , phScience:freq , phScience:airQuality , phScience:irradiance , phIoT:stateQuantity , phIoT:current-angle , phScience:cloudage , phIoT:reactive-power , phScience:direction , phScience:illuminance , phScience:elec-current , phScience:speed , phScience:pressure , phIoT:current-thd , phScience:feelsLike , phScience:elec-volt , phScience:temp , phScience:level , phIoT:volt-angle , phScience:luminous-flux , phScience:dewPoint , phIoT:drive-speed , phIoT:current-imbalance , phScience:precipitation , phScience:webBulb , phScience:luminous-intensity , phScience:weatherCond , phScience:flow , phIoT:drive-freq , phIoT:pf , phScience:luminance , phIoT:volt-imbalance , phScience:humidity , phScience:power , phIoT:apparent-power , phScience:daytime .
-
-phScience:weather  a     skos:Concept ;
-        rdfs:label       "weather" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Weather> ;
-        skos:definition  "Associated with atmospheric air or phenomenon" ;
-        skos:related     phScience:atmospheric-pressure , phScience:cloudage , phScience:precipitation , phScience:weatherCond , phScience:visibility , phScience:daytime .
-
-phIoT:thermostat  a      skos:Concept ;
-        rdfs:label       "thermostat" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Thermostat> ;
-        skos:definition  "Senses and controls temperature of space in HVAC system.  Thermostats\nmay provide an interface for setpoint control." .
-
-phIoT:escalator  a       skos:Concept ;
-        rdfs:label       "escalator" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Escalator> ;
-        skos:definition  "Moving staircase used to move people between floors." .
-
-phIoT:dc-elec  a         skos:Concept ;
-        rdfs:label       "dc-elec" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Direct_current> ;
-        skos:definition  "Direct current electricity" .
-
-phScience:elec-current
-        a                skos:Concept ;
-        rdfs:label       "elec-current" ;
-        skos:definition  "Electrical current" ;
-        skos:narrower    phIoT:current-magnitude .
-
-phIoT:crac  a            skos:Concept ;
-        rdfs:label       "crac" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Fan_coil_unit> ;
-        skos:definition  "Computer Room Air Conditioner: An FCU designed to condition a computer\nroom." .
-
-phIoT:radiantFloor  a    skos:Concept ;
-        rdfs:label       "radiantFloor" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Underfloor_heating> ;
-        skos:definition  "Heats a space using pipes or cables embedded beneath floor." .
-
-phScience:atmospheric-pressure
-        a                skos:Concept ;
-        rdfs:label       "atmospheric-pressure" ;
-        skos:definition  "Barometric pressure exerted by the weight of the atmosphere" .
-
-phScience:power  a       skos:Concept ;
-        rdfs:label       "power" ;
-        skos:definition  "Energy consumed per unit time" ;
-        skos:narrower    phScience:elec-power .
-
-phIoT:active-power  a    skos:Concept ;
-        rdfs:label       "active-power" ;
-        skos:definition  "Active power or real power; energy transfer that contributes useful work" .
-
-phIoT:chilled-water  a   skos:Concept ;
-        rdfs:label       "chilled-water" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Chilled_water> ;
-        skos:definition  "Water used for HVAC cooling" .
-
-phScience:airQuality  a  skos:Concept ;
-        rdfs:label       "airQuality" ;
-        skos:definition  "Measurement of contaminants in the air" ;
-        skos:narrower    phScience:pm25 , phScience:tvoc , phScience:pm10 , phScience:co2 .
-
-phScience:level  a       skos:Concept ;
-        rdfs:label       "level" ;
-        skos:definition  "Fill level of a vessel containing a fluid where 0% is empty and 100% is filled" .
-
-phIoT:heatingCoil  a     skos:Concept ;
-        rdfs:label       "heatingCoil" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Heat_exchanger#HVAC_air_coils> ;
-        skos:definition  "Coil used to heat air." ;
-        skos:narrower    phIoT:steam-coil , phIoT:elec-coil , phIoT:hot-water-coil .
-
-phScience:temp  a        skos:Concept ;
-        rdfs:label       "temp" ;
-        skos:definition  "Temperature - measure of hot and cold" ;
-        skos:narrower    phScience:air-temp .
-
-phScience:pm25  a        skos:Concept ;
-        rdfs:label       "pm25" ;
-        skos:definition  "Particulate Matter 2.5; atmospheric pollutant of fine particles with/ an aerodynamic diameter of 2.5 micrometers or less" .
-
-phIoT:conduit  a         skos:Concept ;
-        rdfs:label       "conduit" ;
-        skos:definition  "Duct, pipe, or cable to convey a substance or phenomenon" ;
-        skos:narrower    phIoT:duct , phIoT:pipe , phIoT:wire .
-
-phScience:tvoc  a        skos:Concept ;
-        rdfs:label       "tvoc" ;
-        skos:definition  "Total volatile organic compound (TVOC).  This is a general term applied to the overall total volatile organic compouns (VOCs) detected." .
-
-phIoT:radiantEquip  a    skos:Concept ;
-        rdfs:label       "radiantEquip" ;
-        skos:definition  "HVAC equipment that conditions a space without forced air." ;
-        skos:narrower    phIoT:chilledBeam , phIoT:radiator , phIoT:radiantFloor .
+phIoT:movingWalkway  a   skos:Concept ;
+        rdfs:label       "movingWalkway" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Moving_walkway> ;
+        skos:definition  "Conveyor to move people across a horizontal or inclined plane." ;
+        skos:inScheme    ph: .
 
 phIoT:chilled-water-plant
         a                skos:Concept ;
         rdfs:label       "chilled-water-plant" ;
-        skos:definition  "Plant used to generate chilled water for cooling" .
+        skos:definition  "Plant used to generate chilled water for cooling" ;
+        skos:inScheme    ph: .
 
-phIoT:equip  skos:narrower  phIoT:boiler , phIoT:battery , phIoT:verticalTransport , phIoT:tank , phIoT:luminaire , phIoT:meter , phIoT:chiller , phIoT:actuator , phIoT:coolingTower , phIoT:motor , phIoT:airHandlingEquip , phIoT:thermostat , phIoT:airTerminalUnit , phIoT:radiantEquip , phIoT:heatExchanger , phIoT:fumeHood , phIoT:plant , phIoT:conduit .
-
-phIoT:drive  a           skos:Concept ;
-        rdfs:label       "drive" ;
-        skos:definition  "Related to the drive control of a `motor`" ;
-        skos:related     phIoT:drive-speed , phIoT:drive-freq .
-
-phIoT:ac-elec-meter  a   skos:Concept ;
-        rdfs:label       "ac-elec-meter" ;
-        skos:definition  "AC Electricity meter" .
-
-phIoT:volt-imbalance  a  skos:Concept ;
-        rdfs:label       "volt-imbalance" ;
-        skos:definition  "AC voltage phase imbalance" .
-
-phIoT:elec-meter  a      skos:Concept ;
-        rdfs:label       "elec-meter" ;
-        skos:definition  "Electricity meter" ;
-        skos:narrower    phIoT:ac-elec-meter , phIoT:dc-elec-meter .
-
-phScience:ice  a         skos:Concept ;
-        rdfs:label       "ice" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Ice> ;
-        skos:definition  "Water in its solid form" .
-
-phScience:illuminance
-        a                skos:Concept ;
-        rdfs:label       "illuminance" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Illuminance> ;
-        skos:definition  "Luminous flux hitting the inside of the sphere at a specific point.\n\nAlso see [ies.org]`https://www.ies.org/definitions/illuminance/`" .
-
-phIoT:blowdown-water  a  skos:Concept ;
-        rdfs:label       "blowdown-water" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Water> ;
-        skos:definition  "Water expelled from a system to remove mineral build up" .
-
-phScience:pressure  a    skos:Concept ;
-        rdfs:label       "pressure" ;
-        skos:definition  "Measure of force applied" ;
-        skos:narrower    phScience:atmospheric-pressure .
-
-phIoT:pipe  a            skos:Concept ;
-        rdfs:label       "pipe" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Pipe_(fluid_conveyance)> ;
-        skos:definition  "Conduit used to convey a fluid" .
-
-phScience:solar-irradiance
-        a                skos:Concept ;
-        rdfs:label       "solar-irradiance" ;
-        skos:definition  "Energy received on surface of the earth from the sun" .
-
-phScience:liquid  a      skos:Concept ;
-        rdfs:label       "liquid" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Liquid> ;
-        skos:definition  "Substance with definite volume but takes the shape of its container" ;
-        skos:narrower    phIoT:gasoline , phScience:water , phIoT:fuelOil .
-
-phIoT:ahu  a             skos:Concept ;
-        rdfs:label       "ahu" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Air_handler> ;
-        skos:definition  "Air Handling Unit: An enclosure with a fan that delivers air to a space\nvia ductwork and performs one or more of the functions of cleaning,\nheating, cooling, humidifying, dehumidifying, ventilating or circulating\nthe air." ;
-        skos:narrower    phIoT:rtu , phIoT:mau .
-
-phIoT:volt-magnitude  a  skos:Concept ;
-        rdfs:label       "volt-magnitude" ;
-        skos:definition  "Magnitude of electrical voltage" .
-
-phIoT:drive-speed  a     skos:Concept ;
-        rdfs:label       "drive-speed" ;
-        skos:definition  "Motor speed measured in \"%\"; 0% is off and 100% is the fastest speed." .
-
-phIoT:current-thd  a     skos:Concept ;
-        rdfs:label       "current-thd" ;
-        skos:definition  "Total harmonic current distortion" .
-
-phIoT:chilledBeam  a     skos:Concept ;
-        rdfs:label       "chilledBeam" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Chilled_beam> ;
-        skos:definition  "Conditions a space using a heat exchanger integrated into the ceiling" .
-
-phIoT:rtu  a             skos:Concept ;
-        rdfs:label       "rtu" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Air_handler> ;
-        skos:definition  "Roof Top Unit: A unitary AHU that is weatherized for outdoor use." .
-
-phIoT:hot-water-boiler
-        a                skos:Concept ;
-        rdfs:label       "hot-water-boiler" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Boiler> ;
-        skos:definition  "Boiler which outputs hot water" .
-
-phIoT:plant  a           skos:Concept ;
-        rdfs:label       "plant" ;
-        skos:definition  "Central plant used to generate a substance for a process" ;
-        skos:narrower    phIoT:chilled-water-plant , phIoT:steam-plant , phIoT:hot-water-plant .
-
-phScience:weatherCond
-        a                skos:Concept ;
-        rdfs:label       "weatherCond" ;
-        skos:definition  "Enumeration of weather conditions" .
-
-phIoT:steam-plant  a     skos:Concept ;
-        rdfs:label       "steam-plant" ;
-        skos:definition  "Plant used to generate steam for heating" .
-
-phIoT:space  skos:narrower  phIoT:zone-space , phIoT:floor , phIoT:room .
-
-phIoT:fuelOil  a         skos:Concept ;
-        rdfs:label       "fuelOil" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Fuel_oil> ;
-        skos:definition  "Petroleum based oil burned for energy" .
-
-phIoT:fcu  a             skos:Concept ;
-        rdfs:label       "fcu" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Fan_coil_unit> ;
-        skos:definition  "Fan Coil Unit: A unitary, factory-made enclosure with a fan and coil\nthat recirculates air in a space and performs one or more of the\nfunctions of cleaning, heating, cooling, humidifying, dehumidifying,\nor ventilating the air. Unit heaters are examples of FCUs." ;
-        skos:narrower    phIoT:unitVent , phIoT:crac .
-
-phIoT:reactive-power  a  skos:Concept ;
-        rdfs:label       "reactive-power" ;
-        skos:definition  "Reactive power or imaginary power; energy transfer that contributes useful work" .
-
-phIoT:pf  a              skos:Concept ;
-        rdfs:label       "pf" ;
-        skos:definition  "Electrical power factor; unitless number between 0.0 and 1.0 which is ratio\nof active to apparent power in an AC power system." .
-
-phIoT:chiller  a         skos:Concept ;
-        rdfs:label       "chiller" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Chiller> ;
-        skos:definition  "Equipment to remove heat from a liquid.  Chillers typically use a vapor\ncompression or an absorption refrigeration cycle." .
-
-phIoT:boiler  a          skos:Concept ;
-        rdfs:label       "boiler" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Boiler> ;
-        skos:definition  "Equipment to generate hot water or steam for heating" ;
-        skos:narrower    phIoT:steam-boiler , phIoT:hot-water-boiler .
-
-phScience:co2  a         skos:Concept ;
-        rdfs:label       "co2" ;
-        skos:definition  "Carbon dioxide level" .
-
-phIoT:verticalTransport
-        a                skos:Concept ;
-        rdfs:label       "verticalTransport" ;
-        skos:definition  "Equipment to move humans and materials" ;
-        skos:narrower    phIoT:elevator , phIoT:movingWalkway , phIoT:escalator .
-
-phIoT:room  a            skos:Concept ;
-        rdfs:label       "room" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Room> ;
-        skos:definition  "Enclosed room of a building" .
-
-phScience:visibility  a  skos:Concept ;
-        rdfs:label       "visibility" ;
-        skos:definition  "Distance at which light can be clearly discerned" .
-
-phIoT:hot-water  a       skos:Concept ;
-        rdfs:label       "hot-water" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Water> ;
-        skos:definition  "Hot water used for HVAC heating or supply to hot taps" .
-
-phScience:luminance  a   skos:Concept ;
-        rdfs:label       "luminance" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Luminance> ;
-        skos:definition  "Energy of light in a given direction.\n\nAlso see [ies.org]`https://www.ies.org/definitions/luminance/`" .
-
-phIoT:dc-elec-meter  a   skos:Concept ;
-        rdfs:label       "dc-elec-meter" ;
-        skos:definition  "DC Electricity meter" .
-
-phScience:wind  a        skos:Concept ;
-        rdfs:label       "wind" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Wind> ;
-        skos:definition  "Flow of air on surface of the Earth" ;
-        skos:related     phScience:wind-speed , phScience:wind-direction .
+phScience:substance  a   skos:Concept ;
+        rdfs:label       "substance" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Matter> ;
+        skos:definition  "Matter in one the three states solid, liquid, or gas" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phScience:solid , phScience:fluid ;
+        skos:related     phScience:temp .
 
 phIoT:vav  a             skos:Concept ;
         rdfs:label       "vav" ;
         rdfs:seeAlso     <https://en.wikipedia.org/wiki/Variable_air_volume> ;
         skos:definition  "Variable air volume terminal unit.  VAV systems use a constant\nair temperature with a variable air flow rate." ;
-        skos:narrower    phIoT:fanPowered-vav , phIoT:coolingOnly-vav .
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:coolingOnly-vav , phIoT:fanPowered-vav .
 
-phScience:pm10  a        skos:Concept ;
-        rdfs:label       "pm10" ;
-        skos:definition  "Particulate Matter 10; atmospheric pollutant of fine particles with an aerodynamic diameter of 10 micrometers or less" .
+phIoT:zone-space  a      skos:Concept ;
+        rdfs:label       "zone-space" ;
+        skos:definition  "Space associated with a specific system" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:hvac-zone-space , phIoT:lighting-zone-space .
 
-phIoT:steam-boiler  a    skos:Concept ;
-        rdfs:label       "steam-boiler" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Boiler> ;
-        skos:definition  "Boiler which outputs steam" .
+phIoT:radiantFloor  a    skos:Concept ;
+        rdfs:label       "radiantFloor" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Underfloor_heating> ;
+        skos:definition  "Heats a space using pipes or cables embedded beneath floor." ;
+        skos:inScheme    ph: .
 
-phIoT:makeup-water  a    skos:Concept ;
-        rdfs:label       "makeup-water" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Water> ;
-        skos:definition  "Water used used to makeup water loss through leaks, evaporation, or blowdown" .
+phIoT:drive-speed  a     skos:Concept ;
+        rdfs:label       "drive-speed" ;
+        skos:definition  "Motor speed measured in \"%\"; 0% is off and 100% is the fastest speed." ;
+        skos:inScheme    ph: .
+
+phScience:gas  a         skos:Concept ;
+        rdfs:label       "gas" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Gas> ;
+        skos:definition  "Substance with neither definite volume nor shape" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:naturalGas , phScience:air , phScience:steam .
 
 phIoT:run  a             skos:Concept ;
         rdfs:label       "run" ;
         rdfs:seeAlso     <https://en.wikipedia.org/wiki/State_(computer_science)> ;
-        skos:definition  "Primary on/off `point` of an `equip` especially used with a `vfd`.\nRun is used with Bool points where true indicates on and false indicates\noff. When paired with `cmd` this is the commanded state of the equipment.\nWhen paired with `sensor` this is the actual status of the equip.  If\nthe equipment also defines an `enable` point then both must be commanded\non in order to run the equipment." .
+        skos:definition  "Primary on/off `point` of an `equip` especially used with a `vfd`.\nRun is used with Bool points where true indicates on and false indicates\noff. When paired with `cmd` this is the commanded state of the equipment.\nWhen paired with `sensor` this is the actual status of the equip.  If\nthe equipment also defines an `enable` point then both must be commanded\non in order to run the equipment." ;
+        skos:inScheme    ph: .
 
-phIoT:ground-floor  a    skos:Concept ;
-        rdfs:label       "ground-floor" ;
+phIoT:hvac-zone-space
+        a                skos:Concept ;
+        rdfs:label       "hvac-zone-space" ;
+        skos:definition  "Zone related to conditioning of a space's air temperature and quality." ;
+        skos:inScheme    ph: .
+
+phScience:luminous-flux
+        a                skos:Concept ;
+        rdfs:label       "luminous-flux" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Luminous_flux> ;
+        skos:definition  "Total perceived light in all directions.\n\nAlso see [ies.org]`https://www.ies.org/definitions/luminous-flux/`" ;
+        skos:inScheme    ph: .
+
+phIoT:current-thd  a     skos:Concept ;
+        rdfs:label       "current-thd" ;
+        skos:definition  "Total harmonic current distortion" ;
+        skos:inScheme    ph: .
+
+phIoT:pipe  a            skos:Concept ;
+        rdfs:label       "pipe" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Pipe_(fluid_conveyance)> ;
+        skos:definition  "Conduit used to convey a fluid" ;
+        skos:inScheme    ph: .
+
+phIoT:current-imbalance
+        a                skos:Concept ;
+        rdfs:label       "current-imbalance" ;
+        skos:definition  "Current phase imbalance in a multiphase AC system" ;
+        skos:inScheme    ph: .
+
+phScience:elec-power  a  skos:Concept ;
+        rdfs:label       "elec-power" ;
+        skos:definition  "Electrical energy consumed per unit time" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:active-power .
+
+phScience:weatherCond
+        a                skos:Concept ;
+        rdfs:label       "weatherCond" ;
+        skos:definition  "Enumeration of weather conditions" ;
+        skos:inScheme    ph: .
+
+phIoT:steam-plant  a     skos:Concept ;
+        rdfs:label       "steam-plant" ;
+        skos:definition  "Plant used to generate steam for heating" ;
+        skos:inScheme    ph: .
+
+phIoT:plant  a           skos:Concept ;
+        rdfs:label       "plant" ;
+        skos:definition  "Central plant used to generate a substance for a process" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:steam-plant , phIoT:hot-water-plant , phIoT:chilled-water-plant .
+
+phIoT:elevator  a        skos:Concept ;
+        rdfs:label       "elevator" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Elevator> ;
+        skos:definition  "Enclosure used to move people between floors." ;
+        skos:inScheme    ph: .
+
+phIoT:space  skos:narrower  phIoT:floor , phIoT:room , phIct:dataCenter , phIoT:zone-space .
+
+phIoT:ac-freq  a         skos:Concept ;
+        rdfs:label       "ac-freq" ;
+        skos:definition  "Frequency of alternating current" ;
+        skos:inScheme    ph: .
+
+phIoT:current-magnitude
+        a                skos:Concept ;
+        rdfs:label       "current-magnitude" ;
+        skos:definition  "Magnitude of electrical current" ;
+        skos:inScheme    ph: .
+
+phIoT:subterranean-floor
+        a                skos:Concept ;
+        rdfs:label       "subterranean-floor" ;
         rdfs:seeAlso     <https://en.wikipedia.org/wiki/Storey> ;
-        skos:definition  "Floor at ground level.  In North America this is typically called\nthe first floor, but in Europe its often labelled as floor zero.\nIf `floorNum` is defined, then it must be set to zero." .
+        skos:definition  "Floor below ground level.  Subterranean floors are also known as\nbasements, lower levels, or cellars." ;
+        skos:inScheme    ph: .
+
+phScience:webBulb  a     skos:Concept ;
+        rdfs:label       "webBulb" ;
+        skos:definition  "Wet bulb air temperature.  Temperature which the air would have if cooled to saturation by the evaporation of water into it." ;
+        skos:inScheme    ph: .
+
+phIoT:fumeHood  a        skos:Concept ;
+        rdfs:label       "fumeHood" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Fume_hood> ;
+        skos:definition  "Ventilation equipment to limit exposure to hazardous fumes." ;
+        skos:inScheme    ph: .
+
+phIoT:room  a            skos:Concept ;
+        rdfs:label       "room" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Room> ;
+        skos:definition  "Enclosed room of a building" ;
+        skos:inScheme    ph: .
+
+phScience:weather  a     skos:Concept ;
+        rdfs:label       "weather" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Weather> ;
+        skos:definition  "Associated with atmospheric air or phenomenon" ;
+        skos:inScheme    ph: ;
+        skos:related     phScience:weatherCond , phScience:precipitation , phScience:daytime , phScience:cloudage , phScience:visibility , phScience:atmospheric-pressure .
+
+phScience:feelsLike  a   skos:Concept ;
+        rdfs:label       "feelsLike" ;
+        skos:definition  "Apparent temperature perceived when considering humidity, wind chill, and heat index" ;
+        skos:inScheme    ph: .
+
+phIoT:vfd  a             skos:Concept ;
+        rdfs:label       "vfd" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Variable-frequency_drive> ;
+        skos:definition  "Motor with variable frequency drive." ;
+        skos:inScheme    ph: .
+
+phScience:humidity  a    skos:Concept ;
+        rdfs:label       "humidity" ;
+        skos:definition  "Percent relative humidity; measure of moisture in the air" ;
+        skos:inScheme    ph: .
+
+phScience:direction  a   skos:Concept ;
+        rdfs:label       "direction" ;
+        skos:definition  "Compass direction measured in degrees: North: 0° = 360°, East: 90°, South: 180°, West: 270°" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phScience:wind-direction .
+
+phIoT:point  skos:narrower  phIoT:his-point , phIoT:cur-point , phIoT:writable-point , phIoT:weather-point .
+
+phScience:wind-direction
+        a                skos:Concept ;
+        rdfs:label       "wind-direction" ;
+        skos:definition  "Compass direction from which wind originates" ;
+        skos:inScheme    ph: .
+
+phScience:wind  a        skos:Concept ;
+        rdfs:label       "wind" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Wind> ;
+        skos:definition  "Flow of air on surface of the Earth" ;
+        skos:inScheme    ph: ;
+        skos:related     phScience:wind-speed , phScience:wind-direction .
+
+phScience:pressure  a    skos:Concept ;
+        rdfs:label       "pressure" ;
+        skos:definition  "Measure of force applied" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phScience:atmospheric-pressure .
+
+phScience:luminous-intensity
+        a                skos:Concept ;
+        rdfs:label       "luminous-intensity" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Luminous_intensity> ;
+        skos:definition  "Perceived light in a particular direction per unit solid angle.\n\nAlso see [ies.org]`https://www.ies.org/definitions/luminous-intensity/`" ;
+        skos:inScheme    ph: .
+
+phIoT:gasoline  a        skos:Concept ;
+        rdfs:label       "gasoline" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Gasoline> ;
+        skos:definition  "Petroleum derived liquid used as a fuel source" ;
+        skos:inScheme    ph: .
+
+phIoT:fanPowered-vav  a  skos:Concept ;
+        rdfs:label       "fanPowered-vav" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Variable_air_volume> ;
+        skos:definition  "VAV contains a fan with reheat" ;
+        skos:inScheme    ph: .
+
+phScience:pm10  a        skos:Concept ;
+        rdfs:label       "pm10" ;
+        skos:definition  "Particulate Matter 10; atmospheric pollutant of fine particles with an aerodynamic diameter of 10 micrometers or less" ;
+        skos:inScheme    ph: .
+
+phScience:cloudage  a    skos:Concept ;
+        rdfs:label       "cloudage" ;
+        skos:definition  "Percentage of sky obscurred by clouds. This is also known as cloudiness, or cloud amount." ;
+        skos:inScheme    ph: .
+
+phScience:airQuality  a  skos:Concept ;
+        rdfs:label       "airQuality" ;
+        skos:definition  "Measurement of contaminants in the air" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phScience:tvoc , phScience:pm10 , phScience:pm25 , phScience:co2 .
 
 phIoT:coolingCoil  a     skos:Concept ;
         rdfs:label       "coolingCoil" ;
         rdfs:seeAlso     <https://en.wikipedia.org/wiki/Heat_exchanger#HVAC_air_coils> ;
         skos:definition  "Coil used to cool air." ;
-        skos:narrower    phIoT:chilled-water-coil .
+        skos:inScheme    ph: .
 
-phIoT:current-angle  a   skos:Concept ;
-        rdfs:label       "current-angle" ;
-        skos:definition  "AC current phase angle" .
+phIoT:boiler  a          skos:Concept ;
+        rdfs:label       "boiler" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Boiler> ;
+        skos:definition  "Equipment to generate hot water or steam for heating" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:hot-water-boiler , phIoT:steam-boiler .
 
-phIoT:hot-water-plant
+phScience:wind-speed  a  skos:Concept ;
+        rdfs:label       "wind-speed" ;
+        skos:definition  "Wind flow speed" ;
+        skos:inScheme    ph: .
+
+phIoT:coolingTower  a    skos:Concept ;
+        rdfs:label       "coolingTower" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Cooling_tower> ;
+        skos:definition  "Equipment to transfer waste heat into the atmosphere" ;
+        skos:inScheme    ph: .
+
+phIoT:conduit  a         skos:Concept ;
+        rdfs:label       "conduit" ;
+        skos:definition  "Duct, pipe, or cable to convey a substance or phenomenon" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:pipe , phIoT:duct , phIoT:wire .
+
+phScience:solar-irradiance
         a                skos:Concept ;
-        rdfs:label       "hot-water-plant" ;
-        skos:definition  "Plant used to generate hot water for heating" .
+        rdfs:label       "solar-irradiance" ;
+        skos:definition  "Energy received on surface of the earth from the sun" ;
+        skos:inScheme    ph: .
 
-phIoT:lighting-zone-space
-        a                skos:Concept ;
-        rdfs:label       "lighting-zone-space" ;
-        skos:definition  "Zone related to lighting system" .
-
-phIoT:battery  a         skos:Concept ;
-        rdfs:label       "battery" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Electric_battery> ;
-        skos:definition  "Equipment used to store electric energy" .
+phIoT:luminaire  a       skos:Concept ;
+        rdfs:label       "luminaire" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Light_fixture> ;
+        skos:definition  "Light fixture using electricity to provide illumination" ;
+        skos:inScheme    ph: .
 
 phIoT:floor  a           skos:Concept ;
         rdfs:label       "floor" ;
         rdfs:seeAlso     <https://en.wikipedia.org/wiki/Storey> ;
         skos:definition  "Storey of a building" ;
-        skos:narrower    phIoT:ground-floor , phIoT:roof-floor , phIoT:subterranean-floor .
-
-phIoT:elevator  a        skos:Concept ;
-        rdfs:label       "elevator" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Elevator> ;
-        skos:definition  "Enclosure used to move people between floors." .
-
-phScience:wind-direction
-        a                skos:Concept ;
-        rdfs:label       "wind-direction" ;
-        skos:definition  "Compass direction from which wind originates" .
-
-phIoT:volt-angle  a      skos:Concept ;
-        rdfs:label       "volt-angle" ;
-        skos:definition  "AC voltage phase angle" .
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:ground-floor , phIoT:subterranean-floor , phIoT:roof-floor .
 
 phScience:water  a       skos:Concept ;
         rdfs:label       "water" ;
         rdfs:seeAlso     <https://en.wikipedia.org/wiki/Water> ;
         skos:definition  "Water in its liquid form" ;
-        skos:narrower    phIoT:hot-water , phIoT:blowdown-water , phIoT:domestic-water , phIoT:condenser-water , phIoT:makeup-water , phIoT:chilled-water .
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:makeup-water , phIoT:blowdown-water , phIoT:domestic-water , phIoT:hot-water , phIoT:condenser-water , phIoT:chilled-water .
+
+phIoT:naturalGas  a      skos:Concept ;
+        rdfs:label       "naturalGas" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Natural_gas> ;
+        skos:definition  "Fossil fuel energy source consisting largely of methane and other hydrocarbons" ;
+        skos:inScheme    ph: .
+
+phIoT:heatingCoil  a     skos:Concept ;
+        rdfs:label       "heatingCoil" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Heat_exchanger#HVAC_air_coils> ;
+        skos:definition  "Coil used to heat air." ;
+        skos:inScheme    ph: .
+
+phIoT:radiator  a        skos:Concept ;
+        rdfs:label       "radiator" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Radiator_(heating)> ;
+        skos:definition  "Heats a space using exposed pipes or coils.  Hot water and steam\nradiators are often cast iron and installed directly in the space\nor along the baseboard.  Electric radiators are typically installed\non the baseboard." ;
+        skos:inScheme    ph: .
+
+phIoT:stateQuantity  a   skos:Concept ;
+        rdfs:label       "stateQuantity" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/State_(computer_science)> ;
+        skos:definition  "What is sensed or controlled of software, hardware, or process state." ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:run , phIoT:enable .
+
+phIoT:hot-water-boiler
+        a                skos:Concept ;
+        rdfs:label       "hot-water-boiler" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Boiler> ;
+        skos:definition  "Boiler which outputs hot water" ;
+        skos:inScheme    ph: .
+
+phScience:air-temp  a    skos:Concept ;
+        rdfs:label       "air-temp" ;
+        skos:definition  "Dry bulb temperature" ;
+        skos:inScheme    ph: .
+
+phScience:ice  a         skos:Concept ;
+        rdfs:label       "ice" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Ice> ;
+        skos:definition  "Water in its solid form" ;
+        skos:inScheme    ph: .
+
+phIoT:heatExchanger  a   skos:Concept ;
+        rdfs:label       "heatExchanger" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Heat_exchanger> ;
+        skos:definition  "Equipment to transfer heat between two working fluids." ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:coil .
+
+phIoT:lighting-zone-space
+        a                skos:Concept ;
+        rdfs:label       "lighting-zone-space" ;
+        skos:definition  "Zone related to lighting system" ;
+        skos:inScheme    ph: .
+
+phIoT:enable  a          skos:Concept ;
+        rdfs:label       "enable" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/State_(computer_science)> ;
+        skos:definition  "Secondary on/off `point` of an `equip` especially used with a `vfd`.\nEnable is used with Bool points where true indicates on and false\nindicates off.  Equip with an enable should always also define a `run`\npoint which indicates the primary on/off state of the equipment." ;
+        skos:inScheme    ph: .
+
+phScience:solar  a       skos:Concept ;
+        rdfs:label       "solar" ;
+        skos:definition  "Relating to energy from the sun" ;
+        skos:inScheme    ph: ;
+        skos:related     phScience:solar-irradiance .
+
+phIoT:his-point  a       skos:Concept ;
+        rdfs:label       "his-point" ;
+        skos:definition  "Historized point with a history log of timestamp/value pairs.  Points\nmarked as historized indicate the system can response to queries via\nthe 'hisRead' operation to return a trend log of timestamp/value pairs.\n\nThere are typically two mechanisms for historization:\n  - the local system performs the historization by logging the\n    point's `curVal` to local storage\n  - in overlay systems a downstream device performs the historization\n    and the local system synchronizes the history data in batch on\n    a periodic basis" ;
+        skos:inScheme    ph: .
+
+phIoT:panel  a           skos:Concept ;
+        rdfs:label       "panel" ;
+        skos:definition  "Enclosure for electrical and control equipment.  Panels may be\nused to isolate electrical connections and provide environmental\nprotection." ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:elec-panel , phIct:controls-panel .
+
+phIoT:state  a           skos:Concept ;
+        rdfs:label       "state" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/State_(computer_science)> ;
+        skos:definition  "Software, hardware, or process control status.  This phenomenon\nis used as a catch-all for points which don't directly sense or\ncontrol physical phenomenon." ;
+        skos:inScheme    ph: ;
+        skos:related     phIoT:run , phIoT:enable .
+
+phIoT:escalator  a       skos:Concept ;
+        rdfs:label       "escalator" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Escalator> ;
+        skos:definition  "Moving staircase used to move people between floors." ;
+        skos:inScheme    ph: .
+
+phScience:illuminance
+        a                skos:Concept ;
+        rdfs:label       "illuminance" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Illuminance> ;
+        skos:definition  "Luminous flux hitting the inside of the sphere at a specific point.\n\nAlso see [ies.org]`https://www.ies.org/definitions/illuminance/`" ;
+        skos:inScheme    ph: .
+
+phScience:elec  a        skos:Concept ;
+        rdfs:label       "elec" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Electricity> ;
+        skos:definition  "Associated with electricity, electric charge" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:ac-elec , phIoT:dc-elec ;
+        skos:related     phScience:elec-current , phScience:elec-energy , phScience:elec-power , phScience:elec-volt .
+
+phIoT:meter  a           skos:Concept ;
+        rdfs:label       "meter" ;
+        skos:definition  "Equipment to meter a substance or phenomenon" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:flow-meter , phIoT:elec-meter , phIoT:thermal-meter .
+
+phIoT:mau  a             skos:Concept ;
+        rdfs:label       "mau" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Air_handler> ;
+        skos:definition  "Makeup Air Unit: An AHU that brings in 100% outside air and no\nrecirculated air." ;
+        skos:inScheme    ph: .
+
+phIoT:pump-motor  a      skos:Concept ;
+        rdfs:label       "pump-motor" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Pump> ;
+        skos:definition  "Motor used with a pump to move fluid." ;
+        skos:inScheme    ph: .
+
+phScience:atmospheric-pressure
+        a                skos:Concept ;
+        rdfs:label       "atmospheric-pressure" ;
+        skos:definition  "Barometric pressure exerted by the weight of the atmosphere" ;
+        skos:inScheme    ph: .
+
+phIoT:reactive-power  a  skos:Concept ;
+        rdfs:label       "reactive-power" ;
+        skos:definition  "Reactive power or imaginary power; energy transfer that contributes useful work" ;
+        skos:inScheme    ph: .
+
+phIoT:current-angle  a   skos:Concept ;
+        rdfs:label       "current-angle" ;
+        skos:definition  "AC current phase angle" ;
+        skos:inScheme    ph: .
 
 phIoT:refrig  a          skos:Concept ;
         rdfs:label       "refrig" ;
         rdfs:seeAlso     <https://en.wikipedia.org/wiki/Refrigerant> ;
-        skos:definition  "Fluid used in refrigeration and heat exchange.  Refrigerants typically\nalternate between liquid and gas state." .
+        skos:definition  "Fluid used in refrigeration and heat exchange.  Refrigerants typically\nalternate between liquid and gas state." ;
+        skos:inScheme    ph: .
+
+phScience:co2  a         skos:Concept ;
+        rdfs:label       "co2" ;
+        skos:definition  "Carbon dioxide level" ;
+        skos:inScheme    ph: .
+
+phIoT:motor  a           skos:Concept ;
+        rdfs:label       "motor" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Electric_motor> ;
+        skos:definition  "Equipment that converts electrical energy into mechanical energy" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:pump-motor , phIoT:vfd , phIoT:fan-motor .
+
+phIoT:chilledBeam  a     skos:Concept ;
+        rdfs:label       "chilledBeam" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Chilled_beam> ;
+        skos:definition  "Conditions a space using a heat exchanger integrated into the ceiling" ;
+        skos:inScheme    ph: .
+
+phScience:solid  a       skos:Concept ;
+        rdfs:label       "solid" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Solid> ;
+        skos:definition  "Substance with definite shape and volume" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phScience:ice .
+
+phIoT:hot-water-plant
+        a                skos:Concept ;
+        rdfs:label       "hot-water-plant" ;
+        skos:definition  "Plant used to generate hot water for heating" ;
+        skos:inScheme    ph: .
+
+phScience:visibility  a  skos:Concept ;
+        rdfs:label       "visibility" ;
+        skos:definition  "Distance at which light can be clearly discerned" ;
+        skos:inScheme    ph: .
+
+phIoT:chilled-water  a   skos:Concept ;
+        rdfs:label       "chilled-water" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Chilled_water> ;
+        skos:definition  "Water used for HVAC cooling" ;
+        skos:inScheme    ph: .
+
+phScience:elec-energy
+        a                skos:Concept ;
+        rdfs:label       "elec-energy" ;
+        skos:definition  "Electrical energy consumed" ;
+        skos:inScheme    ph: .
+
+phScience:daytime  a     skos:Concept ;
+        rdfs:label       "daytime" ;
+        skos:definition  "Time between sunrise and sunset" ;
+        skos:inScheme    ph: .
+
+phIoT:writable-point  a  skos:Concept ;
+        rdfs:label       "writable-point" ;
+        skos:definition  "Point with writable output using 16-level priority array.  Writable\npoints typically are a setpont or actuator command.  Haystack writable\npoints are modeled on the BACnet 16-level priority array with a\nrelinquish default which effectively acts as level 17.\n\nThe following levels have special behavior:\n - **Level 1**: highest priority reserved for emergency overrides\n - **Level 8**: manual override with ability to set timer to expire back to auto\n - **Default**: implicitly acts as level 17 for relinquish default\n\nThe priority array provides for contention resolution when many different\ncontrol applications may be vying for control of a given point. Low level\napplications like scheduling typically control levels 14, 15, or 16. Then\nusers can override at level 8. But a higher levels like 2 to 7 can be used\nto trump a user override (for example a demand response energy routine\nthat requires higher priority).\n\nThe actual value to write is resolved by starting at level 1 and working down\nto relinquish default to find the first non-null value. It is possible for\nall levels to be null, in which case the overall write output is null (which\nin turn may be auto/null to another system). Anytime a null value is written\nto a priority level, we say that level has been set to auto or released (this\nallows the next highest level to take command of the output)." ;
+        skos:inScheme    ph: .
+
+phScience:freq  a        skos:Concept ;
+        rdfs:label       "freq" ;
+        skos:definition  "Occurrences per unit time" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:ac-freq .
+
+phIoT:thermal-meter  a   skos:Concept ;
+        rdfs:label       "thermal-meter" ;
+        skos:definition  "Meter to measure energy transfer via fluid" ;
+        skos:inScheme    ph: .
+
+phIoT:apparent-power  a  skos:Concept ;
+        rdfs:label       "apparent-power" ;
+        skos:definition  "Apparent power is perceived magnitude of power due to the combination of active and reactive power" ;
+        skos:inScheme    ph: .
 
 phIoT:heatPump  a        skos:Concept ;
         rdfs:label       "heatPump" ;
         rdfs:seeAlso     <https://en.wikipedia.org/wiki/Heat_pump> ;
-        skos:definition  "Heat pump: An air handling equipment which employs a vapor compression\ncycle with a reversing valve to provide heating or cooling to a space." .
+        skos:definition  "Heat pump: An air handling equipment which employs a vapor compression\ncycle with a reversing valve to provide heating or cooling to a space." ;
+        skos:inScheme    ph: .
 
-phIoT:fanPowered-vav  a  skos:Concept ;
-        rdfs:label       "fanPowered-vav" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Variable_air_volume> ;
-        skos:definition  "VAV contains a fan with reheat" .
+phIoT:domestic-water  a  skos:Concept ;
+        rdfs:label       "domestic-water" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Water> ;
+        skos:definition  "Tap water for drinking, washing, cooking, and flushing of toliets" ;
+        skos:inScheme    ph: .
 
-phIoT:movingWalkway  a   skos:Concept ;
-        rdfs:label       "movingWalkway" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Moving_walkway> ;
-        skos:definition  "Conveyor to move people across a horizontal or inclined plane." .
+phScience:elec-current
+        a                skos:Concept ;
+        rdfs:label       "elec-current" ;
+        skos:definition  "Electrical current" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:current-magnitude .
 
-phIoT:thermal-meter  a   skos:Concept ;
-        rdfs:label       "thermal-meter" ;
-        skos:definition  "Meter to measure energy transfer via fluid" .
+phScience:quantity  skos:narrower  phIoT:stateQuantity , phScience:speed , phIoT:current-imbalance , phScience:daytime , phIoT:pf , phIoT:apparent-power , phIoT:drive-speed , phScience:luminance , phScience:webBulb , phIoT:reactive-power , phScience:illuminance , phScience:pressure , phScience:temp , phScience:weatherCond , phIoT:volt-imbalance , phScience:cloudage , phScience:feelsLike , phScience:level , phIoT:volt-angle , phScience:precipitation , phScience:freq , phScience:luminous-flux , phScience:visibility , phScience:humidity , phScience:airQuality , phScience:flow , phScience:power , phScience:irradiance , phIoT:drive-freq , phScience:elec-volt , phIoT:current-angle , phScience:energy , phScience:direction , phScience:luminous-intensity , phScience:dewPoint , phIoT:current-thd , phScience:elec-current .
 
 phIoT:unitVent  a        skos:Concept ;
         rdfs:label       "unitVent" ;
         rdfs:seeAlso     <https://en.wikipedia.org/wiki/Fan_coil_unit> ;
-        skos:definition  "Unit Ventilator: An FCU that has direct access to outside air to provide\nthe space with ventilation." .
+        skos:definition  "Unit Ventilator: An FCU that has direct access to outside air to provide\nthe space with ventilation." ;
+        skos:inScheme    ph: .
 
-phIoT:current-imbalance
-        a                skos:Concept ;
-        rdfs:label       "current-imbalance" ;
-        skos:definition  "Current phase imbalance in a multiphase AC system" .
+phIoT:active-power  a    skos:Concept ;
+        rdfs:label       "active-power" ;
+        skos:definition  "Active power or real power; energy transfer that contributes useful work" ;
+        skos:inScheme    ph: .
 
-phIoT:fumeHood  a        skos:Concept ;
-        rdfs:label       "fumeHood" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Fume_hood> ;
-        skos:definition  "Ventilation equipment to limit exposure to hazardous fumes." .
+phScience:steam  a       skos:Concept ;
+        rdfs:label       "steam" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Steam> ;
+        skos:definition  "Water in its gas form" ;
+        skos:inScheme    ph: .
+
+phIct:rack  a            skos:Concept ;
+        rdfs:label       "rack" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/19-inch_rack> ;
+        skos:definition  "Enclosure or chassis used to mount computer and networking gear.\nDevices are mounted to rails of a standard width, typically 19 or 23\ninches.  Height is measured in *rack units* where one 1U is 1.75 inches.\nA full rack has a height of 42U." ;
+        skos:inScheme    ph: .
+
+phIoT:tank  a            skos:Concept ;
+        rdfs:label       "tank" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Storage_tank> ;
+        skos:definition  "Tank used to store a substance for temporary holding" ;
+        skos:inScheme    ph: .
+
+phScience:liquid  a      skos:Concept ;
+        rdfs:label       "liquid" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Liquid> ;
+        skos:definition  "Substance with definite volume but takes the shape of its container" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:condensate , phScience:water , phIoT:fuelOil , phIoT:gasoline .
+
+phIoT:cav  a             skos:Concept ;
+        rdfs:label       "cav" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Constant_air_volume> ;
+        skos:definition  "Constant air volume terminal unit.  CAV systems use a constant\nair flow rate with a variable air temperature." ;
+        skos:inScheme    ph: .
+
+phIoT:ac-elec-meter  a   skos:Concept ;
+        rdfs:label       "ac-elec-meter" ;
+        skos:definition  "AC Electricity meter" ;
+        skos:inScheme    ph: .
+
+phScience:fluid  a       skos:Concept ;
+        rdfs:label       "fluid" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Fluid> ;
+        skos:definition  "Liquid or gas" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:refrig , phScience:liquid , phScience:gas ;
+        skos:related     phScience:pressure , phScience:level , phScience:flow .
+
+phIoT:thermostat  a      skos:Concept ;
+        rdfs:label       "thermostat" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Thermostat> ;
+        skos:definition  "Senses and controls temperature of space in HVAC system.  Thermostats\nmay provide an interface for setpoint control." ;
+        skos:inScheme    ph: .
+
+phScience:light  a       skos:Concept ;
+        rdfs:label       "light" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Light> ;
+        skos:definition  "Electromagnetic radiation in the visibile spectrum" ;
+        skos:inScheme    ph: ;
+        skos:related     phScience:luminance , phScience:luminous-intensity , phScience:illuminance , phScience:luminous-flux .
+
+phScience:dewPoint  a    skos:Concept ;
+        rdfs:label       "dewPoint" ;
+        skos:definition  "Dew point temperature at which water vapor will form dew" ;
+        skos:inScheme    ph: .
+
+phIoT:dc-elec  a         skos:Concept ;
+        rdfs:label       "dc-elec" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Direct_current> ;
+        skos:definition  "Direct current electricity" ;
+        skos:inScheme    ph: .
+
+phIoT:valve-actuator  a  skos:Concept ;
+        rdfs:label       "valve-actuator" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Valve> ;
+        skos:definition  "Actuator to regulate the flow of fluid." ;
+        skos:inScheme    ph: .
 
 phIoT:airHandlingEquip
         a                skos:Concept ;
         rdfs:label       "airHandlingEquip" ;
         rdfs:seeAlso     <https://en.wikipedia.org/wiki/Air_handler> ;
         skos:definition  "HVAC equipment that conditions and delivers air via one or more fans.\nConditioning of air includes heating, cooling, humidificiation,\ndehumidification, and ventilation." ;
+        skos:inScheme    ph: ;
         skos:narrower    phIoT:heatPump , phIoT:ahu , phIoT:fcu .
 
-phScience:solar  a       skos:Concept ;
-        rdfs:label       "solar" ;
-        skos:definition  "Relating to energy from the sun" ;
-        skos:related     phScience:solar-irradiance .
-
-phIoT:vfd  a             skos:Concept ;
-        rdfs:label       "vfd" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Variable-frequency_drive> ;
-        skos:definition  "Motor with variable frequency drive." .
-
-phScience:elec-volt  a   skos:Concept ;
-        rdfs:label       "elec-volt" ;
-        skos:definition  "Electrical voltage, potential difference" ;
-        skos:narrower    phIoT:volt-magnitude .
-
-phScience:luminous-flux
-        a                skos:Concept ;
-        rdfs:label       "luminous-flux" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Luminous_flux> ;
-        skos:definition  "Total perceived light in all directions.\n\nAlso see [ies.org]`https://www.ies.org/definitions/luminous-flux/`" .
-
-phScience:elec  a        skos:Concept ;
-        rdfs:label       "elec" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Electricity> ;
-        skos:definition  "Associated with electricity, electric charge" ;
-        skos:narrower    phIoT:ac-elec , phIoT:dc-elec ;
-        skos:related     phScience:elec-power , phScience:elec-volt , phScience:elec-current , phScience:elec-energy .
-
-phIoT:current-magnitude
-        a                skos:Concept ;
-        rdfs:label       "current-magnitude" ;
-        skos:definition  "Magnitude of electrical current" .
-
-phScience:irradiance  a  skos:Concept ;
-        rdfs:label       "irradiance" ;
-        skos:definition  "Energy received at a surface by area" ;
-        skos:narrower    phScience:solar-irradiance .
-
-phScience:substance  a   skos:Concept ;
-        rdfs:label       "substance" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Matter> ;
-        skos:definition  "Matter in one the three states solid, liquid, or gas" ;
-        skos:narrower    phScience:solid , phScience:fluid ;
-        skos:related     phScience:temp .
-
-phScience:dewPoint  a    skos:Concept ;
-        rdfs:label       "dewPoint" ;
-        skos:definition  "Dew point temperature at which water vapor will form dew" .
-
-phIoT:state  a           skos:Concept ;
-        rdfs:label       "state" ;
-        rdfs:seeAlso     <https://en.wikipedia.org/wiki/State_(computer_science)> ;
-        skos:definition  "Software, hardware, or process control status.  This phenomenon\nis used as a catch-all for points which don't directly sense or\ncontrol physical phenomenon." ;
-        skos:related     phIoT:enable , phIoT:run .
-
-phScience:humidity  a    skos:Concept ;
-        rdfs:label       "humidity" ;
-        skos:definition  "Percent relative humidity; measure of moisture in the air" .
+phIoT:battery  a         skos:Concept ;
+        rdfs:label       "battery" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Electric_battery> ;
+        skos:definition  "Equipment used to store electric energy" ;
+        skos:inScheme    ph: .
 
 phIoT:airTerminalUnit
         a                skos:Concept ;
         rdfs:label       "airTerminalUnit" ;
         skos:definition  "Equipment in air distribution systems which terminate at the space.\nTerminal units receive air from `airHandlingEquip` which have the\nprimarily responsibility to condition air.  Terminal units are primarily\nresponsible for delivery of air to the space and tempering the temperature." ;
-        skos:narrower    phIoT:vav , phIoT:cav .
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:cav , phIoT:vav .
+
+phIoT:radiantEquip  a    skos:Concept ;
+        rdfs:label       "radiantEquip" ;
+        skos:definition  "HVAC equipment that conditions a space without forced air." ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:radiantFloor , phIoT:radiator , phIoT:chilledBeam .
+
+phIoT:wire  a            skos:Concept ;
+        rdfs:label       "wire" ;
+        skos:definition  "Cabling used to convey electricity or data" ;
+        skos:inScheme    ph: .
+
+phIoT:actuator  a        skos:Concept ;
+        rdfs:label       "actuator" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Actuator> ;
+        skos:definition  "Equipment to move or control a mechanism.  Actuators may be manually\noperated or automated via a control system to convert an energy source\ninto mechanical energy.  Typically the energy source is electricity,\nhydraulics, or pneumatics." ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:valve-actuator , phIoT:damper-actuator .
+
+phIoT:duct  a            skos:Concept ;
+        rdfs:label       "duct" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Duct_(flow)> ;
+        skos:definition  "Conduit used to convey air for HVAC" ;
+        skos:inScheme    ph: .
+
+phIoT:volt-angle  a      skos:Concept ;
+        rdfs:label       "volt-angle" ;
+        skos:definition  "AC voltage phase angle" ;
+        skos:inScheme    ph: .
+
+phIoT:coil  a            skos:Concept ;
+        rdfs:label       "coil" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Heat_exchanger#HVAC_air_coils> ;
+        skos:definition  "Heat exchanger used to heat or cool air.  Coils are sub-components\nof HVAC equipment such as `airHandlingEquip`." ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:heatingCoil , phIoT:coolingCoil .
+
+phIoT:condenser-water
+        a                skos:Concept ;
+        rdfs:label       "condenser-water" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Water> ;
+        skos:definition  "Water used used to remove heat through condensation" ;
+        skos:inScheme    ph: .
+
+phIoT:condensate  a      skos:Concept ;
+        rdfs:label       "condensate" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Liquid> ;
+        skos:definition  "Liquid phase produced by the condensation of steam or other gas" ;
+        skos:inScheme    ph: .
+
+phIct:controls-panel  a  skos:Concept ;
+        rdfs:label       "controls-panel" ;
+        skos:definition  "Panel housing controllers and networking gear" ;
+        skos:inScheme    ph: .
+
+phIoT:damper-actuator
+        a                skos:Concept ;
+        rdfs:label       "damper-actuator" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Damper_(flow)> ;
+        skos:definition  "Actuator to regulate the flow of air." ;
+        skos:inScheme    ph: .
+
+phIoT:hot-water  a       skos:Concept ;
+        rdfs:label       "hot-water" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Water> ;
+        skos:definition  "Hot water used for HVAC heating or supply to hot taps" ;
+        skos:inScheme    ph: .
+
+phIoT:weather-point  a   skos:Concept ;
+        rdfs:label       "weather-point" ;
+        skos:definition  "Weather station sensor point" ;
+        skos:inScheme    ph: .
+
+phScience:luminance  a   skos:Concept ;
+        rdfs:label       "luminance" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Luminance> ;
+        skos:definition  "Energy of light in a given direction.\n\nAlso see [ies.org]`https://www.ies.org/definitions/luminance/`" ;
+        skos:inScheme    ph: .
+
+phIoT:elec-panel  a      skos:Concept ;
+        rdfs:label       "elec-panel" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Distribution_board> ;
+        skos:definition  "Physical housing for electrical circuits, fuses, and breakers" ;
+        skos:inScheme    ph: .
+
+phScience:flow  a        skos:Concept ;
+        rdfs:label       "flow" ;
+        skos:definition  "Measure of volumetric flow of fluid" ;
+        skos:inScheme    ph: .
+
+phIct:dataCenter  a      skos:Concept ;
+        rdfs:label       "dataCenter" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Data_center> ;
+        skos:definition  "Space used to house computer and networking gear." ;
+        skos:inScheme    ph: .
+
+phScience:speed  a       skos:Concept ;
+        rdfs:label       "speed" ;
+        skos:definition  "Distance per unit time" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phScience:wind-speed .
+
+phScience:irradiance  a  skos:Concept ;
+        rdfs:label       "irradiance" ;
+        skos:definition  "Energy received at a surface by area" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phScience:solar-irradiance .
+
+phIoT:fan-motor  a       skos:Concept ;
+        rdfs:label       "fan-motor" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Fan_(machine)> ;
+        skos:definition  "Motor used with a fan to create air flow." ;
+        skos:inScheme    ph: .
+
+phIoT:verticalTransport
+        a                skos:Concept ;
+        rdfs:label       "verticalTransport" ;
+        skos:definition  "Equipment to move humans and materials" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:movingWalkway , phIoT:escalator , phIoT:elevator .
+
+phIoT:elec-meter  a      skos:Concept ;
+        rdfs:label       "elec-meter" ;
+        skos:definition  "Electricity meter" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:ac-elec-meter , phIoT:dc-elec-meter .
+
+phIoT:coolingOnly-vav
+        a                skos:Concept ;
+        rdfs:label       "coolingOnly-vav" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Variable_air_volume> ;
+        skos:definition  "Cooling only VAV without fan or reheat" ;
+        skos:inScheme    ph: .
+
+phIoT:dc-elec-meter  a   skos:Concept ;
+        rdfs:label       "dc-elec-meter" ;
+        skos:definition  "DC Electricity meter" ;
+        skos:inScheme    ph: .
+
+phIoT:cur-point  a       skos:Concept ;
+        rdfs:label       "cur-point" ;
+        skos:definition  "Point with support to report a \"real-time\" current value.  By real-time\nwe typically mean freshness within the order of of a few seconds or at\nmost a few minutes.  For systems with direct I/O the current value is\ntypically driven by the I/O scan rate. For overlay systems which acquire\ndata via a protocol such as BACnet or Modbus then the current value\nis typically refreshed using polling or subscription over a network." ;
+        skos:inScheme    ph: .
+
+phIoT:ahu  a             skos:Concept ;
+        rdfs:label       "ahu" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Air_handler> ;
+        skos:definition  "Air Handling Unit: An enclosure with a fan that delivers air to a space\nvia ductwork and performs one or more of the functions of cleaning,\nheating, cooling, humidifying, dehumidifying, ventilating or circulating\nthe air." ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:mau , phIoT:rtu .
+
+phScience:precipitation
+        a                skos:Concept ;
+        rdfs:label       "precipitation" ;
+        skos:definition  "Amount of atmospheric water vapor fallen including rain, sleet, snow, and hail" ;
+        skos:inScheme    ph: .
+
+phIoT:drive-freq  a      skos:Concept ;
+        rdfs:label       "drive-freq" ;
+        skos:definition  "Motor frequency measured in \"Hz\"." ;
+        skos:inScheme    ph: .
+
+phScience:power  a       skos:Concept ;
+        rdfs:label       "power" ;
+        skos:definition  "Energy consumed per unit time" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phScience:elec-power .
+
+phIoT:crac  a            skos:Concept ;
+        rdfs:label       "crac" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Fan_coil_unit> ;
+        skos:definition  "Computer Room Air Conditioner: An FCU designed to condition a computer\nroom." ;
+        skos:inScheme    ph: .
+
+phIoT:volt-imbalance  a  skos:Concept ;
+        rdfs:label       "volt-imbalance" ;
+        skos:definition  "AC voltage phase imbalance" ;
+        skos:inScheme    ph: .
+
+phScience:level  a       skos:Concept ;
+        rdfs:label       "level" ;
+        skos:definition  "Fill level of a vessel containing a fluid where 0% is empty and 100% is filled" ;
+        skos:inScheme    ph: .
+
+phIoT:roof-floor  a      skos:Concept ;
+        rdfs:label       "roof-floor" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Storey> ;
+        skos:definition  "The roof floor is the topmost level of a building.  It is often\nwhere HVAC equipment is located such as rooftop AHUs." ;
+        skos:inScheme    ph: .
+
+phIoT:rtu  a             skos:Concept ;
+        rdfs:label       "rtu" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Air_handler> ;
+        skos:definition  "Roof Top Unit: A unitary AHU that is weatherized for outdoor use." ;
+        skos:inScheme    ph: .
+
+phIoT:fuelOil  a         skos:Concept ;
+        rdfs:label       "fuelOil" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Fuel_oil> ;
+        skos:definition  "Petroleum based oil burned for energy" ;
+        skos:inScheme    ph: .
+
+phIoT:blowdown-water  a  skos:Concept ;
+        rdfs:label       "blowdown-water" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Water> ;
+        skos:definition  "Water expelled from a system to remove mineral build up" ;
+        skos:inScheme    ph: .
+
+phScience:energy  a      skos:Concept ;
+        rdfs:label       "energy" ;
+        skos:definition  "Measure of ability to do work" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phScience:elec-energy .
+
+phIoT:fcu  a             skos:Concept ;
+        rdfs:label       "fcu" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Fan_coil_unit> ;
+        skos:definition  "Fan Coil Unit: A unitary, factory-made enclosure with a fan and coil\nthat recirculates air in a space and performs one or more of the\nfunctions of cleaning, heating, cooling, humidifying, dehumidifying,\nor ventilating the air. Unit heaters are examples of FCUs." ;
+        skos:inScheme    ph: ;
+        skos:narrower    phIoT:unitVent , phIoT:crac .
+
+phIoT:flow-meter  a      skos:Concept ;
+        rdfs:label       "flow-meter" ;
+        skos:definition  "Meter to measure flow rate and total volume of fluid" ;
+        skos:inScheme    ph: .
+
+phIoT:chiller  a         skos:Concept ;
+        rdfs:label       "chiller" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Chiller> ;
+        skos:definition  "Equipment to remove heat from a liquid.  Chillers typically use a vapor\ncompression or an absorption refrigeration cycle." ;
+        skos:inScheme    ph: .
+
+phScience:phenomenon  skos:narrower  phScience:solar , phScience:weather , phIoT:drive , phScience:elec , phIoT:state , phScience:light , phScience:substance , phScience:wind .
+
+phIoT:pf  a              skos:Concept ;
+        rdfs:label       "pf" ;
+        skos:definition  "Electrical power factor; unitless number between 0.0 and 1.0 which is ratio\nof active to apparent power in an AC power system." ;
+        skos:inScheme    ph: .
+
+phIoT:volt-magnitude  a  skos:Concept ;
+        rdfs:label       "volt-magnitude" ;
+        skos:definition  "Magnitude of electrical voltage" ;
+        skos:inScheme    ph: .
+
+phScience:temp  a        skos:Concept ;
+        rdfs:label       "temp" ;
+        skos:definition  "Temperature - measure of hot and cold" ;
+        skos:inScheme    ph: ;
+        skos:narrower    phScience:air-temp .
+
+phIoT:steam-boiler  a    skos:Concept ;
+        rdfs:label       "steam-boiler" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Boiler> ;
+        skos:definition  "Boiler which outputs steam" ;
+        skos:inScheme    ph: .
+
+phIoT:makeup-water  a    skos:Concept ;
+        rdfs:label       "makeup-water" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Water> ;
+        skos:definition  "Water used used to makeup water loss through leaks, evaporation, or blowdown" ;
+        skos:inScheme    ph: .
+
+phIoT:equip  skos:narrower  phIoT:panel , phIoT:boiler , phIoT:meter , phIoT:radiantEquip , phIoT:heatExchanger , phIoT:airHandlingEquip , phIoT:motor , phIoT:chiller , phIoT:verticalTransport , phIoT:coolingTower , phIoT:actuator , phIoT:fumeHood , phIct:rack , phIoT:plant , phIoT:conduit , phIoT:airTerminalUnit , phIoT:tank , phIoT:battery , phIoT:luminaire , phIoT:thermostat .
+
+phScience:pm25  a        skos:Concept ;
+        rdfs:label       "pm25" ;
+        skos:definition  "Particulate Matter 2.5; atmospheric pollutant of fine particles with/ an aerodynamic diameter of 2.5 micrometers or less" ;
+        skos:inScheme    ph: .
+
+phIoT:drive  a           skos:Concept ;
+        rdfs:label       "drive" ;
+        skos:definition  "Related to the drive control of a `motor`" ;
+        skos:inScheme    ph: ;
+        skos:related     phIoT:drive-speed , phIoT:drive-freq .
+
+phIoT:ground-floor  a    skos:Concept ;
+        rdfs:label       "ground-floor" ;
+        rdfs:seeAlso     <https://en.wikipedia.org/wiki/Storey> ;
+        skos:definition  "Floor at ground level.  In North America this is typically called\nthe first floor, but in Europe its often labelled as floor zero.\nIf `floorNum` is defined, then it must be set to zero." ;
+        skos:inScheme    ph: .

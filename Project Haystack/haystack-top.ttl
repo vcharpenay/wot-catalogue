@@ -12,40 +12,49 @@ ph: a skos:ConceptScheme ;
 phIoT:site a skos:Concept ;
            rdfs:label "site" ;
            skos:definition "Site is a geographic location of the built environment. Typically site maps to one building with its own unique street address." ;
+           skos:inScheme ph: ;
            skos:related phIoT:equip, phIoT:space .
 
 phIoT:equip a skos:Concept ;
-           rdfs:label "equip" ;
-           skos:definition "Equipment asset" ;
+            rdfs:label "equip" ;
+            skos:definition "Equipment asset" ;
+            skos:inScheme ph: ;
             skos:related phIoT:point .
 
 phIoT:space a skos:Concept ;
            rdfs:label "space" ;
-           skos:definition "Space is a three-dimensional volume in the built environment" .
+           skos:definition "Space is a three-dimensional volume in the built environment" ;
+           skos:inScheme ph: .
 
 phIoT:point a skos:Concept ;
-           rdfs:label "point" ;
-           skos:definition "Data point such as a sensor or actuator" ;
+            rdfs:label "point" ;
+            skos:definition "Data point such as a sensor or actuator" ;
+            skos:inScheme ph: ;
             skos:narrower phIoT:sensor, phIoT:cmd, phIoT:sp ;
             skos:related phScience:phenomenon, phScience:quantity .
 
 phIoT:sensor a skos:Concept ;
-           rdfs:label "sensor" ;
-           skos:definition "Point is a sensor, input, AI/BI" .
+             rdfs:label "sensor" ;
+             skos:definition "Point is a sensor, input, AI/BI" ;
+             skos:inScheme ph: .
 
 phIoT:cmd a skos:Concept ;
-           rdfs:label "cmd" ;
-           skos:definition "Point is a command, actuator, AO/BO" .
+          rdfs:label "cmd" ;
+          skos:definition "Point is a command, actuator, AO/BO" ;
+          skos:inScheme ph: .
 
 phIoT:sp a skos:Concept ;
-           rdfs:label "sp" ;
-           skos:definition "Point is a setpoint, soft point, internal control variable, schedule" .
+         rdfs:label "sp" ;
+         skos:definition "Point is a setpoint, soft point, internal control variable, schedule" ;
+         skos:inScheme ph: .
 
 phScience:phenomenon a skos:Concept ;
                      rdfs:label "phenomenon" ;
                      skos:definition "Aspect of scientific interest with measurable quantities" ;
+                     skos:inScheme ph: ;
                      skos:related phScience:quantity .
 
 phScience:quantity a skos:Concept ;
-                     rdfs:label "quantity" ;
-                     skos:definition "Measurable property of a substance or phenomenon" .
+                   rdfs:label "quantity" ;
+                   skos:definition "Measurable property of a substance or phenomenon" ;
+                   skos:inScheme ph: .
