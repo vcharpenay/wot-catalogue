@@ -5,7 +5,8 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix skos: <http://www.w3.org/2004/02/skos/core#>
 prefix bacnet: <http://bacowl.sourceforge.net/2012/bacnet#>
 
-# source: http://bacowl.sourceforge.net/
+# curl http://bacowl.sourceforge.net/2012/bacnet.ttl > bacowl.ttl
+# sparql --data bacowl.ttl --query bacnet.rq > bacnet.ttl
 
 construct {
   ?obj a skos:Concept ;
@@ -20,6 +21,10 @@ construct {
   ?service a skos:Concept ;
            rdfs:label ?serviceLabel .
   bacnet:ServicesSupported skos:narrower ?service .
+
+  ?obj skos:inScheme bacnet: .
+  ?prop skos:inScheme bacnet: .
+  ?service skos:inScheme bacnet: .
 } where {
   {
     ?obj rdfs:subClassOf+ bacnet:Object ;
