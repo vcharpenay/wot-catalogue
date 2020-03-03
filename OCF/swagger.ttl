@@ -10,26 +10,32 @@ sw: a skos:ConceptScheme ;
 sw:SwaggerAPI a skos:Concept ;
               rdfs:label "Swagger/OpenAPI Definition" ;
               skos:definition "This is the root document object of the OpenAPI document." ;
+              skos:inScheme sw: ;
               skos:related sw:Path .
 
 sw:Path a skos:Concept ;
         rdfs:label "Path" ;
         skos:definition "Holds the relative paths to the individual endpoints and their operations. The path is appended to the URL from the Server Object in order to construct the full URL. The Paths MAY be empty, due to ACL constraints." ;
+        skos:inScheme sw: ;
         skos:related sw:Operation .
 
 sw:Operation a skos:Concept ;
              rdfs:label "Operation" ;
              skos:definition "Describes a single API operation on a path." ;
+             skos:inScheme sw: ;
              skos:narrower sw:GetOperation, sw:PostOperation, sw:PutOperation .
 
 sw:GetOperation a skos:Concept ;
                 rdfs:label "GET Operation" ;
-                skos:definition "A definition of a GET operation on this path." .
+                skos:definition "A definition of a GET operation on this path." ;
+                skos:inScheme sw: .
 
 sw:PostOperation a skos:Concept ;
                 rdfs:label "POST Operation" ;
-                skos:definition "A definition of a POST operation on this path." .
+                skos:definition "A definition of a POST operation on this path." ;
+                skos:inScheme sw: .
 
 sw:PutOperation a skos:Concept ;
                 rdfs:label "PUT Operation" ;
-                skos:definition "A definition of a PUT operation on this path." .
+                skos:definition "A definition of a PUT operation on this path." ;
+                skos:inScheme sw: .

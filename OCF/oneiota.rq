@@ -6,7 +6,8 @@ prefix owl: <http://www.w3.org/2002/07/owl#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix sw: <http://swagger.io/v2/schema.json#>
 
-# source: https://github.com/vcharpenay/wot-cloud/
+# curl https://raw.githubusercontent.com/vcharpenay/wot-cloud/master/owl/oneIoTa.ttl > oneiota-owl.ttl
+# sparql --data oneiota-owl.ttl --query oneiota.rq > oneiota.ttl
 
 construct {
   ?api a skos:Concept ;
@@ -18,6 +19,10 @@ construct {
   ?op a skos:Concept ;
       skos:definition ?opDef .
   ?type skos:narrower ?op .
+
+  ?api skos:inScheme sw: .
+  ?path skos:inScheme sw: .
+  ?op skos:inScheme sw: .
 } where {
   ?api rdfs:subClassOf sw:SwaggerAPI, ?pathsRestriction ;
        rdfs:label ?apiLabel .
