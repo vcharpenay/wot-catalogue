@@ -1,0 +1,19 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix wd: <http://www.wikidata.org/entity/>
+prefix wdt: <http://www.wikidata.org/prop/direct/>
+
+# sparql --data wikidata-summary.nt --query _script/generate-dot.rq --results "CSV" > wikidata-summary.dot
+
+select (concat("digraph { ", ?edges, " }") as ?digraph) where {
+    {
+        select (group_concat(?edge; separator = ";") as ?edges) where {
+            ?child rdfs:subClassOf ?parent .
+            optional { ?child rdfs:label ?lc . }
+            bind (if(bound(?lc), ?lc, replace(str(?child), str(wd:), "")) as ?c)
+            optional { ?parent rdfs:label ?lp . }
+            bind (if(bound(?lp), ?lp, replace(str(?parent), str(wd:), "")) as ?p)
+            bind (concat("<", ?c, "> -> <", ?p, ">") as ?edge)
+            # TODO include weight (color-coding?)
+        }
+    }
+}
