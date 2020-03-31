@@ -114,21 +114,36 @@ urdf.load(txt, { format: 'text/turtle' })
 
     let words = Object.keys(senses);
 
+    let matches = words.reduce((matches, w) => {
+        matches[w] = senses[w].filter(s => isExactMatch(w, s));
+        return matches;
+    }, {});
+
+    // remove (n+m)-grams without sense mapping
+    words = words.filter(ngram => {
+        let hasSense = matches[ngram].length > 0;
+        let isNGram = words.some(w => ngram != w && ngram.includes(w));
+        return hasSense || !isNGram;
+    });
+
+    // TODO remove (n-m)-grams with mapping but not evoking any concept
+
     fs.writeFileSync('../wikidata-mapping.ttl', ''); // erase previous content
 
     words.forEach(w => {
         let nt = '';
         let tag = `tag:${encodeURIComponent(w)}`;
 
-        let exactMatches = senses[w].filter(s => isExactMatch(w, s));
+        let m = matches[w];
 
-        if (exactMatches.length > 0) {
-            nt += denotations[w].reduce((nt, c) => {
-                return nt += `<${c}> <${skos}mappingRelation> <${tag}> .\n`;
-            }, nt);
-        }
+        nt += denotations[w].reduce((nt, c) => {
+            // FIXME only one ontolex:isEvokedBy
+            if (m.length > 0) nt += `<${c}> <${skos}mappingRelation> <${tag}> .\n`;
+            return nt += `<${c}> <${ontolex}isEvokedBy> <${tag}> .\n`;
+        }, nt);
 
-        nt += exactMatches.reduce((nt, s) => {
+        nt += m.reduce((nt, s) => {
+            // FIXME replace with ontolex:denotes
             return nt += `<${tag}> <${ontolex}evokes> <${s.concepturi}>.\n`;
         }, nt);
 

@@ -1,17 +1,36 @@
 prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#>
 
 # sparql --data wikidata-mapping.ttl --data wikidata-unique-matches.nt --query _script/count-matches.rq
 
 select * where {
     {
         select (count(*) as ?matches) where {
-            ?c skos:mappingRelation ?tag .
-            ?tag skos:closeMatch ?e .
+            {
+                select distinct ?tag where {
+                    ?c skos:mappingRelation ?tag .
+                    ?tag skos:closeMatch ?e .
+                }
+            }
         }
     }
     {
         select (count(*) as ?all) where {
-            ?c skos:mappingRelation ?tag .
+            {
+                select distinct ?tag where {
+                    ?c skos:mappingRelation ?tag .
+                }
+            }
+        }
+    }
+    {
+        select (count(*) as ?unknown) where {
+            {
+                select distinct ?tag where {
+                    ?c ontolex:isEvokedBy ?tag .
+                    filter not exists { ?other skos:mappingRelation ?tag . }
+                }
+            }
         }
     }
     {

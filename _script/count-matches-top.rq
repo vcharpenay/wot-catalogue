@@ -4,7 +4,7 @@ prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 # sparql --data BACnet/bacnet.ttl --data BLE\ GATT/gatt.ttl --data LWM2M/ipso.ttl --data OCF/oneiota.ttl --data oneM2M/haim.ttl --data Project\ Haystack/haystack.ttl --data wikidata-mapping.ttl --data wikidata-unique-matches.nt --query _script/count-matches-top.rq
 
-select ?ambiguous ?total where {
+select ?ambiguous ?matches ?total where {
     {
         select (count(*) / 2 as ?ambiguous) where {
             # twice the same subquery: pairwise comparison of tag sets
@@ -49,6 +49,14 @@ select ?ambiguous ?total where {
             ?top1 skos:inScheme ?scheme .
             ?top2 skos:inScheme ?scheme .
             filter (?top1 != ?top2 && ?tags1 = ?tags2)
+        }
+    }
+    {
+        select (count(*) as ?matches) where {
+            ?top a skos:Concept ;
+                 skos:mappingRelation ?tag .
+            ?tag skos:closeMatch ?e .
+            filter not exists { ?other skos:related ?top }
         }
     }
     {
