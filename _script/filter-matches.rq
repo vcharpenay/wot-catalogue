@@ -6,20 +6,39 @@ prefix schema: <http://schema.org/>
 prefix wd: <http://www.wikidata.org/entity/>
 prefix wdt: <http://www.wikidata.org/prop/direct/>
 prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+prefix : <https://www.vcharpenay.link/#>
 
-# sparql --data wikidata-filtered-entities.nt --data wikidata-mapping.ttl --query _script/filter-matches.rq --results "N-Triples" > wikidata-matches.nt
+# cp wikidata-matches.nt wikidata-matches-$i.nt
+# sparql --data wikidata-entities.nt --data wikidata-blacklist.ttl --data wikidata-whitelist.ttl --data wikidata-matches.nt --query _script/filter-matches.rq --results "N-Triples" > wikidata-matches.nt
 
 construct { ?tag skos:closeMatch ?e }
 where {
-    ?tag ontolex:evokes ?e .
+  ?tag skos:closeMatch ?e .
 
-    # whitelist and blacklist filtering of parent entities
-    values ?whitelist { wd:Q1183543 wd:Q937228 }
-    ?e (wdt:P31|wdt:P279)* ?whitelist .
+  filter not exists {
+    ?ep a :BlacklistItem .
+    { ?e ?rel ?ep }
+    union
+    { ?e ?rel ?es . ?es ?relp ?ep }
+    union
+    { ?e ?rel ?es . ?es ?relp ?et . ?et ?rels ?ep }
+  }
 
-    # filtering of entities subsumed by other matches
-    filter not exists {
-        ?tag ontolex:evokes ?other .
-        ?e (wdt:P31|wdt:P279)+ ?other .
-    }
+  filter not exists {
+    ?tag skos:closeMatch ?ep .
+    filter (?e != ?ep)
+
+    ?es a :WhitelistItem .
+    { ?ep ?rel ?es }
+    union
+    { ?ep ?rel ?et . ?et ?relp ?es }
+    union
+    { ?ep ?rel ?et . ?et ?relp ?ef . ?ef ?rels ?es }
+  }
+
+ # filtering of entities subsumed by other matches
+  filter not exists {
+    ?tag skos:closeMatch ?other .
+    ?e (wdt:P31|wdt:P279)+ ?other .
+  }
 }

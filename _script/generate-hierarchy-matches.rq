@@ -1,0 +1,16 @@
+prefix skos: <http://www.w3.org/2004/02/skos/core#> 
+prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+prefix wdt: <http://www.wikidata.org/prop/direct/>
+prefix schema: <http://schema.org/>
+prefix : <https://www.vcharpenay.link/wot-catalogue/#>
+
+# sparql --data wikidata-hierarchy.nt --data wikidata-mapping.ttl --data wikidata-hierarchy-blacklist.ttl --query _script/generate-hierarchy-matches.rq --results "N-Triples" > wikidata-hierarchy-matches.nt
+
+construct { ?tag skos:closeMatch ?e }
+where {
+  ?tag ontolex:evokes ?e .
+  filter not exists {
+    ?e wdt:P31?/wdt:P279* ?parent .
+    ?parent a :BlacklistItem .
+  }
+}
