@@ -5,7 +5,7 @@ PREFIX schema: <http://schema.org/>
 prefix skos: <http://www.w3.org/2004/02/skos/core#>
 prefix : <http://ti.rw.fau.de/vocab#>
 
-# sparql --data wikidata-closure.nt --data wikidata-labels.en.nt --data wikidata-unique-matches.nt --query _script/summarize-hierarchy.rq --results "N-Triples" > wikidata-summary.nt
+# sparql --data wikidata-hierarchy.nt --data wikidata-hierarchy-labels.en.nt --query _script/summarize-hierarchy.rq --results "N-Triples" > wikidata-summary.nt
 
 construct {
     ?e1 rdfs:subClassOf ?e2 .
@@ -14,22 +14,18 @@ construct {
     ?e1 :weight ?count1 .
     ?e2 :weight ?count2 .
 } where {
-    bind (15 as ?min)
+    bind (100 as ?min)
     # duplicated subquery to compare entities
     {
         select ?e1 (count(?child) as ?count1) where {
-            {
-                select distinct ?e where { ?e ?rel ?other . }
-            }
+            ?tag skos:closeMatch ?child .
             ?child (wdt:P31|wdt:P279)* ?e .
             bind (?e as ?e1)
         } group by ?e1 order by desc(?count1)
     }
     {
         select ?e2 (count(?child) as ?count2) where {
-            {
-                select distinct ?e where { ?e ?rel ?other . }
-            }
+            ?tag skos:closeMatch ?child .
             ?child (wdt:P31|wdt:P279)* ?e .
             bind (?e as ?e2)
         } group by ?e2 order by desc(?count2)
