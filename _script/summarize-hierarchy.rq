@@ -19,14 +19,14 @@ construct {
     {
         select ?e1 (count(?child) as ?count1) where {
             ?tag skos:closeMatch ?child .
-            ?child (wdt:P31|wdt:P279)* ?e .
+            ?child wdt:P31?/wdt:P279* ?e .
             bind (?e as ?e1)
         } group by ?e1 order by desc(?count1)
     }
     {
         select ?e2 (count(?child) as ?count2) where {
             ?tag skos:closeMatch ?child .
-            ?child (wdt:P31|wdt:P279)* ?e .
+            ?child wdt:P31?/wdt:P279* ?e .
             bind (?e as ?e2)
         } group by ?e2 order by desc(?count2)
     }
@@ -37,7 +37,7 @@ construct {
     
     ?e1 (wdt:P31|wdt:P279)+ ?e2
     filter not exists {
-        ?e1 (wdt:P31|wdt:P279)+ ?other .
-        ?other (wdt:P31|wdt:P279)+ ?e2 . 
+        ?e1 (wdt:P31/wdt:P279*)|wdt:P279+ ?other .
+        ?other (wdt:P31/wdt:P279*)|wdt:P279+ ?e2 . 
     }
 }
