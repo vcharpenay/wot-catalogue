@@ -53,10 +53,15 @@ select ?ambiguous ?matches ?total where {
     }
     {
         select (count(*) as ?matches) where {
-            ?top a skos:Concept ;
-                 skos:mappingRelation ?tag .
-            ?tag skos:closeMatch ?e .
-            filter not exists { ?other skos:related ?top }
+            {
+                # several matches may exist for a tag
+                select distinct ?top where {
+                    ?top a skos:Concept ;
+                        skos:mappingRelation ?tag .
+                    ?tag skos:closeMatch ?e .
+                    filter not exists { ?other skos:related ?top }
+                }
+            }
         }
     }
     {
