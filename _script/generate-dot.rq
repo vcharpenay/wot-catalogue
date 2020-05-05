@@ -1,10 +1,11 @@
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix wd: <http://www.wikidata.org/entity/>
 prefix wdt: <http://www.wikidata.org/prop/direct/>
+prefix : <http://ti.rw.fau.de/vocab#>
 
 # sparql --data wikidata-summary.nt --query _script/generate-dot.rq --results "CSV" > wikidata-summary.dot
 
-select (concat("digraph { ", ?edges, " }") as ?digraph) where {
+select (concat("digraph { ", ?nodes, ";", ?edges, " }") as ?digraph) where {
     {
         select (group_concat(?edge; separator = ";") as ?edges) where {
             ?child rdfs:subClassOf ?parent .
@@ -13,7 +14,17 @@ select (concat("digraph { ", ?edges, " }") as ?digraph) where {
             optional { ?parent rdfs:label ?lp . }
             bind (if(bound(?lp), ?lp, replace(str(?parent), str(wd:), "")) as ?p)
             bind (concat("<", ?c, "> -> <", ?p, ">") as ?edge)
-            # TODO include weight (color-coding?)
+        }
+    }
+
+    {
+        select (group_concat(?node; separator = ";") as ?nodes) where {
+            bind (500 as ?max)
+            ?e :weight ?w
+            optional { ?e rdfs:label ?l . }
+            bind (if(bound(?l), ?l, replace(str(?e), str(wd:), "")) as ?n)
+            bind (concat("\"0.7,0.5,", str(?w / ?max), "\"") as ?c)
+            bind (concat("<", ?n, "> [shape=rect,color=white,fontcolor=white,style=filled,fillcolor=", ?c, "]") as ?node)
         }
     }
 }
