@@ -1,0 +1,27 @@
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+
+# sparql --data wikidata-hierarchy-reviewed-matches.nt --data wikidata-aliases.nt --query _script/count-alias-matches.rq
+
+select * where {
+    {
+        select (count(*) as ?label) where {
+            {
+                select distinct ?tag ?e where {
+                    ?tag skos:closeMatch ?e .
+                    ?e skos:prefLabel ?l .
+                }
+            }
+        }
+    }
+    {
+        select (count(*) as ?aliases) where {
+            {
+                select distinct ?tag ?e where {
+                    ?tag skos:closeMatch ?e .
+                    ?e skos:altLabel ?l .
+                }
+            }
+        }
+    }
+}

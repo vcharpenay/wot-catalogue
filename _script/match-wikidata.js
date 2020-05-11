@@ -52,7 +52,7 @@ function isExactMatch(word, sense) {
     return word == normalized;
 }
 
-const txt = fs.readFileSync('../labels.ttl', 'utf-8');
+const txt = fs.readFileSync('../labels.ttl', 'utf-8'); // TODO rename to labels.nt
 
 const denotations = {};
 
@@ -128,7 +128,7 @@ urdf.load(txt, { format: 'text/turtle' })
 
     // TODO remove (n-m)-grams with mapping but not evoking any concept
 
-    fs.writeFileSync('../wikidata-mapping.ttl', ''); // erase previous content
+    fs.writeFileSync('../wikidata-mapping.nt', ''); // erase previous content
 
     words.forEach(w => {
         let nt = '';
@@ -147,11 +147,22 @@ urdf.load(txt, { format: 'text/turtle' })
             return nt += `<${tag}> <${ontolex}evokes> <${s.concepturi}>.\n`;
         }, nt);
 
-        fs.writeFileSync('../wikidata-mapping.ttl', nt, { flag: 'a' });
+        fs.writeFileSync('../wikidata-mapping.nt', nt, { flag: 'a' });
+    });
+
+    fs.writeFileSync('../wikidata-aliases.nt', ''); // erase previous content
+
+    words.forEach(w => {
+        let nt = matches[w].reduce((nt, s) => {
+            let pred = s.match.type == 'label' ? 'prefLabel' : 'altLabel';
+            return nt + `<${s.concepturi}> <${skos}${pred}> "${s.match.text}"@${s.match.language} .\n`;
+        }, '');
+
+        fs.writeFileSync('../wikidata-aliases.nt', nt, { flag: 'a' });
     });
 })
 
-.then(() => console.log('Done. Output written to ../wikidata-mapping.ttl.'))
+.then(() => console.log('Done. Output written to ../wikidata-mapping.nt.'))
 
 .catch(e => {
     // log intermediate results and exit
