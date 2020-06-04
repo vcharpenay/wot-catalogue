@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix log: <http://www.w3.org/2000/10/swap/log#> .
+@prefix string: <http://www.w3.org/2000/10/swap/string#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix : <http://ti.rw.fau.de/vocab#> .
+
+# ldfu -i wikidata-hierarchy-reviewed-matches.nt -i wikidata-neighbors.nt -i wikidata-transitive-properties.ttl -p _script/filter-closure.n3 -q _script/filter-closure.rq wikidata-closure.nt
+
+# filtering of Wikidata entities only
+
+{
+    ?e1 ?rel ?e2 .
+    ?rel log:uriToString ?str .
+    ?str string:startsWith "http://www.wikidata.org/prop/direct/" .
+}
+=>
+{
+    ?rel a :Edge .
+} .
+
+{
+    ?e1 ?rel ?e2 .
+    ?e1 log:uriToString ?str .
+    ?str string:startsWith "http://www.wikidata.org/entity/" .
+}
+=>
+{
+    ?e1 a :Node .
+} .
+
+{
+    ?e1 ?rel ?e2 .
+    ?e2 log:uriToString ?str .
+    ?str string:startsWith "http://www.wikidata.org/entity/" .
+}
+=>
+{
+    ?e1 a :Node .
+} .
+
+# computation of the Wikidata transitive closure
+
+{
+   ?rel a owl:TransitiveProperty, :Edge .
+   ?e1 a :Node . ?e2 a :Node . ?e3 a :Node .
+   ?e1 ?rel ?e2 . ?e2 ?rel ?e3 .
+}
+=>
+{
+   ?e1 ?rel ?e3 .
+} .

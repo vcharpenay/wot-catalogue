@@ -1,0 +1,20 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix schema: <http://schema.org/>
+prefix wd: <http://www.wikidata.org/entity/>
+prefix wdt: <http://www.wikidata.org/prop/direct/>
+prefix : <http://ti.rw.fau.de/vocab#>
+
+# sparql --data wikidata-closure.nt --data wikidata-neighbors-labels.en.nt --data wikidata-hierarchy-labels.en.nt --query _script/generate-closure-csv.rq --results "CSV" > wikidata-closure.csv
+
+select ?from ?to where {
+    ?e1 owl:topObjectProperty ?e2 .
+
+    # TODO add weight (number of Wikidata claims between entities)
+    # TODO filter by matches?
+
+    optional { ?e1 schema:name ?l1 filter (lang(?l1) = "en") }
+    bind (if(bound(?l1), ?l1, replace(str(?e1), str(wd:), "")) as ?from)
+    optional { ?e2 schema:name ?l2 filter (lang(?l2) = "en") }
+    bind (if(bound(?l2), ?l2, replace(str(?e2), str(wd:), "")) as ?to)
+}

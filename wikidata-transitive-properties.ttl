@@ -39,47 +39,47 @@
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 
-wd:P927 a owl:TransitiveProperty ;
+wdt:P927 a owl:TransitiveProperty ;
 	schema:name "anatomical location"@en .
 
-wd:P131 a owl:TransitiveProperty ;
+wdt:P131 a owl:TransitiveProperty ;
 	schema:name "located in the administrative territorial entity"@en .
 
-wd:P5973 a owl:TransitiveProperty ;
+wdt:P5973 a owl:TransitiveProperty ;
 	schema:name "synonym"@en .
 
-wd:P276 a owl:TransitiveProperty ;
+wdt:P276 a owl:TransitiveProperty ;
 	schema:name "location"@en .
 
-wd:P3403 a owl:TransitiveProperty ;
+wdt:P3403 a owl:TransitiveProperty ;
 	schema:name "coextensive with"@en .
 
-wd:P3373 a owl:TransitiveProperty ;
+wdt:P3373 a owl:TransitiveProperty ;
 	schema:name "sibling"@en .
 
-wd:P279 a owl:TransitiveProperty ;
+wdt:P279 a owl:TransitiveProperty ;
 	schema:name "subclass of"@en .
 
-wd:P460 a owl:TransitiveProperty ;
+wdt:P460 a owl:TransitiveProperty ;
 	schema:name "said to be the same as"@en .
 
-wd:P1647 a owl:TransitiveProperty ;
+wdt:P1647 a owl:TransitiveProperty ;
 	schema:name "subproperty of"@en .
 
-wd:P2094 a owl:TransitiveProperty ;
+wdt:P2094 a owl:TransitiveProperty ;
 	schema:name "competition class"@en .
 
-wd:P361 a owl:TransitiveProperty ;
+wdt:P361 a owl:TransitiveProperty ;
 	schema:name "part of"@en .
 
-wd:P5607 a owl:TransitiveProperty ;
+wdt:P5607 a owl:TransitiveProperty ;
 	schema:name "located in the ecclesiastical territorial entity"@en .
 
-wd:P527 a owl:TransitiveProperty ;
+wdt:P527 a owl:TransitiveProperty ;
 	schema:name "has part"@en .
 
-wd:P403 a owl:TransitiveProperty ;
+wdt:P403 a owl:TransitiveProperty ;
 	schema:name "mouth of the watercourse"@en .
 
-wd:P706 a owl:TransitiveProperty ;
+wdt:P706 a owl:TransitiveProperty ;
 	schema:name "located on terrain feature"@en .
