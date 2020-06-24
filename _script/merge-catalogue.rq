@@ -28,7 +28,7 @@ construct {
     optional { ?c rdfs:label ?label }
     optional { ?c skos:definition ?def }
     
-    optional { ?c skos:broader ?broader }
+    optional { ?broader skos:narrower ?c }
     optional { ?c skos:related ?related }
     
     optional {
