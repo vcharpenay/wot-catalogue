@@ -18,12 +18,21 @@ construct {
        ontolex:isEvokedBy ?tag ;
        skos:closeMatch ?e .
 
+    ?scheme a skos:ConceptScheme ;
+            skos:prefLabel ?schemeLabel ;
+            rdfs:seeAlso ?doc ;
+            skos:hasTopConcept ?top .
+
     ?tag a ontolex:LexicalEntry ;
          rdfs:label ?tagLabel ;
          ontolex:denotes ?e .
 } where {
     ?c a skos:Concept ;
        skos:inScheme ?scheme .
+
+    optional { ?scheme rdfs:label ?schemeLabel }
+    optional { ?scheme rdfs:seeAlso ?doc }
+    optional { ?scheme skos:hasTopConcept ?top }
 
     optional { ?c rdfs:label ?label }
     optional { ?c skos:definition ?def }
