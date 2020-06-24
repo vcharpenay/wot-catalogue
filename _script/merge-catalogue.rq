@@ -1,0 +1,42 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#> 
+prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+prefix wdt: <http://www.wikidata.org/prop/direct/>
+prefix wd: <http://www.wikidata.org/entity/>
+prefix wotc: <http://purl.org/wot-catalogue#>
+
+# sparql --data BACnet/bacnet.ttl --data BACnet/bacnet-top.ttl --data "BLE GATT/gatt.ttl" --data "BLE GATT/ble.ttl" --data LWM2M/lwm2m.ttl --data LWM2M/ipso.ttl --data OCF/swagger.ttl --data OCF/oneiota.ttl --data oneM2M/haim.ttl --data oneM2M/sdt.ttl --data "Project Haystack/haystack-top.ttl" --data "Project Haystack/haystack.ttl" --data wikidata-mapping.nt --data wikidata-hierarchy-reviewed-matches.nt --query _script/merge-catalogue.rq --results "Turtle" > wot-catalogue.ttl
+
+construct {
+    ?c a skos:Concept, ontolex:LexicalConcept ;
+       rdfs:label ?label ;
+       skos:prefLabel ?label ;
+       skos:definition ?def ;
+       skos:inScheme ?scheme ;
+       skos:broader ?broader ;
+       skos:related ?related ;
+       ontolex:isEvokedBy ?tag ;
+       skos:closeMatch ?e .
+
+    ?tag a ontolex:LexicalEntry ;
+         rdfs:label ?tagLabel ;
+         ontolex:denotes ?e .
+} where {
+    ?c a skos:Concept ;
+       skos:inScheme ?scheme .
+
+    optional { ?c rdfs:label ?label }
+    optional { ?c skos:definition ?def }
+    
+    optional { ?c skos:broader ?broader }
+    optional { ?c skos:related ?related }
+    
+    optional {
+        ?c ontolex:isEvokedBy ?tag .
+        # FIXME not a proper predicate to use here
+        ?tag skos:closeMatch ?e .
+
+        # TODO decode URI
+        bind (strafter(str(?tag), "tag:") as ?tagLabel)
+    }
+}

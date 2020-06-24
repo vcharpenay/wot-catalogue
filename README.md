@@ -15,7 +15,7 @@ from the following communication and classification standards:
 
 ## Getting Started
 
-See the [online search engine](http://www.vcharpenay.link/wot-catalogue/) to browse concepts.
+See the [online search engine](http://www.vcharpenay.link/wot-catalogue/) to browse concepts or download [the full catalogue in Turtle](wot-catalogue.ttl).
 
 ## Documentation
 
@@ -36,16 +36,25 @@ For each concept included in the WoT catalogue, the following fields are availab
  - human-readable definition
  - related concepts (within the same standard)
  - related data types
- - potential matches with concepts from other standards (TODO)
- - potential matches with class definitions from other RDF vocabularies (TODO)
+ - matches with Wikidata
  - source documentation (TODO)
 
-Example (from [`esp.ttl`](BLE GATT/esp.ttl)):
+Example (from [`gatt.ttl`](BLE GATT/gatt.ttl)):
 
 ```turtle
-esp:EnvironmentalSensingProfile
-    a skos:Concept ;
-    rdfs:label "Environmental Sensing Profile" ;
-    skos:definition "The Cycling Speed and Cadence Profile is used to enable..." ;
-    rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=294796> .
+ble:TemperatureMeasurement a skos:Concept, ontolex:LexicalConcept ;
+                           skos:prefLabel "temperature measurement" ;
+                           skos:definition "The Temperature Measurement characteristic is used to send..." ;
+                           skos:inScheme ble: ;
+                           skos:broader ble:Characteristic ;
+                           skos:related ble:IntermediateTemperatureValueField,
+                                        ble:TemperatureMeasurementValueField,
+                                        ble:Indicate,
+                                        ble:TimeStampField ;
+                           ontolex:isEvokedBy <tag:temperature%20measurement> ;
+                           skos:closeMatch wd:Q909741 . # Wikidata entity: 'temperature measurement'
+
+<tag:temperature%20measurement> a ontolex:LexicalEntry ;
+                                rdfs:label "temperature measurement" ;
+                                ontolex:denotes wd:Q909741 .
 ```
