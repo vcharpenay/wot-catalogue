@@ -1,0 +1,23 @@
+digraph {
+  node [shape=rect,fontname="mono"]
+  edge [fontname="mono"]
+
+  C [label="skos:Concept"]
+  S [label="skos:ConceptScheme"]
+  Coll [label="skos:Collection"]
+
+  LE [label="ontolex:LexicalEntry"]
+  W [label="ontolex:Word"]
+  MW [label="ontolex:MultiwordExpression"] 
+  E [label="wikibase:Item"]
+
+  C -> S [label="skos:inScheme"]
+  C -> Coll [label="skos:member"]
+  C -> C [label="skos:broader"]
+  C -> C [label="skos:related"]
+
+  C -> LE [label="ontolex:isEvokedBy"]
+  LE -> E [label="ontolex:denotes"]
+  W -> LE [label="",arrowhead=empty]
+  MW -> LE [label="",arrowhead=empty]
+}
