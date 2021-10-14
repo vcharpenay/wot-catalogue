@@ -11,7 +11,8 @@ from the following communication and classification standards:
  - EDDL (TODO)
  - eCl@ss (TODO)
  - IFC (TODO)
- - OPC UA (TODO)
+ - [OPC UA](https://github.com/OPCFoundation/UA-Nodeset) (TODO)
+ - [ICM](https://cimug.ucaiug.org/CIM%20Profiles/Forms/AllItems.aspx) (TODO)
 
 ## Getting Started
 
