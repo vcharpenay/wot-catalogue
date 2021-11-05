@@ -1,0 +1,59 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix lwm2m: <http://purl.org/wot-catalogue/lwm2m#> .
+@prefix ble: <http://purl.org/wot-catalogue/ble#> .
+@prefix sdt: <http://purl.org/wot-catalogue/sdt#> .
+@prefix ocf: <http://purl.org/wot-catalogue/ocf#> .
+@prefix bacnet: <http://purl.org/wot-catalogue/bacnet#> .
+
+lwm2m:metamodel a skos:Collection;
+	skos:preflabel "LWM2M Metamodel" ;
+	skos:member lwm2m:Scheme, lwm2m:Object, lwm2m:Resource, lwm2m:Operation, lwm2m:R, lwm2m:W, lwm2m:E, lwm2m:RW .
+
+ble:metamodel a skos:Collection;
+	skos:preflabel "BLE Metamodel" ;
+	skos:member ble:Profile, ble:Service, ble:Characteristic, ble:Property, ble:Value, ble:Scheme .
+
+sdt:metamodel a skos:Collection;
+	skos:preflabel "SDT Metamodel" ;
+	skos:member sdt:Scheme, sdt:Device, sdt:Module, sdt:Property, sdt:Action, sdt:Event, sdt:DataPoint, sdt:DataType .
+
+ocf:metamodel a skos:Collection;
+	skos:preflabel "OCF Metamodel" ;
+	skos:member ocf:SwaggerAPI, ocf:Path, ocf:Operation, ocf:GetOperation, ocf:PostOperation, ocf:PutOperation, ocf:DeleteOperation .
+
+bacnet:metamodel a skos:Collection;
+	skos:preflabel "BACnet Metamodel" ;
+	skos:member bacnet:Scheme, bacnet:servicesSupported, bacnet:StandardObject, bacnet:ReadableProperty, bacnet:WritableProperty, bacnet:OptionalProperty .
+
+lwm2m:ipso a skos:Collection;
+	skos:prefLabel "IPSO" ;
+	skos:altLabel "Internet Protocal for Smart Objects (IPSO)" ;
+	skos:definition "Objects Produced by OMA. Only OMA can use this range.\n0-499 DM&SE Working Group\n500-1023 IPSO Working Group" .
+
+lwm2m:dmse a skos:Collection;
+	skos:prefLabel "DM&SE" ;
+	skos:altLabel "Device Management & Service Enablement" ;
+	skos:definition "Objects Produced by OMA. Only OMA can use this range.\n0-499 DM&SE Working Group\n500-1023 IPSO Working Group" .
+
+lwm2m:ext a skos:Collection ;
+	skos:prefLabel "ext-label" ;
+	skos:altLabel "External" ;
+	skos:definition "Objects registered by 3rd party standards organisations or alliances" .
+
+lwm2m:common_resource a skos:Collection ;
+	skos:prefLabel "CommonResource" ;
+	skos:altLabel "Common Resource" ;
+	skos:defintion "Common resource defined inside Objects. Inside of an Object the resourceIDs must be unique but it can be reused in different Objects." .
+
+lwm2m:reusable_resource a skos:Collection ;
+	skos:prefLabel "ReusableResource" ;
+	skos:altLabel "Reusable Resource" ;
+	skos:definition "Resources registered by companies, standards organisations or alliances. Note: ResourceID is finally allocated by OMNA Staff. Private registrations are not allowed" .
+
+lwm2m:private_resource a skos:Collection ;
+	skos:prefLabel "PrivateResource" ;
+	skos:altLabel "Private Resource" ;
+	skos:definition "Private resource range, no registration is necessary and open to re-use." .

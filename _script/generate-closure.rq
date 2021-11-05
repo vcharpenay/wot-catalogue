@@ -1,4 +1,0 @@
-prefix : <http://ti.rw.fau.de/vocab#>
-prefix owl: <http://www.w3.org/2002/07/owl#>
-construct { ?e1 ?rel ?e2 . ?e1 owl:topObjectProperty ?e2 . }
-where { ?e1 ?rel ?e2 . ?e1 a :Node . ?rel a :Edge . ?e2 a :Node . }

@@ -1,0 +1,59 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sd: <http://www.w3.org/ns/sparql-service-description#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ocf: <http://purl.org/wot-catalogue/ocf#>
+PREFIX eg: <http://example.com#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+
+CONSTRUCT{
+  ?api a skos:Concept, ontolex:LexicalConcept;
+    skos:prefLabel ?apiLabel ;
+    skos:broader ocf:SwaggerAPI ;
+    skos:inScheme ocf:Scheme .
+  ?path a skos:Concept, ontolex:LexicalConcept;
+    skos:prefLabel ?pathLabel ;
+    skos:broader ocf:Path ;
+    skos:inScheme ocf:Scheme .
+  ?api skos:related ?path .
+  ?op a skos:Concept, ontolex:LexicalConcept;
+    skos:prefLabel ?opLabel ;
+    skos:definition ?opDef ;
+    skos:inScheme ocf:Scheme ;
+    skos:broader ?opConcept .
+  ?path skos:related ?op .
+}
+WHERE {
+	?b0 a skos:Concept ;
+    rdf:about ?apiID ;
+    <http://localhost/ontology/data> ?b1 .
+	?b1 eg:info ?b12 ;
+     eg:paths ?b16 .
+	?b12 eg:title ?apiLabel .
+  	?b16 ?p ?b17 .
+  	BIND(STRAFTER(str(?p), str(eg:)) AS ?pathLabel) .
+  	{ ?b17 eg:get ?b18 .
+    BIND("GET" AS ?opType) .
+    BIND(IRI(ocf:GetOperation) AS ?opConcept) .
+  	} UNION { 
+    ?b17 eg:put ?b18 
+    BIND("PUT" AS ?opType) .
+    BIND(IRI(ocf:PutOperation) AS ?opConcept) .
+  	} UNION { 
+    ?b17 eg:post ?b18 
+    BIND("POST" AS ?opType) .
+    BIND(IRI(ocf:PostOperation) AS ?opConcept) .
+  	} UNION { 
+    ?b17 eg:delete ?b18 
+    BIND("DELETE" AS ?opType) .
+    BIND(IRI(ocf:DeleteOperation) AS ?opConcept) .
+  	}
+  	?b18 eg:description ?opDef .
+  	BIND(CONCAT(?opType, " ",?pathLabel) AS ?opLabel) .
+  	
+  	BIND(IRI(CONCAT("http://purl.org/wot-catalogue/ocf#",ENCODE_FOR_URI(?opLabel))) AS ?op) .
+  	BIND(IRI(CONCAT("http://purl.org/wot-catalogue/ocf#",STR(?apiID))) as ?api) .
+  	BIND(IRI(CONCAT("http://purl.org/wot-catalogue/ocf#",?pathLabel)) AS ?path) . 
+}

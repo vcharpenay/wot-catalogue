@@ -1,0 +1,17 @@
+PREFIX ocf: <http://purl.org/wot-catalogue/ocf#>
+PREFIX sdt: <http://purl.org/wot-catalogue/sdt#>
+PREFIX ble: <http://purl.org/wot-catalogue/ble#>
+PREFIX lwm2m: <http://purl.org/wot-catalogue/lwm2m#>
+PREFIX bacnet: <http://purl.org/wot-catalogue/bacnet#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+PREFIX ex: <http://example.org/>
+INSERT { ?s ex:wikidata true} WHERE { ?s ontolex:isEvokedBy ?w} ;
+INSERT {
+  ?s ex:highLevel True
+} WHERE {
+  ?s a skos:Concept . 
+  ?metamodel skos:member ?s.
+  FILTER(?metamodel in(ocf:metamodel,sdt:metamodel,ble:metamodel,lwm2m:metamodel, bacnet:metamodel))
+}

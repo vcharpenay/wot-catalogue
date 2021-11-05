@@ -1,0 +1,120 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX ex: <http://example.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+INSERT{
+  ?s ?2gramK ?nplus1gram;
+    ?3gramK ?nplus2gram;
+    ?4gramK ?nplus3gram;
+    ?5gramK ?nplus4gram;
+    ?6gramK ?nplus5gram;
+    ?7gramK ?nplus6gram;
+    ?8gramK ?nplus7gram;
+    ?9gramK ?nplus8gram;
+    ?10gramK ?nplus9gram;
+    ?11gramK ?nplus10gram;
+    ?12gramK ?nplus11gram;
+    ?13gramK ?nplus12gram .
+} WHERE {
+  ?s a ?type.
+  FILTER(?type IN(skos:Concept,skos:ConceptScheme,skos:Collection))
+  ?s ?kpred ?1gramk .
+  BIND(CONCAT(STR(ex:),"1gram") AS ?pref)
+  FILTER(STRSTARTS(STR(?kpred),?pref))
+  BIND(xsd:integer(REPLACE(STR(?kpred),?pref,"")) AS ?k)
+  
+  BIND((?k+1) as ?kp)
+  BIND(CONCAT(STR(ex:),"1gram",STR(?kp)) as ?prefkp)
+  ?s ?kppred ?1gramkp .
+  FILTER(STR(?kppred) = ?prefkp)
+  BIND(CONCAT(STR(?1gramk), " ", STR(?1gramkp)) AS ?nplus1gram)
+  BIND(URI(CONCAT(STR(ex:),"2gram",STR(?k))) AS ?2gramK)
+  
+  BIND((?kp+1) as ?k2)
+  BIND(CONCAT(STR(ex:),"1gram",STR(?k2)) as ?prefk2)
+  OPTIONAL{
+  ?s ?k2pred ?1gramk2 .
+    FILTER(STR(?k2pred) = ?prefk2)}
+  BIND(CONCAT(STR(?nplus1gram), " ",STR(?1gramk2)) AS ?nplus2gram)
+  BIND(URI(CONCAT(STR(ex:),"3gram",STR(?k))) AS ?3gramK)
+  
+  BIND((?k2+1) as ?k3)
+  BIND(CONCAT(STR(ex:),"1gram",STR(?k3)) as ?prefk3)
+  OPTIONAL{
+  ?s ?k3pred ?1gramk3 .
+    FILTER(STR(?k3pred) = ?prefk3)}
+  BIND(CONCAT(STR(?nplus2gram), " ",STR(?1gramk3)) AS ?nplus3gram)
+  BIND(URI(CONCAT(STR(ex:),"4gram",STR(?k))) AS ?4gramK)
+  
+  BIND((?k3+1) as ?k4)
+  BIND(CONCAT(STR(ex:),"1gram",STR(?k4)) as ?prefk4)
+  OPTIONAL{
+  ?s ?k4pred ?1gramk4 .
+    FILTER(STR(?k4pred) = ?prefk4)}
+  BIND(CONCAT(STR(?nplus3gram), " ",STR(?1gramk4)) AS ?nplus4gram)
+  BIND(URI(CONCAT(STR(ex:),"5gram",STR(?k))) AS ?5gramK)
+  
+  BIND((?k4+1) as ?k5)
+  BIND(CONCAT(STR(ex:),"1gram",STR(?k5)) as ?prefk5)
+  OPTIONAL{
+  ?s ?k5pred ?1gramk5 .
+    FILTER(STR(?k5pred) = ?prefk5)}
+  BIND(CONCAT(STR(?nplus4gram), " ",STR(?1gramk5)) AS ?nplus5gram)
+  BIND(URI(CONCAT(STR(ex:),"6gram",STR(?k))) AS ?6gramK)
+  
+  BIND((?k5+1) as ?k6)
+  BIND(CONCAT(STR(ex:),"1gram",STR(?k6)) as ?prefk6)
+  OPTIONAL{
+  ?s ?k6pred ?1gramk6 .
+    FILTER(STR(?k6pred) = ?prefk6)}
+  BIND(CONCAT(STR(?nplus5gram), " ",STR(?1gramk6)) AS ?nplus6gram)
+  BIND(URI(CONCAT(STR(ex:),"7gram",STR(?k))) AS ?7gramK)
+  
+  BIND((?k6+1) as ?k7)
+  BIND(CONCAT(STR(ex:),"1gram",STR(?k7)) as ?prefk7)
+  OPTIONAL{
+  ?s ?k7pred ?1gramk7 .
+    FILTER(STR(?k7pred) = ?prefk7)}
+  BIND(CONCAT(STR(?nplus6gram), " ",STR(?1gramk7)) AS ?nplus7gram)
+  BIND(URI(CONCAT(STR(ex:),"8gram",STR(?k))) AS ?8gramK)
+  
+  BIND((?k7+1) as ?k8)
+  BIND(CONCAT(STR(ex:),"1gram",STR(?k8)) as ?prefk8)
+  OPTIONAL{
+  ?s ?k8pred ?1gramk8 .
+    FILTER(STR(?k8pred) = ?prefk8)}
+  BIND(CONCAT(STR(?nplus7gram), " ",STR(?1gramk8)) AS ?nplus8gram)
+  BIND(URI(CONCAT(STR(ex:),"9gram",STR(?k))) AS ?9gramK)
+  
+  BIND((?k8+1) as ?k9)
+  BIND(CONCAT(STR(ex:),"1gram",STR(?k9)) as ?prefk9)
+  OPTIONAL{
+  ?s ?k9pred ?1gramk9 .
+    FILTER(STR(?k9pred) = ?prefk9)}
+  BIND(CONCAT(STR(?nplus8gram), " ",STR(?1gramk9)) AS ?nplus9gram)
+  BIND(URI(CONCAT(STR(ex:),"10gram",STR(?k))) AS ?10gramK)
+  
+  BIND((?k9+1) as ?k10)
+  BIND(CONCAT(STR(ex:),"1gram",STR(?k10)) as ?prefk10)
+  OPTIONAL{
+  ?s ?k10pred ?1gramk10 .
+    FILTER(STR(?k10pred) = ?prefk10)}
+  BIND(CONCAT(STR(?nplus9gram), " ",STR(?1gramk10)) AS ?nplus10gram)
+  BIND(URI(CONCAT(STR(ex:),"11gram",STR(?k))) AS ?11gramK)
+  
+  BIND((?k10+1) as ?k11)
+  BIND(CONCAT(STR(ex:),"1gram",STR(?k11)) as ?prefk11)
+  OPTIONAL{
+  ?s ?k11pred ?1gramk11 .
+    FILTER(STR(?k11pred) = ?prefk11)}
+  BIND(CONCAT(STR(?nplus10gram), " ",STR(?1gramk11)) AS ?nplus11gram)
+  BIND(URI(CONCAT(STR(ex:),"12gram",STR(?k))) AS ?12gramK)
+  
+  BIND((?k11+1) as ?k12)
+  BIND(CONCAT(STR(ex:),"1gram",STR(?k12)) as ?prefk12)
+  OPTIONAL{
+  ?s ?k12pred ?1gramk12 .
+    FILTER(STR(?k12pred) = ?prefk12)}
+  BIND(CONCAT(STR(?nplus11gram), " ",STR(?1gramk12)) AS ?nplus12gram)
+  BIND(URI(CONCAT(STR(ex:),"13gram",STR(?k))) AS ?13gramK)
+}

@@ -7,7 +7,7 @@ from the following communication and classification standards:
  - oneM2M
  - OCF
  - OMA LWM2M
- - Project Haystack
+ - Project Haystack (TODO update)
  - EDDL (TODO)
  - eCl@ss (TODO)
  - IFC (TODO)
@@ -39,22 +39,25 @@ For each concept included in the WoT catalogue, the following fields are availab
  - matches with Wikidata
  - source documentation (TODO)
 
-Example (from [`gatt.ttl`](BLE GATT/gatt.ttl)):
+Example:
 
 ```turtle
-ble:TemperatureMeasurement a skos:Concept, ontolex:LexicalConcept ;
-                           skos:prefLabel "temperature measurement" ;
-                           skos:definition "The Temperature Measurement characteristic is used to send..." ;
-                           skos:inScheme ble: ;
-                           skos:broader ble:Characteristic ;
-                           skos:related ble:IntermediateTemperatureValueField,
-                                        ble:TemperatureMeasurementValueField,
-                                        ble:Indicate,
-                                        ble:TimeStampField ;
-                           ontolex:isEvokedBy <tag:temperature%20measurement> ;
-                           skos:closeMatch wd:Q909741 . # Wikidata entity: 'temperature measurement'
-
-<tag:temperature%20measurement> a ontolex:LexicalEntry ;
-                                rdfs:label "temperature measurement" ;
-                                ontolex:denotes wd:Q909741 .
+ble:org.bluetooth.characteristic.indoor_bike_data a skos:Concept, ontolex:LexicalConcept;
+    skos:prefLabel "Indoor Bike Data";
+    skos:definition """The Indoor Bike Data characteristic is used to send
+    training-related data to the Client from an indoor bike
+    (Server)."""
+    skos:broader ble:Characteristic;
+    skos:related ble:Notify, ble:Flags, ble:InstantaneousSpeed, ble:AverageSpeed, ble:InstantaneousCadence, ble:AverageCadence, ble:TotalDistance ble:ResistanceLevel, ble:InstantaneousPower, ble:AveragePower, ble:TotalEnergy, ble:EnergyPerHour, ble:EnergyPerMinute, ble:HeartRate ble:MetabolicEquivalent, ble:ElapsedTime, ble:RemainingTime;
+    skos:inScheme ble:Scheme .
 ```
+
+## Contributing
+
+The WoT catalogue is built with [LinkedPipes ETL](https://etl.linkedpipes.com/).
+See an overview of the transformation pipeline:
+
+![LinkedPipes pipeline for the WoT catalogue](pipeline.png)
+
+To install LinkedPipes ETL, follow instructions [on Github](https://github.com/linkedpipes/etl#installation-and-startup).
+Then, import `transformation_pipeline.jsonld` and run it.
