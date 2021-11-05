@@ -2,11 +2,11 @@
 
 The Web of Things (WoT) catalogue is a collection of concepts extracted
 from the following communication and classification standards:
- - BLE GATT
- - BACnet
- - oneM2M
- - OCF
- - OMA LWM2M
+ - [BLE GATT](https://github.com/oesmith/gatt-xml) [_non-official copy_]
+ - [BACnet](https://web.archive.org/web/20190906201729/http://bacowl.sourceforge.net/) [_non-official copy_]
+ - [oneM2M](https://git.onem2m.org/MAS/Home-Appliances)
+ - [OCF](https://github.com/OpenInterConnect/IoTDataModels)
+ - [OMA LWM2M](https://github.com/OpenMobileAlliance/lwm2m-registry)
  - Project Haystack
  - EDDL (TODO)
  - eCl@ss (TODO)
