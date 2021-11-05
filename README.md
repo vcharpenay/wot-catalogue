@@ -7,11 +7,12 @@ from the following communication and classification standards:
  - oneM2M
  - OCF
  - OMA LWM2M
- - Project Haystack (TODO update)
+ - Project Haystack
  - EDDL (TODO)
  - eCl@ss (TODO)
  - IFC (TODO)
- - OPC UA (TODO)
+ - [OPC UA](https://github.com/OPCFoundation/UA-Nodeset) (TODO)
+ - [ICM](https://cimug.ucaiug.org/CIM%20Profiles/Forms/AllItems.aspx) (TODO)
 
 ## Getting Started
 
@@ -22,6 +23,20 @@ See the [online search engine](http://www.vcharpenay.link/wot-catalogue/) to bro
 Concept definitions follow the
 [Simple Knowledge Organization System (SKOS)](https://www.w3.org/TR/skos-reference/) W3C standard.
 SKOS includes two kinds of relation between concepts: subsumption (or inheritance) and relatednes.
+SKOS concepts are also put in different collections and schemes. A scheme corresponds to a source
+information model, assumed to be internally consistent but not necessarily consistent with other
+sources. If an information model spans several application domains, concepts are grouped in
+separate collections (one for each domain).
+
+The WoT catalogue also keeps track of lexical entries that are used to derive concepts (words or
+sequences of words). For that purpose, the catalogue also uses the
+[Ontolex vocabulary](https://www.w3.org/2016/05/ontolex/#lexical-entries). Distinguishing between
+concepts and lexical entries allows then to link concepts with lexical relations (such as
+synonymy) and to keep track of possible ambigiuity in concept definitions. The following diagram
+shows how SKOS and Ontolex are jointly used.
+
+![Concept model](concept-model.dot.png)
+
 On the following diagram, the base information model for each standard is represented with these
 two relation types only (white triangle for subsumption, black diamond for relatedness).
 
