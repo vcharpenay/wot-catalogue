@@ -75,4 +75,4 @@ See an overview of the transformation pipeline:
 ![LinkedPipes pipeline for the WoT catalogue](pipeline.png)
 
 To install LinkedPipes ETL, follow instructions [on Github](https://github.com/linkedpipes/etl#installation-and-startup).
-Then, import `transformation_pipeline.jsonld` and run it.
+Then, import `pipeline.jsonld` and run it.
