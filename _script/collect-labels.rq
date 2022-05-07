@@ -1,6 +1,0 @@
-prefix wikibase: <http://wikiba.se/ontology#>
-prefix schema: <http://schema.org/>
-construct { ?entity schema:name ?l ; schema:description ?def . }
-where { ?entity a wikibase:Item ; schema:name ?l ; schema:description ?def . }
-
-# shell filtering: cat <filename> | grep "@en" | awk '!buf[$0]++' > <other_filename>

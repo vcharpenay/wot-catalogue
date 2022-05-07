@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WoT Catalogue - Collection of formal concepts from the Web of Things</title>
+        
+        <script src="js/lunr.js"></script>
+        <script src="js/vis-network.min.js"></script>
+
+        <style>
+            body {
+                margin: 0;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            #title-bar {
+                /* height: 35px (if title's font-size: 30px) + 2*10px - padding-top */
+                height: 45px;
+                padding-top: 10px;
+                border-bottom: 1px solid black;
+            }
+
+            #title {
+                font-weight: bold;
+                font-size: 30px;
+                padding: 10px;
+                background-color: black;
+                color: white;
+            }
+
+            #waiting-message {
+                color: grey;
+            }
+
+            #waiting-message.active {
+                visibility: visible;
+            }
+
+            #waiting-message.inactive {
+                visibility: collapse;
+            }
+
+            #hierarchy {
+                position: absolute;
+                top: calc(45px + 10px + 1px);
+                left: 0;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                padding: 10px;
+            }
+
+            @media (max-width: 640px) {
+                #hierarchy {
+                    height: 200px;
+                    right: 0;
+                    border-bottom: 1px solid black;
+                }
+            }
+
+            @media (min-width: 640px) {
+                #hierarchy {
+                    bottom: 0;
+                    width: 20%;
+                    border-right: 1px solid black;
+                }
+            }
+
+            #hierarchy .hierarchy-item {
+                cursor: pointer;
+            }
+
+            #details {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                margin: 10px;
+            }
+
+            @media (max-width: 640px) {
+                #details {
+                    top: calc(45px + 10px + 1px + 200px + 2*10px + 1px);
+                    left: 0;
+                }
+            }
+
+            @media (min-width: 640px) {
+                #details {
+                    top: calc(45px + 10px + 1px);
+                    left: calc(20% + 2*10px + 1px);
+                }
+            }
+
+            #concept-label {
+                position: absolute;
+                left: 0;
+                right: 0;
+                height: 50px;
+                margin: 0;
+                overflow-x: hidden;
+                font-weight: bold;
+            }
+
+            #concept-definition {
+                position: absolute;
+                top: calc(50px);
+                left: 0;
+                right: 0;
+                height: 100px;
+                margin: 0;
+                overflow-x: hidden;
+                font-style: italic;
+            }
+
+            #concept-graph {
+                position: absolute;
+                top: calc(50px + 100px);
+                bottom: 0;
+                left: 0;
+                right: 0;
+                min-height: 200px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="title-bar">
+            <span id="title">WoT Catalogue</span>
+            <select id="scheme-selector">
+                <option value="lwm2m">OMA Lightweight M2M (LWM2M)</option>
+                <option value="onem2m">oneM2M Smart Data Template (SDT)</option>
+            </select>
+            <span id="waiting-message" class="inactive">downloading concepts...</span>
+            <!-- <input id="search-field" type="text" placeholder="Enter a concept name...">
+            <input id="search-button" type="button" value="Search"> -->
+        </div>
+
+        <div id="hierarchy">
+            <table>
+                <tbody id="concept-table-body">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div id="details">
+            <h1 id="concept-label"></h1>
+            <p id="concept-definition"></p>
+            <div id="concept-graph"></div>
+        </div>
+        
+        <script>
+            const schemeSelector = document.getElementById('scheme-selector');
+            const waitingMessage = document.getElementById('waiting-message');
+            const conceptTableBody = document.getElementById('concept-table-body');
+            const conceptGraph = document.getElementById('concept-graph');
+            const conceptLabel = document.getElementById('concept-label');
+            const conceptDefinition = document.getElementById('concept-definition');
+
+            let concepts = [];
+
+            function findSchemeIndex(label) {
+                for (let i = 0; i < schemeSelector.options.length; i++)
+                    if (schemeSelector[i].value == label) return i;
+            }
+
+            function displayScheme(nodes) {
+                let isConcept = n => {
+                    let c = 'skos:Concept';
+                    let t = n['@type'];
+                    return (t instanceof Array && t.indexOf(c) >= 0) || t == c;
+                };
+
+                concepts = nodes.filter(isConcept);
+
+                conceptTableBody.innerHTML = concepts.reduce((arr, n) => {
+                        let row = `<tr title="${n.definition}">\
+                            <td class="hierarchy-item" onclick="displayConcept('${n['@id']}')">${n.prefLabel}</td>\
+                        </tr>`;
+                        return arr + row;
+                    }, '');
+            }
+
+            function displayConcept(id) {
+                let findConcept = id => {
+                    return concepts.find(c => c['@id'] == id);
+                };
+
+                let c = findConcept(id);
+
+                conceptLabel.innerText = c.prefLabel;
+                conceptDefinition.innerText = c.definition;
+
+                let nodes = [
+                    { id: c['@id'], label: c.prefLabel }
+                ];
+
+                let edges = [];
+
+                if (c.broader) {
+                    let bc = findConcept(c.broader);
+
+                    nodes.push({ id: bc['@id'], label: bc.prefLabel });
+                    edges.push(
+                    {
+                        from: c['@id'],
+                        to: bc['@id'],
+                        arrows: {
+                            to: {
+                                enabled: true,
+                                type: 'normal',
+                            }
+                        }
+                    });
+                }
+
+                if (c.related) {
+                    let addRelation = rid => {
+                        let rc = findConcept(rid);
+
+                        nodes.push({ id: rid, label: rc.prefLabel });
+                        edges.push({
+                            from: rid,
+                            to: c['@id'],
+                            arrows: {
+                                to: {
+                                    enabled: true,
+                                    type: 'diamond',
+                                }
+                            }
+                        });
+                    };
+
+                    if (c.related instanceof Array) c.related.forEach(addRelation);
+                    else addRelation(c.related);
+                }
+
+                let invRelated = concepts.filter(c => {
+                    return c.related == id
+                        || (c.related instanceof Array && c.related.indexOf(id) > -1);
+                });
+
+                // FIXME edge definition duplicated with 'related'
+                invRelated.forEach(rc => {
+                    nodes.push({ id: rc['@id'], label: rc.prefLabel });
+                    edges.push({
+                        from: rc['@id'],
+                        to: id,
+                        arrows: {
+                            to: {
+                                enabled: true,
+                                type: 'diamond',
+                            }
+                        }
+                    });
+                });
+
+                var data = {
+                    nodes: new vis.DataSet(nodes),
+                    edges: new vis.DataSet(edges)
+                };
+
+                var options = {
+                    nodes: {
+                        shape: 'box',
+                        color: {
+                            border: 'black',
+                            background: 'white'
+                        }
+                    },
+                    edges: {
+                        color: 'black'
+                    }
+                };
+
+                var network = new vis.Network(conceptGraph, data, options);
+            }
+
+            schemeSelector.onchange = () => {
+                waitingMessage.className = 'active';
+
+                let i = schemeSelector.selectedIndex;
+                let scheme = schemeSelector.options[i].value;
+
+                console.log(`fetching concept scheme: ${scheme}`);
+
+                let opts = {
+                    headers: {
+                        'Accept': 'application/ld+json'
+                    }
+                };
+
+                fetch(scheme + '.jsonld', opts)
+                .then(resp => resp.json())
+                .then(data => displayScheme(data['@graph']))
+                .then(() => waitingMessage.className = 'inactive');
+            };
+
+            let params = (new URL(document.location)).searchParams;
+
+            let defaultScheme = params.get('scheme');
+            schemeSelector.selectedIndex = findSchemeIndex(defaultScheme) || 0;
+            schemeSelector.onchange();
+
+            let defaultConcept = params.get('concept');
+            if (defaultConcept) displayConcept(defaultConcept);
+
+            // TODO index concepts with lunr in hierarchy bar
+        </script>
+    </body>
+</html>
