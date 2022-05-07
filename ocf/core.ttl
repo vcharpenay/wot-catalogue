@@ -1,0 +1,55 @@
+@prefix ocf: <http://purl.org/wot-catalogue/ocf#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/wot-catalogue/ocf/core#> a skos:Collection;
+  skos:altLabel "ocf metamodel";
+  skos:member ocf:DeleteOperation, ocf:GetOperation, ocf:Operation, ocf:Path, ocf:PostOperation,
+    ocf:PutOperation, ocf:SwaggerAPI;
+  skos:prefLabel "OCF Metamodel" .
+
+<http://purl.org/wot-catalogue/ocf/core#SwaggerAPI> a skos:Concept;
+  skos:altLabel "swaggerswagger open api  definition";
+  skos:definition "This is the root document object of the OpenAPI document.";
+  skos:inScheme ocf:Scheme;
+  skos:prefLabel "Swagger/OpenAPI Definition";
+  skos:related ocf:Path .
+
+<http://purl.org/wot-catalogue/ocf/core#Path> a skos:Concept;
+  skos:altLabel "path";
+  skos:definition "Holds the relative paths to the individual endpoints and their operations. The path is appended to the URL from the Server Object in order to construct the full URL. The Paths MAY be empty, due to ACL constraints.";
+  skos:inScheme ocf:Scheme;
+  skos:prefLabel "Path";
+  skos:related ocf:Operation .
+
+<http://purl.org/wot-catalogue/ocf/core#GetOperation> a skos:Concept;
+  skos:altLabel "get operation";
+  skos:definition "A definition of a GET operation on this path.";
+  skos:inScheme ocf:Scheme;
+  skos:prefLabel "GET Operation" .
+
+<http://purl.org/wot-catalogue/ocf/core#PostOperation> a skos:Concept;
+  skos:altLabel "post operation";
+  skos:definition "A definition of a POST operation on this path.";
+  skos:inScheme ocf:Scheme;
+  skos:prefLabel "POST Operation" .
+
+<http://purl.org/wot-catalogue/ocf/core#Operation> a skos:Concept;
+  skos:altLabel "operation";
+  skos:definition "Describes a single API operation on a path.";
+  skos:inScheme ocf:Scheme;
+  skos:narrower ocf:DeleteOperation, ocf:GetOperation, ocf:PostOperation, ocf:PutOperation;
+  skos:prefLabel "Operation" .
+
+<http://purl.org/wot-catalogue/ocf/core#PutOperation> a skos:Concept;
+  skos:altLabel "put operation";
+  skos:definition "A definition of a PUT operation on this path.";
+  skos:inScheme ocf:Scheme;
+  skos:prefLabel "PUT Operation" .
+
+<http://purl.org/wot-catalogue/ocf/core#DeleteOperation> a skos:Concept;
+  skos:altLabel "delete operation";
+  skos:definition "A definition of a DELETE operation on this path.";
+  skos:inScheme ocf:Scheme;
+  skos:prefLabel "DELETE Operation" .

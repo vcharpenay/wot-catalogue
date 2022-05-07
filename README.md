@@ -70,9 +70,9 @@ ble:org.bluetooth.characteristic.indoor_bike_data a skos:Concept, ontolex:Lexica
 ## Contributing
 
 The WoT catalogue is built with [LinkedPipes ETL](https://etl.linkedpipes.com/).
-See an overview of the transformation pipeline:
-
-![LinkedPipes pipeline for the WoT catalogue](pipeline.png)
-
 To install LinkedPipes ETL, follow instructions [on Github](https://github.com/linkedpipes/etl#installation-and-startup).
 Then, import `pipeline.jsonld` and run it.
+
+Once the pipeline has been executed, the output Turtle files can be committed to the repo.
+If the pipeline itself has changed, `pipeline.jsonld` should be committed to the repo as well.
+Every stable release of the catalogue should be tagged and pushed to the `release` branch, which is used by Github pages to deploy it online.
