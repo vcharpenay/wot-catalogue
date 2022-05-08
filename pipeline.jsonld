@@ -28,21 +28,6 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/11"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/101",
-    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
-    "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "FilesOutput"
-    } ],
-    "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/79"
-    } ],
-    "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputFiles"
-    } ],
-    "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/28"
-    } ]
-  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/108",
     "@type" : [ "http://linkedpipes.com/ontology/Component" ],
     "http://linkedpipes.com/ontology/color" : [ {
@@ -223,7 +208,7 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/18"
     } ],
     "http://linkedpipes.com/ontology/vertex" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/e0d3-bb19"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/cc7d-937e"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/119",
@@ -1157,11 +1142,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "121"
+      "@value" : "-465"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "36"
+      "@value" : "388"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "BLE-GATT XML"
@@ -1313,21 +1298,6 @@
       "@value" : "XSLT transformer"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/62",
-    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
-    "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "FilesOutput"
-    } ],
-    "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/57"
-    } ],
-    "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputFiles"
-    } ],
-    "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/63"
-    } ]
-  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/63",
     "@type" : [ "http://linkedpipes.com/ontology/Component" ],
     "http://linkedpipes.com/ontology/color" : [ {
@@ -1341,11 +1311,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "597"
+      "@value" : "286"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "39"
+      "@value" : "380"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "BLE XML"
@@ -1390,21 +1360,6 @@
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/54"
-    } ]
-  }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/69",
-    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
-    "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "FilesOutput"
-    } ],
-    "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/56"
-    } ],
-    "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "FilesInput"
-    } ],
-    "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/57"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/7",
@@ -1608,11 +1563,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1062"
+      "@value" : "596"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "29"
+      "@value" : "368"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "(BLE)"
@@ -1917,21 +1872,6 @@
       "@value" : "HTTP get"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/94",
-    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
-    "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "FilesOutput"
-    } ],
-    "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/95"
-    } ],
-    "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputFiles"
-    } ],
-    "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/28"
-    } ]
-  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/95",
     "@type" : [ "http://linkedpipes.com/ontology/Component" ],
     "http://linkedpipes.com/ontology/color" : [ {
@@ -1945,11 +1885,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1042"
+      "@value" : "580"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-294"
+      "@value" : "483"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "High-Level concepts"
@@ -2150,7 +2090,7 @@
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "354"
+      "@value" : "310"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Create file for IPSO collection"
@@ -2172,11 +2112,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2088"
+      "@value" : "2090"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "352"
+      "@value" : "312"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Generate IPSO collection"
@@ -2315,6 +2255,32 @@
       "@value" : "SPARQL construct"
     } ]
   }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/53d0-9d77",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/color" : [ {
+      "@value" : "#fcaf3e"
+    } ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/53d0-9d77/configuration"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-sparqlUpdate/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "1590"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "409"
+    } ],
+    "http://purl.org/dc/terms/description" : [ {
+      "@value" : "Remove empty skos:definition"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "SPARQL update"
+    } ]
+  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/5ad4-96ff",
     "@type" : [ "http://linkedpipes.com/ontology/Component" ],
     "http://linkedpipes.com/ontology/color" : [ {
@@ -2328,43 +2294,17 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2482"
+      "@value" : "2472"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "279"
+      "@value" : "240"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Create file for LWM2M core model"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "RDF to file"
-    } ]
-  }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/64b9-ab69",
-    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
-    "http://linkedpipes.com/ontology/color" : [ {
-      "@value" : "#8ae234"
-    } ],
-    "http://linkedpipes.com/ontology/configurationGraph" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/64b9-ab69/configuration"
-    } ],
-    "http://linkedpipes.com/ontology/template" : [ {
-      "@id" : "http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0"
-    } ],
-    "http://linkedpipes.com/ontology/x" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2084"
-    } ],
-    "http://linkedpipes.com/ontology/y" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "515"
-    } ],
-    "http://purl.org/dc/terms/description" : [ {
-      "@value" : "Generate GATT collection"
-    } ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-      "@value" : "SPARQL construct"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/6626-b452",
@@ -2406,11 +2346,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2063"
+      "@value" : "2071"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "262"
+      "@value" : "242"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Generate LWM2M core collection"
@@ -2445,56 +2385,53 @@
       "@value" : "SPARQL update"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/8f64-bed6",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/774d-b1d7",
     "@type" : [ "http://linkedpipes.com/ontology/Component" ],
     "http://linkedpipes.com/ontology/color" : [ {
-      "@value" : "#8ae234"
+      "@value" : "#fcaf3e"
     } ],
     "http://linkedpipes.com/ontology/configurationGraph" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/8f64-bed6/configuration"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/774d-b1d7/configuration"
     } ],
     "http://linkedpipes.com/ontology/template" : [ {
-      "@id" : "http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0"
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-unpack/0.0.0"
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2076"
+      "@value" : "-111"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "428"
-    } ],
-    "http://purl.org/dc/terms/description" : [ {
-      "@value" : "Generate BLE core collection"
+      "@value" : "380"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-      "@value" : "SPARQL construct"
+      "@value" : "Decompress archive"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/a0c7-acd4",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/be81-b6b3",
     "@type" : [ "http://linkedpipes.com/ontology/Component" ],
     "http://linkedpipes.com/ontology/color" : [ {
-      "@value" : "#8ae234"
+      "@value" : "#fcaf3e"
     } ],
     "http://linkedpipes.com/ontology/configurationGraph" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/a0c7-acd4/configuration"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/be81-b6b3/configuration"
     } ],
     "http://linkedpipes.com/ontology/template" : [ {
-      "@id" : "http://etl.linkedpipes.com/resources/components/t-rdfToFile/0.0.0"
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-sparqlUpdate/0.0.0"
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2479"
+      "@value" : "1199"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "426"
+      "@value" : "410"
     } ],
     "http://purl.org/dc/terms/description" : [ {
-      "@value" : "Create file for BLE core collection"
+      "@value" : "Add skos:altLabel for BLE GATT"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-      "@value" : "RDF to file"
+      "@value" : "SPARQL update"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ceba-986a",
@@ -2696,6 +2633,29 @@
       "@value" : "Files to RDF single graph"
     } ]
   }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f80b-af38",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/color" : [ {
+      "@value" : "#fcaf3e"
+    } ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f80b-af38/configuration"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "910"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "412"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "Files to RDF single graph"
+    } ]
+  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f9b6-b2d7",
     "@type" : [ "http://linkedpipes.com/ontology/Component" ],
     "http://linkedpipes.com/ontology/color" : [ {
@@ -2709,14 +2669,14 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2477"
+      "@value" : "2455"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "499"
+      "@value" : "407"
     } ],
     "http://purl.org/dc/terms/description" : [ {
-      "@value" : "Create file for GATT collection"
+      "@value" : "Create file for BLE (GATT) scheme"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "RDF to file"
@@ -2835,19 +2795,19 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/61"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/26ac-8372",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/2750-a6d3",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "OutputRdf"
+      "@value" : "FilesOutput"
     } ],
     "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/109"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/79"
     } ],
     "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputRdf"
+      "@value" : "InputFiles"
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/64b9-ab69"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f80b-af38"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/279e-8b85",
@@ -2880,19 +2840,19 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4266-acfb"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/38a9-9261",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/45bf-a6cd",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
       "@value" : "OutputRdf"
     } ],
     "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/8f64-bed6"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/be81-b6b3"
     } ],
     "http://linkedpipes.com/ontology/targetBinding" : [ {
       "@value" : "InputRdf"
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/a0c7-acd4"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/53d0-9d77"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/4730-8a93",
@@ -2955,6 +2915,21 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef80-b6bb"
     } ]
   }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/5b88-948e",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "OutputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f80b-af38"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/be81-b6b3"
+    } ]
+  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/67a2-a76d",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
@@ -3013,21 +2988,6 @@
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ceba-986a"
-    } ]
-  }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/7218-b541",
-    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
-    "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "OutputRdf"
-    } ],
-    "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/109"
-    } ],
-    "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputRdf"
-    } ],
-    "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/8f64-bed6"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/756b-b826",
@@ -3165,6 +3125,21 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ddfc-95af"
     } ]
   }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/93c8-9f72",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "OutputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/53d0-9d77"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f9b6-b2d7"
+    } ]
+  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/93f4-ad67",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
@@ -3193,6 +3168,21 @@
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/724d-9bb6"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/9da1-9134",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "FilesOutput"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/774d-b1d7"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputFiles"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/63"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/9ff3-9f57",
@@ -3255,6 +3245,21 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef3f-b9b9"
     } ]
   }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/acc0-aac2",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "FilesOutput"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/95"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputFiles"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f80b-af38"
+    } ]
+  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/aefb-a4ed",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
@@ -3300,21 +3305,6 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/1881-9dd3"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/d392-b38d",
-    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
-    "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "OutputFile"
-    } ],
-    "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/a0c7-acd4"
-    } ],
-    "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "FilesInput"
-    } ],
-    "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef80-b6bb"
-    } ]
-  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/e7a7-b00d",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
@@ -3330,22 +3320,22 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4f30-b4d2"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/fc6b-8dcd",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/f08b-a489",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "OutputRdf"
+      "@value" : "FilesOutput"
     } ],
     "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/64b9-ab69"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/56"
     } ],
     "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputRdf"
+      "@value" : "FilesInput"
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f9b6-b2d7"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/774d-b1d7"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/e0d3-bb19",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/cc7d-937e",
     "@type" : [ "http://linkedpipes.com/ontology/Vertex" ],
     "http://linkedpipes.com/ontology/order" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -3525,7 +3515,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/63/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-filesFilter#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-filesFilter#fileNamePattern" : [ {
-      "@value" : "(gatt\\-xml\\-master\\/)(org\\.bluetooth\\.)(service|characteristic)\\.\\w+(\\.xml)"
+      "@value" : ".*\\/(org\\.bluetooth\\.)(service|characteristic)\\.\\w+(\\.xml)"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-filesFilter#fileNamePatternControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -4065,6 +4055,18 @@
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/50f0-bf01/configuration"
 }, {
   "@graph" : [ {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/724d-9bb6/configuration",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query" : [ {
+      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX onem2m: <http://purl.org/wot-catalogue/onem2m#>\nPREFIX haim: <http://purl.org/wot-catalogue/haim#>\nDELETE {\n  ?s skos:definition ?d\n} WHERE {\n  ?s a ?type . FILTER(?type in (skos:Concept, skos:ConceptScheme, skos:Collection)) \n  ?s skos:definition ?d .\n  FILTER(?d = \"\")\n}"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/53d0-9d77/configuration"
+}, {
+  "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/5ad4-96ff/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName" : [ {
@@ -4087,18 +4089,6 @@
     } ]
   } ],
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/5ad4-96ff/configuration"
-}, {
-  "@graph" : [ {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/64b9-ab69/configuration",
-    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration" ],
-    "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query" : [ {
-      "@value" : "PREFIX ble: <http://purl.org/wot-catalogue/ble#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX ns: <http://purl.org/wot-catalogue/ble/gatt#>\nCONSTRUCT {\n  ns: a skos:Collection ; skos:member ?c .\n  ?c ?cp ?co .\n} WHERE {\n  ?concept a skos:Concept ;\n     skos:inScheme ble:Scheme ;\n     ?cp ?co .\n  FILTER NOT EXISTS {\n    ble:metamodel skos:member ?concept .\n  }\n  \n  BIND (uri(concat(str(ns:), strafter(str(?concept), \"#\"))) AS ?c)\n}"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl" : [ {
-      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
-    } ]
-  } ],
-  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/64b9-ab69/configuration"
 }, {
   "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/6626-b452/configuration",
@@ -4137,40 +4127,42 @@
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/724d-9bb6/configuration"
 }, {
   "@graph" : [ {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/8f64-bed6/configuration",
-    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration" ],
-    "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query" : [ {
-      "@value" : "PREFIX ble: <http://purl.org/wot-catalogue/ble#>\nPREFIX bl: <https://w3id.org/biolink/vocab/>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX ns: <http://purl.org/wot-catalogue/ble/core#>\nCONSTRUCT {\n  ns: ?collp ?collo .\n  ?c ?cp ?co .\n} WHERE {\n  ble:metamodel a skos:Collection ;\n            ?collp ?collo ;\n            skos:member ?concept .\n  ?concept ?cp ?co .\n  \n  BIND (uri(concat(str(ns:), strafter(str(?concept), \"#\"))) AS ?c)\n}"
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/774d-b1d7/configuration",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-unpack#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-unpack#format" : [ {
+      "@value" : "http://plugins.linkedpipes.com/ontology/t-unpack#auto"
     } ],
-    "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl" : [ {
+    "http://plugins.linkedpipes.com/ontology/t-unpack#formatControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-unpack#skipOnError" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+      "@value" : "false"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-unpack#skipOnErrorControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-unpack#usePrefix" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+      "@value" : "true"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-unpack#usePrefixControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
     } ]
   } ],
-  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/8f64-bed6/configuration"
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/774d-b1d7/configuration"
 }, {
   "@graph" : [ {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/a0c7-acd4/configuration",
-    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration" ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName" : [ {
-      "@value" : "ble/core.ttl"
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/be81-b6b3/configuration",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query" : [ {
+      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sdt: <http://purl.org/wot-catalogue/sdt#>\nPREFIX ocf:<http://purl.org/wot-catalogue/ocf#>\nPREFIX ble:<http://purl.org/wot-catalogue/ble#>\nPREFIX lwm2m:<http://purl.org/wot-catalogue/lwm2m#>\nPREFIX bacnet:<http://purl.org/wot-catalogue/bacnet#>\n\nINSERT {\n  ?s skos:altLabel ?alt .\n} WHERE {\n  ?s a skos:Concept;\n    skos:inScheme ble:scheme ;\n    skos:prefLabel ?l .\n  BIND(LCASE(?l) as ?alt)\n}"
     } ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileNameControl" : [ {
-      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileType" : [ {
-      "@value" : "text/turtle"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileTypeControl" : [ {
-      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri" : [ {
-      "@id" : "http://purl.org/wot-catalogue/"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUriControl" : [ {
+    "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
     } ]
   } ],
-  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/a0c7-acd4/configuration"
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/be81-b6b3/configuration"
 }, {
   "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ceba-986a/configuration",
@@ -4347,10 +4339,36 @@
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f483-b7b7/configuration"
 }, {
   "@graph" : [ {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f80b-af38/configuration",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSize" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "50000"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSizeControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeType" : [ {
+      "@value" : ""
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeTypeControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFail" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+      "@value" : "false"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFailControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f80b-af38/configuration"
+}, {
+  "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f9b6-b2d7/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName" : [ {
-      "@value" : "ble/gatt.ttl"
+      "@value" : "ble/scheme.ttl"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileNameControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -4439,7 +4457,7 @@
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-xslt#template" : [ {
-      "@value" : "<xsl:stylesheet\n    xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n    xmlns:ble=\"http://purl.org/wot-catalogue/ble#\"\n    xmlns:ontolex=\"http://www.w3.org/ns/lemon/ontolex#\"\n    xmlns:prov=\"http://www.w3.org/ns/prov#\"\n    version=\"1.0\">\n\n<!-- configuration boilerplate -->\n    <xsl:output encoding=\"UTF-8\" indent=\"yes\" method=\"xml\" normalization-form=\"NFC\" />\n    <xsl:strip-space elements=\"*\"/>\n\n    <xsl:template match=\"/\">\n        <rdf:RDF>\n            <xsl:apply-templates select=\"//Service\"/>\n            <xsl:apply-templates select=\"/Characteristic\"/>\n            <xsl:apply-templates select=\"//Value/Field\"/>\n        </rdf:RDF>\n    </xsl:template>\n\n    <xsl:template name=\"service-tpl\" match=\"//Service\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/ble#{@uuid}\">\n            <!-- rdf:type -->\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <!-- skos:prefLabel and skos:definition -->\n            <skos:prefLabel>\n                <xsl:value-of select=\"@name\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:choose>\n                    <xsl:when test=\"boolean(InformativeText/Summary)\">\n                        <xsl:value-of select=\"InformativeText/Summary\"/>\n                    </xsl:when>\n                    <xsl:when test=\"boolean(InformativeText/Abstract)\">\n                        <xsl:value-of select=\"InformativeText/Abstract\"/>\n                    </xsl:when>\n                </xsl:choose>\n            </skos:definition>\n            <!-- skos:broader and skos:inScheme -->\n            <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/ble#Service\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/ble#Scheme\"/> \n            <!-- skos:related -->\n            <xsl:for-each select=\"Characteristics/Characteristic\">\n                <skos:related rdf:resource=\"http://purl.org/wot-catalogue/ble#{@type}\"/>\n            </xsl:for-each>\n        </rdf:Description>\n        <!-- Apply the template to create triples corresponding to the characteristics' properties, stored in the Service files -->\n        <xsl:apply-templates select=\"Characteristics/Characteristic\"/>\n    </xsl:template>\n\n    <!-- template for the characteristic elements within the service files -->\n    <xsl:template name=\"service-characteristic-tpl\" match=\"Characteristics/Characteristic\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/ble#{@type}\">\n            <xsl:for-each select=\"Properties/*[text()]\">\n                <xsl:if test=\". != 'Excluded'\">\n                    <skos:related rdf:resource=\"http://purl.org/wot-catalogue/ble#{name(.)}\"/>\n                </xsl:if>\n            </xsl:for-each>\n        </rdf:Description>\n    </xsl:template>\n\n    <!-- template for the characteristics described by characteristics files --> \n    <xsl:template name=\"characteristic-tpl\" match=\"/Characteristic\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/ble#{@type}\">\n            <!-- rdf:type -->\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <!-- skos:prefLabel and skos:definition -->\n            <skos:prefLabel>\n                <xsl:value-of select=\"@name\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:choose>\n                    <xsl:when test=\"boolean(InformativeText/Summary)\">\n                        <xsl:value-of select=\"InformativeText/Summary\"/>\n                    </xsl:when>\n                    <xsl:when test=\"boolean(InformativeText/Abstract)\">\n                        <xsl:value-of select=\"InformativeText/Abstract\"/>\n                    </xsl:when>\n                </xsl:choose>\n            </skos:definition>\n            <!-- skos:broader and skos:inScheme -->\n            <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/ble#Characteristic\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/ble#Scheme\"/> \n            <!-- skos:related -->\n            <xsl:for-each select=\"Value/Field\">\n                <xsl:variable name=\"name\" select=\"translate(normalize-space(@name), ' ', '')\"/>\n                    <skos:related rdf:resource=\"http://purl.org/wot-catalogue/ble#{$name}\"/>\n            </xsl:for-each>\n        </rdf:Description>\n    </xsl:template>\n\n    <xsl:template name=\"value-tpl\" match=\"//Value/Field\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/ble#{translate(normalize-space(@name), ' ', '')}\">\n            <!-- rdf:type -->\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <!-- skos:prefLabel and skos:definition -->\n            <skos:prefLabel>\n                <xsl:value-of select=\"@name\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:value-of select=\"InformativeText\"/>\n            </skos:definition>\n            <!-- skos:broader and skos:inScheme -->\n            <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/ble#Value\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/ble#Scheme\"/> \n        </rdf:Description>\n    </xsl:template>\n</xsl:stylesheet>"
+      "@value" : "<xsl:stylesheet\n    xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n    xmlns:ble=\"http://purl.org/wot-catalogue/ble#\"\n    xmlns:ontolex=\"http://www.w3.org/ns/lemon/ontolex#\"\n    xmlns:prov=\"http://www.w3.org/ns/prov#\"\n    version=\"1.0\">\n\n<!-- configuration boilerplate -->\n    <xsl:output encoding=\"UTF-8\" indent=\"yes\" method=\"xml\" normalization-form=\"NFC\" />\n    <xsl:strip-space elements=\"*\"/>\n\n    <xsl:template match=\"/\">\n        <rdf:RDF>\n            <xsl:apply-templates select=\"//Service\"/>\n            <xsl:apply-templates select=\"/Characteristic\"/>\n            <xsl:apply-templates select=\"//Value/Field\"/>\n        </rdf:RDF>\n    </xsl:template>\n\n    <xsl:template name=\"service-tpl\" match=\"//Service\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/ble#{@uuid}\">\n            <!-- rdf:type -->\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <!-- skos:prefLabel and skos:definition -->\n            <skos:prefLabel>\n                <xsl:value-of select=\"@name\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:choose>\n                    <xsl:when test=\"boolean(InformativeText/Summary)\">\n                        <xsl:value-of select=\"InformativeText/Summary\"/>\n                    </xsl:when>\n                    <xsl:when test=\"boolean(InformativeText/Abstract)\">\n                        <xsl:value-of select=\"InformativeText/Abstract\"/>\n                    </xsl:when>\n                </xsl:choose>\n            </skos:definition>\n            <!-- skos:broader and skos:inScheme -->\n            <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/ble#Service\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/ble#scheme\"/> \n            <!-- skos:related -->\n            <xsl:for-each select=\"Characteristics/Characteristic\">\n                <skos:related rdf:resource=\"http://purl.org/wot-catalogue/ble#{@type}\"/>\n            </xsl:for-each>\n        </rdf:Description>\n        <!-- Apply the template to create triples corresponding to the characteristics' properties, stored in the Service files -->\n        <xsl:apply-templates select=\"Characteristics/Characteristic\"/>\n    </xsl:template>\n\n    <!-- template for the characteristic elements within the service files -->\n    <xsl:template name=\"service-characteristic-tpl\" match=\"Characteristics/Characteristic\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/ble#{@type}\">\n            <xsl:for-each select=\"Properties/*[text()]\">\n                <xsl:if test=\". != 'Excluded'\">\n                    <skos:related rdf:resource=\"http://purl.org/wot-catalogue/ble#{name(.)}\"/>\n                </xsl:if>\n            </xsl:for-each>\n        </rdf:Description>\n    </xsl:template>\n\n    <!-- template for the characteristics described by characteristics files --> \n    <xsl:template name=\"characteristic-tpl\" match=\"/Characteristic\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/ble#{@type}\">\n            <!-- rdf:type -->\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <!-- skos:prefLabel and skos:definition -->\n            <skos:prefLabel>\n                <xsl:value-of select=\"@name\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:choose>\n                    <xsl:when test=\"boolean(InformativeText/Summary)\">\n                        <xsl:value-of select=\"InformativeText/Summary\"/>\n                    </xsl:when>\n                    <xsl:when test=\"boolean(InformativeText/Abstract)\">\n                        <xsl:value-of select=\"InformativeText/Abstract\"/>\n                    </xsl:when>\n                </xsl:choose>\n            </skos:definition>\n            <!-- skos:broader and skos:inScheme -->\n            <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/ble#Characteristic\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/ble#scheme\"/> \n            <!-- skos:related -->\n            <xsl:for-each select=\"Value/Field\">\n                <xsl:variable name=\"name\" select=\"translate(normalize-space(@name), ' ', '')\"/>\n                    <skos:related rdf:resource=\"http://purl.org/wot-catalogue/ble#{$name}\"/>\n            </xsl:for-each>\n        </rdf:Description>\n    </xsl:template>\n\n    <xsl:template name=\"value-tpl\" match=\"//Value/Field\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/ble#{translate(normalize-space(@name), ' ', '')}\">\n            <!-- rdf:type -->\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <!-- skos:prefLabel and skos:definition -->\n            <skos:prefLabel>\n                <xsl:value-of select=\"@name\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:value-of select=\"InformativeText\"/>\n            </skos:definition>\n            <!-- skos:broader and skos:inScheme -->\n            <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/ble#Value\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/ble#scheme\"/> \n        </rdf:Description>\n    </xsl:template>\n</xsl:stylesheet>"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-xslt#templateControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -4637,7 +4655,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/95/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/e-textHolder#content" : [ {
-      "@value" : "@prefix ble: <http://purl.org/wot-catalogue/ble#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\nble:Profile a skos:Concept .\nble:Service a skos:Concept .\nble:Characteristic a skos:Concept .\nble:Property a skos:Concept .\nble:Value a skos:Concept .\n\nble:Read a skos:Concept .\nble:Write a skos:Concept .\nble:Notify a skos:Concept .\nble:Indicate a skos:Concept .\nble:WritewithoutResponse a skos:Concept .\nble:ReliableWrite a skos:Concept .\nble:ReadLong a skos:Concept .\n\nble:DeviceInformationService a skos:Concept .\nble:ManufacturerName a skos:Concept .\nble:ModelNumber a skos:Concept .\nble:SystemID a skos:Concept .\nble:SerialNumber a skos:Concept .\nble:HardwareRevision a skos:Concept .\nble:FirmwareRevision a skos:Concept .\nble:SoftwareRevision a skos:Concept .\nble:IEEE11073-20601RegulatoryCertificationDataList a skos:Concept .\nble:PnPID a skos:Concept .\n\nble:BondManagementService a skos:Concept .\nble:BondManagementControlPoint a skos:Concept .\nble:BondManagementFeature a skos:Concept .\n\nble:BatteryService a skos:Concept .\nble:BatteryLevel a skos:Concept .\n\nble:CurrentTimeService a skos:Concept .\nble:CurrentTime a skos:Concept .\nble:LocalTimeInformation a skos:Concept .\nble:ReferenceTimeInformation a skos:Concept .\n\nble:ScanParametersService a skos:Concept .\nble:ScanIntervalWindow a skos:Concept .\nble:ScanRefresh a skos:Concept .\n\nble:UserDataService a skos:Concept .\nble:UDSCharacteristic  a skos:Concept .\nble:DatabaseChangeIncrement  a skos:Concept .\nble:UserIndex a skos:Concept .\nble:UserControlPoint  a skos:Concept .\n\nble:SensorLocation a skos:Concept .\nble:RecordAccessControlPoint a skos:Concept .\nble:SCControlPoint a skos:Concept .\n\n\nble:ImmediateAlertService a skos:Concept .\nble:AlertLevel a skos:Concept .\n\n\nble:Profile skos:related ble:Service .\nble:Service skos:related ble:Characteristic .\nble:Characteristic skos:related ble:Property .\nble:Characteristic skos:related ble:Value .\n\nble:Service skos:narrower ble:DeviceInformationService . \nble:Service skos:narrower ble:BatteryService .\nble:Service skos:narrower ble:BondManagementService . \nble:Service skos:narrower ble:CurrentTimeService .\nble:Service skos:narrower ble:ScanParametersService .\nble:Service skos:narrower ble:UserDataService .\nble:Service skos:narrower ble:ImmediateAlertService .\n\nble:Property skos:narrower ble:Read, ble:ReadLong .\nble:Property skos:narrower ble:Write .\nble:Property skos:narrower ble:Notify .\nble:Property skos:narrower ble:Indicate .\nble:Property skos:narrower ble:WritewithoutResponse, ble:ReliableWrite .\n\nble:Profile skos:prefLabel \"Profile\" .\nble:Service skos:prefLabel \"Service\" .\nble:Characteristic skos:prefLabel \"Characteristic\".\nble:Property skos:prefLabel \"Property\" .\nble:Value skos:prefLabel \"Value\" .\n\nble:Read skos:prefLabel \"Read\" .\nble:Write skos:prefLabel \"Write\" .\nble:Notify  skos:prefLabel \"Notify\" .\nble:Indicate skos:prefLabel \"Indicate\" .\nble:WritewithoutResponse skos:prefLabel \"Write without Response\" .\nble:ReliableWrite skos:prefLabel \"Reliable Write\" .\nble:ReadLong skos:prefLabel \"Read Long\" .\n\nble:Read skos:definition \"A Characteristic Value is read from a server when the client knows the Characteristic Value Handle\" .\nble:Write skos:definition \"A Characteristic Value is writen to a server when the client knows the Characteristic Value Handle\" .\nble:Notify  skos:definition \"A server is configured to notify a Characteristic Value to a client without expecting any Attribute Protocol layer acknowledgment that the notification was successfully received\" .\nble:Indicate skos:definition \"A server is configured to indicate a Characteristic Value to a client and expects an Attribute Protocol layer acknowledgment that the indication was successfully received\" .\nble:WritewithoutResponse skos:definition \"A Characteristic Value is writen to a server when the client knows the Characteristic Value Handle and the client does not need an acknowledgment that the write was successfully performed\" .\nble:ReliableWrite skos:definition \"Characteristic Value is written to a server when the client knows the Characteristic Value Handle, and assurance is required that the correct Characteristic Value is going to be written by transferring the Characteristic Value to be written in both directions before the write is performed.\" .\nble:ReadLong skos:definition \"Characteristic Value is read from a server when the client knows the Characteristic Value Handle and the length of the Characteristic Value is longer than can be sent in a single Read Response Attribute protocol message.\" .\n\nble:DeviceInformationService skos:prefLabel \"Device Information Service.\" .\nble:DeviceInformationService skos:definition \"The Device Information Service exposes manufacturer and/or vendor information about a device.\" .\nble:DeviceInformationService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=244369> .\nble:DeviceInformationService owl:versionInfo  \"1.1\" .\n\nble:Characteristic skos:narrower ble:ManufacturerName .\nble:Characteristic skos:narrower ble:ModelNumber .\nble:Characteristic skos:narrower ble:SystemID .\nble:Characteristic skos:narrower ble:SerialNumber .\nble:Characteristic skos:narrower ble:HardwareRevision .\nble:Characteristic skos:narrower ble:FirmwareRevision .\nble:Characteristic skos:narrower ble:SoftwareRevision .\nble:Characteristic skos:narrower ble:IEEE11073-20601RegulatoryCertificationDataList .\nble:Characteristic skos:narrower ble:PnPID .\n\nble:DeviceInformationService skos:related ble:ManufacturerName .\nble:DeviceInformationService skos:related ble:ModelNumber .\nble:DeviceInformationService skos:related ble:SystemID .\nble:DeviceInformationService skos:related ble:SerialNumber .\nble:DeviceInformationService skos:related ble:HardwareRevision .\nble:DeviceInformationService skos:related ble:FirmwareRevision .\nble:DeviceInformationService skos:related ble:SoftwareRevision .\nble:DeviceInformationService skos:related ble:IEEE11073-20601RegulatoryCertificationDataList .\nble:DeviceInformationService skos:related ble:PnPID .\n\nble:ManufacturerName skos:related xsd:string .\nble:ModelNumber skos:related xsd:string .\nble:SerialNumber skos:related xsd:string .\nble:HardwareRevision skos:related xsd:string .\nble:FirmwareRevision  skos:related xsd:string .\nble:SoftwareRevision skos:related xsd:string .\nble:IEEE11073-20601RegulatoryCertificationDataList skos:related xsd:string .\n\n\nble:ManufacturerName skos:related ble:Read .\nble:ModelNumber skos:related ble:Read .\nble:SerialNumber skos:related ble:Read .\nble:HardwareRevision skos:related ble:Read .\nble:FirmwareRevision  skos:related ble:Read .\nble:SoftwareRevision skos:related ble:Read .\nble:SystemID skos:related ble:Read .\nble:PnPID skos:related ble:Read .\nble:IEEE11073-20601RegulatoryCertificationDataList skos:related ble:Read .\n\n\nble:VendorIDSourceField a skos:Concept .\nble:VendorIDField a skos:Concept .\nble:VendorIDField a skos:Concept .\nble:ProductIDField a skos:Concept .\nble:ProductVersionField a skos:Concept .\n\nble:Value skos:narrower ble:VendorIDSourceField .\nble:Value skos:narrower ble:VendorIDField .\nble:Value skos:narrower ble:ProductIDField .\nble:Value skos:narrower ble:ProductVersionField .\n\nble:PnPID skos:related ble:VendorIDSourceField .\n\nble:VendorIDSourceField skos:narrower ble:BluetoothSIG .\nble:VendorIDSourceField skos:narrower ble:USBImplementerForum .\n\nble:BluetoothSIG a skos:Concept .\nble:USBImplementerForum a skos:Concept .\n\nble:Value skos:narrower ble:BluetoothSIG  .\nble:Value skos:narrower ble:USBImplementerForum .\n\nble:BluetoothSIG skos:related xsd:unsignedByte .\nble:USBImplementerForum skos:related xsd:unsignedByte .\n\nble:VendorIDSourceField skos:prefLabel \"Vendor ID Source Field\" .\nble:BluetoothSIG skos:prefLabel \"Bluetooth Special Interest Group\" .\nble:USBImplementerForum skos:prefLabel \"USB Implementer’s Forum\" .\n\nble:VendorIDSourceField skos:definition \"The Vendor ID Source field designates which organization assigned the value used in the Vendor ID field value.\" .\nble:BluetoothSIG skos:definition \"Bluetooth SIG- assigned Device ID Vendor ID value from the Assigned Numbers document.\" .\nble:USBImplementerForum skos:definition \"USB Implementer’s Forum assigned Vendor ID value.\" .\n\nble:PnPID skos:related ble:VendorIDField .\nble:VendorIDField skos:prefLabel \"Vendor ID Field\" .\nble:VendorIDField skos:definition \"The Vendor ID field is intended to uniquely identify the vendor of the device.\" .\nble:VendorIDField skos:related xsd:unsignedShort .\n\nble:PnPID skos:related ble:ProductIDField .\nble:ProductIDField skos:prefLabel \"Product ID Field\" .\nble:ProductIDField skos:definition \"The Product ID field is intended to distinguish between different products made by the vendor identified with the Vendor ID field.\" .\nble:ProductIDField skos:related xsd:unsignedShort .\n\nble:PnPID skos:related ble:ProductVersionField  .\nble:ProductVersionField skos:prefLabel \"Product Version Field\" .\nble:ProductVersionField skos:definition \"The Product Version field is a numeric expression identifying the device release number in Binary-Coded Decimal.\" .\n\nble:ProductVersionField skos:related xsd:unsignedShort .\n\nble:SystemID skos:related ble:ManufacturerIdentifier,  ble:OrganizationallyUniqueIdentifier.\nble:ManufacturerIdentifier a skos:Concept .\nble:OrganizationallyUniqueIdentifier a skos:Concept .\nble:Value skos:narrower ble:ManufacturerIdentifier .\nble:Value skos:narrower ble:OrganizationallyUniqueIdentifier .\nble:ManufacturerIdentifier a skos:Concept .\nble:OrganizationallyUniqueIdentifier a skos:Concept .\nble:OrganizationallyUniqueIdentifier skos:related xsd:unsignedInt .\nble:ManufacturerIdentifier  skos:related xsd:unsignedInt .\n\nble:OrganizationallyUniqueIdentifier skos:prefLabel \"Organizationally Unique Identifier\" .\nble:ManufacturerIdentifier  skos:prefLabel \"Manufacturer Identifier\" .\n\nble:OrganizationallyUniqueIdentifier skos:definition \"The System ID characteristic shall represent a structure containing an Organizationally Unique Identifier (OUI)  is unique for each individual instance of the product.\" .\nble:ManufacturerIdentifier  skos:definition \"The System ID characteristic shall represent a structure containing a manufacturer-defined identifier following an Organizationally Unique Identifier (OUI) and is unique for each individual instance of the product.\" .\n\nble:ManufacturerName skos:prefLabel \"Manufacturer Name\" .\nble:ManufacturerName skos:definition \"The Manufacturer Name String characteristic shall represent the name of the manufacturer of the device.\" .\n\nble:ModelNumber skos:definition \"The Model Number String characteristic shall represent the model number that is assigned by the device vendor.\" .\nble:ModelNumber skos:prefLabel \"Model Number\" .\n\nble:SerialNumber skos:prefLabel \"Serial Number\" .\nble:SerialNumber skos:definition \"The Serial Number String characteristic shall represent the serial number for a particular instance of the device.\" .\n\nble:SystemID skos:prefLabel \"System ID\" .\nble:SystemID skos:definition \"The System ID characteristic shall represent a structure containing an Organizationally Unique Identifier (OUI) followed by a manufacturer-defined identifier and is unique for each individual instance of the product\" .\n\nble:IEEE11073-20601RegulatoryCertificationDataList skos:prefLabel \"Institute of Electrical and Electronics Engineers (IEEE) 11073-20601 Regulatory Certification Data List\" .\nble:IEEE11073-20601RegulatoryCertificationDataList skos:definition \"The IEEE 11073-20601 Regulatory Certification Data List characteristic shall represent regulatory and certification information for the product in a list defined in IEEE 11073-20601\" .\nble:HardwareRevision skos:prefLabel \"Hardware Revision\".\nble:HardwareRevision skos:definition \"The Hardware Revision String characteristic shall represent the hardware revision for the hardware within the device.\".\nble:FirmwareRevision  skos:prefLabel \"Firmware Revision\" .\nble:FirmwareRevision  skos:definition \"The Firmware Revision String characteristic shall represent the firmware revision for the firmware within the device.\" .\nble:SoftwareRevision skos:prefLabel \"SoftwareRevision\" .\nble:SoftwareRevision skos:definition \"The Software Revision String characteristic shall represent the software revision for the software within the device.\" .\nble:PnPID skos:prefLabel \"Plug and Play Identification\" .\nble:PnPID skos:definition \"The PnP_ID characteristic is a set of values that shall be used to create a device ID value that is unique for this device. Included in the characteristic are a Vendor ID source field, a Vendor ID field, a Product ID field, and a Product Version field\" .\n\n\n\nble:BatteryService owl:versionInfo \"1.0\" .\nble:BatteryService skos:prefLabel \"Battery Service\".\nble:BatteryService skos:definition \"The Battery Service exposes the Battery Level of a single battery or set of batteries in a device.\" .\nble:BatteryService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245138> .\n\n\nble:BatteryService skos:related ble:BatteryLevel .\nble:Characteristic skos:narrower ble:BatteryLevel .\nble:BatteryLevel skos:prefLabel \"Battery Level\" .\nble:BatteryLevel skos:definition \"The Battery Level characteristic is read using the GATT Read Characteristic Value subprocedure and returns the current battery level as a percentage.\" .\n\nble:BatteryLevel skos:related ble:Read, ble:Notify .\nble:BatteryLevel skos:related xsd:unsignedByte .\n\nble:BondManagementService skos:prefLabel \"Bond Management Service\" .\nble:BondManagementService skos:definition \"This Specification proposes that this service will enable users to manage their bonds on devices with a limited user interface.\" .\nble:BondManagementService owl:versionInfo \"1.0\" .\nble:BondManagementService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=293524> .\n\nble:Characteristic skos:narrower ble:BondManagementControlPoint .\nble:Characteristic skos:narrower ble:BondManagementFeature . \n\nble:BondManagementService skos:related ble:BondManagementControlPoint .\nble:BondManagementService skos:related ble:BondManagementFeature .\n\nble:BondManagementControlPoint skos:prefLabel \"Bond Management Control Point\" .\nble:BondManagementFeature skos:prefLabel \"Bond Management Feature\" .\n\nble:BondManagementControlPoint skos:definition \"The Server shall evaluate a GATT Characteristic Value Write procedure or a GATT Characteristic Value Reliable Write procedure to the Bond Management Control\".\nble:BondManagementFeature skos:definition \"The Bond Management Feature characteristic shall be used to indicate the supported features of the server.\" .\n\nble:BondManagementControlPoint skos:related ble:Write .\nble:BondManagementFeature skos:related ble:Read .\n\n\nble:CurrentTimeService skos:prefLabel \"Current Time Service\" .\nble:CurrentTimeService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=292957> .\nble:CurrentTimeService skos:definition \"This service defines how a Bluetooth device can expose date and time information to other Bluetooth devices.\" .\nble:CurrentTimeService owl:versionInfo \"1.1\" .\n\nble:Characteristic skos:narrower  ble:CurrentTime .\nble:Characteristic skos:narrower  ble:LocalTimeInformation .\nble:Characteristic skos:narrower  ble:ReferenceTimeInformation .\n\nble:CurrentTimeService skos:related ble:CurrentTime .\nble:CurrentTimeService skos:related ble:LocalTimeInformation .\nble:CurrentTimeService skos:related ble:ReferenceTimeInformation .\n\nble:CurrentTime skos:prefLabel \"Current Time\" .\nble:LocalTimeInformation skos:prefLabel \"Local Time Information\".\nble:ReferenceTimeInformation skos:prefLabel \"Reference Time Information\".\n\nble:CurrentTime skos:definition \"The Current Time characteristic returns the current date and time in the server device.\" .\nble:LocalTimeInformation skos:definition \"The Local Time Information characteristic returns the local time information that includes time zone and DST offset.\" .\nble:ReferenceTimeInformation skos:definition \"The Reference Time Information characteristic returns the information about the reference time source.\" .\n\n\nble:CurrentTime skos:related ble:Read, ble:Notify, ble:Write .\nble:LocalTimeInformation skos:related ble:Read, ble:Write .\nble:ReferenceTimeInformation skos:related ble:Read .\n\n\nble:ScanParametersService skos:prefLabel \"Scan Parameters Service\" .\nble:ScanParametersService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245143> .\nble:ScanParametersService skos:definition \"The Scan Parameters Service enables a GATT Server device to expose a characteristic for the GATT Client to write its scan interval and scan window on the GATT Server device, and enables a GATT Server to request a refresh of the GATT Client scan interval and scan window.\" .\nble:ScanParametersService owl:versionInfo \"1.0\" .\nble:ScanParametersService skos:related  ble:ScanIntervalWindow .\nble:ScanParametersService skos:related ble:ScanRefresh .\nble:Characteristic skos:narrower  ble:ScanIntervalWindow  .\nble:Characteristic skos:narrower  ble:ScanRefresh .\nble:ScanIntervalWindow skos:prefLabel \"Scan Interval Window\" .\nble:ScanRefresh skos:prefLabel \"Scan Refresh\" .\nble:ScanIntervalWindow skos:definition \"The Scan Interval Window characteristic is used to store the scan parameters of the Client.\" .\nble:ScanRefresh skos:definition \"The Scan Refresh characteristic is used to notify the Client that the Server requires the Scan Interval Window characteristic to be written with the latest values upon notification.\" .\n\nble:ScanIntervalWindow skos:related ble:WritewithoutResponse .\nble:ScanRefresh skos:related ble:Notify .\n\nble:ScanIntervalWindow skos:related ble:LE_Scan_Interval .\nble:ScanIntervalWindow skos:related ble:LE_Scan_Window .\nble:Value skos:narrower ble:LE_Scan_Interval .\nble:Value skos:narrower ble:LE_Scan_Window .\n\nble:LE_Scan_Window a skos:Concept .\nble:LE_Scan_Interval a skos:Concept .\nble:LE_Scan_Window skos:prefLabel \"Low Energy_Scan_Interval\" .\nble:LE_Scan_Interval skos:prefLabel \"Low Energy_Scan_Window\" .\nble:LE_Scan_Window skos:definition \"The maximum LE_Scan_Interval of the Clien.\" . \nble:LE_Scan_Interval skos:definition \"The minimum LE_Scan_Window of the Client corresponding to the LE_Scan_Interval.\"  .\nble:LE_Scan_Window skos:related xsd:unsignedShort .\nble:LE_Scan_Interval skos:related xsd:unsignedShort .\n\nble:ScanRefresh skos:related ble:Serverrequiresrefresh . \nble:Serverrequiresrefresh a skos:Concept . \nble:Value  skos:narrower ble:Serverrequiresrefresh . \nble:Serverrequiresrefresh skos:prefLabel \"Server requires refresh\" .\nble:Serverrequiresrefresh skos:definition \"Scan Refresh characteristic value  is a single octet.\" .\nble:Serverrequiresrefresh skos:related xsd:unsignedByte .\n\nble:UserDataService  skos:prefLabel \"User Data Service\" .\nble:UserDataService  rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=288352> .\nble:UserDataService  skos:definition \"The User Data Service (UDS) exposes user-related data in the sports and fitness environment.\" .\nble:UserDataService  rdfs:comment \"This allows remote access and update of user data by a Client as well as the synchronization of user data between a Server and a Client.\" .\nble:UserDataService  owl:versionInfo \"1.0\" .\n\nble:Characteristic skos:narrower ble:UDSCharacteristic .\nble:Characteristic skos:narrower ble:DatabaseChangeIncrement.\nble:Characteristic skos:narrower ble:UserIndex .\nble:Characteristic skos:narrower ble:UserControlPoint .\n\nble:UserDataService skos:related ble:UDSCharacteristic .\nble:UserDataService skos:related ble:DatabaseChangeIncrement .\nble:UserDataService skos:related ble:UserIndex .\nble:UserDataService skos:related ble:UserControlPoint.\n\nble:UDSCharacteristic skos:prefLabel \"User Data Service Characteristic\" .\nble:DatabaseChangeIncrement skos:prefLabel \"Database Change Increment\" .\nble:UserIndex skos:prefLabel \"User Index\" .\nble:UserControlPoint skos:prefLabel \"User Control Point\" .\n\nble:UDSCharacteristic skos:definition \"Each UDS Characteristic is defined in the User Data Service Characteristics table\" . \nble:DatabaseChangeIncrement skos:definition \"When read or notified, the Database Change Increment characteristic returns a value that is used by a Client to determine whether or not the UDS Characteristics need to be synchronized between the Server and the Client.\".\nble:UserIndex skos:definition \"When read, the User Index characteristic returns the index of the current user (i.e. the user that has given consent) to access the UDS Characteristics.\".\nble:UserControlPoint skos:definition \"The User Control Point characteristic is used to request a specific function to be executed on the receiving device.\" .\n\n\nble:UDSCharacteristic skos:related ble:Read, ble:Write .\nble:DatabaseChangeIncrement skos:related ble:Read, ble:Write .\nble:UserIndex skos:related ble:Read .\nble:UserControlPoint skos:related ble:Write, ble:Indicate .\n\nble:UDSCharacteristic skos:related  ble:UDSCharacteristicValue .\nble:Value skos:narrower ble:UDSCharacteristicValue .\nble:UDSCharacteristicValue a skos:Concept .\nble:UDSCharacteristicValue skos:prefLabel \"User Data Service Characteristic Value\" .\nble:UDSCharacteristicValue skos:definition \"A UDS Characteristic returns its associated characteristic value when read.\".\n\nble:DatabaseChangeIncrement skos:related  ble:DatabaseChangeIncrementValue .\nble:Value skos:narrower ble:DatabaseChangeIncrementValue .\nble:DatabaseChangeIncrementValue a skos:Concept .\nble:DatabaseChangeIncrementValue skos:prefLabel \"Database Change Increment Value\" .\nble:DatabaseChangeIncrementValue skos:definition \"When read or notified, the Database Change Increment characteristic returns a value that is used by a Client to determine whether or not the UDS Characteristics need to be synchronized between the Server and the Client.\".\nble:DatabaseChangeIncrementValue skos:related xsd:unsignedInt .\n\n\nble:ImmediateAlertService skos:prefLabel \"Immediate Alert Service\" .\nble:ImmediateAlertService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=239390> .\nble:ImmediateAlertService skos:definition \"This service exposes a control point to allow a peer device to cause the device to immediately alert.\" .\nble:ImmediateAlertService owl:versionInfo \"1.0\" .\n\nble:Characteristic skos:narrower ble:AlertLevel .\nble:ImmediateAlertService skos:related ble:AlertLevel .\n\nble:AlertLevel skos:prefLabel \"Alert Level\" .\nble:AlertLevel skos:definition  \"The Alert Level characteristic is a control point that allows a peer to command this device to alert to a given level.\" .\n\nble:AlertLevel skos:related ble:WritewithoutResponse .\n\nble:Characteristic skos:narrower ble:SCControlPoint .\nble:SCControlPoint skos:prefLabel \"Speed and Cadence Control Point\" .\nble:SCControlPoint skos:definition \"The SC Control Point is used by a Client to control certain behaviors of the Server.\" .\n\nble:Characteristic skos:narrower ble:SensorLocation .\nble:SensorLocation skos:prefLabel \"Sensor Location\" .\nble:SensorLocation skos:definition \"The Sensor Location characteristic of the device is used to describe the physical location of the Server when correctly fitted.\" .\n\nble:SensorLocation skos:related ble:Read .\nble:SensorLocation skos:related xsd:unsignedByte .\n\nble:Characteristic skos:narrower ble:RecordAccessControlPoint .\nble:RecordAccessControlPoint skos:prefLabel \"Record Access Control Point\" .\nble:RecordAccessControlPoint skos:definition \"The Record Access Control Point shall be used to control notifications and other data operations.\" . \nble:RecordAccessControlPoint skos:related ble:Indicate, ble:Write .\n\n\n\nble:TimeStampField  a skos:Concept .\nble:Value skos:narrower ble:TimeStampField .\nble:TimeStampField skos:prefLabel \"Time Stamp Field\" .\nble:TimeStampField skos:definition \"The value of the Time Stamp field is derived from a source of date and time at the time of measurement.\" .\n\n\nble:UserIDField a skos:Concept .\nble:Value skos:narrower ble:UserIDField .\nble:UserIDField skos:prefLabel \"User ID Field\" .\nble:UserIDField skos:definition \"The User ID field shall be included in the characteristic if the device supports the Multiple Users feature.\".\nble:UserIDField  skos:related xsd:unsignedByte .\n\n\nble:CumulativeCrankRevolutions a skos:Concept .\nble:Value skos:narrower ble:CumulativeCrankRevolutions  .\nble:CumulativeCrankRevolutions  skos:prefLabel \"Cumulative Crank Revolutions\" . \nble:CumulativeCrankRevolutions  skos:definition \"The Cumulative Crank Revolutions value represents the number of times a crank rotates and is one value of Crank Revolution Data pair.\" .\nble:CumulativeCrankRevolutions skos:related xsd:unsignedShort .\n\nble:LastCrankEventTime a skos:Concept .\nble:Value skos:narrower ble:LastCrankEventTime  .\nble:LastCrankEventTime  skos:prefLabel \"Last Crank Event Time\" . \nble:LastCrankEventTime  skos:definition \"The Last Crank Event Time is one value of Crank Revolution Data pair and always presents as a pair with Cumulative Crank Revolutions.\" .\nble:LastCrankEventTime skos:related xsd:unsignedShort .\n\n\n\nble:Value skos:narrower ble:InstantaneousPowerField .\nble:InstantaneousPowerField   a skos:Concept .\nble:InstantaneousPowerField   skos:prefLabel \"Instantaneous Power Field\" .\nble:InstantaneousPowerField   skos:definition \"The Instantaneous Power field represents the value of the instantaneous power measured by the Server.\" .\nble:InstantaneousPowerField   skos:related xsd:short .\n\nble:Value skos:narrower ble:InstantaneousSpeedField .\nble:InstantaneousSpeedField a skos:Concept .\nble:InstantaneousSpeedField skos:prefLabel \"Instantaneous Speed Field\" .\nble:InstantaneousSpeedField skos:definition \"The Instantaneous Speed field represents the instantaneous value of the speed measured by the sensor.\" .\nble:InstantaneousSpeedField skos:related xsd:unsignedShort .\n\nble:Scheme a skos:ConceptScheme .\nble:Scheme skos:hasTopConcept ble:Profile .\n\nble:Scheme rdfs:seeAlso <https://www.bluetooth.com/specifications/gatt/> .\nble:Scheme rdfs:comment \"Generic Attribute Profile (GATT) is built on top of the Attribute Protocol (ATT) and establishes common operations and a framework for the data transported and stored by the Attribute Protocol. For more information on GATT, please refer to Volume 0, Section 6 of the Bluetooth Core Specification.\" .\nble:Scheme skos:prefLabel \"Bluetooth Low Energy - General Attribute Profile\" .\n\nble:Profile skos:inScheme ble:Scheme .\nble:Service skos:inScheme ble:Scheme .\nble:Characteristic skos:inScheme ble:Scheme .\nble:Property skos:inScheme ble:Scheme .\nble:Value skos:inScheme ble:Scheme .\n\nble:Read skos:inScheme ble:Scheme .\nble:Write skos:inScheme ble:Scheme .\nble:Notify skos:inScheme ble:Scheme .\nble:Indicate skos:inScheme ble:Scheme .\nble:WritewithoutResponse skos:inScheme ble:Scheme .\nble:ReliableWrite skos:inScheme ble:Scheme .\nble:ReadLong skos:inScheme ble:Scheme .\n\nble:DeviceInformationService skos:inScheme ble:Scheme .\nble:ManufacturerName skos:inScheme ble:Scheme .\nble:ModelNumber skos:inScheme ble:Scheme .\nble:SystemID skos:inScheme ble:Scheme .\nble:SerialNumber skos:inScheme ble:Scheme .\nble:HardwareRevision skos:inScheme ble:Scheme .\nble:FirmwareRevision skos:inScheme ble:Scheme .\nble:SoftwareRevision skos:inScheme ble:Scheme .\nble:IEEE11073-20601RegulatoryCertificationDataList skos:inScheme ble:Scheme .\nble:PnPID skos:inScheme ble:Scheme .\n\nble:BondManagementService skos:inScheme ble:Scheme .\nble:BondManagementControlPoint skos:inScheme ble:Scheme .\nble:BondManagementFeature skos:inScheme ble:Scheme .\n\nble:BatteryService skos:inScheme ble:Scheme .\nble:BatteryLevel skos:inScheme ble:Scheme .\n\nble:CurrentTimeService skos:inScheme ble:Scheme .\nble:CurrentTime skos:inScheme ble:Scheme .\nble:LocalTimeInformation skos:inScheme ble:Scheme .\nble:ReferenceTimeInformation skos:inScheme ble:Scheme .\n\nble:ScanParametersService skos:inScheme ble:Scheme .\nble:ScanIntervalWindow skos:inScheme ble:Scheme .\nble:ScanRefresh skos:inScheme ble:Scheme .\n\nble:UserDataService skos:inScheme ble:Scheme .\nble:UDSCharacteristic  skos:inScheme ble:Scheme .\nble:DatabaseChangeIncrement  skos:inScheme ble:Scheme .\nble:UserIndex skos:inScheme ble:Scheme .\nble:UserControlPoint  skos:inScheme ble:Scheme .\n\nble:SensorLocation skos:inScheme ble:Scheme .\nble:RecordAccessControlPoint skos:inScheme ble:Scheme .\nble:SCControlPoint skos:inScheme ble:Scheme .\n\n\nble:ImmediateAlertService skos:inScheme ble:Scheme .\nble:AlertLevel skos:inScheme ble:Scheme .\n\nble:VendorIDSourceField skos:inScheme ble:Scheme .\nble:VendorIDField skos:inScheme ble:Scheme .\nble:VendorIDField skos:inScheme ble:Scheme .\nble:ProductIDField skos:inScheme ble:Scheme .\nble:ProductVersionField skos:inScheme ble:Scheme .\n\nble:BluetoothSIG skos:inScheme ble:Scheme .\nble:USBImplementerForum skos:inScheme ble:Scheme .\n\nble:ManufacturerIdentifier skos:inScheme ble:Scheme .\nble:OrganizationallyUniqueIdentifier skos:inScheme ble:Scheme .\n\nble:LE_Scan_Window skos:inScheme ble:Scheme .\nble:LE_Scan_Interval skos:inScheme ble:Scheme .\n\nble:Serverrequiresrefresh skos:inScheme ble:Scheme . \n\nble:UDSCharacteristicValue skos:inScheme ble:Scheme .\n\nble:DatabaseChangeIncrementValue skos:inScheme ble:Scheme .\n\nble:TimeStampField  skos:inScheme ble:Scheme .\nble:UserIDField skos:inScheme ble:Scheme .\nble:CumulativeCrankRevolutions skos:inScheme ble:Scheme .\nble:LastCrankEventTime skos:inScheme ble:Scheme .\n\nble:InstantaneousPowerField   skos:inScheme ble:Scheme .\nble:InstantaneousSpeedField skos:inScheme ble:Scheme ."
+      "@value" : "@prefix ble: <http://purl.org/wot-catalogue/ble#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\nble:Profile a skos:Concept .\nble:Service a skos:Concept .\nble:Characteristic a skos:Concept .\nble:Property a skos:Concept .\nble:Value a skos:Concept .\n\nble:Read a skos:Concept .\nble:Write a skos:Concept .\nble:Notify a skos:Concept .\nble:Indicate a skos:Concept .\nble:WritewithoutResponse a skos:Concept .\nble:ReliableWrite a skos:Concept .\nble:ReadLong a skos:Concept .\n\nble:DeviceInformationService a skos:Concept .\nble:ManufacturerName a skos:Concept .\nble:ModelNumber a skos:Concept .\nble:SystemID a skos:Concept .\nble:SerialNumber a skos:Concept .\nble:HardwareRevision a skos:Concept .\nble:FirmwareRevision a skos:Concept .\nble:SoftwareRevision a skos:Concept .\nble:IEEE11073-20601RegulatoryCertificationDataList a skos:Concept .\nble:PnPID a skos:Concept .\n\nble:BondManagementService a skos:Concept .\nble:BondManagementControlPoint a skos:Concept .\nble:BondManagementFeature a skos:Concept .\n\nble:BatteryService a skos:Concept .\nble:BatteryLevel a skos:Concept .\n\nble:CurrentTimeService a skos:Concept .\nble:CurrentTime a skos:Concept .\nble:LocalTimeInformation a skos:Concept .\nble:ReferenceTimeInformation a skos:Concept .\n\nble:ScanParametersService a skos:Concept .\nble:ScanIntervalWindow a skos:Concept .\nble:ScanRefresh a skos:Concept .\n\nble:UserDataService a skos:Concept .\nble:UDSCharacteristic  a skos:Concept .\nble:DatabaseChangeIncrement  a skos:Concept .\nble:UserIndex a skos:Concept .\nble:UserControlPoint  a skos:Concept .\n\nble:SensorLocation a skos:Concept .\nble:RecordAccessControlPoint a skos:Concept .\nble:SCControlPoint a skos:Concept .\n\n\nble:ImmediateAlertService a skos:Concept .\nble:AlertLevel a skos:Concept .\n\n\nble:Profile skos:related ble:Service .\nble:Service skos:related ble:Characteristic .\nble:Characteristic skos:related ble:Property .\nble:Characteristic skos:related ble:Value .\n\nble:Service skos:narrower ble:DeviceInformationService . \nble:Service skos:narrower ble:BatteryService .\nble:Service skos:narrower ble:BondManagementService . \nble:Service skos:narrower ble:CurrentTimeService .\nble:Service skos:narrower ble:ScanParametersService .\nble:Service skos:narrower ble:UserDataService .\nble:Service skos:narrower ble:ImmediateAlertService .\n\nble:Property skos:narrower ble:Read, ble:ReadLong .\nble:Property skos:narrower ble:Write .\nble:Property skos:narrower ble:Notify .\nble:Property skos:narrower ble:Indicate .\nble:Property skos:narrower ble:WritewithoutResponse, ble:ReliableWrite .\n\nble:Profile skos:prefLabel \"Profile\" .\nble:Service skos:prefLabel \"Service\" .\nble:Characteristic skos:prefLabel \"Characteristic\".\nble:Property skos:prefLabel \"Property\" .\nble:Value skos:prefLabel \"Value\" .\n\nble:Read skos:prefLabel \"Read\" .\nble:Write skos:prefLabel \"Write\" .\nble:Notify  skos:prefLabel \"Notify\" .\nble:Indicate skos:prefLabel \"Indicate\" .\nble:WritewithoutResponse skos:prefLabel \"Write without Response\" .\nble:ReliableWrite skos:prefLabel \"Reliable Write\" .\nble:ReadLong skos:prefLabel \"Read Long\" .\n\nble:Read skos:definition \"A Characteristic Value is read from a server when the client knows the Characteristic Value Handle\" .\nble:Write skos:definition \"A Characteristic Value is writen to a server when the client knows the Characteristic Value Handle\" .\nble:Notify  skos:definition \"A server is configured to notify a Characteristic Value to a client without expecting any Attribute Protocol layer acknowledgment that the notification was successfully received\" .\nble:Indicate skos:definition \"A server is configured to indicate a Characteristic Value to a client and expects an Attribute Protocol layer acknowledgment that the indication was successfully received\" .\nble:WritewithoutResponse skos:definition \"A Characteristic Value is writen to a server when the client knows the Characteristic Value Handle and the client does not need an acknowledgment that the write was successfully performed\" .\nble:ReliableWrite skos:definition \"Characteristic Value is written to a server when the client knows the Characteristic Value Handle, and assurance is required that the correct Characteristic Value is going to be written by transferring the Characteristic Value to be written in both directions before the write is performed.\" .\nble:ReadLong skos:definition \"Characteristic Value is read from a server when the client knows the Characteristic Value Handle and the length of the Characteristic Value is longer than can be sent in a single Read Response Attribute protocol message.\" .\n\nble:DeviceInformationService skos:prefLabel \"Device Information Service.\" .\nble:DeviceInformationService skos:definition \"The Device Information Service exposes manufacturer and/or vendor information about a device.\" .\nble:DeviceInformationService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=244369> .\nble:DeviceInformationService owl:versionInfo  \"1.1\" .\n\nble:Characteristic skos:narrower ble:ManufacturerName .\nble:Characteristic skos:narrower ble:ModelNumber .\nble:Characteristic skos:narrower ble:SystemID .\nble:Characteristic skos:narrower ble:SerialNumber .\nble:Characteristic skos:narrower ble:HardwareRevision .\nble:Characteristic skos:narrower ble:FirmwareRevision .\nble:Characteristic skos:narrower ble:SoftwareRevision .\nble:Characteristic skos:narrower ble:IEEE11073-20601RegulatoryCertificationDataList .\nble:Characteristic skos:narrower ble:PnPID .\n\nble:DeviceInformationService skos:related ble:ManufacturerName .\nble:DeviceInformationService skos:related ble:ModelNumber .\nble:DeviceInformationService skos:related ble:SystemID .\nble:DeviceInformationService skos:related ble:SerialNumber .\nble:DeviceInformationService skos:related ble:HardwareRevision .\nble:DeviceInformationService skos:related ble:FirmwareRevision .\nble:DeviceInformationService skos:related ble:SoftwareRevision .\nble:DeviceInformationService skos:related ble:IEEE11073-20601RegulatoryCertificationDataList .\nble:DeviceInformationService skos:related ble:PnPID .\n\nble:ManufacturerName skos:related xsd:string .\nble:ModelNumber skos:related xsd:string .\nble:SerialNumber skos:related xsd:string .\nble:HardwareRevision skos:related xsd:string .\nble:FirmwareRevision  skos:related xsd:string .\nble:SoftwareRevision skos:related xsd:string .\nble:IEEE11073-20601RegulatoryCertificationDataList skos:related xsd:string .\n\n\nble:ManufacturerName skos:related ble:Read .\nble:ModelNumber skos:related ble:Read .\nble:SerialNumber skos:related ble:Read .\nble:HardwareRevision skos:related ble:Read .\nble:FirmwareRevision  skos:related ble:Read .\nble:SoftwareRevision skos:related ble:Read .\nble:SystemID skos:related ble:Read .\nble:PnPID skos:related ble:Read .\nble:IEEE11073-20601RegulatoryCertificationDataList skos:related ble:Read .\n\n\nble:VendorIDSourceField a skos:Concept .\nble:VendorIDField a skos:Concept .\nble:VendorIDField a skos:Concept .\nble:ProductIDField a skos:Concept .\nble:ProductVersionField a skos:Concept .\n\nble:Value skos:narrower ble:VendorIDSourceField .\nble:Value skos:narrower ble:VendorIDField .\nble:Value skos:narrower ble:ProductIDField .\nble:Value skos:narrower ble:ProductVersionField .\n\nble:PnPID skos:related ble:VendorIDSourceField .\n\nble:VendorIDSourceField skos:narrower ble:BluetoothSIG .\nble:VendorIDSourceField skos:narrower ble:USBImplementerForum .\n\nble:BluetoothSIG a skos:Concept .\nble:USBImplementerForum a skos:Concept .\n\nble:Value skos:narrower ble:BluetoothSIG  .\nble:Value skos:narrower ble:USBImplementerForum .\n\nble:BluetoothSIG skos:related xsd:unsignedByte .\nble:USBImplementerForum skos:related xsd:unsignedByte .\n\nble:VendorIDSourceField skos:prefLabel \"Vendor ID Source Field\" .\nble:BluetoothSIG skos:prefLabel \"Bluetooth Special Interest Group\" .\nble:USBImplementerForum skos:prefLabel \"USB Implementer’s Forum\" .\n\nble:VendorIDSourceField skos:definition \"The Vendor ID Source field designates which organization assigned the value used in the Vendor ID field value.\" .\nble:BluetoothSIG skos:definition \"Bluetooth SIG- assigned Device ID Vendor ID value from the Assigned Numbers document.\" .\nble:USBImplementerForum skos:definition \"USB Implementer’s Forum assigned Vendor ID value.\" .\n\nble:PnPID skos:related ble:VendorIDField .\nble:VendorIDField skos:prefLabel \"Vendor ID Field\" .\nble:VendorIDField skos:definition \"The Vendor ID field is intended to uniquely identify the vendor of the device.\" .\nble:VendorIDField skos:related xsd:unsignedShort .\n\nble:PnPID skos:related ble:ProductIDField .\nble:ProductIDField skos:prefLabel \"Product ID Field\" .\nble:ProductIDField skos:definition \"The Product ID field is intended to distinguish between different products made by the vendor identified with the Vendor ID field.\" .\nble:ProductIDField skos:related xsd:unsignedShort .\n\nble:PnPID skos:related ble:ProductVersionField  .\nble:ProductVersionField skos:prefLabel \"Product Version Field\" .\nble:ProductVersionField skos:definition \"The Product Version field is a numeric expression identifying the device release number in Binary-Coded Decimal.\" .\n\nble:ProductVersionField skos:related xsd:unsignedShort .\n\nble:SystemID skos:related ble:ManufacturerIdentifier,  ble:OrganizationallyUniqueIdentifier.\nble:ManufacturerIdentifier a skos:Concept .\nble:OrganizationallyUniqueIdentifier a skos:Concept .\nble:Value skos:narrower ble:ManufacturerIdentifier .\nble:Value skos:narrower ble:OrganizationallyUniqueIdentifier .\nble:ManufacturerIdentifier a skos:Concept .\nble:OrganizationallyUniqueIdentifier a skos:Concept .\nble:OrganizationallyUniqueIdentifier skos:related xsd:unsignedInt .\nble:ManufacturerIdentifier  skos:related xsd:unsignedInt .\n\nble:OrganizationallyUniqueIdentifier skos:prefLabel \"Organizationally Unique Identifier\" .\nble:ManufacturerIdentifier  skos:prefLabel \"Manufacturer Identifier\" .\n\nble:OrganizationallyUniqueIdentifier skos:definition \"The System ID characteristic shall represent a structure containing an Organizationally Unique Identifier (OUI)  is unique for each individual instance of the product.\" .\nble:ManufacturerIdentifier  skos:definition \"The System ID characteristic shall represent a structure containing a manufacturer-defined identifier following an Organizationally Unique Identifier (OUI) and is unique for each individual instance of the product.\" .\n\nble:ManufacturerName skos:prefLabel \"Manufacturer Name\" .\nble:ManufacturerName skos:definition \"The Manufacturer Name String characteristic shall represent the name of the manufacturer of the device.\" .\n\nble:ModelNumber skos:definition \"The Model Number String characteristic shall represent the model number that is assigned by the device vendor.\" .\nble:ModelNumber skos:prefLabel \"Model Number\" .\n\nble:SerialNumber skos:prefLabel \"Serial Number\" .\nble:SerialNumber skos:definition \"The Serial Number String characteristic shall represent the serial number for a particular instance of the device.\" .\n\nble:SystemID skos:prefLabel \"System ID\" .\nble:SystemID skos:definition \"The System ID characteristic shall represent a structure containing an Organizationally Unique Identifier (OUI) followed by a manufacturer-defined identifier and is unique for each individual instance of the product\" .\n\nble:IEEE11073-20601RegulatoryCertificationDataList skos:prefLabel \"Institute of Electrical and Electronics Engineers (IEEE) 11073-20601 Regulatory Certification Data List\" .\nble:IEEE11073-20601RegulatoryCertificationDataList skos:definition \"The IEEE 11073-20601 Regulatory Certification Data List characteristic shall represent regulatory and certification information for the product in a list defined in IEEE 11073-20601\" .\nble:HardwareRevision skos:prefLabel \"Hardware Revision\".\nble:HardwareRevision skos:definition \"The Hardware Revision String characteristic shall represent the hardware revision for the hardware within the device.\".\nble:FirmwareRevision  skos:prefLabel \"Firmware Revision\" .\nble:FirmwareRevision  skos:definition \"The Firmware Revision String characteristic shall represent the firmware revision for the firmware within the device.\" .\nble:SoftwareRevision skos:prefLabel \"SoftwareRevision\" .\nble:SoftwareRevision skos:definition \"The Software Revision String characteristic shall represent the software revision for the software within the device.\" .\nble:PnPID skos:prefLabel \"Plug and Play Identification\" .\nble:PnPID skos:definition \"The PnP_ID characteristic is a set of values that shall be used to create a device ID value that is unique for this device. Included in the characteristic are a Vendor ID source field, a Vendor ID field, a Product ID field, and a Product Version field\" .\n\n\n\nble:BatteryService owl:versionInfo \"1.0\" .\nble:BatteryService skos:prefLabel \"Battery Service\".\nble:BatteryService skos:definition \"The Battery Service exposes the Battery Level of a single battery or set of batteries in a device.\" .\nble:BatteryService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245138> .\n\n\nble:BatteryService skos:related ble:BatteryLevel .\nble:Characteristic skos:narrower ble:BatteryLevel .\nble:BatteryLevel skos:prefLabel \"Battery Level\" .\nble:BatteryLevel skos:definition \"The Battery Level characteristic is read using the GATT Read Characteristic Value subprocedure and returns the current battery level as a percentage.\" .\n\nble:BatteryLevel skos:related ble:Read, ble:Notify .\nble:BatteryLevel skos:related xsd:unsignedByte .\n\nble:BondManagementService skos:prefLabel \"Bond Management Service\" .\nble:BondManagementService skos:definition \"This Specification proposes that this service will enable users to manage their bonds on devices with a limited user interface.\" .\nble:BondManagementService owl:versionInfo \"1.0\" .\nble:BondManagementService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=293524> .\n\nble:Characteristic skos:narrower ble:BondManagementControlPoint .\nble:Characteristic skos:narrower ble:BondManagementFeature . \n\nble:BondManagementService skos:related ble:BondManagementControlPoint .\nble:BondManagementService skos:related ble:BondManagementFeature .\n\nble:BondManagementControlPoint skos:prefLabel \"Bond Management Control Point\" .\nble:BondManagementFeature skos:prefLabel \"Bond Management Feature\" .\n\nble:BondManagementControlPoint skos:definition \"The Server shall evaluate a GATT Characteristic Value Write procedure or a GATT Characteristic Value Reliable Write procedure to the Bond Management Control\".\nble:BondManagementFeature skos:definition \"The Bond Management Feature characteristic shall be used to indicate the supported features of the server.\" .\n\nble:BondManagementControlPoint skos:related ble:Write .\nble:BondManagementFeature skos:related ble:Read .\n\n\nble:CurrentTimeService skos:prefLabel \"Current Time Service\" .\nble:CurrentTimeService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=292957> .\nble:CurrentTimeService skos:definition \"This service defines how a Bluetooth device can expose date and time information to other Bluetooth devices.\" .\nble:CurrentTimeService owl:versionInfo \"1.1\" .\n\nble:Characteristic skos:narrower  ble:CurrentTime .\nble:Characteristic skos:narrower  ble:LocalTimeInformation .\nble:Characteristic skos:narrower  ble:ReferenceTimeInformation .\n\nble:CurrentTimeService skos:related ble:CurrentTime .\nble:CurrentTimeService skos:related ble:LocalTimeInformation .\nble:CurrentTimeService skos:related ble:ReferenceTimeInformation .\n\nble:CurrentTime skos:prefLabel \"Current Time\" .\nble:LocalTimeInformation skos:prefLabel \"Local Time Information\".\nble:ReferenceTimeInformation skos:prefLabel \"Reference Time Information\".\n\nble:CurrentTime skos:definition \"The Current Time characteristic returns the current date and time in the server device.\" .\nble:LocalTimeInformation skos:definition \"The Local Time Information characteristic returns the local time information that includes time zone and DST offset.\" .\nble:ReferenceTimeInformation skos:definition \"The Reference Time Information characteristic returns the information about the reference time source.\" .\n\n\nble:CurrentTime skos:related ble:Read, ble:Notify, ble:Write .\nble:LocalTimeInformation skos:related ble:Read, ble:Write .\nble:ReferenceTimeInformation skos:related ble:Read .\n\n\nble:ScanParametersService skos:prefLabel \"Scan Parameters Service\" .\nble:ScanParametersService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245143> .\nble:ScanParametersService skos:definition \"The Scan Parameters Service enables a GATT Server device to expose a characteristic for the GATT Client to write its scan interval and scan window on the GATT Server device, and enables a GATT Server to request a refresh of the GATT Client scan interval and scan window.\" .\nble:ScanParametersService owl:versionInfo \"1.0\" .\nble:ScanParametersService skos:related  ble:ScanIntervalWindow .\nble:ScanParametersService skos:related ble:ScanRefresh .\nble:Characteristic skos:narrower  ble:ScanIntervalWindow  .\nble:Characteristic skos:narrower  ble:ScanRefresh .\nble:ScanIntervalWindow skos:prefLabel \"Scan Interval Window\" .\nble:ScanRefresh skos:prefLabel \"Scan Refresh\" .\nble:ScanIntervalWindow skos:definition \"The Scan Interval Window characteristic is used to store the scan parameters of the Client.\" .\nble:ScanRefresh skos:definition \"The Scan Refresh characteristic is used to notify the Client that the Server requires the Scan Interval Window characteristic to be written with the latest values upon notification.\" .\n\nble:ScanIntervalWindow skos:related ble:WritewithoutResponse .\nble:ScanRefresh skos:related ble:Notify .\n\nble:ScanIntervalWindow skos:related ble:LE_Scan_Interval .\nble:ScanIntervalWindow skos:related ble:LE_Scan_Window .\nble:Value skos:narrower ble:LE_Scan_Interval .\nble:Value skos:narrower ble:LE_Scan_Window .\n\nble:LE_Scan_Window a skos:Concept .\nble:LE_Scan_Interval a skos:Concept .\nble:LE_Scan_Window skos:prefLabel \"Low Energy_Scan_Interval\" .\nble:LE_Scan_Interval skos:prefLabel \"Low Energy_Scan_Window\" .\nble:LE_Scan_Window skos:definition \"The maximum LE_Scan_Interval of the Clien.\" . \nble:LE_Scan_Interval skos:definition \"The minimum LE_Scan_Window of the Client corresponding to the LE_Scan_Interval.\"  .\nble:LE_Scan_Window skos:related xsd:unsignedShort .\nble:LE_Scan_Interval skos:related xsd:unsignedShort .\n\nble:ScanRefresh skos:related ble:Serverrequiresrefresh . \nble:Serverrequiresrefresh a skos:Concept . \nble:Value  skos:narrower ble:Serverrequiresrefresh . \nble:Serverrequiresrefresh skos:prefLabel \"Server requires refresh\" .\nble:Serverrequiresrefresh skos:definition \"Scan Refresh characteristic value  is a single octet.\" .\nble:Serverrequiresrefresh skos:related xsd:unsignedByte .\n\nble:UserDataService  skos:prefLabel \"User Data Service\" .\nble:UserDataService  rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=288352> .\nble:UserDataService  skos:definition \"The User Data Service (UDS) exposes user-related data in the sports and fitness environment.\" .\nble:UserDataService  rdfs:comment \"This allows remote access and update of user data by a Client as well as the synchronization of user data between a Server and a Client.\" .\nble:UserDataService  owl:versionInfo \"1.0\" .\n\nble:Characteristic skos:narrower ble:UDSCharacteristic .\nble:Characteristic skos:narrower ble:DatabaseChangeIncrement.\nble:Characteristic skos:narrower ble:UserIndex .\nble:Characteristic skos:narrower ble:UserControlPoint .\n\nble:UserDataService skos:related ble:UDSCharacteristic .\nble:UserDataService skos:related ble:DatabaseChangeIncrement .\nble:UserDataService skos:related ble:UserIndex .\nble:UserDataService skos:related ble:UserControlPoint.\n\nble:UDSCharacteristic skos:prefLabel \"User Data Service Characteristic\" .\nble:DatabaseChangeIncrement skos:prefLabel \"Database Change Increment\" .\nble:UserIndex skos:prefLabel \"User Index\" .\nble:UserControlPoint skos:prefLabel \"User Control Point\" .\n\nble:UDSCharacteristic skos:definition \"Each UDS Characteristic is defined in the User Data Service Characteristics table\" . \nble:DatabaseChangeIncrement skos:definition \"When read or notified, the Database Change Increment characteristic returns a value that is used by a Client to determine whether or not the UDS Characteristics need to be synchronized between the Server and the Client.\".\nble:UserIndex skos:definition \"When read, the User Index characteristic returns the index of the current user (i.e. the user that has given consent) to access the UDS Characteristics.\".\nble:UserControlPoint skos:definition \"The User Control Point characteristic is used to request a specific function to be executed on the receiving device.\" .\n\n\nble:UDSCharacteristic skos:related ble:Read, ble:Write .\nble:DatabaseChangeIncrement skos:related ble:Read, ble:Write .\nble:UserIndex skos:related ble:Read .\nble:UserControlPoint skos:related ble:Write, ble:Indicate .\n\nble:UDSCharacteristic skos:related  ble:UDSCharacteristicValue .\nble:Value skos:narrower ble:UDSCharacteristicValue .\nble:UDSCharacteristicValue a skos:Concept .\nble:UDSCharacteristicValue skos:prefLabel \"User Data Service Characteristic Value\" .\nble:UDSCharacteristicValue skos:definition \"A UDS Characteristic returns its associated characteristic value when read.\".\n\nble:DatabaseChangeIncrement skos:related  ble:DatabaseChangeIncrementValue .\nble:Value skos:narrower ble:DatabaseChangeIncrementValue .\nble:DatabaseChangeIncrementValue a skos:Concept .\nble:DatabaseChangeIncrementValue skos:prefLabel \"Database Change Increment Value\" .\nble:DatabaseChangeIncrementValue skos:definition \"When read or notified, the Database Change Increment characteristic returns a value that is used by a Client to determine whether or not the UDS Characteristics need to be synchronized between the Server and the Client.\".\nble:DatabaseChangeIncrementValue skos:related xsd:unsignedInt .\n\n\nble:ImmediateAlertService skos:prefLabel \"Immediate Alert Service\" .\nble:ImmediateAlertService rdfs:seeAlso <https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=239390> .\nble:ImmediateAlertService skos:definition \"This service exposes a control point to allow a peer device to cause the device to immediately alert.\" .\nble:ImmediateAlertService owl:versionInfo \"1.0\" .\n\nble:Characteristic skos:narrower ble:AlertLevel .\nble:ImmediateAlertService skos:related ble:AlertLevel .\n\nble:AlertLevel skos:prefLabel \"Alert Level\" .\nble:AlertLevel skos:definition  \"The Alert Level characteristic is a control point that allows a peer to command this device to alert to a given level.\" .\n\nble:AlertLevel skos:related ble:WritewithoutResponse .\n\nble:Characteristic skos:narrower ble:SCControlPoint .\nble:SCControlPoint skos:prefLabel \"Speed and Cadence Control Point\" .\nble:SCControlPoint skos:definition \"The SC Control Point is used by a Client to control certain behaviors of the Server.\" .\n\nble:Characteristic skos:narrower ble:SensorLocation .\nble:SensorLocation skos:prefLabel \"Sensor Location\" .\nble:SensorLocation skos:definition \"The Sensor Location characteristic of the device is used to describe the physical location of the Server when correctly fitted.\" .\n\nble:SensorLocation skos:related ble:Read .\nble:SensorLocation skos:related xsd:unsignedByte .\n\nble:Characteristic skos:narrower ble:RecordAccessControlPoint .\nble:RecordAccessControlPoint skos:prefLabel \"Record Access Control Point\" .\nble:RecordAccessControlPoint skos:definition \"The Record Access Control Point shall be used to control notifications and other data operations.\" . \nble:RecordAccessControlPoint skos:related ble:Indicate, ble:Write .\n\n\n\nble:TimeStampField  a skos:Concept .\nble:Value skos:narrower ble:TimeStampField .\nble:TimeStampField skos:prefLabel \"Time Stamp Field\" .\nble:TimeStampField skos:definition \"The value of the Time Stamp field is derived from a source of date and time at the time of measurement.\" .\n\n\nble:UserIDField a skos:Concept .\nble:Value skos:narrower ble:UserIDField .\nble:UserIDField skos:prefLabel \"User ID Field\" .\nble:UserIDField skos:definition \"The User ID field shall be included in the characteristic if the device supports the Multiple Users feature.\".\nble:UserIDField  skos:related xsd:unsignedByte .\n\n\nble:CumulativeCrankRevolutions a skos:Concept .\nble:Value skos:narrower ble:CumulativeCrankRevolutions  .\nble:CumulativeCrankRevolutions  skos:prefLabel \"Cumulative Crank Revolutions\" . \nble:CumulativeCrankRevolutions  skos:definition \"The Cumulative Crank Revolutions value represents the number of times a crank rotates and is one value of Crank Revolution Data pair.\" .\nble:CumulativeCrankRevolutions skos:related xsd:unsignedShort .\n\nble:LastCrankEventTime a skos:Concept .\nble:Value skos:narrower ble:LastCrankEventTime  .\nble:LastCrankEventTime  skos:prefLabel \"Last Crank Event Time\" . \nble:LastCrankEventTime  skos:definition \"The Last Crank Event Time is one value of Crank Revolution Data pair and always presents as a pair with Cumulative Crank Revolutions.\" .\nble:LastCrankEventTime skos:related xsd:unsignedShort .\n\n\n\nble:Value skos:narrower ble:InstantaneousPowerField .\nble:InstantaneousPowerField   a skos:Concept .\nble:InstantaneousPowerField   skos:prefLabel \"Instantaneous Power Field\" .\nble:InstantaneousPowerField   skos:definition \"The Instantaneous Power field represents the value of the instantaneous power measured by the Server.\" .\nble:InstantaneousPowerField   skos:related xsd:short .\n\nble:Value skos:narrower ble:InstantaneousSpeedField .\nble:InstantaneousSpeedField a skos:Concept .\nble:InstantaneousSpeedField skos:prefLabel \"Instantaneous Speed Field\" .\nble:InstantaneousSpeedField skos:definition \"The Instantaneous Speed field represents the instantaneous value of the speed measured by the sensor.\" .\nble:InstantaneousSpeedField skos:related xsd:unsignedShort .\n\nble:scheme a skos:ConceptScheme .\nble:scheme skos:hasTopConcept ble:Profile .\n\nble:scheme rdfs:seeAlso <https://www.bluetooth.com/specifications/gatt/> .\nble:scheme rdfs:comment \"Generic Attribute Profile (GATT) is built on top of the Attribute Protocol (ATT) and establishes common operations and a framework for the data transported and stored by the Attribute Protocol. For more information on GATT, please refer to Volume 0, Section 6 of the Bluetooth Core Specification.\" .\nble:scheme skos:prefLabel \"Bluetooth Low Energy - General Attribute Profile\" .\n\nble:Profile skos:inScheme ble:scheme .\nble:Service skos:inScheme ble:scheme .\nble:Characteristic skos:inScheme ble:scheme .\nble:Property skos:inScheme ble:scheme .\nble:Value skos:inScheme ble:scheme .\n\nble:Read skos:inScheme ble:scheme .\nble:Write skos:inScheme ble:scheme .\nble:Notify skos:inScheme ble:scheme .\nble:Indicate skos:inScheme ble:scheme .\nble:WritewithoutResponse skos:inScheme ble:scheme .\nble:ReliableWrite skos:inScheme ble:scheme .\nble:ReadLong skos:inScheme ble:scheme .\n\nble:DeviceInformationService skos:inScheme ble:scheme .\nble:ManufacturerName skos:inScheme ble:scheme .\nble:ModelNumber skos:inScheme ble:scheme .\nble:SystemID skos:inScheme ble:scheme .\nble:SerialNumber skos:inScheme ble:scheme .\nble:HardwareRevision skos:inScheme ble:scheme .\nble:FirmwareRevision skos:inScheme ble:scheme .\nble:SoftwareRevision skos:inScheme ble:scheme .\nble:IEEE11073-20601RegulatoryCertificationDataList skos:inScheme ble:scheme .\nble:PnPID skos:inScheme ble:scheme .\n\nble:BondManagementService skos:inScheme ble:scheme .\nble:BondManagementControlPoint skos:inScheme ble:scheme .\nble:BondManagementFeature skos:inScheme ble:scheme .\n\nble:BatteryService skos:inScheme ble:scheme .\nble:BatteryLevel skos:inScheme ble:scheme .\n\nble:CurrentTimeService skos:inScheme ble:scheme .\nble:CurrentTime skos:inScheme ble:scheme .\nble:LocalTimeInformation skos:inScheme ble:scheme .\nble:ReferenceTimeInformation skos:inScheme ble:scheme .\n\nble:ScanParametersService skos:inScheme ble:scheme .\nble:ScanIntervalWindow skos:inScheme ble:scheme .\nble:ScanRefresh skos:inScheme ble:scheme .\n\nble:UserDataService skos:inScheme ble:scheme .\nble:UDSCharacteristic  skos:inScheme ble:scheme .\nble:DatabaseChangeIncrement  skos:inScheme ble:scheme .\nble:UserIndex skos:inScheme ble:scheme .\nble:UserControlPoint  skos:inScheme ble:scheme .\n\nble:SensorLocation skos:inScheme ble:scheme .\nble:RecordAccessControlPoint skos:inScheme ble:scheme .\nble:SCControlPoint skos:inScheme ble:scheme .\n\n\nble:ImmediateAlertService skos:inScheme ble:scheme .\nble:AlertLevel skos:inScheme ble:scheme .\n\nble:VendorIDSourceField skos:inScheme ble:scheme .\nble:VendorIDField skos:inScheme ble:scheme .\nble:VendorIDField skos:inScheme ble:scheme .\nble:ProductIDField skos:inScheme ble:scheme .\nble:ProductVersionField skos:inScheme ble:scheme .\n\nble:BluetoothSIG skos:inScheme ble:scheme .\nble:USBImplementerForum skos:inScheme ble:scheme .\n\nble:ManufacturerIdentifier skos:inScheme ble:scheme .\nble:OrganizationallyUniqueIdentifier skos:inScheme ble:scheme .\n\nble:LE_Scan_Window skos:inScheme ble:scheme .\nble:LE_Scan_Interval skos:inScheme ble:scheme .\n\nble:Serverrequiresrefresh skos:inScheme ble:scheme . \n\nble:UDSCharacteristicValue skos:inScheme ble:scheme .\n\nble:DatabaseChangeIncrementValue skos:inScheme ble:scheme .\n\nble:TimeStampField  skos:inScheme ble:scheme .\nble:UserIDField skos:inScheme ble:scheme .\nble:CumulativeCrankRevolutions skos:inScheme ble:scheme .\nble:LastCrankEventTime skos:inScheme ble:scheme .\n\nble:InstantaneousPowerField   skos:inScheme ble:scheme .\nble:InstantaneousSpeedField skos:inScheme ble:scheme ."
     } ],
     "http://plugins.linkedpipes.com/ontology/e-textHolder#contentControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
