@@ -28,21 +28,6 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/11"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/100",
-    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
-    "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "FilesOutput"
-    } ],
-    "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/58"
-    } ],
-    "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputFiles"
-    } ],
-    "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/28"
-    } ]
-  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/101",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
@@ -58,47 +43,6 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/28"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/102",
-    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
-    "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "OutputRdf"
-    } ],
-    "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/85"
-    } ],
-    "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputRdf"
-    } ],
-    "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/103"
-    } ]
-  }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/103",
-    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
-    "http://linkedpipes.com/ontology/color" : [ {
-      "@value" : "#fcaf3e"
-    } ],
-    "http://linkedpipes.com/ontology/configurationGraph" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/graph/132"
-    } ],
-    "http://linkedpipes.com/ontology/template" : [ {
-      "@id" : "http://etl.linkedpipes.com/resources/components/t-rdfToFile/0.0.0"
-    } ],
-    "http://linkedpipes.com/ontology/x" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1104"
-    } ],
-    "http://linkedpipes.com/ontology/y" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "374"
-    } ],
-    "http://purl.org/dc/terms/description" : [ {
-      "@value" : "(BACnet)"
-    } ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-      "@value" : "RDF to file"
-    } ]
-  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/104",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
@@ -106,36 +50,6 @@
     } ],
     "http://linkedpipes.com/ontology/sourceComponent" : [ {
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/88"
-    } ],
-    "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputFiles"
-    } ],
-    "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/28"
-    } ]
-  }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/105",
-    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
-    "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "OutputFile"
-    } ],
-    "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/103"
-    } ],
-    "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputFiles"
-    } ],
-    "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/28"
-    } ]
-  }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/106",
-    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
-    "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "FilesOutput"
-    } ],
-    "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/61"
     } ],
     "http://linkedpipes.com/ontology/targetBinding" : [ {
       "@value" : "InputFiles"
@@ -172,11 +86,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1723"
+      "@value" : "1725"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-134"
+      "@value" : "-135"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Add skos:altLabel"
@@ -247,21 +161,6 @@
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/87"
-    } ]
-  }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/111",
-    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
-    "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "FilesOutput"
-    } ],
-    "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/3"
-    } ],
-    "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputFiles"
-    } ],
-    "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/28"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/112",
@@ -354,7 +253,7 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/18"
     } ],
     "http://linkedpipes.com/ontology/vertex" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/192a-8168"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/ad65-9d76"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/119",
@@ -773,11 +672,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1043"
+      "@value" : "261"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-130"
+      "@value" : "985"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "High-Level concepts"
@@ -1254,14 +1153,17 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "768"
+      "@value" : "-142"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "309"
+      "@value" : "736"
+    } ],
+    "http://purl.org/dc/terms/description" : [ {
+      "@value" : "Download XSD files for HAIM"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-      "@value" : "SDT get list"
+      "@value" : "HTTP get list"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/55",
@@ -1277,11 +1179,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "336"
+      "@value" : "-495"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "307"
+      "@value" : "733"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "Files to RDF single graph"
@@ -1349,11 +1251,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1042"
+      "@value" : "581"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-189"
+      "@value" : "843"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "High-Level concepts"
@@ -1443,11 +1345,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1057"
+      "@value" : "272"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "283"
+      "@value" : "721"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "(SDT)"
@@ -1664,11 +1566,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "120"
+      "@value" : "307"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "412"
+      "@value" : "926"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "BACnet"
@@ -1687,11 +1589,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "334"
+      "@value" : "577"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "389"
+      "@value" : "936"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "Files to RDF single graph"
@@ -1751,11 +1653,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "119"
+      "@value" : "-713"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "322"
+      "@value" : "739"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "SDT"
@@ -1958,11 +1860,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "767"
+      "@value" : "917"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "380"
+      "@value" : "939"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "SPARQL construct"
@@ -2269,6 +2171,84 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/28"
     } ]
   }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/0279-a858",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/color" : [ {
+      "@value" : "#fcaf3e"
+    } ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/0279-a858/configuration"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-sparqlUpdate/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "876"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "738"
+    } ],
+    "http://purl.org/dc/terms/description" : [ {
+      "@value" : "Add concepts to HAIM collection"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "SPARQL update"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/08c8-a8b2",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/color" : [ {
+      "@value" : "#fcaf3e"
+    } ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/08c8-a8b2/configuration"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-sparqlUpdate/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "1606"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "939"
+    } ],
+    "http://purl.org/dc/terms/description" : [ {
+      "@value" : "Remove empty skos:definition"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "SPARQL update"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/1881-9dd3",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/color" : [ {
+      "@value" : "#fcaf3e"
+    } ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/1881-9dd3/configuration"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-sparqlUpdate/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "1221"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "939"
+    } ],
+    "http://purl.org/dc/terms/description" : [ {
+      "@value" : "Add skos:altLabel for BACnet"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "SPARQL update"
+    } ]
+  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/2b2e-9b88",
     "@type" : [ "http://linkedpipes.com/ontology/Component" ],
     "http://linkedpipes.com/ontology/color" : [ {
@@ -2316,32 +2296,6 @@
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Generate IPSO collection"
-    } ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-      "@value" : "SPARQL construct"
-    } ]
-  }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/41c3-91de",
-    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
-    "http://linkedpipes.com/ontology/color" : [ {
-      "@value" : "#8ae234"
-    } ],
-    "http://linkedpipes.com/ontology/configurationGraph" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/41c3-91de/configuration"
-    } ],
-    "http://linkedpipes.com/ontology/template" : [ {
-      "@id" : "http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0"
-    } ],
-    "http://linkedpipes.com/ontology/x" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2069"
-    } ],
-    "http://linkedpipes.com/ontology/y" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "946"
-    } ],
-    "http://purl.org/dc/terms/description" : [ {
-      "@value" : "Generate BACnet core collection"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "SPARQL construct"
@@ -2419,7 +2373,7 @@
       "@value" : "949"
     } ],
     "http://purl.org/dc/terms/description" : [ {
-      "@value" : "Create file for BACnet core collection"
+      "@value" : "Create file for BACnet scheme"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "RDF to file"
@@ -2438,14 +2392,14 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2049"
+      "@value" : "2089"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "797"
+      "@value" : "801"
     } ],
     "http://purl.org/dc/terms/description" : [ {
-      "@value" : "Generate oneM2M core (SDT) collection"
+      "@value" : "Generate oneM2M scheme"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "SPARQL construct"
@@ -2503,6 +2457,32 @@
       "@value" : "SPARQL construct"
     } ]
   }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/6626-b452",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/color" : [ {
+      "@value" : "#fcaf3e"
+    } ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/6626-b452/configuration"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-sparqlUpdate/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "1229"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "768"
+    } ],
+    "http://purl.org/dc/terms/description" : [ {
+      "@value" : "Add skos:altLabel for SDT"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "SPARQL update"
+    } ]
+  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/708d-aad5",
     "@type" : [ "http://linkedpipes.com/ontology/Component" ],
     "http://linkedpipes.com/ontology/color" : [ {
@@ -2527,6 +2507,32 @@
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "SPARQL construct"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/724d-9bb6",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/color" : [ {
+      "@value" : "#fcaf3e"
+    } ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/724d-9bb6/configuration"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-sparqlUpdate/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "1603"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "765"
+    } ],
+    "http://purl.org/dc/terms/description" : [ {
+      "@value" : "Remove empty skos:definition"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "SPARQL update"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/8f64-bed6",
@@ -2607,32 +2613,6 @@
       "@value" : "SPARQL construct"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/cd0c-8106",
-    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
-    "http://linkedpipes.com/ontology/color" : [ {
-      "@value" : "#8ae234"
-    } ],
-    "http://linkedpipes.com/ontology/configurationGraph" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/cd0c-8106/configuration"
-    } ],
-    "http://linkedpipes.com/ontology/template" : [ {
-      "@id" : "http://etl.linkedpipes.com/resources/components/t-rdfToFile/0.0.0"
-    } ],
-    "http://linkedpipes.com/ontology/x" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2480"
-    } ],
-    "http://linkedpipes.com/ontology/y" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1024"
-    } ],
-    "http://purl.org/dc/terms/description" : [ {
-      "@value" : "Create file for BACnet collection"
-    } ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-      "@value" : "RDF to file"
-    } ]
-  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ceba-986a",
     "@type" : [ "http://linkedpipes.com/ontology/Component" ],
     "http://linkedpipes.com/ontology/color" : [ {
@@ -2659,32 +2639,6 @@
       "@value" : "RDF to file"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/df85-8469",
-    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
-    "http://linkedpipes.com/ontology/color" : [ {
-      "@value" : "#8ae234"
-    } ],
-    "http://linkedpipes.com/ontology/configurationGraph" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/df85-8469/configuration"
-    } ],
-    "http://linkedpipes.com/ontology/template" : [ {
-      "@id" : "http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0"
-    } ],
-    "http://linkedpipes.com/ontology/x" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2069"
-    } ],
-    "http://linkedpipes.com/ontology/y" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1024"
-    } ],
-    "http://purl.org/dc/terms/description" : [ {
-      "@value" : "Generate BACnet collection"
-    } ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-      "@value" : "SPARQL construct"
-    } ]
-  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ed75-becc",
     "@type" : [ "http://linkedpipes.com/ontology/Component" ],
     "http://linkedpipes.com/ontology/color" : [ {
@@ -2705,10 +2659,36 @@
       "@value" : "797"
     } ],
     "http://purl.org/dc/terms/description" : [ {
-      "@value" : "Create file for oneM2M core (SDT) collection"
+      "@value" : "Create file for oneM2M scheme"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "RDF to file"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef30-9e09",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/color" : [ {
+      "@value" : "#fcaf3e"
+    } ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef30-9e09/configuration"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "-169"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "817"
+    } ],
+    "http://purl.org/dc/terms/description" : [ {
+      "@value" : "Add collection parameter to each XML file"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "SPARQL construct"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef3f-b9b9",
@@ -2776,17 +2756,40 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2081"
+      "@value" : "2089"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "727"
+      "@value" : "728"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Generate oneIoTa collection"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "SPARQL construct"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f483-b7b7",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/color" : [ {
+      "@value" : "#fcaf3e"
+    } ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f483-b7b7/configuration"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "578"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "737"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "Files to RDF single graph"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f9b6-b2d7",
@@ -2815,19 +2818,42 @@
       "@value" : "RDF to file"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/002e-b473",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/fe6e-a3ce",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/color" : [ {
+      "@value" : "#fcaf3e"
+    } ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/fe6e-a3ce/configuration"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "901"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "824"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "Files to RDF single graph"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/02cb-acb5",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
       "@value" : "OutputRdf"
     } ],
     "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/109"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/08c8-a8b2"
     } ],
     "http://linkedpipes.com/ontology/targetBinding" : [ {
       "@value" : "InputRdf"
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/df85-8469"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4cb6-a2eb"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/0538-b8f3",
@@ -2845,19 +2871,19 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/5ad4-96ff"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/06f4-9b3c",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/092a-b1ce",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
       "@value" : "OutputRdf"
     } ],
     "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/41c3-91de"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/fe6e-a3ce"
     } ],
     "http://linkedpipes.com/ontology/targetBinding" : [ {
       "@value" : "InputRdf"
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4cb6-a2eb"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/6626-b452"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/0b22-9e57",
@@ -2873,6 +2899,21 @@
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef80-b6bb"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/15f7-a6a0",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "OutputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef30-9e09"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "Parameters"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/61"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/26ac-8372",
@@ -2905,19 +2946,19 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/3891-a726"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/2926-bfc5",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/2e35-a4c0",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
       "@value" : "OutputRdf"
     } ],
     "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/109"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/724d-9bb6"
     } ],
     "http://linkedpipes.com/ontology/targetBinding" : [ {
       "@value" : "InputRdf"
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/50f0-bf01"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4266-acfb"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/38a9-9261",
@@ -2935,19 +2976,19 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/a0c7-acd4"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/3df2-83a0",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/448f-908b",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "OutputFile"
+      "@value" : "OutputRdf"
     } ],
     "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/cd0c-8106"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/109"
     } ],
     "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "FilesInput"
+      "@value" : "InputRdf"
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef80-b6bb"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f07b-bbbf"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/4730-8a93",
@@ -2980,6 +3021,21 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef80-b6bb"
     } ]
   }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/51b5-bd38",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "FilesOutput"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/58"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputFiles"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/fe6e-a3ce"
+    } ]
+  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/55d4-b522",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
@@ -2995,19 +3051,34 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef80-b6bb"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/6542-93ff",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/67a2-a76d",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
       "@value" : "OutputRdf"
     } ],
     "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/df85-8469"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f483-b7b7"
     } ],
     "http://linkedpipes.com/ontology/targetBinding" : [ {
       "@value" : "InputRdf"
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/cd0c-8106"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/0279-a858"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/6839-b7e0",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "OutputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/55"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef30-9e09"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/6a93-81b1",
@@ -3100,19 +3171,34 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4a2e-b375"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/7f22-9ae7",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/7c5d-8750",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "OutputRdf"
+      "@value" : "FilesOutput"
     } ],
     "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/109"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/3"
     } ],
     "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputRdf"
+      "@value" : "InputFiles"
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f07b-bbbf"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/73"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/84c0-9c7c",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "FilesOutput"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/61"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputFiles"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f483-b7b7"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/8c23-9e24",
@@ -3130,19 +3216,19 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef80-b6bb"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/8fe7-af57",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/93f4-ad67",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
       "@value" : "OutputRdf"
     } ],
     "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/109"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/1881-9dd3"
     } ],
     "http://linkedpipes.com/ontology/targetBinding" : [ {
       "@value" : "InputRdf"
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/41c3-91de"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/08c8-a8b2"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/983b-ba64",
@@ -3158,6 +3244,51 @@
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/be07-b1df"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/9a8d-b2bc",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "OutputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/6626-b452"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/724d-9bb6"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/9ff3-9f57",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "OutputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/0279-a858"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/6626-b452"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/a2cd-b855",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "OutputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/724d-9bb6"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/50f0-bf01"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/ab78-a370",
@@ -3190,21 +3321,6 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef3f-b9b9"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/ad73-b2ba",
-    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
-    "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "OutputRdf"
-    } ],
-    "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/109"
-    } ],
-    "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputRdf"
-    } ],
-    "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4266-acfb"
-    } ]
-  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/c2f4-98ba",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
@@ -3218,6 +3334,21 @@
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef80-b6bb"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/d191-a385",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "OutputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/85"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/1881-9dd3"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/d392-b38d",
@@ -3265,7 +3396,7 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f9b6-b2d7"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/192a-8168",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/ad65-9d76",
     "@type" : [ "http://linkedpipes.com/ontology/Vertex" ],
     "http://linkedpipes.com/ontology/order" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -3421,7 +3552,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/3/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/e-textHolder#content" : [ {
-      "@value" : "@prefix bacnet: <http://purl.org/wot-catalogue/bacnet#> .\n@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .\n@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n\nbacnet:Scheme a skos:ConceptScheme ;\n        skos:prefLabel \"BACnet\" ;\n        skos:hasTopConcept bacnet:servicesSupported ;\n        rdfs:seeAlso <http://bacowl.sourceforge.net/> .\n\nbacnet:servicesSupported a skos:Concept ;\n                         skos:prefLabel \"servicesSupported\" ;\n                         skos:inScheme  bacnet:Scheme ;\n                         skos:narrower bacnet:StandardObject .\n\nbacnet:StandardObject a skos:Concept ;\n                      skos:prefLabel \"StandardObject\" ;\n                      skos:inScheme  bacnet:Scheme ;\n                      skos:narrower bacnet:ReadableProperty, bacnet:WritableProperty, bacnet:OptionalProperty .\n\nbacnet:ReadableProperty a skos:Concept ;\n                        skos:prefLabel \"ReadableProperty\" ;\n                        skos:inScheme  bacnet:Scheme .\n\nbacnet:WritableProperty a skos:Concept ;\n                        skos:prefLabel \"WritableProperty\" ;\n                        skos:inScheme  bacnet:Scheme .\n\nbacnet:OptionalProperty a skos:Concept ;\n                        skos:prefLabel \"OptionalProperty\" ;\n                        skos:inScheme  bacnet:Scheme ."
+      "@value" : "@prefix bacnet: <http://purl.org/wot-catalogue/bacnet#> .\n@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .\n@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n\nbacnet:Scheme a skos:ConceptScheme ;\n        skos:prefLabel \"BACnet\" ;\n        skos:hasTopConcept bacnet:servicesSupported ;\n        rdfs:seeAlso <http://bacowl.sourceforge.net/> .\n\nbacnet:servicesSupported a skos:Concept ;\n                         skos:prefLabel \"servicesSupported\" ;\n                         skos:inScheme  bacnet:scheme ;\n                         skos:narrower bacnet:StandardObject .\n\nbacnet:StandardObject a skos:Concept ;\n                      skos:prefLabel \"StandardObject\" ;\n                      skos:inScheme  bacnet:scheme ;\n                      skos:narrower bacnet:ReadableProperty, bacnet:WritableProperty, bacnet:OptionalProperty .\n\nbacnet:ReadableProperty a skos:Concept ;\n                        skos:prefLabel \"ReadableProperty\" ;\n                        skos:inScheme  bacnet:scheme .\n\nbacnet:WritableProperty a skos:Concept ;\n                        skos:prefLabel \"WritableProperty\" ;\n                        skos:inScheme  bacnet:scheme .\n\nbacnet:OptionalProperty a skos:Concept ;\n                        skos:prefLabel \"OptionalProperty\" ;\n                        skos:inScheme  bacnet:scheme ."
     } ],
     "http://plugins.linkedpipes.com/ontology/e-textHolder#contentControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -3527,7 +3658,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/85/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query" : [ {
-      "@value" : "prefix xsd: <http://www.w3.org/2001/XMLSchema#>\nprefix owl: <http://www.w3.org/2002/07/owl#>\nprefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix skos: <http://www.w3.org/2004/02/skos/core#>\nprefix bacnet: <http://purl.org/wot-catalogue/bacnet#>\nprefix BACnet: <http://bacowl.sourceforge.net/2012/bacnet#>\n\nconstruct {\n  ?obj a skos:Concept ;\n       skos:prefLabel ?objLabel ;\n       skos:broader ?upperObj .\n  ?prop a skos:Concept ;\n        skos:prefLabel ?propLabel ;\n    \tskos:broader ?upperProp .\n  ?obj skos:related ?prop .\n  ?prop skos:related ?dt .\n  \n  ?service a skos:Concept ;\n           skos:prefLabel ?serviceLabel ;\n    \t   skos:broader bacnet:servicesSupported .\n\n  ?obj skos:inScheme bacnet:Scheme .\n  ?prop skos:inScheme bacnet:Scheme .\n  ?service skos:inScheme bacnet:Scheme .\n} where {\n  {\n    ?bacObj rdfs:subClassOf+ BACnet:Object ;\n         rdfs:subClassOf ?bacUpperObj .\n    bind (strafter(str(?bacObj), '#') as ?objLabel)\n    bind (IRI(concat(str(bacnet:), str(?objLabel))) as ?obj)\n    bind (IRI(concat(str(bacnet:), strafter(str(?bacUpperObj), '#'))) as ?upperObj)\n    ?bacProp rdfs:subPropertyOf+ BACnet:Property ;\n          rdfs:subPropertyOf ?bacUpperProp ;\n\t\t  rdfs:domain ?bacObj ;\n          rdfs:range ?bacPropType .\n    bind (strafter(str(?bacProp), '#') as ?propLabel)\n    bind (IRI(if(strbefore(str(?bacProp), str(?propLabel))=str(BACnet:), concat(str(bacnet:), str(?propLabel)), concat(str(bacnet:), strafter(str(?bacObj), '#'), str(?propLabel)))) as ?prop)\n    bind (IRI(concat(str(bacnet:), strafter(str(?bacUpperProp), '#'))) as ?upperProp)\n    optional {\n      ?bacPropType rdfs:subClassOf ?valRestriction .\n      ?valRestriction a owl:Restriction ;\n                      owl:onProperty rdf:value ;\n                      owl:someValuesFrom ?complexDt .\n      ?complexDt a rdfs:Datatype ;\n                 owl:onDatatype ?xsd .\n    }\n    bind (IRI(concat(str(bacnet:), strafter(str(?bacPropType), '#'))) as ?propType)\n    bind (if(bound(?xsd), ?xsd, ?propType) as ?dt)\n  }\n  union\n  {\n    BACnet:ServicesSupported rdfs:subClassOf ?listRestriction .\n    ?listRestriction a owl:Restriction ;\n                     owl:onProperty skos:member ;\n                     owl:someValuesFrom ?oneOf .\n    ?oneOf a owl:Class ;\n           owl:oneOf ?list .\n    ?list rdf:rest*/rdf:first ?bacService .\n    bind (IRI(concat(str(bacnet:), strafter(str(?bacService), '#'))) as ?service)\n    bind (strafter(str(?bacService), '#') as ?serviceLabel)\n  }\n}"
+      "@value" : "prefix xsd: <http://www.w3.org/2001/XMLSchema#>\nprefix owl: <http://www.w3.org/2002/07/owl#>\nprefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nprefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nprefix skos: <http://www.w3.org/2004/02/skos/core#>\nprefix bacnet: <http://purl.org/wot-catalogue/bacnet#>\nprefix BACnet: <http://bacowl.sourceforge.net/2012/bacnet#>\n\nconstruct {\n  ?obj a skos:Concept ;\n       skos:prefLabel ?objLabel ;\n       skos:broader ?upperObj .\n  ?prop a skos:Concept ;\n        skos:prefLabel ?propLabel ;\n    \tskos:broader ?upperProp .\n  ?obj skos:related ?prop .\n  ?prop skos:related ?dt .\n  \n  ?service a skos:Concept ;\n           skos:prefLabel ?serviceLabel ;\n    \t   skos:broader bacnet:servicesSupported .\n\n  ?obj skos:inScheme bacnet:scheme .\n  ?prop skos:inScheme bacnet:scheme .\n  ?service skos:inScheme bacnet:scheme .\n} where {\n  {\n    ?bacObj rdfs:subClassOf+ BACnet:Object ;\n         rdfs:subClassOf ?bacUpperObj .\n    bind (strafter(str(?bacObj), '#') as ?objLabel)\n    bind (IRI(concat(str(bacnet:), str(?objLabel))) as ?obj)\n    bind (IRI(concat(str(bacnet:), strafter(str(?bacUpperObj), '#'))) as ?upperObj)\n    ?bacProp rdfs:subPropertyOf+ BACnet:Property ;\n          rdfs:subPropertyOf ?bacUpperProp ;\n\t\t  rdfs:domain ?bacObj ;\n          rdfs:range ?bacPropType .\n    bind (strafter(str(?bacProp), '#') as ?propLabel)\n    bind (IRI(if(strbefore(str(?bacProp), str(?propLabel))=str(BACnet:), concat(str(bacnet:), str(?propLabel)), concat(str(bacnet:), strafter(str(?bacObj), '#'), str(?propLabel)))) as ?prop)\n    bind (IRI(concat(str(bacnet:), strafter(str(?bacUpperProp), '#'))) as ?upperProp)\n    optional {\n      ?bacPropType rdfs:subClassOf ?valRestriction .\n      ?valRestriction a owl:Restriction ;\n                      owl:onProperty rdf:value ;\n                      owl:someValuesFrom ?complexDt .\n      ?complexDt a rdfs:Datatype ;\n                 owl:onDatatype ?xsd .\n    }\n    bind (IRI(concat(str(bacnet:), strafter(str(?bacPropType), '#'))) as ?propType)\n    bind (if(bound(?xsd), ?xsd, ?propType) as ?dt)\n  }\n  union\n  {\n    BACnet:ServicesSupported rdfs:subClassOf ?listRestriction .\n    ?listRestriction a owl:Restriction ;\n                     owl:onProperty skos:member ;\n                     owl:someValuesFrom ?oneOf .\n    ?oneOf a owl:Class ;\n           owl:oneOf ?list .\n    ?list rdf:rest*/rdf:first ?bacService .\n    bind (IRI(concat(str(bacnet:), strafter(str(?bacService), '#'))) as ?service)\n    bind (strafter(str(?bacService), '#') as ?serviceLabel)\n  }\n}"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -3841,6 +3972,42 @@
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/206"
 }, {
   "@graph" : [ {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/0279-a858/configuration",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query" : [ {
+      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX onem2m: <http://purl.org/wot-catalogue/onem2m#>\nPREFIX ocf:<http://purl.org/wot-catalogue/ocf#>\nPREFIX ble:<http://purl.org/wot-catalogue/ble#>\nPREFIX lwm2m:<http://purl.org/wot-catalogue/lwm2m#>\nPREFIX bacnet:<http://purl.org/wot-catalogue/bacnet#>\nPREFIX haim:<http://purl.org/wot-catalogue/onem2m/haim#>\n\nINSERT {\n  haim:collection skos:member ?c .\n} WHERE {\n  ?c a skos:Concept .\n}"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/0279-a858/configuration"
+}, {
+  "@graph" : [ {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/08c8-a8b2/configuration",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query" : [ {
+      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX bacnet: <http://purl.org/wot-catalogue/bacnet#>\nDELETE {\n  ?s skos:definition ?d\n} WHERE {\n  ?s a ?type . FILTER(?type in (skos:Concept, skos:ConceptScheme, skos:Collection)) \n  ?s skos:definition ?d .\n  FILTER(?d = \"\")\n}"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/08c8-a8b2/configuration"
+}, {
+  "@graph" : [ {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/1881-9dd3/configuration",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query" : [ {
+      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sdt: <http://purl.org/wot-catalogue/sdt#>\nPREFIX ocf:<http://purl.org/wot-catalogue/ocf#>\nPREFIX ble:<http://purl.org/wot-catalogue/ble#>\nPREFIX lwm2m:<http://purl.org/wot-catalogue/lwm2m#>\nPREFIX bacnet:<http://purl.org/wot-catalogue/bacnet#>\n\nINSERT {\n  ?s skos:altLabel ?alt .\n} WHERE {\n  ?s a skos:Concept;\n    skos:inScheme bacnet:scheme;\n    skos:prefLabel ?l.\n  BIND(LCASE(REPLACE(REPLACE(?l,\"([A-Z]+)\",\" $1\"),\"(^ )\", \"\")) as ?alt)\n}"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/1881-9dd3/configuration"
+}, {
+  "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/2b2e-9b88/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName" : [ {
@@ -3877,22 +4044,10 @@
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/3891-a726/configuration"
 }, {
   "@graph" : [ {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/41c3-91de/configuration",
-    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration" ],
-    "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query" : [ {
-      "@value" : "PREFIX bacnet: <http://purl.org/wot-catalogue/bacnet#>\nPREFIX bl: <https://w3id.org/biolink/vocab/>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX ns: <http://purl.org/wot-catalogue/bacnet/core#>\nCONSTRUCT {\n  ns: ?collp ?collo .\n  ?c ?cp ?co .\n} WHERE {\n  bacnet:metamodel a skos:Collection ;\n            ?collp ?collo ;\n            skos:member ?concept .\n  ?concept ?cp ?co .\n  \n  BIND (uri(concat(str(ns:), strafter(str(?concept), \"#\"))) AS ?c)\n}"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl" : [ {
-      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
-    } ]
-  } ],
-  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/41c3-91de/configuration"
-}, {
-  "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4266-acfb/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query" : [ {
-      "@value" : "PREFIX sdt: <http://purl.org/wot-catalogue/sdt#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX ns: <http://purl.org/wot-catalogue/onem2m/haim#>\nCONSTRUCT {\n  ns: a skos:Collection ; skos:member ?c .\n  ?c ?cp ?co .\n} WHERE {\n  ?concept a skos:Concept ;\n     skos:inScheme sdt:Scheme ;\n     ?cp ?co .\n  FILTER NOT EXISTS {\n    sdt:metamodel skos:member ?concept .\n  }\n  \n  BIND (uri(concat(str(ns:), strafter(str(?concept), \"#\"))) AS ?c)\n}"
+      "@value" : "PREFIX haim: <http://purl.org/wot-catalogue/onem2m/haim#>\nCONSTRUCT {\n  ?s ?p ?o . \n} WHERE {\n  ?s ?p ?o FILTER (strstarts(str(?s), str(haim:)))\n}"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -3928,7 +4083,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4cb6-a2eb/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName" : [ {
-      "@value" : "bacnet/core.ttl"
+      "@value" : "bacnet/scheme.ttl"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileNameControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -3952,7 +4107,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/50f0-bf01/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query" : [ {
-      "@value" : "PREFIX sdt: <http://purl.org/wot-catalogue/sdt#>\nPREFIX bl: <https://w3id.org/biolink/vocab/>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX ns: <http://purl.org/wot-catalogue/onem2m/core#>\nCONSTRUCT {\n  ns: ?collp ?collo .\n  ?c ?cp ?co .\n} WHERE {\n  sdt:metamodel a skos:Collection ;\n            ?collp ?collo ;\n            skos:member ?concept .\n  ?concept ?cp ?co .\n  \n  BIND (uri(concat(str(ns:), strafter(str(?concept), \"#\"))) AS ?c)\n}"
+      "@value" : "PREFIX onem2m: <http://purl.org/wot-catalogue/onem2m#>\nCONSTRUCT {\n  ?s ?p ?o . \n} WHERE {\n  ?s ?p ?o FILTER (strstarts(str(?s), str(onem2m:)))\n}"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -3997,6 +4152,18 @@
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/64b9-ab69/configuration"
 }, {
   "@graph" : [ {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/6626-b452/configuration",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query" : [ {
+      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sdt: <http://purl.org/wot-catalogue/sdt#>\nPREFIX ocf:<http://purl.org/wot-catalogue/ocf#>\nPREFIX ble:<http://purl.org/wot-catalogue/ble#>\nPREFIX lwm2m:<http://purl.org/wot-catalogue/lwm2m#>\nPREFIX bacnet:<http://purl.org/wot-catalogue/bacnet#>\nPREFIX haim:<http://purl.org/wot-catalogue/haim#>\n\nINSERT {\n  ?s skos:altLabel ?alt .\n} WHERE {\n\t?s a skos:Concept ;\n\tskos:inScheme sdt:scheme;\n\tskos:prefLabel ?l.\n  BIND(LCASE(REPLACE(REPLACE(REPLACE(REPLACE(?l,\"([A-Z]+)\",\" $1\"), \"[tT]hree DPrinter\", \" 3d printer\"),\"3 D(.+)\", \" 3d $1\"),\"(^ )\",\"\"))  AS ?genalt)\n\tBIND(IF(!regex(str(?s), \".+(airQuality).+\"),REPLACE(?genalt,\"([a-z]+)([0-9]+)\",\"$1 $2\"),?genalt) as ?genalt2)\n  BIND(IF(bound(?genalt2),?genalt2,IF(bound(?genalt),?genalt,?l)) as ?alt)\n}"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/6626-b452/configuration"
+}, {
+  "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/708d-aad5/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query" : [ {
@@ -4007,6 +4174,18 @@
     } ]
   } ],
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/708d-aad5/configuration"
+}, {
+  "@graph" : [ {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/724d-9bb6/configuration",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query" : [ {
+      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX onem2m: <http://purl.org/wot-catalogue/onem2m#>\nPREFIX haim: <http://purl.org/wot-catalogue/haim#>\nDELETE {\n  ?s skos:definition ?d\n} WHERE {\n  ?s a ?type . FILTER(?type in (skos:Concept, skos:ConceptScheme, skos:Collection)) \n  ?s skos:definition ?d .\n  FILTER(?d = \"\")\n}"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/724d-9bb6/configuration"
 }, {
   "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/8f64-bed6/configuration",
@@ -4057,30 +4236,6 @@
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/be07-b1df/configuration"
 }, {
   "@graph" : [ {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/cd0c-8106/configuration",
-    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration" ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName" : [ {
-      "@value" : "bacnet/bacnet.ttl"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileNameControl" : [ {
-      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileType" : [ {
-      "@value" : "text/turtle"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileTypeControl" : [ {
-      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri" : [ {
-      "@id" : "http://purl.org/wot-catalogue/"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUriControl" : [ {
-      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
-    } ]
-  } ],
-  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/cd0c-8106/configuration"
-}, {
-  "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ceba-986a/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName" : [ {
@@ -4105,22 +4260,10 @@
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ceba-986a/configuration"
 }, {
   "@graph" : [ {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/df85-8469/configuration",
-    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration" ],
-    "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query" : [ {
-      "@value" : "PREFIX bacnet: <http://purl.org/wot-catalogue/bacnet#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX ns: <http://purl.org/wot-catalogue/bacnet/bacnet#>\nCONSTRUCT {\n  ns: a skos:Collection ; skos:member ?c .\n  ?c ?cp ?co .\n} WHERE {\n  ?concept a skos:Concept ;\n     skos:inScheme bacnet:Scheme ;\n     ?cp ?co .\n  FILTER NOT EXISTS {\n    bacnet:metamodel skos:member ?concept .\n  }\n  \n  BIND (uri(concat(str(ns:), strafter(str(?concept), \"#\"))) AS ?c)\n}"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl" : [ {
-      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
-    } ]
-  } ],
-  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/df85-8469/configuration"
-}, {
-  "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ed75-becc/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName" : [ {
-      "@value" : "onem2m/core.ttl"
+      "@value" : "onem2m/scheme.ttl"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileNameControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -4139,6 +4282,18 @@
     } ]
   } ],
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ed75-becc/configuration"
+}, {
+  "@graph" : [ {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef30-9e09/configuration",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query" : [ {
+      "@value" : "PREFIX httpList: <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#>\nPREFIX xslt: <http://etl.linkedpipes.com/ontology/components/t-xslt/>\n\nCONSTRUCT {\n  <http://localhost/resource/configuration> a xslt:Config ;\n    xslt:fileInfo ?file .\n  ?file a xslt:FileInfo ;\n    xslt:fileName ?name ;\n    xslt:parameter ?param .\n  ?param a xslt:Parameter ;\n    xslt:parameterName \"collection\" ;\n    xslt:parameterValue \"haim\" .\n} WHERE {\n  ?config a httpList:Configuration ;\n          httpList:reference ?file .\n  ?file httpList:fileUri ?uri ;\n        httpList:fileName ?name .\n  \n  BIND (uri(concat(str(?file), \"/param\")) AS ?param)\n}"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef30-9e09/configuration"
 }, {
   "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef3f-b9b9/configuration",
@@ -4189,6 +4344,32 @@
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f07b-bbbf/configuration"
 }, {
   "@graph" : [ {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f483-b7b7/configuration",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSize" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "50000"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSizeControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeType" : [ {
+      "@value" : ""
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeTypeControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFail" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+      "@value" : "false"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFailControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f483-b7b7/configuration"
+}, {
+  "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f9b6-b2d7/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName" : [ {
@@ -4211,6 +4392,32 @@
     } ]
   } ],
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f9b6-b2d7/configuration"
+}, {
+  "@graph" : [ {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/fe6e-a3ce/configuration",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSize" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "50000"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSizeControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeType" : [ {
+      "@value" : ""
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeTypeControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFail" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+      "@value" : "false"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFailControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/fe6e-a3ce/configuration"
 }, {
   "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/55/configuration",
@@ -4332,7 +4539,7 @@
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-xslt#template" : [ {
-      "@value" : "<xsl:stylesheet\n    xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n    xmlns:sdt=\"http://purl.org/wot-catalogue/sdt#\"\n    xmlns:ontolex=\"http://www.w3.org/ns/lemon/ontolex#\"\n    xmlns:hgi=\"http://homegatewayinitiative.org/xml/dal/3.0\"\n    xmlns:prov=\"http://www.w3.org/ns/prov#\"\n    xmlns:xs=\"http://www.w3.org/2001/XMLSchema\"\n    xmlns:fn=\"http://www.w3.org/2005/xpath-functions#\"\n    version=\"1.0\">\n\n<!-- configuration boilerplate -->\n    <xsl:output encoding=\"UTF-8\" indent=\"yes\" method=\"xml\" normalization-form=\"NFC\" />\n    <xsl:strip-space elements=\"*\"/>\n\n    <xsl:template match=\"/\">\n        <rdf:RDF>\n            <xsl:apply-templates select=\"//hgi:Device\"/>\n            <xsl:apply-templates select=\"//hgi:SubDevice\"/>\n            <xsl:apply-templates select=\"//hgi:ModuleClass\"/>\n            <xsl:apply-templates select=\"//hgi:DataPoint\"/>\n            <xsl:apply-templates select=\"//hgi:Action\"/>\n            <xsl:apply-templates select=\"//xs:simpleType\"/>\n            <xsl:apply-templates select=\"//xs:restriction/xs:enumeration\"/>\n        </rdf:RDF>\n    </xsl:template>\n\n    <xsl:template name=\"device-tpl\" match=\"//hgi:Device\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/sdt#{@id}\">\n            <!-- rdf:type -->\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <!-- skos:prefLabel and skos:definition -->\n            <skos:prefLabel>\n                <xsl:value-of select=\"normalize-space(@id)\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:value-of select=\"hgi:Doc\"/>\n            </skos:definition>\n            <!-- skos:broader and skos:inScheme -->\n            <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/sdt#Device\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/sdt#Scheme\"/>\n            <!-- skos:related-->\n            <xsl:for-each select=\"hgi:Modules/hgi:Module\">\n                <skos:related rdf:resource=\"http://purl.org/wot-catalogue/sdt#{@name}\"/>\n            </xsl:for-each>\n            <xsl:for-each select=\"hgi:SubDevices/hgi:SubDevice\">\n                <skos:related rdf:resource=\"http://purl.org/wot-catalogue/sdt#{@id}\"/>\n            </xsl:for-each>\n        </rdf:Description>\n    </xsl:template>\n\n    <xsl:template name=\"subdevice-tpl\" match=\"//hgi:SubDevice\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/sdt#{@id}\">\n            <!-- rdf:type -->\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <!-- skos:prefLabel and skos:definition -->\n            <skos:prefLabel>\n                <xsl:value-of select=\"normalize-space(@id)\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:value-of select=\"hgi:Doc\"/>\n            </skos:definition>\n            <!-- skos:broader and skos:inScheme -->\n            <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/sdt#Device\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/sdt#Scheme\"/>\n            <!-- skos:related-->\n            <xsl:for-each select=\"hgi:Modules/hgi:Module\">\n                <skos:related rdf:resource=\"http://purl.org/wot-catalogue/sdt#{@name}\"/>\n            </xsl:for-each>\n        </rdf:Description>\n    </xsl:template>\n\n    <xsl:template name=\"moduleclass-tpl\" match=\"//hgi:ModuleClass\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/sdt#{@name}\">\n            <!-- rdf:type -->\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <!-- skos:prefLabel and skos:definition -->\n            <skos:prefLabel>\n                <xsl:value-of select=\"normalize-space(@name)\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:value-of select=\"hgi:Doc\"/>\n            </skos:definition>\n            <!-- skos:broader and skos:inScheme -->\n            <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/sdt#Module\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/sdt#Scheme\"/>\n            <!-- skos:related-->\n            <xsl:for-each select=\"hgi:Actions/hgi:Action | hgi:Data/hgi:DataPoint\">\n                <skos:related rdf:resource=\"http://purl.org/wot-catalogue/sdt#{ancestor::hgi:ModuleClass/@name}-{@name}\"/>\n            </xsl:for-each>\n        </rdf:Description>\n    </xsl:template>\n\n    <xsl:template name=\"datapoint-tpl\" match=\"//hgi:DataPoint\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/sdt#{ancestor::hgi:ModuleClass/@name}-{@name}\">\n            <!-- rdf:type -->\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <!-- skos:prefLabel and skos:definition -->\n            <skos:prefLabel>\n                <xsl:value-of select=\"normalize-space(@name)\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:value-of select=\"hgi:Doc\"/>\n            </skos:definition>\n            <!-- skos:broader and skos:inScheme -->\n            <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/sdt#DataPoint\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/sdt#Scheme\"/>\n            <!-- skos:related-->\n            <xsl:variable name=\"datatype\" select=\"hgi:DataType/hgi:SimpleType/@type\"/>\n            <xsl:choose>\n                <xsl:when test=\"$datatype = 'datetime'\">\n                    <skos:related rdf:resource=\"http://www.w3.org/2001/XMLSchema#dateTime\"/>\n                </xsl:when>\n                <xsl:when test=\"$datatype = 'float' or $datatype = 'integer' or $datatype = 'boolean' or $datatype = 'string' or $datatype = 'date' or $datatype = 'time'\">\n                    <skos:related rdf:resource=\"http://www.w3.org/2001/XMLSchema#{$datatype}\"/>\n                </xsl:when>\n                <xsl:otherwise>\n                    <skos:related rdf:resource=\"http://purl.org/wot-catalogue/sdt#{substring-after($datatype, 'hd:')}\"/>\n                </xsl:otherwise>\n            </xsl:choose>\n        </rdf:Description>\n    </xsl:template>\n\n    <xsl:template name=\"action-tpl\" match=\"//hgi:Action\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/sdt#{ancestor::hgi:ModuleClass/@name}-{@name}\">\n            <!-- rdf:type -->\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <!-- skos:prefLabel and skos:definition -->\n            <skos:prefLabel>\n                <xsl:value-of select=\"normalize-space(@name)\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:value-of select=\"hgi:Doc\"/>\n            </skos:definition>\n            <!-- skos:broader and skos:inScheme -->\n            <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/sdt#Action\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/sdt#Scheme\"/>\n        </rdf:Description>\n    </xsl:template>\n\n    <xsl:template name=\"enumtype-tpl\" match=\"//xs:restriction/xs:enumeration\">\n        <xsl:variable name=\"typename\" select=\"ancestor::xs:simpleType/@name\"/>\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/sdt#{ancestor::xs:simpleType/@name}-{@value}\">\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <skos:prefLabel>\n                <!-- from https://stackoverflow.com/questions/2991141/xslt-xpath-match-directly-preceding-comments -->\n                <xsl:value-of select=\"normalize-space(preceding-sibling::comment()[generate-id(following-sibling::*[1]) = generate-id(current())])\"/>\n            </skos:prefLabel>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/sdt#Scheme\"/>\n        </rdf:Description>\n    </xsl:template>\n\n    <xsl:template name=\"simpletype-tpl\" match=\"//xs:simpleType\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/sdt#{@name}\">\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <skos:prefLabel>\n                <xsl:value-of select=\"normalize-space(@name)\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:value-of select=\"xs:annotation/xs:documentation\"/>\n            </skos:definition>\n            <xsl:variable name=\"type\" select=\"substring-after(xs:restriction/@base,'xs:')\"/>\n            <skos:broader rdf:resource=\"http://www.w3.org/2001/XMLSchema#{$type}\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/sdt#Scheme\"/>\n            <xsl:for-each select=\"xs:restriction/xs:enumeration\">\n                <skos:related rdf:resource=\"http://purl.org/wot-catalogue/sdt#{ancestor::xs:simpleType/@name}-{@value}\"/>\n            </xsl:for-each>\n        </rdf:Description>\n    </xsl:template>\n\n</xsl:stylesheet>"
+      "@value" : "<xsl:stylesheet\n    xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n    xmlns:onem2m=\"http://purl.org/wot-catalogue/onem2m#\"\n    xmlns:ontolex=\"http://www.w3.org/ns/lemon/ontolex#\"\n    xmlns:hgi=\"http://homegatewayinitiative.org/xml/dal/3.0\"\n    xmlns:prov=\"http://www.w3.org/ns/prov#\"\n    xmlns:xs=\"http://www.w3.org/2001/XMLSchema\"\n    xmlns:fn=\"http://www.w3.org/2005/xpath-functions#\"\n    version=\"1.0\">\n\n<!-- configuration boilerplate -->\n    <xsl:output encoding=\"UTF-8\" indent=\"yes\" method=\"xml\" normalization-form=\"NFC\" />\n    <xsl:strip-space elements=\"*\"/>\n    <xsl:param name=\"collection\"/>\n\n    <xsl:template match=\"/\">\n        <rdf:RDF>\n            <xsl:apply-templates select=\"//hgi:Device\"/>\n            <xsl:apply-templates select=\"//hgi:SubDevice\"/>\n            <xsl:apply-templates select=\"//hgi:ModuleClass\"/>\n            <xsl:apply-templates select=\"//hgi:DataPoint\"/>\n            <xsl:apply-templates select=\"//hgi:Action\"/>\n            <xsl:apply-templates select=\"//xs:simpleType\"/>\n            <xsl:apply-templates select=\"//xs:restriction/xs:enumeration\"/>\n        </rdf:RDF>\n    </xsl:template>\n\n    <xsl:template name=\"device-tpl\" match=\"//hgi:Device\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/onem2m/{$collection}#{@id}\">\n            <!-- rdf:type -->\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <!-- skos:prefLabel and skos:definition -->\n            <skos:prefLabel>\n                <xsl:value-of select=\"normalize-space(@id)\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:value-of select=\"hgi:Doc\"/>\n            </skos:definition>\n            <!-- skos:broader and skos:inScheme -->\n            <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/onem2m#Device\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/onem2m#scheme\"/>\n            <!-- skos:related-->\n            <xsl:for-each select=\"hgi:Modules/hgi:Module\">\n                <skos:related rdf:resource=\"http://purl.org/wot-catalogue/onem2m/{$collection}#{@name}\"/>\n            </xsl:for-each>\n            <xsl:for-each select=\"hgi:SubDevices/hgi:SubDevice\">\n                <skos:related rdf:resource=\"http://purl.org/wot-catalogue/onem2m/{$collection}#{@id}\"/>\n            </xsl:for-each>\n        </rdf:Description>\n    </xsl:template>\n\n    <xsl:template name=\"subdevice-tpl\" match=\"//hgi:SubDevice\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/onem2m/{$collection}#{@id}\">\n            <!-- rdf:type -->\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <!-- skos:prefLabel and skos:definition -->\n            <skos:prefLabel>\n                <xsl:value-of select=\"normalize-space(@id)\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:value-of select=\"hgi:Doc\"/>\n            </skos:definition>\n            <!-- skos:broader and skos:inScheme -->\n            <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/onem2m#Device\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/onem2m#scheme\"/>\n            <!-- skos:related-->\n            <xsl:for-each select=\"hgi:Modules/hgi:Module\">\n                <skos:related rdf:resource=\"http://purl.org/wot-catalogue/onem2m/{$collection}#{@name}\"/>\n            </xsl:for-each>\n        </rdf:Description>\n    </xsl:template>\n\n    <xsl:template name=\"moduleclass-tpl\" match=\"//hgi:ModuleClass\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/onem2m/{$collection}#{@name}\">\n            <!-- rdf:type -->\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <!-- skos:prefLabel and skos:definition -->\n            <skos:prefLabel>\n                <xsl:value-of select=\"normalize-space(@name)\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:value-of select=\"hgi:Doc\"/>\n            </skos:definition>\n            <!-- skos:broader and skos:inScheme -->\n            <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/onem2m#Module\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/onem2m#scheme\"/>\n            <!-- skos:related-->\n            <xsl:for-each select=\"hgi:Actions/hgi:Action | hgi:Data/hgi:DataPoint\">\n                <skos:related rdf:resource=\"http://purl.org/wot-catalogue/onem2m/{$collection}#{ancestor::hgi:ModuleClass/@name}-{@name}\"/>\n            </xsl:for-each>\n        </rdf:Description>\n    </xsl:template>\n\n    <xsl:template name=\"datapoint-tpl\" match=\"//hgi:DataPoint\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/onem2m/{$collection}#{ancestor::hgi:ModuleClass/@name}-{@name}\">\n            <!-- rdf:type -->\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <!-- skos:prefLabel and skos:definition -->\n            <skos:prefLabel>\n                <xsl:value-of select=\"normalize-space(@name)\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:value-of select=\"hgi:Doc\"/>\n            </skos:definition>\n            <!-- skos:broader and skos:inScheme -->\n            <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/onem2m#DataPoint\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/onem2m#scheme\"/>\n            <!-- skos:related-->\n            <xsl:variable name=\"datatype\" select=\"hgi:DataType/hgi:SimpleType/@type\"/>\n            <xsl:choose>\n                <xsl:when test=\"$datatype = 'datetime'\">\n                    <skos:related rdf:resource=\"http://www.w3.org/2001/XMLSchema#dateTime\"/>\n                </xsl:when>\n                <xsl:when test=\"$datatype = 'float' or $datatype = 'integer' or $datatype = 'boolean' or $datatype = 'string' or $datatype = 'date' or $datatype = 'time'\">\n                    <skos:related rdf:resource=\"http://www.w3.org/2001/XMLSchema#{$datatype}\"/>\n                </xsl:when>\n                <xsl:otherwise>\n                    <skos:related rdf:resource=\"http://purl.org/wot-catalogue/onem2m/{$collection}#{substring-after($datatype, 'hd:')}\"/>\n                </xsl:otherwise>\n            </xsl:choose>\n        </rdf:Description>\n    </xsl:template>\n\n    <xsl:template name=\"action-tpl\" match=\"//hgi:Action\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/onem2m/{$collection}#{ancestor::hgi:ModuleClass/@name}-{@name}\">\n            <!-- rdf:type -->\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <!-- skos:prefLabel and skos:definition -->\n            <skos:prefLabel>\n                <xsl:value-of select=\"normalize-space(@name)\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:value-of select=\"hgi:Doc\"/>\n            </skos:definition>\n            <!-- skos:broader and skos:inScheme -->\n            <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/onem2m#Action\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/onem2m#scheme\"/>\n        </rdf:Description>\n    </xsl:template>\n\n    <xsl:template name=\"enumtype-tpl\" match=\"//xs:restriction/xs:enumeration\">\n        <xsl:variable name=\"typename\" select=\"ancestor::xs:simpleType/@name\"/>\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/onem2m/{$collection}#{ancestor::xs:simpleType/@name}-{@value}\">\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <skos:prefLabel>\n                <!-- from https://stackoverflow.com/questions/2991141/xslt-xpath-match-directly-preceding-comments -->\n                <xsl:value-of select=\"normalize-space(preceding-sibling::comment()[generate-id(following-sibling::*[1]) = generate-id(current())])\"/>\n            </skos:prefLabel>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/onem2m#scheme\"/>\n        </rdf:Description>\n    </xsl:template>\n\n    <xsl:template name=\"simpletype-tpl\" match=\"//xs:simpleType\">\n        <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/onem2m/{$collection}#{@name}\">\n            <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/prov#Entity\"/>\n            <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n            <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n            <skos:prefLabel>\n                <xsl:value-of select=\"normalize-space(@name)\"/>\n            </skos:prefLabel>\n            <skos:definition>\n                <xsl:value-of select=\"xs:annotation/xs:documentation\"/>\n            </skos:definition>\n            <xsl:variable name=\"type\" select=\"substring-after(xs:restriction/@base,'xs:')\"/>\n            <skos:broader rdf:resource=\"http://www.w3.org/2001/XMLSchema#{$type}\"/>\n            <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/onem2m#scheme\"/>\n            <xsl:for-each select=\"xs:restriction/xs:enumeration\">\n                <skos:related rdf:resource=\"http://purl.org/wot-catalogue/onem2m/{$collection}#{ancestor::xs:simpleType/@name}-{@value}\"/>\n            </xsl:for-each>\n        </rdf:Description>\n    </xsl:template>\n\n</xsl:stylesheet>"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-xslt#templateControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -4346,30 +4553,6 @@
     } ]
   } ],
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/graph/129"
-}, {
-  "@graph" : [ {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/103/configuration",
-    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration" ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName" : [ {
-      "@value" : "data.ttl"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileNameControl" : [ {
-      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileType" : [ {
-      "@value" : "text/turtle"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileTypeControl" : [ {
-      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri" : [ {
-      "@id" : "http://localhost/default"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUriControl" : [ {
-      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
-    } ]
-  } ],
-  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/graph/132"
 }, {
   "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/96/configuration",
@@ -4514,7 +4697,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/76/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/e-textHolder#content" : [ {
-      "@value" : "@prefix httpList: <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#> .\n\n<http://localhost/resource/configuration> a httpList:Configuration ;\n    httpList:reference <http://localhost/resource/ref/1> ;\n    httpList:reference <http://localhost/resource/ref/2> ;\n    httpList:reference <http://localhost/resource/ref/2> .\n\n<http://localhost/resource/ref/1>  a httpList:Reference ;\n    httpList:fileUri \"https://git.onem2m.org/MAS/Home-Appliances/raw/master/3.7.0/SDT-TS0023-ModuleClasses.xml\" ;\n    httpList:fileName \"ModuleClasses.xml\" .\n\n<http://localhost/resource/ref/2>  a httpList:Reference ;\n    httpList:fileUri \"https://git.onem2m.org/MAS/Home-Appliances/raw/master/3.7.0/SDT-TS0023-Devices.xml\" ;\n    httpList:fileName \"Devices.xml\" .\n\n<http://localhost/resource/ref/3> a httpList:Reference ;\n  httpList:fileUri \"https://git.onem2m.org/MAS/Home-Appliances/-/raw/master/3.7.0/xsd/HD-enumerationTypes-v3_7_0.xsd\" ;\n  httpList:fileName \"HD-enumerationTypes-v3_7_0.xsd\" ."
+      "@value" : "@prefix httpList: <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#> .\n\n<http://localhost/resource/configuration> a httpList:Configuration ;\n    httpList:reference <http://localhost/resource/ref/1> ;\n    httpList:reference <http://localhost/resource/ref/2> ;\n    httpList:reference <http://localhost/resource/ref/3> .\n\n<http://localhost/resource/ref/1>  a httpList:Reference ;\n    httpList:fileUri \"https://git.onem2m.org/MAS/Home-Appliances/raw/master/3.7.0/SDT-TS0023-ModuleClasses.xml\" ;\n    httpList:fileName \"ModuleClasses.xml\" .\n\n<http://localhost/resource/ref/2>  a httpList:Reference ;\n    httpList:fileUri \"https://git.onem2m.org/MAS/Home-Appliances/raw/master/3.7.0/SDT-TS0023-Devices.xml\" ;\n    httpList:fileName \"Devices.xml\" .\n\n<http://localhost/resource/ref/3> a httpList:Reference ;\n  httpList:fileUri \"https://git.onem2m.org/MAS/Home-Appliances/-/raw/master/3.7.0/xsd/HD-enumerationTypes-v3_7_0.xsd\" ;\n  httpList:fileName \"HD-enumerationTypes-v3_7_0.xsd\" ."
     } ],
     "http://plugins.linkedpipes.com/ontology/e-textHolder#contentControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -4881,13 +5064,13 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/58/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/e-textHolder#content" : [ {
-      "@value" : "@prefix sdt: <http://purl.org/wot-catalogue/sdt#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n\nsdt:Scheme a skos:ConceptScheme ;\n     skos:prefLabel \"Smart Device Template\" ;\n     rdfs:seeAlso <https://github.com/Homegateway/SmartDeviceTemplate> ;\n     skos:hasTopConcept sdt:Device .\n\nsdt:Device a skos:Concept ;\n           skos:prefLabel \"Device\" ;\n           skos:definition \"For each physical device on the network at least one Device must be defined. If the physical device is a simple device, i.e. it does not contain embedded devices, e.g. a light switch, it does not include further SubDevices. On the other hand, if the physical is a compound device, i.e. it does contain embedded devices that can be addressed separately, the Device should contain SubDevices for each of the identifiable embedded devices.\" ;\n           skos:inScheme sdt:Scheme;\n           skos:related sdt:Module, sdt:Property .\n\nsdt:Module a skos:Concept ;\n           skos:prefLabel \"Module\" ;\n           skos:definition \"Module elements are basically constraints or templates for how to model functionality of real things/appliances/devices within the Domain. There could be an infinite number of possible functionalities, however it is recommended to identify a not-too-large selection of them as generic examples and allow for additional proprietary extensions. In a particular Domain there will be one Module for each of the agreed ModuleClasses plus additional ones for each extension of a ModuleClass.\" ;\n           skos:inScheme sdt:Scheme;\n           skos:related sdt:Property, sdt:DataPoint, sdt:Action, sdt:Event .\n\nsdt:Property a skos:Concept ;\n             skos:prefLabel \"Property\" ;\n             skos:definition \"Property elements are used to append to Devices and their ModuleClass elements with arbitrary additional information. For Devices it would be very common for a manufacturer to want to add into the XML file which is describing the device such information as \\\"Manufacturing Site\\\", \\\"Date of Manufacture\\\", \\\"Certification Code\\\", \\\"Energy Label Code\\\", \\\"compatible LAN technology\\\", \\\"URL for the device handbook\\\", \\\"physical limits of operation environments\\\", etc.\" ;\n             skos:inScheme sdt:Scheme;\n             skos:related sdt:DataType .\n\nsdt:Action a skos:Concept ;\n           skos:prefLabel \"Action\" ;\n           skos:definition \"Action elements are an efficient way of describing arbitrary sequences of operations/methods; these are very common in automation. Typical example include \\\"FactoryReset\\\", and \\\"AutoCalibrate\\\". Actions preserve transaction integrity by putting together all the parameters (\\\"args\\\", see next section) with the method which checks and executes them, in one step.\" ;\n           skos:inScheme sdt:Scheme;\n           skos:related sdt:DataType .\n\nsdt:Event a skos:Concept ;\n            skos:prefLabel \"Event\" ;\n            skos:definition \"Event elements are needed for automation protocols which \\\"push\\\" information, instead of relying on polling by the software application. A typical example would be a \\\"SensorAlert\\\" where a window sensor immediately transmits a change of its state from \\\"closed\\\" to \\\"open\\\", which could be used in a burglar alarm application, needs to be ready to accept such information immediately, and not wait for a regular polling of the device.\" ;\n            skos:inScheme sdt:Scheme;\n            skos:related sdt:DataPoint .\n\nsdt:DataPoint a skos:Concept ;\n              skos:prefLabel \"DataPoint\" ;\n              skos:definition \"A DataPoint element represents an aspect of a device which can be read/written to, and forms part of a device’s data model. Manipulating DataPoints is the most common way of controlling devices. Each DataPoint has an associated type (e.g. simple integer/real numbers, string of text, struct, or arrays thereof) which facillitates data integrity. Note that all RESTful systems (e.g. CoAP) use only DataPoint operations, so the mapping of a data models using an SDT into RESTful applications is easy.\" ;\n              skos:inScheme sdt:Scheme;\n              skos:related sdt:DataType .\n\nsdt:DataType a skos:Concept ;\n             skos:prefLabel \"DataType\" ;\n             skos:definition \"The data type can be simple integers or string text, or rather complex. The DataType element is a \\\"container\\\" for the various aspects of a type.\" ;\n             skos:inScheme sdt:Scheme."
+      "@value" : "@prefix onem2m: <http://purl.org/wot-catalogue/onem2m#> .\n@prefix haim: <http://purl.org/wot-catalogue/onem2m/haim#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n\nonem2m:scheme a skos:ConceptScheme ;\n     skos:prefLabel \"Smart Device Template\" ;\n     rdfs:seeAlso <https://github.com/Homegateway/SmartDeviceTemplate> ;\n     skos:hasTopConcept onem2m:Device .\n\nonem2m:Device a skos:Concept ;\n           skos:prefLabel \"Device\" ;\n           skos:definition \"For each physical device on the network at least one Device must be defined. If the physical device is a simple device, i.e. it does not contain embedded devices, e.g. a light switch, it does not include further SubDevices. On the other hand, if the physical is a compound device, i.e. it does contain embedded devices that can be addressed separately, the Device should contain SubDevices for each of the identifiable embedded devices.\" ;\n           skos:inScheme onem2m:scheme;\n           skos:related onem2m:Module, onem2m:Property .\n\nonem2m:Module a skos:Concept ;\n           skos:prefLabel \"Module\" ;\n           skos:definition \"Module elements are basically constraints or templates for how to model functionality of real things/appliances/devices within the Domain. There could be an infinite number of possible functionalities, however it is recommended to identify a not-too-large selection of them as generic examples and allow for additional proprietary extensions. In a particular Domain there will be one Module for each of the agreed ModuleClasses plus additional ones for each extension of a ModuleClass.\" ;\n           skos:inScheme onem2m:scheme;\n           skos:related onem2m:Property, onem2m:DataPoint, onem2m:Action, onem2m:Event .\n\nonem2m:Property a skos:Concept ;\n             skos:prefLabel \"Property\" ;\n             skos:definition \"Property elements are used to append to Devices and their ModuleClass elements with arbitrary additional information. For Devices it would be very common for a manufacturer to want to add into the XML file which is describing the device such information as \\\"Manufacturing Site\\\", \\\"Date of Manufacture\\\", \\\"Certification Code\\\", \\\"Energy Label Code\\\", \\\"compatible LAN technology\\\", \\\"URL for the device handbook\\\", \\\"physical limits of operation environments\\\", etc.\" ;\n             skos:inScheme onem2m:scheme;\n             skos:related onem2m:DataType .\n\nonem2m:Action a skos:Concept ;\n           skos:prefLabel \"Action\" ;\n           skos:definition \"Action elements are an efficient way of describing arbitrary sequences of operations/methods; these are very common in automation. Typical example include \\\"FactoryReset\\\", and \\\"AutoCalibrate\\\". Actions preserve transaction integrity by putting together all the parameters (\\\"args\\\", see next section) with the method which checks and executes them, in one step.\" ;\n           skos:inScheme onem2m:scheme;\n           skos:related onem2m:DataType .\n\nonem2m:Event a skos:Concept ;\n            skos:prefLabel \"Event\" ;\n            skos:definition \"Event elements are needed for automation protocols which \\\"push\\\" information, instead of relying on polling by the software application. A typical example would be a \\\"SensorAlert\\\" where a window sensor immediately transmits a change of its state from \\\"closed\\\" to \\\"open\\\", which could be used in a burglar alarm application, needs to be ready to accept such information immediately, and not wait for a regular polling of the device.\" ;\n            skos:inScheme onem2m:scheme;\n            skos:related onem2m:DataPoint .\n\nonem2m:DataPoint a skos:Concept ;\n              skos:prefLabel \"DataPoint\" ;\n              skos:definition \"A DataPoint element represents an aspect of a device which can be read/written to, and forms part of a device’s data model. Manipulating DataPoints is the most common way of controlling devices. Each DataPoint has an associated type (e.g. simple integer/real numbers, string of text, struct, or arrays thereof) which facillitates data integrity. Note that all RESTful systems (e.g. CoAP) use only DataPoint operations, so the mapping of a data models using an SDT into RESTful applications is easy.\" ;\n              skos:inScheme onem2m:scheme;\n              skos:related onem2m:DataType .\n\nonem2m:DataType a skos:Concept ;\n             skos:prefLabel \"DataType\" ;\n             skos:definition \"The data type can be simple integers or string text, or rather complex. The DataType element is a \\\"container\\\" for the various aspects of a type.\" ;\n             skos:inScheme onem2m:scheme.\n\nhaim:collection a skos:Collection ;\n                skos:prefLabel \"Home Appliances Information Model\" ;\n                skos:definition \"The home appliance information model includes module classes for devices in the home domain such as TV, refrigerator, air conditioner, clothes washer, oven, and robot cleaner.\" ;\n                rdfs:seeAlso <https://git.onem2m.org/MAS/Home-Appliances> ."
     } ],
     "http://plugins.linkedpipes.com/ontology/e-textHolder#contentControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
     } ],
     "http://plugins.linkedpipes.com/ontology/e-textHolder#fileName" : [ {
-      "@value" : "sdt.ttl"
+      "@value" : "onem2m.ttl"
     } ],
     "http://plugins.linkedpipes.com/ontology/e-textHolder#fileNameControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"

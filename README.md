@@ -7,6 +7,8 @@ from the following communication and classification standards:
  - [oneM2M](https://git.onem2m.org/MAS/Home-Appliances)
  - [OCF](https://github.com/OpenInterConnect/IoTDataModels)
  - [OMA LWM2M](https://github.com/OpenMobileAlliance/lwm2m-registry)
+ - [OpenHAB](https://github.com/openhab/openhab-core/tree/3.2.0/bundles/org.openhab.core.semantics/model)
+ - [Webthings Schema](https://webthings.io/schemas/)
  - Project Haystack
  - EDDL (TODO)
  - eCl@ss (TODO)
