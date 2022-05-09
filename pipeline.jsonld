@@ -41,14 +41,14 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1725"
+      "@value" : "1217"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-135"
+      "@value" : "228"
     } ],
     "http://purl.org/dc/terms/description" : [ {
-      "@value" : "Add skos:altLabel"
+      "@value" : "Add skos:altLabel for LWM2M"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "SPARQL update"
@@ -67,11 +67,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1690"
+      "@value" : "1563"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-45"
+      "@value" : "226"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Remove empty skos:definition"
@@ -133,21 +133,6 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/9"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/113",
-    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
-    "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "OutputRdf"
-    } ],
-    "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/28"
-    } ],
-    "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputRdf"
-    } ],
-    "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/108"
-    } ]
-  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/114",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
@@ -178,21 +163,6 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/5"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/116",
-    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
-    "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "OutputRdf"
-    } ],
-    "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/109"
-    } ],
-    "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputRdf"
-    } ],
-    "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/8"
-    } ]
-  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/117",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
@@ -208,7 +178,7 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/18"
     } ],
     "http://linkedpipes.com/ontology/vertex" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/cc7d-937e"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/ecf6-ac55"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/119",
@@ -559,29 +529,6 @@
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "OCF"
-    } ]
-  }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/28",
-    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
-    "http://linkedpipes.com/ontology/color" : [ {
-      "@value" : "#fcaf3e"
-    } ],
-    "http://linkedpipes.com/ontology/configurationGraph" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/graph/153"
-    } ],
-    "http://linkedpipes.com/ontology/template" : [ {
-      "@id" : "http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0"
-    } ],
-    "http://linkedpipes.com/ontology/x" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1433"
-    } ],
-    "http://linkedpipes.com/ontology/y" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-46"
-    } ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-      "@value" : "Files to RDF single graph"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/29",
@@ -1168,11 +1115,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "356"
+      "@value" : "-98"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "19"
+      "@value" : "194"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "Decompress archive"
@@ -1217,14 +1164,14 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "124"
+      "@value" : "-436"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-60"
+      "@value" : "197"
     } ],
     "http://purl.org/dc/terms/description" : [ {
-      "@value" : "LWM2MXML"
+      "@value" : "LWM2M XML"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "HTTP get"
@@ -1481,14 +1428,14 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "597"
+      "@value" : "275"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-62"
+      "@value" : "194"
     } ],
     "http://purl.org/dc/terms/description" : [ {
-      "@value" : "LWM2M XML"
+      "@value" : "IPSO XML"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "File filter"
@@ -1563,7 +1510,7 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "596"
+      "@value" : "601"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -1627,40 +1574,17 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1064"
+      "@value" : "598"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-74"
+      "@value" : "182"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "(LWM2M)"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "XSLT transformer"
-    } ]
-  }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/82",
-    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
-    "http://linkedpipes.com/ontology/color" : [ {
-      "@value" : "#f57900"
-    } ],
-    "http://linkedpipes.com/ontology/configurationGraph" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/graph/171"
-    } ],
-    "http://linkedpipes.com/ontology/template" : [ {
-      "@id" : "http://etl.linkedpipes.com/resources/components/e-textHolder/0.0.0"
-    } ],
-    "http://linkedpipes.com/ontology/x" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1118"
-    } ],
-    "http://linkedpipes.com/ontology/y" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-392"
-    } ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-      "@value" : "Collections"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/83",
@@ -1885,7 +1809,7 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "580"
+      "@value" : "589"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -1911,62 +1835,17 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1043"
+      "@value" : "585"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-348"
+      "@value" : "289"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "High-Level concepts"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "LWM2M"
-    } ]
-  }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/97",
-    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
-    "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "FilesOutput"
-    } ],
-    "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/81"
-    } ],
-    "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputFiles"
-    } ],
-    "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/28"
-    } ]
-  }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/98",
-    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
-    "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "FilesOutput"
-    } ],
-    "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/96"
-    } ],
-    "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputFiles"
-    } ],
-    "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/28"
-    } ]
-  }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/99",
-    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
-    "http://linkedpipes.com/ontology/sourceBinding" : [ {
-      "@value" : "FilesOutput"
-    } ],
-    "http://linkedpipes.com/ontology/sourceComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/82"
-    } ],
-    "http://linkedpipes.com/ontology/targetBinding" : [ {
-      "@value" : "InputFiles"
-    } ],
-    "http://linkedpipes.com/ontology/targetComponent" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/28"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/0279-a858",
@@ -2008,11 +1887,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1606"
+      "@value" : "1566"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "939"
+      "@value" : "935"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Remove empty skos:definition"
@@ -2060,17 +1939,37 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1591"
+      "@value" : "1566"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "604"
+      "@value" : "608"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Remove empty skos:definition"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "SPARQL update"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/2a6f-84de",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/2a6f-84de/configuration"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "-124"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "280"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "Files to RDF single graph"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/2b2e-9b88",
@@ -2086,11 +1985,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2481"
+      "@value" : "2484"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "310"
+      "@value" : "262"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Create file for IPSO collection"
@@ -2112,11 +2011,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2090"
+      "@value" : "2178"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "312"
+      "@value" : "261"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Generate IPSO collection"
@@ -2203,6 +2102,32 @@
       "@value" : "SPARQL update"
     } ]
   }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4f34-9396",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/color" : [ {
+      "@value" : "#fcaf3e"
+    } ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4f34-9396/configuration"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/e-textHolder/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "-474"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "285"
+    } ],
+    "http://purl.org/dc/terms/description" : [ {
+      "@value" : "List of IPSO XML files"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "Text holder"
+    } ]
+  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4f9a-a2ea",
     "@type" : [ "http://linkedpipes.com/ontology/Component" ],
     "http://linkedpipes.com/ontology/color" : [ {
@@ -2268,11 +2193,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1590"
+      "@value" : "1564"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "409"
+      "@value" : "408"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Remove empty skos:definition"
@@ -2294,14 +2219,14 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2472"
+      "@value" : "2482"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "240"
+      "@value" : "191"
     } ],
     "http://purl.org/dc/terms/description" : [ {
-      "@value" : "Create file for LWM2M core model"
+      "@value" : "Create file for LWM2M scheme"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "RDF to file"
@@ -2346,14 +2271,14 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2071"
+      "@value" : "2181"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "242"
+      "@value" : "190"
     } ],
     "http://purl.org/dc/terms/description" : [ {
-      "@value" : "Generate LWM2M core collection"
+      "@value" : "Generate LWM2M scheme"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "SPARQL construct"
@@ -2372,11 +2297,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1603"
+      "@value" : "1566"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "765"
+      "@value" : "764"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Remove empty skos:definition"
@@ -2408,6 +2333,29 @@
       "@value" : "Decompress archive"
     } ]
   }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/7a78-bc78",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/color" : [ {
+      "@value" : "#fcaf3e"
+    } ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/7a78-bc78/configuration"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "906"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "230"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "Files to RDF single graph"
+    } ]
+  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/be81-b6b3",
     "@type" : [ "http://linkedpipes.com/ontology/Component" ],
     "http://linkedpipes.com/ontology/color" : [ {
@@ -2432,6 +2380,32 @@
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "SPARQL update"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/cb1b-9d15",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/color" : [ {
+      "@value" : "#fcaf3e"
+    } ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/cb1b-9d15/configuration"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "171"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "281"
+    } ],
+    "http://purl.org/dc/terms/description" : [ {
+      "@value" : "Add collection parameter to each XML file"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "SPARQL construct"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ceba-986a",
@@ -2597,11 +2571,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2927"
+      "@value" : "2959"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "694"
+      "@value" : "561"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Create a single archive for the whole catalogue"
@@ -2718,6 +2692,21 @@
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/d8d8-a23f"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/012f-81ec",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "OutputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/7a78-bc78"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/108"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/02cb-acb5",
@@ -2930,6 +2919,36 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/be81-b6b3"
     } ]
   }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/61fb-b484",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "FilesOutput"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/96"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputFiles"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/7a78-bc78"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/6649-9593",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "OutputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/2a6f-84de"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/cb1b-9d15"
+    } ]
+  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/67a2-a76d",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
@@ -3093,6 +3112,21 @@
     } ],
     "http://linkedpipes.com/ontology/targetComponent" : [ {
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f483-b7b7"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/8679-8823",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "FilesOutput"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4f34-9396"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputFiles"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/2a6f-84de"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/8c23-9e24",
@@ -3275,6 +3309,21 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/1b49-aa1c"
     } ]
   }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/c8ee-8dad",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "OutputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/cb1b-9d15"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "Parameters"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/81"
+    } ]
+  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/c9fc-b22a",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
@@ -3320,6 +3369,21 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4f30-b4d2"
     } ]
   }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/eddc-8630",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "FilesOutput"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/81"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputFiles"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/7a78-bc78"
+    } ]
+  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/f08b-a489",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
@@ -3335,7 +3399,7 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/774d-b1d7"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/cc7d-937e",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/ecf6-ac55",
     "@type" : [ "http://linkedpipes.com/ontology/Vertex" ],
     "http://linkedpipes.com/ontology/order" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -3702,7 +3766,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/108/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query" : [ {
-      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sdt: <http://purl.org/wot-catalogue/sdt#>\nPREFIX ocf:<http://purl.org/wot-catalogue/ocf#>\nPREFIX ble:<http://purl.org/wot-catalogue/ble#>\nPREFIX lwm2m:<http://purl.org/wot-catalogue/lwm2m#>\nPREFIX bacnet:<http://purl.org/wot-catalogue/bacnet#>\n\nINSERT {\n  ?s skos:altLabel ?alt .\n} WHERE {{\n\t?s a skos:Concept ;\n\tskos:inScheme sdt:Scheme;\n\tskos:prefLabel ?l.\n  BIND(LCASE(REPLACE(REPLACE(REPLACE(REPLACE(?l,\"([A-Z]+)\",\" $1\"), \"[tT]hree DPrinter\", \" 3d printer\"),\"3 D(.+)\", \" 3d $1\"),\"(^ )\",\"\"))  AS ?genalt)\n\tBIND(IF(!regex(str(?s), \".+(airQuality).+\"),REPLACE(?genalt,\"([a-z]+)([0-9]+)\",\"$1 $2\"),?genalt) as ?genalt2)\n  BIND(IF(bound(?genalt2),?genalt2,IF(bound(?genalt),?genalt,?l)) as ?alt)\n} UNION {\n  ?s a skos:Concept;\n   skos:inScheme ocf:Scheme ;\n   skos:prefLabel ?l .\n  FILTER(regex(?l,\"(POST \\\\/|GET \\\\/|PUT \\\\/|DELETE \\\\/|\\\\/).+\"))\n  BIND(REPLACE(REPLACE(?l,\"(POST \\\\/|GET \\\\/|PUT \\\\/|DELETE \\\\/|\\\\/).+\",\"$1\"),\"\\\\/\", \"\") as ?l1)\n  BIND(REPLACE(?l,\"(POST \\\\/|GET \\\\/|PUT \\\\/|DELETE \\\\/|\\\\/)\",\"\") as ?l2)\n  BIND(LCASE(CONCAT(?l1, REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(?l2,\"([A-Z]+)\",\" $1\"), \"(^ )\",\"\"), \"3 D([A-Z])\", \"3D $1\"),\"([A-Z]+)([A-Z][a-z]+)\",\"$1 $2\"),\"URI(.+)\", \"URI $1\"))) as ?alt)\n} UNION {\n  ?s a skos:Concept;\n   skos:inScheme ocf:Scheme ;\n   skos:prefLabel ?l .\n  FILTER(!regex(?l,\"(\\\\/).+\"))\n  BIND(LCASE(?l) as ?alt)\n} UNION {\n  ?s a skos:Concept;\n    skos:inScheme ble:Scheme ;\n    skos:prefLabel ?l .\n  BIND(LCASE(?l) as ?alt)\n} UNION {\n  ?s a skos:Concept;\n    skos:inScheme lwm2m:Scheme;\n    skos:prefLabel ?l.\n  BIND(LCASE(REPLACE(REPLACE(REPLACE(REPLACE(?l,\"([a-z]{2,})([A-Z]+)\",\"$1 $2\"),\"(^ )\", \"\"),\"Lw M2M\", \"LwM2M\"),\"_\",\" \")) as ?alt)\n} UNION {\n  ?s a skos:Concept;\n    skos:inScheme bacnet:Scheme;\n    skos:prefLabel ?l.\n  BIND(LCASE(REPLACE(REPLACE(?l,\"([A-Z]+)\",\" $1\"),\"(^ )\", \"\")) as ?alt)\n} UNION {\n  ?s a skos:ConceptScheme ;\n    skos:prefLabel ?l .\n  BIND(LCASE(?l) AS ?alt)\n}}"
+      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sdt: <http://purl.org/wot-catalogue/sdt#>\nPREFIX ocf:<http://purl.org/wot-catalogue/ocf#>\nPREFIX ble:<http://purl.org/wot-catalogue/ble#>\nPREFIX lwm2m:<http://purl.org/wot-catalogue/lwm2m#>\nPREFIX bacnet:<http://purl.org/wot-catalogue/bacnet#>\n\nINSERT {\n  ?s skos:altLabel ?alt .\n} WHERE {\n  ?s a skos:Concept;\n    skos:inScheme lwm2m:scheme;\n    skos:prefLabel ?l.\n  BIND(LCASE(REPLACE(REPLACE(REPLACE(REPLACE(?l,\"([a-z]{2,})([A-Z]+)\",\"$1 $2\"),\"(^ )\", \"\"),\"Lw M2M\", \"LwM2M\"),\"_\",\" \")) as ?alt)\n}"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -3871,7 +3935,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/75/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-filesFilter#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-filesFilter#fileNamePattern" : [ {
-      "@value" : "(lwm2m\\-registry\\-prod\\/)\\d+(.xml)"
+      "@value" : ".*/((3200.xml)|(3201.xml)|(3202.xml)|(3203.xml)|(3204.xml)|(3205.xml)|(3206.xml)|(3207.xml)|(3208.xml)|(3209.xml)|(3210.xml)|(3211.xml)|(3212.xml)|(3213.xml)|(3214.xml)|(3215.xml)|(3216.xml)|(3217.xml)|(3218.xml)|(3219.xml)|(3220.xml)|(3221.xml)|(3222.xml)|(3223.xml)|(3224.xml)|(3225.xml)|(3226.xml)|(3227.xml)|(3228.xml)|(3229.xml)|(3230.xml)|(3231.xml)|(3232.xml)|(3233.xml)|(3234.xml)|(3235.xml)|(3236.xml)|(3237.xml)|(3238.xml)|(3239.xml)|(3240.xml)|(3241.xml)|(3242.xml)|(3243.xml)|(3244.xml)|(3245.xml)|(3246.xml)|(3247.xml)|(3248.xml)|(3249.xml)|(3250.xml)|(3251.xml)|(3252.xml)|(3253.xml)|(3254.xml)|(3255.xml)|(3256.xml)|(3257.xml)|(3258.xml)|(3259.xml)|(3260.xml)|(3261.xml)|(3262.xml)|(3263.xml)|(3264.xml)|(3265.xml)|(3266.xml)|(3267.xml)|(3268.xml)|(3269.xml)|(3270.xml)|(3271.xml)|(3272.xml)|(3273.xml)|(3274.xml)|(3275.xml)|(3276.xml)|(3277.xml)|(3278.xml)|(3279.xml)|(3280.xml)|(3281.xml)|(3282.xml)|(3283.xml)|(3284.xml)|(3285.xml)|(3286.xml)|(3287.xml)|(3288.xml)|(3289.xml)|(3290.xml)|(3291.xml)|(3292.xml)|(3293.xml)|(3294.xml)|(3295.xml)|(3296.xml)|(3297.xml)|(3298.xml)|(3299.xml)|(3300.xml)|(3301.xml)|(3302.xml)|(3303.xml)|(3304.xml)|(3305.xml)|(3306.xml)|(3307.xml)|(3308.xml)|(3309.xml)|(3310.xml)|(3311.xml)|(3312.xml)|(3313.xml)|(3314.xml)|(3315.xml)|(3316.xml)|(3317.xml)|(3318.xml)|(3319.xml)|(3320.xml)|(3321.xml)|(3322.xml)|(3323.xml)|(3324.xml)|(3325.xml)|(3326.xml)|(3327.xml)|(3328.xml)|(3329.xml)|(3330.xml)|(3331.xml)|(3332.xml)|(3333.xml)|(3334.xml)|(3335.xml)|(3336.xml)|(3337.xml)|(3338.xml)|(3339.xml)|(3340.xml)|(3341.xml)|(3342.xml)|(3343.xml)|(3344.xml)|(3345.xml)|(3346.xml)|(3347.xml)|(3348.xml)|(3349.xml)|(3350.xml)|(5500.xml)|(5501.xml)|(5502.xml)|(5503.xml)|(5504.xml)|(5505.xml)|(5506.xml)|(5507.xml)|(5508.xml)|(5509.xml)|(5510.xml)|(5511.xml)|(5512.xml)|(5513.xml)|(5514.xml)|(5515.xml)|(5516.xml)|(5517.xml)|(5518.xml)|(5519.xml)|(5520.xml)|(5521.xml)|(5522.xml)|(5523.xml)|(5524.xml)|(5525.xml)|(5526.xml)|(5527.xml)|(5528.xml)|(5529.xml)|(5530.xml)|(5531.xml)|(5532.xml)|(5533.xml)|(5534.xml)|(5535.xml)|(5536.xml)|(5537.xml)|(5538.xml)|(5539.xml)|(5540.xml)|(5541.xml)|(5542.xml)|(5543.xml)|(5544.xml)|(5545.xml)|(5546.xml)|(5547.xml)|(5548.xml)|(5549.xml)|(5550.xml)|(5551.xml)|(5552.xml)|(5553.xml)|(5554.xml)|(5555.xml)|(5556.xml)|(5557.xml)|(5558.xml)|(5559.xml)|(5560.xml)|(5561.xml)|(5562.xml)|(5563.xml)|(5564.xml)|(5565.xml)|(5566.xml)|(5567.xml)|(5568.xml)|(5569.xml)|(5570.xml)|(5571.xml)|(5572.xml)|(5573.xml)|(5574.xml)|(5575.xml)|(5576.xml)|(5577.xml)|(5578.xml)|(5579.xml)|(5580.xml)|(5581.xml)|(5582.xml)|(5583.xml)|(5584.xml)|(5585.xml)|(5586.xml)|(5587.xml)|(5588.xml)|(5589.xml)|(5590.xml)|(5591.xml)|(5592.xml)|(5593.xml)|(5594.xml)|(5595.xml)|(5596.xml)|(5597.xml)|(5598.xml)|(5599.xml)|(5600.xml)|(5601.xml)|(5602.xml)|(5603.xml)|(5604.xml)|(5605.xml)|(5606.xml)|(5607.xml)|(5608.xml)|(5609.xml)|(5610.xml)|(5611.xml)|(5612.xml)|(5613.xml)|(5614.xml)|(5615.xml)|(5616.xml)|(5617.xml)|(5618.xml)|(5619.xml)|(5620.xml)|(5621.xml)|(5622.xml)|(5623.xml)|(5624.xml)|(5625.xml)|(5626.xml)|(5627.xml)|(5628.xml)|(5629.xml)|(5630.xml)|(5631.xml)|(5632.xml)|(5633.xml)|(5634.xml)|(5635.xml)|(5636.xml)|(5637.xml)|(5638.xml)|(5639.xml)|(5640.xml)|(5641.xml)|(5642.xml)|(5643.xml)|(5644.xml)|(5645.xml)|(5646.xml)|(5647.xml)|(5648.xml)|(5649.xml)|(5650.xml)|(5651.xml)|(5652.xml)|(5653.xml)|(5654.xml)|(5655.xml)|(5656.xml)|(5657.xml)|(5658.xml)|(5659.xml)|(5660.xml)|(5661.xml)|(5662.xml)|(5663.xml)|(5664.xml)|(5665.xml)|(5666.xml)|(5667.xml)|(5668.xml)|(5669.xml)|(5670.xml)|(5671.xml)|(5672.xml)|(5673.xml)|(5674.xml)|(5675.xml)|(5676.xml)|(5677.xml)|(5678.xml)|(5679.xml)|(5680.xml)|(5681.xml)|(5682.xml)|(5683.xml)|(5684.xml)|(5685.xml)|(5686.xml)|(5687.xml)|(5688.xml)|(5689.xml)|(5690.xml)|(5691.xml)|(5692.xml)|(5693.xml)|(5694.xml)|(5695.xml)|(5696.xml)|(5697.xml)|(5698.xml)|(5699.xml)|(5700.xml)|(5701.xml)|(5702.xml)|(5703.xml)|(5704.xml)|(5705.xml)|(5706.xml)|(5707.xml)|(5708.xml)|(5709.xml)|(5710.xml)|(5711.xml)|(5712.xml)|(5713.xml)|(5714.xml)|(5715.xml)|(5716.xml)|(5717.xml)|(5718.xml)|(5719.xml)|(5720.xml)|(5721.xml)|(5722.xml)|(5723.xml)|(5724.xml)|(5725.xml)|(5726.xml)|(5727.xml)|(5728.xml)|(5729.xml)|(5730.xml)|(5731.xml)|(5732.xml)|(5733.xml)|(5734.xml)|(5735.xml)|(5736.xml)|(5737.xml)|(5738.xml)|(5739.xml)|(5740.xml)|(5741.xml)|(5742.xml)|(5743.xml)|(5744.xml)|(5745.xml)|(5746.xml)|(5747.xml)|(5748.xml)|(5749.xml)|(5750.xml)|(5751.xml)|(5752.xml)|(5753.xml)|(5754.xml)|(5755.xml)|(5756.xml)|(5757.xml)|(5758.xml)|(5759.xml)|(5760.xml)|(5761.xml)|(5762.xml)|(5763.xml)|(5764.xml)|(5765.xml)|(5766.xml)|(5767.xml)|(5768.xml)|(5769.xml)|(5770.xml)|(5771.xml)|(5772.xml)|(5773.xml)|(5774.xml)|(5775.xml)|(5776.xml)|(5777.xml)|(5778.xml)|(5779.xml)|(5780.xml)|(5781.xml)|(5782.xml)|(5783.xml)|(5784.xml)|(5785.xml)|(5786.xml)|(5787.xml)|(5788.xml)|(5789.xml)|(5790.xml)|(5791.xml)|(5792.xml)|(5793.xml)|(5794.xml)|(5795.xml)|(5796.xml)|(5797.xml)|(5798.xml)|(5799.xml)|(5800.xml)|(5801.xml)|(5802.xml)|(5803.xml)|(5804.xml)|(5805.xml)|(5806.xml)|(5807.xml)|(5808.xml)|(5809.xml)|(5810.xml)|(5811.xml)|(5812.xml)|(5813.xml)|(5814.xml)|(5815.xml)|(5816.xml)|(5817.xml)|(5818.xml)|(5819.xml)|(5820.xml)|(5821.xml)|(5822.xml)|(5823.xml)|(5824.xml)|(5825.xml)|(5826.xml)|(5827.xml)|(5828.xml)|(5829.xml)|(5830.xml)|(5831.xml)|(5832.xml)|(5833.xml)|(5834.xml)|(5835.xml)|(5836.xml)|(5837.xml)|(5838.xml)|(5839.xml)|(5840.xml)|(5841.xml)|(5842.xml)|(5843.xml)|(5844.xml)|(5845.xml)|(5846.xml)|(5847.xml)|(5848.xml)|(5849.xml)|(5850.xml)|(5851.xml)|(5852.xml)|(5853.xml)|(5854.xml)|(5855.xml)|(5856.xml)|(5857.xml)|(5858.xml)|(5859.xml)|(5860.xml)|(5861.xml)|(5862.xml)|(5863.xml)|(5864.xml)|(5865.xml)|(5866.xml)|(5867.xml)|(5868.xml)|(5869.xml)|(5870.xml)|(5871.xml)|(5872.xml)|(5873.xml)|(5874.xml)|(5875.xml)|(5876.xml)|(5877.xml)|(5878.xml)|(5879.xml)|(5880.xml)|(5881.xml)|(5882.xml)|(5883.xml)|(5884.xml)|(5885.xml)|(5886.xml)|(5887.xml)|(5888.xml)|(5889.xml)|(5890.xml)|(5891.xml)|(5892.xml)|(5893.xml)|(5894.xml)|(5895.xml)|(5896.xml)|(5897.xml)|(5898.xml)|(5899.xml)|(5900.xml)|(5901.xml)|(5902.xml)|(5903.xml)|(5904.xml)|(5910.xml)|(5911.xml)|(5912.xml)|(6051.xml)|(6052.xml)|(6053.xml))"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-filesFilter#fileNamePatternControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -3947,6 +4011,32 @@
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/1b49-aa1c/configuration"
 }, {
   "@graph" : [ {
+    "@id" : "http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0/new/1",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSize" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "50000"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSizeControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeType" : [ {
+      "@value" : ""
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeTypeControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFail" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+      "@value" : "false"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFailControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/2a6f-84de/configuration"
+}, {
+  "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/2b2e-9b88/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName" : [ {
@@ -3974,7 +4064,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/3891-a726/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query" : [ {
-      "@value" : "PREFIX lwm2m: <http://purl.org/wot-catalogue/lwm2m#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX ns: <http://purl.org/wot-catalogue/lwm2m/ipso#>\nCONSTRUCT {\n  ns: ?collp ?collo .\n  ?c ?cp ?co .\n} WHERE {\n  # IPSO collection (defined as external entities in the OMA registry, not as IPSO entities?)\n  lwm2m:ext a skos:Collection ;\n            ?collp ?collo ;\n            skos:member ?concept .\n  ?concept ?cp ?co .\n  \n  BIND (uri(concat(str(ns:), strafter(str(?concept), \"#\"))) AS ?c)\n}"
+      "@value" : "PREFIX lwm2m: <http://purl.org/wot-catalogue/lwm2m#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX ipso: <http://purl.org/wot-catalogue/lwm2m/ipso#>\nCONSTRUCT {\n  ?s ?p ?o . \n} WHERE {\n  ?s ?p ?o FILTER (strstarts(str(?s), str(ipso:)))\n}"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -4031,6 +4121,24 @@
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4f30-b4d2/configuration"
 }, {
   "@graph" : [ {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4f34-9396/configuration",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/e-textHolder#content" : [ {
+      "@value" : "@prefix dct: <http://purl.org/dc/terms/> .\n\n[] dct:title \"3200.xml\" .\n[] dct:title \"3201.xml\" .\n[] dct:title \"3202.xml\" .\n[] dct:title \"3203.xml\" .\n[] dct:title \"3204.xml\" .\n[] dct:title \"3205.xml\" .\n[] dct:title \"3206.xml\" .\n[] dct:title \"3207.xml\" .\n[] dct:title \"3208.xml\" .\n[] dct:title \"3209.xml\" .\n[] dct:title \"3210.xml\" .\n[] dct:title \"3211.xml\" .\n[] dct:title \"3212.xml\" .\n[] dct:title \"3213.xml\" .\n[] dct:title \"3214.xml\" .\n[] dct:title \"3215.xml\" .\n[] dct:title \"3216.xml\" .\n[] dct:title \"3217.xml\" .\n[] dct:title \"3218.xml\" .\n[] dct:title \"3219.xml\" .\n[] dct:title \"3220.xml\" .\n[] dct:title \"3221.xml\" .\n[] dct:title \"3222.xml\" .\n[] dct:title \"3223.xml\" .\n[] dct:title \"3224.xml\" .\n[] dct:title \"3225.xml\" .\n[] dct:title \"3226.xml\" .\n[] dct:title \"3227.xml\" .\n[] dct:title \"3228.xml\" .\n[] dct:title \"3229.xml\" .\n[] dct:title \"3230.xml\" .\n[] dct:title \"3231.xml\" .\n[] dct:title \"3232.xml\" .\n[] dct:title \"3233.xml\" .\n[] dct:title \"3234.xml\" .\n[] dct:title \"3235.xml\" .\n[] dct:title \"3236.xml\" .\n[] dct:title \"3237.xml\" .\n[] dct:title \"3238.xml\" .\n[] dct:title \"3239.xml\" .\n[] dct:title \"3240.xml\" .\n[] dct:title \"3241.xml\" .\n[] dct:title \"3242.xml\" .\n[] dct:title \"3243.xml\" .\n[] dct:title \"3244.xml\" .\n[] dct:title \"3245.xml\" .\n[] dct:title \"3246.xml\" .\n[] dct:title \"3247.xml\" .\n[] dct:title \"3248.xml\" .\n[] dct:title \"3249.xml\" .\n[] dct:title \"3250.xml\" .\n[] dct:title \"3251.xml\" .\n[] dct:title \"3252.xml\" .\n[] dct:title \"3253.xml\" .\n[] dct:title \"3254.xml\" .\n[] dct:title \"3255.xml\" .\n[] dct:title \"3256.xml\" .\n[] dct:title \"3257.xml\" .\n[] dct:title \"3258.xml\" .\n[] dct:title \"3259.xml\" .\n[] dct:title \"3260.xml\" .\n[] dct:title \"3261.xml\" .\n[] dct:title \"3262.xml\" .\n[] dct:title \"3263.xml\" .\n[] dct:title \"3264.xml\" .\n[] dct:title \"3265.xml\" .\n[] dct:title \"3266.xml\" .\n[] dct:title \"3267.xml\" .\n[] dct:title \"3268.xml\" .\n[] dct:title \"3269.xml\" .\n[] dct:title \"3270.xml\" .\n[] dct:title \"3271.xml\" .\n[] dct:title \"3272.xml\" .\n[] dct:title \"3273.xml\" .\n[] dct:title \"3274.xml\" .\n[] dct:title \"3275.xml\" .\n[] dct:title \"3276.xml\" .\n[] dct:title \"3277.xml\" .\n[] dct:title \"3278.xml\" .\n[] dct:title \"3279.xml\" .\n[] dct:title \"3280.xml\" .\n[] dct:title \"3281.xml\" .\n[] dct:title \"3282.xml\" .\n[] dct:title \"3283.xml\" .\n[] dct:title \"3284.xml\" .\n[] dct:title \"3285.xml\" .\n[] dct:title \"3286.xml\" .\n[] dct:title \"3287.xml\" .\n[] dct:title \"3288.xml\" .\n[] dct:title \"3289.xml\" .\n[] dct:title \"3290.xml\" .\n[] dct:title \"3291.xml\" .\n[] dct:title \"3292.xml\" .\n[] dct:title \"3293.xml\" .\n[] dct:title \"3294.xml\" .\n[] dct:title \"3295.xml\" .\n[] dct:title \"3296.xml\" .\n[] dct:title \"3297.xml\" .\n[] dct:title \"3298.xml\" .\n[] dct:title \"3299.xml\" .\n[] dct:title \"3300.xml\" .\n[] dct:title \"3301.xml\" .\n[] dct:title \"3302.xml\" .\n[] dct:title \"3303.xml\" .\n[] dct:title \"3304.xml\" .\n[] dct:title \"3305.xml\" .\n[] dct:title \"3306.xml\" .\n[] dct:title \"3307.xml\" .\n[] dct:title \"3308.xml\" .\n[] dct:title \"3309.xml\" .\n[] dct:title \"3310.xml\" .\n[] dct:title \"3311.xml\" .\n[] dct:title \"3312.xml\" .\n[] dct:title \"3313.xml\" .\n[] dct:title \"3314.xml\" .\n[] dct:title \"3315.xml\" .\n[] dct:title \"3316.xml\" .\n[] dct:title \"3317.xml\" .\n[] dct:title \"3318.xml\" .\n[] dct:title \"3319.xml\" .\n[] dct:title \"3320.xml\" .\n[] dct:title \"3321.xml\" .\n[] dct:title \"3322.xml\" .\n[] dct:title \"3323.xml\" .\n[] dct:title \"3324.xml\" .\n[] dct:title \"3325.xml\" .\n[] dct:title \"3326.xml\" .\n[] dct:title \"3327.xml\" .\n[] dct:title \"3328.xml\" .\n[] dct:title \"3329.xml\" .\n[] dct:title \"3330.xml\" .\n[] dct:title \"3331.xml\" .\n[] dct:title \"3332.xml\" .\n[] dct:title \"3333.xml\" .\n[] dct:title \"3334.xml\" .\n[] dct:title \"3335.xml\" .\n[] dct:title \"3336.xml\" .\n[] dct:title \"3337.xml\" .\n[] dct:title \"3338.xml\" .\n[] dct:title \"3339.xml\" .\n[] dct:title \"3340.xml\" .\n[] dct:title \"3341.xml\" .\n[] dct:title \"3342.xml\" .\n[] dct:title \"3343.xml\" .\n[] dct:title \"3344.xml\" .\n[] dct:title \"3345.xml\" .\n[] dct:title \"3346.xml\" .\n[] dct:title \"3347.xml\" .\n[] dct:title \"3348.xml\" .\n[] dct:title \"3349.xml\" .\n[] dct:title \"3350.xml\" .\n[] dct:title \"5500.xml\" .\n[] dct:title \"5501.xml\" .\n[] dct:title \"5502.xml\" .\n[] dct:title \"5503.xml\" .\n[] dct:title \"5504.xml\" .\n[] dct:title \"5505.xml\" .\n[] dct:title \"5506.xml\" .\n[] dct:title \"5507.xml\" .\n[] dct:title \"5508.xml\" .\n[] dct:title \"5509.xml\" .\n[] dct:title \"5510.xml\" .\n[] dct:title \"5511.xml\" .\n[] dct:title \"5512.xml\" .\n[] dct:title \"5513.xml\" .\n[] dct:title \"5514.xml\" .\n[] dct:title \"5515.xml\" .\n[] dct:title \"5516.xml\" .\n[] dct:title \"5517.xml\" .\n[] dct:title \"5518.xml\" .\n[] dct:title \"5519.xml\" .\n[] dct:title \"5520.xml\" .\n[] dct:title \"5521.xml\" .\n[] dct:title \"5522.xml\" .\n[] dct:title \"5523.xml\" .\n[] dct:title \"5524.xml\" .\n[] dct:title \"5525.xml\" .\n[] dct:title \"5526.xml\" .\n[] dct:title \"5527.xml\" .\n[] dct:title \"5528.xml\" .\n[] dct:title \"5529.xml\" .\n[] dct:title \"5530.xml\" .\n[] dct:title \"5531.xml\" .\n[] dct:title \"5532.xml\" .\n[] dct:title \"5533.xml\" .\n[] dct:title \"5534.xml\" .\n[] dct:title \"5535.xml\" .\n[] dct:title \"5536.xml\" .\n[] dct:title \"5537.xml\" .\n[] dct:title \"5538.xml\" .\n[] dct:title \"5539.xml\" .\n[] dct:title \"5540.xml\" .\n[] dct:title \"5541.xml\" .\n[] dct:title \"5542.xml\" .\n[] dct:title \"5543.xml\" .\n[] dct:title \"5544.xml\" .\n[] dct:title \"5545.xml\" .\n[] dct:title \"5546.xml\" .\n[] dct:title \"5547.xml\" .\n[] dct:title \"5548.xml\" .\n[] dct:title \"5549.xml\" .\n[] dct:title \"5550.xml\" .\n[] dct:title \"5551.xml\" .\n[] dct:title \"5552.xml\" .\n[] dct:title \"5553.xml\" .\n[] dct:title \"5554.xml\" .\n[] dct:title \"5555.xml\" .\n[] dct:title \"5556.xml\" .\n[] dct:title \"5557.xml\" .\n[] dct:title \"5558.xml\" .\n[] dct:title \"5559.xml\" .\n[] dct:title \"5560.xml\" .\n[] dct:title \"5561.xml\" .\n[] dct:title \"5562.xml\" .\n[] dct:title \"5563.xml\" .\n[] dct:title \"5564.xml\" .\n[] dct:title \"5565.xml\" .\n[] dct:title \"5566.xml\" .\n[] dct:title \"5567.xml\" .\n[] dct:title \"5568.xml\" .\n[] dct:title \"5569.xml\" .\n[] dct:title \"5570.xml\" .\n[] dct:title \"5571.xml\" .\n[] dct:title \"5572.xml\" .\n[] dct:title \"5573.xml\" .\n[] dct:title \"5574.xml\" .\n[] dct:title \"5575.xml\" .\n[] dct:title \"5576.xml\" .\n[] dct:title \"5577.xml\" .\n[] dct:title \"5578.xml\" .\n[] dct:title \"5579.xml\" .\n[] dct:title \"5580.xml\" .\n[] dct:title \"5581.xml\" .\n[] dct:title \"5582.xml\" .\n[] dct:title \"5583.xml\" .\n[] dct:title \"5584.xml\" .\n[] dct:title \"5585.xml\" .\n[] dct:title \"5586.xml\" .\n[] dct:title \"5587.xml\" .\n[] dct:title \"5588.xml\" .\n[] dct:title \"5589.xml\" .\n[] dct:title \"5590.xml\" .\n[] dct:title \"5591.xml\" .\n[] dct:title \"5592.xml\" .\n[] dct:title \"5593.xml\" .\n[] dct:title \"5594.xml\" .\n[] dct:title \"5595.xml\" .\n[] dct:title \"5596.xml\" .\n[] dct:title \"5597.xml\" .\n[] dct:title \"5598.xml\" .\n[] dct:title \"5599.xml\" .\n[] dct:title \"5600.xml\" .\n[] dct:title \"5601.xml\" .\n[] dct:title \"5602.xml\" .\n[] dct:title \"5603.xml\" .\n[] dct:title \"5604.xml\" .\n[] dct:title \"5605.xml\" .\n[] dct:title \"5606.xml\" .\n[] dct:title \"5607.xml\" .\n[] dct:title \"5608.xml\" .\n[] dct:title \"5609.xml\" .\n[] dct:title \"5610.xml\" .\n[] dct:title \"5611.xml\" .\n[] dct:title \"5612.xml\" .\n[] dct:title \"5613.xml\" .\n[] dct:title \"5614.xml\" .\n[] dct:title \"5615.xml\" .\n[] dct:title \"5616.xml\" .\n[] dct:title \"5617.xml\" .\n[] dct:title \"5618.xml\" .\n[] dct:title \"5619.xml\" .\n[] dct:title \"5620.xml\" .\n[] dct:title \"5621.xml\" .\n[] dct:title \"5622.xml\" .\n[] dct:title \"5623.xml\" .\n[] dct:title \"5624.xml\" .\n[] dct:title \"5625.xml\" .\n[] dct:title \"5626.xml\" .\n[] dct:title \"5627.xml\" .\n[] dct:title \"5628.xml\" .\n[] dct:title \"5629.xml\" .\n[] dct:title \"5630.xml\" .\n[] dct:title \"5631.xml\" .\n[] dct:title \"5632.xml\" .\n[] dct:title \"5633.xml\" .\n[] dct:title \"5634.xml\" .\n[] dct:title \"5635.xml\" .\n[] dct:title \"5636.xml\" .\n[] dct:title \"5637.xml\" .\n[] dct:title \"5638.xml\" .\n[] dct:title \"5639.xml\" .\n[] dct:title \"5640.xml\" .\n[] dct:title \"5641.xml\" .\n[] dct:title \"5642.xml\" .\n[] dct:title \"5643.xml\" .\n[] dct:title \"5644.xml\" .\n[] dct:title \"5645.xml\" .\n[] dct:title \"5646.xml\" .\n[] dct:title \"5647.xml\" .\n[] dct:title \"5648.xml\" .\n[] dct:title \"5649.xml\" .\n[] dct:title \"5650.xml\" .\n[] dct:title \"5651.xml\" .\n[] dct:title \"5652.xml\" .\n[] dct:title \"5653.xml\" .\n[] dct:title \"5654.xml\" .\n[] dct:title \"5655.xml\" .\n[] dct:title \"5656.xml\" .\n[] dct:title \"5657.xml\" .\n[] dct:title \"5658.xml\" .\n[] dct:title \"5659.xml\" .\n[] dct:title \"5660.xml\" .\n[] dct:title \"5661.xml\" .\n[] dct:title \"5662.xml\" .\n[] dct:title \"5663.xml\" .\n[] dct:title \"5664.xml\" .\n[] dct:title \"5665.xml\" .\n[] dct:title \"5666.xml\" .\n[] dct:title \"5667.xml\" .\n[] dct:title \"5668.xml\" .\n[] dct:title \"5669.xml\" .\n[] dct:title \"5670.xml\" .\n[] dct:title \"5671.xml\" .\n[] dct:title \"5672.xml\" .\n[] dct:title \"5673.xml\" .\n[] dct:title \"5674.xml\" .\n[] dct:title \"5675.xml\" .\n[] dct:title \"5676.xml\" .\n[] dct:title \"5677.xml\" .\n[] dct:title \"5678.xml\" .\n[] dct:title \"5679.xml\" .\n[] dct:title \"5680.xml\" .\n[] dct:title \"5681.xml\" .\n[] dct:title \"5682.xml\" .\n[] dct:title \"5683.xml\" .\n[] dct:title \"5684.xml\" .\n[] dct:title \"5685.xml\" .\n[] dct:title \"5686.xml\" .\n[] dct:title \"5687.xml\" .\n[] dct:title \"5688.xml\" .\n[] dct:title \"5689.xml\" .\n[] dct:title \"5690.xml\" .\n[] dct:title \"5691.xml\" .\n[] dct:title \"5692.xml\" .\n[] dct:title \"5693.xml\" .\n[] dct:title \"5694.xml\" .\n[] dct:title \"5695.xml\" .\n[] dct:title \"5696.xml\" .\n[] dct:title \"5697.xml\" .\n[] dct:title \"5698.xml\" .\n[] dct:title \"5699.xml\" .\n[] dct:title \"5700.xml\" .\n[] dct:title \"5701.xml\" .\n[] dct:title \"5702.xml\" .\n[] dct:title \"5703.xml\" .\n[] dct:title \"5704.xml\" .\n[] dct:title \"5705.xml\" .\n[] dct:title \"5706.xml\" .\n[] dct:title \"5707.xml\" .\n[] dct:title \"5708.xml\" .\n[] dct:title \"5709.xml\" .\n[] dct:title \"5710.xml\" .\n[] dct:title \"5711.xml\" .\n[] dct:title \"5712.xml\" .\n[] dct:title \"5713.xml\" .\n[] dct:title \"5714.xml\" .\n[] dct:title \"5715.xml\" .\n[] dct:title \"5716.xml\" .\n[] dct:title \"5717.xml\" .\n[] dct:title \"5718.xml\" .\n[] dct:title \"5719.xml\" .\n[] dct:title \"5720.xml\" .\n[] dct:title \"5721.xml\" .\n[] dct:title \"5722.xml\" .\n[] dct:title \"5723.xml\" .\n[] dct:title \"5724.xml\" .\n[] dct:title \"5725.xml\" .\n[] dct:title \"5726.xml\" .\n[] dct:title \"5727.xml\" .\n[] dct:title \"5728.xml\" .\n[] dct:title \"5729.xml\" .\n[] dct:title \"5730.xml\" .\n[] dct:title \"5731.xml\" .\n[] dct:title \"5732.xml\" .\n[] dct:title \"5733.xml\" .\n[] dct:title \"5734.xml\" .\n[] dct:title \"5735.xml\" .\n[] dct:title \"5736.xml\" .\n[] dct:title \"5737.xml\" .\n[] dct:title \"5738.xml\" .\n[] dct:title \"5739.xml\" .\n[] dct:title \"5740.xml\" .\n[] dct:title \"5741.xml\" .\n[] dct:title \"5742.xml\" .\n[] dct:title \"5743.xml\" .\n[] dct:title \"5744.xml\" .\n[] dct:title \"5745.xml\" .\n[] dct:title \"5746.xml\" .\n[] dct:title \"5747.xml\" .\n[] dct:title \"5748.xml\" .\n[] dct:title \"5749.xml\" .\n[] dct:title \"5750.xml\" .\n[] dct:title \"5751.xml\" .\n[] dct:title \"5752.xml\" .\n[] dct:title \"5753.xml\" .\n[] dct:title \"5754.xml\" .\n[] dct:title \"5755.xml\" .\n[] dct:title \"5756.xml\" .\n[] dct:title \"5757.xml\" .\n[] dct:title \"5758.xml\" .\n[] dct:title \"5759.xml\" .\n[] dct:title \"5760.xml\" .\n[] dct:title \"5761.xml\" .\n[] dct:title \"5762.xml\" .\n[] dct:title \"5763.xml\" .\n[] dct:title \"5764.xml\" .\n[] dct:title \"5765.xml\" .\n[] dct:title \"5766.xml\" .\n[] dct:title \"5767.xml\" .\n[] dct:title \"5768.xml\" .\n[] dct:title \"5769.xml\" .\n[] dct:title \"5770.xml\" .\n[] dct:title \"5771.xml\" .\n[] dct:title \"5772.xml\" .\n[] dct:title \"5773.xml\" .\n[] dct:title \"5774.xml\" .\n[] dct:title \"5775.xml\" .\n[] dct:title \"5776.xml\" .\n[] dct:title \"5777.xml\" .\n[] dct:title \"5778.xml\" .\n[] dct:title \"5779.xml\" .\n[] dct:title \"5780.xml\" .\n[] dct:title \"5781.xml\" .\n[] dct:title \"5782.xml\" .\n[] dct:title \"5783.xml\" .\n[] dct:title \"5784.xml\" .\n[] dct:title \"5785.xml\" .\n[] dct:title \"5786.xml\" .\n[] dct:title \"5787.xml\" .\n[] dct:title \"5788.xml\" .\n[] dct:title \"5789.xml\" .\n[] dct:title \"5790.xml\" .\n[] dct:title \"5791.xml\" .\n[] dct:title \"5792.xml\" .\n[] dct:title \"5793.xml\" .\n[] dct:title \"5794.xml\" .\n[] dct:title \"5795.xml\" .\n[] dct:title \"5796.xml\" .\n[] dct:title \"5797.xml\" .\n[] dct:title \"5798.xml\" .\n[] dct:title \"5799.xml\" .\n[] dct:title \"5800.xml\" .\n[] dct:title \"5801.xml\" .\n[] dct:title \"5802.xml\" .\n[] dct:title \"5803.xml\" .\n[] dct:title \"5804.xml\" .\n[] dct:title \"5805.xml\" .\n[] dct:title \"5806.xml\" .\n[] dct:title \"5807.xml\" .\n[] dct:title \"5808.xml\" .\n[] dct:title \"5809.xml\" .\n[] dct:title \"5810.xml\" .\n[] dct:title \"5811.xml\" .\n[] dct:title \"5812.xml\" .\n[] dct:title \"5813.xml\" .\n[] dct:title \"5814.xml\" .\n[] dct:title \"5815.xml\" .\n[] dct:title \"5816.xml\" .\n[] dct:title \"5817.xml\" .\n[] dct:title \"5818.xml\" .\n[] dct:title \"5819.xml\" .\n[] dct:title \"5820.xml\" .\n[] dct:title \"5821.xml\" .\n[] dct:title \"5822.xml\" .\n[] dct:title \"5823.xml\" .\n[] dct:title \"5824.xml\" .\n[] dct:title \"5825.xml\" .\n[] dct:title \"5826.xml\" .\n[] dct:title \"5827.xml\" .\n[] dct:title \"5828.xml\" .\n[] dct:title \"5829.xml\" .\n[] dct:title \"5830.xml\" .\n[] dct:title \"5831.xml\" .\n[] dct:title \"5832.xml\" .\n[] dct:title \"5833.xml\" .\n[] dct:title \"5834.xml\" .\n[] dct:title \"5835.xml\" .\n[] dct:title \"5836.xml\" .\n[] dct:title \"5837.xml\" .\n[] dct:title \"5838.xml\" .\n[] dct:title \"5839.xml\" .\n[] dct:title \"5840.xml\" .\n[] dct:title \"5841.xml\" .\n[] dct:title \"5842.xml\" .\n[] dct:title \"5843.xml\" .\n[] dct:title \"5844.xml\" .\n[] dct:title \"5845.xml\" .\n[] dct:title \"5846.xml\" .\n[] dct:title \"5847.xml\" .\n[] dct:title \"5848.xml\" .\n[] dct:title \"5849.xml\" .\n[] dct:title \"5850.xml\" .\n[] dct:title \"5851.xml\" .\n[] dct:title \"5852.xml\" .\n[] dct:title \"5853.xml\" .\n[] dct:title \"5854.xml\" .\n[] dct:title \"5855.xml\" .\n[] dct:title \"5856.xml\" .\n[] dct:title \"5857.xml\" .\n[] dct:title \"5858.xml\" .\n[] dct:title \"5859.xml\" .\n[] dct:title \"5860.xml\" .\n[] dct:title \"5861.xml\" .\n[] dct:title \"5862.xml\" .\n[] dct:title \"5863.xml\" .\n[] dct:title \"5864.xml\" .\n[] dct:title \"5865.xml\" .\n[] dct:title \"5866.xml\" .\n[] dct:title \"5867.xml\" .\n[] dct:title \"5868.xml\" .\n[] dct:title \"5869.xml\" .\n[] dct:title \"5870.xml\" .\n[] dct:title \"5871.xml\" .\n[] dct:title \"5872.xml\" .\n[] dct:title \"5873.xml\" .\n[] dct:title \"5874.xml\" .\n[] dct:title \"5875.xml\" .\n[] dct:title \"5876.xml\" .\n[] dct:title \"5877.xml\" .\n[] dct:title \"5878.xml\" .\n[] dct:title \"5879.xml\" .\n[] dct:title \"5880.xml\" .\n[] dct:title \"5881.xml\" .\n[] dct:title \"5882.xml\" .\n[] dct:title \"5883.xml\" .\n[] dct:title \"5884.xml\" .\n[] dct:title \"5885.xml\" .\n[] dct:title \"5886.xml\" .\n[] dct:title \"5887.xml\" .\n[] dct:title \"5888.xml\" .\n[] dct:title \"5889.xml\" .\n[] dct:title \"5890.xml\" .\n[] dct:title \"5891.xml\" .\n[] dct:title \"5892.xml\" .\n[] dct:title \"5893.xml\" .\n[] dct:title \"5894.xml\" .\n[] dct:title \"5895.xml\" .\n[] dct:title \"5896.xml\" .\n[] dct:title \"5897.xml\" .\n[] dct:title \"5898.xml\" .\n[] dct:title \"5899.xml\" .\n[] dct:title \"5900.xml\" .\n[] dct:title \"5901.xml\" .\n[] dct:title \"5902.xml\" .\n[] dct:title \"5903.xml\" .\n[] dct:title \"5904.xml\" .\n[] dct:title \"5910.xml\" .\n[] dct:title \"5911.xml\" .\n[] dct:title \"5912.xml\" .\n[] dct:title \"6051.xml\" .\n[] dct:title \"6052.xml\" .\n[] dct:title \"6053.xml\" ."
+    } ],
+    "http://plugins.linkedpipes.com/ontology/e-textHolder#contentControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/e-textHolder#fileName" : [ {
+      "@value" : "ipsoList.ttl"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/e-textHolder#fileNameControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4f34-9396/configuration"
+}, {
+  "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4f9a-a2ea/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-filesFilter#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-filesFilter#fileNamePattern" : [ {
@@ -4070,7 +4178,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/5ad4-96ff/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName" : [ {
-      "@value" : "lwm2m/core.ttl"
+      "@value" : "lwm2m/scheme.ttl"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileNameControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -4106,7 +4214,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/708d-aad5/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query" : [ {
-      "@value" : "PREFIX lwm2m: <http://purl.org/wot-catalogue/lwm2m#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX ns: <http://purl.org/wot-catalogue/lwm2m/core#>\nCONSTRUCT {\n  ns: ?collp ?collo .\n  ?c ?cp ?co .\n} WHERE {\n  lwm2m:metamodel a skos:Collection ;\n                  ?collp ?collo ;\n                  skos:member ?concept .\n  ?concept ?cp ?co .\n  \n  BIND (uri(concat(str(ns:), strafter(str(?concept), \"#\"))) AS ?c)\n}"
+      "@value" : "PREFIX lwm2m: <http://purl.org/wot-catalogue/lwm2m#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nCONSTRUCT {\n  ?s ?p ?o . \n} WHERE {\n  ?s ?p ?o FILTER (strstarts(str(?s), str(lwm2m:)))\n}"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -4153,6 +4261,32 @@
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/774d-b1d7/configuration"
 }, {
   "@graph" : [ {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/7a78-bc78/configuration",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSize" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "50000"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSizeControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeType" : [ {
+      "@value" : ""
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeTypeControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFail" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+      "@value" : "false"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFailControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/7a78-bc78/configuration"
+}, {
+  "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/be81-b6b3/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query" : [ {
@@ -4163,6 +4297,18 @@
     } ]
   } ],
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/be81-b6b3/configuration"
+}, {
+  "@graph" : [ {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/cb1b-9d15/configuration",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query" : [ {
+      "@value" : "PREFIX dct: <http://purl.org/dc/terms/>\nPREFIX httpList: <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#>\nPREFIX xslt: <http://etl.linkedpipes.com/ontology/components/t-xslt/>\n\nCONSTRUCT {\n  <http://localhost/resource/configuration> a xslt:Config ;\n    xslt:fileInfo ?file .\n  ?file a xslt:FileInfo ;\n    xslt:fileName ?name ;\n    xslt:parameter ?param .\n  ?param a xslt:Parameter ;\n    xslt:parameterName \"collection\" ;\n    xslt:parameterValue \"ipso\" .\n} WHERE {\n  ?f dct:title ?fname .\n \n  BIND (concat(\"lwm2m-registry-prod/\", ?fname) AS ?name)\n  BIND (uri(concat(\"http://localhost/resource/configuration/file#\", ?name)) AS ?file)\n  BIND (uri(concat(\"http://localhost/resource/configuration/param#\", ?name)) AS ?param)\n}"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/cb1b-9d15/configuration"
 }, {
   "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ceba-986a/configuration",
@@ -4553,7 +4699,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/96/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/e-textHolder#content" : [ {
-      "@value" : "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix lwm2m: <http://purl.org/wot-catalogue/lwm2m#> .\n\nlwm2m:Scheme a skos:ConceptScheme ;\n       skos:prefLabel \"Light-weight Machine-to-Machine (LWM2M)\" ;\n       skos:hasTopConcept lwm2m:IPSOObject ;\n       rdfs:seeAlso <https://www.omaspecworks.org/develop-with-oma-specworks/ipso-smart-objects/> .\n\nlwm2m:Object a skos:Concept ;\n                 skos:prefLabel \"Object\" ;\n                 skos:definition \"The LWM2M Enabler defines a simple resource model where each piece of information made available by the LWM2M Client is a Resource. Resources are logically organized into Objects.\" ;\n                 skos:inScheme lwm2m:Scheme ;\n                 skos:related lwm2m:IPSOResource, lwm2m:Operation .\n\nlwm2m:Resource a skos:Concept ;\n                   skos:prefLabel \"Resource\" ;\n                   skos:definition \"The LWM2M Enabler defines a simple resource model where each piece of information made available by the LWM2M Client is a Resource. Resources are defined per Object, and each Resource is given a unique identifier within that Object.\" ;\n                   skos:inScheme lwm2m:Scheme ;\n                   skos:related lwm2m:Operation .\n\nlwm2m:Operation a skos:Concept ;\n                skos:prefLabel \"Operation\" ;\n                skos:definition \"Each Object and Resource is defined to have one or more operations that it supports.\" ;\n                 skos:inScheme lwm2m:Scheme ;\n                skos:narrower lwm2m:R, lwm2m:W, lwm2m:E, lwm2m:RW .\n\nlwm2m:R a skos:Concept ;\n        skos:prefLabel \"Read Operation\" ;\n        skos:inScheme lwm2m:Scheme .\n\nlwm2m:W a skos:Concept ;\n        skos:prefLabel \"Write Operation\" ;\n        skos:inScheme lwm2m:Scheme .\n\nlwm2m:E a skos:Concept ;\n        skos:prefLabel \"Execute Operation\" ;\n        skos:inScheme lwm2m:Scheme .\n\nlwm2m:RW a skos:Concept ;\n        skos:prefLabel \"Read/Write Operation\" ;\n        skos:inScheme lwm2m:Scheme ."
+      "@value" : "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix lwm2m: <http://purl.org/wot-catalogue/lwm2m#> .\n@prefix ipso: <http://purl.org/wot-catalogue/lwm2m/ipso#> .\n\nlwm2m:scheme a skos:ConceptScheme ;\n       skos:prefLabel \"Light-weight Machine-to-Machine (LWM2M)\" ;\n       skos:hasTopConcept lwm2m:IPSOObject ;\n       rdfs:seeAlso <https://www.omaspecworks.org/develop-with-oma-specworks/ipso-smart-objects/> .\n\nlwm2m:Object a skos:Concept ;\n                 skos:prefLabel \"Object\" ;\n                 skos:definition \"The LWM2M Enabler defines a simple resource model where each piece of information made available by the LWM2M Client is a Resource. Resources are logically organized into Objects.\" ;\n                 skos:inScheme lwm2m:scheme ;\n                 skos:related lwm2m:IPSOResource, lwm2m:Operation .\n\nlwm2m:Resource a skos:Concept ;\n                   skos:prefLabel \"Resource\" ;\n                   skos:definition \"The LWM2M Enabler defines a simple resource model where each piece of information made available by the LWM2M Client is a Resource. Resources are defined per Object, and each Resource is given a unique identifier within that Object.\" ;\n                   skos:inScheme lwm2m:scheme ;\n                   skos:related lwm2m:Operation .\n\nlwm2m:Operation a skos:Concept ;\n                skos:prefLabel \"Operation\" ;\n                skos:definition \"Each Object and Resource is defined to have one or more operations that it supports.\" ;\n                 skos:inScheme lwm2m:scheme ;\n                skos:narrower lwm2m:R, lwm2m:W, lwm2m:E, lwm2m:RW .\n\nlwm2m:R a skos:Concept ;\n        skos:prefLabel \"Read Operation\" ;\n        skos:inScheme lwm2m:scheme .\n\nlwm2m:W a skos:Concept ;\n        skos:prefLabel \"Write Operation\" ;\n        skos:inScheme lwm2m:scheme .\n\nlwm2m:E a skos:Concept ;\n        skos:prefLabel \"Execute Operation\" ;\n        skos:inScheme lwm2m:scheme .\n\nlwm2m:RW a skos:Concept ;\n        skos:prefLabel \"Read/Write Operation\" ;\n        skos:inScheme lwm2m:scheme .\n\nipso:collection a skos:Collection;\n\tskos:prefLabel \"IPSO\" ;\n\tskos:altLabel \"Internet Protocal for Smart Objects (IPSO)\" ;\n\tskos:definition \"Objects registered by the IPSO alliance.\" ."
     } ],
     "http://plugins.linkedpipes.com/ontology/e-textHolder#contentControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -4584,7 +4730,7 @@
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-xslt#template" : [ {
-      "@value" : "<xsl:stylesheet\n    xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n    xmlns:lwm2m=\"http://purl.org/wot-catalogue/lwm2m#\"\n    xmlns:ontolex=\"http://www.w3.org/ns/lemon/ontolex#\"\n    xmlns:prov=\"http://www.w3.org/ns/prov#\"\n    version=\"1.0\">\n\n<!-- configuration boilerplate -->\n  <xsl:output encoding=\"UTF-8\" indent=\"yes\" method=\"xml\" normalization-form=\"NFC\" />\n  <xsl:strip-space elements=\"*\"/>\n\n  <xsl:template match=\"/\">\n    <rdf:RDF>\n      <xsl:apply-templates select=\"//Object\"/>\n    </rdf:RDF>\n  </xsl:template>\n\n  <xsl:template name=\"object-tpl\" match=\"//Object\">\n    <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/lwm2m#{ObjectID}\">\n      <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n      <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n      <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n      <skos:prefLabel>\n        <xsl:value-of select=\"Name\"/>\n      </skos:prefLabel>\n      <skos:definition>\n        <xsl:value-of select=\"Description1\"/>\n      </skos:definition>\n      <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#Object\"/>\n      <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#Scheme\"/> \n      <xsl:for-each select=\"Resources/Item\">\n        <xsl:choose>\n          <xsl:when test=\"@ID &lt; 2048\">\n            <skos:related rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#r{ancestor::Object/ObjectID}-{@ID}\"/>\n          </xsl:when>\n          <xsl:otherwise>\n            <skos:related rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#r{@ID}\"/>\n          </xsl:otherwise>\n        </xsl:choose>\n      </xsl:for-each>\n    </rdf:Description>\n    <!-- Creating a variable to store the corresponding collection id -->\n    <xsl:variable name=\"coll\">\n      <xsl:choose>\n        <xsl:when test=\"ObjectID &lt; 500\">\n          <xsl:value-of select=\"'dmse'\"/>\n        </xsl:when>\n        <xsl:when test=\"ObjectID &lt; 1024\">\n          <xsl:value-of select=\"'ipso'\"/>\n        </xsl:when>\n        <xsl:when test=\"ObjectID &gt; 2047 and ObjectID &lt; 10241\">\n          <xsl:value-of select=\"'ext'\"/>\n        </xsl:when>\n      </xsl:choose>\n    </xsl:variable>\n    <xsl:variable name=\"ObjID\" select=\"ObjectID\"/>\n    <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/lwm2m#{$coll}\">\n      <skos:member rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#{$ObjID}\"/>\n    </rdf:Description>\n    <xsl:apply-templates select=\"//Item\"/>\n  </xsl:template>\n\n  <xsl:template name=\"resource-tpl\" match=\"//Item\">\n    <xsl:variable name=\"iri\">\n      <xsl:choose>\n        <xsl:when test=\"@ID &lt; 2048\">\n          <xsl:value-of select=\"concat(ancestor::Object/ObjectID,'-',@ID)\"/>\n        </xsl:when>\n        <xsl:otherwise>\n          <xsl:value-of select=\"@ID\"/>\n        </xsl:otherwise>\n      </xsl:choose>\n    </xsl:variable>\n    <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/lwm2m#r{$iri}\">\n      <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n      <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n      <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n      <skos:prefLabel>\n        <xsl:value-of select=\"Name\"/>\n      </skos:prefLabel>\n      <skos:definition>\n        <xsl:value-of select=\"Description\"/>\n      </skos:definition>\n      <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#Resource\"/>\n      <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#Scheme\"/>\n      <skos:related rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#{Operations}\"/>\n    </rdf:Description>\n    <!-- Attributing the collection based on the resource ID -->\n    <xsl:variable name=\"collectionIRI2\">\n      <xsl:choose>\n        <xsl:when test=\"@ID &lt; 2048\">\n          <xsl:value-of select=\"'common_resource'\"/>\n        </xsl:when>\n        <xsl:when test=\"ObjectID &lt; 26241\">\n          <xsl:value-of select=\"'reusable_resource'\"/>\n        </xsl:when>\n        <xsl:otherwise>\n          <xsl:value-of select=\"'private_resource'\"/>\n        </xsl:otherwise>\n      </xsl:choose>\n    </xsl:variable>\n    <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/lwm2m#{$collectionIRI2}\">\n      <skos:member rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#r{$iri}\"/>\n    </rdf:Description>\n  </xsl:template>\n</xsl:stylesheet>"
+      "@value" : "<xsl:stylesheet\n    xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n    xmlns:lwm2m=\"http://purl.org/wot-catalogue/lwm2m#\"\n    xmlns:ontolex=\"http://www.w3.org/ns/lemon/ontolex#\"\n    xmlns:prov=\"http://www.w3.org/ns/prov#\"\n    version=\"1.0\">\n\n<!-- configuration boilerplate -->\n  <xsl:output encoding=\"UTF-8\" indent=\"yes\" method=\"xml\" normalization-form=\"NFC\" />\n  <xsl:strip-space elements=\"*\"/>\n  <xsl:param name=\"collection\"/>\n\n  <xsl:template match=\"/\">\n    <rdf:RDF>\n      <xsl:apply-templates select=\"//Object\"/>\n    </rdf:RDF>\n  </xsl:template>\n\n  <xsl:template name=\"object-tpl\" match=\"//Object\">\n    <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/lwm2m/{$collection}#{ObjectID}\">\n      <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n      <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n      <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n      <skos:prefLabel>\n        <xsl:value-of select=\"Name\"/>\n      </skos:prefLabel>\n      <skos:definition>\n        <xsl:value-of select=\"Description1\"/>\n      </skos:definition>\n      <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#Object\"/>\n      <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#scheme\"/> \n      <xsl:for-each select=\"Resources/Item\">\n        <xsl:choose>\n          <xsl:when test=\"@ID &lt; 2048\">\n            <skos:related rdf:resource=\"http://purl.org/wot-catalogue/lwm2m/{$collection}#r{ancestor::Object/ObjectID}-{@ID}\"/>\n          </xsl:when>\n          <xsl:otherwise>\n            <skos:related rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#r{@ID}\"/>\n          </xsl:otherwise>\n        </xsl:choose>\n      </xsl:for-each>\n    </rdf:Description>\n    <!-- Creating a variable to store the corresponding collection id -->\n    <!-- <xsl:variable name=\"coll\">\n      <xsl:choose>\n        <xsl:when test=\"ObjectID &lt; 500\">\n          <xsl:value-of select=\"'dmse'\"/>\n        </xsl:when>\n        <xsl:when test=\"ObjectID &lt; 1024\">\n          <xsl:value-of select=\"'ipso'\"/>\n        </xsl:when>\n        <xsl:when test=\"ObjectID &gt; 2047 and ObjectID &lt; 10241\">\n          <xsl:value-of select=\"'ext'\"/>\n        </xsl:when>\n      </xsl:choose>\n    </xsl:variable> -->\n    <xsl:variable name=\"ObjID\" select=\"ObjectID\"/>\n    <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/lwm2m/{$collection}#collection\">\n      <skos:member rdf:resource=\"http://purl.org/wot-catalogue/lwm2m/{$collection}#{$ObjID}\"/>\n    </rdf:Description>\n    <xsl:apply-templates select=\"//Item\"/>\n  </xsl:template>\n\n  <xsl:template name=\"resource-tpl\" match=\"//Item\">\n    <xsl:variable name=\"iri\">\n      <xsl:choose>\n        <xsl:when test=\"@ID &lt; 2048\">\n          <xsl:value-of select=\"concat(ancestor::Object/ObjectID,'-',@ID)\"/>\n        </xsl:when>\n        <xsl:otherwise>\n          <xsl:value-of select=\"@ID\"/>\n        </xsl:otherwise>\n      </xsl:choose>\n    </xsl:variable>\n    <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/lwm2m/{$collection}#r{$iri}\">\n      <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n      <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n      <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n      <skos:prefLabel>\n        <xsl:value-of select=\"Name\"/>\n      </skos:prefLabel>\n      <skos:definition>\n        <xsl:value-of select=\"Description\"/>\n      </skos:definition>\n      <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#Resource\"/>\n      <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#Scheme\"/>\n      <skos:related rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#{Operations}\"/>\n    </rdf:Description>\n    <!-- Attributing the collection based on the resource ID -->\n    <!-- <xsl:variable name=\"collectionIRI2\">\n      <xsl:choose>\n        <xsl:when test=\"@ID &lt; 2048\">\n          <xsl:value-of select=\"'common_resource'\"/>\n        </xsl:when>\n        <xsl:when test=\"ObjectID &lt; 26241\">\n          <xsl:value-of select=\"'reusable_resource'\"/>\n        </xsl:when>\n        <xsl:otherwise>\n          <xsl:value-of select=\"'private_resource'\"/>\n        </xsl:otherwise>\n      </xsl:choose>\n    </xsl:variable>\n    <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/lwm2m#{$collectionIRI2}\">\n      <skos:member rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#r{$iri}\"/>\n    </rdf:Description> -->\n  </xsl:template>\n</xsl:stylesheet>"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-xslt#templateControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -4705,32 +4851,6 @@
     } ]
   } ],
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/graph/151"
-}, {
-  "@graph" : [ {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/28/configuration",
-    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#Configuration" ],
-    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSize" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "50000"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSizeControl" : [ {
-      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeType" : [ {
-      "@value" : ""
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeTypeControl" : [ {
-      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFail" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-      "@value" : "false"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFailControl" : [ {
-      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
-    } ]
-  } ],
-  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/graph/153"
 }, {
   "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/157",
@@ -4895,24 +5015,6 @@
     } ]
   } ],
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/graph/169"
-}, {
-  "@graph" : [ {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/82/configuration",
-    "@type" : [ "http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration" ],
-    "http://plugins.linkedpipes.com/ontology/e-textHolder#content" : [ {
-      "@value" : "@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix lwm2m: <http://purl.org/wot-catalogue/lwm2m#> .\n@prefix ble: <http://purl.org/wot-catalogue/ble#> .\n@prefix sdt: <http://purl.org/wot-catalogue/sdt#> .\n@prefix ocf: <http://purl.org/wot-catalogue/ocf#> .\n@prefix bacnet: <http://purl.org/wot-catalogue/bacnet#> .\n\nlwm2m:metamodel a skos:Collection;\n\tskos:prefLabel \"LwM2M Metamodel\" ;\n\tskos:altLabel \"lwm2m metamodel\" ;\n\tskos:member lwm2m:Scheme, lwm2m:Object, lwm2m:Resource, lwm2m:Operation, lwm2m:R, lwm2m:W, lwm2m:E, lwm2m:RW .\n\nble:metamodel a skos:Collection;\n\tskos:prefLabel \"BLE Metamodel\" ;\n\tskos:altLabel \"ble metamodel\" ;\n\tskos:member ble:Profile, ble:Service, ble:Characteristic, ble:Property, ble:Value, ble:Scheme .\n\nsdt:metamodel a skos:Collection;\n\tskos:prefLabel \"SDT Metamodel\" ;\n\tskos:altLabel \"sdt metamodel\" ;\n\tskos:member sdt:Scheme, sdt:Device, sdt:Module, sdt:Property, sdt:Action, sdt:Event, sdt:DataPoint, sdt:DataType .\n\nocf:metamodel a skos:Collection;\n\tskos:prefLabel \"OCF Metamodel\" ;\n\tskos:altLabel \"ocf metamodel\" ;\n\tskos:member ocf:SwaggerAPI, ocf:Path, ocf:Operation, ocf:GetOperation, ocf:PostOperation, ocf:PutOperation, ocf:DeleteOperation .\n\nbacnet:metamodel a skos:Collection;\n\tskos:prefLabel \"BACnet Metamodel\" ;\n\tskos:altLabel \"bacnet metamodel\" ;\n\tskos:member bacnet:Scheme, bacnet:servicesSupported, bacnet:StandardObject, bacnet:ReadableProperty, bacnet:WritableProperty, bacnet:OptionalProperty .\n\nlwm2m:ipso a skos:Collection;\n\tskos:prefLabel \"IPSO\" ;\n\tskos:altLabel \"Internet Protocal for Smart Objects (IPSO)\" ;\n\tskos:definition \"Objects Produced by OMA. Only OMA can use this range.\\n0-499 DM&SE Working Group\\n500-1023 IPSO Working Group\" .\n\nlwm2m:dmse a skos:Collection;\n\tskos:prefLabel \"DM&SE\" ;\n\tskos:altLabel \"Device Management & Service Enablement\" ;\n\tskos:definition \"Objects Produced by OMA. Only OMA can use this range.\\n0-499 DM&SE Working Group\\n500-1023 IPSO Working Group\" .\n\nlwm2m:ext a skos:Collection ;\n\tskos:prefLabel \"ext-label\" ;\n\tskos:altLabel \"External\" ;\n\tskos:definition \"Objects registered by 3rd party standards organisations or alliances\" .\n\nlwm2m:common_resource a skos:Collection ;\n\tskos:prefLabel \"CommonResource\" ;\n\tskos:altLabel \"Common Resource\" ;\n\tskos:defintion \"Common resource defined inside Objects. Inside of an Object the resourceIDs must be unique but it can be reused in different Objects.\" .\n\nlwm2m:reusable_resource a skos:Collection ;\n\tskos:prefLabel \"ReusableResource\" ;\n\tskos:altLabel \"Reusable Resource\" ;\n\tskos:definition \"Resources registered by companies, standards organisations or alliances. Note: ResourceID is finally allocated by OMNA Staff. Private registrations are not allowed\" .\n\nlwm2m:private_resource a skos:Collection ;\n\tskos:prefLabel \"PrivateResource\" ;\n\tskos:altLabel \"Private Resource\" ;\n\tskos:definition \"Private resource range, no registration is necessary and open to re-use.\" ."
-    } ],
-    "http://plugins.linkedpipes.com/ontology/e-textHolder#contentControl" : [ {
-      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/e-textHolder#fileName" : [ {
-      "@value" : "collections.ttl"
-    } ],
-    "http://plugins.linkedpipes.com/ontology/e-textHolder#fileNameControl" : [ {
-      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
-    } ]
-  } ],
-  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/graph/171"
 }, {
   "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/8/configuration",
