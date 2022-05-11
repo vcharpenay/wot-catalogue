@@ -320,7 +320,6 @@
 @prefix WriteStatus: <http://bacowl.sourceforge.net/2012/bacnet/WriteStatus#> .
 @prefix bacnet: <http://purl.org/wot-catalogue/bacnet#> .
 @prefix ble: <http://purl.org/wot-catalogue/ble#> .
-@prefix dct: <http://purl.org/dc/terms/> .
 @prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
 @prefix fn: <http://www.w3.org/2005/xpath-functions#> .
 @prefix haim: <http://purl.org/wot-catalogue/onem2m/haim#> .

@@ -178,7 +178,7 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/18"
     } ],
     "http://linkedpipes.com/ontology/vertex" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/ecf6-ac55"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/e81f-a3d1"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/119",
@@ -1954,6 +1954,9 @@
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/2a6f-84de",
     "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/color" : [ {
+      "@value" : "#fcaf3e"
+    } ],
     "http://linkedpipes.com/ontology/configurationGraph" : [ {
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/2a6f-84de/configuration"
     } ],
@@ -1962,11 +1965,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-124"
+      "@value" : "-123"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "280"
+      "@value" : "278"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "Files to RDF single graph"
@@ -3399,7 +3402,7 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/774d-b1d7"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/ecf6-ac55",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/e81f-a3d1",
     "@type" : [ "http://linkedpipes.com/ontology/Vertex" ],
     "http://linkedpipes.com/ontology/order" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -4011,7 +4014,7 @@
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/1b49-aa1c/configuration"
 }, {
   "@graph" : [ {
-    "@id" : "http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0/new/1",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/2a6f-84de/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSize" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -4730,7 +4733,7 @@
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-xslt#template" : [ {
-      "@value" : "<xsl:stylesheet\n    xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n    xmlns:lwm2m=\"http://purl.org/wot-catalogue/lwm2m#\"\n    xmlns:ontolex=\"http://www.w3.org/ns/lemon/ontolex#\"\n    xmlns:prov=\"http://www.w3.org/ns/prov#\"\n    version=\"1.0\">\n\n<!-- configuration boilerplate -->\n  <xsl:output encoding=\"UTF-8\" indent=\"yes\" method=\"xml\" normalization-form=\"NFC\" />\n  <xsl:strip-space elements=\"*\"/>\n  <xsl:param name=\"collection\"/>\n\n  <xsl:template match=\"/\">\n    <rdf:RDF>\n      <xsl:apply-templates select=\"//Object\"/>\n    </rdf:RDF>\n  </xsl:template>\n\n  <xsl:template name=\"object-tpl\" match=\"//Object\">\n    <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/lwm2m/{$collection}#{ObjectID}\">\n      <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n      <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n      <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n      <skos:prefLabel>\n        <xsl:value-of select=\"Name\"/>\n      </skos:prefLabel>\n      <skos:definition>\n        <xsl:value-of select=\"Description1\"/>\n      </skos:definition>\n      <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#Object\"/>\n      <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#scheme\"/> \n      <xsl:for-each select=\"Resources/Item\">\n        <xsl:choose>\n          <xsl:when test=\"@ID &lt; 2048\">\n            <skos:related rdf:resource=\"http://purl.org/wot-catalogue/lwm2m/{$collection}#r{ancestor::Object/ObjectID}-{@ID}\"/>\n          </xsl:when>\n          <xsl:otherwise>\n            <skos:related rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#r{@ID}\"/>\n          </xsl:otherwise>\n        </xsl:choose>\n      </xsl:for-each>\n    </rdf:Description>\n    <!-- Creating a variable to store the corresponding collection id -->\n    <!-- <xsl:variable name=\"coll\">\n      <xsl:choose>\n        <xsl:when test=\"ObjectID &lt; 500\">\n          <xsl:value-of select=\"'dmse'\"/>\n        </xsl:when>\n        <xsl:when test=\"ObjectID &lt; 1024\">\n          <xsl:value-of select=\"'ipso'\"/>\n        </xsl:when>\n        <xsl:when test=\"ObjectID &gt; 2047 and ObjectID &lt; 10241\">\n          <xsl:value-of select=\"'ext'\"/>\n        </xsl:when>\n      </xsl:choose>\n    </xsl:variable> -->\n    <xsl:variable name=\"ObjID\" select=\"ObjectID\"/>\n    <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/lwm2m/{$collection}#collection\">\n      <skos:member rdf:resource=\"http://purl.org/wot-catalogue/lwm2m/{$collection}#{$ObjID}\"/>\n    </rdf:Description>\n    <xsl:apply-templates select=\"//Item\"/>\n  </xsl:template>\n\n  <xsl:template name=\"resource-tpl\" match=\"//Item\">\n    <xsl:variable name=\"iri\">\n      <xsl:choose>\n        <xsl:when test=\"@ID &lt; 2048\">\n          <xsl:value-of select=\"concat(ancestor::Object/ObjectID,'-',@ID)\"/>\n        </xsl:when>\n        <xsl:otherwise>\n          <xsl:value-of select=\"@ID\"/>\n        </xsl:otherwise>\n      </xsl:choose>\n    </xsl:variable>\n    <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/lwm2m/{$collection}#r{$iri}\">\n      <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n      <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n      <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n      <skos:prefLabel>\n        <xsl:value-of select=\"Name\"/>\n      </skos:prefLabel>\n      <skos:definition>\n        <xsl:value-of select=\"Description\"/>\n      </skos:definition>\n      <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#Resource\"/>\n      <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#Scheme\"/>\n      <skos:related rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#{Operations}\"/>\n    </rdf:Description>\n    <!-- Attributing the collection based on the resource ID -->\n    <!-- <xsl:variable name=\"collectionIRI2\">\n      <xsl:choose>\n        <xsl:when test=\"@ID &lt; 2048\">\n          <xsl:value-of select=\"'common_resource'\"/>\n        </xsl:when>\n        <xsl:when test=\"ObjectID &lt; 26241\">\n          <xsl:value-of select=\"'reusable_resource'\"/>\n        </xsl:when>\n        <xsl:otherwise>\n          <xsl:value-of select=\"'private_resource'\"/>\n        </xsl:otherwise>\n      </xsl:choose>\n    </xsl:variable>\n    <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/lwm2m#{$collectionIRI2}\">\n      <skos:member rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#r{$iri}\"/>\n    </rdf:Description> -->\n  </xsl:template>\n</xsl:stylesheet>"
+      "@value" : "<xsl:stylesheet\n    xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n    xmlns:lwm2m=\"http://purl.org/wot-catalogue/lwm2m#\"\n    xmlns:ontolex=\"http://www.w3.org/ns/lemon/ontolex#\"\n    xmlns:prov=\"http://www.w3.org/ns/prov#\"\n    version=\"1.0\">\n\n<!-- configuration boilerplate -->\n  <xsl:output encoding=\"UTF-8\" indent=\"yes\" method=\"xml\" normalization-form=\"NFC\" />\n  <xsl:strip-space elements=\"*\"/>\n  <xsl:param name=\"collection\"/>\n\n  <xsl:template match=\"/\">\n    <rdf:RDF>\n      <xsl:apply-templates select=\"//Object\"/>\n    </rdf:RDF>\n  </xsl:template>\n\n  <xsl:template name=\"object-tpl\" match=\"//Object\">\n    <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/lwm2m/{$collection}#{ObjectID}\">\n      <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n      <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n      <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n      <skos:prefLabel>\n        <xsl:value-of select=\"Name\"/>\n      </skos:prefLabel>\n      <skos:definition>\n        <xsl:value-of select=\"Description1\"/>\n      </skos:definition>\n      <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#Object\"/>\n      <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#scheme\"/> \n      <xsl:for-each select=\"Resources/Item\">\n        <skos:related rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#{@ID}\"/>\n      </xsl:for-each>\n    </rdf:Description>\n    <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/lwm2m/{$collection}#collection\">\n      <skos:member rdf:resource=\"http://purl.org/wot-catalogue/lwm2m/{$collection}#{ObjectID}\"/>\n    </rdf:Description>\n    <xsl:apply-templates select=\"//Item\"/>\n  </xsl:template>\n\n  <xsl:template name=\"resource-tpl\" match=\"//Item\">\n    <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/lwm2m/{$collection}#{@ID}\">\n      <rdf:type rdf:resource=\"http://www.w3.org/2004/02/skos/core#Concept\"/>\n      <rdf:type rdf:resource=\"http://www.w3.org/ns/lemon/ontolex#LexicalConcept\"/>\n      <prov:wasDerivedFrom rdf:resource=\"{base-uri()}\"/>\n      <skos:prefLabel>\n        <xsl:value-of select=\"Name\"/>\n      </skos:prefLabel>\n      <skos:definition>\n        <xsl:value-of select=\"Description\"/>\n      </skos:definition>\n      <skos:broader rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#Resource\"/>\n      <skos:inScheme rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#Scheme\"/>\n      <skos:related rdf:resource=\"http://purl.org/wot-catalogue/lwm2m#{Operations}\"/>\n    </rdf:Description>\n    <rdf:Description rdf:about=\"http://purl.org/wot-catalogue/lwm2m/{$collection}#collection\">\n      <skos:member rdf:resource=\"http://purl.org/wot-catalogue/lwm2m/{$collection}#{@ID}\"/>\n    </rdf:Description>\n  </xsl:template>\n</xsl:stylesheet>"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-xslt#templateControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
