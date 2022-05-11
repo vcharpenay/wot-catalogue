@@ -23,29 +23,29 @@ lwm2m:Operation a skos:Concept;
   skos:narrower lwm2m:E, lwm2m:R, lwm2m:RW, lwm2m:W;
   skos:prefLabel "Operation" .
 
-lwm2m:E a skos:Concept;
-  skos:altLabel "execute operation";
-  skos:inScheme lwm2m:scheme;
-  skos:prefLabel "Execute Operation" .
-
-lwm2m:R a skos:Concept;
-  skos:altLabel "read operation";
-  skos:inScheme lwm2m:scheme;
-  skos:prefLabel "Read Operation" .
-
-lwm2m:RW a skos:Concept;
-  skos:altLabel "read/write operation";
-  skos:inScheme lwm2m:scheme;
-  skos:prefLabel "Read/Write Operation" .
-
-lwm2m:W a skos:Concept;
-  skos:altLabel "write operation";
-  skos:inScheme lwm2m:scheme;
-  skos:prefLabel "Write Operation" .
-
 lwm2m:Resource a skos:Concept;
   skos:altLabel "resource";
   skos:definition "The LWM2M Enabler defines a simple resource model where each piece of information made available by the LWM2M Client is a Resource. Resources are defined per Object, and each Resource is given a unique identifier within that Object.";
   skos:inScheme lwm2m:scheme;
   skos:prefLabel "Resource";
   skos:related lwm2m:Operation .
+
+lwm2m:R a skos:Concept;
+  skos:altLabel "read operation";
+  skos:inScheme lwm2m:scheme;
+  skos:prefLabel "Read Operation" .
+
+lwm2m:W a skos:Concept;
+  skos:altLabel "write operation";
+  skos:inScheme lwm2m:scheme;
+  skos:prefLabel "Write Operation" .
+
+lwm2m:E a skos:Concept;
+  skos:altLabel "execute operation";
+  skos:inScheme lwm2m:scheme;
+  skos:prefLabel "Execute Operation" .
+
+lwm2m:RW a skos:Concept;
+  skos:altLabel "read/write operation";
+  skos:inScheme lwm2m:scheme;
+  skos:prefLabel "Read/Write Operation" .
