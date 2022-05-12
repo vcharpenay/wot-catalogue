@@ -325,6 +325,7 @@
 @prefix fn: <http://www.w3.org/2005/xpath-functions#> .
 @prefix haim: <http://purl.org/wot-catalogue/onem2m/haim#> .
 @prefix hgi: <http://homegatewayinitiative.org/xml/dal/3.0> .
+@prefix httpList: <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#> .
 @prefix ipso: <http://purl.org/wot-catalogue/lwm2m/ipso#> .
 @prefix lwm2m: <http://purl.org/wot-catalogue/lwm2m#> .
 @prefix ocf: <http://purl.org/wot-catalogue/ocf#> .
@@ -1277,7 +1278,7 @@ ble:1821 a skos:Concept, ontolex:LexicalConcept, prov:Entity;
   skos:inScheme ble:scheme;
   skos:prefLabel "Indoor Positioning";
   skos:related ble:2AAD, ble:2AAE, ble:2AB0, ble:2AB1, ble:2AB2, ble:2AB3, ble:2AB4,
-    ble:2AB5, _:node1g2er8lmbx75041;
+    ble:2AB5, _:node1g2er8lmbx90344;
   prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.indoor_positioning.xml> .
 
 ble:2A65 a skos:Concept, ontolex:LexicalConcept, prov:Entity;
@@ -2049,8 +2050,8 @@ ble:1800 a skos:Concept, ontolex:LexicalConcept, prov:Entity;
     readonly.""";
   skos:inScheme ble:scheme;
   skos:prefLabel " Generic Access";
-  skos:related _:node1g2er8lmbx75309, _:node1g2er8lmbx75310, _:node1g2er8lmbx75311,
-    _:node1g2er8lmbx75312, _:node1g2er8lmbx75313;
+  skos:related _:node1g2er8lmbx90612, _:node1g2er8lmbx90613, _:node1g2er8lmbx90614,
+    _:node1g2er8lmbx90615, _:node1g2er8lmbx90616;
   prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.generic_access.xml> .
 
 ble:2AB7 a skos:Concept, ontolex:LexicalConcept, prov:Entity;
@@ -4238,7 +4239,7 @@ ble:180A a skos:Concept, ontolex:LexicalConcept, prov:Entity;
   skos:inScheme ble:scheme;
   skos:prefLabel "Device Information";
   skos:related ble:2A23, ble:2A24, ble:2A25, ble:2A26, ble:2A27, ble:2A28, ble:2A29,
-    ble:2A50, _:node1g2er8lmbx75782;
+    ble:2A50, _:node1g2er8lmbx91085;
   prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.device_information.xml> .
 
 ble:2AA0 a skos:Concept, ontolex:LexicalConcept, prov:Entity;
@@ -5972,7 +5973,7 @@ ble:1801 a skos:Concept, ontolex:LexicalConcept, prov:Entity;
   skos:broader ble:Service;
   skos:inScheme ble:scheme;
   skos:prefLabel "Generic Attribute";
-  skos:related _:node1g2er8lmbx76259;
+  skos:related _:node1g2er8lmbx91562;
   prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.generic_attribute.xml> .
 
 ble:181A a skos:Concept, ontolex:LexicalConcept, prov:Entity;
@@ -5986,7 +5987,7 @@ ble:181A a skos:Concept, ontolex:LexicalConcept, prov:Entity;
   skos:prefLabel "Environmental Sensing";
   skos:related ble:2A2C, ble:2A6C, ble:2A6D, ble:2A6E, ble:2A6F, ble:2A70, ble:2A71,
     ble:2A72, ble:2A73, ble:2A74, ble:2A75, ble:2A76, ble:2A77, ble:2A78, ble:2A79, ble:2A7A,
-    ble:2A7B, ble:2A7D, ble:2AA3, _:node1g2er8lmbx76286, _:node1g2er8lmbx76287;
+    ble:2A7B, ble:2A7D, ble:2AA3, _:node1g2er8lmbx91589, _:node1g2er8lmbx91590;
   prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.environmental_sensing.xml> .
 
 ble:2A27 a skos:Concept, ontolex:LexicalConcept, prov:Entity;

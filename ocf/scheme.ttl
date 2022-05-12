@@ -325,6 +325,7 @@
 @prefix fn: <http://www.w3.org/2005/xpath-functions#> .
 @prefix haim: <http://purl.org/wot-catalogue/onem2m/haim#> .
 @prefix hgi: <http://homegatewayinitiative.org/xml/dal/3.0> .
+@prefix httpList: <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#> .
 @prefix ipso: <http://purl.org/wot-catalogue/lwm2m/ipso#> .
 @prefix lwm2m: <http://purl.org/wot-catalogue/lwm2m#> .
 @prefix ocf: <http://purl.org/wot-catalogue/ocf#> .
@@ -406,22 +407,6 @@ ocf:BodyThermometerAMResURI%3Fif%3Doic.if.b a skos:Concept, ontolex:LexicalConce
   skos:related ocf:BodyThermometerAMResURI%3Fif%3Doic.if.b-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyThermometerAMResURI.swagger.json> .
 
-ocf:BodyThermometerAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "bodythermometeramresuri%3fif%3doic.if.baseline";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "BodyThermometerAMResURI%3Fif%3Doic.if.baseline";
-  skos:related ocf:BodyThermometerAMResURI%3Fif%3Doic.if.baseline-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyThermometerAMResURI.swagger.json> .
-
-ocf:BodyThermometerAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "bodythermometeramresuri%3fif%3doic.if.ll";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "BodyThermometerAMResURI%3Fif%3Doic.if.ll";
-  skos:related ocf:BodyThermometerAMResURI%3Fif%3Doic.if.ll-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyThermometerAMResURI.swagger.json> .
-
 ocf:BodyThermometerAMResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "bodythermometeramresuri%3fif%3doic.if.b-get";
   skos:broader ocf:GetOperation;
@@ -431,6 +416,14 @@ The Resource is an Atomic Measurement of temperature (oic.r.temperature), body l
   skos:prefLabel "BodyThermometerAMResURI%3Fif%3Doic.if.b-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyThermometerAMResURI.swagger.json> .
 
+ocf:BodyThermometerAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "bodythermometeramresuri%3fif%3doic.if.baseline";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "BodyThermometerAMResURI%3Fif%3Doic.if.baseline";
+  skos:related ocf:BodyThermometerAMResURI%3Fif%3Doic.if.baseline-GET;
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyThermometerAMResURI.swagger.json> .
+
 ocf:BodyThermometerAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "bodythermometeramresuri%3fif%3doic.if.baseline-get";
   skos:broader ocf:GetOperation;
@@ -438,6 +431,14 @@ ocf:BodyThermometerAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:L
 The Resource is an Atomic Measurement of temperature (oic.r.temperature), body location for temperature (oic.r.body.location.temperature), observed time (oic.r.time.stamp), and user id (oic.r.userid).""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "BodyThermometerAMResURI%3Fif%3Doic.if.baseline-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyThermometerAMResURI.swagger.json> .
+
+ocf:BodyThermometerAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "bodythermometeramresuri%3fif%3doic.if.ll";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "BodyThermometerAMResURI%3Fif%3Doic.if.ll";
+  skos:related ocf:BodyThermometerAMResURI%3Fif%3Doic.if.ll-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyThermometerAMResURI.swagger.json> .
 
 ocf:BodyThermometerAMResURI%3Fif%3Doic.if.ll-GET a skos:Concept, ontolex:LexicalConcept;
@@ -499,14 +500,6 @@ ocf:RemoteControlResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:definition "This Resource describes a remote control function, which helps users to control a device without the actual remote controller provided by the manufacturer.";
   skos:inScheme ocf:scheme;
   skos:prefLabel "RemoteControlResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/Remotecontrol.swagger.json> .
-
-ocf:RemoteControlResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "remotecontrolresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Click the remote controller button to perform the actions desired by the user. If the key remains pressed, the POST will be repeated at 100ms intervals.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "RemoteControlResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/Remotecontrol.swagger.json> .
 
 ocf:AccelerationSensor a skos:Concept, ontolex:LexicalConcept;
@@ -586,14 +579,6 @@ ocf:MediaCoreResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:prefLabel "MediaCoreResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaCoreResURI.swagger.json> .
 
-ocf:MediaCoreResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "mediacoreresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets the Media Core properties.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "MediaCoreResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaCoreResURI.swagger.json> .
-
 ocf:MediaAudioResourceType a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "media audio resource type";
   skos:broader ocf:SwaggerAPI;
@@ -618,14 +603,6 @@ ocf:MediaAudioResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:prefLabel "MediaAudioResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaAudioResURI.swagger.json> .
 
-ocf:MediaAudioResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "mediaaudioresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets the Media Audio properties.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "MediaAudioResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaAudioResURI.swagger.json> .
-
 ocf:LiquidLevel a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "liquid level";
   skos:broader ocf:SwaggerAPI;
@@ -648,14 +625,6 @@ ocf:LiquidLevelResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:definition "This Resource describes the attributes associated with liquid level. The Property \"currentlevel\" and \"desiredlevel\" are defined in terms of a percentage. The behaviour of when the currentlevel and desiredlevel are not equal is determined by the device manufacturer.";
   skos:inScheme ocf:scheme;
   skos:prefLabel "LiquidLevelResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/LiquidLevelResURI.swagger.json> .
-
-ocf:LiquidLevelResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "liquidlevelresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets liquid level value.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "LiquidLevelResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/LiquidLevelResURI.swagger.json> .
 
 ocf:ValueConditional a skos:Concept, ontolex:LexicalConcept;
@@ -691,13 +660,6 @@ A value of '0' for any of \"threshold\",\" minnotifyperiod\" or \"maxnotifyperio
   skos:prefLabel "ValueConditionalResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ValueConditionalResURI.swagger.json> .
 
-ocf:ValueConditionalResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "valueconditionalresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "ValueConditionalResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ValueConditionalResURI.swagger.json> .
-
 <http://purl.org/wot-catalogue/ocf#ContinuousGlucoseMeter(CGM)AtomicMeasurementRepresentation>
   a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "continuous glucose meter (cgm) atomic measurement representation";
@@ -716,22 +678,6 @@ ocf:ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.b a skos:Concept, ontolex:Lexic
   skos:related ocf:ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.b-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ContinuousGlucoseMeterAM.swagger.json> .
 
-ocf:ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "continuousglucosemeteramresuri%3fif%3doic.if.baseline";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.baseline";
-  skos:related ocf:ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.baseline-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ContinuousGlucoseMeterAM.swagger.json> .
-
-ocf:ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "continuousglucosemeteramresuri%3fif%3doic.if.ll";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.ll";
-  skos:related ocf:ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.ll-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ContinuousGlucoseMeterAM.swagger.json> .
-
 ocf:ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "continuousglucosemeteramresuri%3fif%3doic.if.b-get";
   skos:broader ocf:GetOperation;
@@ -741,6 +687,14 @@ ocf:ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:L
   skos:prefLabel "ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.b-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ContinuousGlucoseMeterAM.swagger.json> .
 
+ocf:ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "continuousglucosemeteramresuri%3fif%3doic.if.baseline";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.baseline";
+  skos:related ocf:ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.baseline-GET;
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ContinuousGlucoseMeterAM.swagger.json> .
+
 ocf:ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "continuousglucosemeteramresuri%3fif%3doic.if.baseline-get";
   skos:broader ocf:GetOperation;
@@ -748,6 +702,14 @@ ocf:ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, on
  The Resource is an Atomic Measurement of glucose (\"oic.r.glucose\"), sensor (\"oic.r.cgm.sensor\"), observed time (\"oic.r.time.stamp\"), and user ID (\"oic.r.userid\").""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.baseline-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ContinuousGlucoseMeterAM.swagger.json> .
+
+ocf:ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "continuousglucosemeteramresuri%3fif%3doic.if.ll";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.ll";
+  skos:related ocf:ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.ll-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ContinuousGlucoseMeterAM.swagger.json> .
 
 ocf:ContinuousGlucoseMeterAMResURI%3Fif%3Doic.if.ll-GET a skos:Concept, ontolex:LexicalConcept;
@@ -776,22 +738,6 @@ ocf:EnergyUsageResURI%3Fif%3Doic.if.b a skos:Concept, ontolex:LexicalConcept;
   skos:related ocf:EnergyUsageResURI%3Fif%3Doic.if.b-GET, ocf:EnergyUsageResURI%3Fif%3Doic.if.b-POST;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/EnergyUsageResURI.swagger.json> .
 
-ocf:EnergyUsageResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "energyusageresuri%3fif%3doic.if.baseline";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "EnergyUsageResURI%3Fif%3Doic.if.baseline";
-  skos:related ocf:EnergyUsageResURI%3Fif%3Doic.if.baseline-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/EnergyUsageResURI.swagger.json> .
-
-ocf:EnergyUsageResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "energyusageresuri%3fif%3doic.if.ll";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "EnergyUsageResURI%3Fif%3Doic.if.ll";
-  skos:related ocf:EnergyUsageResURI%3Fif%3Doic.if.ll-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/EnergyUsageResURI.swagger.json> .
-
 ocf:EnergyUsageResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "energyusageresuri%3fif%3doic.if.b-get";
   skos:broader ocf:GetOperation;
@@ -804,13 +750,12 @@ The Resource is a Collection of:
   skos:prefLabel "EnergyUsageResURI%3Fif%3Doic.if.b-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/EnergyUsageResURI.swagger.json> .
 
-ocf:EnergyUsageResURI%3Fif%3Doic.if.b-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "energyusageresuri%3fif%3doic.if.b-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets the timer period of the query using the batch OCF Interface
-""";
+ocf:EnergyUsageResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "energyusageresuri%3fif%3doic.if.baseline";
+  skos:broader ocf:Path;
   skos:inScheme ocf:scheme;
-  skos:prefLabel "EnergyUsageResURI%3Fif%3Doic.if.b-POST";
+  skos:prefLabel "EnergyUsageResURI%3Fif%3Doic.if.baseline";
+  skos:related ocf:EnergyUsageResURI%3Fif%3Doic.if.baseline-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/EnergyUsageResURI.swagger.json> .
 
 ocf:EnergyUsageResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConcept;
@@ -823,6 +768,14 @@ The Resource is a Collection of:
 """;
   skos:inScheme ocf:scheme;
   skos:prefLabel "EnergyUsageResURI%3Fif%3Doic.if.baseline-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/EnergyUsageResURI.swagger.json> .
+
+ocf:EnergyUsageResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "energyusageresuri%3fif%3doic.if.ll";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "EnergyUsageResURI%3Fif%3Doic.if.ll";
+  skos:related ocf:EnergyUsageResURI%3Fif%3Doic.if.ll-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/EnergyUsageResURI.swagger.json> .
 
 ocf:EnergyUsageResURI%3Fif%3Doic.if.ll-GET a skos:Concept, ontolex:LexicalConcept;
@@ -863,15 +816,6 @@ The minimum and maximum colour value per component may be described by the Prope
 When \"range\" is omitted, then the \"range\" is [0,255].""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "ColourRGBResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourRGBResURI.swagger.json> .
-
-ocf:ColourRGBResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "colourrgbresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets the current colourRGB value
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "ColourRGBResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourRGBResURI.swagger.json> .
 
 ocf:BodyFatFreeMass a skos:Concept, ontolex:LexicalConcept;
@@ -957,14 +901,6 @@ ocf:SettingsPictureResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:definition "Gets current device picture settings.";
   skos:inScheme ocf:scheme;
   skos:prefLabel "SettingsPictureResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsPicture.swagger.json> .
-
-ocf:SettingsPictureResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "settingspictureresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Changes the device picture settings.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "SettingsPictureResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsPicture.swagger.json> .
 
 ocf:CarbonMonoxideSensor a skos:Concept, ontolex:LexicalConcept;
@@ -1098,14 +1034,6 @@ The Property \"modes\" is an array of the currently active mode(s).""";
   skos:prefLabel "ModeResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ModeResURI.swagger.json> .
 
-ocf:ModeResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "moderesuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets the desired mode.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "ModeResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ModeResURI.swagger.json> .
-
 ocf:3DPrinter a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "3d printer";
   skos:broader ocf:SwaggerAPI;
@@ -1156,13 +1084,6 @@ A nightMode value of 'false' means that the feature is off.""";
   skos:prefLabel "NightModeResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/NightModeResURI.swagger.json> .
 
-ocf:NightModeResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "nightmoderesuri-post";
-  skos:broader ocf:PostOperation;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "NightModeResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/NightModeResURI.swagger.json> .
-
 ocf:AutoFocus a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "auto focus";
   skos:broader ocf:SwaggerAPI;
@@ -1191,13 +1112,6 @@ Note that when Pan Tilt Zoom (see 'Pan Tilt Zoom' Resource definition) is used t
   skos:prefLabel "AutoFocusResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AutoFocusResURI.swagger.json> .
 
-ocf:AutoFocusResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "autofocusresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "AutoFocusResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AutoFocusResURI.swagger.json> .
-
 ocf:MediaSourceInput a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "media source input";
   skos:broader ocf:SwaggerAPI;
@@ -1222,15 +1136,6 @@ The sources are an array of Media Source(s) see Resource Type \"oic.r.mediasourc
 """;
   skos:inScheme ocf:scheme;
   skos:prefLabel "mediaSourceInputResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/mediaSourceInputResURI.swagger.json> .
-
-ocf:mediaSourceInputResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "mediasourceinputresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Changes the status of the source(s).
-Allows changes of the sourceName and the status.""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "mediaSourceInputResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/mediaSourceInputResURI.swagger.json> .
 
 ocf:SensorProperties a skos:Concept, ontolex:LexicalConcept;
@@ -1261,15 +1166,6 @@ The Properties \"range\", \"step\" and \"precision\" are only applied to the \"s
   skos:prefLabel "SensorPropsResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SensorPropsResURI.swagger.json> .
 
-ocf:SensorPropsResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "sensorpropsresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets Sensor Property values
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "SensorPropsResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SensorPropsResURI.swagger.json> .
-
 ocf:ColourTemperature a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "colour temperature";
   skos:broader ocf:SwaggerAPI;
@@ -1297,15 +1193,6 @@ THe Resource provides the colour using colour temperature conventions.""";
   skos:prefLabel "example%2FColourTemperatureResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourTemperatureResURI.swagger.json> .
 
-ocf:example%2FColourTemperatureResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "example%2fcolourtemperatureresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets current colour temperature value
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "example%2FColourTemperatureResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourTemperatureResURI.swagger.json> .
-
 ocf:MediaSourceOutput a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "media source output";
   skos:broader ocf:SwaggerAPI;
@@ -1330,15 +1217,6 @@ The sources are an array of Media Source(s) see Resource Type \"oic.r.mediasourc
 """;
   skos:inScheme ocf:scheme;
   skos:prefLabel "mediaSourceOutputResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/mediaSourceOutputResURI.swagger.json> .
-
-ocf:mediaSourceOutputResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "mediasourceoutputresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Changes the status of the source(s).
-Allows changes of the sourceName and the status.""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "mediaSourceOutputResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/mediaSourceOutputResURI.swagger.json> .
 
 ocf:BodyLocationTemperature a skos:Concept, ontolex:LexicalConcept;
@@ -1493,15 +1371,6 @@ The sources are an array of mediaSource(s) as separately defined see Resource Ty
   skos:prefLabel "mediaSourceListResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/mediaSourceListResURI.swagger.json> .
 
-ocf:mediaSourceListResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "mediasourcelistresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Changes the status of the source(s).
-Allows changes of the sourceName and the status.""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "mediaSourceListResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/mediaSourceListResURI.swagger.json> .
-
 ocf:OperationalState a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "operational state";
   skos:broader ocf:SwaggerAPI;
@@ -1534,14 +1403,6 @@ The Property \"remainingTime\" is the ISO8601 encoded time till completion of th
 The Property \"progressPercentage\" is the percentage completeness of the current jobState.""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "OperationalStateResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/OperationalStateResURI.swagger.json> .
-
-ocf:OperationalStateResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "operationalstateresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets the desired operational or job state.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "OperationalStateResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/OperationalStateResURI.swagger.json> .
 
 ocf:SoundPressureLevelindB a skos:Concept, ontolex:LexicalConcept;
@@ -1593,14 +1454,6 @@ ocf:SettingsSupportResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:prefLabel "SettingsSupportResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsSupport.swagger.json> .
 
-ocf:SettingsSupportResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "settingssupportresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Changes the device support settings.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "SettingsSupportResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsSupport.swagger.json> .
-
 ocf:IceMaker a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "ice maker";
   skos:broader ocf:SwaggerAPI;
@@ -1628,15 +1481,6 @@ A status of \"off\" means that the Ice Maker is not operating.
 A status of \"full\" means that the ice collection bin is full (Ice Maker is operating).""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "IceMakerResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/IceMakerResURI.swagger.json> .
-
-ocf:IceMakerResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "icemakerresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets the desired Ice Maker status.
-Only valid settings for \"status\" in a UPDATE shall be \"on\" or \"off\".""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "IceMakerResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/IceMakerResURI.swagger.json> .
 
 ocf:SoundPressureinPascal a skos:Concept, ontolex:LexicalConcept;
@@ -1686,15 +1530,6 @@ ocf:EnergyResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:definition "This Resource describes the attributes associated with electrical energy. This Resource can be used for either rated (read-only), desired (read-write) or measured (read-only) energy. The Property \"voltage\" is in Volts (V), The Property \"current\" in Amps (A), and The Property \"frequency\" is in Hertz (Hz).";
   skos:inScheme ocf:scheme;
   skos:prefLabel "EnergyResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/EnergyResURI.swagger.json> .
-
-ocf:EnergyResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "energyresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets the desired energy values
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "EnergyResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/EnergyResURI.swagger.json> .
 
 ocf:SignalStrength a skos:Concept, ontolex:LexicalConcept;
@@ -1799,14 +1634,6 @@ ocf:GrinderResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:prefLabel "GrinderResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GrinderResURI.swagger.json> .
 
-ocf:GrinderResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "grinderresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets grinding values.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "GrinderResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GrinderResURI.swagger.json> .
-
 ocf:Temperature a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "temperature";
   skos:broader ocf:SwaggerAPI;
@@ -1838,16 +1665,6 @@ If no query parameter is provided the server provides its default measure or set
 It is recommended to return always the units Property in the result.""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "TemperatureResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/TemperatureResURI.swagger.json> .
-
-ocf:TemperatureResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "temperatureresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets the desired temperature value.
-If a \"unit\" is included and the server may not support the unit indicated the request will fail.
-If the units are omitted value is taken to be in C.""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "TemperatureResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/TemperatureResURI.swagger.json> .
 
 ocf:BatteryMaterial a skos:Concept, ontolex:LexicalConcept;
@@ -1929,14 +1746,6 @@ The Property \"range\" is an array of the min,max values for the speed level. If
   skos:prefLabel "AirFlowResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirFlowResURI.swagger.json> .
 
-ocf:AirFlowResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "airflowresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "When \"automode\" is set to true, \"direction\" and \"speed\" are not utilized by the device.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "AirFlowResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirFlowResURI.swagger.json> .
-
 ocf:AudioControls a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "audio controls";
   skos:broader ocf:SwaggerAPI;
@@ -1967,13 +1776,6 @@ A mute value of false means that the device is not muted (audio).""";
   skos:prefLabel "AudioResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AudioResURI.swagger.json> .
 
-ocf:AudioResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "audioresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "AudioResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AudioResURI.swagger.json> .
-
 ocf:SelectableLevels a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "selectable levels";
   skos:broader ocf:SwaggerAPI;
@@ -2002,14 +1804,6 @@ When retrieved the targetlevel provides the actual value that has been selected.
   skos:prefLabel "SelectableLevelsResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SelectableLevelsResURI.swagger.json> .
 
-ocf:SelectableLevelsResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "selectablelevelsresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets the current level from the set \"availablelevels\".";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "SelectableLevelsResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SelectableLevelsResURI.swagger.json> .
-
 ocf:AutoWhiteBalance a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "auto white balance";
   skos:broader ocf:SwaggerAPI;
@@ -2036,13 +1830,6 @@ An AutoWhiteBalance value of 'false' means that the auto white balance feature i
 """;
   skos:inScheme ocf:scheme;
   skos:prefLabel "AutoWhiteBalanceResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AutoWhiteBalanceResURI.swagger.json> .
-
-ocf:AutoWhiteBalanceResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "autowhitebalanceresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "AutoWhiteBalanceResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AutoWhiteBalanceResURI.swagger.json> .
 
 ocf:PanTiltZoomMovement a skos:Concept, ontolex:LexicalConcept;
@@ -2086,14 +1873,6 @@ If \"tilt\" is not supported then the range shall be [0.0,0.0].""";
   skos:prefLabel "PanTiltZoomResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/PanTiltZoomResURI.swagger.json> .
 
-ocf:PanTiltZoomResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "pantiltzoomresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets the current pan, tilt and zoom value.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "PanTiltZoomResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/PanTiltZoomResURI.swagger.json> .
-
 ocf:UVBRadiation a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "uvb radiation";
   skos:broader ocf:SwaggerAPI;
@@ -2132,13 +1911,6 @@ A \"colourSaturation\" value of 100 means producing device very full colour imag
   skos:prefLabel "ColourSaturationResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourSaturationResURI.swagger.json> .
 
-ocf:ColourSaturationResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "coloursaturationresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "ColourSaturationResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourSaturationResURI.swagger.json> .
-
 ocf:Battery a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "battery";
   skos:broader ocf:SwaggerAPI;
@@ -2161,15 +1933,6 @@ ocf:BatteryResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:definition "This Resource describes the attributes associated with a battery. The Property \"charge\" is an integer showing the current battery charge level as a percentage in the range 0 (fully discharged) to 100 (fully charged). The Property \"capacity\" represents the total capacity of battery in Amp Hours (Ah). The \"charging\" status and \"discharging\" status are represented by boolean values set to \"true\" indicating enabled and \"false\" indicating disabled. Low battery status is represented by a boolean value set to \"true\" indicating low charge level and \"false\" indicating otherwise, based upon the battery threshold represented as a percentage.";
   skos:inScheme ocf:scheme;
   skos:prefLabel "BatteryResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BatteryResURI.swagger.json> .
-
-ocf:BatteryResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "batteryresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets current battery values
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "BatteryResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BatteryResURI.swagger.json> .
 
 ocf:ThreeAxisSensor a skos:Concept, ontolex:LexicalConcept;
@@ -2222,14 +1985,6 @@ ocf:SettingsBroadcastingResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:prefLabel "SettingsBroadcastingResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsBroadcasting.swagger.json> .
 
-ocf:SettingsBroadcastingResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "settingsbroadcastingresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Changes the device broadcasting settings.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "SettingsBroadcastingResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsBroadcasting.swagger.json> .
-
 ocf:UVARadiation a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "uva radiation";
   skos:broader ocf:SwaggerAPI;
@@ -2265,15 +2020,6 @@ The Property \"countdown\" is the desired total seconds for countdown.""";
   skos:prefLabel "ClockResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ClockResURI.swagger.json> .
 
-ocf:ClockResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "clockresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets the desired datetime.
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "ClockResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ClockResURI.swagger.json> .
-
 ocf:AirQualityCollection a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "air quality collection";
   skos:broader ocf:SwaggerAPI;
@@ -2291,22 +2037,6 @@ ocf:AirQualityCollectionResURI%3Fif%3Doic.if.b a skos:Concept, ontolex:LexicalCo
   skos:related ocf:AirQualityCollectionResURI%3Fif%3Doic.if.b-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirQualityBaselineResURI.swagger.json> .
 
-ocf:AirQualityCollectionResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "airqualitycollectionresuri%3fif%3doic.if.baseline";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "AirQualityCollectionResURI%3Fif%3Doic.if.baseline";
-  skos:related ocf:AirQualityCollectionResURI%3Fif%3Doic.if.baseline-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirQualityBaselineResURI.swagger.json> .
-
-ocf:AirQualityCollectionResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "airqualitycollectionresuri%3fif%3doic.if.ll";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "AirQualityCollectionResURI%3Fif%3Doic.if.ll";
-  skos:related ocf:AirQualityCollectionResURI%3Fif%3Doic.if.ll-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirQualityBaselineResURI.swagger.json> .
-
 ocf:AirQualityCollectionResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "airqualitycollectionresuri%3fif%3doic.if.b-get";
   skos:broader ocf:GetOperation;
@@ -2319,6 +2049,14 @@ Retrieves the current air quality.
   skos:prefLabel "AirQualityCollectionResURI%3Fif%3Doic.if.b-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirQualityBaselineResURI.swagger.json> .
 
+ocf:AirQualityCollectionResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "airqualitycollectionresuri%3fif%3doic.if.baseline";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "AirQualityCollectionResURI%3Fif%3Doic.if.baseline";
+  skos:related ocf:AirQualityCollectionResURI%3Fif%3Doic.if.baseline-GET;
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirQualityBaselineResURI.swagger.json> .
+
 ocf:AirQualityCollectionResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "airqualitycollectionresuri%3fif%3doic.if.baseline-get";
   skos:broader ocf:GetOperation;
@@ -2329,6 +2067,14 @@ Retrieves the current air quality.
 """;
   skos:inScheme ocf:scheme;
   skos:prefLabel "AirQualityCollectionResURI%3Fif%3Doic.if.baseline-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirQualityBaselineResURI.swagger.json> .
+
+ocf:AirQualityCollectionResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "airqualitycollectionresuri%3fif%3doic.if.ll";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "AirQualityCollectionResURI%3Fif%3Doic.if.ll";
+  skos:related ocf:AirQualityCollectionResURI%3Fif%3Doic.if.ll-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirQualityBaselineResURI.swagger.json> .
 
 ocf:AirQualityCollectionResURI%3Fif%3Doic.if.ll-GET a skos:Concept, ontolex:LexicalConcept;
@@ -2366,14 +2112,6 @@ ocf:ContinuousGlucoseMeterSamplingIntervalResURI-GET a skos:Concept, ontolex:Lex
   skos:definition "This Resource describes the Properties associated with Sampling Interval for Continuous Glucose Meter (CGM).";
   skos:inScheme ocf:scheme;
   skos:prefLabel "ContinuousGlucoseMeterSamplingIntervalResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ContinuousGlucoseMeterSamplingInterval.swagger.json> .
-
-ocf:ContinuousGlucoseMeterSamplingIntervalResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "continuousglucosemetersamplingintervalresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "This Resource describes the Properties associated with Sampling Interval for Continuous Glucose Meter (CGM).";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "ContinuousGlucoseMeterSamplingIntervalResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ContinuousGlucoseMeterSamplingInterval.swagger.json> .
 
 ocf:ContactSensor a skos:Concept, ontolex:LexicalConcept;
@@ -2616,16 +2354,6 @@ Utterance in the example shall be a properly escaped (JSON rules) SSML document.
   skos:prefLabel "SpeechTTSResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SpeechTTSResURI.swagger.json> .
 
-ocf:SpeechTTSResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "speechttsresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Changes the utterance being rendered.
-Example shows a change in language selected.
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "SpeechTTSResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SpeechTTSResURI.swagger.json> .
-
 ocf:WaterInfo a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "water info";
   skos:broader ocf:SwaggerAPI;
@@ -2653,14 +2381,6 @@ The Property \"currentadditivetypes\" is the currently desired additive type(s).
 For example, if \"cold\" is selected with the \"currentwatertype\", \"soda\" and \"mineral\" or both can be selected as \"currentadditivetypes\". Note that if \"hot\" is selected with the \"currentwatertype\", \"soda\" and \"mineral\" may be restricted for the \"currentadditivetypes\".""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "WaterInfoResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/WaterInfoResURI.swagger.json> .
-
-ocf:WaterInfoResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "waterinforesuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets the desired water type.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "WaterInfoResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/WaterInfoResURI.swagger.json> .
 
 ocf:WaterSensor a skos:Concept, ontolex:LexicalConcept;
@@ -2707,22 +2427,6 @@ ocf:ConsumablesResURI%3Fif%3Doic.if.b a skos:Concept, ontolex:LexicalConcept;
   skos:related ocf:ConsumablesResURI%3Fif%3Doic.if.b-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ConsumablesBaselineResURI.swagger.json> .
 
-ocf:ConsumablesResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "consumablesresuri%3fif%3doic.if.baseline";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "ConsumablesResURI%3Fif%3Doic.if.baseline";
-  skos:related ocf:ConsumablesResURI%3Fif%3Doic.if.baseline-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ConsumablesBaselineResURI.swagger.json> .
-
-ocf:ConsumablesResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "consumablesresuri%3fif%3doic.if.ll";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "ConsumablesResURI%3Fif%3Doic.if.ll";
-  skos:related ocf:ConsumablesResURI%3Fif%3Doic.if.ll-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ConsumablesBaselineResURI.swagger.json> .
-
 ocf:ConsumablesResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "consumablesresuri%3fif%3doic.if.b-get";
   skos:broader ocf:GetOperation;
@@ -2734,6 +2438,14 @@ supportedconsumables is the set of consumable types that this instance of the Re
   skos:prefLabel "ConsumablesResURI%3Fif%3Doic.if.b-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ConsumablesBaselineResURI.swagger.json> .
 
+ocf:ConsumablesResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "consumablesresuri%3fif%3doic.if.baseline";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "ConsumablesResURI%3Fif%3Doic.if.baseline";
+  skos:related ocf:ConsumablesResURI%3Fif%3Doic.if.baseline-GET;
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ConsumablesBaselineResURI.swagger.json> .
+
 ocf:ConsumablesResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "consumablesresuri%3fif%3doic.if.baseline-get";
   skos:broader ocf:GetOperation;
@@ -2743,6 +2455,14 @@ supportedconsumables is the set of consumable types that this instance of the Re
 """;
   skos:inScheme ocf:scheme;
   skos:prefLabel "ConsumablesResURI%3Fif%3Doic.if.baseline-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ConsumablesBaselineResURI.swagger.json> .
+
+ocf:ConsumablesResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "consumablesresuri%3fif%3doic.if.ll";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "ConsumablesResURI%3Fif%3Doic.if.ll";
+  skos:related ocf:ConsumablesResURI%3Fif%3Doic.if.ll-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ConsumablesBaselineResURI.swagger.json> .
 
 ocf:ConsumablesResURI%3Fif%3Doic.if.ll-GET a skos:Concept, ontolex:LexicalConcept;
@@ -2831,14 +2551,6 @@ ocf:MediaVideoResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:prefLabel "MediaVideoResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaVideoResURI.swagger.json> .
 
-ocf:MediaVideoResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "mediavideoresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets the Media Video properties.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "MediaVideoResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaVideoResURI.swagger.json> .
-
 ocf:IASZoneCollection a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "ias zone collection";
   skos:broader ocf:SwaggerAPI;
@@ -2856,22 +2568,6 @@ ocf:IASZoneResURI%3Fif%3Doic.if.b a skos:Concept, ontolex:LexicalConcept;
   skos:related ocf:IASZoneResURI%3Fif%3Doic.if.b-GET, ocf:IASZoneResURI%3Fif%3Doic.if.b-POST;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/IASZoneCollectionResURI.swagger.json> .
 
-ocf:IASZoneResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "iaszoneresuri%3fif%3doic.if.baseline";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "IASZoneResURI%3Fif%3Doic.if.baseline";
-  skos:related ocf:IASZoneResURI%3Fif%3Doic.if.baseline-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/IASZoneCollectionResURI.swagger.json> .
-
-ocf:IASZoneResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "iaszoneresuri%3fif%3doic.if.ll";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "IASZoneResURI%3Fif%3Doic.if.ll";
-  skos:related ocf:IASZoneResURI%3Fif%3Doic.if.ll-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/IASZoneCollectionResURI.swagger.json> .
-
 ocf:IASZoneResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "iaszoneresuri%3fif%3doic.if.b-get";
   skos:broader ocf:GetOperation;
@@ -2880,13 +2576,12 @@ ocf:IASZoneResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:prefLabel "IASZoneResURI%3Fif%3Doic.if.b-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/IASZoneCollectionResURI.swagger.json> .
 
-ocf:IASZoneResURI%3Fif%3Doic.if.b-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "iaszoneresuri%3fif%3doic.if.b-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets the current sensitivity level of the IASZone.
-""";
+ocf:IASZoneResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "iaszoneresuri%3fif%3doic.if.baseline";
+  skos:broader ocf:Path;
   skos:inScheme ocf:scheme;
-  skos:prefLabel "IASZoneResURI%3Fif%3Doic.if.b-POST";
+  skos:prefLabel "IASZoneResURI%3Fif%3Doic.if.baseline";
+  skos:related ocf:IASZoneResURI%3Fif%3Doic.if.baseline-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/IASZoneCollectionResURI.swagger.json> .
 
 ocf:IASZoneResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConcept;
@@ -2895,6 +2590,14 @@ ocf:IASZoneResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConc
   skos:definition "This Resource is Collection that fully describes an Intruder Alert System (IAS) Zone. It is made up of an instance of IAS Zone Info, Battery, and Power Source.";
   skos:inScheme ocf:scheme;
   skos:prefLabel "IASZoneResURI%3Fif%3Doic.if.baseline-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/IASZoneCollectionResURI.swagger.json> .
+
+ocf:IASZoneResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "iaszoneresuri%3fif%3doic.if.ll";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "IASZoneResURI%3Fif%3Doic.if.ll";
+  skos:related ocf:IASZoneResURI%3Fif%3Doic.if.ll-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/IASZoneCollectionResURI.swagger.json> .
 
 ocf:IASZoneResURI%3Fif%3Doic.if.ll-GET a skos:Concept, ontolex:LexicalConcept;
@@ -2922,22 +2625,6 @@ ocf:BodyScaleAMResURI%3Fif%3Doic.if.b a skos:Concept, ontolex:LexicalConcept;
   skos:related ocf:BodyScaleAMResURI%3Fif%3Doic.if.b-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyScaleAMResURI.swagger.json> .
 
-ocf:BodyScaleAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "bodyscaleamresuri%3fif%3doic.if.baseline";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "BodyScaleAMResURI%3Fif%3Doic.if.baseline";
-  skos:related ocf:BodyScaleAMResURI%3Fif%3Doic.if.baseline-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyScaleAMResURI.swagger.json> .
-
-ocf:BodyScaleAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "bodyscaleamresuri%3fif%3doic.if.ll";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "BodyScaleAMResURI%3Fif%3Doic.if.ll";
-  skos:related ocf:BodyScaleAMResURI%3Fif%3Doic.if.ll-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyScaleAMResURI.swagger.json> .
-
 ocf:BodyScaleAMResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "bodyscaleamresuri%3fif%3doic.if.b-get";
   skos:broader ocf:GetOperation;
@@ -2947,6 +2634,14 @@ The Resource is an Atomic Measurement of weight (oic.r.weight), body mass index 
   skos:prefLabel "BodyScaleAMResURI%3Fif%3Doic.if.b-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyScaleAMResURI.swagger.json> .
 
+ocf:BodyScaleAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "bodyscaleamresuri%3fif%3doic.if.baseline";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "BodyScaleAMResURI%3Fif%3Doic.if.baseline";
+  skos:related ocf:BodyScaleAMResURI%3Fif%3Doic.if.baseline-GET;
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyScaleAMResURI.swagger.json> .
+
 ocf:BodyScaleAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "bodyscaleamresuri%3fif%3doic.if.baseline-get";
   skos:broader ocf:GetOperation;
@@ -2954,6 +2649,14 @@ ocf:BodyScaleAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:Lexical
 The Resource is an Atomic Measurement of weight (oic.r.weight), body mass index (BMI) (oic.r.bmi), height (oic.r.height), body fat (oic.r.body.fat), body water (oic.r.body.water), body soft lean mass (oic.r.body.slm), body fat free mass (oic.r.body.ffm), observed time (oic.r.time.stamp), and user id (oic.r.userid).""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "BodyScaleAMResURI%3Fif%3Doic.if.baseline-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyScaleAMResURI.swagger.json> .
+
+ocf:BodyScaleAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "bodyscaleamresuri%3fif%3doic.if.ll";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "BodyScaleAMResURI%3Fif%3Doic.if.ll";
+  skos:related ocf:BodyScaleAMResURI%3Fif%3Doic.if.ll-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyScaleAMResURI.swagger.json> .
 
 ocf:BodyScaleAMResURI%3Fif%3Doic.if.ll-GET a skos:Concept, ontolex:LexicalConcept;
@@ -2988,13 +2691,6 @@ ocf:OpaqueDataResURI-GET a skos:Concept, ontolex:LexicalConcept;
 The stringdata is a string of ASCII characters.""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "OpaqueDataResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/OpaqueDataResURI.swagger.json> .
-
-ocf:OpaqueDataResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "opaquedataresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "OpaqueDataResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/OpaqueDataResURI.swagger.json> .
 
 ocf:PulsatileOccurrenceforPulseOximeter a skos:Concept, ontolex:LexicalConcept;
@@ -3040,22 +2736,6 @@ ocf:GlucoseMeterAMResURI%3Fif%3Doic.if.b a skos:Concept, ontolex:LexicalConcept;
   skos:related ocf:GlucoseMeterAMResURI%3Fif%3Doic.if.b-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GlucoseMeterAMResURI.swagger.json> .
 
-ocf:GlucoseMeterAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "glucosemeteramresuri%3fif%3doic.if.baseline";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "GlucoseMeterAMResURI%3Fif%3Doic.if.baseline";
-  skos:related ocf:GlucoseMeterAMResURI%3Fif%3Doic.if.baseline-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GlucoseMeterAMResURI.swagger.json> .
-
-ocf:GlucoseMeterAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "glucosemeteramresuri%3fif%3doic.if.ll";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "GlucoseMeterAMResURI%3Fif%3Doic.if.ll";
-  skos:related ocf:GlucoseMeterAMResURI%3Fif%3Doic.if.ll-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GlucoseMeterAMResURI.swagger.json> .
-
 ocf:GlucoseMeterAMResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "glucosemeteramresuri%3fif%3doic.if.b-get";
   skos:broader ocf:GetOperation;
@@ -3065,6 +2745,14 @@ The Resource is an Atomic Measurement of glucose (oic.r.glucose), context carboh
   skos:prefLabel "GlucoseMeterAMResURI%3Fif%3Doic.if.b-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GlucoseMeterAMResURI.swagger.json> .
 
+ocf:GlucoseMeterAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "glucosemeteramresuri%3fif%3doic.if.baseline";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "GlucoseMeterAMResURI%3Fif%3Doic.if.baseline";
+  skos:related ocf:GlucoseMeterAMResURI%3Fif%3Doic.if.baseline-GET;
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GlucoseMeterAMResURI.swagger.json> .
+
 ocf:GlucoseMeterAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "glucosemeteramresuri%3fif%3doic.if.baseline-get";
   skos:broader ocf:GetOperation;
@@ -3072,6 +2760,14 @@ ocf:GlucoseMeterAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:Lexi
 The Resource is an Atomic Measurement of glucose (oic.r.glucose), context carbohydrates (oic.r.glucose.carb), context exercise (oic.r.glucose.exercise), Hemoglobin Bound to glucose a1c Form (HbA1c) (oic.r.glucose.hba1c), context health (oic.r.glucose.health), context meal (oic.r.glucose.meal), context medication (oic.r.glucose.medication), context sample location (oic.r.glucose.samplelocation), context tester (oic.r.glucose.tester), observed time (oic.r.time.stamp), and user id (oic.r.userid).""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "GlucoseMeterAMResURI%3Fif%3Doic.if.baseline-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GlucoseMeterAMResURI.swagger.json> .
+
+ocf:GlucoseMeterAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "glucosemeteramresuri%3fif%3doic.if.ll";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "GlucoseMeterAMResURI%3Fif%3Doic.if.ll";
+  skos:related ocf:GlucoseMeterAMResURI%3Fif%3Doic.if.ll-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GlucoseMeterAMResURI.swagger.json> .
 
 ocf:GlucoseMeterAMResURI%3Fif%3Doic.if.ll-GET a skos:Concept, ontolex:LexicalConcept;
@@ -3155,22 +2851,6 @@ ocf:PulseOximeterAMResURI%3Fif%3Doic.if.b a skos:Concept, ontolex:LexicalConcept
   skos:related ocf:PulseOximeterAMResURI%3Fif%3Doic.if.b-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/PulseOximeterAM.swagger.json> .
 
-ocf:PulseOximeterAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "pulseoximeteramresuri%3fif%3doic.if.baseline";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "PulseOximeterAMResURI%3Fif%3Doic.if.baseline";
-  skos:related ocf:PulseOximeterAMResURI%3Fif%3Doic.if.baseline-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/PulseOximeterAM.swagger.json> .
-
-ocf:PulseOximeterAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "pulseoximeteramresuri%3fif%3doic.if.ll";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "PulseOximeterAMResURI%3Fif%3Doic.if.ll";
-  skos:related ocf:PulseOximeterAMResURI%3Fif%3Doic.if.ll-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/PulseOximeterAM.swagger.json> .
-
 ocf:PulseOximeterAMResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "pulseoximeteramresuri%3fif%3doic.if.b-get";
   skos:broader ocf:GetOperation;
@@ -3180,6 +2860,14 @@ ocf:PulseOximeterAMResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalCon
   skos:prefLabel "PulseOximeterAMResURI%3Fif%3Doic.if.b-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/PulseOximeterAM.swagger.json> .
 
+ocf:PulseOximeterAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "pulseoximeteramresuri%3fif%3doic.if.baseline";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "PulseOximeterAMResURI%3Fif%3Doic.if.baseline";
+  skos:related ocf:PulseOximeterAMResURI%3Fif%3Doic.if.baseline-GET;
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/PulseOximeterAM.swagger.json> .
+
 ocf:PulseOximeterAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "pulseoximeteramresuri%3fif%3doic.if.baseline-get";
   skos:broader ocf:GetOperation;
@@ -3187,6 +2875,14 @@ ocf:PulseOximeterAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:Lex
  The Resource is an Atomic Measurement of SpO2 (\"oic.r.spo2\"), pulse rate (\"oic.r.pulserate\"), pulsatile characteristic (\"oic.r.pulsatilecharacteristic\"), pulsatileoccurrence (\"oic.r.pulsatileoccurrence\"), observed time (\"oic.r.time.stamp\"), and user ID (\"oic.r.userid\").""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "PulseOximeterAMResURI%3Fif%3Doic.if.baseline-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/PulseOximeterAM.swagger.json> .
+
+ocf:PulseOximeterAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "pulseoximeteramresuri%3fif%3doic.if.ll";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "PulseOximeterAMResURI%3Fif%3Doic.if.ll";
+  skos:related ocf:PulseOximeterAMResURI%3Fif%3Doic.if.ll-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/PulseOximeterAM.swagger.json> .
 
 ocf:PulseOximeterAMResURI%3Fif%3Doic.if.ll-GET a skos:Concept, ontolex:LexicalConcept;
@@ -3229,16 +2925,6 @@ The Resource provides the colour using hue and saturation conventions.
 """;
   skos:inScheme ocf:scheme;
   skos:prefLabel "example%2FColourHueSaturationResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourHueSaturationResURI.swagger.json> .
-
-ocf:example%2FColourHueSaturationResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "example%2fcolourhuesaturationresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets current colour hue and saturation values.
-At least one of hue or saturation shall be provided in the payload.
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "example%2FColourHueSaturationResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourHueSaturationResURI.swagger.json> .
 
 ocf:HeartRate a skos:Concept, ontolex:LexicalConcept;
@@ -3294,14 +2980,6 @@ If a Device supports this Resource but has no defined content for it (yet) the r
   skos:prefLabel "CivicLocationResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/CivicLocationResURI.swagger.json> .
 
-ocf:CivicLocationResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "civiclocationresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Update or set Civic Location information.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "CivicLocationResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/CivicLocationResURI.swagger.json> .
-
 ocf:Media a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "media";
   skos:broader ocf:SwaggerAPI;
@@ -3330,14 +3008,6 @@ The resource is an array of media elements.  Each element contains:
 The SDP specification can be found at http://tools.ietf.org/html/rfc4566.""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "MediaResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaResURI.swagger.json> .
-
-ocf:MediaResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "mediaresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "This is to change the URL that can be played back by the device. Note that some devices do not have the capability to set the URL to be played back";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "MediaResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaResURI.swagger.json> .
 
 ocf:TouchSensor a skos:Concept, ontolex:LexicalConcept;
@@ -3394,14 +3064,6 @@ The property \"status\" is current operation status of application or set operat
 When an app is launched any currently running app is automatically stopped.""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "TVappsResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/TVApps.swagger.json> .
-
-ocf:TVappsResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "tvappsresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Launch or stop tv application that the user wants.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "TVappsResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/TVApps.swagger.json> .
 
 ocf:HeatingZone a skos:Concept, ontolex:LexicalConcept;
@@ -3489,14 +3151,6 @@ retrieves the state of the resource.""";
   skos:prefLabel "BaseResourceSchemaResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BaseResourceSchemaResURI.swagger.json> .
 
-ocf:BaseResourceSchemaResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "baseresourceschemaresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "sets the read-write resource properties";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "BaseResourceSchemaResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BaseResourceSchemaResURI.swagger.json> .
-
 ocf:Deodorization a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "deodorization";
   skos:broader ocf:SwaggerAPI;
@@ -3524,14 +3178,6 @@ ocf:DeodorizationResURI-GET a skos:Concept, ontolex:LexicalConcept;
 The Property \"currentstate\" is the current state of the deodorization function. In the case of \"auto\" mode, if the sensed air condition is determined to be bad, the function will be \"on\". Then, \"mode\" value is \"auto\" and \"currentstate\" value is \"on\". If not, the function is remaining \"off\" state. Then, \"currentstate\" value is \"off\".""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "DeodorizationResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DeodorizationResURI.swagger.json> .
-
-ocf:DeodorizationResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "deodorizationresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets the desired deodorization function state.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "DeodorizationResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DeodorizationResURI.swagger.json> .
 
 ocf:PresenceSensor a skos:Concept, ontolex:LexicalConcept;
@@ -3614,13 +3260,6 @@ A value of 'false' means that the switch is off.
   skos:prefLabel "BinarySwitchResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BinarySwitchResURI.swagger.json> .
 
-ocf:BinarySwitchResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "binaryswitchresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "BinarySwitchResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BinarySwitchResURI.swagger.json> .
-
 ocf:AutomaticDocumentFeeder a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "automatic document feeder";
   skos:broader ocf:SwaggerAPI;
@@ -3679,14 +3318,6 @@ The Property \"status\" is current operation status when the \"currentVendor\" i
   skos:prefLabel "VendorListResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/VendorListResURI.swagger.json> .
 
-ocf:VendorListResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "vendorlistresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "changes the vendorList.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "VendorListResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/VendorListResURI.swagger.json> .
-
 ocf:Weight a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "weight";
   skos:broader ocf:SwaggerAPI;
@@ -3713,14 +3344,6 @@ The unit Property is a read-only value that is provided by the server.
 When range is omitted the default is 0 to +MAXFLOAT.""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "WeightResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/WeightResURI.swagger.json> .
-
-ocf:WeightResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "weightresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets the Weight.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "WeightResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/WeightResURI.swagger.json> .
 
 ocf:VehicleConnector a skos:Concept, ontolex:LexicalConcept;
@@ -3769,15 +3392,6 @@ ocf:BrewingResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:definition "This Resource describes the attributes associated with brewing. This resource is used for configuration only. The Operation of the Device is handled independently of this Resource. The amount requested is in ml. The strength of a brewed drink is an integer, the range of which may be enforced by the presence of a strengthrange Property.";
   skos:inScheme ocf:scheme;
   skos:prefLabel "BrewingResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BrewingResURI.swagger.json> .
-
-ocf:BrewingResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "brewingresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets the brewing values
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "BrewingResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BrewingResURI.swagger.json> .
 
 <http://purl.org/wot-catalogue/ocf#CircuitBreaker(IEC61850)> a skos:Concept, ontolex:LexicalConcept;
@@ -3884,15 +3498,6 @@ This Resource may provide multiple sensitivity levels (>2). NumberofZoneSensitiv
   skos:prefLabel "IASZoneInfoResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/IASZoneInfoResURI.swagger.json> .
 
-ocf:IASZoneInfoResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "iaszoneinforesuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets the current sensitivity level of the IASZone.
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "IASZoneInfoResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/IASZoneInfoResURI.swagger.json> .
-
 ocf:BloodPressure a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "blood pressure";
   skos:broader ocf:SwaggerAPI;
@@ -3949,14 +3554,6 @@ A state of \"faulted\" means the switch is faulted, in such a state an UPDATE is
   skos:prefLabel "FaultSwitchResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/FaultInterrupterResURI.swagger.json> .
 
-ocf:FaultSwitchResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "faultswitchresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Setting a fault interrupter to a faulted state requires a manual human intervention, thus it is not allowed in an UPDATE. When in a faulted state it is not possible to reset to a non-faulted state without also manual human intervention.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "FaultSwitchResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/FaultInterrupterResURI.swagger.json> .
-
 ocf:WindowCovering a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "window covering";
   skos:broader ocf:SwaggerAPI;
@@ -3981,15 +3578,6 @@ Velocity associated with lifting the window covering can be changed by updating 
 Ramp up/down times to reaching the velocity setting can be changed by updating Lift_Acceleration Time/Lift_Deceleration Time (0.1sec).""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "WindowCoveringResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/WindowCoveringResURI.swagger.json> .
-
-ocf:WindowCoveringResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "windowcoveringresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Update window covering settings.
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "WindowCoveringResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/WindowCoveringResURI.swagger.json> .
 
 ocf:ColourChroma a skos:Concept, ontolex:LexicalConcept;
@@ -4024,15 +3612,6 @@ The Property \"nct\" is the Mired colour temperature.
 The Resource provides the colour using chroma conventions.""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "example%2FColourChromaResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourChromaResURI.swagger.json> .
-
-ocf:example%2FColourChromaResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "example%2fcolourchromaresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets current colour chroma values
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "example%2FColourChromaResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourChromaResURI.swagger.json> .
 
 ocf:MuscleOxygenSaturation a skos:Concept, ontolex:LexicalConcept;
@@ -4113,14 +3692,6 @@ ocf:ContinuousGlucoseMeterCalibrateResURI-GET a skos:Concept, ontolex:LexicalCon
   skos:prefLabel "ContinuousGlucoseMeterCalibrateResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ContinuousGlucoseMeterCalibrate.swagger.json> .
 
-ocf:ContinuousGlucoseMeterCalibrateResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "continuousglucosemetercalibrateresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "This Resource describes the Properties associated with Calibrate for Continuous Glucose Meter (CGM).";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "ContinuousGlucoseMeterCalibrateResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ContinuousGlucoseMeterCalibrate.swagger.json> .
-
 ocf:LockCode a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "lock code";
   skos:broader ocf:SwaggerAPI;
@@ -4145,14 +3716,6 @@ The Property \"lockCodeList\" is an array of possible codes that may be associat
 The codes are all presented as strings.""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "LockCodeResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/LockCodeResURI.swagger.json> .
-
-ocf:LockCodeResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "lockcoderesuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Updates the current lock code values. e.g. all value in the property \"lockCodeList\"";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "LockCodeResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/LockCodeResURI.swagger.json> .
 
 ocf:OpticalRFIDTag a skos:Concept, ontolex:LexicalConcept;
@@ -4263,15 +3826,6 @@ A value of 0 means total dimming; a value of 100 means no dimming.""";
   skos:prefLabel "DimmingResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DimmingResURI.swagger.json> .
 
-ocf:DimmingResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "dimmingresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets the desired dimming level.
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "DimmingResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DimmingResURI.swagger.json> .
-
 ocf:Lock a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "lock";
   skos:broader ocf:SwaggerAPI;
@@ -4296,15 +3850,6 @@ The Property \"lockState\" is a string. The value 'Locked' indicates that the do
 The value 'Unlocked' indicates that the door is Unlocked.""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "LockStatusResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/LockStatusResURI.swagger.json> .
-
-ocf:LockStatusResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "lockstatusresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets the current lock state.
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "LockStatusResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/LockStatusResURI.swagger.json> .
 
 <http://purl.org/wot-catalogue/ocf#EnergyOverload/CircuitBreaker> a skos:Concept,
@@ -4360,14 +3905,6 @@ ocf:SettingsSystemResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:prefLabel "SettingsSystemResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsSystem.swagger.json> .
 
-ocf:SettingsSystemResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "settingssystemresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Changes the device system settings.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "SettingsSystemResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsSystem.swagger.json> .
-
 ocf:Movement a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "movement";
   skos:broader ocf:SwaggerAPI;
@@ -4396,14 +3933,6 @@ The Property \"movementModifier\" is a modifier to the movement value (e.g. \"sp
   skos:prefLabel "MovementResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MovementResURI.swagger.json> .
 
-ocf:MovementResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "movementresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets the current device movement.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "MovementResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MovementResURI.swagger.json> .
-
 ocf:BodyCompositionAnalyserAtomicMeasurement a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "body composition analyser atomic measurement";
   skos:broader ocf:SwaggerAPI;
@@ -4421,22 +3950,6 @@ ocf:BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.b a skos:Concept, ontolex:Lexi
   skos:related ocf:BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.b-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyCompositionAnalyserAM.swagger.json> .
 
-ocf:BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "bodycompositionanalyseramresuri%3fif%3doic.if.baseline";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.baseline";
-  skos:related ocf:BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.baseline-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyCompositionAnalyserAM.swagger.json> .
-
-ocf:BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "bodycompositionanalyseramresuri%3fif%3doic.if.ll";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.ll";
-  skos:related ocf:BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.ll-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyCompositionAnalyserAM.swagger.json> .
-
 ocf:BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "bodycompositionanalyseramresuri%3fif%3doic.if.b-get";
   skos:broader ocf:GetOperation;
@@ -4446,6 +3959,14 @@ The Resource is an Atomic Measurement of weight (oic.r.weight), body mass index 
   skos:prefLabel "BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.b-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyCompositionAnalyserAM.swagger.json> .
 
+ocf:BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "bodycompositionanalyseramresuri%3fif%3doic.if.baseline";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.baseline";
+  skos:related ocf:BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.baseline-GET;
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyCompositionAnalyserAM.swagger.json> .
+
 ocf:BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "bodycompositionanalyseramresuri%3fif%3doic.if.baseline-get";
   skos:broader ocf:GetOperation;
@@ -4453,6 +3974,14 @@ ocf:BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, o
 The Resource is an Atomic Measurement of weight (oic.r.weight), body mass index (BMI) (oic.r.bmi), height (oic.r.height), body fat (oic.r.body.fat), body water (oic.r.body.water), body soft lean mass (oic.r.body.slm), body fat free mass (oic.r.body.ffm), observed time (oic.r.time.stamp), and user id (oic.r.userid).""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.baseline-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyCompositionAnalyserAM.swagger.json> .
+
+ocf:BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "bodycompositionanalyseramresuri%3fif%3doic.if.ll";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.ll";
+  skos:related ocf:BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.ll-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BodyCompositionAnalyserAM.swagger.json> .
 
 ocf:BodyCompositionAnalyserAMResURI%3Fif%3Doic.if.ll-GET a skos:Concept, ontolex:LexicalConcept;
@@ -4493,14 +4022,6 @@ The Resource provides the current DRLC action that is being applied.
 A duration of 0 (zero) means that no DRLC is currently active.""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "DRLCResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DRLCResURI.swagger.json> .
-
-ocf:DRLCResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "drlcresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Provides the DRLC action to be applied to the device or updates an existing action.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "DRLCResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DRLCResURI.swagger.json> .
 
 ocf:Torque a skos:Concept, ontolex:LexicalConcept;
@@ -4547,22 +4068,6 @@ ocf:ActivityTrackerAMResURI%3Fif%3Doic.if.b a skos:Concept, ontolex:LexicalConce
   skos:related ocf:ActivityTrackerAMResURI%3Fif%3Doic.if.b-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ActivityTrackerAM.swagger.json> .
 
-ocf:ActivityTrackerAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "activitytrackeramresuri%3fif%3doic.if.baseline";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "ActivityTrackerAMResURI%3Fif%3Doic.if.baseline";
-  skos:related ocf:ActivityTrackerAMResURI%3Fif%3Doic.if.baseline-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ActivityTrackerAM.swagger.json> .
-
-ocf:ActivityTrackerAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "activitytrackeramresuri%3fif%3doic.if.ll";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "ActivityTrackerAMResURI%3Fif%3Doic.if.ll";
-  skos:related ocf:ActivityTrackerAMResURI%3Fif%3Doic.if.ll-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ActivityTrackerAM.swagger.json> .
-
 ocf:ActivityTrackerAMResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "activitytrackeramresuri%3fif%3doic.if.b-get";
   skos:broader ocf:GetOperation;
@@ -4572,6 +4077,14 @@ ocf:ActivityTrackerAMResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalC
   skos:prefLabel "ActivityTrackerAMResURI%3Fif%3Doic.if.b-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ActivityTrackerAM.swagger.json> .
 
+ocf:ActivityTrackerAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "activitytrackeramresuri%3fif%3doic.if.baseline";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "ActivityTrackerAMResURI%3Fif%3Doic.if.baseline";
+  skos:related ocf:ActivityTrackerAMResURI%3Fif%3Doic.if.baseline-GET;
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ActivityTrackerAM.swagger.json> .
+
 ocf:ActivityTrackerAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "activitytrackeramresuri%3fif%3doic.if.baseline-get";
   skos:broader ocf:GetOperation;
@@ -4579,6 +4092,14 @@ ocf:ActivityTrackerAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:L
  The Resource is an Atomic Measurement of activity (\"oic.r.activity\"), heart rate (\"oic.r.heartrate\"), observed time (\"oic.r.time.stamp\"), and user ID (\"oic.r.userid\").""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "ActivityTrackerAMResURI%3Fif%3Doic.if.baseline-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ActivityTrackerAM.swagger.json> .
+
+ocf:ActivityTrackerAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "activitytrackeramresuri%3fif%3doic.if.ll";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "ActivityTrackerAMResURI%3Fif%3Doic.if.ll";
+  skos:related ocf:ActivityTrackerAMResURI%3Fif%3Doic.if.ll-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ActivityTrackerAM.swagger.json> .
 
 ocf:ActivityTrackerAMResURI%3Fif%3Doic.if.ll-GET a skos:Concept, ontolex:LexicalConcept;
@@ -4650,15 +4171,6 @@ The Properties \"stopTime\" and \"interval\" are mutually exclusive; they cannot
   skos:prefLabel "DelayDefrostResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DelayDefrostResURI.swagger.json> .
 
-ocf:DelayDefrostResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "delaydefrostresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Activates the desired Delay Defrost functions
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "DelayDefrostResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DelayDefrostResURI.swagger.json> .
-
 ocf:DeviceSettingsAccessibilityResourceType a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "device settings accessibility resource type";
   skos:broader ocf:SwaggerAPI;
@@ -4683,14 +4195,6 @@ ocf:SettingsAccessibilityResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:prefLabel "SettingsAccessibilityResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsAccessibility.swagger.json> .
 
-ocf:SettingsAccessibilityResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "settingsaccessibilityresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Changes the device accessibility settings.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "SettingsAccessibilityResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsAccessibility.swagger.json> .
-
 ocf:UserInfoforApplicationLayer a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "user info for application layer";
   skos:broader ocf:SwaggerAPI;
@@ -4713,14 +4217,6 @@ ocf:UserInfoResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:definition "This Resource defines credentials for user to application layer login. This does not relate to OCF Device to Device or Device to Cloud authentication. The username, password and token are strings.";
   skos:inScheme ocf:scheme;
   skos:prefLabel "UserInfoResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/UserInfoResURI.swagger.json> .
-
-ocf:UserInfoResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "userinforesuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "This Resource defines credentials for user to application layer login. This does not relate to OCF Device to Device or Device to Cloud authentication. The username, password and token are strings.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "UserInfoResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/UserInfoResURI.swagger.json> .
 
 ocf:Brightness a skos:Concept, ontolex:LexicalConcept;
@@ -4750,15 +4246,6 @@ A brightness of 100 is the maximum for the resource.""";
   skos:prefLabel "BrightnessResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BrightnessResURI.swagger.json> .
 
-ocf:BrightnessResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "brightnessresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets the desired brightness level.
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "BrightnessResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BrightnessResURI.swagger.json> .
-
 ocf:Humidity a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "humidity";
   skos:broader ocf:SwaggerAPI;
@@ -4783,14 +4270,6 @@ The Property \"humidity\" is an integer describing the percentage measured relat
 The Property \"desiredHumidity\" is an integer showing the desired target relative humidity.""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "HumidityResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HumidityResURI.swagger.json> .
-
-ocf:HumidityResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "humidityresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets the desired relative humidity level.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "HumidityResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HumidityResURI.swagger.json> .
 
 ocf:ContextSampleLocationforGlucoseMeter a skos:Concept, ontolex:LexicalConcept;
@@ -4993,14 +4472,6 @@ ocf:SettingsSoundResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:prefLabel "SettingsSoundResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsSound.swagger.json> .
 
-ocf:SettingsSoundResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "settingssoundresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Changes the device sound settings.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "SettingsSoundResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsSound.swagger.json> .
-
 ocf:AtmosphericPressureSensor a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "atmospheric pressure sensor";
   skos:broader ocf:SwaggerAPI;
@@ -5052,15 +4523,6 @@ The foam strength is an integer, the range of which may be enforced by the prese
   skos:prefLabel "FoamingResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/FoamingResURI.swagger.json> .
 
-ocf:FoamingResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "foamingresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets foaming value
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "FoamingResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/FoamingResURI.swagger.json> .
-
 ocf:OpticalRFIDStation a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "optical rfid station";
   skos:broader ocf:SwaggerAPI;
@@ -5087,14 +4549,6 @@ The Property \"actionrequest\" represent necessary actions like the isolation of
   skos:prefLabel "ORFIDStationResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ORFIDStationResURI.swagger.json> .
 
-ocf:ORFIDStationResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "orfidstationresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets necessary action in accordance with Tag Information.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "ORFIDStationResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ORFIDStationResURI.swagger.json> .
-
 ocf:HeartRateMonitorAtomicMeasurementRepresentation a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "heart rate monitor atomic measurement representation";
   skos:broader ocf:SwaggerAPI;
@@ -5112,22 +4566,6 @@ ocf:HeartRateMonitorAMResURI%3Fif%3Doic.if.b a skos:Concept, ontolex:LexicalConc
   skos:related ocf:HeartRateMonitorAMResURI%3Fif%3Doic.if.b-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HeartRateMonitorAM.swagger.json> .
 
-ocf:HeartRateMonitorAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "heartratemonitoramresuri%3fif%3doic.if.baseline";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "HeartRateMonitorAMResURI%3Fif%3Doic.if.baseline";
-  skos:related ocf:HeartRateMonitorAMResURI%3Fif%3Doic.if.baseline-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HeartRateMonitorAM.swagger.json> .
-
-ocf:HeartRateMonitorAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "heartratemonitoramresuri%3fif%3doic.if.ll";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "HeartRateMonitorAMResURI%3Fif%3Doic.if.ll";
-  skos:related ocf:HeartRateMonitorAMResURI%3Fif%3Doic.if.ll-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HeartRateMonitorAM.swagger.json> .
-
 ocf:HeartRateMonitorAMResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "heartratemonitoramresuri%3fif%3doic.if.b-get";
   skos:broader ocf:GetOperation;
@@ -5137,6 +4575,14 @@ ocf:HeartRateMonitorAMResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:Lexical
   skos:prefLabel "HeartRateMonitorAMResURI%3Fif%3Doic.if.b-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HeartRateMonitorAM.swagger.json> .
 
+ocf:HeartRateMonitorAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "heartratemonitoramresuri%3fif%3doic.if.baseline";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "HeartRateMonitorAMResURI%3Fif%3Doic.if.baseline";
+  skos:related ocf:HeartRateMonitorAMResURI%3Fif%3Doic.if.baseline-GET;
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HeartRateMonitorAM.swagger.json> .
+
 ocf:HeartRateMonitorAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "heartratemonitoramresuri%3fif%3doic.if.baseline-get";
   skos:broader ocf:GetOperation;
@@ -5144,6 +4590,14 @@ ocf:HeartRateMonitorAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:
  The Resource is an Atomic Measurement of heart rate (\"oic.r.heartrate\"), observed time (\"oic.r.time.stamp\"), and user ID (\"oic.r.userid\").""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "HeartRateMonitorAMResURI%3Fif%3Doic.if.baseline-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HeartRateMonitorAM.swagger.json> .
+
+ocf:HeartRateMonitorAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "heartratemonitoramresuri%3fif%3doic.if.ll";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "HeartRateMonitorAMResURI%3Fif%3Doic.if.ll";
+  skos:related ocf:HeartRateMonitorAMResURI%3Fif%3Doic.if.ll-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HeartRateMonitorAM.swagger.json> .
 
 ocf:HeartRateMonitorAMResURI%3Fif%3Doic.if.ll-GET a skos:Concept, ontolex:LexicalConcept;
@@ -5172,22 +4626,6 @@ ocf:GasUsageResURI%3Fif%3Doic.if.b a skos:Concept, ontolex:LexicalConcept;
   skos:related ocf:GasUsageResURI%3Fif%3Doic.if.b-GET, ocf:GasUsageResURI%3Fif%3Doic.if.b-POST;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GasUsageResURI.swagger.json> .
 
-ocf:GasUsageResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "gasusageresuri%3fif%3doic.if.baseline";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "GasUsageResURI%3Fif%3Doic.if.baseline";
-  skos:related ocf:GasUsageResURI%3Fif%3Doic.if.baseline-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GasUsageResURI.swagger.json> .
-
-ocf:GasUsageResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "gasusageresuri%3fif%3doic.if.ll";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "GasUsageResURI%3Fif%3Doic.if.ll";
-  skos:related ocf:GasUsageResURI%3Fif%3Doic.if.ll-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GasUsageResURI.swagger.json> .
-
 ocf:GasUsageResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "gasusageresuri%3fif%3doic.if.b-get";
   skos:broader ocf:GetOperation;
@@ -5200,13 +4638,12 @@ The Resource is a Collection of:
   skos:prefLabel "GasUsageResURI%3Fif%3Doic.if.b-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GasUsageResURI.swagger.json> .
 
-ocf:GasUsageResURI%3Fif%3Doic.if.b-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "gasusageresuri%3fif%3doic.if.b-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets the current time period. A Client may also post directly to the exposed URL for the Time Period Resource.
-""";
+ocf:GasUsageResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "gasusageresuri%3fif%3doic.if.baseline";
+  skos:broader ocf:Path;
   skos:inScheme ocf:scheme;
-  skos:prefLabel "GasUsageResURI%3Fif%3Doic.if.b-POST";
+  skos:prefLabel "GasUsageResURI%3Fif%3Doic.if.baseline";
+  skos:related ocf:GasUsageResURI%3Fif%3Doic.if.baseline-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GasUsageResURI.swagger.json> .
 
 ocf:GasUsageResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConcept;
@@ -5219,6 +4656,14 @@ The Resource is a Collection of:
 """;
   skos:inScheme ocf:scheme;
   skos:prefLabel "GasUsageResURI%3Fif%3Doic.if.baseline-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GasUsageResURI.swagger.json> .
+
+ocf:GasUsageResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "gasusageresuri%3fif%3doic.if.ll";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "GasUsageResURI%3Fif%3Doic.if.ll";
+  skos:related ocf:GasUsageResURI%3Fif%3Doic.if.ll-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GasUsageResURI.swagger.json> .
 
 ocf:GasUsageResURI%3Fif%3Doic.if.ll-GET a skos:Concept, ontolex:LexicalConcept;
@@ -5265,14 +4710,6 @@ The Property \"state\" describes a state of time interval. This property must ha
 The Resource defines a time period for information retrieval, action or other behaviour.""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "TimePeriodResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/TimePeriodResURI.swagger.json> .
-
-ocf:TimePeriodResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "timeperiodresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets or updates a time period for information retrieval, action or other behavior.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "TimePeriodResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/TimePeriodResURI.swagger.json> .
 
 ocf:UserID a skos:Concept, ontolex:LexicalConcept;
@@ -5351,14 +4788,6 @@ ocf:MediaTextResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:prefLabel "MediaTextResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaTextResURI.swagger.json> .
 
-ocf:MediaTextResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "mediatextresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets the Media Text properties.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "MediaTextResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaTextResURI.swagger.json> .
-
 ocf:PulsatileCharacteristicforPulseOximeter a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "pulsatile characteristic for pulse oximeter";
   skos:broader ocf:SwaggerAPI;
@@ -5429,22 +4858,6 @@ ocf:AirFlowControlResURI%3Fif%3Doic.if.b a skos:Concept, ontolex:LexicalConcept;
   skos:related ocf:AirFlowControlResURI%3Fif%3Doic.if.b-GET, ocf:AirFlowControlResURI%3Fif%3Doic.if.b-POST;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirFlowControlResURI.swagger.json> .
 
-ocf:AirFlowControlResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "airflowcontrolresuri%3fif%3doic.if.baseline";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "AirFlowControlResURI%3Fif%3Doic.if.baseline";
-  skos:related ocf:AirFlowControlResURI%3Fif%3Doic.if.baseline-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirFlowControlResURI.swagger.json> .
-
-ocf:AirFlowControlResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "airflowcontrolresuri%3fif%3doic.if.ll";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "AirFlowControlResURI%3Fif%3Doic.if.ll";
-  skos:related ocf:AirFlowControlResURI%3Fif%3Doic.if.ll-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirFlowControlResURI.swagger.json> .
-
 ocf:AirFlowControlResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "airflowcontrolresuri%3fif%3doic.if.b-get";
   skos:broader ocf:GetOperation;
@@ -5458,13 +4871,12 @@ The Resource is a Collection of:
   skos:prefLabel "AirFlowControlResURI%3Fif%3Doic.if.b-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirFlowControlResURI.swagger.json> .
 
-ocf:AirFlowControlResURI%3Fif%3Doic.if.b-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "airflowcontrolresuri%3fif%3doic.if.b-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets the current air flow control values using the batch OCF Interface
-""";
+ocf:AirFlowControlResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "airflowcontrolresuri%3fif%3doic.if.baseline";
+  skos:broader ocf:Path;
   skos:inScheme ocf:scheme;
-  skos:prefLabel "AirFlowControlResURI%3Fif%3Doic.if.b-POST";
+  skos:prefLabel "AirFlowControlResURI%3Fif%3Doic.if.baseline";
+  skos:related ocf:AirFlowControlResURI%3Fif%3Doic.if.baseline-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirFlowControlResURI.swagger.json> .
 
 ocf:AirFlowControlResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConcept;
@@ -5478,6 +4890,14 @@ The Resource is a Collection of:
 """;
   skos:inScheme ocf:scheme;
   skos:prefLabel "AirFlowControlResURI%3Fif%3Doic.if.baseline-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirFlowControlResURI.swagger.json> .
+
+ocf:AirFlowControlResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "airflowcontrolresuri%3fif%3doic.if.ll";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "AirFlowControlResURI%3Fif%3Doic.if.ll";
+  skos:related ocf:AirFlowControlResURI%3Fif%3Doic.if.ll-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirFlowControlResURI.swagger.json> .
 
 ocf:AirFlowControlResURI%3Fif%3Doic.if.ll-GET a skos:Concept, ontolex:LexicalConcept;
@@ -5547,17 +4967,6 @@ At least one of the listed Properties shall be present in a Resource Instance.""
   skos:prefLabel "RefrigerationResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/RefrigerationResURI.swagger.json> .
 
-ocf:RefrigerationResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "refrigerationresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Activates the desired Refrigeration functions.
-Suported values are \"rapidFreeze\", \"rapidCool\" and \"defrost\".
-At least on of the supported values shall be provided.
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "RefrigerationResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/RefrigerationResURI.swagger.json> .
-
 ocf:GenericSensor a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "generic sensor";
   skos:broader ocf:SwaggerAPI;
@@ -5607,14 +5016,6 @@ ocf:AlarmResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:definition "This Resource describes the Properties associated with alarm status.";
   skos:inScheme ocf:scheme;
   skos:prefLabel "AlarmResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/Alarm.swagger.json> .
-
-ocf:AlarmResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "alarmresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "This Resource describes the Properties associated with alarm status.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "AlarmResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/Alarm.swagger.json> .
 
 ocf:ContextCarbohydratesforGlucoseMeter a skos:Concept, ontolex:LexicalConcept;
@@ -5756,15 +5157,6 @@ The Resource provides the colour using colour space coordinates.
   skos:prefLabel "example%2FColourSpaceCoordinatesResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourSpaceCoordinatesResURI.swagger.json> .
 
-ocf:example%2FColourSpaceCoordinatesResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "example%2fcolourspacecoordinatesresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets current colour space coordinates
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "example%2FColourSpaceCoordinatesResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourSpaceCoordinatesResURI.swagger.json> .
-
 ocf:Door a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "door";
   skos:broader ocf:SwaggerAPI;
@@ -5794,18 +5186,6 @@ The openAlarm value 'false' indicates that open alarm is not active.
 retrieves the state of the Door.""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "DoorResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DoorResURI.swagger.json> .
-
-ocf:DoorResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "doorresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets the current Door properties.
-The only property that can be set as part of an update operation is
-  the openAlarm.
-This can be made active (true) or inactive (false)
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "DoorResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DoorResURI.swagger.json> .
 
 ocf:GenericMeasurementSensor a skos:Concept, ontolex:LexicalConcept;
@@ -5890,14 +5270,6 @@ When range is omitted the default is 0 to +MAXFLOAT.""";
   skos:prefLabel "HeightResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HeightResURI.swagger.json> .
 
-ocf:HeightResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "heightresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets the height.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "HeightResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HeightResURI.swagger.json> .
-
 ocf:DALIConfiguration a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "dali configuration";
   skos:broader ocf:SwaggerAPI;
@@ -5926,15 +5298,6 @@ ocf:daliconf-GET a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DaliConfig.swagger.json>,
     <https://github.com/OpenInterConnect/IoTDataModels/raw/master/dali.swagger.json> .
 
-ocf:daliconf-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "daliconf-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "The POST can be used to set the bus identification or to issue an DALI FF frame. The command can be issued as Multicast (SSM) or as unicast. The Multicast command will have no response, the unicast command can have a BF response.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "daliconf-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DaliConfig.swagger.json>,
-    <https://github.com/OpenInterConnect/IoTDataModels/raw/master/dali.swagger.json> .
-
 ocf:SleepMonitorAtomicMeasurementBatchRepresentation a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "sleep monitor atomic measurement batch representation";
   skos:broader ocf:SwaggerAPI;
@@ -5952,22 +5315,6 @@ ocf:SleepMonitorAMResURI%3Fif%3Doic.if.b a skos:Concept, ontolex:LexicalConcept;
   skos:related ocf:SleepMonitorAMResURI%3Fif%3Doic.if.b-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SleepMonitorAM.swagger.json> .
 
-ocf:SleepMonitorAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "sleepmonitoramresuri%3fif%3doic.if.baseline";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "SleepMonitorAMResURI%3Fif%3Doic.if.baseline";
-  skos:related ocf:SleepMonitorAMResURI%3Fif%3Doic.if.baseline-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SleepMonitorAM.swagger.json> .
-
-ocf:SleepMonitorAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "sleepmonitoramresuri%3fif%3doic.if.ll";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "SleepMonitorAMResURI%3Fif%3Doic.if.ll";
-  skos:related ocf:SleepMonitorAMResURI%3Fif%3Doic.if.ll-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SleepMonitorAM.swagger.json> .
-
 ocf:SleepMonitorAMResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "sleepmonitoramresuri%3fif%3doic.if.b-get";
   skos:broader ocf:GetOperation;
@@ -5978,6 +5325,14 @@ Sleep shows the time spent in each of the sleep stages (awake, nrem1, nrem2, nre
   skos:prefLabel "SleepMonitorAMResURI%3Fif%3Doic.if.b-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SleepMonitorAM.swagger.json> .
 
+ocf:SleepMonitorAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "sleepmonitoramresuri%3fif%3doic.if.baseline";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "SleepMonitorAMResURI%3Fif%3Doic.if.baseline";
+  skos:related ocf:SleepMonitorAMResURI%3Fif%3Doic.if.baseline-GET;
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SleepMonitorAM.swagger.json> .
+
 ocf:SleepMonitorAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "sleepmonitoramresuri%3fif%3doic.if.baseline-get";
   skos:broader ocf:GetOperation;
@@ -5986,6 +5341,14 @@ The Resource is an Atomic Measurement of sleep (oic.r.sleep).
 Sleep shows the time spent in each of the sleep stages (awake, nrem1, nrem2, nrem3, nrem4, rem, light sleep, deep sleep), along with a sleep score indicating the quality of sleep.""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "SleepMonitorAMResURI%3Fif%3Doic.if.baseline-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SleepMonitorAM.swagger.json> .
+
+ocf:SleepMonitorAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "sleepmonitoramresuri%3fif%3doic.if.ll";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "SleepMonitorAMResURI%3Fif%3Doic.if.ll";
+  skos:related ocf:SleepMonitorAMResURI%3Fif%3Doic.if.ll-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SleepMonitorAM.swagger.json> .
 
 ocf:SleepMonitorAMResURI%3Fif%3Doic.if.ll-GET a skos:Concept, ontolex:LexicalConcept;
@@ -6027,15 +5390,6 @@ The Property \"status\" is a boolean that determines if the specific source inst
  A status of false means that the source instance is not selected.""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "mediaSourceResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/mediaSourceResURI.swagger.json> .
-
-ocf:mediaSourceResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "mediasourceresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Changes the status of the source.
-Allows changes of the \"sourceName\" and the \"status\".""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "mediaSourceResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/mediaSourceResURI.swagger.json> .
 
 ocf:CalorificValue a skos:Concept, ontolex:LexicalConcept;
@@ -6146,15 +5500,6 @@ The ramp time of 0ms indicates the minimal delay possible by the implementation.
   skos:prefLabel "RampTimeResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/RampTimeResURI.swagger.json> .
 
-ocf:RampTimeResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "ramptimeresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """Sets the current RampTime.
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "RampTimeResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/RampTimeResURI.swagger.json> .
-
 ocf:ActivityCount a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "activity count";
   skos:broader ocf:SwaggerAPI;
@@ -6182,14 +5527,6 @@ The Property \"count\" is an integer representing either the current count or go
   skos:prefLabel "ActivityCountResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ActivityCountResURI.swagger.json> .
 
-ocf:ActivityCountResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "activitycountresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets the \"count\" target.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "ActivityCountResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ActivityCountResURI.swagger.json> .
-
 ocf:BloodPressureMonitorAtomicMeasurement a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "blood pressure monitor atomic measurement";
   skos:broader ocf:SwaggerAPI;
@@ -6207,22 +5544,6 @@ ocf:BloodPressureMonitorAMResURI%3Fif%3Doic.if.b a skos:Concept, ontolex:Lexical
   skos:related ocf:BloodPressureMonitorAMResURI%3Fif%3Doic.if.b-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BloodPressureMonitorAMResURI.swagger.json> .
 
-ocf:BloodPressureMonitorAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "bloodpressuremonitoramresuri%3fif%3doic.if.baseline";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "BloodPressureMonitorAMResURI%3Fif%3Doic.if.baseline";
-  skos:related ocf:BloodPressureMonitorAMResURI%3Fif%3Doic.if.baseline-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BloodPressureMonitorAMResURI.swagger.json> .
-
-ocf:BloodPressureMonitorAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "bloodpressuremonitoramresuri%3fif%3doic.if.ll";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "BloodPressureMonitorAMResURI%3Fif%3Doic.if.ll";
-  skos:related ocf:BloodPressureMonitorAMResURI%3Fif%3Doic.if.ll-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BloodPressureMonitorAMResURI.swagger.json> .
-
 ocf:BloodPressureMonitorAMResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "bloodpressuremonitoramresuri%3fif%3doic.if.b-get";
   skos:broader ocf:GetOperation;
@@ -6232,6 +5553,14 @@ The Resource is an Atomic Measurement of blood pressure (oic.r.blood.pressure), 
   skos:prefLabel "BloodPressureMonitorAMResURI%3Fif%3Doic.if.b-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BloodPressureMonitorAMResURI.swagger.json> .
 
+ocf:BloodPressureMonitorAMResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "bloodpressuremonitoramresuri%3fif%3doic.if.baseline";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "BloodPressureMonitorAMResURI%3Fif%3Doic.if.baseline";
+  skos:related ocf:BloodPressureMonitorAMResURI%3Fif%3Doic.if.baseline-GET;
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BloodPressureMonitorAMResURI.swagger.json> .
+
 ocf:BloodPressureMonitorAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "bloodpressuremonitoramresuri%3fif%3doic.if.baseline-get";
   skos:broader ocf:GetOperation;
@@ -6239,6 +5568,14 @@ ocf:BloodPressureMonitorAMResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, onto
 The Resource is an Atomic Measurement of blood pressure (oic.r.blood.pressure),  pulse rate (oic.r.pulserate), observed time (oic.r.time.stamp), and user id (oic.r.userid).""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "BloodPressureMonitorAMResURI%3Fif%3Doic.if.baseline-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BloodPressureMonitorAMResURI.swagger.json> .
+
+ocf:BloodPressureMonitorAMResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "bloodpressuremonitoramresuri%3fif%3doic.if.ll";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "BloodPressureMonitorAMResURI%3Fif%3Doic.if.ll";
+  skos:related ocf:BloodPressureMonitorAMResURI%3Fif%3Doic.if.ll-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BloodPressureMonitorAMResURI.swagger.json> .
 
 ocf:BloodPressureMonitorAMResURI%3Fif%3Doic.if.ll-GET a skos:Concept, ontolex:LexicalConcept;
@@ -6274,15 +5611,6 @@ ocf:KeyPadCharResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:prefLabel "KeyPadCharResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/KeyPadCharResURI.swagger.json> .
 
-ocf:KeyPadCharResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "keypadcharresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition """This Resource describes a char (0-9, *, #) which is selected on a number keypad.
-""";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "KeyPadCharResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/KeyPadCharResURI.swagger.json> .
-
 ocf:MediaImageResourceType a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "media image resource type";
   skos:broader ocf:SwaggerAPI;
@@ -6307,14 +5635,6 @@ ocf:MediaImageResURI-GET a skos:Concept, ontolex:LexicalConcept;
   skos:prefLabel "MediaImageResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaImageResURI.swagger.json> .
 
-ocf:MediaImageResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "mediaimageresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets the Media Image properties.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "MediaImageResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaImageResURI.swagger.json> .
-
 ocf:HeatingZoneCollection a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "heating zone collection";
   skos:broader ocf:SwaggerAPI;
@@ -6332,22 +5652,6 @@ ocf:HeatingZoneResURI%3Fif%3Doic.if.b a skos:Concept, ontolex:LexicalConcept;
   skos:related ocf:HeatingZoneResURI%3Fif%3Doic.if.b-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HeatingZoneBaselineResURI.swagger.json> .
 
-ocf:HeatingZoneResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "heatingzoneresuri%3fif%3doic.if.baseline";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "HeatingZoneResURI%3Fif%3Doic.if.baseline";
-  skos:related ocf:HeatingZoneResURI%3Fif%3Doic.if.baseline-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HeatingZoneBaselineResURI.swagger.json> .
-
-ocf:HeatingZoneResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "heatingzoneresuri%3fif%3doic.if.ll";
-  skos:broader ocf:Path;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "HeatingZoneResURI%3Fif%3Doic.if.ll";
-  skos:related ocf:HeatingZoneResURI%3Fif%3Doic.if.ll-GET;
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HeatingZoneBaselineResURI.swagger.json> .
-
 ocf:HeatingZoneResURI%3Fif%3Doic.if.b-GET a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "heatingzoneresuri%3fif%3doic.if.b-get";
   skos:broader ocf:GetOperation;
@@ -6357,6 +5661,14 @@ The resource is a Collection of instances of oic.r.heatingzone detailing the ind
 """;
   skos:inScheme ocf:scheme;
   skos:prefLabel "HeatingZoneResURI%3Fif%3Doic.if.b-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HeatingZoneBaselineResURI.swagger.json> .
+
+ocf:HeatingZoneResURI%3Fif%3Doic.if.baseline a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "heatingzoneresuri%3fif%3doic.if.baseline";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "HeatingZoneResURI%3Fif%3Doic.if.baseline";
+  skos:related ocf:HeatingZoneResURI%3Fif%3Doic.if.baseline-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HeatingZoneBaselineResURI.swagger.json> .
 
 ocf:HeatingZoneResURI%3Fif%3Doic.if.baseline-GET a skos:Concept, ontolex:LexicalConcept;
@@ -6369,6 +5681,14 @@ Retrieves the current heating zone information.
 """;
   skos:inScheme ocf:scheme;
   skos:prefLabel "HeatingZoneResURI%3Fif%3Doic.if.baseline-GET";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HeatingZoneBaselineResURI.swagger.json> .
+
+ocf:HeatingZoneResURI%3Fif%3Doic.if.ll a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "heatingzoneresuri%3fif%3doic.if.ll";
+  skos:broader ocf:Path;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "HeatingZoneResURI%3Fif%3Doic.if.ll";
+  skos:related ocf:HeatingZoneResURI%3Fif%3Doic.if.ll-GET;
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HeatingZoneBaselineResURI.swagger.json> .
 
 ocf:HeatingZoneResURI%3Fif%3Doic.if.ll-GET a skos:Concept, ontolex:LexicalConcept;
@@ -6433,14 +5753,6 @@ ocf:ContinuousGlucoseMeterThresholdResURI-GET a skos:Concept, ontolex:LexicalCon
   skos:prefLabel "ContinuousGlucoseMeterThresholdResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ContinuousGlucoseMeterThreshold.swagger.json> .
 
-ocf:ContinuousGlucoseMeterThresholdResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "continuousglucosemeterthresholdresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "This Resource describes the Properties associated with Threshold for Continuous Glucose Meter (CGM).";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "ContinuousGlucoseMeterThresholdResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ContinuousGlucoseMeterThreshold.swagger.json> .
-
 ocf:EcoMode a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "eco mode";
   skos:broader ocf:SwaggerAPI;
@@ -6467,13 +5779,6 @@ The adminforced Property indicates that the value has been set by another party 
 """;
   skos:inScheme ocf:scheme;
   skos:prefLabel "EcomodeResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/EcomodeResURI.swagger.json> .
-
-ocf:EcomodeResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "ecomoderesuri-post";
-  skos:broader ocf:PostOperation;
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "EcomodeResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/EcomodeResURI.swagger.json> .
 
 ocf:OpenLevel a skos:Concept, ontolex:LexicalConcept;
@@ -6506,14 +5811,6 @@ If Property \"step\" is present then it represents the increment between possibl
   skos:prefLabel "OpenLevelResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/OpenLevelResURI.swagger.json> .
 
-ocf:OpenLevelResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "openlevelresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "Sets the desired openLevel.";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "OpenLevelResURI-POST";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/OpenLevelResURI.swagger.json> .
-
 ocf:RestrictedSwitch a skos:Concept, ontolex:LexicalConcept;
   skos:altLabel "restricted switch";
   skos:broader ocf:SwaggerAPI;
@@ -6539,14 +5836,6 @@ A state of True means that the switch is turned on.
 A state of False means that the switch is turned off.""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "RestrictedSwitchResURI-GET";
-  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/RestrictedSwitchResURI.swagger.json> .
-
-ocf:RestrictedSwitchResURI-POST a skos:Concept, ontolex:LexicalConcept;
-  skos:altLabel "restrictedswitchresuri-post";
-  skos:broader ocf:PostOperation;
-  skos:definition "A request to set the state to true is not allowed in an UPDATE";
-  skos:inScheme ocf:scheme;
-  skos:prefLabel "RestrictedSwitchResURI-POST";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/RestrictedSwitchResURI.swagger.json> .
 
 ocf:MagneticFieldDirectionSensor a skos:Concept, ontolex:LexicalConcept;
@@ -6575,3 +5864,715 @@ Each of Hx, Hy and Hz are expressed in A/m (Amperes per metre).""";
   skos:inScheme ocf:scheme;
   skos:prefLabel "MagneticFieldDirectionResURI-GET";
   prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MagneticFieldDirectionResURI.swagger.json> .
+
+ocf:RemoteControlResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "remotecontrolresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Click the remote controller button to perform the actions desired by the user. If the key remains pressed, the POST will be repeated at 100ms intervals.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "RemoteControlResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/Remotecontrol.swagger.json> .
+
+ocf:MediaCoreResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "mediacoreresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets the Media Core properties.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "MediaCoreResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaCoreResURI.swagger.json> .
+
+ocf:MediaAudioResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "mediaaudioresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets the Media Audio properties.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "MediaAudioResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaAudioResURI.swagger.json> .
+
+ocf:LiquidLevelResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "liquidlevelresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets liquid level value.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "LiquidLevelResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/LiquidLevelResURI.swagger.json> .
+
+ocf:ValueConditionalResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "valueconditionalresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "ValueConditionalResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ValueConditionalResURI.swagger.json> .
+
+ocf:EnergyUsageResURI%3Fif%3Doic.if.b-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "energyusageresuri%3fif%3doic.if.b-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets the timer period of the query using the batch OCF Interface
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "EnergyUsageResURI%3Fif%3Doic.if.b-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/EnergyUsageResURI.swagger.json> .
+
+ocf:ColourRGBResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "colourrgbresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets the current colourRGB value
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "ColourRGBResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourRGBResURI.swagger.json> .
+
+ocf:SettingsPictureResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "settingspictureresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Changes the device picture settings.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "SettingsPictureResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsPicture.swagger.json> .
+
+ocf:ModeResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "moderesuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets the desired mode.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "ModeResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ModeResURI.swagger.json> .
+
+ocf:NightModeResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "nightmoderesuri-post";
+  skos:broader ocf:PostOperation;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "NightModeResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/NightModeResURI.swagger.json> .
+
+ocf:AutoFocusResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "autofocusresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "AutoFocusResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AutoFocusResURI.swagger.json> .
+
+ocf:mediaSourceInputResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "mediasourceinputresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Changes the status of the source(s).
+Allows changes of the sourceName and the status.""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "mediaSourceInputResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/mediaSourceInputResURI.swagger.json> .
+
+ocf:SensorPropsResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "sensorpropsresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets Sensor Property values
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "SensorPropsResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SensorPropsResURI.swagger.json> .
+
+ocf:example%2FColourTemperatureResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "example%2fcolourtemperatureresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets current colour temperature value
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "example%2FColourTemperatureResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourTemperatureResURI.swagger.json> .
+
+ocf:mediaSourceOutputResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "mediasourceoutputresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Changes the status of the source(s).
+Allows changes of the sourceName and the status.""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "mediaSourceOutputResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/mediaSourceOutputResURI.swagger.json> .
+
+ocf:mediaSourceListResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "mediasourcelistresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Changes the status of the source(s).
+Allows changes of the sourceName and the status.""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "mediaSourceListResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/mediaSourceListResURI.swagger.json> .
+
+ocf:OperationalStateResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "operationalstateresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets the desired operational or job state.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "OperationalStateResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/OperationalStateResURI.swagger.json> .
+
+ocf:SettingsSupportResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "settingssupportresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Changes the device support settings.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "SettingsSupportResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsSupport.swagger.json> .
+
+ocf:IceMakerResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "icemakerresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets the desired Ice Maker status.
+Only valid settings for \"status\" in a UPDATE shall be \"on\" or \"off\".""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "IceMakerResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/IceMakerResURI.swagger.json> .
+
+ocf:EnergyResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "energyresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets the desired energy values
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "EnergyResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/EnergyResURI.swagger.json> .
+
+ocf:GrinderResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "grinderresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets grinding values.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "GrinderResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GrinderResURI.swagger.json> .
+
+ocf:TemperatureResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "temperatureresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets the desired temperature value.
+If a \"unit\" is included and the server may not support the unit indicated the request will fail.
+If the units are omitted value is taken to be in C.""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "TemperatureResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/TemperatureResURI.swagger.json> .
+
+ocf:AirFlowResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "airflowresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "When \"automode\" is set to true, \"direction\" and \"speed\" are not utilized by the device.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "AirFlowResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirFlowResURI.swagger.json> .
+
+ocf:AudioResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "audioresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "AudioResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AudioResURI.swagger.json> .
+
+ocf:SelectableLevelsResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "selectablelevelsresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets the current level from the set \"availablelevels\".";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "SelectableLevelsResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SelectableLevelsResURI.swagger.json> .
+
+ocf:AutoWhiteBalanceResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "autowhitebalanceresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "AutoWhiteBalanceResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AutoWhiteBalanceResURI.swagger.json> .
+
+ocf:PanTiltZoomResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "pantiltzoomresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets the current pan, tilt and zoom value.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "PanTiltZoomResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/PanTiltZoomResURI.swagger.json> .
+
+ocf:ColourSaturationResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "coloursaturationresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "ColourSaturationResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourSaturationResURI.swagger.json> .
+
+ocf:BatteryResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "batteryresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets current battery values
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "BatteryResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BatteryResURI.swagger.json> .
+
+ocf:SettingsBroadcastingResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "settingsbroadcastingresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Changes the device broadcasting settings.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "SettingsBroadcastingResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsBroadcasting.swagger.json> .
+
+ocf:ClockResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "clockresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets the desired datetime.
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "ClockResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ClockResURI.swagger.json> .
+
+ocf:ContinuousGlucoseMeterSamplingIntervalResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "continuousglucosemetersamplingintervalresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "This Resource describes the Properties associated with Sampling Interval for Continuous Glucose Meter (CGM).";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "ContinuousGlucoseMeterSamplingIntervalResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ContinuousGlucoseMeterSamplingInterval.swagger.json> .
+
+ocf:SpeechTTSResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "speechttsresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Changes the utterance being rendered.
+Example shows a change in language selected.
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "SpeechTTSResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SpeechTTSResURI.swagger.json> .
+
+ocf:WaterInfoResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "waterinforesuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets the desired water type.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "WaterInfoResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/WaterInfoResURI.swagger.json> .
+
+ocf:MediaVideoResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "mediavideoresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets the Media Video properties.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "MediaVideoResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaVideoResURI.swagger.json> .
+
+ocf:IASZoneResURI%3Fif%3Doic.if.b-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "iaszoneresuri%3fif%3doic.if.b-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets the current sensitivity level of the IASZone.
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "IASZoneResURI%3Fif%3Doic.if.b-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/IASZoneCollectionResURI.swagger.json> .
+
+ocf:OpaqueDataResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "opaquedataresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "OpaqueDataResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/OpaqueDataResURI.swagger.json> .
+
+ocf:example%2FColourHueSaturationResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "example%2fcolourhuesaturationresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets current colour hue and saturation values.
+At least one of hue or saturation shall be provided in the payload.
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "example%2FColourHueSaturationResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourHueSaturationResURI.swagger.json> .
+
+ocf:CivicLocationResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "civiclocationresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Update or set Civic Location information.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "CivicLocationResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/CivicLocationResURI.swagger.json> .
+
+ocf:MediaResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "mediaresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "This is to change the URL that can be played back by the device. Note that some devices do not have the capability to set the URL to be played back";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "MediaResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaResURI.swagger.json> .
+
+ocf:TVappsResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "tvappsresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Launch or stop tv application that the user wants.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "TVappsResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/TVApps.swagger.json> .
+
+ocf:BaseResourceSchemaResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "baseresourceschemaresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "sets the read-write resource properties";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "BaseResourceSchemaResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BaseResourceSchemaResURI.swagger.json> .
+
+ocf:DeodorizationResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "deodorizationresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets the desired deodorization function state.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "DeodorizationResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DeodorizationResURI.swagger.json> .
+
+ocf:BinarySwitchResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "binaryswitchresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "BinarySwitchResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BinarySwitchResURI.swagger.json> .
+
+ocf:VendorListResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "vendorlistresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "changes the vendorList.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "VendorListResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/VendorListResURI.swagger.json> .
+
+ocf:WeightResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "weightresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets the Weight.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "WeightResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/WeightResURI.swagger.json> .
+
+ocf:BrewingResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "brewingresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets the brewing values
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "BrewingResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BrewingResURI.swagger.json> .
+
+ocf:IASZoneInfoResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "iaszoneinforesuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets the current sensitivity level of the IASZone.
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "IASZoneInfoResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/IASZoneInfoResURI.swagger.json> .
+
+ocf:FaultSwitchResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "faultswitchresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Setting a fault interrupter to a faulted state requires a manual human intervention, thus it is not allowed in an UPDATE. When in a faulted state it is not possible to reset to a non-faulted state without also manual human intervention.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "FaultSwitchResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/FaultInterrupterResURI.swagger.json> .
+
+ocf:WindowCoveringResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "windowcoveringresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Update window covering settings.
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "WindowCoveringResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/WindowCoveringResURI.swagger.json> .
+
+ocf:example%2FColourChromaResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "example%2fcolourchromaresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets current colour chroma values
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "example%2FColourChromaResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourChromaResURI.swagger.json> .
+
+ocf:ContinuousGlucoseMeterCalibrateResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "continuousglucosemetercalibrateresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "This Resource describes the Properties associated with Calibrate for Continuous Glucose Meter (CGM).";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "ContinuousGlucoseMeterCalibrateResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ContinuousGlucoseMeterCalibrate.swagger.json> .
+
+ocf:LockCodeResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "lockcoderesuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Updates the current lock code values. e.g. all value in the property \"lockCodeList\"";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "LockCodeResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/LockCodeResURI.swagger.json> .
+
+ocf:DimmingResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "dimmingresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets the desired dimming level.
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "DimmingResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DimmingResURI.swagger.json> .
+
+ocf:LockStatusResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "lockstatusresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets the current lock state.
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "LockStatusResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/LockStatusResURI.swagger.json> .
+
+ocf:SettingsSystemResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "settingssystemresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Changes the device system settings.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "SettingsSystemResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsSystem.swagger.json> .
+
+ocf:MovementResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "movementresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets the current device movement.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "MovementResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MovementResURI.swagger.json> .
+
+ocf:DRLCResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "drlcresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Provides the DRLC action to be applied to the device or updates an existing action.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "DRLCResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DRLCResURI.swagger.json> .
+
+ocf:DelayDefrostResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "delaydefrostresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Activates the desired Delay Defrost functions
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "DelayDefrostResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DelayDefrostResURI.swagger.json> .
+
+ocf:SettingsAccessibilityResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "settingsaccessibilityresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Changes the device accessibility settings.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "SettingsAccessibilityResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsAccessibility.swagger.json> .
+
+ocf:UserInfoResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "userinforesuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "This Resource defines credentials for user to application layer login. This does not relate to OCF Device to Device or Device to Cloud authentication. The username, password and token are strings.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "UserInfoResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/UserInfoResURI.swagger.json> .
+
+ocf:BrightnessResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "brightnessresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets the desired brightness level.
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "BrightnessResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/BrightnessResURI.swagger.json> .
+
+ocf:HumidityResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "humidityresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets the desired relative humidity level.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "HumidityResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HumidityResURI.swagger.json> .
+
+ocf:SettingsSoundResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "settingssoundresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Changes the device sound settings.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "SettingsSoundResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/SettingsSound.swagger.json> .
+
+ocf:FoamingResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "foamingresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets foaming value
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "FoamingResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/FoamingResURI.swagger.json> .
+
+ocf:ORFIDStationResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "orfidstationresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets necessary action in accordance with Tag Information.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "ORFIDStationResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ORFIDStationResURI.swagger.json> .
+
+ocf:GasUsageResURI%3Fif%3Doic.if.b-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "gasusageresuri%3fif%3doic.if.b-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets the current time period. A Client may also post directly to the exposed URL for the Time Period Resource.
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "GasUsageResURI%3Fif%3Doic.if.b-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/GasUsageResURI.swagger.json> .
+
+ocf:TimePeriodResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "timeperiodresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets or updates a time period for information retrieval, action or other behavior.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "TimePeriodResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/TimePeriodResURI.swagger.json> .
+
+ocf:MediaTextResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "mediatextresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets the Media Text properties.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "MediaTextResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaTextResURI.swagger.json> .
+
+ocf:AirFlowControlResURI%3Fif%3Doic.if.b-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "airflowcontrolresuri%3fif%3doic.if.b-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets the current air flow control values using the batch OCF Interface
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "AirFlowControlResURI%3Fif%3Doic.if.b-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/AirFlowControlResURI.swagger.json> .
+
+ocf:RefrigerationResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "refrigerationresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Activates the desired Refrigeration functions.
+Suported values are \"rapidFreeze\", \"rapidCool\" and \"defrost\".
+At least on of the supported values shall be provided.
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "RefrigerationResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/RefrigerationResURI.swagger.json> .
+
+ocf:AlarmResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "alarmresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "This Resource describes the Properties associated with alarm status.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "AlarmResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/Alarm.swagger.json> .
+
+ocf:example%2FColourSpaceCoordinatesResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "example%2fcolourspacecoordinatesresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets current colour space coordinates
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "example%2FColourSpaceCoordinatesResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ColourSpaceCoordinatesResURI.swagger.json> .
+
+ocf:DoorResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "doorresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets the current Door properties.
+The only property that can be set as part of an update operation is
+  the openAlarm.
+This can be made active (true) or inactive (false)
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "DoorResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DoorResURI.swagger.json> .
+
+ocf:HeightResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "heightresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets the height.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "HeightResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/HeightResURI.swagger.json> .
+
+ocf:daliconf-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "daliconf-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "The POST can be used to set the bus identification or to issue an DALI FF frame. The command can be issued as Multicast (SSM) or as unicast. The Multicast command will have no response, the unicast command can have a BF response.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "daliconf-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/DaliConfig.swagger.json>,
+    <https://github.com/OpenInterConnect/IoTDataModels/raw/master/dali.swagger.json> .
+
+ocf:mediaSourceResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "mediasourceresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Changes the status of the source.
+Allows changes of the \"sourceName\" and the \"status\".""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "mediaSourceResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/mediaSourceResURI.swagger.json> .
+
+ocf:RampTimeResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "ramptimeresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """Sets the current RampTime.
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "RampTimeResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/RampTimeResURI.swagger.json> .
+
+ocf:ActivityCountResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "activitycountresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets the \"count\" target.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "ActivityCountResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ActivityCountResURI.swagger.json> .
+
+ocf:KeyPadCharResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "keypadcharresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition """This Resource describes a char (0-9, *, #) which is selected on a number keypad.
+""";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "KeyPadCharResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/KeyPadCharResURI.swagger.json> .
+
+ocf:MediaImageResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "mediaimageresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets the Media Image properties.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "MediaImageResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/MediaImageResURI.swagger.json> .
+
+ocf:ContinuousGlucoseMeterThresholdResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "continuousglucosemeterthresholdresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "This Resource describes the Properties associated with Threshold for Continuous Glucose Meter (CGM).";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "ContinuousGlucoseMeterThresholdResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/ContinuousGlucoseMeterThreshold.swagger.json> .
+
+ocf:EcomodeResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "ecomoderesuri-post";
+  skos:broader ocf:PostOperation;
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "EcomodeResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/EcomodeResURI.swagger.json> .
+
+ocf:OpenLevelResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "openlevelresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "Sets the desired openLevel.";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "OpenLevelResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/OpenLevelResURI.swagger.json> .
+
+ocf:RestrictedSwitchResURI-POST a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "restrictedswitchresuri-post";
+  skos:broader ocf:PostOperation;
+  skos:definition "A request to set the state to true is not allowed in an UPDATE";
+  skos:inScheme ocf:scheme;
+  skos:prefLabel "RestrictedSwitchResURI-POST";
+  prov:wasDerivedFrom <https://github.com/OpenInterConnect/IoTDataModels/raw/master/RestrictedSwitchResURI.swagger.json> .

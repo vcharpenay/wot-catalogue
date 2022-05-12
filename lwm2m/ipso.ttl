@@ -325,6 +325,7 @@
 @prefix fn: <http://www.w3.org/2005/xpath-functions#> .
 @prefix haim: <http://purl.org/wot-catalogue/onem2m/haim#> .
 @prefix hgi: <http://homegatewayinitiative.org/xml/dal/3.0> .
+@prefix httpList: <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#> .
 @prefix ipso: <http://purl.org/wot-catalogue/lwm2m/ipso#> .
 @prefix lwm2m: <http://purl.org/wot-catalogue/lwm2m#> .
 @prefix ocf: <http://purl.org/wot-catalogue/ocf#> .
@@ -341,12 +342,12 @@
 
 ipso:collection a skos:Collection;
   skos:member ipso:3201, ipso:3202, ipso:3203, ipso:3300, ipso:3301, ipso:3303, ipso:3304,
-    ipso:3305, ipso:3200, ipso:3310, ipso:3312, ipso:3315, ipso:3320, ipso:3321, ipso:3322,
-    ipso:3323, ipso:3325, ipso:3327, ipso:3328, ipso:3330, ipso:3332, ipso:3326, ipso:3329,
-    ipso:3319, ipso:3317, ipso:3318, ipso:3308, ipso:3333, ipso:3334, ipso:3335, ipso:3336,
-    ipso:3337, ipso:3306, ipso:3338, ipso:3331, ipso:3324, ipso:3339, ipso:3340, ipso:3342,
-    ipso:3343, ipso:3316, ipso:3314, ipso:3311, ipso:3313, ipso:3341, ipso:3344, ipso:3345,
-    ipso:3346, ipso:3347, ipso:3348, ipso:3349, ipso:3350, ipso:3302, ipso:5500, ipso:5501;
+    ipso:3200, ipso:3305, ipso:3310, ipso:3312, ipso:3315, ipso:3320, ipso:3321, ipso:3322,
+    ipso:3323, ipso:3325, ipso:3327, ipso:3328, ipso:3330, ipso:3326, ipso:3329, ipso:3319,
+    ipso:3317, ipso:3318, ipso:3308, ipso:3332, ipso:3333, ipso:3334, ipso:3335, ipso:3336,
+    ipso:3306, ipso:3337, ipso:3331, ipso:3324, ipso:3338, ipso:3339, ipso:3340, ipso:3342,
+    ipso:3316, ipso:3314, ipso:3311, ipso:3313, ipso:3341, ipso:3343, ipso:3344, ipso:3345,
+    ipso:3346, ipso:3347, ipso:3348, ipso:3349, ipso:3302, ipso:3350, ipso:5500, ipso:5501;
   skos:definition "Objects registered by the IPSO alliance.";
   skos:altLabel "Internet Protocal for Smart Objects (IPSO)";
   skos:member ipso:5502, ipso:5503, ipso:5504, ipso:5505, ipso:5506, ipso:5507, ipso:5508,
@@ -375,17 +376,19 @@ ipso:3202 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3202.xml> .
 
 ipso:5600 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "analog input current value";
   skos:broader lwm2m:Resource;
   skos:definition "The current value of the analog input.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Analog Input Current Value";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3202.xml> .
 
 ipso:5601 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "min measured value";
   skos:broader lwm2m:Resource;
   skos:definition "The minimum value measured by the sensor since power ON or reset.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Min Measured Value";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3202.xml>,
@@ -414,9 +417,10 @@ ipso:5601 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3346.xml> .
 
 ipso:5602 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "max measured value";
   skos:broader lwm2m:Resource;
   skos:definition "The maximum value measured by the sensor since power ON or reset.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Max Measured Value";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3202.xml>,
@@ -445,9 +449,10 @@ ipso:5602 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3346.xml> .
 
 ipso:5603 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "min range value";
   skos:broader lwm2m:Resource;
   skos:definition "The minimum value that can be measured by the sensor.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Min Range Value";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3202.xml>,
@@ -477,9 +482,10 @@ ipso:5603 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3346.xml> .
 
 ipso:5604 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "max range value";
   skos:broader lwm2m:Resource;
   skos:definition "The maximum value that can be measured by the sensor.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Max Range Value";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3202.xml>,
@@ -509,9 +515,10 @@ ipso:5604 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3346.xml> .
 
 ipso:5750 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "application type";
   skos:broader lwm2m:Resource;
   skos:definition "The application type of the sensor or actuator as a string depending on the use case.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Application Type";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3200.xml>,
@@ -569,9 +576,10 @@ ipso:5750 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3350.xml> .
 
 ipso:5751 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "sensor type";
   skos:broader lwm2m:Resource;
   skos:definition "The type of the sensor (for instance PIR type).";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Sensor Type";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3200.xml>,
@@ -580,9 +588,10 @@ ipso:5751 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3302.xml> .
 
 ipso:5605 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "reset min and max measured values";
   skos:broader lwm2m:Resource;
   skos:definition "Reset the Min and Max Measured Values to Current Value.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Reset Min and Max Measured Values";
   skos:related lwm2m:E;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3202.xml>,
@@ -613,9 +622,10 @@ ipso:5605 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3346.xml> .
 
 ipso:5518 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "timestamp";
   skos:broader lwm2m:Resource;
   skos:definition "The timestamp of when the measurement was performed.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Timestamp";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3200.xml>,
@@ -665,9 +675,10 @@ ipso:5518 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3350.xml> .
 
 ipso:6050 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "fractional timestamp";
   skos:broader lwm2m:Resource;
   skos:definition "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms).";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Fractional Timestamp";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3200.xml>,
@@ -717,9 +728,10 @@ ipso:6050 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3350.xml> .
 
 ipso:6042 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "measurement quality indicator";
   skos:broader lwm2m:Resource;
   skos:definition "Measurement quality indicator reported by a smart sensor. 0: UNCHECKED No quality checks were done because they do not exist or can not be applied. 1: REJECTED WITH CERTAINTY The measured value is invalid. 2: REJECTED WITH PROBABILITY The measured value is likely invalid. 3: ACCEPTED BUT SUSPICIOUS The measured value is likely OK. 4: ACCEPTED The measured value is OK. 5-15: Reserved for future extensions. 16-23: Vendor specific measurement quality.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Measurement Quality Indicator";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3202.xml>,
@@ -757,9 +769,10 @@ ipso:6042 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3350.xml> .
 
 ipso:6049 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "measurement quality level";
   skos:broader lwm2m:Resource;
   skos:definition "Measurement quality level reported by a smart sensor. Quality level 100 means that the measurement has fully passed quality check algorithms. Smaller quality levels mean that quality has decreased and the measurement has only partially passed quality check algorithms. The smaller the quality level, the more caution should be used by the application when using the measurement. When the quality level is 0 it means that the measurement should certainly be rejected.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Measurement Quality Level";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3202.xml>,
@@ -808,42 +821,47 @@ ipso:3337 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3337.xml> .
 
 ipso:5536 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "current position";
   skos:broader lwm2m:Resource;
   skos:definition "Current position or desired position of a positioner actuator.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Current Position";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3337.xml> .
 
 ipso:5537 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "transition time";
   skos:broader lwm2m:Resource;
   skos:definition "The time expected to move the actuator to the new position.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Transition Time";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3337.xml> .
 
 ipso:5538 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "remaining time";
   skos:broader lwm2m:Resource;
   skos:definition "The time remaining in an operation.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Remaining Time";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3337.xml>,
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3340.xml> .
 
 ipso:5519 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "min limit";
   skos:broader lwm2m:Resource;
   skos:definition "The minimum value that can be measured by the sensor.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Min Limit";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3337.xml> .
 
 ipso:5520 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "max limit";
   skos:broader lwm2m:Resource;
   skos:definition "The maximum value that can be measured by the sensor.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Max Limit";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3337.xml> .
@@ -860,33 +878,37 @@ ipso:3336 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3336.xml> .
 
 ipso:6051 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "numeric latitude";
   skos:broader lwm2m:Resource;
   skos:definition "The decimal notation of latitude, e.g. -43.5723 (World Geodetic System 1984).";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Numeric Latitude";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3336.xml> .
 
 ipso:6052 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "numeric longitude";
   skos:broader lwm2m:Resource;
   skos:definition "The decimal notation of longitude, e.g. 153.21760 (World Geodetic System 1984).";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Numeric Longitude";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3336.xml> .
 
 ipso:6053 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "numeric uncertainty";
   skos:broader lwm2m:Resource;
   skos:definition "The accuracy of the position in meters.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Numeric Uncertainty";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3336.xml> .
 
 ipso:5705 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "compass direction";
   skos:broader lwm2m:Resource;
   skos:definition "The measured compass direction.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Compass Direction";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3314.xml>,
@@ -894,9 +916,10 @@ ipso:5705 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3336.xml> .
 
 ipso:5517 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "velocity";
   skos:broader lwm2m:Resource;
   skos:definition "The velocity of the device as defined in 3GPP 23.032 GAD specification. This set of values may not be available if the device is static.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Velocity";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3336.xml> .
@@ -923,33 +946,37 @@ ipso:3344 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3344.xml> .
 
 ipso:5532 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "increase input state";
   skos:broader lwm2m:Resource;
   skos:definition "Indicates an increase control action.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Increase Input State";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3344.xml> .
 
 ipso:5533 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "decrease input state";
   skos:broader lwm2m:Resource;
   skos:definition "Indicates a decrease control action.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Decrease Input State";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3344.xml> .
 
 ipso:5541 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "up counter";
   skos:broader lwm2m:Resource;
   skos:definition "Counts the number of times the increase control has been operated. Writing a 0 resets the counter.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Up Counter";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3344.xml> .
 
 ipso:5542 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "down counter";
   skos:broader lwm2m:Resource;
   skos:definition "Counts the times the decrease control has been operated. Writing a 0 resets the counter.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Down Counter";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3344.xml> .
@@ -964,17 +991,19 @@ ipso:3201 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3201.xml> .
 
 ipso:5550 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "digital output state";
   skos:broader lwm2m:Resource;
   skos:definition "The current state of a digital output.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Digital Output State";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3201.xml> .
 
 ipso:5551 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "digital output polarity";
   skos:broader lwm2m:Resource;
   skos:definition "The polarity of the digital output as a Boolean (False = Normal, True = Reversed).";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Digital Output Polarity";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3201.xml> .
@@ -991,9 +1020,10 @@ ipso:3328 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3328.xml> .
 
 ipso:5700 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "sensor value";
   skos:broader lwm2m:Resource;
   skos:definition "Last or Current Measured Value from the Sensor.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Sensor Value";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3300.xml>,
@@ -1020,9 +1050,10 @@ ipso:5700 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3346.xml> .
 
 ipso:5701 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "sensor units";
   skos:broader lwm2m:Resource;
   skos:definition "Measurement Units Definition.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Sensor Units";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3300.xml>,
@@ -1055,9 +1086,10 @@ ipso:5701 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3346.xml> .
 
 ipso:5821 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "current calibration";
   skos:broader lwm2m:Resource;
   skos:definition "Read or Write the current calibration coefficient.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Current Calibration";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml>,
@@ -1091,49 +1123,55 @@ ipso:3305 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml> .
 
 ipso:5800 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "instantaneous active power";
   skos:broader lwm2m:Resource;
   skos:definition "The current active power.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Instantaneous active power";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml> .
 
 ipso:5801 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "min measured active power";
   skos:broader lwm2m:Resource;
   skos:definition "The minimum active power measured by the sensor since it is ON.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Min Measured active power";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml> .
 
 ipso:5802 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "max measured active power";
   skos:broader lwm2m:Resource;
   skos:definition "The maximum active power measured by the sensor since it is ON.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Max Measured active power";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml> .
 
 ipso:5803 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "min range active power";
   skos:broader lwm2m:Resource;
   skos:definition "The minimum active power that can be measured by the sensor.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Min Range active power";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml> .
 
 ipso:5804 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "max range active power";
   skos:broader lwm2m:Resource;
   skos:definition "The maximum active power that can be measured by the sensor.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Max Range active power";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml> .
 
 ipso:5805 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "cumulative active power";
   skos:broader lwm2m:Resource;
   skos:definition "The cumulative active power since the last cumulative energy reset or device start.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Cumulative active power";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml>,
@@ -1141,73 +1179,82 @@ ipso:5805 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3312.xml> .
 
 ipso:5806 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "active power calibration";
   skos:broader lwm2m:Resource;
   skos:definition "Request an active power calibration by writing the value of a calibrated load.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Active Power Calibration";
   skos:related lwm2m:W;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml> .
 
 ipso:5810 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "instantaneous reactive power";
   skos:broader lwm2m:Resource;
   skos:definition "The current reactive power.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Instantaneous reactive power";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml> .
 
 ipso:5811 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "min measured reactive power";
   skos:broader lwm2m:Resource;
   skos:definition "The minimum reactive power measured by the sensor since it is ON.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Min Measured reactive power";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml> .
 
 ipso:5812 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "max measured reactive power";
   skos:broader lwm2m:Resource;
   skos:definition "The maximum reactive power measured by the sensor since it is ON.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Max Measured reactive power";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml> .
 
 ipso:5813 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "min range reactive power";
   skos:broader lwm2m:Resource;
   skos:definition "The minimum active power that can be measured by the sensor.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Min Range reactive power";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml> .
 
 ipso:5814 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "max range reactive power";
   skos:broader lwm2m:Resource;
   skos:definition "The maximum reactive power that can be measured by the sensor.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Max Range reactive power";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml> .
 
 ipso:5815 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "cumulative reactive power";
   skos:broader lwm2m:Resource;
   skos:definition "The cumulative reactive power since the last cumulative energy reset or device start.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Cumulative reactive power";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml> .
 
 ipso:5816 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "reactive power calibration";
   skos:broader lwm2m:Resource;
   skos:definition "Request a reactive power calibration by writing the value of a calibrated load.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Reactive Power Calibration";
   skos:related lwm2m:W;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml> .
 
 ipso:5820 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "power factor";
   skos:broader lwm2m:Resource;
   skos:definition "If applicable, the power factor of the current consumption.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Power factor";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml>,
@@ -1215,9 +1262,10 @@ ipso:5820 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3312.xml> .
 
 ipso:5822 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "reset cumulative energy";
   skos:broader lwm2m:Resource;
   skos:definition "Reset both cumulative active/reactive power.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Reset Cumulative energy";
   skos:related lwm2m:E;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml>,
@@ -1234,9 +1282,10 @@ ipso:3312 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3312.xml> .
 
 ipso:5850 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "on/off";
   skos:broader lwm2m:Resource;
   skos:definition "On/off control. Boolean value where True is On and False is Off.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "On/Off";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3306.xml>,
@@ -1247,9 +1296,10 @@ ipso:5850 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3350.xml> .
 
 ipso:5851 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "dimmer";
   skos:broader lwm2m:Resource;
   skos:definition "This resource represents a dimmer setting, which has an Integer value between 0 and 100 as a percentage.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Dimmer";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3306.xml>,
@@ -1257,9 +1307,10 @@ ipso:5851 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3312.xml> .
 
 ipso:5852 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "on time";
   skos:broader lwm2m:Resource;
   skos:definition "The time in seconds that the device has been on. Writing a value of 0 resets the counter.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "On time";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3306.xml>,
@@ -1299,9 +1350,10 @@ ipso:3203 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3203.xml> .
 
 ipso:5650 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "analog output current value";
   skos:broader lwm2m:Resource;
   skos:definition "The current value of the analog output.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Analog Output Current Value";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3203.xml> .
@@ -1317,9 +1369,10 @@ ipso:3342 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3342.xml> .
 
 ipso:5500 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "digital input state";
   skos:broader lwm2m:Resource;
   skos:definition "The current state of a digital input.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Digital Input State";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3200.xml>,
@@ -1329,9 +1382,10 @@ ipso:5500 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3347.xml> .
 
 ipso:5501 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "digital input counter";
   skos:broader lwm2m:Resource;
   skos:definition "The cumulative value of active state detected.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Digital Input Counter";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3200.xml>,
@@ -1343,9 +1397,10 @@ ipso:5501 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3350.xml> .
 
 ipso:5854 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "off time";
   skos:broader lwm2m:Resource;
   skos:definition "The time in seconds in the off state. Writing a value of 0 resets the counter.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Off Time";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3342.xml>,
@@ -1372,17 +1427,19 @@ ipso:3333 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3333.xml> .
 
 ipso:5506 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "current time";
   skos:broader lwm2m:Resource;
   skos:definition "Unix Time. A signed integer representing the number of seconds since Jan 1st, 1970 in the UTC time zone.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Current Time";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3333.xml> .
 
 ipso:5507 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "fractional time";
   skos:broader lwm2m:Resource;
   skos:definition "Fractional part of the time when sub-second precision is used (e.g., 0.23 for 230 ms).";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Fractional Time";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3333.xml> .
@@ -1420,9 +1477,10 @@ ipso:3335 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3335.xml> .
 
 ipso:5706 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "colour";
   skos:broader lwm2m:Resource;
   skos:definition "A string representing a value in some color space.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Colour";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3308.xml>,
@@ -1484,9 +1542,10 @@ ipso:3338 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3338.xml> .
 
 ipso:5548 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "level";
   skos:broader lwm2m:Resource;
   skos:definition "Used to represent a level control such as audio volume.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Level";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3338.xml>,
@@ -1495,18 +1554,20 @@ ipso:5548 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3343.xml> .
 
 ipso:5521 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "delay duration";
   skos:broader lwm2m:Resource;
   skos:definition "The duration of the time delay.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Delay Duration";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3338.xml>,
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3340.xml> .
 
 ipso:5525 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "minimum off-time";
   skos:broader lwm2m:Resource;
   skos:definition "The duration of the rearm delay (i.e. the delay from the end of one cycle until the beginning of the next, the inhibit time).";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Minimum Off-time";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3338.xml>,
@@ -1523,49 +1584,55 @@ ipso:3310 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3310.xml> .
 
 ipso:5823 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "event identifier";
   skos:broader lwm2m:Resource;
   skos:definition "The event identifier as a string.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Event Identifier";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3310.xml> .
 
 ipso:5824 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "start time";
   skos:broader lwm2m:Resource;
   skos:definition "Time when the event started.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Start Time";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3310.xml> .
 
 ipso:5825 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "duration in min";
   skos:broader lwm2m:Resource;
   skos:definition "The duration of the event in minutes.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Duration In Min";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3310.xml> .
 
 ipso:5826 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "criticality level";
   skos:broader lwm2m:Resource;
   skos:definition "The criticality of the event. The device receiving the event will react in an appropriate fashion for the device.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Criticality Level";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3310.xml> .
 
 ipso:5827 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "avg load adj pct";
   skos:broader lwm2m:Resource;
   skos:definition "Defines the maximum energy usage of the receiving device, as a percentage of the device's normal maximum energy usage.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Avg Load AdjPct";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3310.xml> .
 
 ipso:5828 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "duty cycle";
   skos:broader lwm2m:Resource;
   skos:definition "Defines the duty cycle for the load control event, i.e, what percentage of time the receiving device is allowed to be on.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Duty Cycle";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3310.xml> .
@@ -1601,26 +1668,29 @@ ipso:3339 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3339.xml> .
 
 ipso:5522 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "clip";
   skos:broader lwm2m:Resource;
   skos:definition "Audio clip that is playable (e.g., a short audio recording indicating the floor in an elevator).";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Clip";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3339.xml> .
 
 ipso:5523 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "trigger";
   skos:broader lwm2m:Resource;
   skos:definition "Trigger initiating actuation.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Trigger";
   skos:related lwm2m:E;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3339.xml>,
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3340.xml> .
 
 ipso:5524 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "duration";
   skos:broader lwm2m:Resource;
   skos:definition "The duration of the sound once trigger.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Duration";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3339.xml> .
@@ -1646,9 +1716,10 @@ ipso:3348 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3348.xml> .
 
 ipso:5547 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "multi-state input";
   skos:broader lwm2m:Resource;
   skos:definition "The current state of a Multi-state input or selector.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Multi-state Input";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3348.xml> .
@@ -1686,9 +1757,10 @@ ipso:3350 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3350.xml> .
 
 ipso:5544 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "cumulative time";
   skos:broader lwm2m:Resource;
   skos:definition "The total time in seconds that the timer input is true. Writing a 0 resets the time.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Cumulative Time";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3340.xml>,
@@ -1705,9 +1777,10 @@ ipso:3345 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3345.xml> .
 
 ipso:5702 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "x value";
   skos:broader lwm2m:Resource;
   skos:definition "The measured value along the X axis.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "X Value";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3313.xml>,
@@ -1716,9 +1789,10 @@ ipso:5702 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3345.xml> .
 
 ipso:5703 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "y value";
   skos:broader lwm2m:Resource;
   skos:definition "The measured value along the Y axis.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Y Value";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3313.xml>,
@@ -1727,9 +1801,10 @@ ipso:5703 a skos:Concept, ontolex:LexicalConcept;
     <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3345.xml> .
 
 ipso:5704 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "z value";
   skos:broader lwm2m:Resource;
   skos:definition "The measured value along the Z axis.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Z Value";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3313.xml>,
@@ -1748,33 +1823,37 @@ ipso:3200 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3200.xml> .
 
 ipso:5502 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "digital input polarity";
   skos:broader lwm2m:Resource;
   skos:definition "The polarity of the digital input as a Boolean (False = Normal, True = Reversed).";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Digital Input Polarity";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3200.xml> .
 
 ipso:5503 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "digital input debounce";
   skos:broader lwm2m:Resource;
   skos:definition "The debounce period in ms.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Digital Input Debounce";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3200.xml> .
 
 ipso:5504 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "digital input edge selection";
   skos:broader lwm2m:Resource;
   skos:definition "The edge selection as an integer (1 = Falling edge, 2 = Rising edge, 3 = Both Rising and Falling edge).";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Digital Input Edge Selection";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3200.xml> .
 
 ipso:5505 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "digital input counter reset";
   skos:broader lwm2m:Resource;
   skos:definition "Reset the Counter value.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Digital Input Counter Reset";
   skos:related lwm2m:E;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3200.xml>,
@@ -1793,49 +1872,55 @@ ipso:3334 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3334.xml> .
 
 ipso:5508 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "min x value";
   skos:broader lwm2m:Resource;
   skos:definition "The minimum measured value along the X axis.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Min X Value";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3334.xml> .
 
 ipso:5509 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "max x value";
   skos:broader lwm2m:Resource;
   skos:definition "The maximum measured value along the X axis.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Max X Value";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3334.xml> .
 
 ipso:5510 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "min y value";
   skos:broader lwm2m:Resource;
   skos:definition "The minimum measured value along the Y axis.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Min Y Value";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3334.xml> .
 
 ipso:5511 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "max y value";
   skos:broader lwm2m:Resource;
   skos:definition "The maximum measured value along the Y axis.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Max Y Value";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3334.xml> .
 
 ipso:5512 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "min z value";
   skos:broader lwm2m:Resource;
   skos:definition "The minimum measured value along the Z axis.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Min Z Value";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3334.xml> .
 
 ipso:5513 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "max z value";
   skos:broader lwm2m:Resource;
   skos:definition "The maximum measured value along the Z axis.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Max Z Value";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3334.xml> .
@@ -1915,9 +2000,10 @@ ipso:3308 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3308.xml> .
 
 ipso:5900 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "set point value";
   skos:broader lwm2m:Resource;
   skos:definition "The setpoint value.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Set Point Value";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3308.xml> .
@@ -1934,25 +2020,28 @@ ipso:3340 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3340.xml> .
 
 ipso:5543 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "digital state";
   skos:broader lwm2m:Resource;
   skos:definition "The current state of the timer output.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Digital State";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3340.xml> .
 
 ipso:5534 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "counter";
   skos:broader lwm2m:Resource;
   skos:definition "Counts the number of times the timer output transitions from 0 to 1.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Counter";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3340.xml> .
 
 ipso:5526 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "timer mode";
   skos:broader lwm2m:Resource;
   skos:definition "Type of timer pattern used by the timer. 1: One-shot, 2: On-Time or Interval, 3: Time delay on pick-up, 4: Time Delay on Drop-Out, 0: disables the timer.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Timer Mode";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3340.xml> .
@@ -1968,9 +2057,10 @@ ipso:3306 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3306.xml> .
 
 ipso:5853 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "multi-state output";
   skos:broader lwm2m:Resource;
   skos:definition "A string describing a state for multiple level output such as Pilot Wire.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Multi-state Output";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3306.xml> .
@@ -2007,25 +2097,28 @@ ipso:3349 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3349.xml> .
 
 ipso:5910 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "bitmap input";
   skos:broader lwm2m:Resource;
   skos:definition "Integer in which each of the bits are associated with specific digital input value. Represented as a binary signed integer in network byte order, and in two's complement representation. Using values in range 0-127 is recommended to avoid ambiguities with byte order and negative values.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Bitmap Input";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3349.xml> .
 
 ipso:5911 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "bitmap input reset";
   skos:broader lwm2m:Resource;
   skos:definition "Reset the Bitmap Input value.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Bitmap Input Reset";
   skos:related lwm2m:E;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3349.xml> .
 
 ipso:5912 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "element description";
   skos:broader lwm2m:Resource;
   skos:definition "The description of each bit as a string. First instance describes the least significant bit, second instance the second least significant bit.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Element Description";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3349.xml> .
@@ -2083,57 +2176,64 @@ ipso:3341 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3341.xml> .
 
 ipso:5527 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "text";
   skos:broader lwm2m:Resource;
   skos:definition "A string of text.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Text";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3341.xml> .
 
 ipso:5528 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "x coordinate";
   skos:broader lwm2m:Resource;
   skos:definition "X Coordinate.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "X Coordinate";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3341.xml> .
 
 ipso:5529 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "y coordinate";
   skos:broader lwm2m:Resource;
   skos:definition "Y Coordinate.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Y Coordinate";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3341.xml> .
 
 ipso:5545 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "max x coordinate";
   skos:broader lwm2m:Resource;
   skos:definition "The highest X coordinate the display supports before wrapping to the next line.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Max X Coordinate";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3341.xml> .
 
 ipso:5546 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "max y coordinate";
   skos:broader lwm2m:Resource;
   skos:definition "The highest Y coordinate the display supports before wrapping to the next line.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Max Y Coordinate";
   skos:related lwm2m:R;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3341.xml> .
 
 ipso:5530 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "clear display";
   skos:broader lwm2m:Resource;
   skos:definition "Command to clear the display.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Clear Display";
   skos:related lwm2m:E;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3341.xml> .
 
 ipso:5531 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "contrast";
   skos:broader lwm2m:Resource;
   skos:definition "Proportional control, integer value between 0 and 100 as a percentage.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Contrast";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3341.xml> .
@@ -2149,17 +2249,19 @@ ipso:3302 a skos:Concept, ontolex:LexicalConcept;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3302.xml> .
 
 ipso:5903 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "busy to clear delay";
   skos:broader lwm2m:Resource;
   skos:definition "Delay from the detection state to the clear state in ms.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Busy to Clear delay";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3302.xml> .
 
 ipso:5904 a skos:Concept, ontolex:LexicalConcept;
+  skos:altLabel "clear to busy delay";
   skos:broader lwm2m:Resource;
   skos:definition "Delay from the clear state to the busy state in ms.";
-  skos:inScheme lwm2m:Scheme;
+  skos:inScheme lwm2m:scheme;
   skos:prefLabel "Clear to Busy delay";
   skos:related lwm2m:RW;
   prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3302.xml> .
