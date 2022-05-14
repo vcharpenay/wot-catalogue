@@ -1,0 +1,14 @@
+@prefix : <http://purl.org/wot-catalogue#> .
+@prefix bacnet: <https://purl.org/wot-catalogue/bacnet#> .
+@prefix ble: <https://purl.org/wot-catalogue/ble#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix lwm2m: <https://purl.org/wot-catalogue/lwm2m#> .
+@prefix ocf: <https://purl.org/wot-catalogue/ocf#> .
+@prefix onem2m: <https://purl.org/wot-catalogue/onem2m#> .
+
+:catalogue a dcat:Catalog;
+  dct:created "2022-05-14T19:24:56.619Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  dct:creator <https://vcharpenay/link/#me>;
+  dct:title "Web of Things (WoT) Catalogue";
+  dcat:dataset bacnet:scheme, ble:scheme, lwm2m:scheme, ocf:scheme, onem2m:scheme .
