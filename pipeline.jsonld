@@ -581,11 +581,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2797"
+      "@value" : "2798"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-43"
+      "@value" : "-44"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Generate n-grams"
@@ -2941,7 +2941,7 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/9"
     } ],
     "http://linkedpipes.com/ontology/vertex" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/8173-b282"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/a0a7-ba5a"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/4299-a18f",
@@ -2959,7 +2959,7 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/b20b-ba3f"
     } ],
     "http://linkedpipes.com/ontology/vertex" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/5492-a2e3"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/3847-92ee"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/45bf-a6cd",
@@ -3847,7 +3847,7 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/774d-b1d7"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/5492-a2e3",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/3847-92ee",
     "@type" : [ "http://linkedpipes.com/ontology/Vertex" ],
     "http://linkedpipes.com/ontology/order" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -3862,7 +3862,7 @@
       "@value" : "87"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/8173-b282",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/a0a7-ba5a",
     "@type" : [ "http://linkedpipes.com/ontology/Vertex" ],
     "http://linkedpipes.com/ontology/order" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -5767,7 +5767,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/5/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query" : [ {
-      "@value" : "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX lex: <http://purl.org/wot-catalogue/lex#>\nPREFIX : <http://localhost/ontology/>\nINSERT {\n  ?wordURI a ontolex:LexicalEntry, ontolex:Word ;\n    rdfs:label ?a .\n  \n  ?widx a :WordIndex .\n  ?widx :word ?a ;\n    :ngram ?alt ;\n    :index ?n\n} WHERE {\n  ?s a skos:Concept .\n  {\n    ?s skos:altLabel ?alt .\n    FILTER(CONTAINS(?alt, \" \"))\n    BIND(\" \" AS ?separator)\n    BIND(STRLEN(REPLACE(REPLACE(str(?alt), \"([^ ]+)\", \"Å\") , \"[^Å]\", \"\")) as ?count)\n    VALUES ?n {0 1 2 3 4 5 6 7 8 9 10 11 12}\n    FILTER(?n < ?count)\n    BIND(CONCAT(\"^(?:[^\",?separator,\"]*\",?separator,\"){\",str(?n),\"}([^\",?separator,\"]*).*$|.*\") as ?regex)\n    BIND(REPLACE(?alt, ?regex, \"$1\") AS ?component)\n    FILTER(STRLEN(?component) > 0)\n    BIND(?component as ?a)\n  }\n  UNION\n  {\n    ?s skos:altLabel ?alt\n    FILTER (!CONTAINS(?alt, \" \"))\n    BIND (0 AS ?n)\n    BIND (?alt AS ?a)\n  }\n  \n  BIND (URI(CONCAT(STR(lex:), ?a)) AS ?wordURI)\n  BIND(URI(CONCAT(STR(:),\"occurrence/\",?alt,\"-\",STR(?n))) AS ?widx)\n}"
+      "@value" : "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX lex: <http://purl.org/wot-catalogue/lex#>\nPREFIX : <http://localhost/ontology/>\nINSERT {\n  ?wordURI a ontolex:LexicalEntry, ontolex:Word ;\n    rdfs:label ?a .\n  \n  ?widx a :WordIndex .\n  ?widx :word ?a ;\n    #:ngram ?alt ;\n    #:index ?n ;\n    :next ?widxNext .\n} WHERE {\n  ?s a skos:Concept .\n  {\n    ?s skos:altLabel ?alt .\n    FILTER(CONTAINS(?alt, \" \"))\n    BIND(STRLEN(REPLACE(REPLACE(str(?alt), \"([^ ]+)\", \"Å\") , \"[^Å]\", \"\")) as ?count)\n    VALUES ?n {0 1 2 3 4 5 6 7 8 9 10 11 12}\n    FILTER(?n < ?count)\n    BIND(CONCAT(\"^(?:[^ ]* ){\",str(?n),\"}([^ ]*).*$|.*\") as ?regex)\n    BIND(REPLACE(?alt, ?regex, \"$1\") AS ?component)\n    FILTER(STRLEN(?component) > 0)\n    BIND(?component as ?a)\n    BIND(URI(CONCAT(STR(:),\"occurrence/\",?alt,\"-\",STR(?n))) AS ?widx)\n    OPTIONAL {\n      BIND(URI(CONCAT(STR(:),\"occurrence/\",?alt,\"-\",STR(?n+1))) AS ?widxNext)\n      FILTER (?n+1 < ?count)\n    }\n  }\n  UNION\n  {\n    ?s skos:altLabel ?a\n    FILTER (!CONTAINS(?a, \" \"))\n  }\n  \n  BIND (URI(CONCAT(STR(lex:), ?a)) AS ?wordURI)\n}"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -5852,7 +5852,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/6/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query" : [ {
-      "@value" : "PREFIX lex: <http://purl.org/wot-catalogue/lex#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX ex: <http://example.org/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX : <http://localhost/ontology/>\n\nINSERT {\n  ?kgramURI a ontolex:LexicalEntry, ontolex:MultiWordExpression ; rdfs:label ?kgram .\n} WHERE {\n#  {\n#    ?widx a :WordIndex ; :word ?1gram ; :ngram ?ngram ; :index ?k . BIND (?k+1 AS ?kp1)\n#    ?widx2 a :WordIndex ; :word ?w2 ; :ngram ?ngram ; :index ?kp1 .\n#    BIND (CONCAT(?1gram, \" \", ?w2) AS ?kgram)\n#  }\n#  UNION\n#  {\n#    ?widx a :WordIndex ; :word ?1gram ; :ngram ?ngram ; :index ?k . BIND (?k+1 AS ?kp1)\n#    ?widx2 a :WordIndex ; :word ?w2 ; :ngram ?ngram ; :index ?kp1 . BIND (?k+2 AS ?kp2)\n#    ?widx3 a :WordIndex ; :word ?w3 ; :ngram ?ngram ; :index ?kp2 .\n#    BIND (CONCAT(?1gram, \" \", ?w2, \" \", ?w3) AS ?kgram)\n#  }\n#  UNION\n#  {\n#    ?widx a :WordIndex ; :word ?1gram ; :ngram ?ngram ; :index ?k . BIND (?k+1 AS ?kp1)\n#    ?widx2 a :WordIndex ; :word ?w2 ; :ngram ?ngram ; :index ?kp1 . BIND (?k+2 AS ?kp2)\n#    ?widx3 a :WordIndex ; :word ?w3 ; :ngram ?ngram ; :index ?kp2 . BIND (?k+3 AS ?kp3)\n#    ?widx4 a :WordIndex ; :word ?w4 ; :ngram ?ngram ; :index ?kp3 .\n#    BIND (CONCAT(?1gram, \" \", ?w2, \" \", ?w3, \" \", ?w4) AS ?kgram)\n#  }\n#  UNION\n#  {\n#    ?widx a :WordIndex ; :word ?1gram ; :ngram ?ngram ; :index ?k . BIND (?k+1 AS ?kp1)\n#    ?widx2 a :WordIndex ; :word ?w2 ; :ngram ?ngram ; :index ?kp1 . BIND (?k+2 AS ?kp2)\n#    ?widx3 a :WordIndex ; :word ?w3 ; :ngram ?ngram ; :index ?kp2 . BIND (?k+3 AS ?kp3)\n#    ?widx4 a :WordIndex ; :word ?w4 ; :ngram ?ngram ; :index ?kp3 . BIND (?k+4 AS ?kp4)\n#    ?widx5 a :WordIndex ; :word ?w5 ; :ngram ?ngram ; :index ?kp4 .\n#    BIND (CONCAT(?1gram, \" \", ?w2, \" \", ?w3, \" \", ?w4, \" \", ?w5) AS ?kgram)\n#  }\n#  UNION\n#  {\n#    ?widx a :WordIndex ; :word ?1gram ; :ngram ?ngram ; :index ?k . BIND (?k+1 AS ?kp1)\n#    ?widx2 a :WordIndex ; :word ?w2 ; :ngram ?ngram ; :index ?kp1 . BIND (?k+2 AS ?kp2)\n#    ?widx3 a :WordIndex ; :word ?w3 ; :ngram ?ngram ; :index ?kp2 . BIND (?k+3 AS ?kp3)\n#    ?widx4 a :WordIndex ; :word ?w4 ; :ngram ?ngram ; :index ?kp3 . BIND (?k+4 AS ?kp4)\n#    ?widx5 a :WordIndex ; :word ?w5 ; :ngram ?ngram ; :index ?kp4 . BIND (?k+5 AS ?kp5)\n#    ?widx6 a :WordIndex ; :word ?w6 ; :ngram ?ngram ; :index ?kp5 .\n#    BIND (CONCAT(?1gram, \" \", ?w2, \" \", ?w3, \" \", ?w4, \" \", ?w5, \" \", ?w6) AS ?kgram)\n#  }\n  \n  BIND (URI(CONCAT(STR(lex:), ENCODE_FOR_URI(?kgram))) AS ?kgramURI)\n}"
+      "@value" : "PREFIX lex: <http://purl.org/wot-catalogue/lex#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX ex: <http://example.org/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX : <http://localhost/ontology/>\n\nINSERT {\n  ?kgramURI a ontolex:LexicalEntry, ontolex:MultiWordExpression ; rdfs:label ?kgram .\n} WHERE {\n  {\n    ?widx a :WordIndex ; :word ?1gram ; :next ?widx2 .\n    ?widx2 a :WordIndex ; :word ?w2 .\n    BIND (CONCAT(?1gram, \" \", ?w2) AS ?kgram)\n  }\n  UNION\n  {\n    ?widx a :WordIndex ; :word ?1gram ; :next ?widx2 .\n    ?widx2 a :WordIndex ; :word ?w2 ; :next ?widx3 .\n    ?widx3 a :WordIndex ; :word ?w3 .\n    BIND (CONCAT(?1gram, \" \", ?w2, \" \", ?w3) AS ?kgram)\n  }\n  UNION\n  {\n    ?widx a :WordIndex ; :word ?1gram ; :next ?widx2 .\n    ?widx2 a :WordIndex ; :word ?w2 ; :next ?widx3 .\n    ?widx3 a :WordIndex ; :word ?w3 ; :next ?widx4 .\n    ?widx4 a :WordIndex ; :word ?w4 .\n    BIND (CONCAT(?1gram, \" \", ?w2, \" \", ?w3, \" \", ?w4) AS ?kgram)\n  }\n  UNION\n  {\n    ?widx a :WordIndex ; :word ?1gram ; :next ?widx2 .\n    ?widx2 a :WordIndex ; :word ?w2 ; :next ?widx3 .\n    ?widx3 a :WordIndex ; :word ?w3 ; :next ?widx4 .\n    ?widx4 a :WordIndex ; :word ?w4 ; :next ?widx5 .\n    ?widx5 a :WordIndex ; :word ?w5 .\n    BIND (CONCAT(?1gram, \" \", ?w2, \" \", ?w3, \" \", ?w4, \" \", ?w5) AS ?kgram)\n  }\n  UNION\n  {\n    ?widx a :WordIndex ; :word ?1gram ; :next ?widx2 .\n    ?widx2 a :WordIndex ; :word ?w2 ; :next ?widx3 .\n    ?widx3 a :WordIndex ; :word ?w3 ; :next ?widx4 .\n    ?widx4 a :WordIndex ; :word ?w4 ; :next ?widx5 .\n    ?widx5 a :WordIndex ; :word ?w5 ; :next ?widx6 .\n    ?widx6 a :WordIndex ; :word ?w6 .\n    BIND (CONCAT(?1gram, \" \", ?w2, \" \", ?w3, \" \", ?w4, \" \", ?w5, \" \", ?w6) AS ?kgram)\n  }\n  \n  BIND (URI(CONCAT(STR(lex:), ENCODE_FOR_URI(?kgram))) AS ?kgramURI)\n}"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
