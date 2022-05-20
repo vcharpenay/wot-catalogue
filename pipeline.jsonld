@@ -149,7 +149,7 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2377"
+      "@value" : "2379"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -248,11 +248,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "588"
+      "@value" : "593"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "660"
+      "@value" : "661"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "High-Level concepts"
@@ -300,11 +300,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2461"
+      "@value" : "2467"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-540"
+      "@value" : "-541"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Does every entity have an altLabel?"
@@ -1021,11 +1021,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2434"
+      "@value" : "2436"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-470"
+      "@value" : "-466"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Is every concept in one and only one scheme?"
@@ -1420,7 +1420,7 @@
       "@value" : "-39"
     } ],
     "http://purl.org/dc/terms/description" : [ {
-      "@value" : "Add LOD references to lex: namespace"
+      "@value" : "Add LOD references to lexical entries"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "Union"
@@ -1820,11 +1820,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2493"
+      "@value" : "2494"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-210"
+      "@value" : "-155"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Get WoT catalogue statistics"
@@ -2006,6 +2006,32 @@
       "@value" : "SPARQL construct"
     } ]
   }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/91fe-a063",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/color" : [ {
+      "@value" : "#8ae234"
+    } ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/91fe-a063/configuration"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-rdfToFile/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "5134"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "-48"
+    } ],
+    "http://purl.org/dc/terms/description" : [ {
+      "@value" : "Create file for lexical entries"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "RDF to file"
+    } ]
+  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/990f-b73a",
     "@type" : [ "http://linkedpipes.com/ontology/Component" ],
     "http://linkedpipes.com/ontology/color" : [ {
@@ -2071,11 +2097,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "2444"
+      "@value" : "2443"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-324"
+      "@value" : "-318"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Is every scheme linked from the root entity?"
@@ -2123,11 +2149,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1176"
+      "@value" : "1179"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "369"
+      "@value" : "372"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Merge entities based on secondary identifier"
@@ -2306,7 +2332,7 @@
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "-397"
+      "@value" : "-390"
     } ],
     "http://purl.org/dc/terms/description" : [ {
       "@value" : "Is every entity described (with triples)?"
@@ -2465,6 +2491,32 @@
       "@value" : "Create zip archive"
     } ]
   }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f0e7-a6d8",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/color" : [ {
+      "@value" : "#729fcf"
+    } ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f0e7-a6d8/configuration"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/q-sparqlAsk/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "2787"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "-540"
+    } ],
+    "http://purl.org/dc/terms/description" : [ {
+      "@value" : "Does every altLabel contain alphanumeric characters only?"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "SPARQL ask"
+    } ]
+  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f483-b7b7",
     "@type" : [ "http://linkedpipes.com/ontology/Component" ],
     "http://linkedpipes.com/ontology/color" : [ {
@@ -2524,11 +2576,11 @@
     } ],
     "http://linkedpipes.com/ontology/x" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "911"
+      "@value" : "907"
     } ],
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "412"
+      "@value" : "411"
     } ],
     "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
       "@value" : "Files to RDF single graph"
@@ -3003,7 +3055,7 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/9"
     } ],
     "http://linkedpipes.com/ontology/vertex" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/8d76-a373"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/ac1c-8185"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/4299-a18f",
@@ -3021,7 +3073,7 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/b20b-ba3f"
     } ],
     "http://linkedpipes.com/ontology/vertex" : [ {
-      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/9e3c-ba74"
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/a8ca-9e24"
     } ]
   }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/45bf-a6cd",
@@ -3669,6 +3721,21 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/990f-b73a"
     } ]
   }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/c2df-8847",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "OutputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/28e6-8dbf"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/91fe-a063"
+    } ]
+  }, {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/c8ee-8dad",
     "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
     "http://linkedpipes.com/ontology/sourceBinding" : [ {
@@ -3894,22 +3961,22 @@
       "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/774d-b1d7"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/8d76-a373",
-    "@type" : [ "http://linkedpipes.com/ontology/Vertex" ],
-    "http://linkedpipes.com/ontology/order" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "1"
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/connection/ffe3-ae19",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "OutputRdf"
     } ],
-    "http://linkedpipes.com/ontology/x" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "4232"
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/990f-b73a"
     } ],
-    "http://linkedpipes.com/ontology/y" : [ {
-      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-      "@value" : "75"
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f0e7-a6d8"
     } ]
   }, {
-    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/9e3c-ba74",
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/a8ca-9e24",
     "@type" : [ "http://linkedpipes.com/ontology/Vertex" ],
     "http://linkedpipes.com/ontology/order" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -3922,6 +3989,21 @@
     "http://linkedpipes.com/ontology/y" : [ {
       "@type" : "http://www.w3.org/2001/XMLSchema#integer",
       "@value" : "53"
+    } ]
+  }, {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/vertex/ac1c-8185",
+    "@type" : [ "http://linkedpipes.com/ontology/Vertex" ],
+    "http://linkedpipes.com/ontology/order" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "1"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "4232"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "75"
     } ]
   } ],
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805"
@@ -3993,7 +4075,7 @@
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
     } ],
     "http://plugins.linkedpipes.com/ontology/q-sparqlAsk#query" : [ {
-      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nASK {\n  ?s a ?type\n  FILTER NOT EXISTS {\n    VALUES ?skosType { skos:Concept skos:ConceptScheme skos:Collection }\n    ?s a ?skosType\n  }\n}"
+      "@value" : "PREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nASK {\n  ?s a ?type\n  FILTER NOT EXISTS {\n    VALUES ?skosType { skos:Concept skos:ConceptScheme skos:Collection dcat:Catalog }\n    ?s a ?skosType\n  }\n}"
     } ],
     "http://plugins.linkedpipes.com/ontology/q-sparqlAsk#queryControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -4160,7 +4242,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/108/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query" : [ {
-      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sdt: <http://purl.org/wot-catalogue/sdt#>\nPREFIX ocf:<http://purl.org/wot-catalogue/ocf#>\nPREFIX ble:<http://purl.org/wot-catalogue/ble#>\nPREFIX lwm2m:<http://purl.org/wot-catalogue/lwm2m#>\nPREFIX bacnet:<http://purl.org/wot-catalogue/bacnet#>\n\nINSERT {\n  ?s skos:altLabel ?alt .\n} WHERE {\n  ?s a skos:Concept;\n    skos:inScheme lwm2m:scheme;\n    skos:prefLabel ?l.\n  BIND(LCASE(REPLACE(REPLACE(REPLACE(REPLACE(?l,\"([a-z]{2,})([A-Z]+)\",\"$1 $2\"),\"(^ )\", \"\"),\"Lw M2M\", \"LwM2M\"),\"_\",\" \")) as ?alt)\n}"
+      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sdt: <http://purl.org/wot-catalogue/sdt#>\nPREFIX ocf:<http://purl.org/wot-catalogue/ocf#>\nPREFIX ble:<http://purl.org/wot-catalogue/ble#>\nPREFIX lwm2m:<http://purl.org/wot-catalogue/lwm2m#>\nPREFIX bacnet:<http://purl.org/wot-catalogue/bacnet#>\n\nINSERT {\n  ?s skos:altLabel ?alt .\n} WHERE {\n  ?s a skos:Concept;\n    skos:inScheme lwm2m:scheme;\n    skos:prefLabel ?l.\n  \n  # remove non-alphanumericals\n  BIND (REPLACE(?l, \"[().,\\\",'?!:;]\", \"\") AS ?l1)\n  BIND (REPLACE(?l1, \"[\\\\-/%_]\", \" \") AS ?l2)\n  \n  BIND(LCASE(REPLACE(REPLACE(REPLACE(REPLACE(?l2,\"([a-z]{2,})([A-Z]+)\",\"$1 $2\"),\"(^ )\", \"\"),\"Lw M2M\", \"LwM2M\"),\"_\",\" \")) as ?alt)\n}"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -4625,7 +4707,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/4f30-b4d2/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query" : [ {
-      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sdt: <http://purl.org/wot-catalogue/sdt#>\nPREFIX ocf:<http://purl.org/wot-catalogue/ocf#>\nPREFIX ble:<http://purl.org/wot-catalogue/ble#>\nPREFIX lwm2m:<http://purl.org/wot-catalogue/lwm2m#>\nPREFIX bacnet:<http://purl.org/wot-catalogue/bacnet#>\n\nINSERT {\n  ?s skos:altLabel ?alt .\n} WHERE {\n  ?s a skos:Concept;\n    skos:inScheme ocf:scheme ;\n    skos:prefLabel ?l .\n    \n  # remove redundant terms in identifiers\n  BIND (REPLACE(?l,\"ResURI.*\",\"\") as ?l2)\n  # process acronyms\n  BIND (REPLACE(?l2,\"([A-Z0-9][A-Z0-9]+)\",\" $1\") AS ?l3)\n  # process capitalized words\n  BIND (REPLACE(?l3,\"([A-Z][a-z0-9]+)\",\" $1\") AS ?l4)\n  # normalize\n  BIND (LCASE(REPLACE(REPLACE(?l4, \"  +\", \" \"), \"^ \", \"\")) AS ?alt)\n}"
+      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sdt: <http://purl.org/wot-catalogue/sdt#>\nPREFIX ocf:<http://purl.org/wot-catalogue/ocf#>\nPREFIX ble:<http://purl.org/wot-catalogue/ble#>\nPREFIX lwm2m:<http://purl.org/wot-catalogue/lwm2m#>\nPREFIX bacnet:<http://purl.org/wot-catalogue/bacnet#>\n\nINSERT {\n  ?s skos:altLabel ?alt .\n} WHERE {\n  ?s a skos:Concept;\n    skos:inScheme ocf:scheme ;\n    skos:prefLabel ?l .\n  \n  # remove non-alphanumericals\n  BIND (REPLACE(?l, \"[().,\\\",'?!:;]\", \"\") AS ?l1)\n  BIND (REPLACE(?l1, \"[\\\\-/%_]\", \" \") AS ?l2)\n    \n  # remove redundant terms in identifiers\n  BIND (REPLACE(?l2,\"ResURI.*\",\"\") as ?l3)\n  # process acronyms\n  BIND (REPLACE(?l3,\"([A-Z0-9][A-Z0-9]+)\",\" $1\") AS ?l4)\n  # process capitalized words\n  BIND (REPLACE(?l4,\"([A-Z][a-z0-9]+)\",\" $1\") AS ?l5)\n  # normalize\n  BIND (LCASE(REPLACE(REPLACE(?l5, \"  +\", \" \"), \"^ \", \"\")) AS ?alt)\n}"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -4727,7 +4809,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/6626-b452/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query" : [ {
-      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX onem2m: <http://purl.org/wot-catalogue/onem2m#>\nPREFIX ocf:<http://purl.org/wot-catalogue/ocf#>\nPREFIX ble:<http://purl.org/wot-catalogue/ble#>\nPREFIX lwm2m:<http://purl.org/wot-catalogue/lwm2m#>\nPREFIX bacnet:<http://purl.org/wot-catalogue/bacnet#>\nPREFIX haim:<http://purl.org/wot-catalogue/haim#>\n\nINSERT {\n  ?s skos:altLabel ?alt .\n} WHERE {\n\t?s a skos:Concept ;\n\tskos:inScheme onem2m:scheme;\n\tskos:prefLabel ?l.\n  BIND(LCASE(REPLACE(REPLACE(REPLACE(REPLACE(?l,\"([A-Z]+)\",\" $1\"), \"[tT]hree DPrinter\", \" 3d printer\"),\"3 D(.+)\", \" 3d $1\"),\"(^ )\",\"\"))  AS ?genalt)\n\tBIND(IF(!regex(str(?s), \".+(airQuality).+\"),REPLACE(?genalt,\"([a-z]+)([0-9]+)\",\"$1 $2\"),?genalt) as ?genalt2)\n  BIND(IF(bound(?genalt2),?genalt2,IF(bound(?genalt),?genalt,?l)) as ?alt)\n}"
+      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX onem2m: <http://purl.org/wot-catalogue/onem2m#>\nPREFIX ocf:<http://purl.org/wot-catalogue/ocf#>\nPREFIX ble:<http://purl.org/wot-catalogue/ble#>\nPREFIX lwm2m:<http://purl.org/wot-catalogue/lwm2m#>\nPREFIX bacnet:<http://purl.org/wot-catalogue/bacnet#>\nPREFIX haim:<http://purl.org/wot-catalogue/haim#>\n\nINSERT {\n  ?s skos:altLabel ?alt .\n} WHERE {\n\t?s a skos:Concept ;\n\tskos:inScheme onem2m:scheme;\n\tskos:prefLabel ?l.\n  \n  # remove non-alphanumericals\n  BIND (REPLACE(?l, \"[().,\\\",'?!:;&]\", \"\") AS ?l1)\n  BIND (REPLACE(?l1, \"[\\\\-/%_]\", \" \") AS ?l2)  \n  \n  BIND(LCASE(REPLACE(REPLACE(REPLACE(REPLACE(?l2,\"([A-Z]+)\",\" $1\"), \"[tT]hree DPrinter\", \" 3d printer\"),\"3 D(.+)\", \" 3d $1\"),\"(^ )\",\"\"))  AS ?genalt)\n\tBIND(IF(!regex(str(?s), \".+(airQuality).+\"),REPLACE(?genalt,\"([a-z]+)([0-9]+)\",\"$1 $2\"),?genalt) as ?genalt2)\n  BIND(IF(bound(?genalt2),?genalt2,IF(bound(?genalt),?genalt,?l)) as ?alt)\n}"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -4924,6 +5006,30 @@
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/8b3e-8342/configuration"
 }, {
   "@graph" : [ {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/91fe-a063/configuration",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName" : [ {
+      "@value" : "lex.ttl"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileNameControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileType" : [ {
+      "@value" : "text/turtle"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileTypeControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri" : [ {
+      "@id" : "http://purl.org/wot-catalogue/"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUriControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/91fe-a063/configuration"
+}, {
+  "@graph" : [ {
     "@id" : "http://etl.linkedpipes.com/resources/components/t-singleGraphUnion/0.0.0/new/1",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-singleGraphUnion#Configuration" ]
   } ],
@@ -4988,7 +5094,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/be81-b6b3/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query" : [ {
-      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sdt: <http://purl.org/wot-catalogue/sdt#>\nPREFIX ocf:<http://purl.org/wot-catalogue/ocf#>\nPREFIX ble:<http://purl.org/wot-catalogue/ble#>\nPREFIX lwm2m:<http://purl.org/wot-catalogue/lwm2m#>\nPREFIX bacnet:<http://purl.org/wot-catalogue/bacnet#>\n\nINSERT {\n  ?s skos:altLabel ?alt .\n} WHERE {\n  ?s a skos:Concept;\n    skos:inScheme ble:scheme ;\n    skos:prefLabel ?l .\n  BIND(LCASE(?l) as ?alt)\n}"
+      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sdt: <http://purl.org/wot-catalogue/sdt#>\nPREFIX ocf:<http://purl.org/wot-catalogue/ocf#>\nPREFIX ble:<http://purl.org/wot-catalogue/ble#>\nPREFIX lwm2m:<http://purl.org/wot-catalogue/lwm2m#>\nPREFIX bacnet:<http://purl.org/wot-catalogue/bacnet#>\n\nINSERT {\n  ?s skos:altLabel ?alt .\n} WHERE {\n  ?s a skos:Concept;\n    skos:inScheme ble:scheme ;\n    skos:prefLabel ?l .\n  \n  # remove non-alphanumericals\n  BIND (REPLACE(?l, \"[().,\\\",'?!:;]\", \"\") AS ?l1)\n  BIND (REPLACE(?l1, \"[\\\\-/%_]\", \" \") AS ?l2)\n  \n  # normalize label\n  BIND (REPLACE(?l2, \" +\", \" \") AS ?l3)\n  BIND (LCASE(?l3) as ?alt)\n}"
     } ],
     "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
@@ -5253,6 +5359,25 @@
     } ]
   } ],
   "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/ef80-b6bb/configuration"
+}, {
+  "@graph" : [ {
+    "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f0e7-a6d8/configuration",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/q-sparqlAsk#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/q-sparqlAsk#failOnTrue" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+      "@value" : "true"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/q-sparqlAsk#failOnTrueControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/q-sparqlAsk#query" : [ {
+      "@value" : "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nASK {\n  ?s a skos:Concept ;\n  \tskos:altLabel ?alt\n  FILTER (regex(?alt, \"[^a-zA-Z0-9 ]\"))\n}"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/q-sparqlAsk#queryControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f0e7-a6d8/configuration"
 }, {
   "@graph" : [ {
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/component/f483-b7b7/configuration",
@@ -5887,7 +6012,7 @@
     "@id" : "http://localhost:8080/resources/pipelines/1651912174805/58/configuration",
     "@type" : [ "http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration" ],
     "http://plugins.linkedpipes.com/ontology/e-textHolder#content" : [ {
-      "@value" : "@prefix onem2m: <http://purl.org/wot-catalogue/onem2m#> .\n@prefix haim: <http://purl.org/wot-catalogue/onem2m/haim#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n\nonem2m:scheme a skos:ConceptScheme ;\n     skos:prefLabel \"Smart Device Template\" ;\n     rdfs:seeAlso <https://github.com/Homegateway/SmartDeviceTemplate> ;\n     skos:hasTopConcept onem2m:Device .\n\nonem2m:Device a skos:Concept ;\n           skos:prefLabel \"Device\" ;\n           skos:definition \"For each physical device on the network at least one Device must be defined. If the physical device is a simple device, i.e. it does not contain embedded devices, e.g. a light switch, it does not include further SubDevices. On the other hand, if the physical is a compound device, i.e. it does contain embedded devices that can be addressed separately, the Device should contain SubDevices for each of the identifiable embedded devices.\" ;\n           skos:inScheme onem2m:scheme;\n           skos:related onem2m:Module, onem2m:Property .\n\nonem2m:Module a skos:Concept ;\n           skos:prefLabel \"Module\" ;\n           skos:definition \"Module elements are basically constraints or templates for how to model functionality of real things/appliances/devices within the Domain. There could be an infinite number of possible functionalities, however it is recommended to identify a not-too-large selection of them as generic examples and allow for additional proprietary extensions. In a particular Domain there will be one Module for each of the agreed ModuleClasses plus additional ones for each extension of a ModuleClass.\" ;\n           skos:inScheme onem2m:scheme;\n           skos:related onem2m:Property, onem2m:DataPoint, onem2m:Action, onem2m:Event .\n\nonem2m:Property a skos:Concept ;\n             skos:prefLabel \"Property\" ;\n             skos:definition \"Property elements are used to append to Devices and their ModuleClass elements with arbitrary additional information. For Devices it would be very common for a manufacturer to want to add into the XML file which is describing the device such information as \\\"Manufacturing Site\\\", \\\"Date of Manufacture\\\", \\\"Certification Code\\\", \\\"Energy Label Code\\\", \\\"compatible LAN technology\\\", \\\"URL for the device handbook\\\", \\\"physical limits of operation environments\\\", etc.\" ;\n             skos:inScheme onem2m:scheme;\n             skos:related onem2m:DataType .\n\nonem2m:Action a skos:Concept ;\n           skos:prefLabel \"Action\" ;\n           skos:definition \"Action elements are an efficient way of describing arbitrary sequences of operations/methods; these are very common in automation. Typical example include \\\"FactoryReset\\\", and \\\"AutoCalibrate\\\". Actions preserve transaction integrity by putting together all the parameters (\\\"args\\\", see next section) with the method which checks and executes them, in one step.\" ;\n           skos:inScheme onem2m:scheme;\n           skos:related onem2m:DataType .\n\nonem2m:Event a skos:Concept ;\n            skos:prefLabel \"Event\" ;\n            skos:definition \"Event elements are needed for automation protocols which \\\"push\\\" information, instead of relying on polling by the software application. A typical example would be a \\\"SensorAlert\\\" where a window sensor immediately transmits a change of its state from \\\"closed\\\" to \\\"open\\\", which could be used in a burglar alarm application, needs to be ready to accept such information immediately, and not wait for a regular polling of the device.\" ;\n            skos:inScheme onem2m:scheme;\n            skos:related onem2m:DataPoint .\n\nonem2m:DataPoint a skos:Concept ;\n              skos:prefLabel \"DataPoint\" ;\n              skos:definition \"A DataPoint element represents an aspect of a device which can be read/written to, and forms part of a device’s data model. Manipulating DataPoints is the most common way of controlling devices. Each DataPoint has an associated type (e.g. simple integer/real numbers, string of text, struct, or arrays thereof) which facillitates data integrity. Note that all RESTful systems (e.g. CoAP) use only DataPoint operations, so the mapping of a data models using an SDT into RESTful applications is easy.\" ;\n              skos:inScheme onem2m:scheme;\n              skos:related onem2m:DataType .\n\nonem2m:DataType a skos:Concept ;\n             skos:prefLabel \"DataType\" ;\n             skos:definition \"The data type can be simple integers or string text, or rather complex. The DataType element is a \\\"container\\\" for the various aspects of a type.\" ;\n             skos:inScheme onem2m:scheme.\n\nhaim:collection a skos:Collection ;\n                skos:prefLabel \"Home Appliances Information Model\" ;\n                skos:definition \"The home appliance information model includes module classes for devices in the home domain such as TV, refrigerator, air conditioner, clothes washer, oven, and robot cleaner.\" ;\n                rdfs:seeAlso <https://git.onem2m.org/MAS/Home-Appliances> ."
+      "@value" : "@prefix onem2m: <http://purl.org/wot-catalogue/onem2m#> .\n@prefix haim: <http://purl.org/wot-catalogue/onem2m/haim#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n\nonem2m:scheme a skos:ConceptScheme ;\n     skos:prefLabel \"oneM2M\" ;\n     skos:definition \"oneM2M concepts follow the Smart Device Template (SDT) meta-model.\" ;\n     rdfs:seeAlso <https://github.com/Homegateway/SmartDeviceTemplate> ;\n     skos:hasTopConcept onem2m:Device .\n\nonem2m:Device a skos:Concept ;\n           skos:prefLabel \"Device\" ;\n           skos:definition \"For each physical device on the network at least one Device must be defined. If the physical device is a simple device, i.e. it does not contain embedded devices, e.g. a light switch, it does not include further SubDevices. On the other hand, if the physical is a compound device, i.e. it does contain embedded devices that can be addressed separately, the Device should contain SubDevices for each of the identifiable embedded devices.\" ;\n           skos:inScheme onem2m:scheme;\n           skos:related onem2m:Module, onem2m:Property .\n\nonem2m:Module a skos:Concept ;\n           skos:prefLabel \"Module\" ;\n           skos:definition \"Module elements are basically constraints or templates for how to model functionality of real things/appliances/devices within the Domain. There could be an infinite number of possible functionalities, however it is recommended to identify a not-too-large selection of them as generic examples and allow for additional proprietary extensions. In a particular Domain there will be one Module for each of the agreed ModuleClasses plus additional ones for each extension of a ModuleClass.\" ;\n           skos:inScheme onem2m:scheme;\n           skos:related onem2m:Property, onem2m:DataPoint, onem2m:Action, onem2m:Event .\n\nonem2m:Property a skos:Concept ;\n             skos:prefLabel \"Property\" ;\n             skos:definition \"Property elements are used to append to Devices and their ModuleClass elements with arbitrary additional information. For Devices it would be very common for a manufacturer to want to add into the XML file which is describing the device such information as \\\"Manufacturing Site\\\", \\\"Date of Manufacture\\\", \\\"Certification Code\\\", \\\"Energy Label Code\\\", \\\"compatible LAN technology\\\", \\\"URL for the device handbook\\\", \\\"physical limits of operation environments\\\", etc.\" ;\n             skos:inScheme onem2m:scheme;\n             skos:related onem2m:DataType .\n\nonem2m:Action a skos:Concept ;\n           skos:prefLabel \"Action\" ;\n           skos:definition \"Action elements are an efficient way of describing arbitrary sequences of operations/methods; these are very common in automation. Typical example include \\\"FactoryReset\\\", and \\\"AutoCalibrate\\\". Actions preserve transaction integrity by putting together all the parameters (\\\"args\\\", see next section) with the method which checks and executes them, in one step.\" ;\n           skos:inScheme onem2m:scheme;\n           skos:related onem2m:DataType .\n\nonem2m:Event a skos:Concept ;\n            skos:prefLabel \"Event\" ;\n            skos:definition \"Event elements are needed for automation protocols which \\\"push\\\" information, instead of relying on polling by the software application. A typical example would be a \\\"SensorAlert\\\" where a window sensor immediately transmits a change of its state from \\\"closed\\\" to \\\"open\\\", which could be used in a burglar alarm application, needs to be ready to accept such information immediately, and not wait for a regular polling of the device.\" ;\n            skos:inScheme onem2m:scheme;\n            skos:related onem2m:DataPoint .\n\nonem2m:DataPoint a skos:Concept ;\n              skos:prefLabel \"DataPoint\" ;\n              skos:definition \"A DataPoint element represents an aspect of a device which can be read/written to, and forms part of a device’s data model. Manipulating DataPoints is the most common way of controlling devices. Each DataPoint has an associated type (e.g. simple integer/real numbers, string of text, struct, or arrays thereof) which facillitates data integrity. Note that all RESTful systems (e.g. CoAP) use only DataPoint operations, so the mapping of a data models using an SDT into RESTful applications is easy.\" ;\n              skos:inScheme onem2m:scheme;\n              skos:related onem2m:DataType .\n\nonem2m:DataType a skos:Concept ;\n             skos:prefLabel \"DataType\" ;\n             skos:definition \"The data type can be simple integers or string text, or rather complex. The DataType element is a \\\"container\\\" for the various aspects of a type.\" ;\n             skos:inScheme onem2m:scheme.\n\nhaim:collection a skos:Collection ;\n                skos:prefLabel \"Home Appliances Information Model\" ;\n                skos:definition \"The home appliance information model includes module classes for devices in the home domain such as TV, refrigerator, air conditioner, clothes washer, oven, and robot cleaner.\" ;\n                rdfs:seeAlso <https://git.onem2m.org/MAS/Home-Appliances> ."
     } ],
     "http://plugins.linkedpipes.com/ontology/e-textHolder#contentControl" : [ {
       "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"

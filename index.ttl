@@ -6,9 +6,11 @@
 @prefix lwm2m: <https://purl.org/wot-catalogue/lwm2m#> .
 @prefix ocf: <https://purl.org/wot-catalogue/ocf#> .
 @prefix onem2m: <https://purl.org/wot-catalogue/onem2m#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :catalogue a dcat:Catalog;
-  dct:created "2022-05-14T19:24:56.619Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+  dct:created "2022-05-20T13:21:47.850Z"^^xsd:dateTime;
   dct:creator <https://vcharpenay/link/#me>;
   dct:title "Web of Things (WoT) Catalogue";
   dcat:dataset bacnet:scheme, ble:scheme, lwm2m:scheme, ocf:scheme, onem2m:scheme .

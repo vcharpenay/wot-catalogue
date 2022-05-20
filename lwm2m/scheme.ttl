@@ -1,51 +1,51 @@
-@prefix lwm2m: <http://purl.org/wot-catalogue/lwm2m#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-lwm2m:scheme a skos:ConceptScheme;
+<http://purl.org/wot-catalogue/lwm2m#scheme> a skos:ConceptScheme;
   rdfs:seeAlso <https://www.omaspecworks.org/develop-with-oma-specworks/ipso-smart-objects/>;
-  skos:hasTopConcept lwm2m:IPSOObject;
+  skos:hasTopConcept <http://purl.org/wot-catalogue/lwm2m#IPSOObject>;
   skos:prefLabel "Light-weight Machine-to-Machine (LWM2M)" .
 
-lwm2m:Object a skos:Concept;
+<http://purl.org/wot-catalogue/lwm2m#Object> a skos:Concept;
   skos:altLabel "object";
   skos:definition "The LWM2M Enabler defines a simple resource model where each piece of information made available by the LWM2M Client is a Resource. Resources are logically organized into Objects.";
-  skos:inScheme lwm2m:scheme;
+  skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme>;
   skos:prefLabel "Object";
-  skos:related lwm2m:IPSOResource, lwm2m:Operation .
+  skos:related <http://purl.org/wot-catalogue/lwm2m#IPSOResource>, <http://purl.org/wot-catalogue/lwm2m#Operation> .
 
-lwm2m:Operation a skos:Concept;
+<http://purl.org/wot-catalogue/lwm2m#Operation> a skos:Concept;
   skos:altLabel "operation";
   skos:definition "Each Object and Resource is defined to have one or more operations that it supports.";
-  skos:inScheme lwm2m:scheme;
-  skos:narrower lwm2m:E, lwm2m:R, lwm2m:RW, lwm2m:W;
+  skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme>;
+  skos:narrower <http://purl.org/wot-catalogue/lwm2m#E>, <http://purl.org/wot-catalogue/lwm2m#R>,
+    <http://purl.org/wot-catalogue/lwm2m#RW>, <http://purl.org/wot-catalogue/lwm2m#W>;
   skos:prefLabel "Operation" .
 
-lwm2m:Resource a skos:Concept;
+<http://purl.org/wot-catalogue/lwm2m#Resource> a skos:Concept;
   skos:altLabel "resource";
   skos:definition "The LWM2M Enabler defines a simple resource model where each piece of information made available by the LWM2M Client is a Resource. Resources are defined per Object, and each Resource is given a unique identifier within that Object.";
-  skos:inScheme lwm2m:scheme;
+  skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme>;
   skos:prefLabel "Resource";
-  skos:related lwm2m:Operation .
+  skos:related <http://purl.org/wot-catalogue/lwm2m#Operation> .
 
-lwm2m:R a skos:Concept;
+<http://purl.org/wot-catalogue/lwm2m#R> a skos:Concept;
   skos:altLabel "read operation";
-  skos:inScheme lwm2m:scheme;
+  skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme>;
   skos:prefLabel "Read Operation" .
 
-lwm2m:W a skos:Concept;
+<http://purl.org/wot-catalogue/lwm2m#W> a skos:Concept;
   skos:altLabel "write operation";
-  skos:inScheme lwm2m:scheme;
+  skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme>;
   skos:prefLabel "Write Operation" .
 
-lwm2m:E a skos:Concept;
+<http://purl.org/wot-catalogue/lwm2m#E> a skos:Concept;
   skos:altLabel "execute operation";
-  skos:inScheme lwm2m:scheme;
+  skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme>;
   skos:prefLabel "Execute Operation" .
 
-lwm2m:RW a skos:Concept;
-  skos:altLabel "read/write operation";
-  skos:inScheme lwm2m:scheme;
+<http://purl.org/wot-catalogue/lwm2m#RW> a skos:Concept;
+  skos:altLabel "read write operation";
+  skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme>;
   skos:prefLabel "Read/Write Operation" .
