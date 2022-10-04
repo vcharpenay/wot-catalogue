@@ -20,8 +20,6 @@ from the following communication and classification standards:
 
 The WoT catalogue is split in several Turtle file. The entry point is [`index.ttl`](http://purl.org/wot-catalogue).
 
-See the [online search engine](http://www.vcharpenay.link/wot-catalogue/) to browse concepts or download [the full catalogue in Turtle](wot-catalogue.ttl).
-
 ## Documentation
 
 Concept definitions follow the
