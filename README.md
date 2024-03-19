@@ -17,6 +17,7 @@ from the following communication and classification standards:
  - [ICM](https://cimug.ucaiug.org/CIM%20Profiles/Forms/AllItems.aspx) (TODO)
  - [Smart Data Models](https://smartdatamodels.org/) (TODO)
  - [ROS](http://wiki.ros.org/common_msgs) (TODO)
+ - [Eclipse Vorto](https://github.com/eclipse/vorto/tree/development/models) (TODO)
 
 ## Getting Started
 
