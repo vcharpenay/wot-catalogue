@@ -1,0 +1,840 @@
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix haim: <http://purl.org/wot-catalogue/onem2m/haim#> .
+@prefix ipso: <http://purl.org/wot-catalogue/lwm2m/ipso#> .
+@prefix ocf: <http://purl.org/wot-catalogue/ocf#> .
+@prefix ble: <http://purl.org/wot-catalogue/ble#> .
+
+# general issues:
+# - min/max values or accuracy/quality? More specifically, constants?
+# - fractions of a number or factors (for numeric precision)?
+# - enumerated value indicating the existence of an entity (a person's presence)
+# - property p of X, same property p of Y (no terms for X/Y)
+# - properties as proxies (potentiometer for sound level or HID elements in BLE)
+
+# OneM2M/HAIM alignment
+
+# issues:
+# - acoustic sensor: value in percent, or dB^2, not dB?
+# - air flow: no quantity kind for direction? Nominal/ordinal scale for "mode"?
+# - air purifier: idem, only described with "modes"
+# - air quality: concentration is in PPM?
+# - battery: energy and voltage in ampere?
+# - bio-electrical impedance: quantity kind for kCal? (HeatingValue)
+# - body composition: basal metabolism = weight? impedance in ohm?
+# - geo-location: no lon/lat?
+
+# TODO add percentage as PositiveDimensionlessRatio everywhere
+# TODO put quantitykind:Wavelength for color properties
+
+<http://purl.org/wot-catalogue/onem2m/haim#AcousticSensor-AcousticStatus>
+  skos:closeMatch quantitykind:SoundPressureLevel .
+
+<http://purl.org/wot-catalogue/onem2m/haim#AcousticSensor-Loudness>
+  skos:closeMatch quantitykind:SoundPressureLevel .
+
+<http://purl.org/wot-catalogue/onem2m/haim#AirFlow-HorizontalDirection>
+  skos:closeMatch quantitykind:Length .
+
+<http://purl.org/wot-catalogue/onem2m/haim#AirFlow-VerticalDirection>
+  skos:closeMatch quantitykind:Length .
+
+<http://purl.org/wot-catalogue/onem2m/haim#AirFlow-Speed>
+  skos:closeMatch quantitykind:Speed .
+
+<http://purl.org/wot-catalogue/onem2m/haim#AirQualitySensor-Ch2o>
+  skos:closeMatch quantitykind:Concentration .
+
+<http://purl.org/wot-catalogue/onem2m/haim#AirQualitySensor-Co>
+  skos:closeMatch quantitykind:Concentration .
+
+<http://purl.org/wot-catalogue/onem2m/haim#AirQualitySensor-Co2>
+  skos:closeMatch quantitykind:Concentration .
+
+<http://purl.org/wot-catalogue/onem2m/haim#AirQualitySensor-SensorHumidity>
+  skos:closeMatch quantitykind:RelativeHumidity .
+
+<http://purl.org/wot-catalogue/onem2m/haim#AirQualitySensor-SensorPM1>
+  skos:closeMatch quantitykind:Concetration .
+
+<http://purl.org/wot-catalogue/onem2m/haim#AirQualitySensor-SensorPM2>
+  skos:closeMatch quantitykind:Concetration .
+
+<http://purl.org/wot-catalogue/onem2m/haim#AirQualitySensor-SensorPM10>
+  skos:closeMatch quantitykind:Concetration .
+
+<http://purl.org/wot-catalogue/onem2m/haim#AirQualitySensor-Voc>
+  skos:closeMatch quantitykind:Concetration .
+
+<http://purl.org/wot-catalogue/onem2m/haim#AudioVolume-VolumePercentage>
+  skos:closeMatch quantitykind:PressurePercentage .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Battery-Capacity>
+  skos:closeMatch quantitykind:ElectricCharge .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Battery-Voltage>
+  skos:closeMatch quantitykind:Voltage .
+
+# <http://purl.org/wot-catalogue/onem2m/haim#BioElectricalImpedanceAnalysis-Kcal>
+#   skos:closeMatch quantitykind: .
+
+<http://purl.org/wot-catalogue/onem2m/haim#BioElectricalImpedanceAnalysis-Resistance>
+  skos:closeMatch quantitykind:Resistivity .
+
+<http://purl.org/wot-catalogue/onem2m/haim#BodyCompositionAnalyser-BasalMetabolism>
+  skos:closeMatch quantitykind:Mass .
+
+<http://purl.org/wot-catalogue/onem2m/haim#BodyCompositionAnalyser-Bmi>
+  skos:closeMatch quantitykind:BodyMassIndex .
+
+<http://purl.org/wot-catalogue/onem2m/haim#BodyCompositionAnalyser-BodyLength>
+  skos:closeMatch quantitykind:Height .
+
+<http://purl.org/wot-catalogue/onem2m/haim#BodyCompositionAnalyser-FatFreeMass>
+  skos:closeMatch quantitykind:Mass .
+
+<http://purl.org/wot-catalogue/onem2m/haim#BodyCompositionAnalyser-Impedance>
+  skos:closeMatch quantitykind:Impedance .
+
+<http://purl.org/wot-catalogue/onem2m/haim#BodyCompositionAnalyser-MuscleMass>
+  skos:closeMatch quantitykind:Mass .
+
+<http://purl.org/wot-catalogue/onem2m/haim#BodyCompositionAnalyser-SoftLeanMass>
+  skos:closeMatch quantitykind:Mass .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Brewing-CupsNumber>
+  skos:closeMatch quantitykind:Count .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Brightness-Brightness>
+  skos:closeMatch quantitykind:Luminance .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Clock-CurrentTime>
+  skos:closeMatch quantitykind:Time .
+
+<http://purl.org/wot-catalogue/onem2m/haim#ClothesWasherJobModeOption-SpinSpeed>
+  skos:closeMatch quantitykind:Speed .
+
+<http://purl.org/wot-catalogue/onem2m/haim#ClothesWasherJobModeOption-WashTemp>
+  skos:closeMatch quantitykind:Temperature .
+
+<http://purl.org/wot-catalogue/onem2m/haim#DoorStatus-OpenDuration>
+  skos:closeMatch quantitykind:Time .
+
+<http://purl.org/wot-catalogue/onem2m/haim#ElectricVehicleConnector-ChargingCapacity>
+  skos:closeMatch quantitykind:ElectricCharge .
+
+<http://purl.org/wot-catalogue/onem2m/haim#EnergyConsumption-AbsoluteEnergyConsumption>
+  skos:closeMatch quantitykind:Energy .
+
+<http://purl.org/wot-catalogue/onem2m/haim#EnergyConsumption-Current>
+  skos:closeMatch quantitykind:ElectricCurrent .
+
+<http://purl.org/wot-catalogue/onem2m/haim#EnergyConsumption-Frequency>
+  skos:closeMatch quantitykind:Frequency .
+
+<http://purl.org/wot-catalogue/onem2m/haim#EnergyConsumption-Power>
+  skos:closeMatch quantitykind:ElectricPower .
+
+<http://purl.org/wot-catalogue/onem2m/haim#EnergyConsumption-RoundingEnergyConsumption>
+  skos:closeMatch quantitykind:Energy .
+
+<http://purl.org/wot-catalogue/onem2m/haim#EnergyConsumption-Voltage>
+  skos:closeMatch quantitykind:Voltage .
+
+<http://purl.org/wot-catalogue/onem2m/haim#EnergyGeneration-PowerGenerationData>
+  skos:closeMatch quantitykind:ElectricPower .
+
+<http://purl.org/wot-catalogue/onem2m/haim#EnergyGeneration-RoundingEnergyGeneration> 
+  skos:closeMatch quantitykind:Energy .
+
+<http://purl.org/wot-catalogue/onem2m/haim#GeoLocation-Altitude>
+  skos:closeMatch quantitykind:Altitude .
+
+<http://purl.org/wot-catalogue/onem2m/haim#GeoLocation-Heading>
+  skos:closeMatch quantitykind:Angle .
+
+<http://purl.org/wot-catalogue/onem2m/haim#GeoLocation-Latitude>
+  skos:closeMatch quantitykind:RadialDistance .
+
+<http://purl.org/wot-catalogue/onem2m/haim#GeoLocation-Longitude>
+  skos:closeMatch quantitykind:RadialDistance .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Glucometer-Concentration>
+  skos:closeMatch quantitykind:BloodGlucoseLevel .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Glucometer-ContextCarbohydratesAmount>
+  skos:closeMatch quantitykind:Mass .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Glucometer-ContextExercise>
+  skos:closeMatch quantitykind:PositiveDimensionlessRatio .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Glucometer-Hba1c>
+  skos:closeMatch quantitykind:PositiveDimensionlessRatio .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Height-Height>
+  skos:closeMatch quantitykind:Height .
+
+<http://purl.org/wot-catalogue/onem2m/haim#ImpactSensor-ImpactDirectionHorizontal>
+  skos:closeMatch quantitykind:Angle .
+
+<http://purl.org/wot-catalogue/onem2m/haim#ImpactSensor-ImpactDirectionVertical>
+  skos:closeMatch quantitykind:Angle .
+
+<http://purl.org/wot-catalogue/onem2m/haim#ImpactSensor-ImpactLevel>
+  skos:closeMatch quantitykind:Weight .
+
+<http://purl.org/wot-catalogue/onem2m/haim#KeepWarm-Time>
+  skos:closeMatch quantitykind:Time .
+
+<http://purl.org/wot-catalogue/onem2m/haim#LiquidLevel-LiquidLevel>
+  skos:closeMatch quantitykind:Depth .
+
+<http://purl.org/wot-catalogue/onem2m/haim#LiquidRemaining-LiquidRemaining>
+  skos:closeMatch quantitykind:Depth .
+
+<http://purl.org/wot-catalogue/onem2m/haim#MotionSensor-SilentTime>
+  skos:closeMatch quantitykind:Time .
+
+<http://purl.org/wot-catalogue/onem2m/haim#NumberValue-NumberValue>
+  skos:closeMatch quantitykind:Count .
+
+<http://purl.org/wot-catalogue/onem2m/haim#OpenLevel-OpenLevel>
+  skos:closeMatch quantitykind:PositiveDimensionlessRatio .
+
+<http://purl.org/wot-catalogue/onem2m/haim#OvercurrentSensor-DetectedTime>
+  skos:closeMatch quantitykind:Time .
+
+<http://purl.org/wot-catalogue/onem2m/haim#OvercurrentSensor-Duration>
+  skos:closeMatch quantitykind:Time .
+
+<http://purl.org/wot-catalogue/onem2m/haim#OvercurrentSensor-Duration>
+  skos:closeMatch quantitykind: .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Oximeter-OxygenSaturation>
+  skos:closeMatch quantitykind:PositiveDimensionlessRatio .
+
+<http://purl.org/wot-catalogue/onem2m/haim#OzoneMeter-OzoneValueMG>
+  skos:closeMatch quantitykind:AmountOfSubstancePerUnitVolume .
+
+<http://purl.org/wot-catalogue/onem2m/haim#OzoneMeter-OzoneValuePPM>
+  skos:closeMatch quantitykind:Concentration .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Pulsemeter-Energy>
+  skos:closeMatch quantitykind:Power .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Pulsemeter-PulseRate>
+  skos:closeMatch quantitykind:Frequency .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Pulsemeter-Rr>
+  skos:closeMatch quantitykind:Time .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Recorder-Duration>
+  skos:closeMatch quantitykind:Time .
+
+<http://purl.org/wot-catalogue/onem2m/haim#RelativeHumidity-RelativeHumidity>
+  skos:closeMatch quantitykind:RelativeHumidity .
+
+<http://purl.org/wot-catalogue/onem2m/haim#SignalStrength-Lqi>
+  skos:closeMatch quantitykind:PositiveDimensionlessRatio .
+
+<http://purl.org/wot-catalogue/onem2m/haim#SignalStrength-Rssi>
+  skos:closeMatch quantitykind:PositiveDimensionlessRatio .
+
+<http://purl.org/wot-catalogue/onem2m/haim#SmokeSensor-CurrentValue>
+  skos:closeMatch quantitykind:Concentration .
+
+<http://purl.org/wot-catalogue/onem2m/haim#SmokeSensor-DetectedTime>
+  skos:closeMatch quantitykind:Time .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Sphygmomanometer-DiastolicPressure>
+  skos:closeMatch quantitykind:DiastolicBloodPressure .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Sphygmomanometer-MeanPressure>
+  skos:closeMatch quantitykind:Pressure .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Sphygmomanometer-SystolicPressure>
+  skos:closeMatch quantitykind:SystolicBloodPressure .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Temperature-CurrentTemperature>
+  skos:closeMatch quantitykind:Temperature .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Timer-RunningTime>
+  skos:closeMatch quantitykind:Time .
+
+<http://purl.org/wot-catalogue/onem2m/haim#UvSensor-UvValue>
+  skos:closeMatch quantitykind:Irradiance .
+
+<http://purl.org/wot-catalogue/onem2m/haim#Weight-Weight>
+  skos:closeMatch quantitykind:Mass .
+
+# LWM2M/IPSO alignment
+
+# issues:
+# - property: generic value, type of quantity is at the level of sensor (e.g. 3301: illuminance sensor)
+
+ipso:5518
+  skos:closeMatch quantitykind:Time .
+
+ipso:5536
+  skos:closeMatch quantitykind:PositiveDimensionlessRatio .
+
+ipso:5537
+  skos:closeMatch quantitykind:Time .
+
+ipso:5538
+  skos:closeMatch quantitykind:Time .
+
+ipso:6051
+  skos:closeMatch quantitykind:RadialDistance .
+
+ipso:6052
+  skos:closeMatch quantitykind:RadialDistance .
+
+ipso:5705
+  skos:closeMatch quantitykind:Angle .
+
+ipso:5517
+  skos:closeMatch quantitykind:Speed .
+
+ipso:5541
+  skos:closeMatch quantitykind:Count .
+
+ipso:5800
+  skos:closeMatch quantitykind:ActivePower .
+
+ipso:5810
+  skos:closeMatch quantitykind:ReactivePower .
+
+ipso:5820
+  skos:closeMatch quantitykind:PositiveDimensionlessRatio .
+
+ipso:5851
+  skos:closeMatch quantitykind:PositiveDimensionlessRatio .
+
+ipso:5852
+  skos:closeMatch quantitykind:Time .
+
+ipso:5854
+  skos:closeMatch quantitykind:Time .
+
+ipso:5501
+  skos:closeMatch quantitykind:Count .
+
+ipso:5506
+  skos:closeMatch quantitykind:Time .
+
+ipso:5521
+  skos:closeMatch quantitykind:Time .
+
+ipso:5825
+  skos:closeMatch quantitykind:Time .
+
+ipso:5524
+  skos:closeMatch quantitykind:Time .
+
+ipso:5544
+  skos:closeMatch quantitykind:Time .
+
+ipso:5702
+  skos:closeMatch quantitykind:CartesianCoordinates .
+
+ipso:5703
+  skos:closeMatch quantitykind:CartesianCoordinates .
+
+ipso:5704
+  skos:closeMatch quantitykind:CartesianCoordinates .
+
+ipso:5706
+  skos:closeMatch quantitykind:Wavelength .
+
+ipso:5534
+  skos:closeMatch quantitykind:Count .
+
+ipso:5528
+  skos:closeMatch quantitykind:CartesianCoordinates .
+
+ipso:5529
+  skos:closeMatch quantitykind:CartesianCoordinates .
+
+ipso:5531
+  skos:closeMatch quantitykind:PositiveDimensionlessRatio .
+
+ipso:3301
+  skos:closeMatch [
+    skos:related quantitykind:Illuminance
+  ] .
+
+ipso:3325
+  skos:closeMatch [
+    skos:related quantitykind:Concentration
+  ] .
+
+ipso:3304
+  skos:closeMatch [
+    skos:related quantitykind:RelativeHumidity
+  ] .
+
+ipso:3315
+  skos:closeMatch [
+    skos:related quantitykind:AtmosphericPressure
+  ] .
+
+ipso:3330
+  skos:closeMatch [
+    skos:related quantitykind:Distance
+  ] .
+
+ipso:3323
+  skos:closeMatch [
+    skos:related quantitykind:Pressure
+  ] .
+
+ipso:3322
+  skos:closeMatch [
+    skos:related quantitykind:Weight
+  ] .
+
+ipso:3303
+  skos:closeMatch [
+    skos:related quantitykind:Temperature
+  ] .
+
+ipso:3327
+  skos:closeMatch [
+    skos:related quantitykind:ElectricConductivity
+  ] .
+
+ipso:3321
+  skos:closeMatch [
+    skos:related quantitykind:Altitude
+  ] .
+
+ipso:3326
+  skos:closeMatch [
+    skos:related quantitykind:Acidity
+  ] .
+
+ipso:3319
+  skos:closeMatch [
+    skos:related quantitykind:Depth
+  ] .
+
+ipso:3317
+  skos:closeMatch [
+    skos:related quantitykind:ElectricCurrent
+  ] .
+
+ipso:3318
+  skos:closeMatch [
+    skos:related quantitykind:Frequency
+  ] .
+
+ipso:3331
+  skos:closeMatch [
+    skos:related quantitykind:Energy
+  ] .
+
+ipso:3324
+  skos:closeMatch [
+    skos:related quantitykind:SoundPressureLevel
+  ] .
+
+ipso:3316
+  skos:closeMatch [
+    skos:related quantitykind:Voltage
+  ] .
+
+ipso:3313
+  skos:closeMatch [
+    skos:related quantitykind:Acceleration
+  ] .
+
+# OCF alignment
+
+# issues:
+# - quantity sometimes at the level of the resources, sometimes at the level of the JSON object within the resource representation
+
+ocf:AccelerationResURI
+  skos:closeMatch quantitykind:Acceleration .
+
+ocf:ocf:ActivityCountResURI
+  skos:closeMatch quantitykind:Count .
+
+ocf:AirFlowResURI
+  skos:closeMatch quantitykind:VolumeFlowRate .
+
+ocf:AirQualityResURI
+  skos:closeMatch quantitykind:Concentration .
+
+ocf:AltimeterResURI
+  skos:closeMatch quantitykind:Altitude .
+
+ocf:AtmosphericPressureResURI
+  skos:closeMatch quantitykind:AtmosphericPressure .
+
+ocf:AudioResURI
+  skos:closeMatch quantitykind:PositiveDimensionlessRatio .
+
+ocf:ocf:BatteryResURI
+  skos:closeMatch quantitykind:ElectricCharge .
+
+ocf:ocf:BloodPressureResURI
+  skos:closeMatch quantitykind:Pressure .
+
+ocf:BMIResURI
+  skos:closeMatch quantitykind:BodyMassIndex .
+
+ocf:BodyFatFreeMassResURI
+  skos:closeMatch quantitykind:Mass .
+
+ocf:BodyFatResURI
+  skos:closeMatch quantitykind:Mass .
+
+ocf:BodyLocationTemperatureResURI
+  skos:closeMatch quantitykind:PositionVector .
+
+ocf:BodySoftLeanMassResURI
+  skos:closeMatch quantitykind:Mass .
+
+ocf:BodyWaterResURI
+  skos:closeMatch quantitykind:Mass .
+
+ocf:BrightnessResURI
+  skos:closeMatch quantitykind:Illuminance .
+
+ocf:CadenceResURI
+  skos:closeMatch quantitykind:Frequency .
+
+ocf:CalorificValueResURI
+  skos:closeMatch quantitykind:HeatingValue .
+
+ocf:CarbonDioxideResURI
+  skos:closeMatch quantitykind:Concentration .
+
+ocf:CarbonMonoxideResURI
+  skos:closeMatch quantitykind:Concentration .
+
+ocf:CivicLocationResURI
+  skos:closeMatch quantitykind:RadialDistance .
+
+ocf:ClockResURI
+  skos:closeMatch quantitykind:Time .
+
+ocf:ColourRenderingIndexResURI
+  skos:closeMatch quantitykind:DimensionlessRatio .
+
+ocf:ColourRGBResURI
+  skos:closeMatch quantitykind:Wavelength .
+
+ocf:ContinuousGlucoseMeterSamplingIntervalResURI
+  skos:closeMatch quantitykind:Time .
+
+ocf:ContinuousGlucoseMeterStatusResURI
+  skos:closeMatch quantitykind:BloodGlucoseLevel .
+
+ocf:ConversionFactorResURI
+  skos:closeMatch quantitykind:DimensionlessRatio .
+
+ocf:CyclingPowerResURI
+  skos:closeMatch quantitykind:Power .
+
+ocf:DimmingResURI
+  skos:closeMatch quantitykind:DimensionlessRatio .
+
+ocf:EnergyConsumptionResURI
+  skos:closeMatch quantitykind:Energy .
+
+ocf:EnergyGenerationResURI
+  skos:closeMatch quantitykind:Energy .
+
+ocf:EnergyResURI
+  skos:closeMatch quantitykind:Energy .
+
+<http://purl.org/wot-catalogue/ocf#example%2FColourChromaResURI>
+  skos:closeMatch quantitykind:Wavelength .
+
+<http://purl.org/wot-catalogue/ocf#example%2FColourHueSaturationResURI>
+  skos:closeMatch quantitykind:Wavelength .
+
+<http://purl.org/wot-catalogue/ocf#example%2FColourSpaceCoordinatesResURI>
+  skos:closeMatch quantitykind:Wavelength .
+
+<http://purl.org/wot-catalogue/ocf#example%2FColourTemperatureResURI>
+  skos:closeMatch quantitykind:CorrelatedColorTemperature .
+
+ocf:ExerciseResURI
+  skos:closeMatch quantitykind:DimensionlessRatio .
+
+ocf:GasConsumptionResURI
+  skos:closeMatch quantitykind:Volume .
+
+ocf:GeolocationResURI
+  skos:closeMatch quantitykind:RadialDistance .
+
+ocf:GlucoseCarbResURI
+  skos:closeMatch quantitykind:Mass .
+
+ocf:GlucoseHbA1cResURI
+  skos:closeMatch quantitykind:DimensionlessRatio .
+
+ocf:GlucoseMedicationResURI
+  skos:closeMatch quantitykind:Mass .
+
+ocf:GlucoseResURI
+  skos:closeMatch quantitykind:Concentration .
+
+ocf:HeartRateResURI
+  skos:closeMatch quantitykind:HeartRate .
+
+ocf:HeartRateZoneResURI
+  skos:closeMatch quantitykind:HeartRate .
+
+ocf:HeightResURI
+  skos:closeMatch quantitykind:Height .
+
+ocf:HumidityResURI
+  skos:closeMatch quantitykind:RelativeHumidity .
+
+ocf:HVACCapacityResURI
+  skos:closeMatch quantitykind:Power .
+
+ocf:IlluminanceSensorResURI
+  skos:closeMatch quantitykind:Illuminance .
+
+ocf:ImpactSensorResURI
+  skos:closeMatch quantitykind:Weight .
+
+ocf:LiquidLevelResURI
+  skos:closeMatch quantitykind:Depth .
+
+ocf:MagneticFieldDirectionResURI
+  skos:closeMatch quantitykind:Length .
+
+ocf:MotionResURI
+  skos:closeMatch quantitykind:Velocity .
+
+ocf:MovementResURI
+  skos:closeMatch quantitykind:Velocity .
+
+ocf:MuscleOxygenSaturationResURI
+  skos:closeMatch quantitykind:PositiveDimensionlessRatio .
+
+ocf:OpenLevelResURI
+  skos:closeMatch quantitykind:Length .
+
+ocf:PulseRateResURI
+  skos:closeMatch quantitykind:Frequency .
+
+ocf:RampTimeResURI
+  skos:closeMatch quantitykind:Time .
+
+ocf:SleepResURI
+  skos:closeMatch quantitykind:Time .
+
+ocf:SoundPressureLevelResURI
+  skos:closeMatch quantitykind:SoundPressureLevel .
+
+ocf:SoundPressureResURI
+  skos:closeMatch quantitykind:Pressure .
+
+ocf:SpeedResURI
+  skos:closeMatch quantitykind:Speed .
+
+ocf:SpO2ResURI
+  skos:closeMatch quantitykind:Concentration .
+
+ocf:TemperatureResURI
+  skos:closeMatch quantitykind:Temperature .
+
+ocf:ThreeAxisResURI
+  skos:closeMatch quantitykind:PositionVector .
+
+ocf:TimePeriodResURI
+  skos:closeMatch quantitykind:Time .
+
+ocf:TimeStampResURI
+  skos:closeMatch quantitykind:Time .
+
+ocf:TorqueResURI
+  skos:closeMatch quantitykind:Torque .
+
+ocf:UVRadiationResURI
+  skos:closeMatch quantitykind:PositiveDimensionlessRatio .
+
+ocf:WeightResURI
+  skos:closeMatch quantitykind:Mass .
+
+# BLE alignment
+
+# issues:
+# - sometimes, quantity at the level of the characteristic, sometimes of the field (several properties in one characteristic); same as for OCF
+# - for a measurement characteristics, there's also a "feature" characteristic (to remove)
+# - barometric pressure trend (2AA3) refers to the derivative of a quantity, not the quantity itself
+
+ble:2A08
+  skos:closeMatch quantitykind:Time .
+
+ble:2A0A
+  skos:closeMatch quantitykind:Time .
+
+ble:2A0C
+  skos:closeMatch quantitykind:Time .
+
+ble:2A1C
+  skos:closeMatch quantitykind:Temperature .
+
+ble:2A1E
+  skos:closeMatch quantitykind:Temperature .
+
+ble:2A2B
+  skos:closeMatch quantitykind:Time .
+
+ble:2A39
+  skos:closeMatch quantitykind:HeartRate .
+
+ble:2A4F
+  skos:closeMatch quantitykind:Time .
+
+ble:2A54
+  skos:closeMatch quantitykind:Speed .
+
+ble:2A5B
+  skos:closeMatch quantitykind:Count .
+
+ble:2A5D
+  skos:closeMatch quantitykind:PositionVector .
+
+ble:2A5F
+  skos:closeMatch quantitykind:Frequency .
+
+ble:2A66
+  skos:closeMatch quantitykind:Power .
+
+ble:2A35
+  skos:closeMatch quantitykind:Pressure .
+
+ble:2A19
+  skos:closeMatch quantitykind:ElectricCharge .
+
+ble:2A2C
+  skos:closeMatch quantitykind:Angle .
+
+ble:2A18
+  skos:closeMatch quantitykind:Concentration .
+
+ble:2A6C
+  skos:closeMatch quantitykind:Altitude .
+
+ble:2A6D
+  skos:closeMatch quantitykind:Pressure .
+
+ble:2A6E
+  skos:closeMatch quantitykind:Temperature .
+
+ble:2A6F
+  skos:closeMatch quantitykind:RelativeHumidity .
+
+ble:2A70
+  skos:closeMatch quantitykind:Speed .
+
+ble:2A75
+  skos:closeMatch quantitykind:Concentration .
+
+ble:2A77
+  skos:closeMatch quantitykind:Irradiance .
+
+ble:2A72
+  skos:closeMatch quantitykind:Speed .
+
+ble:2A76
+  skos:closeMatch quantitykind:Irradiance .
+
+ble:2A7B
+  skos:closeMatch quantitykind:DewPointTemperature .
+
+ble:2A49
+  skos:closeMatch quantitykind:Pressure .
+
+ble:2A78
+  skos:closeMatch quantitykind:Depth .
+
+ble:2A21
+  skos:closeMatch quantitykind:Time .
+
+ble:2A79
+  skos:closeMatch quantitykind:Temperature .
+
+ble:2A85
+  skos:closeMatch quantitykind:Time .
+
+ble:2A11
+  skos:closeMatch quantitykind:Time .
+
+ble:2A37
+  skos:closeMatch quantitykind:HeartRate .
+
+ble:2A71
+  skos:closeMatch quantitykind:Length .
+
+ble:2A8E
+  skos:closeMatch quantitykind:Height .
+
+ble:2A8F
+  skos:closeMatch quantitykind:Length .
+
+ble:2A92
+  skos:closeMatch quantitykind:HeartRate .
+
+ble:2A63
+  skos:closeMatch quantitykind:HeartRate .
+
+ble:2A97
+  skos:closeMatch quantitykind:Length .
+
+ble:2A74
+  skos:closeMatch quantitykind:PositiveDimensionlessRatio .
+
+ble:2A7A
+  skos:closeMatch quantitykind:Temperature .
+
+ble:2A53
+  skos:closeMatch quantitykind:Speed .
+
+ble:2A73
+  skos:closeMatch quantitykind:PositionVector .
+
+ble:2A98
+  skos:closeMatch quantitykind:Mass .
+
+ble:2A9C
+  skos:closeMatch quantitykind:Mass .
+
+ble:2A9D
+  skos:closeMatch quantitykind:Mass .
+
+ble:2AA0
+  skos:closeMatch quantitykind:MagneticFluxDensity .
+
+ble:2AA1
+  skos:closeMatch quantitykind:MagneticFluxDensity .
+
+ble:2AA3
+  skos:closeMatch quantitykind:AtmosphericPressure .
+
+ble:2AAE
+  skos:closeMatch quantitykind:RadialDistance .
+
+ble:2AAF
+  skos:closeMatch quantitykind:RadialDistance .
+
+ble:2AB3
+  skos:closeMatch quantitykind:Altitude .
+
+ble:2AB0
+  skos:closeMatch quantitykind:PositionVector .
+
+ble:2AB1
+  skos:closeMatch quantitykind:PositionVector .
+
+ble:2ACF
+  skos:closeMatch quantitykind:Count .
