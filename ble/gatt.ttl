@@ -1,0 +1,1188 @@
+@prefix ble: <http://purl.org/wot-catalogue/ble#> .
+@prefix gatt: <http://purl.org/wot-catalogue/gatt#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+gatt:collection skos:member gatt:1802,
+        gatt:1803,
+        gatt:1804,
+        gatt:1805,
+        gatt:1806,
+        gatt:1807,
+        gatt:1808,
+        gatt:1809,
+        gatt:180D,
+        gatt:180E,
+        gatt:180F,
+        gatt:1810,
+        gatt:1811,
+        gatt:1812,
+        gatt:1813,
+        gatt:1814,
+        gatt:1815,
+        gatt:1816,
+        gatt:1818,
+        gatt:1819,
+        gatt:181B,
+        gatt:181D,
+        gatt:181E,
+        gatt:181F,
+        gatt:1821,
+        gatt:1822,
+        gatt:1826,
+        gatt:2A06,
+        gatt:2A07,
+        gatt:2A0F,
+        gatt:2A11,
+        gatt:2A14,
+        gatt:2A16,
+        gatt:2A17,
+        gatt:2A18,
+        gatt:2A19,
+        gatt:2A1C,
+        gatt:2A1D,
+        gatt:2A1E,
+        gatt:2A21,
+        gatt:2A22,
+        gatt:2A2B,
+        gatt:2A31,
+        gatt:2A32,
+        gatt:2A33,
+        gatt:2A34,
+        gatt:2A35,
+        gatt:2A36,
+        gatt:2A37,
+        gatt:2A38,
+        gatt:2A39,
+        gatt:2A3F,
+        gatt:2A40,
+        gatt:2A41,
+        gatt:2A44,
+        gatt:2A45,
+        gatt:2A46,
+        gatt:2A47,
+        gatt:2A48,
+        gatt:2A49,
+        gatt:2A4A,
+        gatt:2A4B,
+        gatt:2A4C,
+        gatt:2A4D,
+        gatt:2A4E,
+        gatt:2A4F,
+        gatt:2A51,
+        gatt:2A52,
+        gatt:2A53,
+        gatt:2A54,
+        gatt:2A55,
+        gatt:2A56,
+        gatt:2A58,
+        gatt:2A5A,
+        gatt:2A5B,
+        gatt:2A5C,
+        gatt:2A5D,
+        gatt:2A5E,
+        gatt:2A5F,
+        gatt:2A60,
+        gatt:2A63,
+        gatt:2A64,
+        gatt:2A65,
+        gatt:2A66,
+        gatt:2A67,
+        gatt:2A68,
+        gatt:2A69,
+        gatt:2A6A,
+        gatt:2A6B,
+        gatt:2A9B,
+        gatt:2A9C,
+        gatt:2A9D,
+        gatt:2A9E,
+        gatt:2AA4,
+        gatt:2AA5,
+        gatt:2AA7,
+        gatt:2AA8,
+        gatt:2AA9,
+        gatt:2AAA,
+        gatt:2AAB,
+        gatt:2AAC,
+        gatt:2AAD,
+        gatt:2AAE,
+        gatt:2AAF,
+        gatt:2AB0,
+        gatt:2AB1,
+        gatt:2AB2,
+        gatt:2AB3,
+        gatt:2AB4,
+        gatt:2AB5,
+        gatt:2ACC,
+        gatt:2ACD,
+        gatt:2ACE,
+        gatt:2ACF,
+        gatt:2AD0,
+        gatt:2AD1,
+        gatt:2AD2,
+        gatt:2AD3,
+        gatt:2AD4,
+        gatt:2AD5,
+        gatt:2AD6,
+        gatt:2AD7,
+        gatt:2AD8,
+        gatt:2AD9,
+        gatt:2ADA .
+
+gatt:1802 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service exposes a control point to allow a peer
+    device to cause the device to immediately alert."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Immediate Alert"@en ;
+    skos:related gatt:2A06 ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.immediate_alert.xml> .
+
+gatt:1803 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service defines behavior when a link is lost
+    between two devices."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Link Loss"@en ;
+    skos:related gatt:2A06 ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.link_loss.xml> .
+
+gatt:1804 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service exposes a device?s current transmit
+    power level when in a connection."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Tx Power"@en ;
+    skos:related gatt:2A07 ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.tx_power.xml> .
+
+gatt:1805 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service defines how the current time can be
+    exposed using the Generic Attribute Profile (GATT)."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Current Time Service"@en ;
+    skos:related gatt:2A0F,
+        gatt:2A14,
+        gatt:2A2B ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.current_time.xml> .
+
+gatt:1806 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service defines how a client can request an
+    update from a reference time source from a time server using
+    the Generic Attribute Profile (GATT)"""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Reference Time Update Service"@en ;
+    skos:related gatt:2A16,
+        gatt:2A17 ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.reference_time_update.xml> .
+
+gatt:1807 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service defines how the information about an
+    upcoming DST change can be exposed using the Generic Attribute
+    Profile (GATT)."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Next DST Change Service"@en ;
+    skos:related gatt:2A11 ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.next_dst_change.xml> .
+
+gatt:1808 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service exposes glucose and other data from a
+    glucose sensor for use in consumer and professional healthcare
+    applications."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Glucose"@en ;
+    skos:related gatt:2A18,
+        gatt:2A34,
+        gatt:2A51,
+        gatt:2A52 ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.glucose.xml> .
+
+gatt:1809 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """The Health Thermometer service exposes temperature
+    and other data from a thermometer intended for healthcare and
+    fitness applications."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Health Thermometer"@en ;
+    skos:related gatt:2A1C,
+        gatt:2A1D,
+        gatt:2A1E,
+        gatt:2A21 ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.health_thermometer.xml> .
+
+gatt:180D a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service exposes heart rate and other data from a
+    Heart Rate Sensor intended for fitness applications."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Heart Rate"@en ;
+    skos:related gatt:2A37,
+        gatt:2A38,
+        gatt:2A39 ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.heart_rate.xml> .
+
+gatt:180E a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service dexposes the phone alert status when in
+    a connection."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Phone Alert Status Service"@en ;
+    skos:related gatt:2A3F,
+        gatt:2A40,
+        gatt:2A41 ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.phone_alert_status.xml> .
+
+gatt:180F a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """The Battery Service exposes the state of a battery
+    within a device."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Battery Service"@en ;
+    skos:related gatt:2A19 ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.battery_service.xml> .
+
+gatt:1810 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service exposes blood pressure and other data
+    from a blood pressure monitor intended for healthcare
+    applications."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Blood Pressure"@en ;
+    skos:related gatt:2A35,
+        gatt:2A36,
+        gatt:2A49 ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.blood_pressure.xml> .
+
+gatt:1811 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """Alert Notification service exposes: 
+    """@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Alert Notification Service"@en ;
+    skos:related gatt:2A44,
+        gatt:2A45,
+        gatt:2A46,
+        gatt:2A47,
+        gatt:2A48 ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.alert_notification.xml> .
+
+gatt:1812 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service exposes the HID reports and other HID
+    data intended for HID Hosts and HID Devices."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Human Interface Device"@en ;
+    skos:related gatt:2A22,
+        gatt:2A32,
+        gatt:2A33,
+        gatt:2A4A,
+        gatt:2A4B,
+        gatt:2A4C,
+        gatt:2A4D,
+        gatt:2A4E ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.human_interface_device.xml> .
+
+gatt:1813 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service enables a GATT Client to store the LE
+    scan parameters it is using on a GATT Server device so that the
+    GATT Server can utilize the information to adjust behavior to
+    optimize power consumption and/or reconnection
+    latency"""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Scan Parameters"@en ;
+    skos:related gatt:2A31,
+        gatt:2A4F ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.scan_parameters.xml> .
+
+gatt:1814 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service exposes speed, cadence and other data
+    from a Running Speed and Cadence Sensor intended for fitness
+    applications."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Running Speed and Cadence"@en ;
+    skos:related gatt:2A53,
+        gatt:2A54,
+        gatt:2A55,
+        gatt:2A5D ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.running_speed_and_cadence.xml> .
+
+gatt:1815 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """The Automation IO service is used to expose the
+    analog inputs/outputs and digital input/outputs of a generic IO
+    module (IOM)."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Automation IO"@en ;
+    skos:related gatt:2A56,
+        gatt:2A58,
+        gatt:2A5A ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.automation_io.xml> .
+
+gatt:1816 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service exposes speed-related and
+    cadence-related data from a Cycling Speed and Cadence sensor
+    intended for fitness applications."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Cycling Speed and Cadence"@en ;
+    skos:related gatt:2A55,
+        gatt:2A5B,
+        gatt:2A5C,
+        gatt:2A5D ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.cycling_speed_and_cadence.xml> .
+
+gatt:1818 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service exposes power- and force-related data
+    and optionally speed- and cadence-related data from a Cycling
+    Power sensor intended for sports and fitness
+    applications."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Cycling Power"@en ;
+    skos:related gatt:2A5D,
+        gatt:2A63,
+        gatt:2A64,
+        gatt:2A65,
+        gatt:2A66 ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.cycling_power.xml> .
+
+gatt:1819 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service exposes location and navigation-related
+    data from a Location and Navigation sensor intended for outdoor
+    activity applications."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Location and Navigation"@en ;
+    skos:related gatt:2A67,
+        gatt:2A68,
+        gatt:2A69,
+        gatt:2A6A,
+        gatt:2A6B ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.location_and_navigation.xml> .
+
+gatt:181B a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service exposes data related to body composition
+    from a body composition analyzer intended for consumer
+    healthcare and sports/fitness applications."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Body Composition"@en ;
+    skos:related gatt:2A9B,
+        gatt:2A9C ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.body_composition.xml> .
+
+gatt:181D a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service exposes weight and related data from a
+    weight scale intended for consumer healthcare and
+    sports/fitness applications."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Weight Scale"@en ;
+    skos:related gatt:2A9D,
+        gatt:2A9E ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.weight_scale.xml> .
+
+gatt:181E a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This Specification proposes that this service will
+    enable users to manage their bonds on devices with a limited
+    user interface."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Bond Management Service"@en ;
+    skos:related gatt:2AA4,
+        gatt:2AA5 ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.bond_management.xml> .
+
+gatt:181F a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service exposes glucose and other data from a
+    personal Continuous Glucose Monitoring (CGM) sensor for use in
+    consumer healthcare applications."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Continuous Glucose Monitoring"@en ;
+    skos:related gatt:2A52,
+        gatt:2AA7,
+        gatt:2AA8,
+        gatt:2AA9,
+        gatt:2AAA,
+        gatt:2AAB,
+        gatt:2AAC ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.continuous_glucose_monitoring.xml> .
+
+gatt:1821 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """The Indoor Positioning Service exposes location
+    information to support e.g. mobile handsets to position
+    themselves in an environment where GPS signal is not available,
+    like indoor premises."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Indoor Positioning"@en ;
+    skos:related gatt:2AAD,
+        gatt:2AAE,
+        gatt:2AAF,
+        gatt:2AB0,
+        gatt:2AB1,
+        gatt:2AB2,
+        gatt:2AB3,
+        gatt:2AB4,
+        gatt:2AB5 ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.indoor_positioning.xml> .
+
+gatt:1822 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This Service specification proposes a pulse oximetry
+    server for use in consumer and professional healthcare
+    applications."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Pulse Oximeter Service"@en ;
+    skos:related gatt:2A52,
+        gatt:2A5E,
+        gatt:2A5F,
+        gatt:2A60 ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.pulse_oximeter.xml> .
+
+gatt:1826 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Service ;
+    skos:definition """This service exposes training-related data in the
+    sports and fitness environment, which allows a Server (e.g., a
+    fitness machine) to send training-related data to a
+    Client."""@en ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Fitness Machine"@en ;
+    skos:related gatt:2ACC,
+        gatt:2ACD,
+        gatt:2ACE,
+        gatt:2ACF,
+        gatt:2AD0,
+        gatt:2AD1,
+        gatt:2AD2,
+        gatt:2AD3,
+        gatt:2AD4,
+        gatt:2AD5,
+        gatt:2AD6,
+        gatt:2AD7,
+        gatt:2AD8,
+        gatt:2AD9,
+        gatt:2ADA ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.service.fitness_machine.xml> .
+
+gatt:2A07 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Tx Power Level"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.tx_power_level.xml> .
+
+gatt:2A0F a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Local Time Information"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.local_time_information.xml> .
+
+gatt:2A11 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Time with DST"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.time_with_dst.xml> .
+
+gatt:2A14 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Reference Time Information"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.reference_time_information.xml> .
+
+gatt:2A16 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Time Update Control Point"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.time_update_control_point.xml> .
+
+gatt:2A17 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Time Update State"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.time_update_state.xml> .
+
+gatt:2A18 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Glucose Measurement"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.glucose_measurement.xml> .
+
+gatt:2A19 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Battery Level"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.battery_level.xml> .
+
+gatt:2A1C a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Temperature Measurement"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.temperature_measurement.xml> .
+
+gatt:2A1D a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Temperature Type"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.temperature_type.xml> .
+
+gatt:2A1E a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Intermediate Temperature"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.intermediate_temperature.xml> .
+
+gatt:2A21 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Measurement Interval"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.measurement_interval.xml> .
+
+gatt:2A22 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Boot Keyboard Input Report"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.boot_keyboard_input_report.xml> .
+
+gatt:2A2B a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Current Time"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.current_time.xml> .
+
+gatt:2A31 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Scan Refresh"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.scan_refresh.xml> .
+
+gatt:2A32 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Boot Keyboard Output Report"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.boot_keyboard_output_report.xml> .
+
+gatt:2A33 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Boot Mouse Input Report"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.boot_mouse_input_report.xml> .
+
+gatt:2A34 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Glucose Measurement Context"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.glucose_measurement_context.xml> .
+
+gatt:2A35 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Blood Pressure Measurement"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.blood_pressure_measurement.xml> .
+
+gatt:2A36 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Intermediate Cuff Pressure"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.intermediate_cuff_pressure.xml> .
+
+gatt:2A37 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Heart Rate Measurement"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.heart_rate_measurement.xml> .
+
+gatt:2A38 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Body Sensor Location"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.body_sensor_location.xml> .
+
+gatt:2A39 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Heart Rate Control Point"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.heart_rate_control_point.xml> .
+
+gatt:2A3F a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Alert Status"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.alert_status.xml> .
+
+gatt:2A40 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Ringer Control point"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.ringer_control_point.xml> .
+
+gatt:2A41 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Ringer Setting"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.ringer_setting.xml> .
+
+gatt:2A44 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Alert Notification Control Point"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.alert_notification_control_point.xml> .
+
+gatt:2A45 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Unread Alert Status"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.unread_alert_status.xml> .
+
+gatt:2A46 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "New Alert"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.new_alert.xml> .
+
+gatt:2A47 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Supported New Alert Category"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.supported_new_alert_category.xml> .
+
+gatt:2A48 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Supported Unread Alert Category"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.supported_unread_alert_category.xml> .
+
+gatt:2A49 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Blood Pressure Feature"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.blood_pressure_feature.xml> .
+
+gatt:2A4A a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "HID Information"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.hid_information.xml> .
+
+gatt:2A4B a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Report Map"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.report_map.xml> .
+
+gatt:2A4C a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "HID Control Point"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.hid_control_point.xml> .
+
+gatt:2A4D a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Report"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.report.xml> .
+
+gatt:2A4E a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Protocol Mode"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.protocol_mode.xml> .
+
+gatt:2A4F a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Scan Interval Window"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.scan_interval_window.xml> .
+
+gatt:2A51 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Glucose Feature"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.glucose_feature.xml> .
+
+gatt:2A53 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "RSC Measurement"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.rsc_measurement.xml> .
+
+gatt:2A54 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "RSC Feature"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.rsc_feature.xml> .
+
+gatt:2A56 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Digital"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.digital.xml> .
+
+gatt:2A58 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Analog"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.analog.xml> .
+
+gatt:2A5A a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Aggregate"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.aggregate.xml> .
+
+gatt:2A5B a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "CSC Measurement"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.csc_measurement.xml> .
+
+gatt:2A5C a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "CSC Feature"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.csc_feature.xml> .
+
+gatt:2A5E a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "PLX Spot-Check Measurement"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.plx_spot_check_measurement.xml> .
+
+gatt:2A5F a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "PLX Continuous Measurement Characteristic"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.plx_continuous_measurement.xml> .
+
+gatt:2A60 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "PLX Features"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.plx_features.xml> .
+
+gatt:2A63 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Cycling Power Measurement"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.cycling_power_measurement.xml> .
+
+gatt:2A64 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Cycling Power Vector"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.cycling_power_vector.xml> .
+
+gatt:2A65 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Cycling Power Feature"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.cycling_power_feature.xml> .
+
+gatt:2A66 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Cycling Power Control Point"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.cycling_power_control_point.xml> .
+
+gatt:2A67 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Location and Speed Characteristic"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.location_and_speed.xml> .
+
+gatt:2A68 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Navigation"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.navigation.xml> .
+
+gatt:2A69 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Position Quality"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.position_quality.xml> .
+
+gatt:2A6A a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "LN Feature"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.ln_feature.xml> .
+
+gatt:2A6B a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "LN Control Point"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.ln_control_point.xml> .
+
+gatt:2A9B a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Body Composition Feature"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.body_composition_feature.xml> .
+
+gatt:2A9C a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Body Composition Measurement"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.body_composition_measurement.xml> .
+
+gatt:2A9D a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Weight Measurement"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.weight_measurement.xml> .
+
+gatt:2A9E a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Weight Scale Feature"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.weight_scale_feature.xml> .
+
+gatt:2AA4 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Bond Management Control Point"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.bond_management_control_point.xml> .
+
+gatt:2AA5 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Bond Management Features"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.bond_management_feature.xml> .
+
+gatt:2AA7 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "CGM Measurement"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.cgm_measurement.xml> .
+
+gatt:2AA8 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "CGM Feature"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.cgm_feature.xml> .
+
+gatt:2AA9 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "CGM Status"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.cgm_status.xml> .
+
+gatt:2AAA a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "CGM Session Start Time"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.cgm_session_start_time.xml> .
+
+gatt:2AAB a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "CGM Session Run Time"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.cgm_session_run_time.xml> .
+
+gatt:2AAC a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "CGM Specific Ops Control Point"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.cgm_specific_ops_control_point.xml> .
+
+gatt:2AAD a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Indoor Positioning Configuration"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.indoor_positioning_configuration.xml> .
+
+gatt:2AAE a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Latitude"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.latitude.xml> .
+
+gatt:2AAF a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Longitude"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.longitude.xml> .
+
+gatt:2AB0 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Local North Coordinate"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.local_north_coordinate.xml> .
+
+gatt:2AB1 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Local East Coordinate"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.local_east_coordinate.xml> .
+
+gatt:2AB2 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Floor Number"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.floor_number.xml> .
+
+gatt:2AB3 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Altitude"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.altitude.xml> .
+
+gatt:2AB4 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Uncertainty"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.uncertainty.xml> .
+
+gatt:2AB5 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Location Name"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.location_name.xml> .
+
+gatt:2ACC a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Fitness Machine Feature"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.fitness_machine_feature.xml> .
+
+gatt:2ACD a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Treadmill Data"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.treadmill_data.xml> .
+
+gatt:2ACE a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Cross Trainer Data"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.cross_trainer_data.xml> .
+
+gatt:2ACF a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Step Climber Data"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.step_climber_data.xml> .
+
+gatt:2AD0 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Stair Climber Data"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.stair_climber_data.xml> .
+
+gatt:2AD1 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Rower Data"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.rower_data.xml> .
+
+gatt:2AD2 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Indoor Bike Data"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.indoor_bike_data.xml> .
+
+gatt:2AD3 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Training Status"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.training_status.xml> .
+
+gatt:2AD4 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Supported Speed Range"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.supported_speed_range.xml> .
+
+gatt:2AD5 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Supported Inclination Range"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.supported_inclination_range.xml> .
+
+gatt:2AD6 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Supported Resistance Level Range"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.supported_resistance_level_range.xml> .
+
+gatt:2AD7 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Supported Heart Rate Range"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.supported_heart_rate_range.xml> .
+
+gatt:2AD8 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Supported Power Range"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.supported_power_range.xml> .
+
+gatt:2AD9 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Fitness Machine Control Point"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.fitness_machine_control_point.xml> .
+
+gatt:2ADA a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Fitness Machine Status"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.fitness_machine_status.xml> .
+
+gatt:2A06 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Alert Level"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.alert_level.xml> .
+
+gatt:2A55 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "SC Control Point"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.sc_control_point.xml> .
+
+gatt:2A52 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Record Access Control Point"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.record_access_control_point.xml> .
+
+gatt:2A5D a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ble:Characteristic ;
+    skos:inScheme ble:scheme ;
+    skos:prefLabel "Sensor Location"@en ;
+    prov:wasDerivedFrom <https://github.com/oesmith/gatt-xml/raw/master/org.bluetooth.characteristic.sensor_location.xml> .
+

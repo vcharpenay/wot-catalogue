@@ -1,14 +1,25 @@
+from traceback import print_exc
 from rdflib import Graph
-from lifting import lwm2m
+from lifting import lift
 
-with open("lwm2m/.sources", "r") as sources:
+# TODO browse folders, look for <collection>.source
+# scheme = "lwm2m"
+# collection = "ipso"
+
+scheme = "ble"
+collection = "gatt"
+
+with open(f"{scheme}/{collection}.source", "r") as sources:
     g = Graph()
 
     for uri in sources:
         try:
             uri = uri.replace("\n", "")
-            for t in lwm2m(uri): g.add(t)
+            coll = lift(uri, scheme)
+            for t in coll: g.add(t)
+            for prefix, ns in coll.namespaces(): g.bind(prefix, ns)
         except:
             print("Failed to process source: ", uri)
-        
-    g.serialize(destination="lwm2m/ipso.ttl")
+            print_exc()
+
+    g.serialize(destination=f"{scheme}/{collection}.ttl")
