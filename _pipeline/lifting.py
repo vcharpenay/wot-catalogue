@@ -36,8 +36,24 @@ def _add_concept(g: Graph, c: URIRef, *, label: str, description: str = None, pa
     if origin: g.add((c, PROV.wasDerivedFrom, origin))
 
 def lift_bacnet(uri) -> Graph:
-    # TODO
-    None
+    ttl = _get(uri)
+
+    src = Graph()
+    src.parse(data=ttl, format="ttl")
+
+    with open("_pipeline/bacnet-construct.rq", "r") as f: q = f.read()
+    res = src.query(q)
+
+    g = Graph()
+
+    bacnet = Namespace("http://purl.org/wot-catalogue/bacnet#")
+    core = Namespace("http://purl.org/wot-catalogue/bacnet/core#")
+    g.bind("bacnet", bacnet)
+    g.bind("core", core)
+
+    for t in res: g.add(t)
+
+    return g
 
 def lift_ble(uri) -> Graph:
     service = ElementTree.fromstring(_get(uri))

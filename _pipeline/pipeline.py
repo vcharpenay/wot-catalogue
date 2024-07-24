@@ -3,11 +3,15 @@ from rdflib import Graph
 from lifting import lift
 
 # TODO browse folders, look for <collection>.source
+
 # scheme = "lwm2m"
 # collection = "ipso"
 
-scheme = "ble"
-collection = "gatt"
+# scheme = "ble"
+# collection = "gatt"
+
+scheme = "bacnet"
+collection = "core"
 
 with open(f"{scheme}/{collection}.source", "r") as sources:
     g = Graph()
