@@ -10,8 +10,11 @@ from lifting import lift
 # scheme = "ble"
 # collection = "gatt"
 
-scheme = "bacnet"
-collection = "core"
+# scheme = "bacnet"
+# collection = "core"
+
+scheme = "onem2m"
+collection = "haim"
 
 with open(f"{scheme}/{collection}.source", "r") as sources:
     g = Graph()

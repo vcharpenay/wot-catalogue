@@ -180,8 +180,122 @@ def lift_lwm2m(uri) -> Graph:
 
     return g
 
+def lift_ocf(uri):
+    # TODO
+    None
+
+def lift_onem2m(uri) -> Graph:
+    xml = ElementTree.fromstring(_get(uri))
+    ns = "{http://homegatewayinitiative.org/xml/dal/3.0}"
+
+    g = Graph()
+
+    onem2m = Namespace("http://purl.org/wot-catalogue/onem2m#")
+    haim = Namespace("http://purl.org/wot-catalogue/onem2m/haim#")
+    g.bind("ontolex", ONTOLEX)
+    g.bind("onem2m", onem2m)
+    g.bind("haim", haim)
+
+    devices = xml.find(ns + "Devices")
+    modules = xml.find(ns + "Modules")
+
+    if devices:
+        for device in devices:
+            deviceId = device.get("id")
+            d = haim.__getitem__(deviceId)
+
+            _add_concept(
+                g, d,
+                label=deviceId,
+                description=device.find(ns + "Doc").text,
+                parent=onem2m.Device,
+                collection=haim.collection,
+                scheme=onem2m.scheme,
+                origin=URIRef(uri)
+            )
+
+            for module in device.find(ns + "Modules"):
+                m = haim.__getitem__(module.find(ns + "extends").get("class"))
+                g.add((d, SKOS.related, m))
+
+            subdevices = device.find(ns + "SubDevices")
+
+            if subdevices:
+                for subdevice in subdevices:
+                    subdeviceId = subdevice.find(ns + "extends").get("class")
+                    sd = haim.__getitem__(subdeviceId)
+
+                    _add_concept(
+                        g, sd,
+                        label=subdeviceId,
+                        description=subdevice.find(ns + "Doc").text,
+                        parent=onem2m.Device,
+                        collection=haim.collection,
+                        scheme=onem2m.scheme
+                    )
+
+                    for submodule in subdevice.find(ns + "Modules"):
+                        sm = haim.__getitem__(submodule.get("name"))
+                        g.add((sd, SKOS.related, sm))
+
+    elif modules:
+        for module in modules:
+            moduleId = module.get("name")
+            m = haim.__getitem__(moduleId)
+
+            _add_concept(
+                g, m,
+                label=moduleId,
+                description=module.find(ns + "Doc").text,
+                parent=onem2m.Module,
+                collection=haim.collection,
+                scheme=onem2m.scheme,
+                origin=URIRef(uri)
+            )
+
+            data = module.find(ns + "Data")
+            actions = module.find(ns + "Actions")
+
+            if data:
+                for datapoint in data:
+                    datapointId = datapoint.get("name")
+                    dp = haim.__getitem__(datapointId)
+
+                    _add_concept(
+                        g, dp,
+                        label=datapointId,
+                        description=datapoint.find(ns + "Doc").text,
+                        parent=onem2m.DataPoint,
+                        collection=haim.collection,
+                        scheme=onem2m.scheme
+                    )
+
+                    g.add((m, SKOS.related, dp))
+
+                    # TODO datatypes?
+
+            if actions:
+                for action in actions:
+                    actionId = action.get("name")
+                    a = haim.__getitem__(actionId)
+
+                    _add_concept(
+                        g, a,
+                        label=actionId,
+                        description=action.find(ns + "Doc").text,
+                        parent=onem2m.Action,
+                        collection=haim.collection,
+                        scheme=onem2m.scheme
+                    )
+
+                    g.add((m, SKOS.related, a))
+
+    return g
+
 def lift(uri, scheme):
     match scheme:
         case "ble": return lift_ble(uri)
         case "bacnet": return lift_bacnet(uri)
         case "lwm2m": return lift_lwm2m(uri)
+        case "ocf": return lift_ocf(uri)
+        case "onem2m": return lift_onem2m(uri)
