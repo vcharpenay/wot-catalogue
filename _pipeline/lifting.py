@@ -1,7 +1,9 @@
 from pathlib import Path
 from os import mkdir
 from zlib import adler32
+from urllib.parse import quote
 from requests import get
+from json import loads
 from xml.etree import ElementTree
 from rdflib import Graph, URIRef, Literal, Namespace, SKOS, PROV, RDF
 
@@ -181,8 +183,50 @@ def lift_lwm2m(uri) -> Graph:
     return g
 
 def lift_ocf(uri):
-    # TODO
-    None
+    json = loads(_get(uri))
+
+    g = Graph()
+
+    ocf = Namespace("http://purl.org/wot-catalogue/ocf#")
+    oneiota = Namespace("http://purl.org/wot-catalogue/ocf/oneiota#")
+    g.bind("ontolex", ONTOLEX)
+    g.bind("ocf", ocf)
+    g.bind("oneiota", oneiota)
+
+    # devices without required resources are for mgt purposes
+    devices = [ device for device in json if "resources" in device ]
+
+    for device in devices:
+        d = oneiota.__getitem__(device["devicetype"])
+
+        _add_concept(
+            g, d,
+            label=device["devicename"],
+            parent=ocf.Device,
+            collection=oneiota.collection,
+            scheme=ocf.scheme,
+            origin=URIRef(uri)
+        )
+
+        for res in device["resources"]:
+            resId = quote(res["resourcetypeid"])
+            r = oneiota.__getitem__(resId)
+
+            _add_concept(
+                g, r,
+                label=res["resourcetypetitle"],
+                parent=ocf.Resource,
+                collection=oneiota.collection,
+                scheme=ocf.scheme
+            )
+
+            g.add((d, SKOS.related, r))
+
+            # TODO recommended resources
+
+            # TODO get more info from: https://openconnectivityfoundation.github.io/devicemodels/oic.resourcemap-content.json
+
+    return g
 
 def lift_onem2m(uri) -> Graph:
     xml = ElementTree.fromstring(_get(uri))

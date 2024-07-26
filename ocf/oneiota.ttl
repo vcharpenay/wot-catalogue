@@ -1,0 +1,1077 @@
+@prefix ocf: <http://purl.org/wot-catalogue/ocf#> .
+@prefix oneiota: <http://purl.org/wot-catalogue/ocf/oneiota#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+oneiota:collection skos:member oneiota:,
+        oneiota:oic.d.3dprinter,
+        oneiota:oic.d.acassistant,
+        oneiota:oic.d.afci,
+        oneiota:oic.d.airconditioner,
+        oneiota:oic.d.airer,
+        oneiota:oic.d.airpurifier,
+        oneiota:oic.d.airqualitymonitor,
+        oneiota:oic.d.ams,
+        oneiota:oic.d.battery,
+        oneiota:oic.d.blind,
+        oneiota:oic.d.bridge,
+        oneiota:oic.d.camera,
+        oneiota:oic.d.cgm,
+        oneiota:oic.d.circuitbreaker,
+        oneiota:oic.d.cloudproxy,
+        oneiota:oic.d.cms,
+        oneiota:oic.d.coffeemachine,
+        oneiota:oic.d.cookerhood,
+        oneiota:oic.d.cooktop,
+        oneiota:oic.d.cyclingcadencesensor,
+        oneiota:oic.d.cyclingpowermeter,
+        oneiota:oic.d.cyclingspeedsensor,
+        oneiota:oic.d.dali,
+        oneiota:oic.d.dali.ac,
+        oneiota:oic.d.dali.bus,
+        oneiota:oic.d.dehumidifier,
+        oneiota:oic.d.dishwasher,
+        oneiota:oic.d.door,
+        oneiota:oic.d.dots,
+        oneiota:oic.d.dryer,
+        oneiota:oic.d.electricmeter,
+        oneiota:oic.d.electricvehiclecharger,
+        oneiota:oic.d.energygenerator,
+        oneiota:oic.d.energymonitor,
+        oneiota:oic.d.fan,
+        oneiota:oic.d.foodprobe,
+        oneiota:oic.d.freezer,
+        oneiota:oic.d.garagedoor,
+        oneiota:oic.d.gfci,
+        oneiota:oic.d.grinder,
+        oneiota:oic.d.humidifier,
+        oneiota:oic.d.indoorgarden,
+        oneiota:oic.d.inverter,
+        oneiota:oic.d.kettle,
+        oneiota:oic.d.light,
+        oneiota:oic.d.light.smart,
+        oneiota:oic.d.mattress,
+        oneiota:oic.d.multifunctionprinter,
+        oneiota:oic.d.muscleoxygenmonitor,
+        oneiota:oic.d.orfid,
+        oneiota:oic.d.oven,
+        oneiota:oic.d.printer,
+        oneiota:oic.d.pvarraysystem,
+        oneiota:oic.d.receiver,
+        oneiota:oic.d.refrigerator,
+        oneiota:oic.d.robotcleaner,
+        oneiota:oic.d.scanner,
+        oneiota:oic.d.securitypanel,
+        oneiota:oic.d.sensor,
+        oneiota:oic.d.smartlock,
+        oneiota:oic.d.smartplug,
+        oneiota:oic.d.speaker,
+        oneiota:oic.d.stb,
+        oneiota:oic.d.steamcloset,
+        oneiota:oic.d.switch,
+        oneiota:oic.d.thermostat,
+        oneiota:oic.d.tv,
+        oneiota:oic.d.virtual,
+        oneiota:oic.d.wallpad,
+        oneiota:oic.d.washer,
+        oneiota:oic.d.washerdryer,
+        oneiota:oic.d.waterheater,
+        oneiota:oic.d.waterpurifier,
+        oneiota:oic.d.watervalve,
+        oneiota:oic.d.window,
+        oneiota:oic.r.%26lt%3Bx%26gt%3B,
+        oneiota:oic.r.%3Cx%3E.consumption,
+        oneiota:oic.r.airflowcontrol,
+        oneiota:oic.r.airqualitycollection,
+        oneiota:oic.r.audio,
+        oneiota:oic.r.automaticdocumentfeeder,
+        oneiota:oic.r.cadence,
+        oneiota:oic.r.cgm.calibrate,
+        oneiota:oic.r.cgm.samplinginterval,
+        oneiota:oic.r.cgm.threshold,
+        oneiota:oic.r.circuitbreaker,
+        oneiota:oic.r.coapcloudconf,
+        oneiota:oic.r.cyclingpower,
+        oneiota:oic.r.d2dserverlist,
+        oneiota:oic.r.dali,
+        oneiota:oic.r.dali.conf,
+        oneiota:oic.r.door,
+        oneiota:oic.r.energy.battery,
+        oneiota:oic.r.energy.consumption,
+        oneiota:oic.r.energy.generation,
+        oneiota:oic.r.grinder,
+        oneiota:oic.r.heatingzonecollection,
+        oneiota:oic.r.humidity,
+        oneiota:oic.r.inverter,
+        oneiota:oic.r.light.dimming,
+        oneiota:oic.r.lock.status,
+        oneiota:oic.r.media,
+        oneiota:oic.r.media.input,
+        oneiota:oic.r.media.output,
+        oneiota:oic.r.mode,
+        oneiota:oic.r.movement.linear,
+        oneiota:oic.r.muscleoxygensaturation,
+        oneiota:oic.r.openlevel,
+        oneiota:oic.r.operational.state,
+        oneiota:oic.r.orfid.station,
+        oneiota:oic.r.orfid.tag,
+        oneiota:oic.r.printer.3d,
+        oneiota:oic.r.printer.queue,
+        oneiota:oic.r.pvconnectionterminal,
+        oneiota:oic.r.speed,
+        oneiota:oic.r.switch.binary,
+        oneiota:oic.r.switch.fault,
+        oneiota:oic.r.temperature,
+        oneiota:oic.r.time.period,
+        oneiota:oic.r.vehicle.connector,
+        oneiota:oic.r.vendorlist,
+        oneiota:oic.r.vodlist,
+        oneiota:oic.r.waterinfo .
+
+oneiota:oic.d.3dprinter a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "3D Printer"@en ;
+    skos:related oneiota:oic.r.operational.state,
+        oneiota:oic.r.printer.3d,
+        oneiota:oic.r.printer.queue,
+        oneiota:oic.r.switch.binary,
+        oneiota:oic.r.temperature ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.acassistant a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Air Conditioner Assistant"@en ;
+    skos:related oneiota:oic.r.switch.binary,
+        oneiota:oic.r.vendorlist ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.afci a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Arc Fault Circuit Interrupter"@en ;
+    skos:related oneiota:oic.r.switch.fault ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.airconditioner a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Air Conditioner"@en ;
+    skos:related oneiota:oic.r.switch.binary,
+        oneiota:oic.r.temperature ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.airer a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Airer"@en ;
+    skos:related oneiota:oic.r.movement.linear,
+        oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.airpurifier a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Air Purifier"@en ;
+    skos:related oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.airqualitymonitor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Air Quality Monitor"@en ;
+    skos:related oneiota:oic.r.airqualitycollection ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.ams a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Access Management Service"@en ;
+    skos:related oneiota: ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.battery a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Battery"@en ;
+    skos:related oneiota:oic.r.energy.battery ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.blind a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Blind"@en ;
+    skos:related oneiota:oic.r.openlevel ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.bridge a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Bridge"@en ;
+    skos:related oneiota:oic.r.vodlist ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.camera a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Camera"@en ;
+    skos:related oneiota:oic.r.media ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.cgm a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "CGM (Continuous Glucose Meter)"@en ;
+    skos:related oneiota:oic.r.cgm.calibrate,
+        oneiota:oic.r.cgm.samplinginterval,
+        oneiota:oic.r.cgm.threshold ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.circuitbreaker a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Circuit Breaker"@en ;
+    skos:related oneiota:oic.r.circuitbreaker ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.cloudproxy a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Cloud proxy"@en ;
+    skos:related oneiota:oic.r.coapcloudconf,
+        oneiota:oic.r.d2dserverlist ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.cms a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Credential Management Service"@en ;
+    skos:related oneiota: ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.coffeemachine a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Coffee Machine"@en ;
+    skos:related oneiota:oic.r.operational.state,
+        oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.cookerhood a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Cooker Hood"@en ;
+    skos:related oneiota:oic.r.airflowcontrol,
+        oneiota:oic.r.mode,
+        oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.cooktop a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Cooktop"@en ;
+    skos:related oneiota:oic.r.heatingzonecollection ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.cyclingcadencesensor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Cycling Cadence Sensor"@en ;
+    skos:related oneiota:oic.r.cadence ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.cyclingpowermeter a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Cycling Power Meter"@en ;
+    skos:related oneiota:oic.r.cyclingpower ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.cyclingspeedsensor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Cycling Speed Sensor"@en ;
+    skos:related oneiota:oic.r.speed ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.dali a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Light - DALI Device"@en ;
+    skos:related oneiota:oic.r.dali,
+        oneiota:oic.r.dali.conf ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.dali.ac a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Light - DALI Application Controller"@en ;
+    skos:related oneiota:oic.r.dali,
+        oneiota:oic.r.dali.conf ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.dali.bus a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Light - DALI Bus"@en ;
+    skos:related oneiota:oic.r.dali,
+        oneiota:oic.r.dali.conf ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.dehumidifier a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Dehumidifier"@en ;
+    skos:related oneiota:oic.r.humidity,
+        oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.dishwasher a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Dishwasher"@en ;
+    skos:related oneiota:oic.r.mode,
+        oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.door a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Door"@en ;
+    skos:related oneiota:oic.r.openlevel ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.dots a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Device Ownership Transfer Service"@en ;
+    skos:related oneiota: ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.dryer a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Dryer (Laundry)"@en ;
+    skos:related oneiota:oic.r.operational.state,
+        oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.electricmeter a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Electric Meter"@en ;
+    skos:related oneiota:oic.r.energy.consumption ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.electricvehiclecharger a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Electric Vehicle Charger"@en ;
+    skos:related oneiota:oic.r.energy.battery,
+        oneiota:oic.r.operational.state,
+        oneiota:oic.r.switch.binary,
+        oneiota:oic.r.vehicle.connector ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.energygenerator a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Energy Generator"@en ;
+    skos:related oneiota:oic.r.energy.generation ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.energymonitor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Energy Monitor"@en ;
+    skos:related oneiota:oic.r.%3Cx%3E.consumption ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.fan a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Fan"@en ;
+    skos:related oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.foodprobe a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Food Probe"@en ;
+    skos:related oneiota:oic.r.temperature ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.freezer a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Freezer"@en ;
+    skos:related oneiota:oic.r.temperature ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.garagedoor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Garage Door"@en ;
+    skos:related oneiota:oic.r.door ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.gfci a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Ground Fault Circuit Interrupter"@en ;
+    skos:related oneiota:oic.r.switch.fault ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.grinder a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Grinder"@en ;
+    skos:related oneiota:oic.r.grinder,
+        oneiota:oic.r.operational.state ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.humidifier a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Humidifier"@en ;
+    skos:related oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.indoorgarden a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Indoor Garden"@en ;
+    skos:related oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.inverter a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Inverter"@en ;
+    skos:related oneiota:oic.r.inverter ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.kettle a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Kettle"@en ;
+    skos:related oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.light a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Light"@en ;
+    skos:related oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.light.smart a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Smart Light"@en ;
+    skos:related oneiota:oic.r.light.dimming,
+        oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.mattress a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Mattress"@en ;
+    skos:related oneiota:oic.r.mode,
+        oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.multifunctionprinter a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Printer Multi-Function"@en ;
+    skos:related oneiota:oic.r.automaticdocumentfeeder,
+        oneiota:oic.r.operational.state,
+        oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.muscleoxygenmonitor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Muscle Oxygen Monitor"@en ;
+    skos:related oneiota:oic.r.muscleoxygensaturation ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.orfid a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Optical augmented RFID Reader"@en ;
+    skos:related oneiota:oic.r.orfid.station,
+        oneiota:oic.r.orfid.tag ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.oven a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Oven"@en ;
+    skos:related oneiota:oic.r.switch.binary,
+        oneiota:oic.r.temperature ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.printer a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Printer"@en ;
+    skos:related oneiota:oic.r.operational.state,
+        oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.pvarraysystem a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "PV Array System"@en ;
+    skos:related oneiota:oic.r.pvconnectionterminal ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.receiver a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Receiver"@en ;
+    skos:related oneiota:oic.r.audio,
+        oneiota:oic.r.media.input,
+        oneiota:oic.r.media.output,
+        oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.refrigerator a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Refrigerator"@en ;
+    skos:related oneiota:oic.r.temperature ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.robotcleaner a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Robot Cleaner"@en ;
+    skos:related oneiota:oic.r.mode,
+        oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.scanner a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Scanner"@en ;
+    skos:related oneiota:oic.r.automaticdocumentfeeder,
+        oneiota:oic.r.operational.state,
+        oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.securitypanel a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Security Panel"@en ;
+    skos:related oneiota:oic.r.mode ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.sensor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Generic Sensor"@en ;
+    skos:related oneiota:oic.r.%26lt%3Bx%26gt%3B ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.smartlock a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Smart Lock"@en ;
+    skos:related oneiota:oic.r.lock.status ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.smartplug a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Smart Plug"@en ;
+    skos:related oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.speaker a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Active Speaker"@en ;
+    skos:related oneiota:oic.r.audio,
+        oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.stb a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Set Top Box"@en ;
+    skos:related oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.steamcloset a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Steam Closet"@en ;
+    skos:related oneiota:oic.r.operational.state,
+        oneiota:oic.r.time.period ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.switch a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Switch"@en ;
+    skos:related oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.thermostat a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Thermostat"@en ;
+    skos:related oneiota:oic.r.temperature ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.tv a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Television"@en ;
+    skos:related oneiota:oic.r.audio,
+        oneiota:oic.r.media.input,
+        oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.virtual a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Virtual Device"@en ;
+    skos:related oneiota: ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.wallpad a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Wallpad"@en ;
+    skos:related oneiota:oic.r.switch.binary,
+        oneiota:oic.r.temperature ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.washer a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Washer (Laundry)"@en ;
+    skos:related oneiota:oic.r.operational.state,
+        oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.washerdryer a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Clothes Washer Dryer"@en ;
+    skos:related oneiota:oic.r.operational.state,
+        oneiota:oic.r.switch.binary ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.waterheater a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Water Heater"@en ;
+    skos:related oneiota:oic.r.switch.binary,
+        oneiota:oic.r.temperature ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.waterpurifier a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Water Purifier"@en ;
+    skos:related oneiota:oic.r.operational.state,
+        oneiota:oic.r.waterinfo ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.watervalve a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Water Valve"@en ;
+    skos:related oneiota:oic.r.openlevel ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.d.window a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Device ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Window"@en ;
+    skos:related oneiota:oic.r.openlevel ;
+    prov:wasDerivedFrom <https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json> .
+
+oneiota:oic.r.%26lt%3Bx%26gt%3B a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Any Resource Type that supports and exposes in “/oic/res” the oic.if.s interface."@en .
+
+oneiota:oic.r.%3Cx%3E.consumption a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Any consumption resource type"@en .
+
+oneiota:oic.r.airflowcontrol a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Airflow Control"@en .
+
+oneiota:oic.r.airqualitycollection a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Air Quality Collection"@en .
+
+oneiota:oic.r.cadence a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Cadence"@en .
+
+oneiota:oic.r.cgm.calibrate a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "CGM Calibration"@en .
+
+oneiota:oic.r.cgm.samplinginterval a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Glucose Sampling Interval"@en .
+
+oneiota:oic.r.cgm.threshold a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "CGM Threshold"@en .
+
+oneiota:oic.r.circuitbreaker a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Circuit Breaker"@en .
+
+oneiota:oic.r.coapcloudconf a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Cloud configuration"@en .
+
+oneiota:oic.r.cyclingpower a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Cycling Power"@en .
+
+oneiota:oic.r.d2dserverlist a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "D2Dserverlist"@en .
+
+oneiota:oic.r.door a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Door"@en .
+
+oneiota:oic.r.energy.consumption a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Energy Consumption"@en .
+
+oneiota:oic.r.energy.generation a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Energy Generation"@en .
+
+oneiota:oic.r.grinder a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Grinder Settings"@en .
+
+oneiota:oic.r.heatingzonecollection a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Heating Zone Collection"@en .
+
+oneiota:oic.r.humidity a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Humidity"@en .
+
+oneiota:oic.r.inverter a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Inverter"@en .
+
+oneiota:oic.r.light.dimming a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Dimming"@en .
+
+oneiota:oic.r.lock.status a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Lock Status"@en .
+
+oneiota:oic.r.media a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Media"@en .
+
+oneiota:oic.r.media.output a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Media Source List"@en .
+
+oneiota:oic.r.movement.linear a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Linear Movement"@en .
+
+oneiota:oic.r.muscleoxygensaturation a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Muscle Oxygen Saturation"@en .
+
+oneiota:oic.r.orfid.station a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Optical  RFID Station"@en .
+
+oneiota:oic.r.orfid.tag a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Optical RFID Tag"@en .
+
+oneiota:oic.r.printer.3d a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "3D Printing"@en .
+
+oneiota:oic.r.printer.queue a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Printer Queue"@en .
+
+oneiota:oic.r.pvconnectionterminal a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "PV Connection Terminal"@en .
+
+oneiota:oic.r.speed a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Speed"@en .
+
+oneiota:oic.r.time.period a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Time Period"@en .
+
+oneiota:oic.r.vehicle.connector a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Vehicle Connector"@en .
+
+oneiota:oic.r.vendorlist a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Vendor List"@en .
+
+oneiota:oic.r.vodlist a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "VOD List"@en .
+
+oneiota:oic.r.waterinfo a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Water Info"@en .
+
+oneiota:oic.r.automaticdocumentfeeder a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Automatic Document Feeder"@en .
+
+oneiota:oic.r.energy.battery a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Battery"@en .
+
+oneiota:oic.r.media.input a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Media Source Inputs"@en,
+        "Media Source List"@en .
+
+oneiota:oic.r.switch.fault a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Fault Interrupter Switch"@en .
+
+oneiota:oic.r.audio a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Audio Controls"@en .
+
+oneiota:oic.r.dali a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "dali"@en .
+
+oneiota:oic.r.dali.conf a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "dali config"@en .
+
+oneiota: a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Depends on the Device Type being bridged"@en,
+        "None required"@en .
+
+oneiota:oic.r.openlevel a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Open Level"@en .
+
+oneiota:oic.r.mode a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Mode"@en .
+
+oneiota:oic.r.temperature a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Temperature"@en,
+        "Temperature (Actuator)"@en,
+        "Temperature (Sensor)"@en .
+
+oneiota:oic.r.operational.state a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Operational State"@en,
+        "Operational State (Printer)"@en,
+        "Operational State (Scanner)"@en .
+
+oneiota:oic.r.switch.binary a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader ocf:Resource ;
+    skos:inScheme ocf:scheme ;
+    skos:prefLabel "Binary Switch"@en,
+        "Binary switch"@en .
+
