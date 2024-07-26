@@ -22,7 +22,7 @@ def process_source(scheme, collection):
     g.serialize(destination=f"{scheme}/{collection}.ttl")
 
 for dir in wd.iterdir():
-    if dir.is_dir():
+    if dir.is_dir() and not dir.name.startswith("_"):
         for f in dir.iterdir():
             if f.name.endswith(".source"):
                 scheme = dir.name
