@@ -1,1860 +1,1424 @@
+@prefix ipso: <http://purl.org/wot-catalogue/lwm2m/ipso#> .
+@prefix lwm2m: <http://purl.org/wot-catalogue/lwm2m#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#collection> skos:member <http://purl.org/wot-catalogue/lwm2m/ipso#3200>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3201>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3202>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3203>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3300>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3301>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3302>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3303>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3304>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3305>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3306>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3308>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3310>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3311>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3312>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3313>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3314>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3315>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3316>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3317>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3318>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3319>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3320>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3321>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3322>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3323>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3324>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3325>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3326>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3327>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3328>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3329>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3330>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3331>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3332>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3333>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3334>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3335>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3336>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3337>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3338>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3339>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3340>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3341>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3342>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3343>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3344>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3345>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3346>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3347>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3348>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3349>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#3350>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5500>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5501>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5502>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5503>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5504>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5505>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5506>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5507>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5508>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5509>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5510>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5511>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5512>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5513>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5517>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5519>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5520>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5521>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5522>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5523>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5524>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5525>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5526>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5527>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5528>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5529>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5530>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5531>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5532>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5533>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5534>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5536>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5537>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5538>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5541>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5542>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5543>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5544>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5545>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5546>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5547>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5548>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5550>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5551>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5600>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5650>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5702>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5703>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5704>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5705>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5706>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5751>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5800>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5801>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5802>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5803>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5804>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5805>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5806>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5810>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5811>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5812>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5813>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5814>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5815>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5816>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5820>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5822>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5823>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5824>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5825>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5826>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5827>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5828>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5850>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5851>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5852>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5853>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5854>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5900>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5903>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5904>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5910>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5911>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5912>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6051>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6052>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6053> .
+ipso:collection skos:member ipso:3200,
+        ipso:3201,
+        ipso:3202,
+        ipso:3203,
+        ipso:3300,
+        ipso:3301,
+        ipso:3302,
+        ipso:3303,
+        ipso:3304,
+        ipso:3305,
+        ipso:3306,
+        ipso:3308,
+        ipso:3310,
+        ipso:3311,
+        ipso:3312,
+        ipso:3313,
+        ipso:3314,
+        ipso:3315,
+        ipso:3316,
+        ipso:3317,
+        ipso:3318,
+        ipso:3319,
+        ipso:3320,
+        ipso:3321,
+        ipso:3322,
+        ipso:3323,
+        ipso:3324,
+        ipso:3325,
+        ipso:3326,
+        ipso:3327,
+        ipso:3328,
+        ipso:3329,
+        ipso:3330,
+        ipso:3331,
+        ipso:3332,
+        ipso:3333,
+        ipso:3334,
+        ipso:3335,
+        ipso:3336,
+        ipso:3337,
+        ipso:3338,
+        ipso:3339,
+        ipso:3340,
+        ipso:3341,
+        ipso:3342,
+        ipso:3343,
+        ipso:3344,
+        ipso:3345,
+        ipso:3346,
+        ipso:3347,
+        ipso:3348,
+        ipso:3349,
+        ipso:3350,
+        ipso:5500,
+        ipso:5501,
+        ipso:5502,
+        ipso:5503,
+        ipso:5504,
+        ipso:5505,
+        ipso:5506,
+        ipso:5507,
+        ipso:5508,
+        ipso:5509,
+        ipso:5510,
+        ipso:5511,
+        ipso:5512,
+        ipso:5513,
+        ipso:5517,
+        ipso:5518,
+        ipso:5519,
+        ipso:5520,
+        ipso:5521,
+        ipso:5522,
+        ipso:5523,
+        ipso:5524,
+        ipso:5525,
+        ipso:5526,
+        ipso:5527,
+        ipso:5528,
+        ipso:5529,
+        ipso:5530,
+        ipso:5531,
+        ipso:5532,
+        ipso:5533,
+        ipso:5534,
+        ipso:5536,
+        ipso:5537,
+        ipso:5538,
+        ipso:5541,
+        ipso:5542,
+        ipso:5543,
+        ipso:5544,
+        ipso:5545,
+        ipso:5546,
+        ipso:5547,
+        ipso:5548,
+        ipso:5550,
+        ipso:5551,
+        ipso:5600,
+        ipso:5601,
+        ipso:5602,
+        ipso:5603,
+        ipso:5604,
+        ipso:5605,
+        ipso:5650,
+        ipso:5700,
+        ipso:5701,
+        ipso:5702,
+        ipso:5703,
+        ipso:5704,
+        ipso:5705,
+        ipso:5706,
+        ipso:5750,
+        ipso:5751,
+        ipso:5800,
+        ipso:5801,
+        ipso:5802,
+        ipso:5803,
+        ipso:5804,
+        ipso:5805,
+        ipso:5806,
+        ipso:5810,
+        ipso:5811,
+        ipso:5812,
+        ipso:5813,
+        ipso:5814,
+        ipso:5815,
+        ipso:5816,
+        ipso:5820,
+        ipso:5821,
+        ipso:5822,
+        ipso:5823,
+        ipso:5824,
+        ipso:5825,
+        ipso:5826,
+        ipso:5827,
+        ipso:5828,
+        ipso:5850,
+        ipso:5851,
+        ipso:5852,
+        ipso:5853,
+        ipso:5854,
+        ipso:5900,
+        ipso:5903,
+        ipso:5904,
+        ipso:5910,
+        ipso:5911,
+        ipso:5912,
+        ipso:6042,
+        ipso:6049,
+        ipso:6050,
+        ipso:6051,
+        ipso:6052,
+        ipso:6053 .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3200> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3200 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "Generic digital input for non-specific sensors"@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Digital Input"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5500>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5501>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5502>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5503>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5504>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5505>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5751>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3200.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3201> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3201 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "Generic digital output for non-specific actuators"@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Digital Output"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5550>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5551>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3201.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3202> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3202 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "Generic analog input for non-specific sensors"@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Analog Input"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5600>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5751>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3202.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3203> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3203 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "This IPSO object is a generic object that can be used with any kind of analog output interface."@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Analog Output"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5650>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3203.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3300> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3300 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "This IPSO object allows the description of a generic sensor. It is based on the description of a value and a unit according to the SenML specification. Thus, any type of value defined within this specification can be reported using this object. This object may be used as a generic object if a dedicated one does not exist."@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Generic Sensor"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5751>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3300.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3301> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3301 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "Illuminance sensor, example units = lx"@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Illuminance"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3301.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3302> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3302 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "Presence sensor with digital sensing, optional delay parameters"@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Presence"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5500>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5501>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5505>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5751>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5903>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5904>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3302.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3303> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3303 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "This IPSO object should be used with a temperature sensor to report a temperature measurement.  It also provides resources for minimum/maximum measured values and the minimum/maximum range that can be measured by the temperature sensor. An example measurement unit is degrees Celsius."@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Temperature"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3303.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3304> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3304 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "This IPSO object should be used with a humidity sensor to report a humidity measurement.  It also provides resources for minimum/maximum measured values and the minimum/maximum range that can be measured by the humidity sensor. An example measurement unit is relative humidity as a percentage."@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Humidity"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3304.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3305> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3305 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "This IPSO object should be used over a power measurement sensor to report a remote power measurement. It also provides resources for minimum/maximum measured values and the minimum/maximum range for both active and reactive power. It also provides resources for cumulative energy, calibration, and the power factor."@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Power Measurement"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5800>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5801>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5802>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5803>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5804>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5805>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5806>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5810>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5811>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5812>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5813>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5814>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5815>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5816>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5820>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5822>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3305.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3306> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3306 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "This IPSO object is dedicated to remote actuation such as ON/OFF action or dimming. A multi-state output can also be described as a string. This is useful to send pilot wire orders for instance. It also provides a resource to reflect the time that the device has been switched on."@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Actuation"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5850>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5851>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5852>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5853>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3306.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3308> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3308 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "This IPSO object should be used to set a desired value to a controller, such as a thermostat. A special resource is added to set the colour of an object."@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Set Point"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5706>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5900>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3308.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3310> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3310 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "This Object is used for demand-response load control and other load control in automation application (not limited to power)."@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Load Control"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5823>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5824>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5825>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5826>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5827>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5828>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3310.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3311> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3311 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "This Object is used to control a light source, such as a LED or other light.  It allows a light to be turned on or off and its dimmer setting to be control as a % between 0 and 100. An optional colour setting enables a string to be used to indicate the desired colour."@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Light Control"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5706>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5805>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5820>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5850>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5851>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5852> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3311.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3312> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3312 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "This Object is used to control a power source, such as a Smart Plug.  It allows a power relay to be turned on or off and its dimmer setting to be control as a % between 0 and 100."@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Power Control"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5805>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5820>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5850>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5851>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5852>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3312.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3313> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3313 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "This IPSO object can be used to represent a 1-3 axis accelerometer."@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Accelerometer"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5702>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5703>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5704>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3313.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3314> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3314 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "This IPSO object can be used to represent a 1-3 axis magnetometer with optional compass direction."@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Magnetometer"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5702>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5703>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5704>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5705>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3314.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3315> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3315 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "This IPSO object should be used with an air pressure sensor to report a barometer measurement.  It also provides resources for minimum/maximum measured values and the minimum/maximum range that can be measured by the barometer sensor. An example measurement unit is pascals."@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Barometer"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3315.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3316> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3316 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used with voltmeter sensor to report measured voltage between two points.  It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is volts.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Voltage"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3316.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3317> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3317 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used with an ammeter to report measured electric current in amperes. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is ampere.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Current"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3317.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3318> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3318 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used to report frequency measurements. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is hertz.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Frequency"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3318.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3319> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3319 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used to report depth measurements. It can, for example, be used to describe a generic rain gauge that measures the accumulated rainfall in millimetres (mm).
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Depth"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3319.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3320> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3320 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should can be used to report measurements relative to a 0-100% scale. For example it could be used to measure the level of a liquid in a vessel or container in units of %.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Percentage"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3320.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3321> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3321 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used with an altitude sensor to report altitude above sea level in meters. Note that Altitude can be calculated from the measured pressure given the local sea level pressure.  It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is meters.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Altitude"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3321.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3322> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3322 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used with a load sensor (as in a scale) to report the applied weight or force. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is kilograms.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Load"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3322.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3323> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3323 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used to report pressure measurements. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is pascals.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Pressure"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3323.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3324> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3324 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used to report loudness or noise level measurements. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is decibels.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Loudness"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3324.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3325> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3325 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used to the particle concentration measurement of a medium. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is parts per million.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Concentration"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3325.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3326> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3326 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used to report an acidity measurement of a liquid. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is pH.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Acidity"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3326.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3327> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3327 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used to report a measurement of the electric conductivity of a medium or sample. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is Siemens.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Conductivity"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3327.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3328> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3328 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used to report power measurements. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is Watts. This object may be used for either real power or apparent power measurements.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Power"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3328.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3329> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3329 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used to report a measurement or calculation of the power factor of a reactive electrical load. Power Factor is normally the ratio of non-reactive power to total power. This object also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Power Factor"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3329.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3330> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3330 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used to report a distance measurement. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is Meters.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Distance"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3330.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3331> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3331 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used to report energy consumption (Cumulative Power) of an electrical load. An example measurement unit is Watt Hours.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Energy"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5822>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3331.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3332> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3332 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object is used to report the direction indicated by a compass, wind vane, or other directional indicator. The units of measure is plane angle degrees.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Direction"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5705>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3332.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3333> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3333 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object is used to report the current time in seconds since January 1, 1970 UTC. There is also a fractional time counter that has a range of less than one second.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Time"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5506>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5507>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3333.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3334> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3334 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO Object is used to report the current reading of a gyrometer sensor in 3 axes. It provides tracking of the minimum and maximum angular rate in all 3 axes. An example unit of measure is radians per second.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Gyrometer"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5508>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5509>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5510>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5511>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5512>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5513>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5702>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5703>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5704>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3334.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3335> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3335 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used to report the measured value of a colour sensor in some colour space described by the units resource.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Colour"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5706>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3335.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3336> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3336 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object represents GPS coordinates. This object is compatible with the LwM2M management object for location, but uses reusable resources.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Location"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5517>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5705>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6051>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6052>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6053> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3336.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3337> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3337 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used with a generic position actuator with range from 0 to 100%. This object optionally allows setting the transition time for an operation that changes the position of the actuator, and for reading the remaining time of the currently active transition.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Positioner"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5519>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5520>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5536>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5537>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5538>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3337.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3338> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3338 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used to actuate an audible alarm such as a buzzer, beeper, or vibration alarm. There is a dimmer control for setting the relative level of the alarm, and an optional duration control to limit the length of time the alarm sounds when turned on. Each time "true" is written to the On/Off resource, the alarm will sound again for the configured duration. If no duration is programmed or the setting is "false", writing a "true" to the On/Off resource will result in the alarm sounding continuously until a "false" is written to the On/Off resource.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Buzzer"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5521>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5525>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5548>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5850>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3338.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3339> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3339 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "This IPSO object should be used for a speaker that plays a pre-recorded audio clip or an audio output that is sent elsewhere. For example, an elevator which announces the floor of the building. A resource is provided to store the clip, a dimmer resource controls the relative sound level of the playback, and a duration resource limits the maximum playback time. After the duration time is reached, any remaining samples in the clip are ignored, and the clip player will be ready to play another clip."@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Audio Clip"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5522>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5523>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5524>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5548>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3339.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3340> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3340 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object is used to time events and actions, using patterns common to industrial timers. A write to the trigger resource or On/Off input state change starts the timing operation, and the timer remaining time shows zero when the operation is complete. The patterns supported are One-Shot (mode 1), On-Time or Interval (mode 2), Time delay on pick-up or TDPU (mode 3), and Time Delay on Drop-Out or TDDO (mode 4). Mode 0 disables the timer, so the output follows the input with no delay. A counter is provided to count occurrences of the timer output changing from 0 to 1. Writing a value of zero resets the counter. The Digital Input State resource reports the state of the timer output.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Timer"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5501>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5521>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5523>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5525>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5526>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5534>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5538>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5543>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5544>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5850> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3340.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3341> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3341 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object is used to send text to a text-only or text mode graphics display. Writing a string of text to the text resource causes it to be displayed at the selected X and Y locations on the display. If X or Y are set to a value greater than the size of the display, the position "wraps around" to the modulus of the setting and the display size. Likewise, if the text string overflows the display size, the text "wraps around" and displays on the next line down or, if the last line has been written, wraps around to the top of the display. Brightness and Contrast controls are provided to allow control of various display types including STN and DSTN type LCD character displays. Writing an empty payload to the Clear Display resource causes the display to be erased.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Addressable Text Display"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5527>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5528>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5529>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5530>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5531>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5545>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5546>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5548>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3341.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3342> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3342 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "This IPSO object should be used with an On/Off switch to report the state of the switch."@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "On/Off switch"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5500>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5501>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5852>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5854>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3342.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3343> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3343 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object should be used with a dimmer or level control to report the state of the control.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Dimmer"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5548>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5852>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5854> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3343.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3344> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3344 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object is used to report the state of an up/down control element like a pair of push buttons or a rotary encoder. Counters for increase and decrease operations are provided for counting pulses from a quadrature encoder.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Up/Down Control"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5532>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5533>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5541>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5542>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3344.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3345> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3345 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object can be used to report the position of a shuttle or joystick control. A digital input is provided to report the state of an associated push button.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Multiple Axis Joystick"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5500>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5501>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5702>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5703>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5704>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3345.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3346> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3346 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This object type should be used to report a rate measurement, for example the speed of a vehicle, or the rotational speed of a drive shaft. It also provides resources for minimum and maximum measured values, as well as the minimum and maximum range that can be measured by the sensor. An example measurement unit is meters per second (m/s).
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Rate"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5601>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5602>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5603>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5604>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5605>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5700>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5701>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5821>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3346.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3347> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3347 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object is used to report the state of a momentary action push button control and to count the number of times the control has been operated since the last observation.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Push button"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5500>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5501>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3347.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3348> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3348 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition """This IPSO object is used to represent the state of a Multi-state selector switch with a number of fixed positions.
         """@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Multi-state Selector"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5547>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3348.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3349> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3349 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "Summarize several digital inputs to one value by mapping each bit to a digital input."@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Bitmap"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5910>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5911>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5912>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3349.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#3350> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Object> ;
+ipso:3350 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Object ;
     skos:definition "An ascending timer that counts how long time has passed since the timer was started after reset."@en ;
-    skos:inScheme <http://purl.org/wot-catalogue/lwm2m#scheme> ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Stopwatch"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m/ipso#5501>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5518>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5544>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5750>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#5850>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6042>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6049>,
-        <http://purl.org/wot-catalogue/lwm2m/ipso#6050> ;
     prov:wasDerivedFrom <https://raw.githubusercontent.com/OpenMobileAlliance/lwm2m-registry/prod/3350.xml> .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#5502> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The polarity of the digital input as a Boolean (False = Normal, True = Reversed)."@en ;
-    skos:prefLabel "Digital Input Polarity"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5503> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The debounce period in ms."@en ;
-    skos:prefLabel "Digital Input Debounce"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5504> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The edge selection as an integer (1 = Falling edge, 2 = Rising edge, 3 = Both Rising and Falling edge)."@en ;
-    skos:prefLabel "Digital Input Edge Selection"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5506> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Unix Time. A signed integer representing the number of seconds since Jan 1st, 1970 in the UTC time zone."@en ;
-    skos:prefLabel "Current Time"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5507> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Fractional part of the time when sub-second precision is used (e.g., 0.23 for 230 ms)."@en ;
-    skos:prefLabel "Fractional Time"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5508> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The minimum measured value along the X axis."@en ;
-    skos:prefLabel "Min X Value"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5509> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The maximum measured value along the X axis."@en ;
-    skos:prefLabel "Max X Value"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5510> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The minimum measured value along the Y axis."@en ;
-    skos:prefLabel "Min Y Value"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5511> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The maximum measured value along the Y axis."@en ;
-    skos:prefLabel "Max Y Value"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5512> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The minimum measured value along the Z axis."@en ;
-    skos:prefLabel "Min Z Value"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5513> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The maximum measured value along the Z axis."@en ;
-    skos:prefLabel "Max Z Value"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5517> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The velocity of the device as defined in 3GPP 23.032 GAD specification. This set of values may not be available if the device is static."@en ;
-    skos:prefLabel "Velocity"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5519> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The minimum value that can be measured by the sensor."@en ;
-    skos:prefLabel "Min Limit"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5520> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The maximum value that can be measured by the sensor."@en ;
-    skos:prefLabel "Max Limit"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5522> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Audio clip that is playable (e.g., a short audio recording indicating the floor in an elevator)."@en ;
-    skos:prefLabel "Clip"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5524> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The duration of the sound once trigger."@en ;
-    skos:prefLabel "Duration"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5526> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Type of timer pattern used by the timer. 1: One-shot, 2: On-Time or Interval, 3: Time delay on pick-up, 4: Time Delay on Drop-Out, 0: disables the timer."@en ;
-    skos:prefLabel "Timer Mode"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5527> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "A string of text."@en ;
-    skos:prefLabel "Text"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5528> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "X Coordinate."@en ;
-    skos:prefLabel "X Coordinate"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5529> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Y Coordinate."@en ;
-    skos:prefLabel "Y Coordinate"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5530> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Command to clear the display."@en ;
-    skos:prefLabel "Clear Display"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#E> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5531> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Proportional control, integer value between 0 and 100 as a percentage."@en ;
-    skos:prefLabel "Contrast"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5532> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Indicates an increase control action."@en ;
-    skos:prefLabel "Increase Input State"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5533> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Indicates a decrease control action."@en ;
-    skos:prefLabel "Decrease Input State"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5534> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Counts the number of times the timer output transitions from 0 to 1."@en ;
-    skos:prefLabel "Counter"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5536> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Current position or desired position of a positioner actuator."@en ;
-    skos:prefLabel "Current Position"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5537> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The time expected to move the actuator to the new position."@en ;
-    skos:prefLabel "Transition Time"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5541> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Counts the number of times the increase control has been operated. Writing a 0 resets the counter."@en ;
-    skos:prefLabel "Up Counter"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5542> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Counts the times the decrease control has been operated. Writing a 0 resets the counter."@en ;
-    skos:prefLabel "Down Counter"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5543> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The current state of the timer output."@en ;
-    skos:prefLabel "Digital State"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5545> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The highest X coordinate the display supports before wrapping to the next line."@en ;
-    skos:prefLabel "Max X Coordinate"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5546> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The highest Y coordinate the display supports before wrapping to the next line."@en ;
-    skos:prefLabel "Max Y Coordinate"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5547> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The current state of a Multi-state input or selector."@en ;
-    skos:prefLabel "Multi-state Input"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5550> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The current state of a digital output."@en ;
-    skos:prefLabel "Digital Output State"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5551> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The polarity of the digital output as a Boolean (False = Normal, True = Reversed)."@en ;
-    skos:prefLabel "Digital Output Polarity"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5600> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The current value of the analog input."@en ;
-    skos:prefLabel "Analog Input Current Value"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5650> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The current value of the analog output."@en ;
-    skos:prefLabel "Analog Output Current Value"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5800> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The current active power."@en ;
-    skos:prefLabel "Instantaneous active power"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5801> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The minimum active power measured by the sensor since it is ON."@en ;
-    skos:prefLabel "Min Measured active power"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5802> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The maximum active power measured by the sensor since it is ON."@en ;
-    skos:prefLabel "Max Measured active power"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5803> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The minimum active power that can be measured by the sensor."@en ;
-    skos:prefLabel "Min Range active power"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5804> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The maximum active power that can be measured by the sensor."@en ;
-    skos:prefLabel "Max Range active power"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5806> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Request an active power calibration by writing the value of a calibrated load."@en ;
-    skos:prefLabel "Active Power Calibration"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#W> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5810> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The current reactive power."@en ;
-    skos:prefLabel "Instantaneous reactive power"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5811> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The minimum reactive power measured by the sensor since it is ON."@en ;
-    skos:prefLabel "Min Measured reactive power"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5812> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The maximum reactive power measured by the sensor since it is ON."@en ;
-    skos:prefLabel "Max Measured reactive power"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5813> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The minimum active power that can be measured by the sensor."@en ;
-    skos:prefLabel "Min Range reactive power"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5814> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The maximum reactive power that can be measured by the sensor."@en ;
-    skos:prefLabel "Max Range reactive power"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5815> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The cumulative reactive power since the last cumulative energy reset or device start."@en ;
-    skos:prefLabel "Cumulative reactive power"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5816> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Request a reactive power calibration by writing the value of a calibrated load."@en ;
-    skos:prefLabel "Reactive Power Calibration"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#W> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5823> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The event identifier as a string."@en ;
-    skos:prefLabel "Event Identifier"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5824> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Time when the event started."@en ;
-    skos:prefLabel "Start Time"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5825> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The duration of the event in minutes."@en ;
-    skos:prefLabel "Duration In Min"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5826> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The criticality of the event. The device receiving the event will react in an appropriate fashion for the device."@en ;
-    skos:prefLabel "Criticality Level"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5827> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Defines the maximum energy usage of the receiving device, as a percentage of the device's normal maximum energy usage."@en ;
-    skos:prefLabel "Avg Load AdjPct"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5828> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Defines the duty cycle for the load control event, i.e, what percentage of time the receiving device is allowed to be on."@en ;
-    skos:prefLabel "Duty Cycle"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5853> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "A string describing a state for multiple level output such as Pilot Wire."@en ;
-    skos:prefLabel "Multi-state Output"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5900> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The setpoint value."@en ;
-    skos:prefLabel "Set Point Value"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5903> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Delay from the detection state to the clear state in ms."@en ;
-    skos:prefLabel "Busy to Clear delay"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5904> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Delay from the clear state to the busy state in ms."@en ;
-    skos:prefLabel "Clear to Busy delay"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5910> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Integer in which each of the bits are associated with specific digital input value. Represented as a binary signed integer in network byte order, and in two's complement representation. Using values in range 0-127 is recommended to avoid ambiguities with byte order and negative values."@en ;
-    skos:prefLabel "Bitmap Input"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5911> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Reset the Bitmap Input value."@en ;
-    skos:prefLabel "Bitmap Input Reset"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#E> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5912> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The description of each bit as a string. First instance describes the least significant bit, second instance the second least significant bit."@en ;
-    skos:prefLabel "Element Description"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#6051> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The decimal notation of latitude, e.g. -43.5723 (World Geodetic System 1984)."@en ;
-    skos:prefLabel "Numeric Latitude"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#6052> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The decimal notation of longitude, e.g. 153.21760 (World Geodetic System 1984)."@en ;
-    skos:prefLabel "Numeric Longitude"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#6053> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The accuracy of the position in meters."@en ;
-    skos:prefLabel "Numeric Uncertainty"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5505> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Reset the Counter value."@en ;
-    skos:prefLabel "Digital Input Counter Reset"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#E> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5521> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The duration of the time delay."@en ;
-    skos:prefLabel "Delay Duration"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5523> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Trigger initiating actuation."@en ;
-    skos:prefLabel "Trigger"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#E> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5525> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The duration of the rearm delay (i.e. the delay from the end of one cycle until the beginning of the next, the inhibit time)."@en ;
-    skos:prefLabel "Minimum Off-time"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5538> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The time remaining in an operation."@en ;
-    skos:prefLabel "Remaining Time"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5544> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The total time in seconds that the timer input is true. Writing a 0 resets the time."@en ;
-    skos:prefLabel "Cumulative Time"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5822> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Reset both cumulative active/reactive power."@en ;
-    skos:prefLabel "Reset Cumulative energy"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#E> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5854> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The time in seconds in the off state. Writing a value of 0 resets the counter."@en ;
-    skos:prefLabel "Off Time"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5705> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The measured compass direction."@en ;
-    skos:prefLabel "Compass Direction"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5706> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "A string representing a value in some color space."@en ;
-    skos:prefLabel "Colour"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5805> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The cumulative active power since the last cumulative energy reset or device start."@en ;
-    skos:prefLabel "Cumulative active power"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5820> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "If applicable, the power factor of the current consumption."@en ;
-    skos:prefLabel "Power factor"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5851> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "This resource represents a dimmer setting, which has an Integer value between 0 and 100 as a percentage."@en ;
-    skos:prefLabel "Dimmer"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5548> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Used to represent a level control such as audio volume."@en ;
-    skos:prefLabel "Level"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5702> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The measured value along the X axis."@en ;
-    skos:prefLabel "X Value"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5703> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The measured value along the Y axis."@en ;
-    skos:prefLabel "Y Value"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5704> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The measured value along the Z axis."@en ;
-    skos:prefLabel "Z Value"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5751> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The type of the sensor (for instance PIR type)."@en ;
-    skos:prefLabel "Sensor Type"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5500> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
+ipso:5500 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
     skos:definition "The current state of a digital input."@en ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Digital Input State"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
+    skos:related lwm2m:R .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#5852> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The time in seconds that the device has been on. Writing a value of 0 resets the counter."@en ;
-    skos:prefLabel "On time"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5850> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "On/off control. Boolean value where True is On and False is Off."@en ;
-    skos:prefLabel "On/Off"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
-
-<http://purl.org/wot-catalogue/lwm2m/ipso#5501> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
+ipso:5501 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
     skos:definition "The cumulative value of active state detected."@en ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Digital Input Counter"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
+    skos:related lwm2m:R .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#5821> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Read or Write the current calibration coefficient."@en ;
-    skos:prefLabel "Current Calibration"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
+ipso:5502 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The polarity of the digital input as a Boolean (False = Normal, True = Reversed)."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Digital Input Polarity"@en ;
+    skos:related lwm2m:RW .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#5700> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Last or Current Measured Value from the Sensor."@en ;
-    skos:prefLabel "Sensor Value"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
+ipso:5503 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The debounce period in ms."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Digital Input Debounce"@en ;
+    skos:related lwm2m:RW .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#5601> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The minimum value measured by the sensor since power ON or reset."@en ;
-    skos:prefLabel "Min Measured Value"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
+ipso:5504 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The edge selection as an integer (1 = Falling edge, 2 = Rising edge, 3 = Both Rising and Falling edge)."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Digital Input Edge Selection"@en ;
+    skos:related lwm2m:RW .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#5602> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The maximum value measured by the sensor since power ON or reset."@en ;
-    skos:prefLabel "Max Measured Value"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
+ipso:5505 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Reset the Counter value."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Digital Input Counter Reset"@en ;
+    skos:related lwm2m:E .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#5603> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The minimum value that can be measured by the sensor."@en ;
-    skos:prefLabel "Min Range Value"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
+ipso:5506 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Unix Time. A signed integer representing the number of seconds since Jan 1st, 1970 in the UTC time zone."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Current Time"@en ;
+    skos:related lwm2m:RW .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#5604> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "The maximum value that can be measured by the sensor."@en ;
-    skos:prefLabel "Max Range Value"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
+ipso:5507 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Fractional part of the time when sub-second precision is used (e.g., 0.23 for 230 ms)."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Fractional Time"@en ;
+    skos:related lwm2m:RW .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#5605> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Reset the Min and Max Measured Values to Current Value."@en ;
-    skos:prefLabel "Reset Min and Max Measured Values"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#E> .
+ipso:5508 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The minimum measured value along the X axis."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Min X Value"@en ;
+    skos:related lwm2m:R .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#5701> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Measurement Units Definition."@en ;
-    skos:prefLabel "Sensor Units"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
+ipso:5509 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The maximum measured value along the X axis."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Max X Value"@en ;
+    skos:related lwm2m:R .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#6042> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Measurement quality indicator reported by a smart sensor. 0: UNCHECKED No quality checks were done because they do not exist or can not be applied. 1: REJECTED WITH CERTAINTY The measured value is invalid. 2: REJECTED WITH PROBABILITY The measured value is likely invalid. 3: ACCEPTED BUT SUSPICIOUS The measured value is likely OK. 4: ACCEPTED The measured value is OK. 5-15: Reserved for future extensions. 16-23: Vendor specific measurement quality."@en ;
-    skos:prefLabel "Measurement Quality Indicator"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
+ipso:5510 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The minimum measured value along the Y axis."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Min Y Value"@en ;
+    skos:related lwm2m:R .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#6049> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Measurement quality level reported by a smart sensor. Quality level 100 means that the measurement has fully passed quality check algorithms. Smaller quality levels mean that quality has decreased and the measurement has only partially passed quality check algorithms. The smaller the quality level, the more caution should be used by the application when using the measurement. When the quality level is 0 it means that the measurement should certainly be rejected."@en ;
-    skos:prefLabel "Measurement Quality Level"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
+ipso:5511 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The maximum measured value along the Y axis."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Max Y Value"@en ;
+    skos:related lwm2m:R .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#5518> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
+ipso:5512 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The minimum measured value along the Z axis."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Min Z Value"@en ;
+    skos:related lwm2m:R .
+
+ipso:5513 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The maximum measured value along the Z axis."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Max Z Value"@en ;
+    skos:related lwm2m:R .
+
+ipso:5517 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The velocity of the device as defined in 3GPP 23.032 GAD specification. This set of values may not be available if the device is static."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Velocity"@en ;
+    skos:related lwm2m:R .
+
+ipso:5518 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
     skos:definition "The timestamp of when the measurement was performed."@en ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Timestamp"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
+    skos:related lwm2m:R .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#6050> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
-    skos:definition "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms)."@en ;
-    skos:prefLabel "Fractional Timestamp"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#R> .
+ipso:5519 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The minimum value that can be measured by the sensor."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Min Limit"@en ;
+    skos:related lwm2m:R .
 
-<http://purl.org/wot-catalogue/lwm2m/ipso#5750> a skos:Concept,
-        <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> ;
-    skos:broader <http://purl.org/wot-catalogue/lwm2m#Resource> ;
+ipso:5520 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The maximum value that can be measured by the sensor."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Max Limit"@en ;
+    skos:related lwm2m:R .
+
+ipso:5521 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The duration of the time delay."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Delay Duration"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5522 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Audio clip that is playable (e.g., a short audio recording indicating the floor in an elevator)."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Clip"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5523 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Trigger initiating actuation."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Trigger"@en ;
+    skos:related lwm2m:E .
+
+ipso:5524 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The duration of the sound once trigger."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Duration"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5525 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The duration of the rearm delay (i.e. the delay from the end of one cycle until the beginning of the next, the inhibit time)."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Minimum Off-time"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5526 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Type of timer pattern used by the timer. 1: One-shot, 2: On-Time or Interval, 3: Time delay on pick-up, 4: Time Delay on Drop-Out, 0: disables the timer."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Timer Mode"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5527 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "A string of text."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Text"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5528 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "X Coordinate."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "X Coordinate"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5529 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Y Coordinate."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Y Coordinate"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5530 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Command to clear the display."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Clear Display"@en ;
+    skos:related lwm2m:E .
+
+ipso:5531 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Proportional control, integer value between 0 and 100 as a percentage."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Contrast"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5532 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Indicates an increase control action."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Increase Input State"@en ;
+    skos:related lwm2m:R .
+
+ipso:5533 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Indicates a decrease control action."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Decrease Input State"@en ;
+    skos:related lwm2m:R .
+
+ipso:5534 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Counts the number of times the timer output transitions from 0 to 1."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Counter"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5536 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Current position or desired position of a positioner actuator."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Current Position"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5537 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The time expected to move the actuator to the new position."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Transition Time"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5538 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The time remaining in an operation."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Remaining Time"@en ;
+    skos:related lwm2m:R .
+
+ipso:5541 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Counts the number of times the increase control has been operated. Writing a 0 resets the counter."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Up Counter"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5542 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Counts the times the decrease control has been operated. Writing a 0 resets the counter."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Down Counter"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5543 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The current state of the timer output."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Digital State"@en ;
+    skos:related lwm2m:R .
+
+ipso:5544 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The total time in seconds that the timer input is true. Writing a 0 resets the time."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Cumulative Time"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5545 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The highest X coordinate the display supports before wrapping to the next line."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Max X Coordinate"@en ;
+    skos:related lwm2m:R .
+
+ipso:5546 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The highest Y coordinate the display supports before wrapping to the next line."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Max Y Coordinate"@en ;
+    skos:related lwm2m:R .
+
+ipso:5547 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The current state of a Multi-state input or selector."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Multi-state Input"@en ;
+    skos:related lwm2m:R .
+
+ipso:5548 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Used to represent a level control such as audio volume."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Level"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5550 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The current state of a digital output."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Digital Output State"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5551 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The polarity of the digital output as a Boolean (False = Normal, True = Reversed)."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Digital Output Polarity"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5600 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The current value of the analog input."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Analog Input Current Value"@en ;
+    skos:related lwm2m:R .
+
+ipso:5601 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The minimum value measured by the sensor since power ON or reset."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Min Measured Value"@en ;
+    skos:related lwm2m:R .
+
+ipso:5602 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The maximum value measured by the sensor since power ON or reset."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Max Measured Value"@en ;
+    skos:related lwm2m:R .
+
+ipso:5603 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The minimum value that can be measured by the sensor."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Min Range Value"@en ;
+    skos:related lwm2m:R .
+
+ipso:5604 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The maximum value that can be measured by the sensor."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Max Range Value"@en ;
+    skos:related lwm2m:R .
+
+ipso:5605 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Reset the Min and Max Measured Values to Current Value."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Reset Min and Max Measured Values"@en ;
+    skos:related lwm2m:E .
+
+ipso:5650 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The current value of the analog output."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Analog Output Current Value"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5700 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Last or Current Measured Value from the Sensor."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Sensor Value"@en ;
+    skos:related lwm2m:R .
+
+ipso:5701 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Measurement Units Definition."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Sensor Units"@en ;
+    skos:related lwm2m:R .
+
+ipso:5702 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The measured value along the X axis."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "X Value"@en ;
+    skos:related lwm2m:R .
+
+ipso:5703 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The measured value along the Y axis."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Y Value"@en ;
+    skos:related lwm2m:R .
+
+ipso:5704 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The measured value along the Z axis."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Z Value"@en ;
+    skos:related lwm2m:R .
+
+ipso:5705 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The measured compass direction."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Compass Direction"@en ;
+    skos:related lwm2m:R .
+
+ipso:5706 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "A string representing a value in some color space."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Colour"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5750 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
     skos:definition "The application type of the sensor or actuator as a string depending on the use case."@en ;
+    skos:inScheme lwm2m:scheme ;
     skos:prefLabel "Application Type"@en ;
-    skos:related <http://purl.org/wot-catalogue/lwm2m#RW> .
+    skos:related lwm2m:RW .
+
+ipso:5751 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The type of the sensor (for instance PIR type)."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Sensor Type"@en ;
+    skos:related lwm2m:R .
+
+ipso:5800 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The current active power."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Instantaneous active power"@en ;
+    skos:related lwm2m:R .
+
+ipso:5801 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The minimum active power measured by the sensor since it is ON."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Min Measured active power"@en ;
+    skos:related lwm2m:R .
+
+ipso:5802 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The maximum active power measured by the sensor since it is ON."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Max Measured active power"@en ;
+    skos:related lwm2m:R .
+
+ipso:5803 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The minimum active power that can be measured by the sensor."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Min Range active power"@en ;
+    skos:related lwm2m:R .
+
+ipso:5804 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The maximum active power that can be measured by the sensor."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Max Range active power"@en ;
+    skos:related lwm2m:R .
+
+ipso:5805 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The cumulative active power since the last cumulative energy reset or device start."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Cumulative active power"@en ;
+    skos:related lwm2m:R .
+
+ipso:5806 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Request an active power calibration by writing the value of a calibrated load."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Active Power Calibration"@en ;
+    skos:related lwm2m:W .
+
+ipso:5810 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The current reactive power."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Instantaneous reactive power"@en ;
+    skos:related lwm2m:R .
+
+ipso:5811 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The minimum reactive power measured by the sensor since it is ON."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Min Measured reactive power"@en ;
+    skos:related lwm2m:R .
+
+ipso:5812 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The maximum reactive power measured by the sensor since it is ON."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Max Measured reactive power"@en ;
+    skos:related lwm2m:R .
+
+ipso:5813 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The minimum active power that can be measured by the sensor."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Min Range reactive power"@en ;
+    skos:related lwm2m:R .
+
+ipso:5814 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The maximum reactive power that can be measured by the sensor."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Max Range reactive power"@en ;
+    skos:related lwm2m:R .
+
+ipso:5815 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The cumulative reactive power since the last cumulative energy reset or device start."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Cumulative reactive power"@en ;
+    skos:related lwm2m:R .
+
+ipso:5816 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Request a reactive power calibration by writing the value of a calibrated load."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Reactive Power Calibration"@en ;
+    skos:related lwm2m:W .
+
+ipso:5820 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "If applicable, the power factor of the current consumption."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Power factor"@en ;
+    skos:related lwm2m:R .
+
+ipso:5821 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Read or Write the current calibration coefficient."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Current Calibration"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5822 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Reset both cumulative active/reactive power."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Reset Cumulative energy"@en ;
+    skos:related lwm2m:E .
+
+ipso:5823 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The event identifier as a string."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Event Identifier"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5824 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Time when the event started."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Start Time"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5825 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The duration of the event in minutes."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Duration In Min"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5826 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The criticality of the event. The device receiving the event will react in an appropriate fashion for the device."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Criticality Level"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5827 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Defines the maximum energy usage of the receiving device, as a percentage of the device's normal maximum energy usage."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Avg Load AdjPct"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5828 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Defines the duty cycle for the load control event, i.e, what percentage of time the receiving device is allowed to be on."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Duty Cycle"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5850 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "On/off control. Boolean value where True is On and False is Off."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "On/Off"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5851 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "This resource represents a dimmer setting, which has an Integer value between 0 and 100 as a percentage."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Dimmer"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5852 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The time in seconds that the device has been on. Writing a value of 0 resets the counter."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "On time"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5853 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "A string describing a state for multiple level output such as Pilot Wire."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Multi-state Output"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5854 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The time in seconds in the off state. Writing a value of 0 resets the counter."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Off Time"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5900 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The setpoint value."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Set Point Value"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5903 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Delay from the detection state to the clear state in ms."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Busy to Clear delay"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5904 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Delay from the clear state to the busy state in ms."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Clear to Busy delay"@en ;
+    skos:related lwm2m:RW .
+
+ipso:5910 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Integer in which each of the bits are associated with specific digital input value. Represented as a binary signed integer in network byte order, and in two's complement representation. Using values in range 0-127 is recommended to avoid ambiguities with byte order and negative values."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Bitmap Input"@en ;
+    skos:related lwm2m:R .
+
+ipso:5911 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Reset the Bitmap Input value."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Bitmap Input Reset"@en ;
+    skos:related lwm2m:E .
+
+ipso:5912 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The description of each bit as a string. First instance describes the least significant bit, second instance the second least significant bit."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Element Description"@en ;
+    skos:related lwm2m:RW .
+
+ipso:6042 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Measurement quality indicator reported by a smart sensor. 0: UNCHECKED No quality checks were done because they do not exist or can not be applied. 1: REJECTED WITH CERTAINTY The measured value is invalid. 2: REJECTED WITH PROBABILITY The measured value is likely invalid. 3: ACCEPTED BUT SUSPICIOUS The measured value is likely OK. 4: ACCEPTED The measured value is OK. 5-15: Reserved for future extensions. 16-23: Vendor specific measurement quality."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Measurement Quality Indicator"@en ;
+    skos:related lwm2m:R .
+
+ipso:6049 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Measurement quality level reported by a smart sensor. Quality level 100 means that the measurement has fully passed quality check algorithms. Smaller quality levels mean that quality has decreased and the measurement has only partially passed quality check algorithms. The smaller the quality level, the more caution should be used by the application when using the measurement. When the quality level is 0 it means that the measurement should certainly be rejected."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Measurement Quality Level"@en ;
+    skos:related lwm2m:R .
+
+ipso:6050 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "Fractional part of the timestamp when sub-second precision is used (e.g., 0.23 for 230 ms)."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Fractional Timestamp"@en ;
+    skos:related lwm2m:R .
+
+ipso:6051 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The decimal notation of latitude, e.g. -43.5723 (World Geodetic System 1984)."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Numeric Latitude"@en ;
+    skos:related lwm2m:R .
+
+ipso:6052 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The decimal notation of longitude, e.g. 153.21760 (World Geodetic System 1984)."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Numeric Longitude"@en ;
+    skos:related lwm2m:R .
+
+ipso:6053 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:broader lwm2m:Resource ;
+    skos:definition "The accuracy of the position in meters."@en ;
+    skos:inScheme lwm2m:scheme ;
+    skos:prefLabel "Numeric Uncertainty"@en ;
+    skos:related lwm2m:R .
 

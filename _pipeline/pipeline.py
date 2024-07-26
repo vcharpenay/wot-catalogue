@@ -4,8 +4,8 @@ from lifting import lift
 
 # TODO browse folders, look for <collection>.source
 
-# scheme = "lwm2m"
-# collection = "ipso"
+scheme = "lwm2m"
+collection = "ipso"
 
 # scheme = "ble"
 # collection = "gatt"
@@ -13,8 +13,8 @@ from lifting import lift
 # scheme = "bacnet"
 # collection = "core"
 
-scheme = "onem2m"
-collection = "haim"
+# scheme = "onem2m"
+# collection = "haim"
 
 with open(f"{scheme}/{collection}.source", "r") as sources:
     g = Graph()
