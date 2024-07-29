@@ -16,13 +16,14 @@ from the following communication and classification standards:
  - [OPC UA](https://github.com/OPCFoundation/UA-Nodeset) (TODO)
  - [ICM](https://cimug.ucaiug.org/CIM%20Profiles/Forms/AllItems.aspx) (TODO)
  - [Smart Data Models](https://smartdatamodels.org/) (TODO)
- - [OneDM](https://onedm.org/), inc. a translation from OCF and LWM2M (TODO)
  - [ROS](http://wiki.ros.org/common_msgs) (TODO)
  - [Eclipse Vorto](https://github.com/eclipse/vorto/tree/development/models) (TODO)
 
+See also [OneDM](https://onedm.org/), which includes a translation from OCF and LWM2M to the IETF Semantic Definition Format (SDF).
+
 ## Getting Started
 
-The WoT catalogue is split in several Turtle file. The entry point is [`index.ttl`](http://purl.org/wot-catalogue).
+The WoT catalogue is split in several Turtle files. The entry point is [`index.ttl`](http://purl.org/wot-catalogue).
 
 ## Documentation
 
@@ -75,10 +76,13 @@ ble:org.bluetooth.characteristic.indoor_bike_data a skos:Concept, ontolex:Lexica
 
 ## Contributing
 
-The WoT catalogue is built with [LinkedPipes ETL](https://etl.linkedpipes.com/).
-To install LinkedPipes ETL, follow instructions [on Github](https://github.com/linkedpipes/etl#installation-and-startup).
-Then, import `pipeline.jsonld` and run it.
+The WoT catalogue is built with a Python pipeline. Run
 
+```
+$ python _pipeline/pipeline.py
+```
+
+to execute it (after dependencies have been installed).
 Once the pipeline has been executed, the output Turtle files can be committed to the repo.
-If the pipeline itself has changed, `pipeline.jsonld` should be committed to the repo as well.
+If the pipeline itself has changed, `_pipeline` should be committed to the repo as well.
 Every stable release of the catalogue should be tagged and pushed to the `release` branch, which is used by Github pages to deploy it online.
