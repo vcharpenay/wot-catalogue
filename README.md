@@ -11,15 +11,14 @@ from the following communication and classification standards:
  - [Webthings Schema](https://webthings.io/schemas/)
  - Project Haystack
  - EDDL (TODO)
- - eCl@ss (TODO)
  - IFC (TODO)
  - [OPC UA](https://github.com/OPCFoundation/UA-Nodeset) (TODO)
  - [ICM](https://cimug.ucaiug.org/CIM%20Profiles/Forms/AllItems.aspx) (TODO)
- - [Smart Data Models](https://smartdatamodels.org/) (TODO)
  - [ROS](http://wiki.ros.org/common_msgs) (TODO)
  - [Eclipse Vorto](https://github.com/eclipse/vorto/tree/development/models) (TODO)
 
-See also [OneDM](https://onedm.org/), which includes a translation from OCF and LWM2M to the IETF Semantic Definition Format (SDF).
+See also [OneDM](https://onedm.org/), which includes a translation from OCF and LWM2M into the IETF Semantic Definition Format (SDF).
+See also [Smart Data Models](https://smartdatamodels.org/), which also translates OCF (and OPC UA, SAREF, AAS, and other standards) into NGSI schemas.
 
 ## Getting Started
 
