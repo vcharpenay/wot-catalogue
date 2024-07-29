@@ -1,0 +1,1202 @@
+@prefix core: <http://purl.org/wot-catalogue/openhab/core#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix openhab: <http://purl.org/wot-catalogue/openhab#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+core:collection skos:member core:Alarm,
+        core:AlarmSystem,
+        core:Apartment,
+        core:Attic,
+        core:BackDoor,
+        core:Basement,
+        core:Bathroom,
+        core:Battery,
+        core:Bedroom,
+        core:Blinds,
+        core:Boiler,
+        core:BoilerRoom,
+        core:Building,
+        core:CO,
+        core:CO2,
+        core:Camera,
+        core:Car,
+        core:Carport,
+        core:CeilingFan,
+        core:Cellar,
+        core:CellarDoor,
+        core:CleaningRobot,
+        core:ColorTemperature,
+        core:Control,
+        core:Corridor,
+        core:Current,
+        core:DiningRoom,
+        core:Dishwasher,
+        core:Door,
+        core:Doorbell,
+        core:Driveway,
+        core:Dryer,
+        core:Duration,
+        core:Energy,
+        core:Entry,
+        core:FamilyRoom,
+        core:Fan,
+        core:FirstFloor,
+        core:Floor,
+        core:Freezer,
+        core:Frequency,
+        core:FrontDoor,
+        core:Garage,
+        core:GarageDoor,
+        core:Garden,
+        core:Gas,
+        core:Gate,
+        core:GroundFloor,
+        core:GuestRoom,
+        core:HVAC,
+        core:House,
+        core:Humidity,
+        core:Indoor,
+        core:InnerDoor,
+        core:Inverter,
+        core:Kitchen,
+        core:KitchenHood,
+        core:LaundryRoom,
+        core:LawnMower,
+        core:Level,
+        core:Light,
+        core:LightStripe,
+        core:Lightbulb,
+        core:LivingRoom,
+        core:Lock,
+        core:LowBattery,
+        core:Measurement,
+        core:MotionDetector,
+        core:NetworkAppliance,
+        core:Noise,
+        core:Office,
+        core:Oil,
+        core:OpenLevel,
+        core:OpenState,
+        core:Opening,
+        core:Outdoor,
+        core:Oven,
+        core:Patio,
+        core:Porch,
+        core:Power,
+        core:PowerOutlet,
+        core:Presence,
+        core:Pressure,
+        core:Projector,
+        core:Pump,
+        core:RadiatorControl,
+        core:Rain,
+        core:Receiver,
+        core:Refrigerator,
+        core:RemoteControl,
+        core:Room,
+        core:Screen,
+        core:SecondFloor,
+        core:Sensor,
+        core:Setpoint,
+        core:Shed,
+        core:SideDoor,
+        core:Siren,
+        core:Smartphone,
+        core:Smoke,
+        core:SmokeDetector,
+        core:SoundVolume,
+        core:Speaker,
+        core:Status,
+        core:SummerHouse,
+        core:Switch,
+        core:Tampered,
+        core:Television,
+        core:Temperature,
+        core:Terrace,
+        core:ThirdFloor,
+        core:Tilt,
+        core:Timestamp,
+        core:Ultraviolet,
+        core:Valve,
+        core:Veranda,
+        core:Vibration,
+        core:VoiceAssistant,
+        core:Voltage,
+        core:WallSwitch,
+        core:WashingMachine,
+        core:Water,
+        core:WeatherService,
+        core:WebService,
+        core:WhiteGood,
+        core:Wind,
+        core:Window .
+
+core:Alarm a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Point ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Alarm"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:AlarmSystem a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Alarm Systems"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Alarm System"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Apartment a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Apartments"@en ;
+    skos:broader core:Indoor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Apartment"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Attic a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Attics"@en ;
+    skos:broader core:Floor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Attic"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:BackDoor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Back Doors"@en ;
+    skos:broader core:Door ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Back Door"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Basement a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Basements"@en ;
+    skos:broader core:Floor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Basement"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Bathroom a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Bath"@en,
+        "Bathrooms"@en,
+        "Baths"@en,
+        "Powder Room"@en,
+        "Powder Rooms"@en ;
+    skos:broader core:Room ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Bathroom"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Battery a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Batteries"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Battery"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Bedroom a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Bedrooms"@en ;
+    skos:broader core:Room ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Bedroom"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Blinds a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Roller shutter"@en,
+        "Roller shutters"@en,
+        "Rollershutter"@en,
+        "Rollershutters"@en,
+        "Shutter"@en,
+        "Shutters"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Blinds"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Boiler a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Boilers"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Boiler"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:BoilerRoom a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Boiler Rooms"@en ;
+    skos:broader core:Room ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Boiler Room"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:CO a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Carbon Monoxide"@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "CO"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:CO2 a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Carbon Dioxide"@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "CO2"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Camera a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Cameras"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Camera"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Car a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Cars"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Car"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Carport a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Carports"@en ;
+    skos:broader core:Outdoor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Carport"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:CeilingFan a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Ceiling Fans"@en ;
+    skos:broader core:Fan ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Ceiling Fan"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Cellar a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Cellars"@en ;
+    skos:broader core:Room ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Cellar"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:CellarDoor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Cellar Doors"@en ;
+    skos:broader core:Door ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Cellar Door"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:CleaningRobot a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Cleaning Robots"@en,
+        "Vacuum robot"@en,
+        "Vacuum robots"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Cleaning Robot"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:ColorTemperature a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Color Temperature"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Corridor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Corridors"@en,
+        "Hallway"@en,
+        "Hallways"@en ;
+    skos:broader core:Indoor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Corridor"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Current a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Current"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:DiningRoom a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Dining Rooms"@en ;
+    skos:broader core:Room ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Dining Room"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Dishwasher a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Dishwashers"@en ;
+    skos:broader core:WhiteGood ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Dishwasher"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Doorbell a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Doorbells"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Doorbell"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Driveway a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Driveways"@en ;
+    skos:broader core:Outdoor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Driveway"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Dryer a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Dryers"@en ;
+    skos:broader core:WhiteGood ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Dryer"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Duration a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Duration"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Energy a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Energy"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Entry a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Entries"@en,
+        "Foyer"@en,
+        "Foyers"@en ;
+    skos:broader core:Room ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Entry"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:FamilyRoom a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Family Rooms"@en ;
+    skos:broader core:Room ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Family Room"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:FirstFloor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "First Floors"@en,
+        "Upstairs"@en ;
+    skos:broader core:Floor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "First Floor"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Freezer a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Freezers"@en ;
+    skos:broader core:WhiteGood ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Freezer"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Frequency a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Frequency"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:FrontDoor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Front Doors"@en,
+        "Frontdoor"@en,
+        "Frontdoors"@en ;
+    skos:broader core:Door ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Front Door"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Garage a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Garages"@en ;
+    skos:broader core:Building ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Garage"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:GarageDoor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Garage Doors"@en ;
+    skos:broader core:Door ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Garage Door"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Garden a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Gardens"@en ;
+    skos:broader core:Outdoor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Garden"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Gas a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Gas"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Gate a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Gates"@en ;
+    skos:broader core:Door ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Gate"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:GroundFloor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Downstairs"@en,
+        "Ground Floors"@en ;
+    skos:broader core:Floor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Ground Floor"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:GuestRoom a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Guest Rooms"@en ;
+    skos:broader core:Room ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Guest Room"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:HVAC a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "A/C"@en,
+        "A/Cs"@en,
+        "AC"@en,
+        "Air Conditioning"@en,
+        "Heating"@en,
+        "Ventilation"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "HVAC"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:House a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Houses"@en ;
+    skos:broader core:Building ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "House"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Humidity a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Moisture"@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Humidity"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:InnerDoor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Inner Doors"@en ;
+    skos:broader core:Door ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Inner Door"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Inverter a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Inverters"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Inverter"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Kitchen a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Kitchens"@en ;
+    skos:broader core:Room ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Kitchen"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:KitchenHood a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Kitchen Hoods"@en ;
+    skos:broader core:Fan ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Kitchen Hood"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:LaundryRoom a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Laundry Rooms"@en ;
+    skos:broader core:Room ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Laundry Room"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:LawnMower a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Lawn Mowers"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Lawn Mower"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Level a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Level"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Light a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Lighting"@en,
+        "Lights"@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Light"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:LightStripe a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Light Stripes"@en ;
+    skos:broader core:Lightbulb ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Light Stripe"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:LivingRoom a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Living Rooms"@en ;
+    skos:broader core:Room ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Living Room"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Lock a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Locks"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Lock"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:LowBattery a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Status ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "LowBattery"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Measurement a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Point ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Measurement"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:MotionDetector a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Motion Detectors"@en,
+        "Motion sensor"@en,
+        "Motion sensors"@en ;
+    skos:broader core:Sensor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Motion Detector"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:NetworkAppliance a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Network Appliances"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Network Appliance"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Noise a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Noise"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Office a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Offices"@en ;
+    skos:broader core:Room ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Office"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Oil a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Oil"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:OpenLevel a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Status ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "OpenLevel"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:OpenState a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Status ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "OpenState"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Opening a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Opening"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Oven a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Ovens"@en ;
+    skos:broader core:WhiteGood ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Oven"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Patio a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Patios"@en ;
+    skos:broader core:Outdoor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Patio"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Porch a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Porches"@en ;
+    skos:broader core:Outdoor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Porch"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Power a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Power"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:PowerOutlet a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Outlet"@en,
+        "Outlets"@en,
+        "Power Outlets"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Power Outlet"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Presence a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Presence"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Pressure a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Pressure"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Projector a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Beamer"@en,
+        "Beamers"@en,
+        "Projectors"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Projector"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Pump a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Pumps"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Pump"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:RadiatorControl a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Radiator"@en,
+        "Radiator Controls"@en,
+        "Radiators"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Radiator Control"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Rain a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Rain"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Receiver a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "AV Receiver"@en,
+        "AV Receivers"@en,
+        "Audio Receiver"@en,
+        "Audio Receivers"@en,
+        "Receivers"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Receiver"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Refrigerator a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Refrigerators"@en ;
+    skos:broader core:WhiteGood ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Refrigerator"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:RemoteControl a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Remote Controls"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Remote Control"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:SecondFloor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Second Floors"@en ;
+    skos:broader core:Floor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Second Floor"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Setpoint a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Point ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Setpoint"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Shed a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Sheds"@en ;
+    skos:broader core:Building ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Shed"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:SideDoor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Side Doors"@en ;
+    skos:broader core:Door ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Side Door"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Siren a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Sirens"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Siren"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Smartphone a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Phone"@en,
+        "Phones"@en,
+        "Smartphones"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Smartphone"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Smoke a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Smoke"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:SmokeDetector a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Smoke Detectors"@en ;
+    skos:broader core:Sensor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Smoke Detector"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:SoundVolume a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Sound Volume"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Speaker a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Speakers"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Speaker"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:SummerHouse a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Second Home"@en,
+        "Second Homes"@en,
+        "Summer Houses"@en ;
+    skos:broader core:Building ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Summer House"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Switch a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Control ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Switch"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Tampered a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Status ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Tampered"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Television a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "TV"@en,
+        "TVs"@en,
+        "Televisions"@en ;
+    skos:broader core:Screen ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Television"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Temperature a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Temperatures"@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Temperature"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Terrace a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Deck"@en,
+        "Decks"@en,
+        "Terraces"@en ;
+    skos:broader core:Outdoor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Terrace"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:ThirdFloor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Third Floors"@en ;
+    skos:broader core:Floor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Third Floor"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Tilt a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Status ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Tilt"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Timestamp a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Timestamp"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Ultraviolet a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "UV"@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Ultraviolet"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Valve a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Valves"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Valve"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Veranda a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Verandas"@en ;
+    skos:broader core:Room ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Veranda"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Vibration a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Vibration"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:VoiceAssistant a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Voice Assistants"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Voice Assistant"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Voltage a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Voltage"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:WallSwitch a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Wall Switches"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Wall Switch"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:WashingMachine a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Washing Machines"@en ;
+    skos:broader core:WhiteGood ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Washing Machine"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Water a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Water"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:WeatherService a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Weather Services"@en ;
+    skos:broader core:WebService ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Weather Service"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Wind a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Property ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Wind"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Window a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Windows"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Window"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Control a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Point ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Control"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Lightbulb a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Bulb"@en,
+        "Bulbs"@en,
+        "Lamp"@en,
+        "Lamps"@en,
+        "Lightbulbs"@en,
+        "Lighting"@en,
+        "Lights"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Lightbulb"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Screen a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Screens"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Screen"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:WebService a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Web Services"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Web Service"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Fan a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Fans"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Fan"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Sensor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Sensors"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Sensor"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Building a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Buildings"@en ;
+    skos:broader core:Indoor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Building"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Indoor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Location ;
+    skos:definition "Anything that is inside a closed building"@en ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Indoor"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Status a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Point ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Status"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Floor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Floors"@en ;
+    skos:broader core:Indoor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Floor"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Outdoor a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel ""@en ;
+    skos:broader core:Location ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Outdoor"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:WhiteGood a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "White Goods"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "White Good"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Door a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Doors"@en ;
+    skos:broader core:Equipment ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Door"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+
+core:Room a skos:Concept,
+        ontolex:LexicalConcept ;
+    skos:altLabel "Rooms"@en ;
+    skos:broader core:Indoor ;
+    skos:inScheme openhab:scheme ;
+    skos:prefLabel "Room"@en ;
+    prov:wasDerivedFrom <https://github.com/openhab/openhab-core/raw/4.2.0/bundles/org.openhab.core.semantics/model/SemanticTags.csv> .
+

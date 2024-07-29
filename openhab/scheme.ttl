@@ -1,0 +1,29 @@
+@prefix : <http://purl.org/wot-catalogue/openhab#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:scheme a skos:ConceptScheme ;
+    rdfs:seeAlso <https://www.openhab.org/docs/tutorial/model.html> .
+
+:Location a skos:Concept ;
+    skos:prefLabel "Location" ;
+    skos:definition "A Location is a Group Item that can contain sub-Locations, Equipment, and Points, and represents a physical location (building, room, etc.)."@en ;
+    skos:related :Equipment, :Point ;
+    skos:inScheme :scheme .
+
+:Equipment a skos:Concept ;
+    skos:prefLabel "Equipment" ;
+    skos:definition "An Equipment is normally a Group Item that can contain sub-Equipment, and Points."@en ;
+    skos:related :Point ;
+    skos:inScheme :scheme .
+
+:Point a skos:Concept ;
+    skos:prefLabel "Point" ;
+    skos:definition "A Point is not a Group, but represents any other type of Item and is usually linked to a Channel."@en ;
+    skos:related :Property ;
+    skos:inScheme :scheme .
+
+:Property a skos:Concept ;
+    skos:prefLabel "Property" ;
+    skos:definition "A Property is an additional tag on a Point Item that indicates what sort of point it is. For example, a thermometer might be a Point of type Measurement with a Property of type Temperature."@en ;
+    skos:inScheme :scheme .

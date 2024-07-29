@@ -3,6 +3,7 @@ from os import mkdir
 from zlib import adler32
 from urllib.parse import quote
 from requests import get
+from csv import reader
 from json import loads
 from xml.etree import ElementTree
 from rdflib import Graph, URIRef, Literal, Namespace, SKOS, PROV, RDF
@@ -336,6 +337,38 @@ def lift_onem2m(uri) -> Graph:
 
     return g
 
+def lift_openhab(uri) -> Graph:
+    csv = reader(_get(uri).split("\n"))
+
+    g = Graph()
+
+    openhab = Namespace("http://purl.org/wot-catalogue/openhab#")
+    core = Namespace("http://purl.org/wot-catalogue/openhab/core#")
+    g.bind("ontolex", ONTOLEX)
+    g.bind("openhab", openhab)
+    g.bind("core", core)
+
+    for i, l in enumerate(csv):
+        if i > 0 and len(l) == 6:  # 1st line is header
+            t, tag, parent, label, synonyms, desc = l
+
+            c = core.__getitem__(tag)
+
+            _add_concept(
+                g, c,
+                label=label,
+                description=desc if desc else None,
+                parent=core.__getitem__(parent if parent else t),
+                collection=core.collection,
+                scheme=openhab.scheme,
+                origin=URIRef(uri)
+            )
+
+            for syn in synonyms.split(", "):
+                g.add((c, SKOS.altLabel, Literal(syn, lang="en")))
+
+    return g
+
 def lift(uri, scheme):
     match scheme:
         case "ble": return lift_ble(uri)
@@ -343,3 +376,4 @@ def lift(uri, scheme):
         case "lwm2m": return lift_lwm2m(uri)
         case "ocf": return lift_ocf(uri)
         case "onem2m": return lift_onem2m(uri)
+        case "openhab": return lift_openhab(uri)
